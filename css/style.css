@@ -47,11 +47,13 @@ a {
 }
 
 .camp {
+    background: url(../img/happy-camp.png) no-repeat;
     height: 252px;
     margin: 0 0 7px 0;
 }
 
 .cloud {
+
     height: 252px;
     margin: 0 0 7px 0;
 }
@@ -72,13 +74,39 @@ a {
     text-align: center;
 }
 
+
+#camp-index {
+    background: url(../img/camp-link.jpg) no-repeat;
+    height: 100px;
+}
+
+#camp-index ul li {
+    display: inline;
+    float: right;
+}
+
+#camp-index ul li a {
+    color: #3c3c3c;
+    font-size: 14px;
+    font-family: "Helvetica Neue" , Helvetica, Arial, "Microsoft YaHei" , "WenQuanYi Micro Hei" , sans-serif;
+}
+
+#camp-index ul li a:hover {
+    color: green;
+}
+
+
 .footer a {
     color: #515151;
 }
 
+.footer .footer_container {
+    background: url(../img/bottom-link.jpg) no-repeat;
+}
 .footer .footer_container .partner {
-    height: 60px;
-    margin: 10px 0 0 0;
+    height: 100px;
+    margin: 40px 0 0 0;
+    padding: 40px 0 0 0;
 }
 
 .footer .footer_container .joinus {
@@ -123,6 +151,27 @@ a {
 
 .aboutus ul li {
     display: inline;
+    height: 40px;
+    padding: 10px;
+}
+
+.aboutus ul li  a {
+    margin: 0 0 0 70px;
+}
+
+.aboutus ul li  span#aboutus1{
+   background: url(../img/bottom-icon.png) 0 0 no-repeat;
+}
+
+.aboutus ul li  span#aboutus2{
+    background: url(../img/bottom-icon.png) 0 -80px no-repeat;
+}
+
+.aboutus ul li  span#aboutus3{
+    background: url(../img/bottom-icon.png) 0 -160px no-repeat;
+}
+.aboutus ul li  span#aboutus4{
+    background: url(../img/bottom-icon.png) 0 -240px no-repeat;
 }
 
 .copyright_links {
@@ -135,13 +184,11 @@ a {
 }
 
 .left_column {
-    position:absolute;
-    width:55%;
-    height:100%;
+    /*position:absolute;*/
 }
 .right_column  {
-    margin-left: 700px;
-    width: 300px;
+    /*margin-left: 700px;*/
+    /*width: 300px;*/
 
 }
 
