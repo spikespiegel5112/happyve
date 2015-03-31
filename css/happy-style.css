@@ -7,21 +7,26 @@
 }
 
 .reading-hay{
+	width: 690px;
     height: 326px;
     margin: 0px 0 32px 0;
-	position:relative;
+	position: relative;
+	background-image: url(../img/understand-link.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top:54px;
 	}
-.reading-link{
+/*.reading-link{
 	width: 690px; 
 	height: 30px; 
 	background-image: url(../img/understand-link.jpg);
 	margin-bottom: 14px; 
 	}
-
+*/
 .read-img{ 
+	/*margin-top: 14px; */
 	width: 690px; 
 	height: 270px;
-
 	overflow: hidden;
 	border: 1px solid #cacaca;
 	
@@ -32,16 +37,15 @@
 	float: left;
 	width: 425px;
 	height: 270px;
-	background-image: url(../img/system-left.jpg)
+	
 	}
 
 .rading-bar{
 	width: 19px;
 	height: 10px;
-	background-image: url(../img/system-bar.png);
 	position: absolute;
 	left: 212px;
-	top: 36px;
+	top: 46px;
 	z-index: 22;
 	}	
 		
@@ -49,7 +53,7 @@
 	float: right;
 	width: 263px;
 	height: 270px;
-	background-image: url(../img/system-right.jpg);
+	
 	}
 	
 .testing-hay{
@@ -57,14 +61,18 @@
 	height: 265px;
     margin: 0 0 32px 0;
 	position: relative;
+	background-image: url(../img/appraisal-link.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top:30px;
 	}
 	
-.test-link{
+/*.test-link{
 	width: 690px;
 	height: 30px;
 	background-image: url(../img/appraisal-link.jpg);
 	background-repeat: no-repeat;
-	}
+	}*/
 .test-img{ 
 	overflow: hidden;
     margin-top: 23px;
@@ -74,7 +82,6 @@
 	float: left;
 	width:378px;
 	height:206px;
-	background-image: url(../img/appraisal-left.jpg);
 	}
 	
 .testing-right{ 
@@ -121,14 +128,18 @@
 	width: 690px;
 	height: 320px;
     margin: 0 0 30px 0;
+	background-image: url(../img/acting-link.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top:30px;
 	}
 	
-.acting-link{
+/*.acting-link{
 	width: 690px;
 	height: 30px;
 	background-image: url(../img/acting-link.jpg);
 	background-repeat: no-repeat;
-	}
+	}*/
 	
 .acting-img{
     width: 690px;
@@ -187,13 +198,17 @@
 	width: 690px;
 	height: 220px;
     margin: 0 0 38px 0;
+	background-image: url(../img/share-link.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	padding-top:30px;
 	}
 	
-.sharing-link{
+/*.sharing-link{
 	width: 690px;
 	height: 30px;
 	background-image: url(../img/share-link.jpg);
 	background-repeat: no-repeat;
-	}
+	}*/
 	
 	/*调整样式结束*/
