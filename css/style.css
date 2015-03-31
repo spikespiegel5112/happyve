@@ -355,8 +355,8 @@ a {
 
 .show_hero .train a#interest_btn {
     position: relative;
-    left: -330px;
-    top: 55px;
+    right: -20px;
+    top: -55px;
     width: 150px;
 
 }
@@ -367,6 +367,10 @@ a {
 }
 .show_hero .train #train_bt {
     background: url(../img/twill-nav.jpg) no-repeat;
+    height:  41px;
+}
+.show_hero .micro_lession #micro_lession_bt {
+    background: url(../img/twill-blue.jpg) no-repeat;
     height:  41px;
 }
 
