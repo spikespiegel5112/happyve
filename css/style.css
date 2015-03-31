@@ -134,41 +134,96 @@ a {
 }
 
 .aboutus {
-    height: 80px;
+    height: 60px;
     font-size: 30px;
-    line-height: 80px;
     font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	overflow:hidden;
+	margin-top:18px;
 }
 
 .aboutus a {
     color: #515151;
+	display:block;
+	text-align:left;
 }
 
 
 .aboutus ul li {
-    display: inline;
-    height: 40px;
-    padding: 10px;
+    height: 66px;
+	float:left;
+	margin-left:36px;
 }
 
+.aboutus ul .our-about {
+    display: inline;
+    height: 62px;
+	background: url(../img/bottom-icon.png) 0 0 no-repeat;
+}
+.aboutus ul .phone-about {
+    display: inline;
+    height: 66px;
+    
+	background: url(../img/bottom-icon.png) 0 -73px no-repeat;
+}
+
+.call-phone{
+	font-family:"微软雅黑"; 
+	font-size:16px;
+	color:#5aaa00;
+	padding-left:48px;
+}
+
+.aboutus ul .tecent-about {
+    display: inline;
+    height: 66px;
+	background: url(../img/bottom-icon.png) 0 -147px no-repeat;
+}
+
+.tecent-phone{
+	font-family:"微软雅黑"; 
+	font-size:16px;
+	color:#505050;
+	padding-left:22px;
+}
+
+.aboutus ul .emile-about {
+    display: inline;
+    height: 66px;
+	background: url(../img/bottom-icon.png) 0 -220px no-repeat;
+	
+}
+
+.emile-phone{
+	font-family:"微软雅黑"; 
+	font-size:16px;
+	color:#505050;
+	display:block;
+	padding-left:100px;
+	text-align:right;
+	
+	}
 .aboutus ul li  a {
     margin: 0 0 0 70px;
 }
 
-.aboutus ul li  span#aboutus1{
+/*.aboutus ul li span{
+	display:inline-block;
+	width:60px;
+	height:60px;
+
    background: url(../img/bottom-icon.png) 0 0 no-repeat;
-}
+}*/
 
-.aboutus ul li  span#aboutus2{
+/*.aboutus ul li  span#aboutus2{
     background: url(../img/bottom-icon.png) 0 -80px no-repeat;
-}
+}*/
 
-.aboutus ul li  span#aboutus3{
+/*.aboutus ul li  span#aboutus3{
     background: url(../img/bottom-icon.png) 0 -160px no-repeat;
 }
 .aboutus ul li  span#aboutus4{
     background: url(../img/bottom-icon.png) 0 -240px no-repeat;
-}
+}*/
 
 .copyright_links {
     width: 100%;
