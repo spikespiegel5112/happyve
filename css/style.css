@@ -344,7 +344,8 @@ a {
 
 #hero_people {
     background: url(../img/hero-link.jpg) no-repeat;
-    height: 100px;
+    height: auto;
+    padding: 30px 0 0 0;
 }
 
 #avtive_school {
@@ -352,13 +353,48 @@ a {
     height: 100px;
 }
 
+.show_hero .train a#interest_btn {
+    position: relative;
+    left: -330px;
+    top: 55px;
+    width: 150px;
+
+}
+
+.show_hero .train, .show_hero .micro_lession {
+    padding: 0;
+    width: 30%;
+}
+.show_hero .train #train_bt {
+    background: url(../img/twill-nav.jpg) no-repeat;
+    height:  41px;
+}
+
+.show_hero .train #train_bt a {
+    text-align: center;
+    line-height: 41px;
+    padding: 20px;
+}
+
+.show_hero .train #train_bt a {
+    color: #FFFFFF;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+}
+
+.show_hero .micro_lession {
+    width: 341px;
+}
 .show_hero {
+
     padding: 0 0 0 0;
     margin: 0 0 10px 0;
 }
 
 .show_hero .show_hero_lesson {
-    display: inline;
+    /*display: inline;*/
+    height: 241px;
+    margin: 10px 0 19px 0;
 }
 
 .what_hero {
@@ -404,4 +440,17 @@ a {
 
 .what_hero a:hover {
 
+}
+
+
+.ul-pp a {
+    font-family: SimSun;
+    font-size:  12px;
+    color: #3c3c3c;
+    line-height: 80px;
+}
+
+.ul-pp li {
+    display: inline;
+    width: 80px;
 }
