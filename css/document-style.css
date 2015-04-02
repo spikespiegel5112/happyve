@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.document {
+	margin-top: 28px;
+}
+
+.footprint {
+	width: 260px;
+	height: 674px;
+	background: url(../img/stamp-file.png) no-repeat;
+}
+
+.footprint-title {
+	font-family: "微软雅黑";
+	font-size: 24px;
+	color: #fff;
+	padding: 16px 0 0 60px;
+	letter-spacing: 6px;
+}
+
+.footprint ul {
+	width: 169px;
+	font-size: 16px;
+	color: #505050;
+	font-family: "微软雅黑";
+}
+
+.footprint ul li {
+	line-height: 44px;
+	height: 44px;
+}
+
+.footprint-text {
+	width: 704px;
+	background: url(../img/personage-file.png) no-repeat;
+	padding-top: 40px;
+}
+
+.footprint-content {
+	width: 704px;
+	border: 1px solid #b2b2b2;
+	background-color: #fff;
+}
+/* CSS Document */
+
