@@ -1,25 +1,65 @@
-.content {
+/* common style  */
+/* 此处放通用样式 */
+body {
+    /*width: 1280px;*/
+    background: #fff url(../img/back-banner.png) repeat-x;
+    background-position: center 122px;
+    font-size: 12px;
+    font-family: Arial;
+}
+
+li {
+    list-style-type:none;
+}
+
+a, a:link, a:visited, ins {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #419641;
+    text-decoration: none;
+}
+
+.u-header-photo {
+    border-radius: 40px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+/* base style */
+/* 此处放基本样式，比如按钮，a 标签 */
+
+
+/* layout style */
+/* 页面大的框架样式 */
+#header-login {
+    height: 30px;
+}
+
+#content {
     height: 100%;
-    background: red;
     margin: 0;
 }
-.left-content {
+
+#left-content {
 
 }
 
-.right-content {
+#right-content {
 
 }
 
-.header {
-    height: 112px;
-    background: #204d74;
+#header {
+    height: 82px;
+    margin: 10px 0 0 0;
 }
-.header-banner {
-    height: 304px;
-    background: #2aabd2;
-    /*margin: 112px 0 0 0;*/
+
+#header-banner {
+    height: 100%;
 }
+
 .happy-content {
     height: 800px;
     margin: 15px 0 0 0;
@@ -29,19 +69,22 @@
 .user-content {
     margin: 30px 0 0 0;
     padding: 10px;
-    background: #b2dba1;
-    height: 400px;
 }
 
-.bottom-info {
-
+#footer {
+    /*width: auto;*/
     height: 300px;
-    background: #449d44;
+    margin: 10px 0;
 }
 
-.copy-right {
-    font: 10px "Microsoft YaHei";
+#copy-right {
+    font: 12px "微软雅黑";
     text-align:  center;
     line-height: 30px;
     height: 30px;
+    width: 100%;
 }
+
+/* other style */
+
+

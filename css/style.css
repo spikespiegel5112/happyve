@@ -10,7 +10,7 @@ li {
     list-style-type:none;
 }
 
-a {
+a, a:hover, a:link, a:visited, ins {
     text-decoration: none;
 }
 
@@ -94,6 +94,11 @@ a {
 
 .footer a {
     color: #515151;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: #843534;
 }
 
 .footer .footer_container {
