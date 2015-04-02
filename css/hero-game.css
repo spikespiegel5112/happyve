@@ -102,8 +102,7 @@
 	text-align: center;
 }
 
-.teacher-img ul b,
-  p {
+.teacher-img ul b , .teacher-img p{
 	height: 22px;
 	line-height: 22px;
 	font-size: 12px;
