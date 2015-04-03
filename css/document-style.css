@@ -11,8 +11,7 @@
 }
 
 .footprint-title {
-	font-family: "微软雅黑";
-	font-size: 24px;
+	font: 24px "微软雅黑";
 	color: #fff;
 	padding: 16px 0 0 60px;
 	letter-spacing: 6px;
@@ -21,15 +20,13 @@
 
 .footprint ul {
 	width: 168px;
-	font-size: 16px;
-	color: #646464;
-	font-family: "微软雅黑";
+	font: 16px "微软雅黑";
+	color: #646464; 
 	margin-left:18px;
 	
 }
 
-.footprint ul li span,
- i{
+.footprint ul li span{
 	font-size: 14px;	
 }
 .personal-info{
@@ -74,7 +71,7 @@
 	color:#505050;
 	text-decoration:none;
 	} 
-.footprint ul #footprint-mes {
+.footprint ul .footprint-mes {
 	color:#ff7800;
 	-webkit-box-shadow: 1px 1px 1px 1px #f6c18a inset;
 	-moz-box-shadow: 1px 1px 1px 1px #f6c18a inset;
@@ -85,7 +82,33 @@
 	-o-border-radius: 20px 0 0 20px;
 	border-radius: 20px 0 0 20px;
 }
-.footprint ul #footprint-mes a{
+
+.footprint ul li:hover{
+	color:#ff7800;
+	-webkit-box-shadow: 1px 1px 1px 1px #f6c18a inset;
+	-moz-box-shadow: 1px 1px 1px 1px #f6c18a inset;
+	-o-box-shadow: 1px 1px 1px 1px #f6c18a inset;
+	box-shadow: 1px 1px 1px 1px #f6c18a inset;
+	-webkit-border-radius: 20px 0 0 20px;
+	-moz-border-radius: 20px 0 0 20px;
+	-o-border-radius: 20px 0 0 20px;
+	border-radius: 20px 0 0 20px;
+	}
+	
+.scale-rim:hover + .scale-info{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/footmark-foot.png) no-repeat scroll 0 -127px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+
+	
+.footprint ul li a:hover{
+	color:#ff7800;
+	text-decoration:none;
+	}
+.footprint ul .footprint-mes a{
 	color:#ff7800;
 	text-decoration:none;
 }
@@ -94,8 +117,7 @@
 	width: 704px;
 	background: url(../img/personage-file.png) no-repeat;
 	padding-top: 40px;
-	font-family:"微软雅黑";
-	font-size:14px;
+	font:14px "微软雅黑";
 	color:#3c3c3c;
 }
 
@@ -137,8 +159,7 @@
 	}	
 	
 .member-footp ul li span{
-	font-family:"宋体";
-	font-size:12px;
+	font: 12px "宋体";
 	}
 .member-footp ul li #boy-icon{
 	display:inline-block;
