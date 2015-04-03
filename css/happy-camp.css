@@ -15,13 +15,7 @@
 	background-position: top;
 	padding-top: 54px;
 }
-/*.reading-link{
-	width: 690px; 
-	height: 30px; 
-	background-image: url(../img/understand-link.jpg);
-	margin-bottom: 14px; 
-	}
-*/
+
 .read-img {
 	/*margin-top: 14px; */
 	width: 690px;
@@ -62,12 +56,6 @@
 	padding-top: 30px;
 }
 	
-/*.test-link{
-	width: 690px;
-	height: 30px;
-	background-image: url(../img/appraisal-link.jpg);
-	background-repeat: no-repeat;
-	}*/
 .test-img {
 	overflow: hidden;
 	margin-top: 23px;
