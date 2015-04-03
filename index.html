@@ -11,401 +11,549 @@
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
+
 </head>
 <body>
 
-<div class="header_container">
-    <div class="container">
-
+<!-- 头部登陆导航 开始 -->
+<div id="header-login">
+    <div class="u-logion">
+        <ul>
+            <li><a class="u-lo btn btn-default" role="button">登陆</a></li>
+            <li><a class="u-reg btn btn-default" role="button">注册</a></li>
+            <li><a class="u-msg" href="#">我的信息</a></li>
+            <li><a class="u-info" href="#">个人信息</a></li>
+            <li><a class="u-help" href="#">在线帮助</a></li>
+        </ul>
     </div>
 </div>
 
-<div class="body_container">
-
-    <div class="header_banner">
+<div id="header">
+    <div class="h-nav navbar">
         <div class="container">
+            <div class="h-logo navbar-brand hidden-sm">
+                <a href="#"><img src="img/logo.png" alt="logo" width="186px" height="54px"></a>
+            </div>
+            <div class="navbar-collapse collapse" role="navigation">
+                <ul class="h-nav-ul nav navbar-nav">
+                    <li class="dropdown hidden-sm hidden-md">
+                        <a class="h-nav-a dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">快乐大本营<b class="caret"></b></a>
+                        <ul class="h-drop-menu dropdown-menu">
+                            <li > <a href="happy-camp.html">训练营</a></li>
+                            <li ><a href="#">师徒行</a></li>
+                            <li ><a href="#">大秀场</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="h-nav-a" href="hero-game.html">英雄风云场</a></li>
+                    <li><a class="h-nav-a" href="document.html">我的档案</a></li>
+                    <li><a class="h-nav-a" href="#">我的集体</a></li>
+                </ul>
+                <div class="i-search nav navbar-nav navbar-right hidden-sm">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="快乐英雄">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                          </span>
+                    </div><!-- /input-group -->
+                </div>
+            </div>
 
         </div>
     </div>
+</div>
+<!-- 头部登陆导航 结束 -->
 
-    <div class="context row">
-        <div class="left_column col-lg-8">
 
-            <div class="hero camp">
-                <div class="camp_index hero_camp">
-                    <ul>
-                        <li><a href="#">&nbsp;|&nbsp;解读快乐英雄</a> </li>
-                        <li><a href="#">&nbsp;|&nbsp;快乐测评</a> </li>
-                        <li><a href="#">&nbsp;|&nbsp;快乐演习</a> </li>
-                        <li><a href="#">快乐分享</a></li>
-                    </ul>
+
+<!-- 内容 开始 -->
+<div id="content" class="row">
+    <!-- banner 开始  -->
+    <div id="header-banner" class="col-md-10 col-md-offset-1">
+        <div class="banner">
+            <a href="#"><img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304"></a>
+        </div>
+    </div>
+    <!-- banner 结束 -->
+
+    <!-- 左边区域 开始 -->
+    <div id="left-content" class="col-md-7 col-md-offset-1">
+        <!-- 快乐大本营 开始 -->
+        <div class="happy-content happy-camp">
+            <div class="p-little-img">
+                <img src="img/school-camp.png">
+            </div>
+
+            <div class="c-carousel">
+                <!-- main slider carousel -->
+                <div class="row">
+                    <div class="col-md-12" id="slider">
+
+                        <div class="col-md-12" id="carousel-bounding-box">
+                            <div id="happy-carousel" class="carousel slide">
+                                <!-- main slider carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item" data-slide-number="0">
+                                        <img src="img/answer-hero.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="1">
+                                        <img src="img/answer-hero.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="2">
+                                        <img src="img/answer-hero.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="3">
+                                        <img src="img/answer-hero.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <!-- main slider carousel nav controls -->
+                                <!--<a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>-->
+
+                                <!--<a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>-->
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="container">
-                    <div class="what_hero row">
-                        <div class="col-md-2">
-                            <ul>
-                                <li><a href="#">解读快乐英雄</a></li>
-                                <li><a href="#">快乐测评</a></li>
-                                <li><a href="#">快乐演习</a></li>
-                                <li><a href="#">快乐分享</a></li>
+                <!--/main slider carousel-->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <!-- thumb navigation carousel -->
+                        <div class="col-md-12 hidden-sm hidden-xs" id="slider-thumbs">
+
+                            <!-- thumb navigation carousel items -->
+                            <ul class="camp-nav">
+                                <li>
+                                    <a id="carousel-selector-0" class="selected">解读快乐英雄</a>
+                                </li>
+                                <li>
+                                    <a id="carousel-selector-1">快乐测评</a>
+                                </li>
+                                <li>
+                                    <a id="carousel-selector-2">快乐演习</a>
+                                </li>
+                                <li>
+                                    <a id="carousel-selector-3">快乐分享</a>
+                                </li>
                             </ul>
                         </div>
-                        <div class="col-md-6">
-                            <img src="img/answer-hero.jpg" alt="" width="" height="">
-                        </div>
-
-                    </div>
-                    <div>
-                        <img src="img/way-hero.jpg" alt="" width="340px" height="100px">
-                        <img src="img/happy-hero.jpg" alt="" width="340px" height="100px">
                     </div>
                 </div>
+
             </div>
-            <div class="hero cloud">
-                <div class="camp_index hero_cloud">
-                    <ul>
-                        <li><a href="#">&nbsp;|&nbsp;解读快乐英雄</a> </li>
-                        <li><a href="#">&nbsp;|&nbsp;快乐测评</a> </li>
-                        <li><a href="#">&nbsp;|&nbsp;快乐演习</a> </li>
-                        <li><a href="#">快乐分享</a></li>
-                    </ul>
-                </div>
-                <div class="container show_hero">
-                    <div>
-                        <img src="img/show-hero.jpg" alt="英雄大秀场" width="690px" height="197px">
-                    </div>
 
-                    <div class="show_hero_lesson row">
-                        <div class="train col-md-4">
-                            <div id="train_bt">
-                                 <a class="lesson_text" href="#">上海科学传播训练营回顾</a>
-                            </div>
-                            <img src="img/train-mes.jpg" alt="训练营" width="" height="">
-                            <a id="interest_btn" href="#" type="button" class="btn btn-info">我感兴趣</a>
+            <div class="container c-way-hero row">
+                <img src="img/way-hero.jpg" alt="" width="340" height="100" >
+                <img src="img/happy-hero.jpg" alt="" width="340" height="100">
+            </div>
+        </div>
+        <!-- 快乐大本营 结束 -->
+
+        <!-- 英雄风云场 开始 -->
+        <div class="happy-context hero-wind">
+            <div class="p-little-img">
+                <img src="img/school-camp.png">
+            </div>
+
+            <div class="container show_hero">
+                <div>
+                    <img src="img/show-hero.jpg" alt="英雄大秀场" width="690" height="197" class="img-responsive">
+                </div>
+
+                <div class="show_hero_lesson row">
+                    <div class="train col-md-4">
+                        <div id="train_bt">
+                            <a class="lesson_text" href="#">上海科学传播训练营回顾</a>
                         </div>
-                        <div class="micro_lession col-md-4">
-                            <div id="micro_lession_bt">
-                                <a class="lesson_text" href="#">第十期科学报道工作坊</a>
-                            </div>
-                            <img src="img/lesson-mes.jpg" alt="微课" width="" height="">
-                            <div class="micro_lession_title">
-                                <a>本课程为2015年2月26号晚就行的华杯赛初赛高年级组在线模考试题讲解。</a>
-                            </div>
+                        <img src="img/train-mes.jpg" alt="训练营" width="" height="">
+                        <a id="interest_btn" href="#" type="button" class="btn btn-info">我感兴趣</a>
+                    </div>
+                    <div class="micro_lession col-md-4">
+                        <div id="micro_lession_bt">
+                            <a class="lesson_text" href="#">第十期科学报道工作坊</a>
+                        </div>
+                        <img src="img/lesson-mes.jpg" alt="微课" width="" height="">
+                        <div class="micro_lession_title">
+                            <a>本课程为2015年2月26号晚就行的华杯赛初赛高年级组在线模考试题讲解。</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hero people">
-                <div id="hero_people">
-                    <ul class="ul-pp">
-                        <li >
-                            <a href="#">
-                                <span><img src="img/head-portrait.jpg" alt="" width="" height=""></span>
-                                <span>宋亚星</span>
-                                <span>级别:脱颖而出<img src="img/yellow-rank.png"></span>
-                                <span>福州市第三中学</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><img src="img/head-portrait.jpg" alt="" width="" height=""></span>
-                                <span>宋亚星</span>
-                                <span>级别:脱颖而出<img src="img/yellow-rank.png"></span>
-                                <span>福州市第三中学</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><img src="img/head-portrait.jpg" alt="" width="" height=""></span>
-                                <span>宋亚星</span>
-                                <span>级别:脱颖而出<img src="img/yellow-rank.png"></span>
-                                <span>福州市第三中学</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><img src="img/head-portrait.jpg" alt="" width="" height=""></span>
-                                <span>宋亚星</span>
-                                <span>级别:脱颖而出<img src="img/yellow-rank.png"></span>
-                                <span>福州市第三中学</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><img src="img/head-portrait.jpg" alt="" width="" height=""></span>
-                                <span>宋亚星</span>
-                                <span>级别:脱颖而出<img src="img/yellow-rank.png"></span>
-                                <span>福州市第三中学</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span><img src="img/head-portrait.jpg" alt="" width="" height=""></span>
-                                <span>宋亚星</span>
-                                <span>级别:脱颖而出<img src="img/yellow-rank.png"></span>
-                                <span>福州市第三中学</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        </div>
+        <!-- 英雄风云场 结束 -->
 
+        <!-- HERO达人 开始 -->
+        <div class="happy-content hero-people">
+            <div class="p-little-img">
+                <img src="img/school-camp.png">
             </div>
-            <div class="hero school">
-                <div id="avtive_school">
-                    <div class="school_list">
-                        <ul class="ul-sc">
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span> <img src="img/scl-badge.jpg" alt="学校" width="" height=""></span>
-                                    <span>北京八十一中学</span>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-
-                </div>
+            <div class="container p-list">
+                <ul class="row ">
+                    <li class="people-info">
+                        <div class="p-user-head">
+                            <img class="u-header-photo" src="img/head-portrait.jpg" alt="头像" width="65" height="65">
+                        </div>
+                        <div class="p-user-info">
+                            <p><span class=p-user-name">宋亚星</span><span class="p-user-level">级别:脱颖而出</span></p>
+                            <p>福州市第三中学</p>
+                        </div>
+                    </li>
+                    <li class="people-info">
+                        <div class="p-user-head">
+                            <img class="u-header-photo" src="img/head-portrait.jpg" alt="头像" width="65" height="65">
+                        </div>
+                        <div class="p-user-info">
+                            <p><span class=p-user-name">宋亚星</span><span class="p-user-level">级别:脱颖而出</span></p>
+                            <p>福州市第三中学</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="people-info">
+                        <div class="p-user-head">
+                            <img class="u-header-photo" src="img/head-portrait.jpg" alt="头像" width="65" height="65">
+                        </div>
+                        <div class="p-user-info">
+                            <p><span class=p-user-name">宋亚星</span><span class="p-user-level">级别:脱颖而出</span></p>
+                            <p>福州市第三中学</p>
+                        </div>
+                    </li>
+                    <li class="people-info">
+                        <div class="p-user-head">
+                            <img class="u-header-photo" src="img/head-portrait.jpg" alt="头像" width="65" height="65">
+                        </div>
+                        <div class="p-user-info">
+                            <p><span class=p-user-name">宋亚星</span><span class="p-user-level">级别:脱颖而出</span></p>
+                            <p>福州市第三中学</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="people-info">
+                        <div class="p-user-head">
+                            <img class="u-header-photo" src="img/head-portrait.jpg" alt="头像" width="65" height="65">
+                        </div>
+                        <div class="p-user-info">
+                            <p><span class=p-user-name">宋亚星</span><span class="p-user-level">级别:脱颖而出</span></p>
+                            <p>福州市第三中学</p>
+                        </div>
+                    </li>
+                    <li class="people-info">
+                        <div class="p-user-head">
+                            <img class="u-header-photo" src="img/head-portrait.jpg" alt="头像" width="65" height="65">
+                        </div>
+                        <div class="p-user-info">
+                            <p><span class=p-user-name">宋亚星</span><span class="p-user-level">级别:脱颖而出</span></p>
+                            <p>福州市第三中学</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
 
         </div>
+        <!-- HERO达人 结束 -->
 
-        <div class="right_column col-lg-4">
-            <div class="user_info">
-                <div class="user_name">
+        <!-- 活跃学校 开始 -->
+        <div class="happy-content active-school">
+            <div class="p-little-img">
+                <img src="img/school-camp.png">
+            </div>
+            <div class="container s-avtive-list">
+                <ul class="row">
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                    <li class="sc">
+                        <div class="sc-l">
+                            <img src="img/scl-badge.jpg" class="sc-logo" alt="学校logo" >
+                        </div>
+                        <div class="sc-n">
+                            <p class="sc-name">北京八十一中学</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- 活跃学校 结束 -->
+    </div>
+    <!-- 左边区域 结束 -->
+    <div id="right-content" class="col-md-3">
+        <!-- 用户信息 开始 -->
+        <div class="user-content user-info">
+            <div class="user_name">
+                <span>
                     <a href="#" class="user_header"><img class="u-header-photo" src="img/head-file.jpg" alt="人物头像" width="72px" height="72px"></a>
                     <dl id="user_sc">
                         <dt class="name">邢伟伟</dt>
                         <dt class="school_name"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> 北京市八十一中学</dt>
                     </dl>
+                </span>
 
-                </div>
 
-                <div class="user_friend">
-                    <hr />
-                    <a class="btn btn-info"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>好友 <span class="badge">10</span></a>
-                    <a class="btn btn-info"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>收藏 <span class="badge">10</span></a>
-                </div>
-            </div>
-            <div class="tag">
-                <!--<span>我的标签</span>-->
-                <!--<div class="container tag-body">-->
-                    <!--<p>个性稳重</p>-->
-                    <!--<p>具高度责任感</p>-->
-                    <!--<p>有爱&nbsp;精明能干</p>-->
-                <!--</div>-->
-            </div>
-            <div class="container">
-                <div class="slideTxtBox">
-                    <div class="hd">
-                        <ul>
-                            <li>测评</li>
-                            <li>演习</li>
-                        </ul>
-                    </div>
-                    <div class="bd">
-                        <ul>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
 
-            <div class="container">
-                <div class="slideTxtBox">
-                    <div class="hd">
-                        <ul>
-                            <li>微课</li>
-                            <li>训练营</li>
-                        </ul>
-                    </div>
-                    <div class="bd">
-                        <ul>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                            <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
-                        </ul>
-                    </div>
+            <div class="user_friend">
+                <hr />
+                <a class="btn btn-info"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>好友 <span class="badge">10</span></a>
+                <a class="btn btn-info"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>收藏 <span class="badge">10</span></a>
+            </div>
+        </div>
+        <!-- 用户信息 结束 -->
+
+        <!-- 我的标签 开始 -->
+        <div class="user-content user-tag">
+
+        </div>
+        <!-- 我的标签 结束 -->
+
+        <!-- 我的评测 开始 -->
+        <div class="user-content user-test">
+            <div class="slideTxtBox">
+                <div class="hd">
+                    <ul>
+                        <li>测评</li>
+                        <li>演习</li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
-    </div>
+        <!-- 我的评测 结束 -->
 
-    <div class="footer">
-        <div class="footer_container">
-            <div class="partner">
-                <p>
-                    <a href="#">忆尔</a>
-                    |<a href="#">清华积极心理研究中心</a>
-                    |<a href="#">美国留学</a>
-                    |<a href="#">知好乐网校</a>
-                    |<a href="#">博众教育</a>
-                    |<a href="#">考德上公培</a>
-                    |<a href="#">在线英语培训</a>
-                    |<a href="#">公务员考试网</a>
-                    |<a href="#">坦途教育网</a>
-                    |<a href="#">师兄帮帮忙</a>
-                    |<a href="#">博浪网</a>
-                    |<a href="#">智康堂</a>
-                </p>
-                <p>
-                    <a href="#">忆尔</a>
-                    |<a href="#">清华积极心理研究中心</a>
-                    |<a href="#">美国留学</a>
-                    |<a href="#">知好乐网校</a>
-                    |<a href="#">博众教育</a>
-                    |<a href="#">考德上公培</a>
-                    |<a href="#">在线英语培训</a>
-                    |<a href="#">公务员考试网</a>
-                    |<a href="#">坦途教育网</a>
-                </p>
-            </div>
-            <div class="joinus">
-                <div class="">
-                    <a href="#" id="join_hve">注册加入幸福流</a>
-                    <a href="#" id="known_hve">了解快乐英雄权益</a>
+        <!-- 我的微课 开始 -->
+        <div class="user-content user-lesson">
+            <div class="slideTxtBox">
+                <div class="hd">
+                    <ul>
+                        <li>微课</li>
+                        <li>训练营</li>
+                    </ul>
+                </div>
+                <div class="bd">
+                    <ul>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生获取什么证书?效力如何?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                        <li><a href="#" target="_blank">教育管理在职研究生的教学方式?</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="aboutus">
-                <ul>
-                    <li class="our-about">
-                       <!-- <span>
-                            
-                        </span>-->
-                        <a href="#">关于我们</a>
-                    </li>
-                    <li class="phone-about">
-                        <!--<span id="aboutus2">
-                            
-                        </span>-->
-                        <a href="#">客服电话</a>
-                        <p class="call-phone" href="#">400-800-1234</p>
-                    </li>
-                    <li class="tecent-about">
-                        <!--<span id="aboutus3">
-                            
-                        </span>-->
-                        <a href="#">客服QQ</a>
-                        <p class="tecent-phone" href="#">4001234</p>
-                    </li>
-                    <li class="emile-about">
-                        <!--<span id="aboutus4">
-                            
-                        </span>-->
-                        <a href="#">客服邮箱</a>
-                        <p class="tecent-phone" href="#">amei.zhong@xingfuliu.com</p>
-                        
-                    </li>
-                </ul>
+        </div>
+        <!-- 我的微课 结束 -->
+    </div>
+    <!-- 左边区域 结束 -->
+</div>
+<!-- 内容区域 结束 -->
+
+<!-- 底部友情链接 开始 -->
+<div id="footer">
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="f-partner">
+            <span><img src="img/bottom-link.jpg"></span>
+            <p>
+                <a href="#">忆尔</a>
+                |<a href="#">清华积极心理研究中心</a>
+                |<a href="#">美国留学</a>
+                |<a href="#">知好乐网校</a>
+                |<a href="#">博众教育</a>
+                |<a href="#">考德上公培</a>
+                |<a href="#">在线英语培训</a>
+                |<a href="#">公务员考试网</a>
+                |<a href="#">坦途教育网</a>
+                |<a href="#">师兄帮帮忙</a>
+                |<a href="#">博浪网</a>
+                |<a href="#">智康堂</a>
+            </p>
+            <p>
+                <a href="#">忆尔</a>
+                |<a href="#">清华积极心理研究中心</a>
+                |<a href="#">美国留学</a>
+                |<a href="#">知好乐网校</a>
+                |<a href="#">博众教育</a>
+                |<a href="#">考德上公培</a>
+                |<a href="#">在线英语培训</a>
+                |<a href="#">公务员考试网</a>
+                |<a href="#">坦途教育网</a>
+            </p>
+        </div>
+        <div class="b-joinus">
+            <span><a href="#" id="b-reg">注册加入幸福流</a><a href="#" id="b-known">了解快乐英雄权益</a></span>
+        </div>
+
+        <div class="b-sns">
+            <div class="sns-container">
+                <a target="_blank" href="#"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
+                <a target="_blank" href="#"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
+                <a target="_blank" href="#"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
+                <a target="_blank" href="#"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
             </div>
         </div>
     </div>
 </div>
-
-<div class="copyright_links" >
-    <div class="container_12">
-        苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司
-    </div>
+<!-- 底部友情链接 结束 -->
+<!-- 版权信息 开始 -->
+<div id="copy-right">
+    <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
+<!-- 版权信息 结束 -->
 
 
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript">
     $(".slideTxtBox").slide();
+
+
+    $('#happy-carousel').carousel({
+        interval: 4000
+    });
+
+
+    $('[id^=carousel-selector-]').click( function(){
+        var id_selector = $(this).attr("id");
+        var id = id_selector.substr(id_selector.length -1);
+        id = parseInt(id);
+        $('#happy-carousel').carousel(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+
+    $('[id^=carousel-selector-]').hover(function(){
+        var id_selector = $(this).attr("id");
+        var id = id_selector.substr(id_selector.length -1);
+        id = parseInt(id);
+        $('#happy-carousel').carousel(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+
+    $('#happy-carousel').on('slid', function (e) {
+        var id = $('.item.active').data('slide-number');
+        id = parseInt(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $('[id=carousel-selector-'+id+']').addClass('selected');
+    });
+
 </script>
 </body>
 </html>
