@@ -68,6 +68,233 @@ a.u-help {
 }
 
 
+/* 快乐大本营 */
+.happy-camp {
+    height: auto;
+    margin: 0 auto;
+    padding: 32px 0 0;
+    background: url(../img/camp-link.jpg) no-repeat 50% 90px;
+}
+
+.c-carousel {
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.happy-carousel {
+
+}
+
+.camp-nav {
+    position: absolute;
+    top : -241px;
+    left: -24px;
+}
+.camp-nav li {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+
+    font: 20px "微软雅黑";
+    color: #3c3c3c;
+
+    background-color: #ffffff;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+
+    border: #3c3c3c solid 1px;
+}
+
+.camp-nav li a {
+    line-height: 60px;
+}
+
+#happy-carousel{
+
+}
+
+.c-way-hero {
+    margin: 0 auto;
+    padding: 30px 0 0;
+}
+
+.c-way-hero img {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+/* 英雄风云场 */
+.hero-wind {
+    height: auto;
+    margin: 0 auto;
+    padding: 32px 0 0;
+    background: url(../img/wind-link.jpg) no-repeat 50% 90px;
+}
+
+.show_hero {
+    margin: 10px 0 0;
+}
+
+.show_hero_lesson {
+    height: auto;
+    padding: 20px 0 0 0;
+    /*margin: 10px 0 0 0;*/
+}
+
+#train_bt {
+    background: url(../img/twill-nav.jpg) no-repeat;
+    height: 41px;
+}
+
+.lesson_text {
+    color: #FFFFFF;
+    font: 14px "微软雅黑";
+    text-align: center;
+    line-height: 41px;
+    padding: 20px;
+}
+
+#interest_btn {
+    position: relative;
+    right: -20px;
+    top: -55px;
+    width: 150px;
+}
+
+.micro_lession_title {
+    height: 241px;
+    margin: 10px 0 19px 0;
+
+    position: relative;
+    top: -60px;
+    width: 341px;
+    height: 60px;
+    padding: 20px;
+    background-color: #222222;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.micro_lession_title a {
+    font: 12px "宋体";
+    color: #FFFFFF;
+}
+
+
+
+/* HERO达人 */
+
+.hero-people {
+    height: auto;
+    margin: 0 auto;
+    padding: 32px 0 0;
+    background: url(../img/hero-link.jpg) no-repeat 50% 90px;
+}
+
+.p-list {
+    margin: 10px 0 0;
+}
+
+.people-info {
+    height: 80px;
+    width: 330px;
+    font: 12px "宋体";
+    color: #3c3c3c;
+    text-align: left;
+    float: left;
+}
+
+.p-user-head {
+    float: left;
+    padding: inherit;
+    vertical-align: middle;
+    /*position:absolute;*/
+
+}
+
+.p-user-level, .p-user-name {
+    padding: 0 0 0 40px;
+}
+
+.p-user-info {
+    /*position:absolute;*/
+    float: left;
+
+    width: 280px;
+    z-index: 1;
+
+    padding: 10px 0 0 40px;
+    margin: 0 0 0 -30px;
+
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px; /* Safari 4 and earlier */
+    border-radius: 20px; /* Opera, Chrome, Safari 5, IE 9 */
+    border-top: 1px solid #fff;
+    background-color: hsla(182,44%,76%,.5);
+    background-image: -moz-linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,0) 30px);
+    background-image: -webkit-gradient(linear, 0 0, 0 30, from(hsla(0,0%,100%,.6)), to(hsla(0,0%,100%,0)));
+    -moz-box-shadow: 1px 1px 2px hsla(0,0%,0%,.3);
+    -webkit-box-shadow: 1px 1px 2px hsla(0,0%,0%,.3);
+    box-shadow: 1px 1px 2px hsla(0,0%,0%,.3); /* Opera, IE 9 */
+    word-wrap: break-word;
+}
+
+.p-user-info:after {
+    content: "\00a0"; /* &nbsp; */
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: -20px; /* width of right border */
+    width: 0;
+    height: 0;
+    border-width: 10px 20px 10px 0;
+    border-style: solid;
+    border-color: transparent hsla(182,44%,76%,.5) transparent transparent;
+}
+
+.p-user-info:hover {
+    top: -2px;
+    left: -2px;
+    -moz-box-shadow: 3px 3px 2px hsla(0,0%,0%,.3);
+    -webkit-box-shadow: 3px 3px 2px hsla(0,0%,0%,.3);
+    box-shadow: 3px 3px 2px hsla(0,0%,0%,.3); /* Opera, IE 9 */
+    text-shadow: 1px 1px 1px hsla(0,0%,100%,.7); /* FF, Opera, Safari, Chrome */
+}
+
+
+/* 活跃学校 */
+.active-school {
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0;
+    background: url(../img/active-link.jpg) no-repeat 50% 90px;
+}
+
+.s-avtive-list {
+    margin: 10px 0;
+}
+
+.sc {
+    height: 80px;
+    width: 200px;
+    font: 12px "宋体";
+    color: #3c3c3c;
+    text-align: left;
+    float: left;
+}
+.sc-l .sc-n {
+    /*float: left;*/
+}
+
+
+
+
+
+
 /* 友情链接 */
 .f-partner {
     text-align: center;
