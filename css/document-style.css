@@ -22,17 +22,48 @@
 .footprint ul {
 	width: 168px;
 	font-size: 16px;
-	color: #505050;
+	color: #646464;
 	font-family: "微软雅黑";
 	margin-left:18px;
 	
 }
 
-.footprint ul li span{
-	font-size: 14px;
-	
+.footprint ul li span,
+ i{
+	font-size: 14px;	
 }
-
+.personal-info{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/footmark-foot.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+	
+.scale-info{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/footmark-foot.png) no-repeat scroll 0 -42px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+	
+.testing-info{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/footmark-foot.png) no-repeat scroll 0 -84px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+	
+.production-info{
+	display:inline-block;
+	width:16px;
+	height:16px;
+	background:url(../img/footmark-foot.png) no-repeat scroll 0 -127px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}	
+	
 .footprint ul li{
 	width: 168px;
 	height: 44px;
@@ -128,15 +159,26 @@
 	width:456px;
 	margin:16px 0 0 132px;
 	overflow:hidden;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	font-weight:bold;
+	line-height:24px;
 	}
 .handle-edit{
 	float:left;
 	width:128px;
 	height:26px;
 	background-color:#a7d34b;
-	border-bottom:1px solid #7a7a7a;
-	border-left:1px solid #7a7a7a;
-	border-right:1px solid #7a7a7a;
+	-webkit-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+	-moz-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+	-o-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+	box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	
 	position:relative;
 	}	
 	
@@ -162,10 +204,103 @@
 	}
 .footprint-content textarea{
 	width:458px;
-	height:104px;
+	height:114px;
 	margin:16px 0 0 132px;
+	font-size:12px;
 	
 	}
+
+.list-footprint{
+	width: 670px;
+	border-top:2px solid #90c31f;
+	margin:16px 0 0 16px;
+	padding:20px 0 300px 0;
+	}
+	
+.list-footprint li{
+	width:574px;
+	height:38px;
+	line-height:38px;
+	border-top:1px dashed #dadada;
+	padding-left:30px;
+	letter-spacing:4px;
+	overflow:hidden;
+	}
+	
+.list-footprint span{
+	margin-right:10px;
+	}
+.list-footprint .mobile-icon{
+	display:inline-block;
+	width:20px;
+	height:40px;
+	background:url(../img/variety-icon.png)  scroll 0 0 rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+	
+.list-footprint .birthday-icon{
+	display:inline-block;
+	width:20px;
+	height:40px;
+	background:url(../img/variety-icon.png)  scroll 0 156px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+.list-footprint .seminary-icon{
+	display:inline-block;
+	width:20px;
+	height:40px;
+	background:url(../img/variety-icon.png)  scroll 0 116px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+.list-footprint .grade-icon{
+	display:inline-block;
+	width:20px;
+	height:40px;
+	background:url(../img/variety-icon.png)  scroll 0 76px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+	
+.list-footprint .postbox-icon{
+	display:inline-block;
+	width:20px;
+	height:40px;
+	background:url(../img/variety-icon.png)  scroll 0 38px rgba(0, 0, 0, 0);
+	vertical-align:middle;
+	}
+	
+.list-footprint em{
+	font: normal 12px "宋体";
+	margin-left:8px;
+	letter-spacing:normal;
+	}
+.list-footprint .hint-text{
+	display:block;
+	float:right;
+	}
+.affirm-btn{
+	float:right;
+	width:18px;
+	height:18px;
+	color:#fff;
+	font-size:8px;
+	background-color:#b1dc22;
+	line-height:8px;
+	margin:8px 14px 0 0;
+	}
+.affirm-btn span,
+.deny-btn span{
+	padding-left:3px;
+	}
+.deny-btn{
+	float:right;
+	width:18px;
+	height:18px;
+	color:#fff;
+	font-size:8px;
+	background-color:#ffaa3a;
+	line-height:8px;
+	margin:8px 54px 0 0;
+	}	
 /*.footprint-content hr{
 	width:670px;
 	height:2px;
