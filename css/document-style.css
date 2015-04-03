@@ -74,7 +74,7 @@
 	color:#505050;
 	text-decoration:none;
 	} 
-.footprint ul #footprint-mes {
+.footprint ul li:hover {
 	color:#ff7800;
 	-webkit-box-shadow: 1px 1px 1px 1px #f6c18a inset;
 	-moz-box-shadow: 1px 1px 1px 1px #f6c18a inset;
@@ -85,6 +85,7 @@
 	-o-border-radius: 20px 0 0 20px;
 	border-radius: 20px 0 0 20px;
 }
+
 .footprint ul #footprint-mes a{
 	color:#ff7800;
 	text-decoration:none;
