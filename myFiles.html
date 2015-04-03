@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>幸福流-我的档案</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
+
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all"/>
+
+</head>
+<body>
+
+<!-- 头部登陆导航 开始 -->
+<div id="header-login">
+    <div class="u-logion">
+        <ul>
+            <li><a class="u-lo btn btn-default" role="button">登陆</a></li>
+            <li><a class="u-reg btn btn-default" role="button">注册</a></li>
+            <li><a class="u-msg" href="#">我的信息</a></li>
+            <li><a class="u-info" href="#">个人信息</a></li>
+            <li><a class="u-help" href="#">在线帮助</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id="header">
+    <div class="h-nav navbar">
+        <div class="container">
+            <div class="h-logo navbar-brand hidden-sm">
+                <a href="index.html"><img src="img/logo.png" alt="logo" width="186px" height="54px"></a>
+            </div>
+            <div class="navbar-collapse collapse" role="navigation">
+                <ul class="h-nav-ul nav navbar-nav">
+                    <li class="dropdown hidden-sm hidden-md">
+                        <a class="h-nav-a dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">快乐大本营<b
+                                class="caret"></b></a>
+                        <ul class="h-drop-menu dropdown-menu">
+                            <li><a href="hero-game.html">训练营</a></li>
+                            <li><a href="#">师徒行</a></li>
+                            <li><a href="#">大秀场</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="h-nav-a" href="hero-game.html">英雄风云场</a></li>
+                    <li><a class="h-nav-a" href="#">我的档案</a></li>
+                    <li><a class="h-nav-a" href="#">我的集体</a></li>
+                </ul>
+                <div class="i-search nav navbar-nav navbar-right hidden-sm">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="快乐英雄">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span
+                                    class="glyphicon glyphicon-search"></span></button>
+                          </span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- 头部登陆导航 结束 -->
+
+
+<!-- 内容 开始 -->
+<div id="content" class="row">
+
+    <div class="document row">
+        <div class="col-md-3 col-md-offset-1">
+            <div class=" footprint">
+                <p class="footprint-title">我的印记</p>
+                <ul>
+                    <li class="active"><span class="personal-icon pink"></span> <a href="#">个人信息</a></li>
+                    <li><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <a href="#">安全设置</a></li>
+                    <li><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <a href="#">我的消息</a></li>
+                    <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <a href="#">我的收藏</a></li>
+                    <li><span class="scale-icon pink"></span> <a href="#">我的等级</a></li>
+                    <li><span class="testing-icon pink" aria-hidden="true"></span> <a href="#">我的评测</a></li>
+                    <li><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <a href="#">我的演习</a></li>
+                    <li><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <a href="#">我的标签</a></li>
+                    <li><span class="icon-user"></span> <a href="#">我的好友</a></li>
+                    <li><span class="icon-group"></span> <a href="#">我的集体</a></li>
+                    <li><span class="glyphicon glyphicon-film" aria-hidden="true"></span> <a href="#">我的微课</a></li>
+                    <li><span class="production-icon pink"></span> <a href="#">我的作品</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="footprint-text">
+                <div class="footprint-content">
+                    <div class="member-footp">
+                        <img src="img/head-file.jpg" alt="会员头像">
+                        <ul>
+                            <li><em>用户名</em>：<span>巴拉巴拉小魔仙</span></li>
+                            <li><em>姓</em><em class="spacing-em">名</em>：<span>王子涵</span></li>
+                            <li><em>性</em><em class="spacing-em">别</em>：<span id="boy-icon"></span><span
+                                    id="girl-icon"></span></li>
+                        </ul>
+                    </div>
+                    <div class="handle-footp">
+                        <span class="handle-edit">自我介绍<em></em></span>
+                        <a class="btn btn-default inbox-btn" href="#"><span class="glyphicon glyphicon-inbox"
+                                                                            aria-hidden="true"></span> 保存</a>
+                        <a class="btn btn-default edit-btn" href="#"><span class="glyphicon glyphicon-pencil"
+                                                                           aria-hidden="true"></span> 编辑</a>
+                    </div>
+                    <textarea cols="50" rows="5" id="textarea" placeholder="你想输入的内容" onKeyDown="textdown(event)"
+                              onKeyUp="textup()" onfocus="if(value=='限200'){value=''}"
+                              onblur="if (value ==''){value='200字'}"></textarea>
+                    <ul class="list-footprint">
+                        <li class="phone-mobile">
+                            <span class="mobile-icon"></span>
+                            电话
+                            <em>18322222222</em>
+                            <button class="deny-btn" type="button"><span class="glyphicon glyphicon-remove"
+                                                                         aria-hidden="true"></span></button>
+                            <button class="affirm-btn" type="button"><span class="glyphicon glyphicon-ok"
+                                                                           aria-hidden="true"></span></button>
+                            <span class="hint-text">是否公开</span>
+                        </li>
+                        <li>
+                            <span class="birthday-icon"></span>
+                            生日
+                            <em>1996-04-23</em>
+                            <button class="deny-btn" type="button"><span class="glyphicon glyphicon-remove"
+                                                                         aria-hidden="true"></span></button>
+                            <button class="affirm-btn" type="button"><span class="glyphicon glyphicon-ok"
+                                                                           aria-hidden="true"></span></button>
+                            <span class="hint-text">是否公开</span>
+                        </li>
+                        <li>
+                            <span class="seminary-icon"></span>
+                            学校
+                            <em>北京八十一中</em>
+                        </li>
+                        <li>
+                            <span class="grade-icon"></span>
+                            班级
+                            <em>10届2班</em>
+                        </li>
+                        <li>
+                            <span class="postbox-icon"></span>
+                            邮箱
+                            <em>18322222222@sina.cn</em>
+                            <button class="deny-btn" type="button"><span class="glyphicon glyphicon-remove"
+                                                                         aria-hidden="true"></span></button>
+                            <button class="affirm-btn" type="button"><span class="glyphicon glyphicon-ok"
+                                                                           aria-hidden="true"></span></button>
+                            <span class="hint-text">是否公开</span>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 内容区域 结束 -->
+
+<!-- 底部友情链接 开始 -->
+<div id="footer">
+    <div class="col-md-10 col-md-offset-1">
+
+        <div class="f-partner">
+            <span><img src="img/bottom-link.jpg"></span>
+
+            <p>
+                <a href="#">忆尔</a>
+                |<a href="#">清华积极心理研究中心</a>
+                |<a href="#">美国留学</a>
+                |<a href="#">知好乐网校</a>
+                |<a href="#">博众教育</a>
+                |<a href="#">考德上公培</a>
+                |<a href="#">在线英语培训</a>
+                |<a href="#">公务员考试网</a>
+                |<a href="#">坦途教育网</a>
+                |<a href="#">师兄帮帮忙</a>
+                |<a href="#">博浪网</a>
+                |<a href="#">智康堂</a>
+            </p>
+
+            <p>
+                <a href="#">忆尔</a>
+                |<a href="#">清华积极心理研究中心</a>
+                |<a href="#">美国留学</a>
+                |<a href="#">知好乐网校</a>
+                |<a href="#">博众教育</a>
+                |<a href="#">考德上公培</a>
+                |<a href="#">在线英语培训</a>
+                |<a href="#">公务员考试网</a>
+                |<a href="#">坦途教育网</a>
+            </p>
+        </div>
+        <div class="b-joinus">
+            <span><a href="#" id="b-reg">注册加入幸福流</a><a href="#" id="b-known">了解快乐英雄权益</a></span>
+        </div>
+
+        <div class="b-sns">
+            <div class="sns-container">
+                <a target="_blank" href="#">
+                    <div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img
+                            src="img/SinaWeibo.png"></div>
+                </a>
+                <a target="_blank" href="#">
+                    <div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img
+                            src="img/TencentWeibo.png"></div>
+                </a>
+                <a target="_blank" href="#">
+                    <div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png">
+                    </div>
+                </a>
+                <a target="_blank" href="#">
+                    <div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部友情链接 结束 -->
+<!-- 版权信息 开始 -->
+<div id="copy-right">
+    <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
+</div>
+<!-- 版权信息 结束 -->
+
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript">
+    $(".slideTxtBox").slide();
+
+
+    $('#happy-carousel').carousel({
+        interval: 4000
+    });
+
+
+    $('[id^=carousel-selector-]').click(function () {
+        var id_selector = $(this).attr("id");
+        var id = id_selector.substr(id_selector.length - 1);
+        id = parseInt(id);
+        $('#happy-carousel').carousel(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+
+    $('[id^=carousel-selector-]').hover(function () {
+        var id_selector = $(this).attr("id");
+        var id = id_selector.substr(id_selector.length - 1);
+        id = parseInt(id);
+        $('#happy-carousel').carousel(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+
+    $('#happy-carousel').on('slid', function (e) {
+        var id = $('.item.active').data('slide-number');
+        id = parseInt(id);
+        $('[id^=carousel-selector-]').removeClass('selected');
+        $('[id=carousel-selector-' + id + ']').addClass('selected');
+    });
+
+</script>
+</body>
+</html>

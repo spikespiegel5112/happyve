@@ -1,0 +1,338 @@
+@charset "utf-8";
+
+.document {
+    margin-top: 28px;
+}
+
+.footprint {
+    width: 260px;
+    height: 674px;
+    background: url(../img/stamp-file.png) no-repeat;
+}
+
+.footprint-title {
+    font: 24px "微软雅黑";
+    color: #fff;
+    padding: 16px 0 0 60px;
+    letter-spacing: 6px;
+    margin-bottom: 66px;
+}
+
+.footprint ul {
+    width: 168px;
+    font: 16px "微软雅黑";
+    color: #646464;
+    margin-left: 18px;
+
+}
+
+.footprint ul li span {
+    font-size: 14px;
+}
+
+.personal-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -21px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.personal-icon.pink {
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.scale-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -42px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.scale-icon.pink {
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -63px rgba(0, 0, 0, 0);
+}
+
+.testing-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -84px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.testing-icon.pink {
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -105px rgba(0, 0, 0, 0);
+}
+
+.production-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -126px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.production-icon.pink {
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -147px rgba(0, 0, 0, 0);
+}
+
+.footprint ul li {
+    width: 168px;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 22px;
+}
+
+.footprint ul li a {
+    color: #505050;
+    text-decoration: none;
+}
+
+.footprint ul li.active , .footprint ul li:hover {
+    color: #ff7800;
+    -webkit-box-shadow: 1px 1px 1px 1px #f6c18a inset;
+    -moz-box-shadow: 1px 1px 1px 1px #f6c18a inset;
+    -o-box-shadow: 1px 1px 1px 1px #f6c18a inset;
+    box-shadow: 1px 1px 1px 1px #f6c18a inset;
+    -webkit-border-radius: 20px 0 0 20px;
+    -moz-border-radius: 20px 0 0 20px;
+    -o-border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 0 20px;
+}
+
+.footprint ul li:hover a {
+    color: #ff7800;
+}
+
+.footprint-text {
+    width: 704px;
+    background: url(../img/personage-file.png) no-repeat;
+    padding-top: 40px;
+    font: 14px "微软雅黑";
+    color: #3c3c3c;
+}
+
+.footprint-content {
+    width: 704px;
+    border: 1px solid #b2b2b2;
+    background-color: #fff;
+}
+
+.member-footp {
+    overflow: hidden;
+    width: 550px;
+    margin: 24px 0 0 32px;
+}
+
+.member-footp img {
+    width: 72px;
+    height: 72px;
+    float: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.member-footp ul {
+    float: left;
+    margin-top: 4px;
+}
+
+.member-footp ul li {
+    height: 22px;
+    line-height: 22px;
+}
+
+.member-footp ul li em {
+    font-style: normal;
+}
+
+.member-footp ul li .spacing-em {
+    padding-left: 14px;
+}
+
+.member-footp ul li span {
+    font: 12px "宋体";
+}
+
+.member-footp ul li #boy-icon {
+    display: inline-block;
+    width: 21px;
+    height: 16px;
+    background: url(../img/grayness-file.png) no-repeat center;
+    border-right: 1px solid #3c3c3c;
+}
+
+.member-footp ul li #girl-icon {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    background: url(../img/croci-file.png) no-repeat center;
+}
+
+.handle-footp {
+    width: 456px;
+    margin: 16px 0 0 132px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+.handle-edit {
+    float: left;
+    width: 128px;
+    height: 26px;
+    background-color: #a7d34b;
+    -webkit-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    -moz-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    -o-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+
+    position: relative;
+}
+
+.handle-edit em {
+    width: 14px;
+    height: 9px;
+    background: url(../img/personage-bar.jpg) no-repeat;
+    position: absolute;
+    z-index: 4;
+    bottom: -8px;
+    left: 57px;
+}
+
+.handle-footp .edit-btn {
+    color: #96c81e;
+    float: right;
+    margin-right: 10px;
+}
+
+.handle-footp .inbox-btn {
+    color: #ff7800;
+    float: right;
+}
+
+.footprint-content textarea {
+    width: 458px;
+    height: 114px;
+    margin: 16px 0 0 132px;
+    font-size: 12px;
+
+}
+
+.list-footprint {
+    width: 670px;
+    border-top: 2px solid #90c31f;
+    margin: 16px 0 0 16px;
+    padding: 20px 0 300px 0;
+}
+
+.list-footprint li {
+    width: 574px;
+    height: 38px;
+    line-height: 38px;
+    border-top: 1px dashed #dadada;
+    padding-left: 30px;
+    letter-spacing: 4px;
+    overflow: hidden;
+}
+
+.list-footprint span {
+    margin-right: 10px;
+}
+
+.list-footprint .mobile-icon {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url(../img/variety-icon.png) scroll 0 0 rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.list-footprint .birthday-icon {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url(../img/variety-icon.png) scroll 0 156px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.list-footprint .seminary-icon {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url(../img/variety-icon.png) scroll 0 116px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.list-footprint .grade-icon {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url(../img/variety-icon.png) scroll 0 76px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.list-footprint .postbox-icon {
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    background: url(../img/variety-icon.png) scroll 0 38px rgba(0, 0, 0, 0);
+    vertical-align: middle;
+}
+
+.list-footprint em {
+    font: normal 12px "宋体";
+    margin-left: 8px;
+    letter-spacing: normal;
+}
+
+.list-footprint .hint-text {
+    display: block;
+    float: right;
+}
+
+.affirm-btn {
+    float: right;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    font-size: 8px;
+    background-color: #b1dc22;
+    line-height: 8px;
+    margin: 8px 14px 0 0;
+}
+
+.affirm-btn span,
+.deny-btn span {
+    padding-left: 3px;
+}
+
+.deny-btn {
+    float: right;
+    width: 18px;
+    height: 18px;
+    color: #fff;
+    font-size: 8px;
+    background-color: #ffaa3a;
+    line-height: 8px;
+    margin: 8px 54px 0 0;
+}
+
+/*.footprint-content hr{
+	width:670px;
+	height:2px;
+	color:#90c31f;
+	}*/
+/* CSS Document */
+
