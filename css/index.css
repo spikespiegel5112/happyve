@@ -76,9 +76,14 @@ a.u-help {
     background: url(../img/camp-link.jpg) no-repeat 50% 90px;
 }
 
+.slider , .c-carousel {
+    margin: 0 ;
+    padding: 10px 0 0 0;
+
+}
 .c-carousel {
-    margin: 0 auto;
-    padding: 20px 0 0 0;
+    width: 690px;
+    height: 272px;
 }
 
 .happy-carousel {
@@ -87,12 +92,12 @@ a.u-help {
 
 .camp-nav {
     position: absolute;
-    top : -241px;
+    top : -258px;
     left: -24px;
 }
 .camp-nav li {
     width: 200px;
-    height: 60px;
+    height: 65px;
     text-align: center;
 
     font: 20px "微软雅黑";
