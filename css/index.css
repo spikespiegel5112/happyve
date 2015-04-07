@@ -73,7 +73,7 @@ a.u-help {
     height: auto;
     margin: 0 auto;
     padding: 32px 0 0;
-    background: url(../img/camp-link.jpg) no-repeat 50% 90px;
+    background: url(../img/camp-link.jpg) no-repeat 14% 90px;
 }
 
 .slider , .c-carousel {
@@ -90,14 +90,18 @@ a.u-help {
 
 }
 
+.carousel{
+	width:690px;
+}
+
 .camp-nav {
     position: absolute;
-    top : -258px;
+    bottom : -9px;
     left: -24px;
 }
 .camp-nav li {
     width: 200px;
-    height: 65px;
+    height: 68px;
     text-align: center;
 
     font: 20px "微软雅黑";
@@ -109,9 +113,37 @@ a.u-help {
     -khtml-opacity: 0.8;
     opacity: 0.8;
 
-    border: #3c3c3c solid 1px;
+    border: #caceb2 solid 1px;
+	position:relative;
 }
+	
+.pointing-next{
+	display: inline-block;
+	width:12px;
+	height:21px;
+	position:absolute;
+	right:-11px;
+	top:22px;
+	z-index:6;
+	}
+.camp-nav li:hover .pointing-next{
+	background:url(../img/camp-bar.png) no-repeat;
+	}
 
+.camp-nav li:hover{
+	 background-color: #9bcb27;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+		
+	-moz-box-shadow:   1px 2px 2px #879535;
+    -webkit-box-shadow:   1px 2px 2px #879535;
+    box-shadow:   1px 2px 2px #879535;
+	}
+.camp-nav li:hover a{
+	color:#fff;
+	}	
 .camp-nav li a {
     line-height: 60px;
 }
@@ -119,7 +151,6 @@ a.u-help {
 #happy-carousel{
 
 }
-
 .c-way-hero {
     margin: 0 auto;
     padding: 30px 0 0;
@@ -127,7 +158,9 @@ a.u-help {
 
 .c-way-hero img {
     float: left;
-    margin: 0 10px 0 0;
+    margin: 0 0 0 12px;
+	width:340px;
+	height:100px;
 }
 
 /* 英雄风云场 */
@@ -135,7 +168,7 @@ a.u-help {
     height: auto;
     margin: 0 auto;
     padding: 32px 0 0;
-    background: url(../img/wind-link.jpg) no-repeat 50% 90px;
+    background: url(../img/wind-link.jpg) no-repeat 14% 90px;
 }
 
 .show_hero {
@@ -147,36 +180,100 @@ a.u-help {
     padding: 20px 0 0 0;
     /*margin: 10px 0 0 0;*/
 }
+.train{
+	width:341px;
+	}
+
 
 #train_bt {
+	width:341px;
     background: url(../img/twill-nav.jpg) no-repeat;
     height: 41px;
+	overflow:hidden;
 }
 
-.lesson_text {
-    color: #FFFFFF;
-    font: 14px "微软雅黑";
-    text-align: center;
-    line-height: 41px;
-    padding: 20px;
+#train_bt .lesson_text {
+    color: #FFF;
+    font: bold 14px/41px "微软雅黑";
+	display:block;
+	float:left;
+	width:240px;
+	margin-left:16px;
 }
 
+#train_bt .lesson-title{
+	color: #FFF;
+	display:block;
+	float:right;
+	width:64px;
+	text-align: center;
+	font: bold 16px/41px "微软雅黑";
+	}
+	
 #interest_btn {
     position: relative;
     right: -20px;
     top: -55px;
     width: 150px;
 }
+.micro_lession{
+	width:341px;
+	margin-left:8px;
+	position: relative;
+	}
+#micro_lession_bt{
+	background: url(../img/twill-blue.jpg) no-repeat;
+    height: 41px;
+	overflow: hidden;
+	width:341px;
+	}
+#micro_lession_bt .lesson_text {
+    color: #FFF;
+    font: bold 14px/20px "微软雅黑";
+	display:block;
+	float:left;
+	width:240px;
+	margin-left:16px;
+}
 
+#micro_lession_bt .lesson-title{
+	color: #FFF;
+	display:block;
+	float:right;
+	width:64px;
+	text-align: center;
+	font: bold 16px/41px "微软雅黑";
+	}
+
+.micro-play{
+	width:88px;
+	height:88px;
+	position:absolute;
+	top:80px;
+	left:130px;
+	z-index:2;
+	border-radius:50%;
+	}
+
+.micro-play img{
+	width:86px;
+	height:86px;
+	border-radius:50%;
+	}
+
+.micro-play:hover{
+	top:82px;
+	background-color:  hsla(200, 20%, 30%, 0.2);
+	}
+	
 .micro_lession_title {
     height: 241px;
-    margin: 10px 0 19px 0;
 
     position: relative;
-    top: -60px;
+    bottom: 40px;
     width: 341px;
-    height: 60px;
-    padding: 20px;
+    height: 40px;
+    padding: 4px;
     background-color: #222222;
     filter: alpha(opacity=80);
     -moz-opacity: 0.8;
@@ -196,8 +293,8 @@ a.u-help {
 .hero-people {
     height: auto;
     margin: 0 auto;
-    padding: 32px 0 0;
-    background: url(../img/hero-link.jpg) no-repeat 50% 90px;
+    /*padding: 32px 0 0;*/
+    background: url(../img/hero-link.jpg) no-repeat 14% 50px;
 }
 
 .p-list {
@@ -279,11 +376,11 @@ a.u-help {
     height: auto;
     margin: 0 auto;
     padding: 30px 0 0;
-    background: url(../img/active-link.jpg) no-repeat 50% 90px;
+    background: url(../img/active-link.jpg) no-repeat 14% 90px;
 }
 
 .s-avtive-list {
-    margin: 10px 0;
+    margin: 10px 0 10px -20px;
 }
 
 .sc {
@@ -295,38 +392,69 @@ a.u-help {
     float: left;
 	margin-right:26px;
 }
-
-.sc-l{
-	width:44px;
-	height:44px;
-	float:left;
-	-moz-border-radius: 20px;
-    -webkit-border-radius: 20px; /* Safari 4 and earlier */
-    border-radius: 20px; /* Opera, Chrome, Safari 5, IE 9 */
-	border:1px #060 solid;
-	
-	}
-	
-.sc-n{
-	width:156px;
-	height:32px;
-	float:right;
-	line-height:32px;
-	position:relative;
-	margin-top:6px;
-	
-    background-image: -moz-linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,0) 30px);
-    background-image: -webkit-gradient(linear, 0 0, 0 30, from(hsla(0,0%,100%,.6)), to(hsla(0,0%,100%,0)));
-    -moz-box-shadow: 1px 1px 2px hsla(0,0%,0%,.3);
-    -webkit-box-shadow: 1px 1px 2px hsla(0,0%,0%,.3);
-    box-shadow: 1px 1px 2px hsla(0,0%,0%,.3); /* Opera, IE 9 */
-    word-wrap: break-word;
-	}
 .sc-l .sc-n {
 	display:inline-block;
     /*float: left;*/
 }
+.sc-l{
+	width:44px;
+	height:44px;
+	float:left;
+	-moz-border-radius: 26px;
+    -webkit-border-radius: 26px; /* Safari 4 and earlier */
+    border-radius: 26px; /* Opera, Chrome, Safari 5, IE 9 */
+	border:1px #9f9f9f solid;
+	
+	}
+	
+.sc-l img{
+	width:42px;
+	height:42px;
+	-moz-border-radius: 26px;
+    -webkit-border-radius: 26px; /* Safari 4 and earlier */
+    border-radius: 26px;
+	}
+	
+.sc-n{
+	width:154px;
+	height:26px;
+	float:right;
+	line-height:26px;
+	position:relative;
+	margin-top:8px;
+	padding-left:4px;
+	
+    -moz-box-shadow:  1px 1px 1px #999 inset, 0 1px 1px  #696868;
+    -webkit-box-shadow:  1px 1px 1px #999 inset, 0 1px 1px #696868;
 
+    box-shadow:  1px 1px 1px #999 inset, 0 1px 1px #696868;
+
+    word-wrap: break-word;
+	
+	}
+.sc-n p{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	}
+
+
+.sc:hover .sc-l{
+	-moz-border-radius: 26px;
+    -webkit-border-radius: 26px; /* Safari 4 and earlier */
+    border-radius: 26px; /* Opera, Chrome, Safari 5, IE 9 */
+	border:2px #94ca25 solid;
+	
+	}
+	
+.sc:hover .sc-n{
+	-moz-box-shadow:  1px 1px 1px #bcde76 inset, 0 1px 1px 1px #8bc137;
+    -webkit-box-shadow:  1px 1px 1px #bcde76 inset, 0 1px 1px 1px #8bc137;
+    box-shadow:  1px 1px 1px #bcde76 inset, 0 1px 1px 1px #8bc137;
+	
+	}
+
+	
 .sc-n i{
 	width:10px;
 	height:9px;
@@ -336,7 +464,9 @@ a.u-help {
 	background-image:url(../img/school-gray.png);
 	}
 
-
+.sc:hover i{
+	background-image:url(../img/school-green.png);
+	}
 
 
 
@@ -361,7 +491,7 @@ a.u-help {
 .b-joinus {
     text-align: center;
     margin: 10px 0 0 0;
-    background: url(../img/back-bottom.jpg) no-repeat;
+    background: url(../img/back-bottom.jpg) center 100% no-repeat;
 }
 
 .b-joinus a {
@@ -559,16 +689,48 @@ a.u-help {
 .slideTxtBox .bd ul {
     padding:15px;
     zoom:1;
+	overflow: auto;
 }
 
 .slideTxtBox .bd li {
-    height:28px;
-    line-height:28px;
+
+ 
+}
+
+.slideTxtBox .bd li p{
+    line-height:18px;
     font-size: 12px;
     color: #414141;
     white-space:nowrap;
 }
 
+.slideTxtBox .bd li span{
+	display:none;
+	}
+	
+.slideTxtBox .bd ul:hover {
+    overflow: auto;
+}
+	
+.slideTxtBox .bd li:hover p{
+	color:#5aaa00;
+	}
+.slideTxtBox .bd li:hover span{
+	display:block;
+	widows:250px;
+	height:146px;
+	position:relative;
+	}
+	
+.slideTxtBox .bd li:hover span .bd-play{
+	width:66px;
+	height:66px;
+	background:url(../img/video-mes.png) no-repeat;
+	position:absolute;
+	top:40px;
+	left:90px;
+	z-index:22;
+	}
 .slideTxtBox .bd ul li a{
     color: #414141;
 }
