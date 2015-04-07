@@ -217,7 +217,8 @@ a.u-help {
     float: left;
     padding: inherit;
     vertical-align: middle;
-    /*position:absolute;*/
+    position:absolute;
+	z-index:4;
 
 }
 
@@ -228,12 +229,13 @@ a.u-help {
 .p-user-info {
     /*position:absolute;*/
     float: left;
+	position:relative;
 
     width: 280px;
     z-index: 1;
 
     padding: 10px 0 0 40px;
-    margin: 0 0 0 -30px;
+    margin: 0 0 0 30px;
 
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px; /* Safari 4 and earlier */
@@ -246,6 +248,7 @@ a.u-help {
     -webkit-box-shadow: 1px 1px 2px hsla(0,0%,0%,.3);
     box-shadow: 1px 1px 2px hsla(0,0%,0%,.3); /* Opera, IE 9 */
     word-wrap: break-word;
+	
 }
 
 .p-user-info:after {
@@ -284,16 +287,54 @@ a.u-help {
 }
 
 .sc {
-    height: 80px;
-    width: 200px;
+    height: 44px;
+    width: 210px;
     font: 12px "宋体";
     color: #3c3c3c;
     text-align: left;
     float: left;
+	margin-right:26px;
 }
+
+.sc-l{
+	width:44px;
+	height:44px;
+	float:left;
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px; /* Safari 4 and earlier */
+    border-radius: 20px; /* Opera, Chrome, Safari 5, IE 9 */
+	border:1px #060 solid;
+	
+	}
+	
+.sc-n{
+	width:156px;
+	height:32px;
+	float:right;
+	line-height:32px;
+	position:relative;
+	margin-top:6px;
+	
+    background-image: -moz-linear-gradient(hsla(0,0%,100%,.6), hsla(0,0%,100%,0) 30px);
+    background-image: -webkit-gradient(linear, 0 0, 0 30, from(hsla(0,0%,100%,.6)), to(hsla(0,0%,100%,0)));
+    -moz-box-shadow: 1px 1px 2px hsla(0,0%,0%,.3);
+    -webkit-box-shadow: 1px 1px 2px hsla(0,0%,0%,.3);
+    box-shadow: 1px 1px 2px hsla(0,0%,0%,.3); /* Opera, IE 9 */
+    word-wrap: break-word;
+	}
 .sc-l .sc-n {
+	display:inline-block;
     /*float: left;*/
 }
+
+.sc-n i{
+	width:10px;
+	height:9px;
+	position:absolute;
+	top:9px;
+	left:-9px;
+	background-image:url(../img/school-gray.png);
+	}
 
 
 
