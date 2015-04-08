@@ -644,7 +644,7 @@ a.u-help {
     border:1px solid #ddd;
     border-style: none solid solid solid;
     text-align:left;
-    height: 300px;
+    height: 280px;
     overflow: hidden;
     -moz-border-radius: 0 0 10px 10px;      /* Gecko browsers */
     -webkit-border-radius: 0 0 10px 10px;   /* Webkit browsers */
@@ -653,45 +653,75 @@ a.u-help {
 }
 
 .slideTxtBox .hd {
-    height:30px;
-    line-height:30px;
+    height:39px;
+    line-height:39px;
     background:#f4f4f4;
-    padding:0 20px;
-    /*border-bottom:1px solid #ddd;*/
+    border-bottom:1px solid #646464;
     position:relative;
+	
 }
 .slideTxtBox .hd ul {
     float:left;
     position:absolute;
-    left:20px;
+	left:5px;
     top:-1px;
     height:32px;
-    display: inline;
+	width:100%;
 }
 
 .slideTxtBox .hd ul li {
     float:left;
-    padding:0 15px;
     cursor:pointer;
     color: #414141;
-    width: 100px;
+    width: 45%;
     text-align: center;
 }
 
+.slideTxtBox .hd ul .hd-left {
+	margin:0 0 0 5%;
+}
+
+.slideTxtBox .hd ul .hd-right {
+	margin:0 5% 0 0;
+}
+
 .slideTxtBox .hd ul li.on {
-    height:30px;
+    height:40px;
     background:#91c81e;
     /*border:1px solid #ddd;*/
     color: #ffffff;
-    border-bottom:2px solid #fff;
 }
 
+.slideTxtBox .bd{
+
+	}
 .slideTxtBox .bd ul {
     padding:15px;
     zoom:1;
 	overflow: auto;
+	position:relative;
 }
 
+.slideTxtBox .bd .bd-bar{
+	width:12px;
+	height:7px;
+	position:absolute;
+	top:0px;
+	left:25%;
+	background:url(../img/side-bar.png) no-repeat;
+	z-index:2;
+}
+
+.slideTxtBox .bd .bdd-bar{
+	width:14px;
+	height:9px;
+	position:absolute;
+	top:0px;
+	right:25%;
+	background:url(../img/side-bar.png) no-repeat;
+	z-index:2;
+}
+	
 .slideTxtBox .bd li {
 
  
@@ -704,10 +734,6 @@ a.u-help {
     white-space:nowrap;
 }
 
-.slideTxtBox .bd li span{
-	display:none;
-	}
-	
 .slideTxtBox .bd ul:hover {
     overflow: auto;
 }
@@ -715,14 +741,19 @@ a.u-help {
 .slideTxtBox .bd li:hover p{
 	color:#5aaa00;
 	}
+
+/*.slideTxtBox .bd li span{
+	display:none;
+	}
+	
 .slideTxtBox .bd li:hover span{
 	display:block;
 	widows:250px;
 	height:146px;
 	position:relative;
-	}
+	} 微课点击文字出现的缩略图*/
 	
-.slideTxtBox .bd li:hover span .bd-play{
+/*.slideTxtBox .bd li:hover span .bd-play{
 	width:66px;
 	height:66px;
 	background:url(../img/video-mes.png) no-repeat;
@@ -730,7 +761,7 @@ a.u-help {
 	top:40px;
 	left:90px;
 	z-index:22;
-	}
+	} 先前微课点击文字出现视频缩略图的播放按钮*/
 .slideTxtBox .bd ul li a{
     color: #414141;
 }
