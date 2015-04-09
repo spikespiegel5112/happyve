@@ -41,6 +41,7 @@ a.u-help {
     line-height: 70px;
     width: 130px;
     text-align: center;
+	margin:10px 0 0;
 }
 
 .h-nav-ul {
@@ -54,13 +55,13 @@ a.u-help {
 }
 
 .h-logo {
-    padding: 0 0 10px 0;
+    padding: 6px 0 0;
     margin:  0 10px 0 0;
 }
 
 .i-search {
     width: 220px;
-    padding: 10px 40px 0 0;
+    padding: 0 40px 0 0;
 }
 
 .input-group-btn  {
@@ -74,21 +75,31 @@ a.u-help {
     margin: 0 auto;
     padding: 32px 0 0;
     background: url(../img/camp-link.jpg) no-repeat 14% 90px;
+	
 }
 .p-little-img{
 	overflow:hidden;
+	position:relative;
 	}
 	
 .p-little-img ul{
-	float:right; 
-	margin:7% 12% 0 0;
+	position:absolute;
+/*	margin:7% 12% 0 0;*/
+    top:60px;
+	left:0;
+	overflow:hidden;
+	width:710px;
+	text-align:right;
+	}
+.p-little-img ul li{
+/*	float:right;*/
 	}
 .p-little-img ul a{
 	font:14px "微软雅黑";
 	}	
 .slider , .c-carousel {
     margin: 0 ;
-    padding: 10px 0 0 0;
+    padding: 10px 0 0;
 
 }
 .c-carousel {
@@ -243,7 +254,7 @@ a.u-help {
 	display:block;
 	float:left;
 	width:240px;
-	margin-left:16px;
+	margin:1px 0 0 16px;
 }
 
 #micro_lession_bt .lesson-title{
@@ -665,24 +676,31 @@ a.u-help {
 	margin-left:6%;
 	padding-top:5px;
 }
+
 .user-tag h4 {
 	padding:0 0 0 70px; 
 	font:24px '微软雅黑'; 
 	color:#fff; 
 	letter-spacing:4px;
 	}
-.user-tag img{
+.user-tag .share-tag{
 	position:absolute;
 	top:36px;;
 	right:52px;;
 	cursor:pointer;
 	}
 
+.label-content{
+	width:206px;
+	height:250px;
+	margin:40px 0 0 34px;
+	}
+
 .slideTxtBox {
     border:1px solid #ddd;
     border-style: none solid solid solid;
     text-align:left;
-    height: 280px;
+    height: 242px;
     overflow: hidden;
     -moz-border-radius: 0 0 10px 10px;      /* Gecko browsers */
     -webkit-border-radius: 0 0 10px 10px;   /* Webkit browsers */
@@ -749,7 +767,12 @@ a.u-help {
 	background:url(../img/side-bar.png) no-repeat;
 	z-index:2;
 }
-
+.evaluation-none{
+	width:285px;
+	height:184px;
+	margin-left:-6px;
+	}
+	
 .slideTxtBox .bd .bdd-bar{
 	width:14px;
 	height:9px;
