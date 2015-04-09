@@ -2,7 +2,7 @@
 ul{padding:0;}
 body{font-family: "microsoft yahei";}
 /*~~~~~~~~~~~changemyself_list~~~~~~~~~~~*/
-.changemyself_wrapper{margin:20px 0;width: 690px;background: #fff;border: 1px solid #bbb;border-radius: 10px;}
+.changemyself_wrapper{margin:20px 0;width: 690px;min-height:1290px;background: #fff;border: 1px solid #bbb;border-radius: 10px;}
 .changemyself_wrapper .changemyself_prev{display:block;margin:1em;color:#91C81E;font-size: 1.2em;color:#91c31e;font-weight: bold;}
 .changemyself-banner-article p{float:left;margin:20px 0 0 50px;width:400px;line-height: 1.6em;font-size: 1.2em;}
 .changemyself-banner-article img{float:left;}
@@ -21,14 +21,17 @@ body{font-family: "microsoft yahei";}
 .newbadhabbit_dialog_wrapper a{text-align: center;color:#fff;}
 .inputnumber_item{margin:0 0 20px 0;color:#ccc;text-align: right;}
 .inputnumber_item span{color:red;}
-.newbadhabbit_title_wrapper a{width: 105px;height: 27px;line-height:27px;color:#fff;background: #91c31e;font-size: 1.4em;text-align: center;position: absolute;left: 50px;bottom: 10px;}
+.changemyself_button_item{width: 100%;}
+.changemyself_button:link{padding:0.2em 1em;height: 27px;line-height:20px;color:#fff;background: #91c31e;font-size: 1.4em;text-align: center;}
+.changemyself_button:hover{color:#fff;}
 .newbadhabbit_title_wrapper{padding:0 0 0 50px;width:100%;position: relative;}
 .newbadhabbit_title_item{float: right;width:95%;margin:0 46px 0 0;}
+.newbadhabbit_title_item a{position: absolute;left: 50px;bottom: 10px;}
 .newbadhabbit_title_img{margin:0 0 10px 0;width: 100%;border-bottom:1px solid #000;}
 .newbadhabbit_title_img img{margin:0 0 0 480px;}
 .newbadhabbit_title_item .newbadhabbit_img{float: right;margin:0 0 5px 0;width: 320px;height: 200px;}
-.newbadhabbit_title_item p{font-size: 1.4em;margin:0;text-align: right;}
-.newbadhabbit_title_item p label{font-size: 1.4em;}
+.statistics_item{padding:1.5em 0;font-size: 1.4em;margin:0;text-align: right;text-align: center;}
+.statistics_item label{font-size: 1.4em;}
 .newbadhabbit_content_wrapper{min-height:845px;padding:65px 50px;font-size: 1.3em;}
 .newbadhabbit_content_item img{float:left;}
 .newbadhabbit_content_item{width: 100%;height: auto;}
@@ -37,9 +40,9 @@ body{font-family: "microsoft yahei";}
 .newbadhabbit_img_item{width: 320px;}
 .newbadhabbit_list_item{margin:12px 0 12px 20px;width: 248px;}
 .newbadhabbit_list_item label{float:left;width:80px;color:#555;font-weight: normal;}
-.newbadhabbit_list_item p{float:left;margin:0 0 24px 0;width: 167px;border-bottom:1px solid #000;font-size: 0.9em;}<p></p>
+.newbadhabbit_list_item p{float:left;margin:0 0 24px 0;width: 167px;border-bottom:1px solid #000;font-size: 0.9em;}
 #progressbar{float:left;margin:10px 0;width: 120px;background: #D8D5D5;}
-.newbadhabbit_percentage{float:right;width: 3em;text-align: right;d}
+.newbadhabbit_percentage{float:right;width: 3em;text-align: right;}
 #progressbar span{float:left;height:5px;background:#91C81E;}
 /*~~~~~~~~~~~changemyself_content~~~~~~~~~~~*/
 .decoratebar_item_660{margin:0 auto;width: 660px;height:2px;position: relative;background: #91c81e;}
@@ -50,8 +53,14 @@ body{font-family: "microsoft yahei";}
 .changemyself_content_title{display:inline-block;margin:20px auto;padding: 0.2em 1.7em;line-height:1.2em;background: #90c91d;color: #fff;font-size: 1.3em;}
 .changemyself_content_img{margin: 0 auto;width: 590px;height: 360px;}
 .changemyself_note_wrapper{margin: 0 auto;width: 590px;}
-.changemyself_note_wrapper textarea{padding:0.3em 1em 2.3em 1em;width: 100%;height: 130px;}
-.changemyself_note_title{color:#;}
+.changemyself_note_wrapper a{float: right;margin:1em 0;}
+.changemyself_note_wrapper .changemyself_note_title{width: 6em;}
+.changemyself_note_title{margin:2em 0 1em 0;width:auto;height:1.8em;color:#91c81e;border-bottom:1px solid #91c81e;}
+.changemyself_note_title span{float:left;width: 20px;height: 20px;background: url(../img/img_wbl/img_sprite_00000.png) 2px 0px;}
+.changemyself_note_title label{float: left;margin:3px 0 0 0;}
 .changemyself_note_content{position: relative;}
-.changemyself_note_content textarea{color:#3c3c3c;border: 1px solid #}
+.changemyself_note_content textarea{padding:0.3em 1em 2.3em 1em;width: 100%;height: 130px;border-radius: 5px;border:1px solid #c8c8c8;color:#3c3c3c;}
+.changemyself_note_content textarea:focus{box-shadow: 0px 0px 7px #70CEFF;}
 .changemyself_note_content p{position: absolute;right: 2em;bottom: -15px;}
+.changemyself_countdown_item{margin:0 0 0 5em;width: 230px;height: 165px;background: url(../img/img_wbl/dialoguebix_1_00000.png);}
+.changemyself_countdown_wrapper img{float: right;margin:0 7em 0 0;position: relative;bottom:25px;}
