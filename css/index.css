@@ -75,7 +75,17 @@ a.u-help {
     padding: 32px 0 0;
     background: url(../img/camp-link.jpg) no-repeat 14% 90px;
 }
-
+.p-little-img{
+	overflow:hidden;
+	}
+	
+.p-little-img ul{
+	float:right; 
+	margin:7% 12% 0 0;
+	}
+.p-little-img ul a{
+	font:14px "微软雅黑";
+	}	
 .slider , .c-carousel {
     margin: 0 ;
     padding: 10px 0 0 0;
@@ -576,16 +586,27 @@ a.u-help {
 /* 个人信息 */
 
 .user_info {
-    width: 300px;
+    /*width: 300px;
     height: 88px;
     margin: 22px 0 100px 0;
-    text-align: center;
+    text-align: center;*/
 }
 
 .user_name {
-    padding: 0 0 0 30px;
+    /*padding: 0 0 0 30px;*/
 }
 
+.user_name .space-user{
+	display:block;
+	border-bottom:2px solid #90c31f;
+	}
+	
+.s-header-photo{
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+	margin-left:10px;
+	}
 .user_header {
     float: left;
 }
@@ -594,12 +615,12 @@ a.u-help {
     margin-left: 10px;
     font-family: "微软雅黑";
     text-align: left;
-    padding: 18px 0 0 80px;
+    padding: 8px 0 0 70px;
 }
 
 
 #user_sc {
-    margin: 0 0 8px 0;
+    margin: 0 0 6px 0;
 }
 
 .name {
@@ -611,20 +632,24 @@ a.u-help {
     font-size: 14px;
     color: #5aa000;
 }
-
-.user_info hr {
-    margin:10px;
-    height:2px;
-    border:0px;
-    background-color:#91c81e;
-    color:#91c81e;
-}
+.school-icon{
+	display:inline-block;
+	width:20px;
+	height:18px;
+	background: url(../img/school-icon.png) no-repeat;
+	}
 
 .user_friend, .user_name{
     padding: 0 0 10px 0;
     text-align: center;
 }
-
+.user_friend a{
+	margin-left:10px;
+	}
+.user_friend .glyphicon-heart{
+	font-size:15px;
+	vertical-align:middle;
+	}
 
 /* 微课 */
 .user-lesson, .user-tag {
@@ -632,12 +657,26 @@ a.u-help {
 }
 
 .user-tag {
-    background: url(../img/label-mine.png) no-repeat ;
+    background: url(../img/label-mine.png) no-repeat;
     background-position : center;
     height: 352px;
-    padding: 0 0 0 10px;
+	width:300px;
+	position:relative;
+	margin-left:6%;
+	padding-top:5px;
 }
-
+.user-tag h4 {
+	padding:0 0 0 70px; 
+	font:24px '微软雅黑'; 
+	color:#fff; 
+	letter-spacing:4px;
+	}
+.user-tag img{
+	position:absolute;
+	top:36px;;
+	right:52px;;
+	cursor:pointer;
+	}
 
 .slideTxtBox {
     border:1px solid #ddd;

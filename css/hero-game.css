@@ -10,7 +10,7 @@
 .train-hero {
 	width: 690px;
 	height: 352px;
-	margin: 0px 0 34px 0;
+	margin: 30px 0 34px 0;
 	position: relative;
 }
 
@@ -34,11 +34,25 @@
 	height: 298px;
 	overflow: hidden;
 	background-image: url(../img/tearcher-wind.jpg);
+	padding:36px 0 0 32px;
 }
+
+.train-img p{
+	font:12px/20px "宋体";
+	color:#3c3c3c;
+	}
+
+.train-img .psychology-th{
+	font:16px "微软雅黑";
+	margin-top:30px;
+	}
+
+.train-img a{
+	color: #609002;
+	}
 /*按钮开始*/
 .train-campbtn {
-	margin-top: 249px;
-	margin-left: 32px;
+	margin: 20px 0 0 32px;	
 }
 
 .train-btn {
@@ -47,7 +61,7 @@
 	position: absolute;
 	font: 16px "微软雅黑";
 	font-weight: bold;
-	color: #609002;
+	
 	-webkit-box-shadow: inset 0 0 0 #bcde76, 0 2px 2px 2px #8bc137;
 	-moz-box-shadow: inset 0 0 0  #bcde76, 0 2px 2px 2px #8bc137;
 	-o-box-shadow: inset 0 0 0  #bcde76, 0 2px 2px 2px #8bc137;
@@ -57,7 +71,9 @@
 	-o-border-radius: 4px;
 	border-radius: 4px;
 }
-
+.train-btn:hover{
+	color:#fff;
+	}
 .train-btn:active {
 	color: #8bc137;
 	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
@@ -120,7 +136,7 @@
 	width: 216px;
 }
 
-.teacher-img ul li .transmit-vid {
+/*.teacher-img ul li .transmit-vid {
 	width: 50px;
 	height: 50px;
 	position: absolute;
@@ -128,8 +144,11 @@
 	top: 36px;
 	left: 82px;
 	z-index: 30;
-}
-
+	border-radius:50%;
+}*/
+.transmit-vid img{
+	border-radius:50%;
+	}
 .teacher-img ul li span {
 	display: inline-block;
 	border: 3px solid #e3e3e3;
@@ -147,7 +166,13 @@
 	top: 36px;
 	left: 82px;
 	z-index: 30;
+	border-radius:50%;
 }
+
+.teacher-img .first-list .transmit-vid:hover{
+	top: 38px;
+	background-color:  hsla(200, 20%, 30%, 0.2);
+	}
 
 .center-list {
 	margin: 0 18px;
@@ -161,7 +186,13 @@
 	top: 36px;
 	left: 320px;
 	z-index: 30;
+	border-radius:50%;
 }
+
+.teacher-img .center-list .transmit-vid:hover{
+	top: 38px;
+	background-color:  hsla(200, 20%, 30%, 0.2);
+	}
 
 .teacher-img .late-list .transmit-vid {
 	width: 50px;
@@ -171,7 +202,13 @@
 	top: 36px;
 	left: 552px;
 	z-index: 30;
+	border-radius:50%;
 }
+
+.teacher-img .late-list .transmit-vid:hover{
+	top: 38px;
+	background-color:  hsla(200, 20%, 30%, 0.2);
+	}
 
 .show-hero {
 	width: 690px;
@@ -230,9 +267,11 @@
 	font-size: 16px;
 	color: #ff7800;
 }
-
+.show-text a{
+	color:#609002;
+	}
 .show-upperbtn {
-	margin: 0 0 0 54px;
+	margin: 0 0 0 54px;	
 }
 
 .show-lower {
