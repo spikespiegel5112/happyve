@@ -8,7 +8,7 @@
 .reading-hay {
 	width: 690px;
 	height: 326px;
-	margin: 0px 0 32px 0;
+	margin: 30px 0 32px 0;
 	position: relative;
 	background-image: url(../img/understand-link.jpg);
 	background-repeat: no-repeat;
@@ -236,6 +236,18 @@
 #share_school {
 	background: url(../img/share-link.jpg) no-repeat;
 	height: 100px;
+}
+
+.happy-school{
+	width:690px;
+	height: auto;
+    margin: 0 auto;
+    padding: 30px 0 0;
+	background:url(../img/share-link.jpg) no-repeat;
+	}
+	
+.h-avtive-list {
+    margin: 10px 0 10px -34px;
 }
 /*.sharing-link{
 	width: 690px;
