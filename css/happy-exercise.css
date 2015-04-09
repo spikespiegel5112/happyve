@@ -1,0 +1,19 @@
+.clearfloat{clear:both;}
+ul{padding:0;}
+body{font-family: "microsoft yahei";}
+.changemyself-wrapper{margin:20px 0;width: 690px;background: #fff;border: 1px solid #ddd;}
+.changemyself-wrapper .changemyself_prev{display:block;margin:1em;color:#91C81E;font-size: 1.2em;color:#91c31e;font-weight: bold;}
+.changemyself-banner-article p{float:left;margin:20px 0 0 50px;width:400px;line-height: 1.6em;font-size: 1.2em;}
+.changemyself-banner-article img{float:left;}
+.newbadhabbit_title_wrapper{padding:0 0 0 50px;width:100%;position: relative;}
+.newbadhabbit_title_item{float: right;margin:0 46px 0 0;}
+.newbadhabbit_wrapper a{width: 105px;height: 27px;line-height:27px;color:#fff;background: #91c31e;font-size: 1.4em;text-align: center;position: absolute;left: 50px;bottom: 10px;}
+.newbadhabbit_title_item img{float: right;margin:0 0 5px 0;}
+.newbadhabbit_title_item p{font-size: 1.4em;clear:both;margin:0;}
+.newbadhabbit_title_item p label{font-size: 1.4em;}
+.newbadhabbit_content_wrapper{padding:95px 50px;font-size: 1.3em;}
+.newbadhabbit_content_item img{float:left;}
+.newbadhabbit_content_item ul{float:left;width: 100%;}
+.newbadhabbit_content_item ul li div{float:left;margin:12px 0 12px 20px;width: 248px;}
+.newbadhabbit_content_item ul li div label{float:left;width:80px;color:#555;font-weight: normal;}
+.newbadhabbit_content_item ul li div p{float:left;width: 167px;border-bottom:1px solid #000;font-size: 0.9em;}
