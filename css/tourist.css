@@ -36,7 +36,7 @@
     height:39px;
     line-height:39px;
     background:#f4f4f4;
-    border-bottom:1px solid #646464;
+    border-bottom:1px solid #91c81e;
     position:relative;
 	
 }
@@ -83,7 +83,6 @@
     line-height:18px;
     font-size: 12px;
     color: #414141;
-    white-space:nowrap;
 }
 
 .slide-tourist .bd-tourist ul:hover {
