@@ -30,7 +30,8 @@ body{font-family: "microsoft yahei";}
 .newbadhabbit_title_img{margin:0 0 10px 0;width: 100%;border-bottom:1px solid #000;}
 .newbadhabbit_title_img img{margin:0 0 0 480px;}
 .newbadhabbit_title_item .newbadhabbit_img{float: right;margin:0 0 5px 0;width: 320px;height: 200px;}
-.statistics_item{padding:1.5em 0;font-size: 1.4em;margin:0;text-align: right;text-align: center;}
+.newbadhabbit_title_item .statistics_item{float: right;}
+.statistics_item{font-size: 1.4em;margin:0;text-align: right;text-align: center;}
 .statistics_item label{font-size: 1.4em;}
 .newbadhabbit_content_wrapper{min-height:845px;padding:65px 50px;font-size: 1.3em;}
 .newbadhabbit_content_item img{float:left;}
@@ -63,4 +64,5 @@ body{font-family: "microsoft yahei";}
 .changemyself_note_content textarea:focus{box-shadow: 0px 0px 7px #70CEFF;}
 .changemyself_note_content p{position: absolute;right: 2em;bottom: -15px;}
 .changemyself_countdown_item{margin:0 0 0 5em;width: 230px;height: 165px;background: url(../img/img_wbl/dialoguebix_1_00000.png);}
+.changemyself_countdown_item{padding: 2em 0;}
 .changemyself_countdown_wrapper img{float: right;margin:0 7em 0 0;position: relative;bottom:25px;}
