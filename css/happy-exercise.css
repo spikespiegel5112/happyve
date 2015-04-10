@@ -41,9 +41,9 @@ body{font-family: "microsoft yahei";}
 .newbadhabbit_list_item{margin:12px 0 12px 20px;width: 248px;}
 .newbadhabbit_list_item label{float:left;width:80px;color:#555;font-weight: normal;}
 .newbadhabbit_list_item p{float:left;margin:0 0 24px 0;width: 167px;border-bottom:1px solid #000;font-size: 0.9em;}
-#progressbar{float:left;margin:10px 0;width: 120px;background: #D8D5D5;}
+.newbadhabbit_list_item .progressbar{float:left;margin:10px 0;width: 120px;background: #D8D5D5;}
 .newbadhabbit_percentage{float:right;width: 3em;text-align: right;}
-#progressbar span{float:left;height:5px;background:#91C81E;}
+.newbadhabbit_list_item .progressbar span{float:left;height:5px;background:#91C81E;}
 /*~~~~~~~~~~~changemyself_content~~~~~~~~~~~*/
 .decoratebar_item_660{margin:0 auto;width: 660px;height:2px;position: relative;background: #91c81e;}
 .decoratebar_item_660 span, .decoratebar_item_660 label{height:100%;position: absolute;right: 0;}
