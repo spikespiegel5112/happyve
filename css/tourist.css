@@ -1,0 +1,23 @@
+@charset "utf-8";
+.vist-right{
+	display:block; 
+	width:128px; 
+	height:40px; 
+	line-height:40px; 
+	text-align:center; 
+	background-color:#91c81e; 
+	font:16px/40px '微软雅黑'; 
+	color:#fff; 
+	margin-left:28%;
+	}
+.vist-bar{	
+	width:12px;
+	height:7px;
+	position:absolute;
+	top:0px;
+	left:46%;
+	background:url(../img/side-bar.png) no-repeat;
+	z-index:2;
+	}
+/* CSS Document */
+

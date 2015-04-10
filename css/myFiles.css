@@ -315,11 +315,22 @@
 }
 
 .list-footprint .hint-text {
-    display: block;
+	display:block;
     float: right;
+	margin-right:50px;
 }
 
-.affirm-btn {
+.list-footprint .hint-text p{
+	display:inline;
+	font: 12px/20px "微软雅黑";
+	vertical-align:middle;
+	}
+/*.list-footprint .hint-text input{
+	display:inline-block;
+	width:14px;
+	height:14px;
+	}*/
+/*.affirm-btn {
     float: right;
     width: 18px;
     height: 18px;
@@ -345,7 +356,7 @@
     background-color: #ffaa3a;
     line-height: 8px;
     margin: 8px 54px 0 0;
-}
+} 之前单选按钮*/
 
 /*.footprint-content hr{
 	width:670px;
