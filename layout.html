@@ -72,9 +72,28 @@
 <div id="content" class="row">
     <!-- banner 开始  -->
     <div id="header-banner" class="col-md-10 col-md-offset-1">
-           <div class="banner">
+            <div class="banner">
                <a href="#"><img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304"></a>
-           </div>
+            </div>
+            <div>
+                <div class="user-level-disk-round">
+                    <img id="user-level-disk-img" src="img/half-round.png" alt="" width="286" height="199">
+                </div>
+                <div id="user-level-test">
+                    <a href="#"></a>
+                </div>
+                <div id="user-level-exercise">
+                    <!--<a href="#"><span>asdas</span></a>-->
+                </div>
+                <div id="user-level-mark">
+                    <!--<a href="#"><span>asdas</span></a>-->
+                </div>
+
+                <div class="user-level-disk">
+                    <img src="img/pointer-round.png" alt="用户等级" width="170" height="170">
+                </div>
+            </div>
+
     </div>
     <!-- banner 结束 -->
 
@@ -85,6 +104,7 @@
     <!-- 左边区域 结束 -->
     <!-- 右边区域 开始 -->
     <div id="right-content" class="col-md-3">
+
         <!-- 用户信息 开始 -->
         <div class="user-content user-info">
             <div class="user_name">
@@ -298,42 +318,6 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript">
-    $(".slideTxtBox").slide();
-
-
-    $('#happy-carousel').carousel({
-        interval: 4000
-    });
-
-
-    $('[id^=carousel-selector-]').click( function(){
-        var id_selector = $(this).attr("id");
-        var id = id_selector.substr(id_selector.length -1);
-        id = parseInt(id);
-        $('#happy-carousel').carousel(id);
-        $('[id^=carousel-selector-]').removeClass('selected');
-        $(this).addClass('selected');
-    });
-
-
-    $('[id^=carousel-selector-]').hover(function(){
-        var id_selector = $(this).attr("id");
-        var id = id_selector.substr(id_selector.length -1);
-        id = parseInt(id);
-        $('#happy-carousel').carousel(id);
-        $('[id^=carousel-selector-]').removeClass('selected');
-        $(this).addClass('selected');
-    });
-
-
-    $('#happy-carousel').on('slid', function (e) {
-        var id = $('.item.active').data('slide-number');
-        id = parseInt(id);
-        $('[id^=carousel-selector-]').removeClass('selected');
-        $('[id=carousel-selector-'+id+']').addClass('selected');
-    });
-
-</script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
