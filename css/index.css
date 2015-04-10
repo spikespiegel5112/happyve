@@ -39,15 +39,17 @@ a.u-help {
 .h-nav-a {
     font: 18px "微软雅黑";
     line-height: 70px;
-    width: 130px;
     text-align: center;
 	margin:10px 0 0;
+	
 }
-
-.h-nav-ul {
-    height: 50px;
-}
-
+.h-nav-a{
+	height:40px;
+	line-height:40px;
+	}
+.h-nav-a:hover{
+	border-bottom: 2px solid #5aa000;
+	}
 .h-drop-menu {
     min-width: 130px;
     border: solid 2px green;
@@ -735,10 +737,12 @@ a.u-help {
 
 .slideTxtBox .hd ul .hd-left {
 	margin:0 0 0 5%;
+	font:16px/38px "微软雅黑";
 }
 
 .slideTxtBox .hd ul .hd-right {
 	margin:0 5% 0 0;
+	font:16px/38px "微软雅黑";
 }
 
 .slideTxtBox .hd ul li.on {
@@ -768,11 +772,26 @@ a.u-help {
 	z-index:2;
 }
 .evaluation-none{
-	width:285px;
-	height:184px;
-	margin-left:-6px;
+	width:100%;
+	height:184px;	
+	background-size:contain;
+	margin-top:-4px;
+	}
+/*.evaluation-n.evaluation-none{
+	background:url(../img/evaluation-none.jpg) no-repeat center;
+	}	
+	
+.evaluation-n.manoeuvre-none{
+	background:url(../img/manoeuvre-none.jpg) no-repeat center;
 	}
 	
+.evaluation-n.course-none{
+	background:url(../img/course-none.jpg) no-repeat center;
+	}
+	
+.evaluation-n.train-none{
+	background:url(../img/train-none.jpg) no-repeat center;
+	}*/
 .slideTxtBox .bd .bdd-bar{
 	width:14px;
 	height:9px;
@@ -792,7 +811,7 @@ a.u-help {
     line-height:18px;
     font-size: 12px;
     color: #414141;
-    white-space:nowrap;
+    
 }
 
 .slideTxtBox .bd ul:hover {
