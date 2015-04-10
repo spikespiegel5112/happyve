@@ -37,28 +37,30 @@ a.u-help {
 }
 
 .h-nav-a {
-    font: 18px "微软雅黑";
-    line-height: 70px;
+    font: 18px/70px "微软雅黑";
     text-align: center;
-	margin:10px 0 0;
-	
+	margin:10px 0 0;	
 }
+
 .h-nav-a{
 	height:40px;
 	line-height:40px;
+	margin-bottom:8px;
 	}
+	
 .h-nav-a:hover{
 	border-bottom: 2px solid #5aa000;
 	}
+	
 .h-drop-menu {
     min-width: 130px;
-    border: solid 2px green;
+    border: solid 1px #5aa000;
     text-align: center;
 }
 
 .h-logo {
     padding: 6px 0 0;
-    margin:  0 10px 0 0;
+    margin:  0 24px 0 0;
 }
 
 .i-search {
@@ -638,12 +640,12 @@ a.u-help {
 
 .name {
     font-size: 16px;
-    color: #3c3c3c;
+    color: #505050;
 }
 
 .school_name {
     font-size: 14px;
-    color: #5aa000;
+    color: #87bf4d;
 }
 .school-icon{
 	display:inline-block;
@@ -777,21 +779,7 @@ a.u-help {
 	background-size:contain;
 	margin-top:-4px;
 	}
-/*.evaluation-n.evaluation-none{
-	background:url(../img/evaluation-none.jpg) no-repeat center;
-	}	
-	
-.evaluation-n.manoeuvre-none{
-	background:url(../img/manoeuvre-none.jpg) no-repeat center;
-	}
-	
-.evaluation-n.course-none{
-	background:url(../img/course-none.jpg) no-repeat center;
-	}
-	
-.evaluation-n.train-none{
-	background:url(../img/train-none.jpg) no-repeat center;
-	}*/
+
 .slideTxtBox .bd .bdd-bar{
 	width:14px;
 	height:9px;
