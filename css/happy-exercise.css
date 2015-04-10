@@ -1,4 +1,6 @@
 .clearfloat{clear:both;}
+.float_right{float: right;}
+#shown, .shown{display: block;}
 ul{padding:0;}
 body{font-family: "microsoft yahei";}
 /*~~~~~~~~~~~changemyself_list~~~~~~~~~~~*/
@@ -47,9 +49,16 @@ body{font-family: "microsoft yahei";}
 .newbadhabbit_list_item .progressbar span{float:left;height:5px;background:#91C81E;}
 /*~~~~~~~~~~~changemyself_content~~~~~~~~~~~*/
 .decoratebar_item_660{margin:0 auto;width: 660px;height:2px;position: relative;background: #91c81e;}
-.decoratebar_item_660 span, .decoratebar_item_660 label{height:100%;position: absolute;right: 0;}
-.decoratebar_item_660 span{width: 160px;background: #529d40;}
-.decoratebar_item_660 label{width: 70px;background: #2f7b00;}
+.decoratebar_title{margin:0 0 0 45px;padding:5px;font-size: 26px;font-weight: bold;color:#91c81e;position: absolute;bottom: 5px;background: #fff;z-index: 222}
+.decoratebar_item_660 .green_1, .decoratebar_item_660 .green_2, .decoratebar_item_660 .green_3{height:100%;position: absolute;right: 0;}
+.decoratebar_item_660 .green_1{width: 100%;height:4px;background: #91c81e;}
+.decoratebar_item_660 .green_2{width: 160px;height:4px;background: #529d40;}
+.decoratebar_item_660 .green_3{width: 70px;height:4px;background: #2f7b00;}
+.decoratebar_item_685{margin:0 auto;width: 685px;height:40px;position: relative;}
+.decoratebar_item_685 .green_1, .decoratebar_item_685 .green_2, .decoratebar_item_685 .green_3{height:100%;position: absolute;right: 0;}
+.decoratebar_item_685 .green_1{width: 100%;height:4px;background: #91c81e;}
+.decoratebar_item_685 .green_2{width: 160px;height:4px;background: #529d40;}
+.decoratebar_item_685 .green_3{width: 70px;height:4px;background: #2f7b00;}
 .changemyself_content_wrapper{text-align: center;}
 .changemyself_content_title{display:inline-block;margin:20px auto;padding: 0.2em 1.7em;line-height:1.2em;background: #90c91d;color: #fff;font-size: 1.3em;}
 .changemyself_content_img{margin: 0 auto;width: 590px;height: 360px;}
@@ -66,3 +75,38 @@ body{font-family: "microsoft yahei";}
 .changemyself_countdown_item{margin:0 0 0 5em;width: 230px;height: 165px;background: url(../img/img_wbl/dialoguebix_1_00000.png);}
 .changemyself_countdown_item{padding: 2em 0;}
 .changemyself_countdown_wrapper img{float: right;margin:0 7em 0 0;position: relative;bottom:25px;}
+/*~~~~~~~~~~~haexe_homepage~~~~~~~~~~~*/
+.haexe_home_banner_wrapper{float:right;margin:0 0 30px 0;width: 700px;height: 310px;}
+.haexe_home_carousel_wrapper{float:right;margin:30px 0;width: 690px;height: 410px;background: #e3e3e3;}
+.decoratebar_statistics_item{height: 2em;}
+.decoratebar_statistics_item span{background: none;width: 3em;}
+.decoratebar_statistics_item p{float: right;font-size: 13px;}
+.decoratebar_statistics_item p:first-child{color:#91c81e;}
+.haexe_home_carousel_bg_item{overflow: hidden;;top: 0;}
+.haexe_home_carousel_bg_item img{box-shadow: 3px 0px 5px #aaa;z-index: -1;}
+.haexe_home_carousel_wrapper{height:410px;position: relative;}
+.haexe_home_ranking_list_wrapper{float:right;padding:40px 0 0 0;width: 229px;height: 100%;box-shadow: 5px 0 5px #aaa inset;}
+.haexe_home_ranking_list_wrapper li a{display:block;width:100%;height:65px;background-image:url(../img/img_wbl/img_sprite_00000.png);}
+.ranking_1 a{background-position: -31px 10px;}
+.ranking_2 a{background-position: -31px -70px;}
+.ranking_3 a{background-position: -31px -150px;}
+.haexe_home_ranking_list_wrapper li{border-width: 1px;border-style: solid;border-color:transparent;position: relative;}
+.haexe_home_ranking_list_wrapper li span{display:none;width: 30px;height: 30px;background:url(../img/img_wbl/img_sprite_00000.png) -265px 0;position: absolute;top: 18px;left: -2px;}
+.haexe_home_carousel_wrapper .shown span{display: block;}
+.haexe_home_ranking_list_wrapper{float: right;}
+.haexe_home_ranking_list_wrapper .shown a{background-image:url(../img/img_wbl/img_sprite_00000.png);background-color:#fff;z-index: -1;box-shadow: 5px 0 5px #aaa inset;cursor:pointer;}
+.haexe_home_carousel_tree_wrapper{position: relative;}
+.haexe_home_carousel_tree_wrapper div{display: none;height:100%;position: relative;}
+.haexe_home_carousel_tree_wrapper img{position: absolute;bottom:-410px;}
+.haexe_home_carousel_tree_wrapper div ul{position: absolute;}
+.haexe_home_carousel_decroration{display:block;width: 140px;height: 115px;background:url(../img/img_wbl/img_sprite_00000.png) -287px 0;position: absolute;bottom:-460px;left: -30px;}
+.haexe_home_carousel_desc_list ul li{background-image: url(../img/img_wbl/img_sprite_00000.png);position: absolute;z-index: 1;cursor: pointer;}
+.tree_desc_1{width:70px;height:70px;background-position: -430px 0;left: 50px;top: 180px;}
+.tree_desc_2{width:70px;height:70px;background-position: -430px -67px;}
+.tree_desc_3{width:45px;height:45px;background-position: -454px -134px;}
+.tree_desc_4{width:45px;height:45px;background-position: -454px -184px;}
+.tree_desc_5{width:45px;height:45px;background-position: -454px -230px;}
+.tree_desc_6{width:45px;height:45px;background-position: -454px -280px;}
+.tree_desc_7{width:45px;height:45px;background-position: -454px -340px;}
+.tree_desc_8{width:45px;height:45px;background-position: -454px -390px;}
+.tree_desc_9{width:45px;height:45px;background-position: -454px -440px;}
