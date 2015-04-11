@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
 	happyexecrise();
 })
 
@@ -72,6 +71,24 @@ function happyexecrise(){
 		changeUserLevelDiskImg("img/mark-round.png")
 	}, function(){
 		changeUserLevelDiskImg("img/half-round.png");
+	})
+
+	$("#user-level-test-not-index").hover(function() {
+		changeUserLevelDiskImg("img/test-turn.png")
+	}, function(){
+		changeUserLevelDiskImg("img/turnplate.png");
+	})
+
+	$("#user-level-exercise-not-index").hover(function() {
+		changeUserLevelDiskImg("img/exercise-turn.png")
+	}, function(){
+		changeUserLevelDiskImg("img/turnplate.png");
+	})
+
+	$("#user-level-mark-not-index").hover(function() {
+		changeUserLevelDiskImg("img/mark-turn.png")
+	}, function(){
+		changeUserLevelDiskImg("img/turnplate.png");
 	})
 
 	$(".haexe_home_ranking_list_wrapper li").click(function(){

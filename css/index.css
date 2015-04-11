@@ -640,7 +640,7 @@ a.u-help {
 
 .name {
     font-size: 16px;
-    color: #505050;
+    color: #3c3c3c;
 }
 
 .school_name {
@@ -660,11 +660,13 @@ a.u-help {
 }
 .user_friend a{
 	margin-left:10px;
-	}
-.user_friend .glyphicon-heart{
-	font-size:15px;
-	vertical-align:middle;
-	}
+    color: #87bf4d;
+}
+
+.user_friend .badge {
+    background-color: #87bf4d;
+    color: #fff;
+}
 
 /* 微课 */
 .user-lesson, .user-tag {

@@ -100,7 +100,8 @@ a:hover {
     z-index: 1;
 }
 
-#user-level-test, #user-level-exercise, #user-level-mark {
+#user-level-test, #user-level-exercise, #user-level-mark,
+#user-level-test-not-index, #user-level-exercise-not-index, #user-level-mark-not-index{
     position:absolute;
     top: 31px;
     left: 732px;
@@ -110,14 +111,15 @@ a:hover {
 }
 
 
-#user-level-exercise {
+#user-level-exercise, #user-level-exercise-not-index {
     left: 842px;
 }
 
-#user-level-mark {
+#user-level-mark, #user-level-mark-not-index {
     left: 942px;
-
 }
+
+
 
 /* other style */
 
