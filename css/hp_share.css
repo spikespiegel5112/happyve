@@ -46,3 +46,21 @@
     background-color:#D5D5D5;
     overflow:hidden;
 }
+
+.activity-header > ul > li, .activity-header > ul > li > ul > li {
+    display: inline;
+    margin: 10px;
+    width: 100px;
+}
+
+.activity-header a {
+    font: 20px "微软雅黑";
+}
+
+.activity-header > ul > li > ul > li a:before {
+    content: "|";
+}
+
+.activity-header > ul > li > ul > li:last-child a:after{
+    content: "|";
+}
