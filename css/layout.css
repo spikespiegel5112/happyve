@@ -1,11 +1,9 @@
 /* common style  */
 /* 此处放通用样式 */
 body {
-    /*width: 1280px;*/
     background: #fff url(../img/back-banner.png) repeat-x;
     background-position: center 122px;
-    font-size: 12px;
-    font-family: Arial;
+    font: 12px "宋体";
 }
 
 li {
@@ -44,7 +42,7 @@ a:hover {
 }
 
 #left-content {
-
+    width: 60%;
 }
 
 #right-content {
