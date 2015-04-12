@@ -46,7 +46,7 @@ a:hover {
 }
 
 #right-content {
-
+    width: 26%;
 }
 
 #header {
@@ -98,8 +98,12 @@ a:hover {
     z-index: 1;
 }
 
-#user-level-test, #user-level-exercise, #user-level-mark,
-#user-level-test-not-index, #user-level-exercise-not-index, #user-level-mark-not-index{
+#user-level-test,
+#user-level-exercise,
+#user-level-mark,
+#user-level-test-not-index,
+#user-level-exercise-not-index,
+#user-level-mark-not-index{
     position:absolute;
     top: 31px;
     left: 732px;
@@ -109,12 +113,57 @@ a:hover {
 }
 
 
-#user-level-exercise, #user-level-exercise-not-index {
+#user-level-exercise,
+#user-level-exercise-not-index {
     left: 842px;
 }
 
-#user-level-mark, #user-level-mark-not-index {
+#user-level-mark,
+#user-level-mark-not-index {
     left: 942px;
+}
+
+.right-user-level {
+    margin: 40px 0;
+}
+
+.right-user-level-disk {
+    position:absolute;
+    top: 115px;
+    left: 85px;
+    z-index: 2;
+}
+
+.right-user-level-disk-round {
+    /*position:absolute;*/
+    top: 31px;
+    /*left: 732px;*/
+    z-index: 1;
+}
+
+#right-user-level-test,
+#right-user-level-exercise,
+#right-user-level-mark,
+#right-user-level-test-not-index,
+#right-user-level-exercise-not-index,
+#right-user-level-mark-not-index{
+    position:absolute;
+    top: 45px;
+    left: 20px;
+    width: 100px;
+    height: 199px;
+    z-index: 3;
+}
+
+
+#right-user-level-exercise,
+#right-user-level-exercise-not-index {
+    left: 120px;
+}
+
+#right-user-level-mark,
+#right-user-level-mark-not-index {
+    left: 220px;
 }
 
 

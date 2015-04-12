@@ -38,3 +38,11 @@
 .pagin-center .pagination > li > a,  .pagin-center .pagination > li > span{
     color: #3c3c3c;
 }
+
+.activity-hr {
+    height:2px;
+    margin:5px auto;
+    padding:0px;
+    background-color:#D5D5D5;
+    overflow:hidden;
+}
