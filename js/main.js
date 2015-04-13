@@ -12,7 +12,7 @@
 
 		$("img.lazy").unveil();
 
-		$(".activity .thumbnail").matchHeight({
+		$(".activity .thumbnail, .teacher-img .thumbnail").matchHeight({
 			byRow: !0,
 			property: "height",
 			target: null,
@@ -81,15 +81,15 @@
 			changeUserLevelDiskImg("img/mark-round.png")
 		}, defaultLevelDiskImgHalf);
 
-		$("#user-level-test-not-index, #right-user-level-test-not-index").hover(function() {
+		$("#user-level-test.not-index, #right-user-level-test.not-index").hover(function() {
 			changeUserLevelDiskImg("img/test-turn.png")
 		}, defaultLevelDiskImgTurn);
 
-		$("#user-level-exercise-not-index, #right-user-level-exercise-not-index").hover(function() {
+		$("#user-level-exercise.not-index, #right-user-level-exercise.not-index").hover(function() {
 			changeUserLevelDiskImg("img/exercise-turn.png")
 		}, defaultLevelDiskImgTurn);
 
-		$("#user-level-mark-not-index, #right-user-level-mark-not-index").hover(function() {
+		$("#user-level-mark.not-index, #right-user-level-mark.not-index").hover(function() {
 			changeUserLevelDiskImg("img/mark-turn.png")
 		}, defaultLevelDiskImgTurn);
 	}

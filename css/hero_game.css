@@ -113,102 +113,30 @@
 	position: relative;
 }
 
-.teacher-img ul {
+.teacher-img-item {
+	width: 240px;
 	text-align: center;
+	font-family: "微软雅黑";
 }
 
-.teacher-img ul b , .teacher-img p{
-	height: 22px;
-	line-height: 22px;
-	font-size: 12px;
-	font: "宋体";
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	display: block;
+.teacher-img-item .thumbnail {
+	border: none;
 }
 
-.teacher-img ul a {
-	color: #101112;
+.teacher-img-item .teacher-video-view:hover {
+	border: 2px solid #91c31e ;
+	margin: -2px;
 }
 
-.teacher-img ul li {
-	width: 216px;
+.teacher-img-item  .teacher-video-view:hover .wind-video {
+	top: 28px;
 }
 
-/*.teacher-img ul li .transmit-vid {
-	width: 50px;
-	height: 50px;
+.teacher-img-item .wind-video {
 	position: absolute;
-	background-image: url(../img/wind-video.png);
-	top: 36px;
-	left: 82px;
-	z-index: 30;
-	border-radius:50%;
-}*/
-.transmit-vid img{
-	border-radius:50%;
-	}
-.teacher-img ul li span {
-	display: inline-block;
-	border: 3px solid #e3e3e3;
+	top:30px;
+	left: 91px;
 }
-
-.teacher-img ul li span:hover {
-	border: 3px solid #91c81e;
-}
-
-.teacher-img .first-list .transmit-vid {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	background-image: url(../img/wind-video.png);
-	top: 36px;
-	left: 82px;
-	z-index: 30;
-	border-radius:50%;
-}
-
-.teacher-img .first-list .transmit-vid:hover{
-	top: 38px;
-	background-color:  hsla(200, 20%, 30%, 0.2);
-	}
-
-.center-list {
-	margin: 0 18px;
-}
-
-.teacher-img .center-list .transmit-vid {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	background-image: url(../img/wind-video.png);
-	top: 36px;
-	left: 320px;
-	z-index: 30;
-	border-radius:50%;
-}
-
-.teacher-img .center-list .transmit-vid:hover{
-	top: 38px;
-	background-color:  hsla(200, 20%, 30%, 0.2);
-	}
-
-.teacher-img .late-list .transmit-vid {
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	background-image: url(../img/wind-video.png);
-	top: 36px;
-	left: 552px;
-	z-index: 30;
-	border-radius:50%;
-}
-
-.teacher-img .late-list .transmit-vid:hover{
-	top: 38px;
-	background-color:  hsla(200, 20%, 30%, 0.2);
-	}
 
 .show-hero {
 	width: 690px;

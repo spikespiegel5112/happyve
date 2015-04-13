@@ -84,11 +84,16 @@ a:hover {
     width: 100%;
 }
 
+
 .user-level-disk {
     position:absolute;
     top: 100px;
     left: 800px;
     z-index: 2;
+}
+
+.user-level-disk.not-index  {
+    left: 853px;
 }
 
 .user-level-disk-round {
@@ -98,12 +103,13 @@ a:hover {
     z-index: 1;
 }
 
+.user-level-disk-round.not-index {
+    left: 780px;
+}
+
 #user-level-test,
 #user-level-exercise,
-#user-level-mark,
-#user-level-test-not-index,
-#user-level-exercise-not-index,
-#user-level-mark-not-index{
+#user-level-mark{
     position:absolute;
     top: 31px;
     left: 732px;
@@ -112,15 +118,26 @@ a:hover {
     z-index: 3;
 }
 
+#user-level-test.not-index,
+#user-level-exercise.not-index,
+#user-level-mark.not-index{
+    left: 770px;
+}
 
-#user-level-exercise,
-#user-level-exercise-not-index {
+#user-level-exercise {
     left: 842px;
 }
 
-#user-level-mark,
-#user-level-mark-not-index {
+#user-level-exercise.not-index {
+    left: 880px;
+}
+
+#user-level-mark {
     left: 942px;
+}
+
+#user-level-mark.not-index {
+    left: 980px;
 }
 
 .right-user-level {

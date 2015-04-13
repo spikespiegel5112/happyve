@@ -853,6 +853,26 @@
     color: #5aaa00;
 }
 
+/*.slideTxtBox .bd li span{
+	display:none;
+	}
+
+.slideTxtBox .bd li:hover span{
+	display:block;
+	widows:250px;
+	height:146px;
+	position:relative;
+	} 微课点击文字出现的缩略图*/
+
+/*.slideTxtBox .bd li:hover span .bd-play{
+	width:66px;
+	height:66px;
+	background:url(../img/video-mes.png) no-repeat;
+	position:absolute;
+	top:40px;
+	left:90px;
+	z-index:22;
+	} 先前微课点击文字出现视频缩略图的播放按钮*/
 .slideTxtBox .bd ul li a {
     color: #414141;
 }
