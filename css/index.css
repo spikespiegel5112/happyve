@@ -37,26 +37,30 @@ a.u-help {
 }
 
 .h-nav-a {
-    font: 18px "微软雅黑";
-    line-height: 70px;
-    width: 130px;
+    font: 18px/70px "微软雅黑";
     text-align: center;
-	margin:10px 0 0;
+	margin:10px 0 0;	
 }
 
-.h-nav-ul {
-    height: 50px;
-}
-
+.h-nav-a{
+	height:40px;
+	line-height:40px;
+	margin-bottom:8px;
+	}
+	
+.h-nav-a:hover{
+	border-bottom: 2px solid #5aa000;
+	}
+	
 .h-drop-menu {
     min-width: 130px;
-    border: solid 2px green;
+    border: solid 1px #5aa000;
     text-align: center;
 }
 
 .h-logo {
     padding: 6px 0 0;
-    margin:  0 10px 0 0;
+    margin:  0 24px 0 0;
 }
 
 .i-search {
@@ -641,7 +645,7 @@ a.u-help {
 
 .school_name {
     font-size: 14px;
-    color: #5aa000;
+    color: #87bf4d;
 }
 .school-icon{
 	display:inline-block;
@@ -656,11 +660,13 @@ a.u-help {
 }
 .user_friend a{
 	margin-left:10px;
-	}
-.user_friend .glyphicon-heart{
-	font-size:15px;
-	vertical-align:middle;
-	}
+    color: #87bf4d;
+}
+
+.user_friend .badge {
+    background-color: #87bf4d;
+    color: #fff;
+}
 
 /* 微课 */
 .user-lesson, .user-tag {
@@ -735,10 +741,12 @@ a.u-help {
 
 .slideTxtBox .hd ul .hd-left {
 	margin:0 0 0 5%;
+	font:16px/38px "微软雅黑";
 }
 
 .slideTxtBox .hd ul .hd-right {
 	margin:0 5% 0 0;
+	font:16px/38px "微软雅黑";
 }
 
 .slideTxtBox .hd ul li.on {
@@ -768,11 +776,12 @@ a.u-help {
 	z-index:2;
 }
 .evaluation-none{
-	width:285px;
-	height:184px;
-	margin-left:-6px;
+	width:100%;
+	height:184px;	
+	background-size:contain;
+	margin-top:-4px;
 	}
-	
+
 .slideTxtBox .bd .bdd-bar{
 	width:14px;
 	height:9px;
@@ -792,7 +801,7 @@ a.u-help {
     line-height:18px;
     font-size: 12px;
     color: #414141;
-    white-space:nowrap;
+    
 }
 
 .slideTxtBox .bd ul:hover {

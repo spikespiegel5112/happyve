@@ -38,35 +38,30 @@
                 <a href="#"><img src="img/logo.png" alt="logo" width="186" height="54"></a>
             </div>
             <div class="navbar-collapse collapse" role="navigation">
-                <ul class="h-nav-ul nav navbar-nav">
+                <ul class="h-nav-ul nav navbar-nav" >
                     <li class="dropdown hidden-sm hidden-md">
                         <a class="h-nav-a dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">快乐大本营<b class="caret"></b></a>
                         <ul class="h-drop-menu dropdown-menu">
-                            <li > <a href="happy-camp.html">训练营</a></li>
-                            <li ><a href="#">师徒行</a></li>
-                            <li ><a href="#">大秀场</a></li>
+                            <li> <a href="happy_camp.html">训练营</a></li>
+                            <li><a href="#">师徒行</a></li>
+                            <li><a href="#">大秀场</a></li>
                         </ul>
                     </li>
-                    <li><a class="h-nav-a" href="hero-game.html">英雄风云场</a></li>
+                    <li><a class="h-nav-a" href="hero_game.html">英雄风云场</a></li>
                     <li><a class="h-nav-a" href="myFiles.html">我的档案</a></li>
                     <li><a class="h-nav-a" href="#">我的集体</a></li>
                 </ul>
-                <div class="i-search nav navbar-nav navbar-right hidden-sm">
-                    <div class="input-group">
+                <form action="##" class="navbar-form navbar-right" rol="search">
+                    <div class="form-group">
                         <input type="text" class="form-control" placeholder="快乐英雄">
-                          <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                          </span>
-                    </div><!-- /input-group -->
-                </div>
-            </div>
-
+                    </div>
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>   
+                 </form><!-- /input-group -->               
+            </div>           
         </div>
     </div>
 </div>
 <!-- 头部登陆导航 结束 -->
-
-
 
 <!-- 内容 开始 -->
 <div id="content" class="row">
@@ -74,6 +69,24 @@
     <div id="header-banner" class="col-md-10 col-md-offset-1">
         <div class="banner">
             <a href="#"><img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304"></a>
+        </div>
+        <div>
+            <div class="user-level-disk-round">
+                <img id="user-level-disk-img" src="img/half-round.png" alt="" width="286" height="199">
+            </div>
+            <div id="user-level-test">
+                <a href="#"></a>
+            </div>
+            <div id="user-level-exercise">
+                <!--<a href="#"><span>asdas</span></a>-->
+            </div>
+            <div id="user-level-mark">
+                <!--<a href="#"><span>asdas</span></a>-->
+            </div>
+
+            <div class="user-level-disk">
+                <img src="img/pointer-round.png" alt="用户等级" width="170" height="170">
+            </div>
         </div>
     </div>
     <!-- banner 结束 -->
@@ -389,8 +402,8 @@
             </div>
 
             <div class="user_friend">
-                <a class="btn btn-info"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 好友 <span class="badge">10</span></a>
-                <a class="btn btn-info"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span class="badge">10</span></a>
+                <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 好友 <span class="badge">10</span></a>
+                <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span class="badge">10</span></a>
             </div>
         </div>
         <!-- 用户信息 结束 -->
@@ -398,7 +411,7 @@
         <!-- 我的标签 开始 -->
         <div class="user-content user-tag">
           <h4>我的标签</h4>
-          <img src="img/share-icon.png" alt="分享">
+          <img class="share-tag" src="img/share-icon.png" alt="分享">
         </div>
         <!-- 我的标签 结束 -->
 
@@ -407,14 +420,14 @@
             <div class="slideTxtBox">
                 <div class="hd">
                     <ul class="list-inline">
-                        <li class="hd-left">我测评过的</li>
-                        <li class="hd-right">我演习过的</li>
+                        <li class="hd-left">我的测评</li>
+                        <li class="hd-right">我的演习</li>
                     </ul>
                 </div>
                 <div class="bd">
                     <ul>
                         <span class="bd-bar"></span>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?什么证书?什么证书?什么证书?什么证书?什么证书?什么证书?</p></a></li>
                         <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
                         <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
                         <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
@@ -444,8 +457,8 @@
             <div class="slideTxtBox">
                 <div class="hd">
                     <ul class="list-inline">
-                        <li class="hd-left">我看过的微课</li>
-                        <li class="hd-right">我关注的训练营</li>
+                        <li class="hd-left">我的微课</li>
+                        <li class="hd-right">我的训练营</li>
                     </ul>
                 </div>
                 <div class="bd">
@@ -587,42 +600,6 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript">
-    $(".slideTxtBox").slide();
-
-
-    $('#happy-carousel').carousel({
-        interval: 4000
-    });
-
-
-    $('[id^=carousel-selector-]').click( function(){
-        var id_selector = $(this).attr("id");
-        var id = id_selector.substr(id_selector.length -1);
-        id = parseInt(id);
-        $('#happy-carousel').carousel(id);
-        $('[id^=carousel-selector-]').removeClass('selected');
-        $(this).addClass('selected');
-    });
-
-
-    $('[id^=carousel-selector-]').hover(function(){
-        var id_selector = $(this).attr("id");
-        var id = id_selector.substr(id_selector.length -1);
-        id = parseInt(id);
-        $('#happy-carousel').carousel(id);
-        $('[id^=carousel-selector-]').removeClass('selected');
-        $(this).addClass('selected');
-    });
-
-
-    $('#happy-carousel').on('slid', function (e) {
-        var id = $('.item.active').data('slide-number');
-        id = parseInt(id);
-        $('[id^=carousel-selector-]').removeClass('selected');
-        $('[id=carousel-selector-'+id+']').addClass('selected');
-    });
-
-</script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
