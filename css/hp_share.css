@@ -1,3 +1,57 @@
+
+.hp-share-left {
+    background: #ffffff;
+    margin-top: 20px;
+}
+
+.activity-header {
+    width: auto;
+    margin: 10px;
+}
+.activity-header a {
+    font: 20px "微软雅黑";
+}
+
+.activity-first-list {
+    margin: 10px;
+    border-bottom: solid #b4b4b4;
+}
+.activity-first-list > li {
+    display: inline;
+    margin: 10px;
+    width: 200px;
+}
+.green_line {
+    background: url(../img/hp_share/green_line.png) no-repeat;
+    width: 690px;
+    height: 10px;
+    margin: 0 0 20px 20px;
+}
+
+/** 快乐分享导航栏 二级菜单 */
+.activity-sub-list {
+    margin: 15px 0;
+}
+.activity-sub-list a {
+    font: 12px "宋体";
+    text-align: center;
+    padding:0 10px;
+}
+
+.activity-sub-list li {
+    display: inline;
+    /*width: 100px;*/
+}
+
+.activity-sub-list > li::before {
+    content: "|";
+}
+
+.activity-sub-list  > li:last-child::after{
+    margin: 0 0 0 10px;
+    content: "|";
+}
+
 .activity .thumbnail {
     border-radius: 0;
     display: block;
@@ -45,22 +99,4 @@
     padding:0px;
     background-color:#D5D5D5;
     overflow:hidden;
-}
-
-.activity-header > ul > li, .activity-header > ul > li > ul > li {
-    display: inline;
-    margin: 10px;
-    width: 100px;
-}
-
-.activity-header a {
-    font: 20px "微软雅黑";
-}
-
-.activity-header > ul > li > ul > li a:before {
-    content: "|";
-}
-
-.activity-header > ul > li > ul > li:last-child a:after{
-    content: "|";
 }
