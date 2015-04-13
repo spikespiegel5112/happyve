@@ -101,12 +101,12 @@ body{font-family: "microsoft yahei";}
 .haexe_home_carousel_tree_wrapper div ul{position: absolute;}
 .haexe_home_carousel_decroration{display:block;width: 140px;height: 115px;background:url(../img/img_wbl/img_sprite_00000.png) -287px 0;position: absolute;bottom:-460px;left: -30px;}
 .haexe_home_carousel_desc_list ul li{background-image: url(../img/img_wbl/img_sprite_00000.png);position: absolute;z-index: 1;cursor: pointer;}
-.tree_desc_1{width:70px;height:70px;background-position: -430px 0;left: 50px;top: 180px;}
-.tree_desc_2{width:70px;height:70px;background-position: -430px -67px;}
-.tree_desc_3{width:45px;height:45px;background-position: -454px -134px;}
-.tree_desc_4{width:45px;height:45px;background-position: -454px -184px;}
-.tree_desc_5{width:45px;height:45px;background-position: -454px -230px;}
-.tree_desc_6{width:45px;height:45px;background-position: -454px -280px;}
-.tree_desc_7{width:45px;height:45px;background-position: -454px -340px;}
-.tree_desc_8{width:45px;height:45px;background-position: -454px -390px;}
-.tree_desc_9{width:45px;height:45px;background-position: -454px -440px;}
+.tree_desc_1{width:65px;height:65px;background-position: -433px 0;left: 50px;top: 180px;}
+.tree_desc_2{width:65px;height:65px;background-position: -433px -67px;left: 140px;top: 60px;}
+.tree_desc_3{width:50px;height:50px;background-position: -452px -131px;left: 113px;top: 145px;}
+.tree_desc_4{width:45px;height:45px;background-position: -454px -184px;left: 162px;top: 180px;}
+.tree_desc_5{width:45px;height:45px;background-position: -453px -230px;left: 240px;top: 155px;}
+.tree_desc_6{width:60px;height:60px;background-position: -440px -280px;left: 300px;top: 100px;}
+.tree_desc_7{width:50px;height:45px;background-position: -450px -340px;left: 300px;top: 166px;}
+.tree_desc_8{width:50px;height:45px;background-position: -450px -390px;left: 270px;top: 245px;}
+.tree_desc_9{width:45px;height:50px;background-position: -454px -443px;left: 130px;top: 260px;}
