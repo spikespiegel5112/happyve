@@ -24,7 +24,7 @@
 }
 
 
-/** 快乐分享导航栏 二级菜单 */
+/* 快乐分享导航栏 二级菜单 */
 .activity-sub-list {
     margin: 15px 0;
 }
@@ -101,3 +101,95 @@
     background-color:#D5D5D5;
     overflow:hidden;
 }
+
+/*快乐分享——空间*/
+.act-space.thumbnail {
+    border-radius: 0;
+    display: block;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 310px;
+    /*text-align: center;*/
+}
+
+.act-space .act-item {
+    padding: 0 0;
+    width: 20%;
+    min-width: 210px;
+    margin: 0 5px;
+}
+
+.space-arrange{
+	position:relative;
+}
+
+.space-arrange .thumbnail{
+	border:none;
+	background-color: transparent;
+	box-shadow:none;
+	}
+.sde-triangle{
+	width:13px;
+	height:11px;
+	position:absolute;
+	top:-6px;
+	left:63px;
+	background:url(../img/hp_share/shade.png) no-repeat;
+}	
+.badge-school{
+	width:52px;
+	height:50px;
+	border-radius:0 0 10px 0;
+	border:2px solid #91c81e;
+	position:absolute;
+	top:-6px;
+	left:11px;
+	background-color:#fff;
+}
+
+.badge-school img{
+	width:42px; 
+	height:42px;
+	margin:1px 3px;
+	}
+.space-title{
+	width:207px;
+	height:44px;
+	border-left:1px solid #989898;
+	border-top:1px solid #989898;
+	border-right:1px solid #989898;
+	margin:0 auto;
+}
+.space-title p{
+	margin:5px 0 0 60px;
+	font:12px/16px "宋体";
+	color:#3c3c3c;
+	width:134px;
+	
+}
+.space-map{
+	display:block;
+	width:207px;
+	height:128px;
+	border:2px solid #989898;
+	margin:0 auto;
+}
+.space-arrange .thumbnail:hover .space-title{
+	border-left:1px solid #91c31e;
+	border-top:1px solid #91c31e;
+	border-right:1px solid #91c31e;
+}
+
+.space-arrange .thumbnail:hover .space-map{
+	border-left:1px solid #91c31e;
+	border-bottom:1px solid #91c31e;
+	border-right:1px solid #91c31e;
+	border-top:none;
+
+}
+
+.space-arrange .thumbnail:hover .space-map img{
+	margin:0 -1px -2px 0;
+	padding-top:2px;
+	}
