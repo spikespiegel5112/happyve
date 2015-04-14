@@ -390,7 +390,7 @@
     -webkit-border-radius: 20px; /* Safari 4 and earlier */
     border-radius: 20px; /* Opera, Chrome, Safari 5, IE 9 */
     border-top: 1px solid #fff;
-    background-color: hsla(182, 44%, 76%, .5);
+   
     background-image: -moz-linear-gradient(hsla(0, 0%, 100%, .6), hsla(0, 0%, 100%, 0) 30px);
     background-image: -webkit-gradient(linear, 0 0, 0 30, from(hsla(0, 0%, 100%, .6)), to(hsla(0, 0%, 100%, 0)));
     -moz-box-shadow: 1px 1px 2px hsla(0, 0%, 0%, .3);
@@ -399,7 +399,24 @@
     word-wrap: break-word;
 
 }
-
+.green-hsla{
+	 background-color: hsla(80, 70%, 60%, .5);
+}
+.yellow-hsla{
+	 background-color: hsla(37, 76%, 70%, .5);
+}
+.blue-hsla{
+	 background-color: hsla(202, 70%, 46%, .5);
+}
+.violet-hsla{
+	 background-color: hsla(270, 46%, 60%, .5);
+}
+.brownness-hsla{
+	 background-color: hsla(33, 80%, 50%, .5);
+}
+.cyan-hsla{
+	 background-color: hsla(150, 60%, 40%, .5);
+}
 .p-user-info:after {
     content: "\00a0"; /* &nbsp; */
     display: block;
@@ -416,9 +433,9 @@
 .p-user-info:hover {
     top: -2px;
     left: -2px;
-    -moz-box-shadow: 3px 3px 2px hsla(0, 0%, 0%, .3);
-    -webkit-box-shadow: 3px 3px 2px hsla(0, 0%, 0%, .3);
-    box-shadow: 3px 3px 2px hsla(0, 0%, 0%, .3); /* Opera, IE 9 */
+    -moz-box-shadow: 3px 3px 2px hsla(0, 0%, 0%, .2);
+    -webkit-box-shadow: 3px 3px 2px hsla(0, 0%, 0%, .2);
+    box-shadow: 3px 3px 2px hsla(0, 0%, 0%, .2); /* Opera, IE 9 */
     text-shadow: 1px 1px 1px hsla(0, 0%, 100%, .7); /* FF, Opera, Safari, Chrome */
 }
 
