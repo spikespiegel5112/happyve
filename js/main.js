@@ -12,7 +12,7 @@
 
 		$("img.lazy").unveil();
 
-		$(".activity .thumbnail, .teacher-img .thumbnail").matchHeight({
+		$(".match-height .thumbnail").matchHeight({
 			byRow: !0,
 			property: "height",
 			target: null,

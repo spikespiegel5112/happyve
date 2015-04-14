@@ -188,3 +188,34 @@ a:hover {
 /* other style */
 
 
+.green_line {
+    background: url(../img/hp_share/green_line.png) no-repeat;
+    width: 690px;
+    height: 10px;
+    margin: 0 0 0 20px;
+}
+
+/** 学校空间 控件 */
+.sp-edit-tool {
+    width:60%;
+    text-align: right;
+    margin: 0 0 10px;
+
+}
+.sp-edit-tool a {
+    color: #b4b4b4;
+}
+.sp-edit-tool a:hover {
+    color: #91c31e;
+}
+
+.teacher-video-view:hover .wind-video {
+    top: 28px;
+}
+
+.teacher-video-view .wind-video {
+    position: absolute;
+    top:30px;
+    left: 91px;
+}
+

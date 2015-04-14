@@ -20,13 +20,9 @@
     display: inline;
     margin: 10px;
     width: 200px;
+
 }
-.green_line {
-    background: url(../img/hp_share/green_line.png) no-repeat;
-    width: 690px;
-    height: 10px;
-    margin: 0 0 20px 20px;
-}
+
 
 /** 快乐分享导航栏 二级菜单 */
 .activity-sub-list {
@@ -52,7 +48,7 @@
     content: "|";
 }
 
-.activity .thumbnail {
+.activity .thumbnail, .match-height .thumbnail {
     border-radius: 0;
     display: block;
     margin-bottom: 30px;
@@ -62,27 +58,32 @@
     /*text-align: center;*/
 }
 
-.activity .act-item {
+.match-height .act-item {
     padding: 0 0;
     width: 20%;
     min-width: 210px;
     margin: 0 5px;
 }
 
-.activity .thumbnail:hover {
+.match-height .act-item .btn {
+    color: #b4b4b4;
+}
+
+.match-height .thumbnail:hover {
     border: solid #91c31e 1px;
 }
 
-.activity h3 {
+.match-height h3 {
     font: 14px "微软雅黑" ;
     color: #3c3c3c;
 }
 
-.activity small, .activity p {
+.match-height small, . match-height p {
     font: 12px "宋体";
     color: #777;
 }
 
+/** 分页 */
 .activity-pagin, .pagin-center {
     margin: 0 auto;
     text-align: center;
