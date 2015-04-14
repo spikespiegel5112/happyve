@@ -2,6 +2,8 @@
 .hp-share-left {
     background: #ffffff;
     margin-top: 20px;
+	border:1px solid #d6d6d6;
+	border-radius:6px;
 }
 
 .activity-header {
@@ -134,7 +136,7 @@
 	height:11px;
 	position:absolute;
 	top:-6px;
-	left:63px;
+	left:65px;
 	background:url(../img/hp_share/shade.png) no-repeat;
 }	
 .badge-school{
@@ -144,7 +146,7 @@
 	border:2px solid #91c81e;
 	position:absolute;
 	top:-6px;
-	left:11px;
+	left:13px;
 	background-color:#fff;
 }
 
@@ -193,3 +195,78 @@
 	margin:0 -1px -2px 0;
 	padding-top:2px;
 	}
+/*个人*/
+.perdonage-act{
+	margin-left:5px;
+}
+.perdonage-act .act-item {
+    padding: 0 0;
+    width: 20%;
+    min-width: 210px;
+    margin: 0 0;
+}
+.perdonage-act .thumbnail{
+	border:1px solid #fff;
+	background-color: transparent;
+	box-shadow:none;
+	}
+.personage-img{
+	width:210px;
+	height:135px;
+	display:block;
+	border:1px solid #a0a0a0;
+	margin:0 auto;
+}
+
+.cap-personage h3{
+	font:14px/14px "微软雅黑";
+	margin-left:10px;
+}
+
+.cap-personage p{
+	font:12px/12px "宋体";
+	margin-left:10px;
+}
+.cap-personage{
+	margin-top:8px;
+	margin:0 auto;
+}
+/*班级*/
+.class-act{
+	margin:0;
+}
+.class-act .act-item {
+    padding: 0 0;
+    width: 20%;
+    min-width: 210px;
+    margin: 0 2px;
+}
+.class-act .thumbnail{
+	border:1px solid #cfcfcf;
+	width:210px;
+}
+	
+.cap-class{
+	text-align:center;
+}
+
+.class-act .class-img{
+	display:block;
+	width:200px;
+	height:135px;
+	margin:0 auto;
+}
+.cap-class h3{
+	font:14px/14px "微软雅黑";
+	color:#505050;
+	margin:8px 0;
+	
+}
+
+.cap-class p{
+	width:100%;
+	height:30px;
+	font:12px/30px "宋体";
+	color:#505050;
+	border-top:2px dashed #c9c9c9;
+}
