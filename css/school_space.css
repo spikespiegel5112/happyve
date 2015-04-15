@@ -4,3 +4,273 @@
     width: auto;
     height: 210px;
 }
+/*竞技场*/
+.incident-time{
+	width:656px;
+	height:auto;	
+	padding:0;
+}
+
+.incident-time li{
+	padding: 0px;
+	overflow:hidden;
+	margin-bottom:48px;
+	background-color:#f5f5f5;
+	
+}
+	
+.incident-time img{
+	width:422px;
+	height:206px;
+	float:left;
+}
+.incident-text{
+	width:234px;
+	height:206px;
+	float:left;
+	padding:10px;
+	line-height:18px;
+	border-top:1px solid #a0a0a0;
+	border-right:1px solid #a0a0a0;
+	border-bottom:1px solid #a0a0a0;
+	
+}
+.incident-text:hover{
+	border-top:2px solid #91c81e;
+	border-right:2px solid #91c81e;
+	border-bottom:2px solid #91c81e;
+	padding:9px 9px 9px 10px;
+}
+.incident-text h3{
+	margin:0;
+	line-height:24px;
+}
+
+.incident-pre{
+	overflow:hidden;
+	line-height:20px;
+	margin:0;
+}
+.incident-pre .incident-name{
+	display:block;
+	width:136px;
+	float:left;
+	white-space:nowrap; 
+}
+
+.incident-pre .incident-date{
+	display:block;
+	width:66px;
+	float:right;
+	white-space:nowrap;
+	text-align:right;
+}
+.incident-exp{
+	height:106px;
+}
+.icon-incident{
+	float:right;
+}
+.icon-incident a{
+	color:#969696;
+}
+
+.icon-incident a:hover{
+	color:#91c31e;
+}
+/*校长寄语*/
+.master-per{
+	width:580px;
+	margin:34px 0 0 54px;	
+}
+.master-text{
+	width:580px;
+	border-left:2px solid #aeaeae;
+	border-right:2px solid #aeaeae;
+	border-bottom:2px solid #aeaeae;
+	margin-top:-20px;
+	padding:30px 0 80px 0;
+}
+.master-text:hover{
+	border-left:2px solid #91c21e;
+	border-right:2px solid #91c21e;
+	border-bottom:2px solid #91c21e;
+}
+.bottom-line{
+	border-bottom:1px solid #d9d9d9;
+}
+.bottom-line:hover{
+	border-bottom:1px solid #91c21e;	
+}
+.master-text li{
+	width:510px;
+	height:22px;
+	line-height:22px;
+	border-bottom:1px solid #d9d9d9;
+	vertical-align:bottom;
+	margin:0 0 24px 32px;
+}
+
+.master-text .master-title{
+	width:378px;
+	text-align:center;
+	margin-left:100px;
+	margin-top:30px;
+	line-height:26px;
+	height:26px;
+	
+}
+
+.master-text a{
+	display:block;
+	margin-top:46px;
+	float:right;
+}
+.details-w{
+	float:right;
+	width:19px;
+	height:19px;
+	border-right:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+	padding-top:8px;
+	margin-right:6px;
+	margin-top:4px;
+}
+
+.details-n{
+	width:8px;
+	height:8px;
+	border-right:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;
+	margin:0px 0 0 8px;
+}
+.master-text a:hover .details-w{
+	border-right:1px solid #91c21e;
+	border-bottom:1px solid #91c21e;
+}
+.master-text a:hover .details-n{
+	border-right:1px solid #91c21e;
+	border-bottom:1px solid #91c21e;
+}
+.send-link{
+	width:580px;
+	height:16px;
+	background:url(../img/hp_share/send-link.jpg) repeat-x;
+	font:14px/16px "微软雅黑";
+	color:#91c81e;
+	margin:44px 0 10px 54px;
+}
+.send-link p{
+	background-color:#fff;
+	width:66px;
+	height:16px;
+	text-align:center;
+	margin-left:12px;
+	}
+.review-word{
+	padding:0;
+	width:550px;
+	margin-left:68px;
+	}
+	
+.review-word li{
+	height:22px;
+	line-height:22px;
+	margin-bottom:11px;
+}
+
+.review-word li .review-title{
+	float:left;
+	width:162px;
+	white-space:nowrap;
+	overflow:hidden; 
+	text-overflow:ellipsis;
+	-o-text-overflow: ellipsis;
+}
+
+.review-word li .review-date{
+	float:right;
+}
+.review-date .glyphicon{
+	font-size:10px;
+}
+/*组织架构*/
+.organize-form{
+	width:450px;
+	height:336px;
+	border:1px solid #9c9c9c;
+	margin:20px 0 0 118px;
+}
+.organize-head{
+	overflow:hidden;
+	width:448px;
+	height:26px;
+	font:12px/26px "宋体";
+	background-color:#c7e48d;
+	vertical-align:centter;
+}
+.organize-head p{
+	float:left;
+	margin: 0 7px 0 68px;
+}
+.organize-head .form-control{
+	border-radius:0;
+	border:1px solid #9c9c9c;
+	}
+.organize-head select{
+	float:left;
+	width:64px;
+	height:20px;
+	padding:0;
+	text-align:center;
+	margin-top:4px;
+	font:12px/20px "宋体";	
+}
+.opt-line{
+	border-bottom:1px solid #9c9c9c;
+	
+}
+.organize-head input{
+	float:right;
+	width:138px;
+	height:18px;
+	line-height:18px;
+	padding:0;
+	text-align:center;
+	margin:4px 68px 0 0;
+	font:12px "宋体";
+}
+.list-orgainze{
+	width:448px;
+	height:286px;
+	margin:10px 0;
+	overflow:hidden;
+}
+
+.organize-left{
+	width:224px;
+	float:left;
+	padding:0;
+	border-right:1px solid #bbbaba;
+}
+
+.organize-right{
+	width:224px;
+	float:right;
+	padding:0;
+}
+.list-orgainze ul li{	
+	line-height:24px;
+	height:24px;
+	padding-left:16px;
+}
+
+.list-orgainze ul li:hover{
+	background-color:#e2f2c6;
+	font-weight:bold;
+	
+}
+.list-orgainze ul li:hover a{
+	color:inherit;
+}
+
