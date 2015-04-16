@@ -158,17 +158,21 @@
 	border-bottom:1px solid #91c21e;
 }
 .send-link{
-	width:580px;
+	
 	height:16px;
-	background:url(../img/hp_share/send-link.jpg) repeat-x;
-	font:14px/16px "微软雅黑";
-	color:#91c81e;
-	margin:44px 0 10px 54px;
+	background:url(../img/hp_share/send-link.jpg) repeat-x;	
+	
 }
+.send-befo{
+	width:580px;
+	margin:44px 0 10px 54px;
+	}
 .send-link p{
 	background-color:#fff;
 	width:66px;
 	height:16px;
+	font:14px/16px "微软雅黑";
+	color:#91c81e;
 	text-align:center;
 	margin-left:12px;
 	}
@@ -279,3 +283,51 @@
 	color:inherit;
 }
 
+/*快乐演习*/
+.gratitude-tr{
+	width:690px;
+	height:434px;
+	background:url(../img/hp_share/thankyou.png) no-repeat;
+	margin:8px 0 20px 0;
+	font:14px/24px "微软雅黑";
+	color:#3c3c3c;
+	
+}
+.thank-te{
+	width:672px;
+	margin-left:10px;
+}
+.order-mes{
+	display:block;
+	margin:0 0 0 40px;
+	padding-top:10px;
+	
+}
+.tree-point{
+	float:left;
+}
+.text-grati{
+	margin:102px 20px 0 0;
+	float:right;
+	text-align:right;	
+}
+.kindheart-mes{
+	width:690px;
+	height:434px;
+	background: url(../img/hp_share/loveheart.png) no-repeat;
+	margin-top:8px;
+	font:14px/24px "微软雅黑";
+	color:#fff;
+	position:relative;
+}
+.text-kindheart{
+	margin:20px 0 0 36px;
+	
+}
+.tip-trans{
+	position:absolute;
+	top:170px;
+	left:420px;
+	width:100px;
+	height:100px;
+}
