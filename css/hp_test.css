@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+/*评测详情页面*/
 .test_banner {
     width: 550px;
     height: 140px;
@@ -7,6 +7,8 @@
 }
 
 .hp-test-left {
+    width: 810px;
+    height: 100%;
     background: #ffffff;
     margin-top: 20px;
     border: 1px solid #d4d4d4;
@@ -14,7 +16,7 @@
 }
 
 .back {
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 15px;
     font-size: 16px;
     font-weight: 700;
@@ -26,6 +28,7 @@
     height: 10px;
     margin: 20px 0 0 20px;
 }
+
 .emotion {
     height: 32px;
     background-color: #91c31e;
@@ -36,7 +39,7 @@
     border-right-color: #91c31e;
 }
 
-.emotion p, .character p, .goodness p, .tenacity p{
+.emotion p, .character p, .goodness p, .tenacity p {
     padding: 0 20px;
     line-height: 26px;
     font-size: 18px;
@@ -49,7 +52,8 @@
     background-color: #d7f0aa;
     padding-left: 50px;
 }
-.character{
+
+.character {
     height: 32px;
     background-color: #78c8c8;
     border-style: solid;
@@ -58,11 +62,13 @@
     border-top-color: #78c8c8;
     border-right-color: #78c8c8;
 }
+
 .character_detail {
     height: 110px;
     background-color: #c8ffff;
     padding-left: 50px;
 }
+
 .goodness {
     height: 32px;
     background-color: #ffb450;
@@ -72,12 +78,14 @@
     border-top-color: #ffb450;
     border-right-color: #ffb450;
 }
-.goodness_detail{
+
+.goodness_detail {
     height: 110px;
     background-color: #ffe6be;
     padding-left: 50px;
 }
-.tenacity{
+
+.tenacity {
     height: 32px;
     background-color: #be96e6;
     border-style: solid;
@@ -86,64 +94,73 @@
     border-top-color: #be96e6;
     border-right-color: #be96e6;
 }
-.tenacity_detail{
+
+.tenacity_detail {
     float: left;
     width: 550px;
     height: 110px;
     background-color: #f0dcfa;
     padding-left: 50px;
 }
-.test_banner img{
+
+.test_banner img {
     position: absolute;
     right: 150px;
     top: 130px;
 }
-.gray-line{
+
+.gray-line {
     margin: 0;
     padding: 0;
-    height:1px;
-    border:none;
-    border-top:1px solid #b4b4b4;
+    height: 1px;
+    border: none;
+    border-top: 1px solid #b4b4b4;
 }
-p.question{
+
+p.question {
     padding-top: 20px;
     font-size: 14px;
 }
-p.test-number{
+
+p.test-number {
     font-size: 14px;
     font-weight: normal;
 }
+
 p.test-number span {
     font-size: 16px;
     font-weight: 700;
     padding: 5px;
     color: #ffb450;
 }
-p.question-number{
+
+p.question-number {
     font-weight: bold;
 }
-p.question-number span{
+
+p.question-number span {
     font-size: 18px;
     font-weight: 700;
     padding: 5px;
     color: #ff8219;
 }
+
 .test_questions {
     margin: 45px 0 0 130px;
 }
 
-.test_questions form{
+.test_questions form {
     font-size: 14px;
     line-height: 30px;
 }
 
-.test_questions form label{
+.test_questions form label {
     font-style: normal;
     font-weight: normal;
     margin-left: 10px;
 }
 
-.pre_question{
+.pre_question {
     position: absolute;
     left: 150px;
     width: 100px;
@@ -156,11 +173,11 @@ p.question-number span{
     text-align: center;
     line-height: 30px;
     border-radius: 5px;
-    border:1px solid #646464;
+    border: 1px solid #646464;
     cursor: pointer;
 }
 
-.next_question, .submit{
+.next_question, .submit {
     position: absolute;
     left: 280px;
     width: 100px;
@@ -173,31 +190,114 @@ p.question-number span{
     text-align: center;
     line-height: 30px;
     border-radius: 5px;
-    border:1px solid #50a000;
+    border: 1px solid #50a000;
     cursor: pointer;
 }
-.pre_question:hover{
+
+.pre_question:hover {
     background-color: #91c31e;
-    border:1px solid #50a000;
+    border: 1px solid #50a000;
 }
-.for-first{
+
+.for-first {
     position: absolute;
     left: 150px;
 }
 
 .recommend {
-    position: relative;
-    top: 75px;
     margin-top: 75px;
-    margin-left: 100px;
-    margin-bottom: 370px;
+    margin-left: 80px;
 }
-.recommend ul{
+
+.recommend ul {
     height: 250px;
+    margin-left: 10px;
     padding: 0;
-}.recommend ul li{
-    width: 600px;
+}
+
+.recommend ul li {
+    width: 570px;
     height: 30px;
     padding: 5px;
     border-bottom: 1px solid #d5d5d5;
- }
+}
+.recommend_test{
+    position: relative;
+    top: 75px;
+    margin-bottom: 370px;
+}
+
+/*评测结果页*/
+.result_banner{
+    position: absolute;
+    left: 100px;
+    top: 58px;
+    background-image: url("../img/img_hp_test/hp_test_result_banner.jpg");
+    width: 585px;
+    height: 310px;
+    margin: 30px auto;
+}
+.test_result{
+    position: absolute;
+    right: 50px;
+    top: 80px;
+    width: 270px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #f5f5f5;
+}
+.test_result h4{
+    padding-top: 15px;
+    padding-left: 20px;
+    font-family: "Microsoft YaHei", "微软雅黑";
+}
+.test_button{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    font-family: "Microsoft YaHei", "微软雅黑";
+    cursor: pointer;
+}
+.test_button:hover{
+    background-color: #91c31e;
+    border: 1px solid #50a000;
+}
+.test_again{
+    right: 200px;
+    bottom: 60px;
+    background-color: #91c31e;
+    box-shadow: 1px 2px 1px #50a000;
+}
+.more_test{
+    right: 70px;
+    bottom: 60px;
+    margin-left: 20px;
+    background-color: #b4b4b4;
+    box-shadow: 1px 2px 1px #646464;
+}
+.test_result_icon{
+    position: relative;
+    left: 80px;
+    top: 340px;
+    width: 585px;
+    height: 35px;
+}
+.result_zan{
+    float: right;
+    margin-right: 5px;
+}
+.result_share{
+    float: right;
+}
+.recommend_playing{
+    position: relative;
+    top: 280px;
+    margin-bottom: 255px;
+}
