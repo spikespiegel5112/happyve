@@ -163,6 +163,9 @@
 .detai-left:hover{
 	color:#91c81e;
 }
+.detai-left:hover .glyphicon-heart{
+	color:#ff7800;
+}
 .all-detai{
 	float:right;
 	font:12px/34px "宋体";
