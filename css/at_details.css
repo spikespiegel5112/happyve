@@ -1,0 +1,297 @@
+@charset "utf-8";
+.activity-detai{
+	
+}
+.act-back{
+	display:block;
+	font:14px/30px "微软雅黑";
+	margin-left:24px;
+}
+
+.details-mes{
+	width:650px;
+	overflow:hidden;
+	margin:0 0 12px 16px;
+}
+.details-mes img{
+	float:left;
+	width:398px;
+	height:250px;
+}
+
+.details-mes .details-text{
+	float:left;
+	width:252px;
+	height:250px;
+	padding:17px;
+	background-color:#f5f5f5;
+}
+.details-text h3{
+	margin:0;
+}
+
+.details-text hr{
+	margin:0;
+	border:0;
+	background-color:#b5b5b5;
+	height:1px;
+}
+.details-text p{
+	font:12px/26px "宋体";
+	color:#505050;
+	margin-bottom:0;
+	}
+.details-text .details-intr{
+	line-height:18px;
+	margin-top:6px;
+	height:130px;
+}
+.detai-date{
+	text-align:right;
+	float:right;
+}
+.btn-fl{
+	width:650px;
+	height:24px;
+	margin-left:16px;
+}
+.detai-btn{
+	width:74px;
+	height:24px;
+	border-radius:2px;
+	border:1px solid #c8c8c8;
+	background:url(../img/hp_share/detai-btn.png) repeat-x;
+	font:12px/24px "宋体";
+	color:#3c3c3c;
+	padding:0;
+	float:right;
+	margin-left:6px;
+}
+.detai-btn:hover{
+	color:#91c81e;
+	border:1px solid #91c81e;
+}
+.detai-nav{
+	width:690px;
+	border-bottom:1px solid #919191;
+	margin:20px 0;
+	padding-left:24px;
+
+}
+
+.detai-nav ul li:first-child a::before {
+	content: "| ";
+}
+
+.detai-nav ul li a::after {
+	content: "|";
+	padding: 0 0 0 8px;
+}
+.detai-nav li.active a {
+	color: #5aaa00;
+}
+.act-details{
+	margin:0 0 0 24px;
+}
+.act-details .detai-row {
+	margin:0 16px 0 0;
+    width: 319px;
+	padding:0;
+}
+.act-details .thumbnail{
+	border:none;
+	width:319px;
+	padding:0;
+	position:relative;
+}
+
+.thumb-border{
+	margin:2px 2px 32px 2px;
+
+}
+
+.thumb-border:hover{
+	border:2px solid #91c81e;
+	margin:0 0 30px 0;
+}
+.detai-content{
+	width:323px;
+}
+
+.play-detai{
+	width:54px;
+	height:54px;
+	position:absolute;
+	top:74px;
+	left:136px;
+	z-index:2;
+}
+.play-detai:hover{
+	top:76px;
+}
+.add-detai{
+	width:74px;
+	height:74px;
+	position:absolute;
+	top:60px;
+	left:122px;
+	z-index:2;
+}
+
+.detai-content img{
+	width:319px;
+	height:195px;
+	
+}
+.detai-icon{
+	width:319px;
+	display: block;
+	height:34px;
+	background-color:#f5f5f5;
+	overflow:hidden;
+	padding:0 6px;
+}
+
+.detai-left{
+	float:left;
+	width:50px;
+	font:12px/34px "宋体";
+	color:#3c3c3c;
+	padding:0;
+	background-color:#f5f5f5;
+}
+.detai-left:hover{
+	color:#91c81e;
+}
+.detai-left:hover .glyphicon-heart{
+	color:#ff7800;
+}
+.all-detai{
+	float:right;
+	font:12px/34px "宋体";
+	color:#3c3c3c;
+	padding:0;
+	background-color:#f5f5f5;
+}
+.detai-right{
+	width:50px;
+}
+
+.all-detai:hover{
+	color:#91c81e;
+}
+.add-box-dt{
+	width:319px;
+	height:195px; 
+	background-color:#f0f0f0; 
+	border:1px solid #e3e1e1;
+}
+
+/*相册*/
+.photo-details{
+	margin:0 0 0 24px;
+}
+.photo-details .photo-row {
+	margin:0 16px 0 0;
+    width: 210px;
+	padding:0;
+}
+.photo-details .thumbnail{
+	border:none;
+	width:210px;
+	padding:0;
+	position:relative;
+}
+
+.photo-content{
+	width:214px;
+}
+
+.photo-icon{
+	width:210px;
+	display: block;
+	height:32px;	
+	overflow:hidden;
+	padding:0 6px;
+	background-color:#f5f5f5
+}
+
+.detai-tiny{
+	width:20px;
+}
+.add-photo{
+	width:74px;
+	height:74px;
+	position:absolute;
+	top:40px;
+	left:72px;
+	z-index:2;
+}
+
+.add-box-pt{
+	width:210px;
+	height:141px; 
+	background-color:#f0f0f0; 
+	border:1px solid #e3e1e1;
+} 
+/*书册*/
+.book-details{
+	margin:0 0 0 34px;
+}
+.book-details .book-row {
+	margin:0 24px 0 0;
+    width: 186px;
+	padding:0;
+}
+.book-details .thumbnail{
+	border:none;
+	width:186px;
+	padding:0;
+	position:relative;
+}
+
+.book-content{
+	width:190px;
+}
+
+.book-icon{
+	width:186px;
+	display: block;
+	height:32px;	
+	overflow:hidden;
+	padding:0 6px;
+	background-color:#f5f5f5
+}
+
+.detai-tiny{
+	width:20px;
+}
+.add-book{
+	width:74px;
+	height:74px;
+	position:absolute;
+	top:72px;
+	left:56px;
+	z-index:2;
+}
+
+.add-box-bk{
+	width:186px;
+	height:218px; 
+	background-color:#f0f0f0; 
+	border:1px solid #e3e1e1;
+} 
+
+#detai-poster{
+	display:none;
+}
+
+#detai-book{
+	display:none;
+}
+
+#detai-play{
+	display:none;
+}
+/* CSS Document */
+

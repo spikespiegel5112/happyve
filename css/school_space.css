@@ -5,6 +5,11 @@
     height: 210px;
 }
 /*竞技场*/
+.timer-shaft{
+	width:690px;
+	height:30px;
+	margin-bottom:30px;
+	}
 .incident-time{
 	width:656px;
 	height:auto;	
