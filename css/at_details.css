@@ -59,6 +59,8 @@
 	width:74px;
 	height:24px;
 	border-radius:2px;
+	-moz-border-radius: 2px; 
+    -webkit-border-radius: 2px;
 	border:1px solid #c8c8c8;
 	background:url(../img/hp_share/detai-btn.png) repeat-x;
 	font:12px/24px "宋体";
