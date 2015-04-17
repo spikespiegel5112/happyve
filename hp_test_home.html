@@ -9,13 +9,14 @@
     <meta name="keywords" content="">
     <title>幸福流-快乐大本营</title>
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
 
     <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/hero_game.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hp_test.css" type="text/css" media="all">
+
 </head>
 <body>
 
@@ -25,9 +26,9 @@
         <ul>
             <!--<li><a class="u-lo btn btn-default" role="button">登陆</a></li>-->
             <!--<li><a class="u-reg btn btn-default" role="button">注册</a></li>-->
-            <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 我的信息</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人信息</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 在线帮助</a></li>
+            <li><a  href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
+            <li><a  href="#"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
+            <li><a  href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span> 在线帮助</a></li>
         </ul>
     </div>
 </div>
@@ -41,29 +42,25 @@
             <div class="navbar-collapse collapse" role="navigation">
                 <ul class="h-nav-ul nav navbar-nav">
                     <li class="dropdown hidden-sm hidden-md">
-                        <a class="h-nav-a dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">快乐大本营<b
-                                class="caret"></b></a>
+                        <a class="h-nav-a dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">快乐大本营<b class="caret"></b></a>
                         <ul class="h-drop-menu dropdown-menu">
-                            <li><a href="happy_camp.html">训练营</a></li>
-                            <li><a href="#">师徒行</a></li>
-                            <li><a href="#">大秀场</a></li>
+                            <li > <a href="happy_camp.html">训练营</a></li>
+                            <li ><a href="#">师徒行</a></li>
+                            <li ><a href="#">大秀场</a></li>
                         </ul>
                     </li>
                     <li><a class="h-nav-a" href="hero_game.html">英雄风云场</a></li>
                     <li><a class="h-nav-a" href="myFiles.html">我的档案</a></li>
                     <li><a class="h-nav-a" href="#">我的集体</a></li>
                 </ul>
-                <div class="i-search nav navbar-nav navbar-right hidden-sm">
-                    <div class="input-group">
+                <form action="##" class="navbar-form navbar-right" rol="search">
+                    <div class="form-group">
                         <input type="text" class="form-control" placeholder="快乐英雄">
-                          <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span
-                                    class="glyphicon glyphicon-search"></span></button>
-                          </span>
                     </div>
-                    <!-- /input-group -->
-                </div>
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                </form>
             </div>
+
         </div>
     </div>
 </div>
@@ -73,118 +70,205 @@
 <!-- 内容 开始 -->
 <div id="content" class="row">
     <!-- banner 开始  -->
-    <!--<div id="header-banner" class="col-md-10 col-md-offset-1">-->
-    <!--<div class="banner">-->
-    <!--<a href="#"><img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304"></a>-->
-    <!--</div>-->
-    <!--<div>-->
-    <!--<div class="user-level-disk-round">-->
-    <!--<img id="user-level-disk-img" src="img/half-round.png" alt="" width="286" height="199">-->
-    <!--</div>-->
-    <!--<div id="user-level-test">-->
-    <!--<a href="#"></a>-->
-    <!--</div>-->
-    <!--<div id="user-level-exercise">-->
-    <!--&lt;!&ndash;<a href="#"><span>asdas</span></a>&ndash;&gt;-->
-    <!--</div>-->
-    <!--<div id="user-level-mark">-->
-    <!--&lt;!&ndash;<a href="#"><span>asdas</span></a>&ndash;&gt;-->
-    <!--</div>-->
+    <div id="header-banner" class="col-md-10 col-md-offset-1">
+        <div class="banner">
+            <div class="hp_test_home_banner">
+                <a href="javascript:;"><img src="img/img_hp_test/hp_test_home_banner.png" alt="快乐评测" /></a>
+                <ul class="test_home_banner_text">
+                    <li>想了解自己的心理实力够不够强大？</li>
+                    <li>想明白自己真心渴望的是什么嘛？</li>
+                    <li>你没看错！来这里，获得属于专属于自己的心理标签。</li>
+                    <li>本测试工具基于积极心理学的人格多维模型测评开发，</li>
+                    <li>综合分析出个人情绪、美德、性格、韧性方面的量度和系数，</li>
+                    <li>从而有针对的向着“快乐英雄”的目标自我提升。</li>
+                </ul>
+            </div>
+        </div>
 
-    <!--<div class="user-level-disk">-->
-    <!--<img src="img/pointer-round.png" alt="用户等级" width="170" height="170">-->
-    <!--</div>-->
-    <!--</div>-->
+        <div class="user-level-in-banner not-index">
+            <div class="user-level-disk-round not-index">
+                <img id="user-level-disk-img" src="img/turnplate.png" alt="" width="304" height="210">
+            </div>
+            <div id="user-level-test" class="not-index">
+                <!--<a href="#"></a>-->
+            </div>
+            <div id="user-level-exercise" class="not-index">
+                <!--<a href="#"><span>asdas</span></a>-->
+            </div>
+            <div id="user-level-mark" class="not-index">
+                <!--<a href="#"><span>asdas</span></a>-->
+            </div>
 
-    <!--</div>-->
+            <div class="user-level-disk not-index">
+                <img src="img/pointer-round.png" alt="用户等级" width="170" height="170">
+            </div>
+        </div>
+    </div>
     <!-- banner 结束 -->
 
     <!-- 左边区域 开始 -->
-    <div id="left-content" class="col-md-7 col-md-offset-1 hp_test_left_details">
-        <div class="back">
-            <a href="javascript:;">&lt;&lt; 返回</a>
-        </div>
-        <div class="green_line"></div>
-        <div class="test_banner">
-            <div class="emotion"><p>情绪</p></div>
-            <div class="emotion_detail">
-                <p class="question">自己在别人眼里是不是一个粗暴的人？</p>
-
-                <p class="test-number"><span>12568</span>已测试过 &nbsp;&nbsp;<span>3456</span>已收藏</p>
-
-                <hr class="gray-line"/>
-                <p class="question-number">当前第<span>1</span>题 本测试共<span>4</span>题</p>
+    <div id="left-content" class="col-md-7 col-md-offset-1">
+        <div class="left_column col-lg-8">
+            <div class="hp_test">
+                <div class="system_statistics">
+                    <a href="#">系统有12万用户</a>
+                </div>
+                <div class="hp_test_hotlabel_link"></div>
+                <div class="hp_test_hotlabel">
+                    <ul>
+                        <li class="hp_test_hotlabel_line"></li>
+                        <li class="hp_test_hotlabel_line">
+                            <ul>
+                                <li class="test_hotlabel_row">
+                                    <ol>
+                                        <li class="hotlabel_one"><a href="javascript:;">1.<span>了不起的盖茨比</span></a></li>
+                                        <li class="hotlabel_count hotlabel_count_left"><span>720548</span></li>
+                                        <li class="hotlabel_four"><a href="javascript:;">4.<span >足智多谋</span></a></li>
+                                        <li class="hotlabel_count hotlabel_count_right"><span>120543</span></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hp_test_hotlabel_line">
+                            <ul>
+                                <li class="test_hotlabel_row">
+                                    <ol>
+                                        <li class="hotlabel_two"><a href="javascript:;">2.<span >童叟无欺</span></a></li>
+                                        <li class="hotlabel_count hotlabel_count_left"><span>520647</span></li>
+                                        <li class="hotlabel_fine " ><a href="javascript:;">5.<span >胆小的猫咪</span></a></li>
+                                        <li class="hotlabel_count hotlabel_count_right"><span>80543</span></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="hp_test_hotlabel_line">
+                            <ul>
+                                <li class="test_hotlabel_row">
+                                    <ol>
+                                        <li class="hotlabel_three"><a href="javascript:;">3.<span >不屈的角斗士</span></a></li>
+                                        <li class="hotlabel_count hotlabel_count_left"><span>320543</span></li>
+                                        <li class="hotlabel_six"><a href="javascript:;">6.<span >微笑的蒙娜丽莎</span></a></li>
+                                        <li class="hotlabel_count hotlabel_count_right"><span>20543</span></li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="test_vertical_line">
+                        <img src="img/img_hp_test/hp_test_verline.png">
+                    </div>
+                </div>
+                <div class="hp_test_list_link"></div>
+                <div class="hp_test_list list_emotion">
+                    <div class="list_header list_header_emotion">
+                        <div class="list_header_title list_header_title_emotion">情绪</div>
+                        <div class="list_header_icon">
+                            <img src="img/img_hp_test/qxhead.jpg">
+                        </div>
+                        <div class="test_description">
+                            <p>针对内部或对外部的重要事件所产生的冲突反应，一个主体对同一种事件总是有同样的反应。情绪的微妙之处已经大大超越了人类语言能够形容的范围。情绪不可能被完全消灭，但可以进行有效疏导、有效管理、适度控制。</p>
+                        </div>
+                    </div>
+                    <div class="list_details">
+                        <ul class="list_details_table">
+                            <li class="list_details_row">
+                                <ul class="list_details_col">
+                                    <li class="list_details_question">你在别人眼里是不是一个粗暴的人</li>
+                                    <li class="list_details_label"><span>愤怒的小鸟</span></li>
+                                    <li class="list_details_btn"><button type="button" value="查看结果"></button></li>
+                                </ul>
+                            </li>
+                            <li class="list_details_row">
+                                <ul class="list_details_col">
+                                    <li class="list_details_question">你在别人眼里是不是一个粗暴的人</li>
+                                    <li class="list_details_label"><span>愤怒的小鸟</span></li>
+                                    <li class="list_details_btn"><button type="button" value="查看结果"></button></li>
+                                </ul>
+                            </li>
+                            <li class="list_details_row">
+                                <ul class="list_details_col">
+                                    <li class="list_details_question">你在别人眼里是不是一个粗暴的人</li>
+                                    <li class="list_details_label"><span>愤怒的小鸟</span></li>
+                                    <li class="list_details_btn"><button type="button" value="查看结果"></button></li>
+                                </ul>
+                            </li>
+                            <li class="list_details_row">
+                                <ul class="list_details_col">
+                                    <li class="list_details_question">你在别人眼里是不是一个粗暴的人</li>
+                                    <li class="list_details_label"><span>愤怒的小鸟</span></li>
+                                    <li class="list_details_btn"><button type="button" value="查看结果"></button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list_emotion_more">
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="hp_test_list list_goodness">
+                    <div class="list_header list_header_goodness">
+                        <div class="list_header_title list_header_title_goodness">美德</div>
+                        <div class="list_header_icon">
+                            <img src="img/img_hp_test/mdhead.jpg">
+                        </div>
+                        <div class="test_description">
+                            <p>凡是可以给一个人的自我增添力量的东西，包括力量，勇气，自信等，都可以称之为美德，不同的性格优势可以汇聚成不同的美德。目前研究发现，中国人主要存在三大美德优势，分别是:人际美德、谨慎美德和活力美德。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_emotion_more">
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="hp_test_list list_character">
+                    <div class="list_header list_header_character">
+                        <div class="list_header_title list_header_title_character">性格</div>
+                        <div class="list_header_icon">
+                            <img src="img/img_hp_test/xghead.jpg">
+                        </div>
+                        <div class="test_description">
+                            <p>人对现实的态度和相应的行为方式中的比较稳定的、具有核心意义的个性心理特征。性格表现了人们对现实和周围世界的态度，并表现在他的行为举止中，主要体现在对自己、对别人、对事物的态度和所采取的言行上。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="list_emotion_more">
+                    <a href="javascript:;"></a>
+                </div>
+                <div class="hp_test_list list_tenacity">
+                    <div class="list_header list_header_tenacity">
+                        <div class="list_header_title list_header_title_tenacity">韧性</div>
+                        <div class="list_header_icon">
+                            <img src="img/img_hp_test/rxhead.jpg">
+                        </div>
+                        <div class="test_description">
+                            <p>在压力下复原和成长的心理机制，面对丧失、困难或者逆境时的有效应对和反应。不仅意味着能在重大创伤或应激之后最初状态，在压力的威胁下能够顽强持久、坚韧不拔、更强调在挫折后的成长和新生。</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div><img src="img/img_hp_test/qxhead.jpg"></div>
-        </div>
-        <div class="test_questions">
-            <form action="" method="">
-                1.你经常处于喷怒的状态中吗？<br/><br/>
-                <input name="iCheck" checked type="radio" value="" id="fcbfh"/><label for="fcbfh">非常不符合 </label><br/>
-                <input name="iCheck" type="radio" value="" id="bfh"/><label for="bfh">不符合</label><br/>
-                <input name="iCheck" type="radio" value="" id="ydbfh"/><label for="ydbfh">有点不符合</label><br/>
-                <input name="iCheck" type="radio" value="" id="hns"/><label for="hns">很难说</label><br/>
-                <input name="iCheck" type="radio" value="" id="ydfh"/><label for="ydfh">有点符合 </label><br/>
-                <input name="iCheck" type="radio" value="" id="fh"/><label for="fh">符合 </label><br/>
-                <input name="iCheck" type="radio" value="" id="fcfh"/><label for="fcfh">非常符合 </label><br/>
-            </form>
-            <div class="next_question for-first">下一题</div>
-        </div>
-        <div class="recommend recommend_test">
-            <img src="img/img_hp_test/hp_test_recommend.png">
-            <ul>
-                <li><a href="javascript:;">你是否经常担心自己做错事情了？</a></li>
-                <li><a href="javascript:;">每次参加重要活动前的晚上，你不是经常提早醒来，或者睡不着觉？</a></li>
-                <li><a href="javascript:;">心里是不是总闷闷的，有种释放不出来的感觉？</a></li>
-                <li><a href="javascript:;">你认为安静的自娱远远胜过热闹的宴会么？</a></li>
-                <li><a href="javascript:;">与他人比较时，我是不是觉得：自己与别人是不同，我是比较突出的？</a></li>
-                <li><a href="javascript:;">有没有觉得也要经常回报那些爱着自己的人么？</a></li>
-                <li><a href="javascript:;">当你这次考了全班第一后，你会拼命争取去考你那几第一吗？</a></li>
-                <li><a href="javascript:;">你觉得爸爸妈妈爱你吗？</a></li>
-            </ul>
+            <div class="show-moretest">
+                <img class="show-moretest" src="img/img_hp_test/hp_test_duang.png" alt="更多评测请到这里duang~~~">
+            </div>
         </div>
     </div>
     <!-- 左边区域 结束 -->
     <!-- 右边区域 开始 -->
     <div id="right-content" class="col-md-3">
-        <div class="right-user-level">
-            <div class="right-user-level-disk-round">
-                <img id="user-level-disk-img" src="img/turnplate.png" alt="" width="304" height="210">
-            </div>
-            <div id="right-user-level-test-not-index">
-                <!--<a href="#"></a>-->
-            </div>
-            <div id="right-user-level-exercise-not-index">
-                <!--<a href="#"><span>asdas</span></a>-->
-            </div>
-            <div id="right-user-level-mark-not-index">
-                <!--<a href="#"><span>asdas</span></a>-->
-            </div>
-
-            <div class="right-user-level-disk">
-                <img src="img/pointer-round.png" alt="用户等级" width="170" height="170">
-            </div>
-        </div>
         <!-- 用户信息 开始 -->
         <div class="user-content user-info">
             <div class="user_name">
                 <span class="space-user">
-                    <a href="#" class="user_header"><img class="s-header-photo" src="img/space-head.jpg" alt="人物头像"
-                                                         width="50px" height="50px"></a>
+                    <a href="#" class="user_header"><img class="s-header-photo" src="img/space-head.jpg" alt="人物头像" width="50px" height="50px"></a>
                     <dl id="user_sc">
                         <dt class="name">邢伟伟</dt>
                         <dt class="school_name"><span class="school-icon"></span> 北京市八十一中学</dt>
                     </dl>
                 </span>
 
-
             </div>
 
             <div class="user_friend">
-                <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 好友 <span
-                        class="badge">10</span></a>
-                <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span
-                        class="badge">10</span></a>
+                <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span>好友 <span class="badge">10</span></a>
+                <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>收藏 <span class="badge">10</span></a>
             </div>
         </div>
         <!-- 用户信息 结束 -->
@@ -330,7 +414,6 @@
 
         <div class="f-partner">
             <span><img src="img/bottom-link.jpg"></span>
-
             <p>
                 <a href="#">忆尔</a>
                 <a href="#">清华积极心理研究中心</a>
@@ -345,7 +428,6 @@
                 <a href="#">博浪网</a>
                 <a href="#">智康堂</a>
             </p>
-
             <p>
                 <a href="#">忆尔</a>
                 <a href="#">清华积极心理研究中心</a>
@@ -364,21 +446,10 @@
 
         <div class="b-sns">
             <div class="sns-container">
-                <a target="_blank" href="#">
-                    <div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img
-                            src="img/SinaWeibo.png"></div>
-                </a>
-                <a target="_blank" href="#">
-                    <div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img
-                            src="img/TencentWeibo.png"></div>
-                </a>
-                <a target="_blank" href="#">
-                    <div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png">
-                    </div>
-                </a>
-                <a target="_blank" href="#">
-                    <div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div>
-                </a>
+                <a target="_blank" href="#"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
+                <a target="_blank" href="#"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
+                <a target="_blank" href="#"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
+                <a target="_blank" href="#"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
             </div>
         </div>
     </div>
@@ -390,15 +461,12 @@
 </div>
 <!-- 版权信息 结束 -->
 
-
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="assets/js/icheck.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/hp_test.js"></script>
 </body>
 </html>
