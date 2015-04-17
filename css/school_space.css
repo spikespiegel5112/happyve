@@ -224,6 +224,8 @@
 }
 .organize-head .form-control{
 	border-radius:0;
+	-moz-border-radius: 0;
+    -webkit-border-radius: 0;
 	border:1px solid #9c9c9c;
 	}
 .organize-head select{
@@ -303,9 +305,7 @@
 	padding-top:10px;
 	
 }
-.tree-point{
-	float:left;
-}
+
 .text-grati{
 	margin:102px 20px 0 0;
 	float:right;
@@ -330,4 +330,139 @@
 	left:420px;
 	width:100px;
 	height:100px;
+}
+
+
+
+.tree-point{
+	float:left;
+	position: relative;
+}
+.tree-point img{
+	position: absolute;
+	top:45px;
+	left:18px;
+}
+.tree-point{position: absolute;}
+
+.gratitude-1{ position: absolute; width:65px;height:65px;left: 40px;top: 162px; z-index:4; }
+.gratitude-2{position: absolute; width:65px;height:65px;left: 136px;top: 42px; z-index:4; }
+.gratitude-3{ position: absolute;width:50px;height:50px;left: 96px;top: 125px; z-index:4; }
+.gratitude-4{position: absolute; width:45px;height:45px;left: 146px;top: 160px; z-index:4;}
+.gratitude-5{position: absolute; width:45px;height:45px;left: 220px;top: 135px;z-index:4;}
+.gratitude-6{position: absolute; width:60px;height:60px;left: 286px;top: 80px;z-index:4; }
+.gratitude-7{position: absolute; width:50px;height:45px;left: 282px;top: 146px;z-index:4;}
+.gratitude-8{position: absolute; width:50px;height:45px;left: 252px;top: 227px;z-index:4;}
+.gratitude-9{position: absolute; width:45px;height:50px;left: 116px;top: 250px;z-index:4;}
+
+/*校园风采*/
+
+
+
+#ycontainer{
+	
+	position:relative;
+	width:60%;
+	margin:0;
+	padding-bottom: 10px;
+	
+}
+
+.grid{
+	width:210px;
+	min-height:141px;
+	padding: 0px;
+	background:#fff;
+	margin:8px;
+	font-size:12px;
+	float:left;
+	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	
+	-webkit-transition: top 1s ease, left 1s ease;
+	-moz-transition: top 1s ease, left 1s ease;
+	-o-transition: top 1s ease, left 1s ease;
+	-ms-transition: top 1s ease, left 1s ease;
+}
+.grid:hover{
+	box-shadow: 0px 2px 8px rgba(145,200,30,0.8);
+	-moz-box-shadow: 0px 2px 8px rgba(145,200,30,0.8);
+	-webkit-box-shadow: 0px 2px 8px rgba(145,200,30,0.8);
+}
+.mien-icon{
+	width:208px;
+	display: block;
+	height:34px;
+	background-color:#f5f5f5;
+	overflow:hidden;
+	padding:0 6px;
+}
+
+.detai-mien{
+	float:left;
+	width:55px;
+	height:20px;
+	font:12px/20px "宋体";
+	color:#969696;
+	padding:0;	
+	border-radius:2px;
+	-moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+	margin:6px 6px 0 0;
+}
+.no-mien{
+	background: url(../img/hp_share/mien-btn.jpg) repeat-x;
+	border:1px solid #c8c8c8;
+}
+
+.yet-mien{
+	background: url(../img/hp_share/mien-btn-gr.jpg) repeat-x;
+	border:1px solid #91c81e;
+}
+.detai-mien:hover{
+	color:#91c81e;
+}
+
+.grid .mien-title {
+	border-bottom:1px solid #ccc;
+	display:block;
+	overflow:hidden;
+	padding:6px 6px 0;
+	
+}
+.mien-title .mien-name{
+	display:block;
+	float:left;
+	width:110px;
+	height:26px;
+	font:14px/26px "微软雅黑";
+	color:#3c3c3c;
+	
+}
+.mien-title .mien-date{
+	display:block;
+	float:right;
+	width:64px;
+	height:26px;
+	text-align:right;
+	font:12px/30px "宋体";
+	color:#505050;
+}
+.mien-describe{	
+	font:12px/18px "宋体";
+	color:#505050;
+	padding:4px 6px 0;
+	
+}
+.grid .meta{
+	text-align:right;
+	color:#777;
+	font-style:italic;
+}
+.grid .imgholder img{
+	max-width:100%;
+	background:#ccc;
+	display:block;
+	margin:0 auto;
 }
