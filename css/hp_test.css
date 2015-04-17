@@ -269,6 +269,9 @@ p.question-number span {
     background-color: #91c31e;
     border: 1px solid #50a000;
 }
+.test_button span{
+    color: #ffffff;
+}
 .test_again{
     right: 200px;
     bottom: 60px;
