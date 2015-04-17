@@ -269,6 +269,9 @@ p.question-number span {
     background-color: #91c31e;
     border: 1px solid #50a000;
 }
+.test_button span{
+    color: #ffffff;
+}
 .test_again{
     right: 200px;
     bottom: 60px;
@@ -442,6 +445,9 @@ p.question-number span {
     font-size: 24px;
     font-weight: bold;
 }
+.list_header_title span{
+    color: #ffffff;
+}
 .list_header_icon{
     margin-left: 10px;
 }
@@ -547,6 +553,10 @@ p.question-number span {
     font-size: 12px;
     padding: 2px 10px;
     text-align: center;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .list_details_btn{
@@ -556,7 +566,7 @@ p.question-number span {
     font-size: 12px;
     text-indent: 0;
 }
-.list_details_btn_start{
+.list_details_btn_start span{
     color: #91c31e;
 }
 
