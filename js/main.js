@@ -95,7 +95,7 @@
     }
 
     function slideTxtBoxAction() {
-        $(".slideTxtBox,.activity-header-slide").slide();
+        $(".slideTxtBox,.activity-header-slide,.query-nav").slide();
     }
 
     function indexCarouselAction() {
