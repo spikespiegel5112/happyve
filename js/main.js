@@ -6,7 +6,7 @@
 
     $(document).ready(function(){
         happyexecrise();
-        user_level_hover();
+        //user_level_hover();
         slideTxtBoxAction();
         indexCarouselAction();
 
@@ -132,6 +132,6 @@
         });
     }
 
-}(jQuery));
 
+}(jQuery));
 

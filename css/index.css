@@ -1,9 +1,6 @@
 /* 头部样式 */
-.u-logion {
-    float: right;
-    margin: 0 100px 0 0;
-}
-
+.u-logion {margin:0 auto;width: 1200px;}
+.u-logion ul{float: right;}
 .u-logion ul li {
     width: 75px;
     display: inline;
