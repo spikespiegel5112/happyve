@@ -168,7 +168,7 @@
 .activity-pagin, .pagin-center {
     margin: 0 auto;
     text-align: center;
-    width: 60%;
+    width: 80%;
 }
 
 .pagin-center .pagination > li > a,  .pagin-center .pagination > li > span{
