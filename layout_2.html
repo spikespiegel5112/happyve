@@ -11,16 +11,13 @@
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
-
-    <!-- <link rel="stylesheet" href="css/layout.css" type="text/css" media="all"> -->
+    
     <link rel="stylesheet" href="css/layout_2.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
-
+    <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
-
-
 <div class="header_container">
     <div class="header_login_wrapper">
         <ul>
@@ -36,7 +33,7 @@
             <a href="index.html"><img src="img/logo.png" alt="logo" width="186" height="54"></a>
         </div>
         <div class="nav_main_list_wrapper" role="navigation">
-            <ul class="">
+            <ul class="nav_main_list_inner">
                 <li class="nav_main_list_item">
                     <a class="nav_main_button" href="javascript:;">快乐大本营<b class="caret"></b></a>
                     <ul class="nav_dropdown_item">
@@ -46,69 +43,54 @@
                         <li ><a href="javascript:;">大秀场</a></li>
                     </ul>
                 </li>
-                <li class="nav_main_list_item"><a class="h-nav-a" href="hero_game.html">英雄风云场</a></li>
-                <li class="nav_main_list_item"><a class="h-nav-a" href="myFiles.html">我的档案</a></li>
-                <li class="nav_main_list_item"><a class="h-nav-a" href="javascript:;">我的集体</a></li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
             </ul>
-            <div class="i-search nav navbar-nav navbar-right hidden-sm">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="快乐英雄">
-                      <span class="input-group-btn">
-                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                      </span>
-                </div><!-- /input-group -->
-            </div>
-        </div>
 
+        </div>
+        <div class="layout_serachbar_item">
+            <input type="text" class="form-control" placeholder="快乐英雄">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
     </div>
 </div>
 <!-- 头部登陆导航 结束 -->
-
-
-
 <!-- 内容 开始 -->
-<div class="layout_container">
-    <!-- banner 开始  -->
-    <div class="layout_banner_wrapper">
-        <div class="layout_dashboard_wrapper">
-            <ul class="layout_dashboard_indication_hover_wrapper">
-                <li class="layout_dashboard_indication_hover_1"><a href="javascript:;"></a></li>
-                <li class="layout_dashboard_indication_hover_2"><a href="javascript:;"></a></li>
-                <li class="layout_dashboard_indication_hover_3"><a href="javascript:;"></a></li>
-            </ul>
-            <div class="layout_dashboard_text">
-                <img src="img/img_wbl/zhiyongshuangquan_text_00000.png" width="300" height="300">
-            </div>
-            <div class="layout_dashboard_bg">
-                <img id="user-level-disk-img" src="img/img_wbl/zhiyongshuangquan_bg_00000.png" alt="" width="300" height="300">
-            </div>
-            <div class="layout_dashboard_indicator">
-                <img src="img/img_wbl/zhiyongshuangquan_indicator_00000.png" alt="用户等级" width="300" height="300">
-            </div>
-            <ul class="layout_dashboard_indication_wrapper">
-                <li class="layout_dashboard_indication_1"><a href="javascript:;"></a></li>
-                <li class="layout_dashboard_indication_2"><a href="javascript:;"></a></li>
-                <li class="layout_dashboard_indication_3"><a href="javascript:;"></a></li>
-                <div class="box"></div>
-            </ul>
+<div class="main_container">
+    <div class="main_content_wrapper">
+        <div class="banner_wrapper">
+            <a href="javascript:;">
+                <img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304">
+            </a>
         </div>
-        <a href="javascript:;">
-            <img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304">
-        </a>
-    </div>
-    
-    <!-- banner 结束 -->
-    <div class="main_container">
-        <!-- 左边区域 开始 -->
         <div class="left_content_wrapper">
 
         </div>
-        <!-- 左边区域 结束 -->
-        <!-- 右边区域 开始 -->
         <div class="right_content_wrapper">
-
-            <!-- 用户信息 开始 -->
-            <div class="user-content user-info">
+            <div class="layout_dashboard_wrapper">
+                <ul class="layout_dashboard_indication_hover_wrapper">
+                    <li class="layout_dashboard_indication_hover_1"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_hover_2"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_hover_3"><a href="javascript:;"></a></li>
+                </ul>
+                <div class="layout_dashboard_text">
+                    <img src="img/img_wbl/zhiyongshuangquan_text_00000.png" width="300" height="300">
+                </div>
+                <div class="layout_dashboard_bg">
+                    <img id="user-level-disk-img" src="img/img_wbl/zhiyongshuangquan_bg_00000.png" alt="" width="300" height="300">
+                </div>
+                <div class="layout_dashboard_indicator">
+                    <img src="img/img_wbl/zhiyongshuangquan_indicator_00000.png" alt="用户等级" width="300" height="300">
+                </div>
+                <ul class="layout_dashboard_indication_wrapper">
+                    <li class="layout_dashboard_indication_1"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_2"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_3"><a href="javascript:;"></a></li>
+                    <div class="box"></div>
+                </ul>
+            </div>
+            <div class="userinfo_wrapper">
                 <div class="user_name">
                     <span class="space-user">
                         <a href="javascript:;" class="user_header"><img class="s-header-photo" src="img/space-head.jpg" alt="人物头像" width="50px" height="50px"></a>
@@ -117,25 +99,16 @@
                             <dt class="school_name"><span class="school-icon"></span> 北京市八十一中学</dt>
                         </dl>
                     </span>
-
-
                 </div>
-
                 <div class="user_friend">
                     <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 好友 <span class="badge">10</span></a>
                     <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span class="badge">10</span></a>
                 </div>
             </div>
-            <!-- 用户信息 结束 -->
-
-            <!-- 我的标签 开始 -->
             <div class="user-content user-tag">
                 <h4>我的标签</h4>
                 <img class="share-tag" src="img/share-icon.png" alt="分享">
             </div>
-            <!-- 我的标签 结束 -->
-
-            <!-- 我的评测 开始 -->
             <div class="user-content user-test">
                 <div class="slideTxtBox">
                     <div class="hd">
@@ -170,9 +143,6 @@
                     </div>
                 </div>
             </div>
-            <!-- 我的评测 结束 -->
-
-            <!-- 我的微课 开始 -->
             <div class="user-content user-lesson">
                 <div class="slideTxtBox">
                     <div class="hd">
@@ -240,9 +210,7 @@
                                   <a class="bd-play" href="javascript:;"></a>
                                 </span>-->
                             </li>
-
                         </ul>
-
                         <ul>
                             <span class="bdd-bar"></span>
                             <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
@@ -257,13 +225,8 @@
                     </div>
                 </div>
             </div>
-            <!-- 我的微课 结束 -->
         </div>
-        <!-- 右边区域 结束 -->
-    </div>
-    
-    
-    
+    </div>   
 </div>
 <!-- 内容区域 结束 -->
 
@@ -316,7 +279,6 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
-
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -325,36 +287,26 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
-    function user_level_hover() {
-        var changeUserLevelDiskImg = function(imgUrl) {
-            $("#user-level-disk-img").attr("src", imgUrl);
-        };
-        var defaultLevelDiskImgHalf = function(){
-            changeUserLevelDiskImg("img/half-round.png");
-        };
-        var defaultLevelDiskImgTurn = function() {
-            changeUserLevelDiskImg("img/turnplate.png");
-        };
-        $("#user-level-test").hover(function() {
-            changeUserLevelDiskImg("img/test-round.png")
-        }, defaultLevelDiskImgHalf);
-        $("#user-level-exercise").hover(function() {
-            changeUserLevelDiskImg("img/exercise-round.png")
-        }, defaultLevelDiskImgHalf);
-        $("#user-level-mark").hover(function() {
-            changeUserLevelDiskImg("img/mark-round.png")
-        }, defaultLevelDiskImgHalf);
-        $("#user-level-test.not-index, #right-user-level-test-not-index, #right-user-level-test.not-index").hover(function() {
-            changeUserLevelDiskImg("img/test-turn.png")
-        }, defaultLevelDiskImgTurn);
-        $("#user-level-exercise.not-index,#right-user-level-exercise-not-index, #right-user-level-exercise.not-index").hover(function() {
-            changeUserLevelDiskImg("img/exercise-turn.png")
-        }, defaultLevelDiskImgTurn);
-        $("#user-level-mark.not-index,#right-user-level-mark-not-index, #right-user-level-mark.not-index").hover(function() {
-            changeUserLevelDiskImg("img/mark-turn.png")
-        }, defaultLevelDiskImgTurn);
-    };
-
+    function layout(){
+        $(".nav_main_button").click(function(){
+            var dropdownEl=$(this).siblings(".nav_dropdown_item");
+            if(dropdownEl.hasClass("dropdown_fadein")){
+                dropdownEl.removeClass("dropdown_fadein");
+                $(".nav_dropdown_item").hide();
+            }else{
+                dropdownEl.addClass("dropdown_fadein");
+                $(".nav_dropdown_item").show();
+            }
+        })
+        $(document).bind("click",function(e){
+            if($(".nav_dropdown_item").hasClass("dropdown_fadein")){
+                if($(e.target).closest(".nav_main_button").length==0){
+                    $(".nav_dropdown_item ").removeClass("dropdown_fadein");
+                    $(".nav_dropdown_item").hide();
+                }
+            }
+        })
+    }
     function dashboard(){
         var hoverIndex=0, clickIndex=0, multiplier=0;
         $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
@@ -362,7 +314,6 @@
             hoverIndex=$(this).index();
             $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","#acd655 transparent #acd655 transparent");
         },function(){
-
             hoverIndex=$(this).index();
             $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","transparent");
             return;
@@ -381,12 +332,11 @@
             return;
         });
     }
-
     $(document).ready(function(){
-        user_level_hover();
+        // user_level_hover();
+        layout();
         dashboard();
     });
-
 </script>
 
 </body>
