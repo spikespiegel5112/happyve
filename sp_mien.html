@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-    <title>幸福流-学校空间-组织架构-部门</title>
+    <title>幸福流-学校空间-校园风采</title>
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all">
 
 </head>
 <body>
@@ -105,23 +106,23 @@
         <div class="container sp-header">
         	<div class="space-nav">
             	<ul class="list-inline">
-            	<li><a href="#">学校风采</a></li>
+            	<li class="active-click"><a href="#"><span class="space-bt"></span>学校风采</a></li>
                 <li><a href="#">校长寄语</a></li>
                 <li><a href="#">陈列展馆</a></li>
                 <li><a href="#">秀场竞技</a></li>
                 <li><a href="#">师徒微课</a></li>
                 <li><a href="#">快乐演习</a></li>
-                <li class="active-click"><span class="space-bt"></span><a href="#">组织架构</a></li>
+                <li><a href="#">组织架构</a></li>
                 </ul>
                 
             </div>
             <div class="sp-brands">
             	<a class="sp-back" href="#">&lt;&lt; 返回学校主页</a>
-                <!--<select class="form-control">
+                <select class="form-control">
                 	<option class="set-opt" selected="selected">选择模式</option>
                 	<option >2015</option>
                     <option >2014</option>
-                </select>-->
+                </select>
                 <div class="sp-collective">
                 	<img src="img/hp_share/sp-school.jpg" width="82" height="82" alt="校徽">
                     <div class="collective-text">
@@ -130,53 +131,165 @@
                         <button type="button" class="btn btn-default">退出集体</button>
                     </div>
                 </div>
-                <!--<button class="btn new-folder" type="button">新建寄语</button>-->
-                <div class="organize-nav branch-fl">
-                    <ul class="list-inline">
-                        <li><a href="#" type="button">班级</a></li>
-                        <li><a href="#" type="button" >社团</a></li>
-                        <li class="active"><a href="#"  type="button" >部门</a></li>
-                    </ul>
-                </div>
+                <button class="btn new-folder" type="button">新建活动</button>
             </div>                                  
         </div>
         <div class="green_line"></div>
         <div class="container school_space match-height">
-        	<div class="organize-form">
-            	<div class="organize-head">               
-                    <input type="search" class="form-control" placeholder="输入部门名称">
+        	<div class="timer-shaft"><img src="img/hp_share/timer-shaft.jpg"></div>
+            
+            
+            	<div id="ycontainer">
+					<div class="grid">
+						<div class="imgholder">
+							<img src="img/hp_share/classroom.jpg" width="210" height="249" />
+						</div>
+                        <div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+						
+					</div>
+				<div class="grid">
+					<div class="imgholder">
+						<img src="img/hp_share/draw-shape.jpg" width="210" height="141" />
+					</div>
+					<div class="mien-icon">
+                            <button class="btn detai-mien yet-mien disabled" type="submit">已分享</button>
+                            <button class="btn detai-mien yet-mien disabled" type="submit"> 已参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+				</div>
+                <div class="grid">
+					<div class="imgholder">
+						<img src="img/hp_share/scenery.jpg" width="210" height="249" />
+					</div>
+					<div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+				</div>
+                <div class="grid">
+                    <div class="imgholder">
+                        <img src="img/hp_share/draw-shape.jpg" width="210" height="141" />
+                    </div>
+                    <div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
                 </div>
-                <div class="list-orgainze">
-                    <ul class="organize-left">
-                        <li><a href="#">办公室门</a></li>
-                        <li><a href="#">学习部门</a></li>
-                        <li><a href="#">宣传部门</a></li>
-                        <li><a href="#">文艺部门</a></li>
-                        <li><a href="#">学习传播文化色彩艺术设计部门</a></li>
-                        <li><a href="#">生活劳动部门</a></li>
-                        <li><a href="#">寝管部门</a></li>
-                        <li><a href="#">外联部门</a></li>
-                        <li><a href="#">信息部门</a></li>
-                        <li><a href="#">体育部门</a></li>
-                        <li><a href="#">健康与生活部门</a></li>
-                        <li><a href="#">创新动脑破案侦探部门</a></li>
-                    </ul>
-                    <ul class="organize-right">
-                        <li><a href="#">办公室门</a></li>
-                        <li><a href="#">学习部门</a></li>
-                        <li><a href="#">宣传部门</a></li>
-                        <li><a href="#">文艺部门</a></li>
-                        <li><a href="#">学习传播文化色彩艺术设计部门</a></li>
-                        <li><a href="#">生活劳动部门</a></li>
-                        <li><a href="#">寝管部门</a></li>
-                        <li><a href="#">外联部门</a></li>
-                        <li><a href="#">信息部门</a></li>
-                        <li><a href="#">体育部门</a></li>
-                        <li><a href="#">健康与生活部门</a></li>
-                        <li><a href="#">创新动脑破案侦探部门</a></li>
-                    </ul>
-                 </div>
+				<div class="grid">
+					<div class="imgholder">
+						<img src="img/hp_share/middle-school.jpg"  width="210" height="140"/>
+					</div>
+					<div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+                </div>
+                <div class="grid">
+					<div class="imgholder">
+						<img src="img/hp_share/middle-school.jpg"  width="210" height="140"/>
+					</div>
+					<div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+                </div>
+                <div class="grid">
+                    <div class="imgholder">
+                        <img src="img/hp_share/classroom.jpg" width="210" height="249" />
+                    </div>
+                    <div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+                </div>
+                <div class="grid">
+                    <div class="imgholder">
+                        <img src="img/hp_share/classroom.jpg" width="210" height="249" />
+                    </div>
+                    <div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+                </div>
+                
+                <div class="grid">
+                    <div class="imgholder">
+                        <img src="img/hp_share/classroom.jpg" width="210" height="249" />
+                    </div>
+                    <div class="mien-icon">
+                            <button class="btn detai-mien no-mien" type="submit">快乐分享</button>
+                            <button class="btn detai-mien no-mien" type="submit"> 去参加</button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>                                    
+                        </div>
+						<div class="mien-title">
+                        	<span class="mien-name">简单生活</span>
+                            <span class="mien-date">2014-06-23</span>
+                         </div>
+						<p class="mien-describe">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主</p>
+                </div>
+                 <!---->
             </div>
+         
+            
             
             
         </div>
@@ -451,5 +564,50 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="assets/js/blocksit.js"></script>
+<script>
+$(document).ready(function() {
+
+	
+	//blocksit define
+	$(window).load( function() {
+		$('#ycontainer').BlocksIt({
+			numOfCol: 3,
+			offsetX: 10,
+			offsetY: 10
+		});
+	});
+	//window resize
+	var currentWidth = 690;
+	$(window).resize(function() {
+		var winWidth = $(window).width();
+		var conWidth;
+		if(winWidth < 420) {
+			conWidth = 220;
+			col = 1
+		} else if(winWidth < 630) {
+			conWidth = 420;
+			col = 2
+		} else if(winWidth < 690) {
+			conWidth = 630;
+			col = 3;
+		} else {
+			conWidth = 690;
+			col = 3;
+		}
+		
+		if(conWidth != currentWidth) {
+			currentWidth = conWidth;
+			$('#ycontainer').width(conWidth);
+			$('#ycontainer').BlocksIt({
+				numOfCol: col,
+				offsetX: 10,
+				offsetY: 10
+			});
+		}
+	});
+});
+
+</script>
 </body>
 </html>
