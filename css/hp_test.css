@@ -6,13 +6,13 @@
     margin: 30px auto;
 }
 
-.hp_test_left_details {
-    width: 810px;
-    height: 100%;
-    margin-top: 20px;
+.hp_test_left {
     background: #ffffff;
-    border: 1px solid #d4d4d4;
-    border-radius: 5px;
+    margin-top: 20px;
+    border:1px solid #d6d6d6;
+    border-radius:6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
 }
 
 .back {
@@ -167,16 +167,17 @@ p.question-number span {
     height: 30px;
     margin-top: 40px;
     background-color: #b4b4b4;
-    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     line-height: 30px;
     border-radius: 5px;
-    border: 1px solid #646464;
+    box-shadow: 1px 2px 0 #646464;
     cursor: pointer;
 }
-
+.pre_question a span{
+    color: #ffffff;
+}
 .next_question, .submit {
     position: absolute;
     left: 280px;
@@ -184,19 +185,20 @@ p.question-number span {
     height: 30px;
     margin-top: 40px;
     background-color: #91c31e;
-    color: #ffffff;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
     line-height: 30px;
     border-radius: 5px;
-    border: 1px solid #50a000;
+    box-shadow: 1px 2px 0 #50a000;
     cursor: pointer;
 }
-
+.next_question a span, .submit a span{
+    color: #ffffff;
+}
 .pre_question:hover {
     background-color: #91c31e;
-    border: 1px solid #50a000;
+    box-shadow: 1px 2px 0 #50a000;
 }
 
 .for-first {
@@ -312,6 +314,7 @@ p.question-number span {
 }
 /*快乐测评首页*/
 .hp_test_home_banner{
+    margin-left: 10px;
     background-image: url("../img/img_hp_test/hp_test_home_banner.png");
     width: 700px;
     height: 305px;
