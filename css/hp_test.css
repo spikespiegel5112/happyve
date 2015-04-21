@@ -22,12 +22,12 @@
     font-weight: 700;
 }
 
-.green_line {
-    background: url(../img/hp_share/green_line.png) no-repeat;
-    width: 690px;
-    height: 10px;
-    margin: 20px 0 0 20px;
-}
+/*.green_line {*/
+    /*background: url(../img/hp_share/green_line.png) no-repeat;*/
+    /*width: 690px;*/
+    /*height: 10px;*/
+    /*margin: 20px 0 0 20px;*/
+/*}*/
 
 .emotion {
     height: 32px;

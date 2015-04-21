@@ -221,6 +221,7 @@
 .organize-head p{
 	float:left;
 	margin: 0 7px 0 68px;
+	line-height:30px;
 }
 .organize-head .form-control{
 	border-radius:0;
@@ -602,15 +603,20 @@
 .organize-nav li.active a {
 	color: #5aaa00;
 }
+.organ-bot li.active a {
+	color: #5aaa00;
+}
 .branch-fl{
 	padding-left:106px;
 }
 .organ-fl{
 	float:right;
 }
-.query-nav{
+.query-nav-wid{
 	width:690px;
-	margin:6px 0 8px 12px;
+}
+.query-nav{
+	margin:6px 0 38px 12px;
 	overflow: hidden;
 }
 .query-org{

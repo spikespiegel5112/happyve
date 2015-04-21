@@ -127,7 +127,7 @@ a, a:link, a:visited, ins {
     background: url(../img/hp_share/green_line.png) no-repeat;
     width: 690px;
     height: 10px;
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px 0;
 }
 
 /** 学校空间 控件 */
