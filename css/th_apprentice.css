@@ -1,6 +1,7 @@
 @charset "utf-8";
 .query-nav-apprent{
 	width:650px;
+	margin-left:14px;
 }
 .th-line-g{
 	background: url(../img/th_walk/th-line.jpg) no-repeat;
@@ -74,9 +75,11 @@
 .appren-video{
 	
 	}
+.appren-video a{
+	color:#3c3c3c;
+}
 .appren-video h3{
 	font: bold 12px/22px "宋体";
-	color:#3c3c3c;
 	background-color:#f5f5f5;
 	margin:0;
 	padding:6px 0 0 6px;
@@ -84,7 +87,6 @@
 }
 .appren-video h3 small{
 	font: 12px/22px "宋体";
-	color:#3c3c3c;
 	background-color:#f5f5f5;
 	}
 .appren-video .appren-name{
