@@ -1,11 +1,5 @@
 @charset "utf-8";
 /*评测详情页面*/
-.test_banner {
-    width: 550px;
-    height: 140px;
-    margin: 30px auto;
-}
-
 .hp_test_left {
     background: #ffffff;
     margin-top: 20px;
@@ -17,17 +11,17 @@
 
 .back {
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 30px;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: bold;
 }
 
-/*.green_line {*/
-    /*background: url(../img/hp_share/green_line.png) no-repeat;*/
-    /*width: 690px;*/
-    /*height: 10px;*/
-    /*margin: 20px 0 0 20px;*/
-/*}*/
+.green_line {
+    background: url(../img/hp_share/green_line.png) no-repeat;
+    width: 660px;
+    height: 10px;
+    margin: 20px 0 0 15px;
+}
 
 .emotion {
     height: 32px;
@@ -48,9 +42,12 @@
 }
 
 .emotion_detail {
-    height: 110px;
+    height: 130px;
     background-color: #d7f0aa;
-    padding-left: 50px;
+    padding-left: 20px;
+    border-left: 1px solid #b0e099;
+    border-right: 2px solid #b0e099;
+    border-bottom: 3px solid #b0e099;
 }
 
 .character {
@@ -64,9 +61,12 @@
 }
 
 .character_detail {
-    height: 110px;
+    height: 130px;
     background-color: #c8ffff;
-    padding-left: 50px;
+    padding-left: 20px;
+    border-left: 1px solid #a0ffff;
+    border-right: 2px solid #a0ffff;
+    border-bottom: 3px solid #a0ffff;
 }
 
 .goodness {
@@ -80,9 +80,12 @@
 }
 
 .goodness_detail {
-    height: 110px;
+    height: 130px;
     background-color: #ffe6be;
-    padding-left: 50px;
+    padding-left: 20px;
+    border-left: 1px solid #ffc690;
+    border-right: 2px solid #ffc690;
+    border-bottom: 3px solid #ffc690;
 }
 
 .tenacity {
@@ -96,30 +99,37 @@
 }
 
 .tenacity_detail {
-    float: left;
-    width: 550px;
-    height: 110px;
+    height: 130px;
     background-color: #f0dcfa;
-    padding-left: 50px;
+    padding-left: 20px;
+    border-left: 1px solid #d0bcca;
+    border-right: 2px solid #d0bcca;
+    border-bottom: 3px solid #d0bcca;
 }
-
+.test_banner {
+    width: 550px;
+    height: 160px;
+    margin: 30px auto;
+}
 .test_banner img {
     position: absolute;
-    right: 150px;
-    top: 130px;
+    right: 100px;
+    top: 140px;
 }
 
 .gray-line {
-    margin: 0;
+    margin: 20px 0 0 0;
     padding: 0;
+    width: 510px;
     height: 1px;
     border: none;
     border-top: 1px solid #b4b4b4;
+    overflow: hidden;
 }
 
 p.question {
     padding-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 p.test-number {
@@ -134,17 +144,28 @@ p.test-number span {
     color: #ffb450;
 }
 
-p.question-number {
+.question-number {
+    display: inline-block;
     font-weight: bold;
 }
 
-p.question-number span {
+.question-number span  {
     font-size: 18px;
     font-weight: 700;
     padding: 5px;
     color: #ff8219;
 }
-
+.question-number .left{
+    display: block;
+    float: left;
+    width: 300px;
+}
+.question-number .right{
+    display: block;
+    float: right;
+    width: 200px;
+    text-align:right;
+}
 .test_questions {
     margin: 45px 0 0 130px;
 }
@@ -171,9 +192,14 @@ p.question-number span {
     font-weight: bold;
     text-align: center;
     line-height: 30px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 0 #646464;
     cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    box-shadow: 1px 2px 0 #646464;
+    -moz-box-shadow: 1px 2px 0 #646464;
+    -webkit-box-shadow: 1px 2px 0 #646464;
 }
 .pre_question a span{
     color: #ffffff;
@@ -189,9 +215,14 @@ p.question-number span {
     font-weight: bold;
     text-align: center;
     line-height: 30px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 0 #50a000;
     cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    box-shadow: 1px 2px 0 #50a000;
+    -moz-box-shadow: 1px 2px 0 #50a000;
+    -webkit-box-shadow: 1px 2px 0 #50a000;
 }
 .next_question a span, .submit a span{
     color: #ffffff;
@@ -199,6 +230,8 @@ p.question-number span {
 .pre_question:hover {
     background-color: #91c31e;
     box-shadow: 1px 2px 0 #50a000;
+    -moz-box-shadow: 1px 2px 0 #50a000;
+    -webkit-box-shadow: 1px 2px 0 #50a000;
 }
 
 .for-first {
@@ -208,7 +241,7 @@ p.question-number span {
 
 .recommend {
     margin-top: 75px;
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 .recommend ul {
@@ -226,13 +259,13 @@ p.question-number span {
 .recommend_test{
     position: relative;
     top: 75px;
-    margin-bottom: 370px;
+    margin-bottom: 325px;
 }
 
 /*评测结果页*/
 .result_banner{
     position: absolute;
-    left: 100px;
+    left: 50px;
     top: 58px;
     background-image: url("../img/img_hp_test/hp_test_result_banner.jpg");
     width: 585px;
@@ -247,7 +280,12 @@ p.question-number span {
     height: 120px;
     background-color: #ffffff;
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
     box-shadow: 1px 1px 1px #f5f5f5;
+    -moz-box-shadow: 1px 1px 1px #f5f5f5;
+    -webkit-box-shadow: 1px 1px 1px #f5f5f5;
 }
 .test_result h4{
     padding-top: 15px;
@@ -258,7 +296,6 @@ p.question-number span {
     position: absolute;
     width: 100px;
     height: 30px;
-    border-radius: 5px;
     color: #ffffff;
     font-size: 16px;
     font-weight: bold;
@@ -266,6 +303,9 @@ p.question-number span {
     line-height: 30px;
     font-family: "Microsoft YaHei", "微软雅黑";
     cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 .test_button:hover{
     background-color: #91c31e;
@@ -279,6 +319,8 @@ p.question-number span {
     bottom: 60px;
     background-color: #91c31e;
     box-shadow: 1px 2px 1px #50a000;
+    -moz-box-shadow: 1px 2px 1px #50a000;
+    -webkit-box-shadow: 1px 2px 1px #50a000;
 }
 .more_test{
     right: 70px;
@@ -286,10 +328,12 @@ p.question-number span {
     margin-left: 20px;
     background-color: #b4b4b4;
     box-shadow: 1px 2px 1px #646464;
+    -moz-box-shadow: 1px 2px 1px #646464;
+    -webkitbox-shadow: 1px 2px 1px #646464;
 }
 .test_result_icon {
     position: relative;
-    left: 80px;
+    left: 50px;
     top: 340px;
     width: 585px;
     height: 35px;
@@ -310,7 +354,7 @@ p.question-number span {
 .recommend_playing{
     position: relative;
     top: 280px;
-    margin-bottom: 255px;
+    margin-bottom: 230px;
 }
 /*快乐测评首页*/
 .hp_test_home_banner{
@@ -385,19 +429,27 @@ p.question-number span {
 .hotlabel_one span, .hotlabel_fine span{
     background-color: #91c31e;
     box-shadow: -1px 2px 1px #50a000;
+    -moz-box-shadow: -1px 2px 1px #50a000;
+    -webkit-box-shadow: -1px 2px 1px #50a000;
 }
 .hotlabel_four span, .hotlabel_two span {
     background-color: #ffb450;
     box-shadow: -1px 2px 1px #ff8219;
+    -moz-box-shadow: -1px 2px 1px #ff8219;
+    -webkit-box-shadow: -1px 2px 1px #ff8219;
 }
 
 .hotlabel_three span{
     background-color: #be96e6;
     box-shadow: -1px 2px 1px #b482e1;
+    -moz-box-shadow: -1px 2px 1px #b482e1;
+    -webkit-box-shadow: -1px 2px 1px #b482e1;
 }
 .hotlabel_six span{
     background-color: #78c8c8;
     box-shadow: -1px 2px 1px #37a0a0;
+    -moz-box-shadow: -1px 2px 1px #37a0a0;
+    -webkit-box-shadow: -1px 2px 1px #37a0a0;
 }
 .hotlabel_count span{
     width: 100px;
@@ -463,11 +515,15 @@ p.question-number span {
 .list_header_emotion{
     background-color: #d7f0aa;
     box-shadow: 1px 3px 0 #91c31e;
+    -moz-box-shadow: 1px 3px 0 #91c31e;
+    -webkit-box-shadow: 1px 3px 0 #91c31e;
 }
 .list_header_title_emotion, .list_details_label_emotion span{
     color: #ffffff;
     background-color: #91c31e;
     box-shadow: 1px 3px 0 #50a000;
+    -moz-box-shadow: 1px 3px 0 #50a000;
+    -webkit-box-shadow: 1px 3px 0 #50a000;
 }
 .list_header_goodness{
     background-color: #ffe6be;
@@ -477,24 +533,34 @@ p.question-number span {
     color: #ffffff;
     background-color: #ffb450;
     box-shadow: 1px 3px 0 #ff8219;
+    -moz-box-shadow: 1px 3px 0 #ff8219;
+    -webkit-box-shadow: 1px 3px 0 #ff8219;
 }
 .list_header_character{
     background-color: #c8ffff;
     box-shadow: 1px 3px 0 #78c8c8;
+    -moz-box-shadow: 1px 3px 0 #78c8c8;
+    -webkit-box-shadow: 1px 3px 0 #78c8c8;
 }
 .list_header_title_character, .list_details_label_character span{
     color: #ffffff;
     background-color: #78c8c8;
     box-shadow: 1px 3px 0 #37a0a0;
+    -moz-box-shadow: 1px 3px 0 #37a0a0;
+    -webkit-box-shadow: 1px 3px 0 #37a0a0;
 }
 .list_header_tenacity{
     background-color: #f0dcfa;
     box-shadow: 1px 3px 0 #be96e6;
+    -moz-box-shadow: 1px 3px 0 #be96e6;
+    -webkit-box-shadow: 1px 3px 0 #be96e6;
 }
 .list_header_title_tenacity, .list_details_label_tenacity span {
     color: #ffffff;
     background-color: #be96e6;
     box-shadow: 1px 3px 0 #b482e1;
+    -moz-box-shadow: 1px 3px 0 #b482e1;
+    -webkit-box-shadow: 1px 3px 0 #b482e1;
 }
 .list_tenacity .test_description{
     margin-bottom: 20px;
@@ -514,6 +580,8 @@ p.question-number span {
     font-family: "Microsoft YaHei", "微软雅黑";
     border: 1px solid #d5d5d5;
     box-shadow: 1px 2px 1px #d5d5d5;
+    -moz-box-shadow: 1px 2px 1px #d5d5d5;
+    -webkit-box-shadow: 1px 2px 1px #d5d5d5;
 }
 
 .list_details_table{

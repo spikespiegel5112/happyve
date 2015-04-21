@@ -11,14 +11,14 @@
 .activity-header-slide {
 	text-align: left;
 	overflow: hidden;
-	width: 60%;
-	margin: 10px 0 0 0;
+	width: 100%;
+	margin-top: 10px;
+	padding: 0 1px;
 }
 
 .activity-header-slide .hd {
 	height: 39px;
 	line-height: 39px;
-	background: #f4f4f4;
 	border-bottom: 1px solid #646464;
 	position: relative;
 
@@ -124,6 +124,10 @@
 	color: #999;
 }
 
+.activity {
+	margin-left: 13px;
+}
+
 
 .activity .thumbnail, .match-height .thumbnail {
     border-radius: 0;
@@ -142,6 +146,7 @@
     width: 20%;
     min-width: 210px;
     margin: 0 5px;
+	float: left;
 }
 
 .match-height .act-item .btn {
@@ -207,11 +212,11 @@
 	position:relative;
 }
 
-.space-arrange .thumbnail{
+.space-arrange.thumbnail{
 	border:none;
 	background-color: transparent;
 	box-shadow:none;
-	}
+}
 .sde-triangle{
 	width:13px;
 	height:11px;
@@ -294,9 +299,8 @@
 	box-shadow:none;
 	margin:0 0 14px 0;
 	}
+
 .personage-img{
-	width:210px;
-	height:135px;
 	display:block;
 	border:1px solid #a0a0a0;
 	margin:0 auto;
@@ -315,35 +319,15 @@
 	margin:8px auto 0;
 }
 /*班级*/
-.class-act{
-	margin:0;
-}
-.class-act .act-item {
-    padding: 0 0;
-    width: 20%;
-    min-width: 210px;
-    margin: 0 2px;
-}
-.class-act .thumbnail{
-	border:1px solid #cfcfcf;
-	width:210px;
-}
-	
+
 .cap-class{
 	text-align:center;
 }
 
-.class-act .class-img{
-	display:block;
-	width:200px;
-	height:135px;
-	margin:0 auto;
-}
 .cap-class h3{
 	font:14px/14px "微软雅黑";
 	color:#505050;
 	margin:8px 0;
-	
 }
 
 .cap-class p{
