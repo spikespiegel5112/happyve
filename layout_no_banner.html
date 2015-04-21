@@ -14,15 +14,15 @@
     
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
+
+    <!-- 自己页面的样式文件 -->
+    <link rel="stylesheet" href="css/hp_test.css" type="text/css" media="all">
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
 <div class="header_container">
     <div class="header_login_wrapper">
         <ul>
-            <li><a class="u-lo btn btn-default" role="button">登陆</a></li>
-            <li><a class="u-reg btn btn-default" role="button">注册</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span> 在线帮助</a></li>
@@ -59,36 +59,75 @@
 <!-- 内容 开始 -->
 <div class="main_container">
     <div class="main_content_wrapper">
+
         <div class="left_content_wrapper">
-            <div class="left_content_wrapper">
-                <div class="changemyself_wrapper">
-                    <a class="changemyself_prev" href="javascript:;">&lt&lt&nbsp返回</a>
-                    <div class="changemyself_content_wrapper">
-                        <div class="decoratebar_item_660"><span></span><label></label></div>
-                        <h4 class="changemyself_content_title">我要改掉生气乱扔东西的坏习惯</h4>
+            <!-- 放页面banner-->
+            <!--<div class="banner_wrapper">-->
+                <!--<div class="hp_test_home_banner">-->
+                    <!--<a href="javascript:;">-->
+                        <!--<img src="img/img_hp_test/hp_test_home_banner.png" alt="幸福职教" width="700" height="305">-->
+                    <!--</a>-->
+                    <!--<ul class="test_home_banner_text">-->
+                        <!--<li>想了解自己的心理实力够不够强大？</li>-->
+                        <!--<li>想明白自己真心渴望的是什么嘛？</li>-->
+                        <!--<li>你没看错！来这里，获得属于专属于自己的心理标签。</li>-->
+                        <!--<li>本测试工具基于积极心理学的人格多维模型测评开发，</li>-->
+                        <!--<li>综合分析出个人情绪、美德、性格、韧性方面的量度和系数，</li>-->
+                        <!--<li>从而有针对的向着“快乐英雄”的目标自我提升。</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!-- 页面左部分区域 -->
+            <div class="left_content_body">
+                <div class="back">
+                    <a href="javascript:;">&lt;&lt; 返回</a>
+                </div>
+                <div class="green_line"></div>
+                <div class="test_banner">
+                    <div class="character"><p>性格</p></div>
+                    <div class="character_detail">
+                        <p class="question">你有没有责任感？</p>
+
+                        <p class="test-number"><span>12568</span>已测试过 &nbsp;&nbsp;<span>3456</span>已收藏</p>
+
+                        <hr class="gray-line"/>
+                        <p class="question-number">当前第<span>1</span>题 本测试共<span>4</span>题</p>
                     </div>
-                    <div class="changemyself_content_img"><img src="img/img_wbl/badhabbit_content_img_1_00000.jpg" width="590" height="360"></div>
-                    <div class="changemyself_note_wrapper">
-                        <div class="changemyself_note_title">
-                            <span></span>
-                            <label>改正笔记</label>
-                        </div>
-                        <div class="changemyself_note_content">
-                            <textarea maxlength="2000">
-                            </textarea>
-                            <p class="inputnumber_item">最多输入2000字，您已输入<span>123</span>字</p>
-                        </div>
-                            <a class="changemyself_button" href="javascript:;">我成功克服了一天</a>
-                        <div class="clearfix"></div>
-                        <div class="changemyself_countdown_wrapper">
-                            <div class="changemyself_countdown_item">
-                                <p class="statistics_item">还有<label>2</label>天你就<br>可以<br>改掉这个坏习惯</p>
-                            </div>
-                            <img src="img/img_wbl/changemyself-man_220_175_00000.png" width="220" height="175">
-                        </div>
-                    </div>
+                    <div><img src="img/img_hp_test/xghead.jpg"></div>
+                </div>
+                <div class="test_questions">
+                    <form action="" method="">
+                        2.为了考上班级第一，你会放弃自己的娱乐而努力拼命复习？<br/><br/>
+                        <input name="iCheck" checked type="radio" value="" id="fcbfh"/><label for="fcbfh">非常不符合 </label><br/>
+                        <input name="iCheck" type="radio" value="" id="bfh"/><label for="bfh">不符合</label><br/>
+                        <input name="iCheck" type="radio" value="" id="ydbfh"/><label for="ydbfh">有点不符合</label><br/>
+                        <input name="iCheck" type="radio" value="" id="hns"/><label for="hns">很难说</label><br/>
+                        <input name="iCheck" type="radio" value="" id="ydfh"/><label for="ydfh">有点符合 </label><br/>
+                        <input name="iCheck" type="radio" value="" id="fh"/><label for="fh">符合 </label><br/>
+                        <input name="iCheck" type="radio" value="" id="fcfh"/><label for="fcfh">非常符合 </label><br/>
+                    </form>
+                    <div class="pre_question"><a href="javascript:;" target="_blank"><span>上一题</span></a></div>
+                    <div class="next_question"><a href="javascript:;" target="_blank"><span>下一题</span></a></div>
+                </div>
+                <div class="recommend recommend_test">
+                    <img src="img/img_hp_test/hp_test_recommend.png">
+                    <ul>
+                        <li><a href="javascript:;">你是否经常担心自己做错事情了？</a></li>
+                        <li><a href="javascript:;">每次参加重要活动前的晚上，你不是经常提早醒来，或者睡不着觉？</a></li>
+                        <li><a href="javascript:;">心里是不是总闷闷的，有种释放不出来的感觉？</a></li>
+                        <li><a href="javascript:;">你认为安静的自娱远远胜过热闹的宴会么？</a></li>
+                        <li><a href="javascript:;">与他人比较时，我是不是觉得：自己与别人是不同，我是比较突出的？</a></li>
+                        <li><a href="javascript:;">有没有觉得也要经常回报那些爱着自己的人么？</a></li>
+                        <li><a href="javascript:;">当你这次考了全班第一后，你会拼命争取去考你那几第一吗？</a></li>
+                        <li><a href="javascript:;">你觉得爸爸妈妈爱你吗？</a></li>
+                    </ul>
                 </div>
             </div>
+
+
+
+
         </div>
         <div class="right_content_wrapper">
             <div class="layout_dashboard_wrapper">
