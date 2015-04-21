@@ -171,9 +171,14 @@ p.question-number span {
     font-weight: bold;
     text-align: center;
     line-height: 30px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 0 #646464;
     cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    box-shadow: 1px 2px 0 #646464;
+    -moz-box-shadow: 1px 2px 0 #646464;
+    -webkit-box-shadow: 1px 2px 0 #646464;
 }
 .pre_question a span{
     color: #ffffff;
@@ -189,9 +194,14 @@ p.question-number span {
     font-weight: bold;
     text-align: center;
     line-height: 30px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 0 #50a000;
     cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
+    box-shadow: 1px 2px 0 #50a000;
+    -moz-box-shadow: 1px 2px 0 #50a000;
+    -webkit-box-shadow: 1px 2px 0 #50a000;
 }
 .next_question a span, .submit a span{
     color: #ffffff;
@@ -199,6 +209,8 @@ p.question-number span {
 .pre_question:hover {
     background-color: #91c31e;
     box-shadow: 1px 2px 0 #50a000;
+    -moz-box-shadow: 1px 2px 0 #50a000;
+    -webkit-box-shadow: 1px 2px 0 #50a000;
 }
 
 .for-first {
@@ -247,7 +259,12 @@ p.question-number span {
     height: 120px;
     background-color: #ffffff;
     border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+
     box-shadow: 1px 1px 1px #f5f5f5;
+    -moz-box-shadow: 1px 1px 1px #f5f5f5;
+    -webkit-box-shadow: 1px 1px 1px #f5f5f5;
 }
 .test_result h4{
     padding-top: 15px;
@@ -258,7 +275,6 @@ p.question-number span {
     position: absolute;
     width: 100px;
     height: 30px;
-    border-radius: 5px;
     color: #ffffff;
     font-size: 16px;
     font-weight: bold;
@@ -266,6 +282,9 @@ p.question-number span {
     line-height: 30px;
     font-family: "Microsoft YaHei", "微软雅黑";
     cursor: pointer;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 .test_button:hover{
     background-color: #91c31e;
@@ -279,6 +298,8 @@ p.question-number span {
     bottom: 60px;
     background-color: #91c31e;
     box-shadow: 1px 2px 1px #50a000;
+    -moz-box-shadow: 1px 2px 1px #50a000;
+    -webkit-box-shadow: 1px 2px 1px #50a000;
 }
 .more_test{
     right: 70px;
@@ -286,6 +307,8 @@ p.question-number span {
     margin-left: 20px;
     background-color: #b4b4b4;
     box-shadow: 1px 2px 1px #646464;
+    -moz-box-shadow: 1px 2px 1px #646464;
+    -webkitbox-shadow: 1px 2px 1px #646464;
 }
 .test_result_icon {
     position: relative;
@@ -385,19 +408,27 @@ p.question-number span {
 .hotlabel_one span, .hotlabel_fine span{
     background-color: #91c31e;
     box-shadow: -1px 2px 1px #50a000;
+    -moz-box-shadow: -1px 2px 1px #50a000;
+    -webkit-box-shadow: -1px 2px 1px #50a000;
 }
 .hotlabel_four span, .hotlabel_two span {
     background-color: #ffb450;
     box-shadow: -1px 2px 1px #ff8219;
+    -moz-box-shadow: -1px 2px 1px #ff8219;
+    -webkit-box-shadow: -1px 2px 1px #ff8219;
 }
 
 .hotlabel_three span{
     background-color: #be96e6;
     box-shadow: -1px 2px 1px #b482e1;
+    -moz-box-shadow: -1px 2px 1px #b482e1;
+    -webkit-box-shadow: -1px 2px 1px #b482e1;
 }
 .hotlabel_six span{
     background-color: #78c8c8;
     box-shadow: -1px 2px 1px #37a0a0;
+    -moz-box-shadow: -1px 2px 1px #37a0a0;
+    -webkit-box-shadow: -1px 2px 1px #37a0a0;
 }
 .hotlabel_count span{
     width: 100px;
@@ -463,11 +494,15 @@ p.question-number span {
 .list_header_emotion{
     background-color: #d7f0aa;
     box-shadow: 1px 3px 0 #91c31e;
+    -moz-box-shadow: 1px 3px 0 #91c31e;
+    -webkit-box-shadow: 1px 3px 0 #91c31e;
 }
 .list_header_title_emotion, .list_details_label_emotion span{
     color: #ffffff;
     background-color: #91c31e;
     box-shadow: 1px 3px 0 #50a000;
+    -moz-box-shadow: 1px 3px 0 #50a000;
+    -webkit-box-shadow: 1px 3px 0 #50a000;
 }
 .list_header_goodness{
     background-color: #ffe6be;
@@ -477,24 +512,34 @@ p.question-number span {
     color: #ffffff;
     background-color: #ffb450;
     box-shadow: 1px 3px 0 #ff8219;
+    -moz-box-shadow: 1px 3px 0 #ff8219;
+    -webkit-box-shadow: 1px 3px 0 #ff8219;
 }
 .list_header_character{
     background-color: #c8ffff;
     box-shadow: 1px 3px 0 #78c8c8;
+    -moz-box-shadow: 1px 3px 0 #78c8c8;
+    -webkit-box-shadow: 1px 3px 0 #78c8c8;
 }
 .list_header_title_character, .list_details_label_character span{
     color: #ffffff;
     background-color: #78c8c8;
     box-shadow: 1px 3px 0 #37a0a0;
+    -moz-box-shadow: 1px 3px 0 #37a0a0;
+    -webkit-box-shadow: 1px 3px 0 #37a0a0;
 }
 .list_header_tenacity{
     background-color: #f0dcfa;
     box-shadow: 1px 3px 0 #be96e6;
+    -moz-box-shadow: 1px 3px 0 #be96e6;
+    -webkit-box-shadow: 1px 3px 0 #be96e6;
 }
 .list_header_title_tenacity, .list_details_label_tenacity span {
     color: #ffffff;
     background-color: #be96e6;
     box-shadow: 1px 3px 0 #b482e1;
+    -moz-box-shadow: 1px 3px 0 #b482e1;
+    -webkit-box-shadow: 1px 3px 0 #b482e1;
 }
 .list_tenacity .test_description{
     margin-bottom: 20px;
@@ -514,6 +559,8 @@ p.question-number span {
     font-family: "Microsoft YaHei", "微软雅黑";
     border: 1px solid #d5d5d5;
     box-shadow: 1px 2px 1px #d5d5d5;
+    -moz-box-shadow: 1px 2px 1px #d5d5d5;
+    -webkit-box-shadow: 1px 2px 1px #d5d5d5;
 }
 
 .list_details_table{
