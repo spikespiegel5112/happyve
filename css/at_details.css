@@ -519,5 +519,29 @@
 .list-pro li .trash-btn:hover span{	
 	color:#91c81e;
 }
+.micro-video{
+	}
+.video-icon{
+	width:656px;
+	overflow:hidden;
+}
+.video-btn{
+	padding:0;
+	background-color:transparent;
+	height:24px;
+	width:auto;
+	float:right;
+	margin:0 0 0 20px;
+	font:12px/24px "微软雅黑";
+	text-align:center;
+	vertical-align: top;
+	
+}
+
+.video-btn span{
+	}
+.vary-click{
+	color:#ff781e;
+}
 /* CSS Document */
 
