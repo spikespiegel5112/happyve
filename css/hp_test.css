@@ -204,7 +204,7 @@ p.test-number span {
 .pre_question a span{
     color: #ffffff;
 }
-.next_question, .submit {
+.test_questions .next_question, .test_questions .submit {
     position: absolute;
     left: 280px;
     width: 100px;
@@ -234,7 +234,7 @@ p.test-number span {
     -webkit-box-shadow: 1px 2px 0 #50a000;
 }
 
-.for-first {
+.test_questions .for-first {
     position: absolute;
     left: 150px;
 }
@@ -363,7 +363,7 @@ p.test-number span {
     width: 700px;
     height: 305px;
 }
-.hp_test_home_banner .test_home_banner_text{
+.hp_test_home_banner ul{
     list-style: none;
     margin-top: -140px;
     margin-right: 120px;
