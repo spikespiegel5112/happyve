@@ -212,11 +212,36 @@
 	position:relative;
 }
 
-.space-arrange.thumbnail{
+.space-arrange .thumbnail{
 	border:none;
 	background-color: transparent;
 	box-shadow:none;
 }
+
+.space-arrange .thumbnail:hover {
+	border:none;
+	background-color: transparent;
+	box-shadow:none;
+}
+
+.space-arrange .thumbnail:hover .space-title{
+	border-left:1px solid #91c31e;
+	border-top:1px solid #91c31e;
+	border-right:1px solid #91c31e;
+}
+
+.space-arrange .thumbnail:hover .space-map{
+	border-left:1px solid #91c31e;
+	border-bottom:1px solid #91c31e;
+	border-right:1px solid #91c31e;
+	border-top:none;
+}
+
+.space-arrange .thumbnail:hover .space-map img{
+	margin:0 -1px -2px 0;
+	padding-top:2px;
+}
+
 .sde-triangle{
 	width:13px;
 	height:11px;
@@ -265,24 +290,7 @@
 	border:2px solid #989898;
 	margin:0 auto;
 }
-.space-arrange .thumbnail:hover .space-title{
-	border-left:1px solid #91c31e;
-	border-top:1px solid #91c31e;
-	border-right:1px solid #91c31e;
-}
 
-.space-arrange .thumbnail:hover .space-map{
-	border-left:1px solid #91c31e;
-	border-bottom:1px solid #91c31e;
-	border-right:1px solid #91c31e;
-	border-top:none;
-
-}
-
-.space-arrange .thumbnail:hover .space-map img{
-	margin:0 -1px -2px 0;
-	padding-top:2px;
-	}
 /*个人*/
 .perdonage-act{
 	margin-left:5px;
