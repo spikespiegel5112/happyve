@@ -130,11 +130,11 @@ a:hover {
     margin: 10px 0 20px 0;
 }
 
-/** 学校空间 控件 */
+/* 学校空间 控件 */
 .sp-edit-tool {
-    width:60%;
+    width:96%;
     text-align: right;
-    margin: 0 0 10px;
+    margin: 0 0 10px ;
 
 }
 .sp-edit-tool a {

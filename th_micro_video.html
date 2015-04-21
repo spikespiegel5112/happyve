@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/scojs.css" type="text/css" media="all">
 
     <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
@@ -104,11 +105,11 @@
     <div id="left-content" class="col-md-7 col-md-offset-1 hp-share-left">
         
 		<a class="act-back" href="#">&lt;&lt; 返回</a>
-
+<a data-trigger="confirm" href="/delete/me" class="btn">Launch demo confirm</a>
         <div class="green_line"></div>
         <div class="container activity-detai">
-       		<div class="micro-video" style="width:300px; height:200px;">	
-                <object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,45,0" data="http://yuntv.letv.com/bcloud.swf" type="application/x-shockwave-flash" classid="clsid:F08DF954-8592-11D1-B16A-00C0F0283628" id="playerbox23747992357552972"  width="742" height="433">
+       		<div class="micro-video">	
+                <object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,45,0" data="http://yuntv.letv.com/bcloud.swf" type="application/x-shockwave-flash" classid="clsid:F08DF954-8592-11D1-B16A-00C0F0283628" id="play"  width="742" height="433">
                   <param name="quality" value="high" />
                   <param name="align" value="middle" />
                   <param name="wmode" value="opaque" />
@@ -119,7 +120,46 @@
                                     
                 </object>	
  
-            </div>	
+            </div>
+            <div class="comment-box">
+            	<p>评论</p>
+                <div class="comment-p">
+                <img src="img/th_walk/bg-head-g.jpg" width="67" height="67">
+                <textarea class="form-control text-comment" rows="5" placeholder="请输入" onKeyDown="textdown(event)" onKeyUp="textup()" ></textarea>
+                </div>
+                <div class="hint-pro">
+                	<span><button class="btn sub-btn" type="submit">发表</button></span>
+                	<span class="sm-prompt">还可输入90字</span>
+                    
+                </div>
+                <ul class="list-pro">
+                	<li>
+                    	<img src="img/th_walk/sm-head-g.jpg" width="55" height="55" >
+                        <div class="dw-comment">
+                        	<h4>黑糖玛奇朵</h4>
+                            <p>哐哐哐咚咚咚duang的的</p>
+                        </div>
+                        <button class="btn trash-btn"><span class="glyphicon glyphicon-trash"></span></button>
+                    </li>
+                    <li>
+                    	<img src="img/th_walk/sm-head-b.jpg" width="55" height="55" >
+                        <div class="dw-comment">
+                        	<h4>海绵宝宝</h4>
+                            <p>哐哐哐咚咚咚duang的的</p>
+                        </div>
+                        <button class="btn trash-btn"><span class="glyphicon glyphicon-trash"></span></button>
+                    </li>
+                    <li>
+                    	<img src="img/th_walk/sm-head-b.jpg" width="55" height="55" >
+                        <div class="dw-comment">
+                        	<h4>海绵宝宝</h4>
+                            <p>哐哐哐咚咚咚duang的的哐哐哐咚咚咚duang的的哐哐哐咚咚咚duang的的哐哐哐咚咚咚duang的的哐哐哐咚咚咚duang的的</p>
+                        </div>
+                        <button class="btn trash-btn"><span class="glyphicon glyphicon-trash"></span></button>
+                    </li>
+                </ul>
+            </div>
+            	
                         
             
             
@@ -365,6 +405,8 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="assets/js/sco.confirm.js"></script>
+
 
 
 </body>
