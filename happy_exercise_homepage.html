@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
     
-    <link rel="stylesheet" href="css/layout_2.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
 </head>
@@ -348,8 +348,7 @@
                     <li class="layout_dashboard_indication_3"><a href="javascript:;"></a></li>
                     <div class="box"></div>
                 </ul>
-            </div> 
-
+            </div>
             <div class="userinfo_wrapper">
                 <div class="user_name">
                     <span class="space-user">
@@ -545,26 +544,8 @@
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<!-- <script type="text/javascript" src="js/main.js"></script> -->
+<script type="text/javascript" src="js/main.js"></script>
 <script>
-    function haexeHomepage(){
-        var index=0;
-        $(".haexe_home_ranking_list_wrapper li").click(function(){
-            index=$(this).index();
-            $(".haexe_home_carousel_desc_list").fadeOut().eq(index).fadeIn();
-            $(this).siblings("li").removeClass("shown");
-            $(this).addClass("shown");
-        });
-        $(".haexe_home_carousel_desc_list ul li").click(function(){
-            console.log("aaaq")
-            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").fadeIn();
-        });
-        $(".haexe_home_carousel_desc_list ul li").hover(function(){
-            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").stop().fadeIn().end().css({"z-index":"20"});
-        },function(){
-            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").stop().fadeOut().end().css({"z-index":""});
-        })
-    }
     function layout(){
         $(".nav_main_button").click(function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
@@ -588,6 +569,7 @@
     function dashboard(){
         var hoverIndex=0, clickIndex=0, multiplier=0;
         $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
+            console.log("aaa");
             hoverIndex=$(this).index();
             $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","#acd655 transparent #acd655 transparent");
         },function(){
@@ -609,9 +591,8 @@
             return;
         });
     }
-
     $(document).ready(function(){
-        haexeHomepage();
+        // user_level_hover();
         layout();
         dashboard();
     });
