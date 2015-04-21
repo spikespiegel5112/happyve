@@ -76,8 +76,10 @@
                 <label class="green_3"></label>
             </div>
             <div class="haexe_home_carousel_wrapper">
+                
                 <div class="haexe_home_carousel_tree_wrapper">
                     <div id="shown" class="haexe_home_carousel_desc_list">
+                        <div class="gratitude_info_wrapper"><label>12,261</label>条感恩信息</div>
                         <ul>
                             <li class="tree_desc_1"><a href="javascript:;"></a>
                                 <div class="haexe_home_carousel_desc_list_content">
@@ -296,11 +298,13 @@
                     <li class="ranking_1 shown"><span></span><a href="javascript:;">北京八十一中职业技术学校</a></li>
                     <li class="ranking_2"><span></span><a href="javascript:;">深圳市第二职业技术学校</a></li>
                     <li class="ranking_3"><span></span><a href="javascript:;">青岛职业技术学院</a></li>
+                    <div class="ourschool"><span></span><a href="javascript:;">上海工艺美术职业学院</a></div>
                 </ul>
                 <div class="haexe_home_carousel_bg_item">
                     <img src="img/img_wbl/happyexercise_bg_00000.jpg" width="460" height="410">
                 </div>
             </div>
+            <div class="clearfloat"></div>
             <div class="decoratebar_item_685">
                 <h2 class="decoratebar_title">感谢有你</h2>
                 <div class="decoratebar_statistics_item">
@@ -546,6 +550,24 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
+    function haexeHomepage(){
+        var index=0;
+        $(".haexe_home_ranking_list_wrapper li").click(function(){
+            index=$(this).index();
+            $(".haexe_home_carousel_desc_list").fadeOut().eq(index).fadeIn();
+            $(this).siblings("li").removeClass("shown");
+            $(this).addClass("shown");
+        });
+        $(".haexe_home_carousel_desc_list ul li").click(function(){
+            console.log("aaaq")
+            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").fadeIn();
+        });
+        $(".haexe_home_carousel_desc_list ul li").hover(function(){
+            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").stop().fadeIn().end().css({"z-index":"20"});
+        },function(){
+            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").stop().fadeOut().end().css({"z-index":""});
+        })
+    }
     function layout(){
         $(".nav_main_button").click(function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
@@ -592,7 +614,7 @@
         });
     }
     $(document).ready(function(){
-        // user_level_hover();
+        haexeHomepage();
         layout();
         dashboard();
     });
