@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
 
     <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/hp_test.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/hero_training.css" type="text/css" media="all">
+
 </head>
 <body>
 
@@ -53,17 +53,15 @@
                     <li><a class="h-nav-a" href="myFiles.html">我的档案</a></li>
                     <li><a class="h-nav-a" href="#">我的集体</a></li>
                 </ul>
-                <div class="i-search nav navbar-nav navbar-right hidden-sm">
-                    <div class="input-group">
+                <form action="##" class="navbar-form navbar-right" rol="search">
+                    <div class="form-group">
                         <input type="text" class="form-control" placeholder="快乐英雄">
-                          <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span
-                                    class="glyphicon glyphicon-search"></span></button>
-                          </span>
                     </div>
-                    <!-- /input-group -->
-                </div>
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
             </div>
+
         </div>
     </div>
 </div>
@@ -73,99 +71,82 @@
 <!-- 内容 开始 -->
 <div id="content" class="row">
     <!-- banner 开始  -->
-    <!--<div id="header-banner" class="col-md-10 col-md-offset-1">-->
-    <!--<div class="banner">-->
-    <!--<a href="#"><img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304"></a>-->
-    <!--</div>-->
-    <!--<div>-->
-    <!--<div class="user-level-disk-round">-->
-    <!--<img id="user-level-disk-img" src="img/half-round.png" alt="" width="286" height="199">-->
-    <!--</div>-->
-    <!--<div id="user-level-test">-->
-    <!--<a href="#"></a>-->
-    <!--</div>-->
-    <!--<div id="user-level-exercise">-->
-    <!--&lt;!&ndash;<a href="#"><span>asdas</span></a>&ndash;&gt;-->
-    <!--</div>-->
-    <!--<div id="user-level-mark">-->
-    <!--&lt;!&ndash;<a href="#"><span>asdas</span></a>&ndash;&gt;-->
-    <!--</div>-->
+    <div id="header-banner" class="col-md-10 col-md-offset-1">
+        <div class="banner">
+            <div class="hero_training_banner">
+                <a href="javascript:;"><img src="img/hero_trainingcamp/hero_trainingcamp.png" alt="英雄训练营"/></a>
+            </div>
+        </div>
 
-    <!--<div class="user-level-disk">-->
-    <!--<img src="img/pointer-round.png" alt="用户等级" width="170" height="170">-->
-    <!--</div>-->
-    <!--</div>-->
+        <div class="user-level-in-banner not-index">
+            <div class="user-level-disk-round not-index">
+                <img id="user-level-disk-img" src="img/turnplate.png" alt="" width="304" height="210">
+            </div>
+            <div id="user-level-test" class="not-index">
+                <!--<a href="#"></a>-->
+            </div>
+            <div id="user-level-exercise" class="not-index">
+                <!--<a href="#"><span>asdas</span></a>-->
+            </div>
+            <div id="user-level-mark" class="not-index">
+                <!--<a href="#"><span>asdas</span></a>-->
+            </div>
 
-    <!--</div>-->
+            <div class="user-level-disk not-index">
+                <img src="img/pointer-round.png" alt="用户等级" width="170" height="170">
+            </div>
+        </div>
+    </div>
     <!-- banner 结束 -->
 
     <!-- 左边区域 开始 -->
-    <div id="left-content" class="col-md-7 col-md-offset-1 hp_test_left">
-        <div class="back">
-            <a href="javascript:;">&lt;&lt; 返回</a>
-        </div>
-        <div class="green_line"></div>
-        <div class="test_banner">
-            <div class="character"><p>性格</p></div>
-            <div class="character_detail">
-                <p class="question">你有没有责任感？</p>
+    <div id="left-content" class="col-md-7 col-md-offset-1">
+        <div class="left_column col-lg-8">
+            <div class="hero_training">
+                <div class="hero_training_link"><a href="javascript:;"><img src="img/hero_trainingcamp/hero_training_link.png" /></a></div>
+                <div class="hero_training_module">
+                    <div class="hero_training_details">
+                        <div class="hero_training_detail">
+                            <div class="hero_training_detail_img">
+                                <img src="img/hero_trainingcamp/group_power_imax.png" alt="集体力量我最大"/>
+                            </div>
+                            <div class="hero_training_detail_caption">
+                                <h4>集体力量我最大</h4>
+                                <div class="activity-hr"></div>
+                                <p>北京第请简单介绍下八十一中学春季篮球赛，篮球最为团体项目，有利于培养学生的团队意识，同时加强锻炼身体，同时有利于成绩提高</p>
 
-                <p class="test-number"><span>12568</span>已测试过 &nbsp;&nbsp;<span>3456</span>已收藏</p>
+                                <div class="training_button_interested"><a href="javascript:;" title="我感兴趣" target="_blank" >我感兴趣</a></div>
+                            </div>
+                        </div>
+                        <div class="hero_training_detail">
+                            <div class="hero_training_detail_img">
+                                <img src="img/hero_trainingcamp/akela_selection.png" alt="领队人选拔赛"/>
+                            </div>
+                            <div class="hero_training_detail_caption">
+                                <h4>领队人选拔赛</h4>
+                                <div class="activity-hr"></div>
+                                <p>北京第请简单介绍下八十一中学春季篮球赛，篮球最为团体项目，有利于培养学生的团队意识，同时加强锻炼身体，同时有利于成绩提高</p>
 
-                <hr class="gray-line"/>
-                <p class="question-number">当前第<span>1</span>题 本测试共<span>4</span>题</p>
+                                <div class="training_button_interested"><a href="javascript:;" title="我感兴趣" target="_blank" >我感兴趣</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero_training_oldtimey">
+                        <div class="hero_training_oldtimey_link">
+                            <a href="javascript:;"><img src="img/hero_trainingcamp/oldtimey_link.png" /></a>
+                        </div>
+                        <div class="hero_training_waitingforyou">
+                            <img src="img/hero_trainingcamp/hero_trainning_waitingforyou.png"/>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div><img src="img/img_hp_test/xghead.jpg"></div>
-        </div>
-        <div class="test_questions">
-            <form action="" method="">
-                2.为了考上班级第一，你会放弃自己的娱乐而努力拼命复习？<br/><br/>
-                <input name="iCheck" checked type="radio" value="" id="fcbfh"/><label for="fcbfh">非常不符合 </label><br/>
-                <input name="iCheck" type="radio" value="" id="bfh"/><label for="bfh">不符合</label><br/>
-                <input name="iCheck" type="radio" value="" id="ydbfh"/><label for="ydbfh">有点不符合</label><br/>
-                <input name="iCheck" type="radio" value="" id="hns"/><label for="hns">很难说</label><br/>
-                <input name="iCheck" type="radio" value="" id="ydfh"/><label for="ydfh">有点符合 </label><br/>
-                <input name="iCheck" type="radio" value="" id="fh"/><label for="fh">符合 </label><br/>
-                <input name="iCheck" type="radio" value="" id="fcfh"/><label for="fcfh">非常符合 </label><br/>
-            </form>
-            <div class="pre_question"><a href="javascript:;" target="_blank"><span>上一题</span></a></div>
-            <div class="next_question"><a href="javascript:;" target="_blank"><span>下一题</span></a></div>
-        </div>
-        <div class="recommend recommend_test">
-            <img src="img/img_hp_test/hp_test_recommend.png">
-            <ul>
-                <li><a href="javascript:;">你是否经常担心自己做错事情了？</a></li>
-                <li><a href="javascript:;">每次参加重要活动前的晚上，你不是经常提早醒来，或者睡不着觉？</a></li>
-                <li><a href="javascript:;">心里是不是总闷闷的，有种释放不出来的感觉？</a></li>
-                <li><a href="javascript:;">你认为安静的自娱远远胜过热闹的宴会么？</a></li>
-                <li><a href="javascript:;">与他人比较时，我是不是觉得：自己与别人是不同，我是比较突出的？</a></li>
-                <li><a href="javascript:;">有没有觉得也要经常回报那些爱着自己的人么？</a></li>
-                <li><a href="javascript:;">当你这次考了全班第一后，你会拼命争取去考你那几第一吗？</a></li>
-                <li><a href="javascript:;">你觉得爸爸妈妈爱你吗？</a></li>
-            </ul>
+
         </div>
     </div>
     <!-- 左边区域 结束 -->
     <!-- 右边区域 开始 -->
     <div id="right-content" class="col-md-3">
-        <div class="right-user-level">
-            <div class="right-user-level-disk-round">
-                <img id="user-level-disk-img" src="img/turnplate.png" alt="" width="304" height="210">
-            </div>
-            <div id="right-user-level-test-not-index">
-                <!--<a href="#"></a>-->
-            </div>
-            <div id="right-user-level-exercise-not-index">
-                <!--<a href="#"><span>asdas</span></a>-->
-            </div>
-            <div id="right-user-level-mark-not-index">
-                <!--<a href="#"><span>asdas</span></a>-->
-            </div>
-
-            <div class="right-user-level-disk">
-                <img src="img/pointer-round.png" alt="用户等级" width="170" height="170">
-            </div>
-        </div>
         <!-- 用户信息 开始 -->
         <div class="user-content user-info">
             <div class="user_name">
@@ -178,13 +159,12 @@
                     </dl>
                 </span>
 
-
             </div>
 
             <div class="user_friend">
-                <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 好友 <span
+                <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span>好友 <span
                         class="badge">10</span></a>
-                <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span
+                <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>收藏 <span
                         class="badge">10</span></a>
             </div>
         </div>
@@ -244,67 +224,9 @@
                     </ul>
                 </div>
                 <div class="bd">
-                    <ul>
-                        <span class="bd-bar"></span>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-
-                    </ul>
-
+                    <div class="hero_training_default">
+                        <img src="img/hero_trainingcamp/masterandapprentice_getnew.png" />
+                    </div>
                     <ul>
                         <span class="bdd-bar"></span>
                         <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
@@ -391,15 +313,13 @@
 </div>
 <!-- 版权信息 结束 -->
 
-
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="assets/js/icheck.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-<script type="text/javascript" src="js/hp_test.js"></script>
+
 </body>
 </html>

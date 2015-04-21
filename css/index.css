@@ -557,6 +557,7 @@
 
     /* 注册 */
 .b-joinus {
+    height: 82px;
     text-align: center;
     margin: 10px 0 0 0;
     background: url(../img/back-bottom.jpg) center 100% no-repeat;
@@ -565,7 +566,7 @@
 .b-joinus a {
     font: normal small-caps normal 18px "微软雅黑";
     padding: 2px 25px 2px 25px;
-    line-height: 60px;
+    line-height: 82px;
     margin: 0 10px;
 }
 
@@ -595,7 +596,7 @@
     border-radius: 13px 13px 13px 13px;
     box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.35), 0 -1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.6) inset;
     float: left;
-    margin: 0 30px 60px;
+    margin: 15px 30px;
     position: relative;
     transition: all 1s ease 0s;
     width: 70px;
