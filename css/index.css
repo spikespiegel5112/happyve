@@ -85,13 +85,16 @@
 
 }
 
+.happy-content {
+    position: relative;
+}
+
 /* 快乐大本营 */
 .happy-camp {
     height: auto;
     margin: 0 auto;
     padding: 32px 0 0;
     background: url(../img/camp-link.jpg) no-repeat 14% 90px;
-
 }
 
 .p-little-img {
