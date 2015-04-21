@@ -4,7 +4,7 @@
 ul{padding:0;}
 body{font-family: "microsoft yahei";}
 /*~~~~~~~~~~~changemyself_list~~~~~~~~~~~*/
-.changemyself_wrapper{margin:20px 0;width: 690px;min-height:1290px;background: #fff;border: 1px solid #bbb;border-radius: 10px;}
+.changemyself_wrapper{margin:20px 0;width: 690px;min-height:1330px;background: #fff;border: 1px solid #bbb;border-radius: 10px;}
 .changemyself_wrapper .changemyself_prev{display:block;margin:1em;color:#91C81E;font-size: 1.2em;color:#91c31e;font-weight: bold;}
 .changemyself-banner-article p{float:left;margin:20px 0 0 50px;width:400px;line-height: 1.6em;font-size: 1.2em;}
 .changemyself-banner-article img{float:left;}
