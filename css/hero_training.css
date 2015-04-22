@@ -2,10 +2,10 @@
 
 /*英雄训练营首页*/
 .hero_training_banner {
-    background-image: url("../img/hero_trainingcamp/hero_trainingcamp_banner.png");
     width: 700px;
     height: 305px;
     margin-left: 10px;
+    background-image: url("../img/hero_trainingcamp/hero_trainingcamp_banner.png");
 }
 
 .hero_training_banner ul {
@@ -18,32 +18,20 @@
 
 .hero_training_banner ul li {
     height: 20px;
-    font-family: "Microsoft YaHei", "微软雅黑";
-    font-size: 14px;
-    font-weight: bold;
+    font: bold 14px "microsoft yahei", "微软雅黑";
     text-align: left;
 }
 
 .hero_training_link {
-    margin-top: 30px;
     width: 690px;
     height: 40px;
+    margin: 30px 0 0 -5px;
 }
-
-.hero_training_module {
-    margin-left: 22px;
-}
-
 .hero_training_detail {
-    margin-top: 25px;
     width: 656px;
     height: 205px;
+    margin: 25px 0 0 17px;
 }
-
-.for_detailpage {
-    margin-left: 15px;
-}
-
 .hero_training_detail_img {
     display: inline-block;
     float: left;
@@ -61,7 +49,6 @@
 
 .hero_training_detail_caption h5, .hero_training_splendidmoment_caption h5 {
     margin-left: 10px;
-    margin-bottom: 0;
     padding: 10px;
     font-weight: bold;
 }
@@ -83,135 +70,139 @@
 }
 
 .training_button_interested {
-    margin: 0 auto;
     width: 160px;
-    line-height: 30px;
-    text-align: center;
+    margin: 0 auto;
     background: #91c31e;
-    cursor: pointer;
-    border-radius: 6px;
     font-size: 16px;
     font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+
     box-shadow: 1px 2px 1px #50a000;
     -moz-box-shadow: 1px 2px 1px #50a000;
     -webkit-box-shadow: 1px 2px 1px #50a000;
 }
 
 .training_button_interested:hover {
-    box-shadow: 0px 2px 8px rgba(145, 200, 30, 0.8);
-    -moz-box-shadow: 0px 2px 8px rgba(145, 200, 30, 0.8);
-    -webkit-box-shadow: 0px 2px 8px rgba(145, 200, 30, 0.8);
+    box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -moz-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -webkit-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
 }
 
 .training_button_interested a {
     color: #ffffff;
 }
+.hero_training_oldtimey{
+    margin-left: 15px;
+}
 
 .hero_training_oldtimey_link {
-    margin-top: 85px;
-    width: 650px;
     height: 30px;
+    margin-top: 85px;
 }
 
 /*往期回顾默认*/
 .hero_training_waitingforyou {
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .hero_training_default {
-    margin: 0;
     display: block;
+    margin: 0;
     padding: 9px;
 }
 
 /*往期回顾Formal*/
 .activity .thumbnail,  .class-info .thumbnail {
-    border-radius: 0;
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
     display: block;
     margin-bottom: 24px;
     max-width: 210px;
     padding: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
-.match-height .act-item, .class-info .act-item {
-    padding: 0 0;
-    width: 5%;
-    min-width: 210px;
-    margin: 0 5px;
-}
-
-.match-height .thumbnail:hover, .class-info .thumbnail:hover {
-    border: solid #91c31e 1px;
-}
-
-.match-height h5 {
-    font: 14px "微软雅黑";
-    color: #3c3c3c;
-    width: 208px;
-    height: 40px;
-    margin-top: -10px;
-    margin-left: -9px;
-    padding: 10px 20px;
-    background-color: #f5f5f5;
-}
-
-.match-height p {
-    margin-top: -10px;
-    padding-left: 10px;
-    width: 298px;
-}
-
-.match-height p {
-    font: 12px/18px "宋体";
-    color: #505050;
+.class-info .thumbnail{
     margin-bottom: 0;
 }
 
+.match-height .act-item, .class-info .act-item {
+    width: 5%;
+    min-width: 210px;
+    margin: 0 5px;
+    padding: 0 0;
+}
+
+.match-height .thumbnail:hover, .class-info .thumbnail:hover {
+    border: 1px solid #91c31e ;
+}
+
+.match-height h5 {
+    width: 208px;
+    height: 40px;
+    margin: -10px 0 0 -9px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    font: 14px "微软雅黑";
+    color: #3c3c3c;
+}
+
+.match-height p {
+    width: 298px;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.match-height p {
+    margin-bottom: 0;
+    font: 12px/18px "宋体";
+    color: #505050;
+}
+
 /*英雄训练营详情页默认*/
-.class-list .trainingcamp_ad {
-    margin-top: 10px;
+.class-list .container {
     margin-left: 15px;
+}
+.class-list .trainingcamp_ad {
+    margin: 10px 0 0 40px;
 }
 
 /*英雄训练营详情页*/
 .hero_classlist_link {
-    margin-top: 60px;
-    margin-left: 5px;
     width: 690px;
     height: 40px;
+    margin: 60px 0 0 5px;
 }
 
-.oldtimey_detailpage {
-    margin-top: 90px;
-}
-
-.oldtimey_detailpage, .class-list {
-    margin-left: 15px;
+.oldtimey_initpage {
+    margin: 85px 0 0 15px;
 }
 
 .schooltime {
     height: 36px;
-    line-height: 36px;
-    text-align: center;
     background-color: #b4b4b4;
     font-size: 16px;
-    color: #ffffff;
+    line-height: 36px;
+    text-align: center;
     font-weight: bold;
+    color: #ffffff;
 }
 .information-detailed ul{
     padding-left: 30px;
 }
 
 .information-detailed ul li {
-    font-size: 14px;
     height: 30px;
+    font-size: 14px;
 }
 
 .information-detailed ul li span {
-    font: 16px #3c3c3c;
-    font-weight: bold;
+    font: bold 16px #3c3c3c;
 }
 
 .information-detailed .number-statistics {
@@ -235,21 +226,23 @@
     height: 270px;
 }
 .white-space_trainingcamp{
-    height: 85px;
+    height: 105px;
+}
+.white-space_splendidmoment{
+    height: 65px;
 }
 
 /*往期回顾详情*/
 .hero_training_splendidmoment {
-    margin-top: 25px;
-    width: 700px;
     height: 250px;
+    margin: 25px 0 0 20px;
 }
 
 .hero_training_splendidmoment_caption {
     position: relative;
     display: inline-block;
     float: left;
-    width: 270px;
+    width: 250px;
     height: 250px;
     border: 1px solid #d5d5d5;
     border-left: none;
@@ -258,6 +251,7 @@
 
 .hero_training_splendidmoment_caption h4 {
     padding-left: 20px;
+    font-weight: bold;
 }
 
 .hero_training_splendidmoment_caption small {
@@ -272,28 +266,35 @@
 
 .hero_training_splendidmoment_caption p {
     font-size: 14px;
+    overflow: hidden;
 }
 
 .hero_training_splendidmoment_caption .hero_training_timestamp span {
-    font-size: 14px;
     position: absolute;
     right: 30px;
     bottom: 20px;
+    font-size: 14px;
 }
 
 .hero_splendidmoment_link {
-    margin-top: 40px;
-    margin-left: 35px;
+    margin: 40px 0 0 0;
+}
+.hero_splendidmoment .container{
+    position: relative;
     width: 700px;
-    height: 30px;
+    padding: 5px 0 50px 35px;
 }
 
-.hero_splendidmoment {
-    margin-left: 12px;
+#ycontainer{
+    width: 618px;
+    padding: 0;
+}
+.hero_splendidmoment .container #ycontainer .grid{
+    margin: 3px;
+    width: 200px;
 }
 
 .hero_splendidmoment .mien-title {
-    width: 208px;
     height: 30px;
     padding: 0;
     margin: 0;
