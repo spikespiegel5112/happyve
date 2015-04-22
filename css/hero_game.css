@@ -122,6 +122,7 @@
 	position: relative;
 	margin:0 4px;
 }
+
 .teacher-img .teacher-video-view:hover {
 	border: 2px solid #91c31e ;
 	margin: -2px;
