@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
     
-    <link rel="stylesheet" href="css/layout_2.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
 </head>
@@ -59,13 +59,13 @@
 <!-- 内容 开始 -->
 <div class="main_container">
     <div class="main_content_wrapper">
-        <div class="banner_wrapper">
-            <a href="javascript:;">
-                <img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304">
-            </a>
-        </div>
+        
         <div class="left_content_wrapper">
-
+            <div class="banner_wrapper">
+                <a href="javascript:;">
+                    <img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304">
+                </a>
+            </div>
         </div>
         <div class="right_content_wrapper">
             <div class="layout_dashboard_wrapper">
@@ -287,6 +287,10 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
+    $(document).ready(function(){
+        layout();
+        dashboard();
+    });
     function layout(){
         $(".nav_main_button").click(function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
@@ -306,6 +310,7 @@
                 }
             }
         })
+        $(".slideTxtBox,.activity-header-slide,.query-nav").slide();
     }
     function dashboard(){
         var hoverIndex=0, clickIndex=0, multiplier=0;
@@ -332,11 +337,6 @@
             return;
         });
     }
-    $(document).ready(function(){
-        // user_level_hover();
-        layout();
-        dashboard();
-    });
 </script>
 
 </body>
