@@ -1,6 +1,8 @@
 .clearfloat{clear:both;}
 .float_right{float: right;}
 #shown, .shown{display: block;}
+h1, .h1, h2, .h2, h3, .h3{margin:0;}
+a:hover, a:focus{color:#000;}
 ul{padding:0;}
 body{font-family: "microsoft yahei";}
 /*~~~~~~~~~~~changemyself_list~~~~~~~~~~~*/
@@ -87,28 +89,31 @@ body{font-family: "microsoft yahei";}
 .decoratebar_statistics_item p{float: right;font-size: 13px;}
 .decoratebar_statistics_item p:first-child{color:#91c81e;}
 .gratitude_info_item{padding:1em;width: 100%;height: 2em;position: absolute;top: 0;font-size: 1.3em;}
+.haexe_home_bene_desc_list .gratitude_info_item{color:#fff;}
 .haexe_home_carousel_bg_item{overflow: hidden;;top: 0;}
 .haexe_home_carousel_bg_item img{box-shadow: 3px 0px 5px #aaa;z-index: -1;}
 .haexe_home_ranking_list_wrapper{float:right;padding:40px 0 0 0;width: 229px;height: 100%;box-shadow: 5px 0 5px #aaa inset;position: relative;}
+.haexe_home_ranking_list_wrapper li{border-width: 1px;border-style: solid;border-color:transparent;position: relative;}
 .haexe_home_ranking_list_wrapper li a, .haexe_home_ranking_list_wrapper .ourschool a{display:block;padding:0 0 0 6em;width:100%;height:65px;line-height:65px;color:#fff;background-image:url(../img/img_wbl/img_sprite_00000.png);}
+.haexe_home_ranking_list_wrapper li span{display:none;width: 30px;height: 30px;background:url(../img/img_wbl/img_sprite_00000.png) -265px 0;position: absolute;top: 18px;left: -2px;}
 .haexe_home_ranking_list_wrapper .ourschool{width:100%;height:9em;position: absolute;bottom: 0;border-top: 1px solid #ccc;}
 .ranking_1 a{background-position: -31px 10px;}
 .ranking_2 a{background-position: -31px -70px;}
 .ranking_3 a{background-position: -31px -150px;}
-.ourschool a{background-position: -31px -231px;margin:1.5em 0;}
-.haexe_home_ranking_list_wrapper li{border-width: 1px;border-style: solid;border-color:transparent;position: relative;}
-.haexe_home_ranking_list_wrapper li span{display:none;width: 30px;height: 30px;background:url(../img/img_wbl/img_sprite_00000.png) -265px 0;position: absolute;top: 18px;left: -2px;}
+.ourschool a{background-position: -31px -231px;}
+
+
 .haexe_home_ranking_list_wrapper .shown a{background-image:url(../img/img_wbl/img_sprite_00000.png);background-color:#fff;z-index: -1;box-shadow: 5px 0 5px #aaa inset;cursor:pointer;}
-.haexe_home_carousel_tree_wrapper, .haexe_home_bene_wall_wrapper{position: relative;}
-.haexe_home_carousel_desc_list, .haexe_home_bene_desc_list{display: block;height:100%;position: relative;}
-.haexe_home_carousel_desc_list{display: none;}
-.haexe_home_carousel_desc_list ul li{width:65px;height:65px;background-image: url(../img/img_wbl/img_sprite_00000.png);position: absolute;z-index: 1;}
+.haexe_home_carousel_tree_wrapper{position: relative;}
+.haexe_home_carousel_desc_list{display: none;height:100%;position: relative;}
+.haexe_home_carousel_desc_list ul li, .haexe_home_bene_desc_list ul li{width:65px;height:65px;position: absolute;z-index: 1;}
+.haexe_home_carousel_desc_list ul li{background-image: url(../img/img_wbl/img_sprite_00000.png);}
 .haexe_home_carousel_desc_list ul li a{display: block;width: 100%;height: 100%;cursor: pointer;}
-.haexe_home_carousel_desc_list_bg, .haexe_home_carousel_desc_list_content{display:none;padding:5px 10px;width: 200px;height: 80px;color:#000;position: absolute;left:-105%;top: -75px;}
-.haexe_home_carousel_desc_list_bg{background:rgba(255,255,255,0.7);z-index: 1}
-.haexe_home_carousel_desc_list_content, .haexe_home_bene_list_desc_content{z-index: 2}
-.haexe_home_carousel_desc_list_content:after{content: "";display: block;margin:0 auto;width:0;height:0;border-style: solid;border-width: 20px 10px 0px 10px;border-color: rgba(255,255,255,0.7) transparent transparent transparent;position: relative;top: 12spx;}
-.haexe_home_carousel_desc_list_content span{float: right;}
+.haexe_home_carousel_desc_list_bg, .haexe_home_carousel_desc_list_content, .haexe_home_bene_desc_list_bg, .haexe_home_bene_desc_list_content{display:none;padding:5px 10px;width: 200px;height: 80px;color:#000;position: absolute;left:-105%;top: -75px;}
+.haexe_home_carousel_desc_list_bg, .haexe_home_bene_desc_list_bg{background:rgba(255,255,255,0.7);z-index: 1}
+.haexe_home_carousel_desc_list_content, .haexe_home_bene_desc_list_content{z-index: 2}
+.haexe_home_carousel_desc_list_content:after, .haexe_home_bene_desc_list_content:after{content: "";display: block;margin:0 auto;width:0;height:0;border-style: solid;border-width: 20px 10px 0px 10px;border-color: rgba(255,255,255,0.7) transparent transparent transparent;position: relative;top: 12px;}
+.haexe_home_carousel_desc_list_content span, .haexe_home_bene_desc_list_content span{float: right;}
 .haexe_home_carousel_tree_wrapper img{position: absolute;bottom:-410px;}
 .haexe_home_carousel_desc_list{display: none;}
 .haexe_home_carousel_tree_wrapper div ul{position: absolute;width: 100%;}
@@ -122,6 +127,49 @@ body{font-family: "microsoft yahei";}
 .tree_desc_7{background-position: -443px -393px;left: 300px;top: 166px;}
 .tree_desc_8{background-position: -378px -136px;left: 270px;top: 245px;}
 .tree_desc_9{background-position: -382px -195px;left: 130px;top: 260px;}
-/*.haexe_home_bene_wrapper{padding:5px;width: 100%;border: 1px solid #000;}*/
+.haexe_home_bene_wrapper{padding:5px;width: 100%;border: 1px solid #000;}
 
-
+.haexe_home_bene_desc_list{display: none;height:100%;position: relative;}
+.haexe_home_bene_desc_list ul{position: absolute;}
+.haexe_home_bene_wall_wrapper{position: relative;}
+.haexe_home_bene_list_wrapper{margin:0;width: 100%;height: 100%;position: relative;}
+.haexe_home_bene_list_wrapper:after{content: "";display: block;clear: both;}
+.haexe_home_bene_list_wrapper li{float: left;width: 25%;height:60px;position: relative;}
+.haexe_home_bene_list_wrapper li a{display: block;margin:19px 0 0 0;padding:14px 0;width: 100%;height:40px;text-align: center;border-left: 2px solid #fff;color: #3c3c3c;background: #e3e3e3;}
+.haexe_home_bene_list_wrapper li a:hover{color: #111;}
+.haexe_home_bene_list_wrapper li:first-child a{border-left: 0;}
+.haexe_home_bene_list_wrapper .ourschool{float:left;margin:19px 0 0 0;width: 24%;line-height: 6.8em;text-align: center;}
+.haexe_home_bene_list_wrapper .ourschool a{display:block;width: 105%;height: 40px;background: #e3e3e3;line-height: 3.8em;border-left: 1px solid #fff;color: #f5751c;font-weight: bolder;}
+.haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -90px -310px;}
+.haexe_home_bene_list_wrapper .shown a{background: 0;}
+.haexe_home_bene_list_wrapper .shown span{display: block;}
+.haexe_home_bene_list_wrapper li span{display:none;margin:0 auto;width: 20px;height:25px;background: url(../img/img_wbl/img_sprite_00000.png);position: absolute;left: 46%;}
+.haexe_home_bene_list_wrapper .num_1 span{background-position: -87px -372px}
+.haexe_home_bene_list_wrapper .num_2 span{background-position: -127px -372px}
+.haexe_home_bene_list_wrapper .num_3 span{background-position: -168px -372px}
+.haexe_home_bene_desc_list ul li a{display: block;width: 100%;height: 100%;cursor: pointer;}
+.bene_desc_1{left: 70px;top: 110px;}
+.bene_desc_2{left: 270px;top: 60px;}
+.bene_desc_3{left: 373px;top: 75px;}
+.bene_desc_4{left: 452px;top: 60px;}
+.bene_desc_5{left: 452px;top: 133px;}
+.bene_desc_6{left: 518px;top: 80px;}
+.bene_desc_7{left: 24px;top: 96px;}
+.bene_desc_8{left: 110px;top: 85px;}
+.bene_desc_9{left: 220px;top: 110px;}
+.bene_desc_10{left: 372px;top: 102px;}
+.bene_desc_11{left: 410px;top: 20px;}
+.bene_desc_12{left: 460px;top: 100px;}
+.bene_desc_13{left: 60px;top: 90px;}
+.bene_desc_14{left: 240px;top: 50px;}
+.bene_desc_15{left: 370px;top: 120px;}
+.bene_desc_16{left: 430px;top: 50px;}
+.haexe_home_features_wrapper{position: relative;margin:40px 0 10px 0;height: 240px;}
+.haexe_home_features_wrapper:after{content: "";display: block;clear: both;}
+.haexe_home_features_item{float: left;margin:0 0 0 2%;width: 49%;}
+.haexe_home_features_item:first-child{margin: 0;}
+.haexe_home_features_item h3{margin:0.6em 1em;position: relative;z-index: 1;color: #fff;font-size: 1.5em;font-weight: bold;}
+.haexe_home_features_item{position: relative;}
+.haexe_home_features_item a{display: block;width: 100%;position: absolute;top: 0;}
+.haexe_home_features_item a img{width: 100%;}
+.haexe_home_moreexe_wrapper{margin: 0 0 30px 0;}
