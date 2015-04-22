@@ -766,6 +766,10 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/hp_test.js"></script>
 <script>
+    $(document).ready(function(){
+        layout();
+        dashboard();
+    });
     function layout(){
         $(".nav_main_button").click(function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
@@ -785,6 +789,7 @@
                 }
             }
         })
+        $(".slideTxtBox,.activity-header-slide,.query-nav").slide();
     }
     function dashboard(){
         var hoverIndex=0, clickIndex=0, multiplier=0;
@@ -811,11 +816,6 @@
             return;
         });
     }
-    $(document).ready(function(){
-        // user_level_hover();
-        layout();
-        dashboard();
-    });
 </script>
 
 </body>

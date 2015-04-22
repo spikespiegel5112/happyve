@@ -1,13 +1,13 @@
 .clearfloat{clear:both;}
 .float_right{float: right;}
 #shown, .shown{display: block;}
-h1, .h1, h2, .h2, h3, .h3{margin:0;}
-a:hover, a:focus{color:#000;}
-ul{padding:0;}
+p, ul, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{margin:0;padding:0;}
+a:hover, a:focus{color:#888;}
+label{font-weight: normal;}
 body{font-family: "microsoft yahei";}
 /*~~~~~~~~~~~changemyself_list~~~~~~~~~~~*/
-.changemyself_wrapper{margin:20px 0;width: 690px;min-height:1330px;background: #fff;border: 1px solid #bbb;border-radius: 10px;}
-.changemyself_wrapper .changemyself_prev{display:block;margin:1em;color:#91C81E;font-size: 1.2em;color:#91c31e;font-weight: bold;}
+.subordinary_wrapper{margin:20px 0;width: 690px;min-height:1300px;background: #fff;border: 1px solid #bbb;border-radius: 10px;position: relative;}
+.subordinary_wrapper .prev{display:block;margin:1em;color:#91C81E;font-size: 1.2em;color:#91c31e;font-weight: bold;}
 .changemyself-banner-article p{float:left;margin:20px 0 0 50px;width:400px;line-height: 1.6em;font-size: 1.2em;}
 .changemyself-banner-article img{float:left;}
 .newbadhabbit_wrapper{position: relative;}
@@ -173,3 +173,18 @@ body{font-family: "microsoft yahei";}
 .haexe_home_features_item a{display: block;width: 100%;position: absolute;top: 0;}
 .haexe_home_features_item a img{width: 100%;}
 .haexe_home_moreexe_wrapper{margin: 0 0 30px 0;}
+/*~~~~~~~~~~~haexe_list~~~~~~~~~~~*/
+.tab_wrapper{margin:0 auto;width: 96%;border-bottom: 1px solid #b2b2b2;}
+.tab_item{display: block;width: 110px;height: 30px;line-height: 30px;text-align: center;color:#eee;background: #91c31e;font-size: 1.3em;}
+.tab_item:hover{color:#fff;}
+.tab_item:after{content: "";display: block;margin:0 auto;width: 0;height: 0;border-style:solid;border-width: 7px 5px 0 5px;border-color:#91c31e transparent transparent transparent;position: relative;top: 1px;}
+.haexe_list_wrapper{width: 100%;padding:2%;}
+.haexe_list_wrapper ul li{margin:3% 0;height: 185px;}
+.haexe_list_wrapper ul li img{float:left;width: 369px;}
+.haexe_list_wrapper ul li div{float:left;padding:0 5px;width: 44%;height:100%;background: #f3f3f3;border-style:solid;border-width: 3px 3px 3px 0;border-color:#f3f3f3;}
+.haexe_list_wrapper ul li:hover div{border-color:#91c31e;}
+.haexe_list_wrapper ul li div h5{padding:10px 15px;border-bottom: 1px solid #b2b2b2;font-size: 1.3em;}
+.haexe_list_wrapper ul li div p{padding:15px 2px 0 15px;line-height: 1.7em;}
+.list_pagination_wrapper{width:100%;text-align: center;position: absolute;bottom:3em;color:#8e8e8e;font-family: "SimSun";font-weight: lighter;}
+.list_pagination_wrapper a{color:#8e8e8e;font-family: "SimSun";}
+.list_pagination_wrapper a:hover{color: #000;}

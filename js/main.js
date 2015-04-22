@@ -52,7 +52,6 @@ function haexeHomepage(){
         $(this).addClass("shown");
     });
     $(".haexe_home_carousel_desc_list ul li").click(function(){
-        console.log("aaaq")
         $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").fadeIn();
     });
     $(".haexe_home_carousel_desc_list ul li").hover(function(){
