@@ -105,24 +105,24 @@ function dashboard(){
     });
 }
 function layout(){
-    $(".nav_main_button").click(function(){
-        var dropdownEl=$(this).siblings(".nav_dropdown_item");
-        if(dropdownEl.hasClass("dropdown_fadein")){
-            dropdownEl.removeClass("dropdown_fadein");
-            $(".nav_dropdown_item").hide();
-        }else{
-            dropdownEl.addClass("dropdown_fadein");
-            $(".nav_dropdown_item").show();
-        }
-    });
-    $(document).bind("click",function(e){
-        if($(".nav_dropdown_item").hasClass("dropdown_fadein")){
-            if($(e.target).closest(".nav_main_button").length==0){
-                $(".nav_dropdown_item ").removeClass("dropdown_fadein");
-                $(".nav_dropdown_item").hide();
-            }
-        }
-    });
+   //$(".nav_main_button").click(function(){
+   //     var dropdownEl=$(this).siblings(".nav_dropdown_item");
+   //     if(dropdownEl.hasClass("dropdown_fadein")){
+   //         dropdownEl.removeClass("dropdown_fadein");
+   //         $(".nav_dropdown_item").hide();
+   //     }else{
+   //         dropdownEl.addClass("dropdown_fadein");
+   //         $(".nav_dropdown_item").show();
+   //     }
+   // });
+   // $(document).bind("click",function(e){
+   //     if($(".nav_dropdown_item").hasClass("dropdown_fadein")){
+   //         if($(e.target).closest(".nav_main_button").length==0){
+   //             $(".nav_dropdown_item ").removeClass("dropdown_fadein");
+   //             $(".nav_dropdown_item").hide();
+   //         }
+   //     }
+   // });
     $(".slideTxtBox,.activity-header-slide,.query-nav").slide();
 }
 function indexCarouselAction() {
