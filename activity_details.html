@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>幸福流-快乐分享—社团</title>
+    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
+    
+    <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
+
+    <!-- 自己页面的样式文件 -->
+    <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all">
+</head>
+<body>
+<!-- 头部登陆导航 开始 -->
+<div class="header_container">
+    <div class="header_login_wrapper">
+        <ul>
+            <li><a  href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
+            <li><a  href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
+            <li><a  href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span> 在线帮助</a></li>
+        </ul>
+    </div>
+    <div class="nav_wrapper">
+        <div class="home_logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" width="186" height="54"></a>
+        </div>
+        <div class="nav_main_list_wrapper" role="navigation">
+            <ul class="nav_main_list_inner">
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="javascript:;">快乐大本营<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
+            </ul>
+
+        </div>
+        <div class="layout_serachbar_item">
+            <input type="text" class="form-control" placeholder="快乐英雄">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+        </div>
+    </div>
+</div>
+<!-- 头部登陆导航 结束 -->
+<!-- 内容 开始 -->
+<div class="main_container">
+    <div class="main_content_wrapper">
+
+        <div class="left_content_wrapper">
+
+            <!-- 页面左部分区域 -->
+            <div class="left_content_body">
+                <a class="act-back" href="#">&lt;&lt; 返回</a>
+
+                <div class="green_line"></div>
+                <div class="activity-detai">
+                    <div class="details-mes">
+                        <img src="img/hp_share/speech.jpg" alt="学术演讲" width="398" height="250">
+                        <div class="details-text">
+                            <h3><a href="#">18届春季运动会</a></h3>
+                            <p>天津经济管理学院</p>
+                            <hr>
+                            <p class="details-intr">天津渤海经济管理学院第18届学校体育运动竞赛的一种重要形式，主要指每年春秋两季的田径运动会。正文介绍学校体育运动竞赛的一种重要形式，主要指每年春秋两季的田径运动会</p>
+                            <p class="detai-date">2014-02-26</p>
+                        </div>
+                    </div>
+                    <div class="btn-fl">
+                        <button class="btn detai-btn" type="button" ><span class="glyphicon glyphicon-chevron-up"></span> 上一个</button>
+                        <button class="btn detai-btn" type="button"><span class="glyphicon glyphicon-chevron-down"></span> 下一个</button>
+                    </div>
+
+                    <div class="detai-nav">
+                        <ul class="list-inline">
+                            <li class="active"><a type="button" id="btn1" onclick="btn1()">相册</a></li>
+                            <li><a type="button" id="btn2" onclick="btn2()">海报</a></li>
+                            <li><a type="button" id="btn3" onclick="btn3()">书册</a></li>
+                            <li><a type="button" id="btn4" onclick="btn4()">视频</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="detai-photo">
+                        <div class="photo-details">
+                            <div class="thumbnail">
+                                <div class="photo-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="210" height="141"  data-src="img/hp_share/draw-shape.jpg" alt="相册">
+                                    <div class="photo-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="photo-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="210" height="141"  data-src="img/hp_share/sports-meet.jpg" alt="相册">
+                                    <div class="photo-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="photo-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="210" height="141"  data-src="img/hp_share/journey.jpg" alt="相册">
+                                    <div class="photo-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="photo-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="210" height="141"  data-src="img/hp_share/circle.jpg" alt="相册">
+                                    <div class="photo-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="photo-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="210" height="141"  data-src="img/hp_share/conference.jpg" alt="相册">
+                                    <div class="photo-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                        <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="photo-content thumb-border">
+                                    <div class="add-box-pt"></div>
+                                    <a href="#" class="add-photo" type="button" title="" target="_blank">
+                                        <img src="img/hp_share/add-more.png" width="74" height="74">
+                                    </a>
+                                    <div class="photo-icon">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--相册结束点-->
+
+                    <div id="detai-poster">
+                        <div class="act-details">
+                            <div class="thumbnail">
+                                <div class="detai-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/detai-src.jpg" width="319" height="195"  data-src="img/hp_share/go-let.jpg" alt="海报">
+
+                                    <div class="detai-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="detai-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="319" height="195"  data-src="img/hp_share/listen-talk.jpg" alt="海报">
+
+                                    <div class="detai-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="detai-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="319" height="195"  data-src="img/hp_share/discussion.jpg" alt="海报">
+
+                                    <div class="detai-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="detai-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="319" height="195"  data-src="img/hp_share/self-improvement.jpg" alt="海报">
+                                    <div class="detai-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="detai-content thumb-border">
+                                    <img class="lazy"  src="img/hp_share/kind-bac.jpg" width="319" height="195"  data-src="img/hp_share/child.jpg" alt="海报">
+                                    <div class="detai-icon">
+                                        <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                        <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                        <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="thumbnail">
+                                <div class="detai-content thumb-border">
+                                    <div class="add-box-dt"></div>
+                                    <a href="#" class="add-detai" title="" target="_blank">
+                                        <img src="img/hp_share/add-more.png" width="74" height="74">
+                                    </a>
+                                    <div class="detai-icon">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--海报结束点-->
+
+                    <div id="detai-book">
+                        <div class="book-details">
+                                <div class="thumbnail">
+                                    <div class="book-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/book-src.jpg" width="186" height="218"  data-src="img/hp_share/souvenir.jpg" alt="书册">
+                                        <div class="book-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="book-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/book-src.jpg" width="186" height="218"  data-src="img/hp_share/watch.jpg" alt="书册">
+                                        <div class="book-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="book-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/book-src.jpg" width="186" height="218"  data-src="img/hp_share/youth-green.jpg" alt="书册">
+                                        <div class="book-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="book-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/book-src.jpg" width="186" height="218"  data-src="img/hp_share/notes-p.jpg" alt="书册">
+                                        <div class="book-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="book-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/book-src.jpg" width="186" height="218"  data-src="img/hp_share/reflect.jpg" alt="书册">
+                                        <div class="book-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
+                                            <button class="btn all-detai detai-tiny" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="book-content thumb-border">
+                                        <div class="add-box-bk"></div>
+                                        <a href="#" class="add-book" type="button" title="" target="_blank">
+                                            <img src="img/hp_share/add-more.png" width="74" height="74">
+                                        </a>
+                                        <div class="book-icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    </div>
+                    <!--书册结束点-->
+
+                    <div id="detai-play">
+                        <div class="act-details">
+                                <div class="thumbnail">
+                                    <div class="detai-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/global-b.jpg" width="319" height="195"  data-src="img/hp_share/global-b.jpg" alt="视频">
+                                        <a href="#" class="play-detai" title="" target="_blank">
+                                            <img src="img/hp_share/play-land.png" width="54" height="54">
+                                        </a>
+                                        <div class="detai-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="detai-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/study-m.jpg" width="319" height="195"  data-src="img/hp_share/study-m.jpg" alt="视频">
+                                        <a href="#" class="play-detai" title="" target="_blank">
+                                            <img src="img/hp_share/play-land.png" width="54" height="54">
+                                        </a>
+                                        <div class="detai-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="thumbnail">
+                                    <div class="detai-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/activity-s.jpg" width="319" height="195"  data-src="img/hp_share/activity-s.jpg" alt="视频">
+                                        <a href="#" class="play-detai" title="" target="_blank">
+                                            <img src="img/hp_share/play-land.png" width="54" height="54">
+                                        </a>
+                                        <div class="detai-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="thumbnail">
+                                    <div class="detai-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/bye-b.jpg" width="319" height="195"  data-src="img/hp_share/bye-b.jpg" alt="视频">
+                                        <a href="#" class="play-detai" title="" target="_blank">
+                                            <img src="img/hp_share/play-land.png" width="54" height="54">
+                                        </a>
+                                        <div class="detai-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="detai-content thumb-border">
+                                        <img class="lazy"  src="img/hp_share/book-g.jpg" width="319" height="195"  data-src="img/hp_share/book-g.jpg" alt="视频">
+                                        <a href="#" class="play-detai" type="button" title="" target="_blank">
+                                            <img src="img/hp_share/play-land.png" width="54" height="54">
+                                        </a>
+                                        <div class="detai-icon">
+                                            <button class="btn detai-left" type="button"><span class="glyphicon glyphicon-comment"></span> 3561</button>
+                                            <button class="btn detai-left" type="submit"><span class="glyphicon glyphicon-heart"></span> 685</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                                            <button class="btn all-detai detai-right" type="button"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumbnail">
+                                    <div class="detai-content thumb-border">
+                                        <div class="add-box-dt"></div>
+                                        <a href="#" class="add-detai" title="" target="_blank">
+                                            <img src="img/hp_share/add-more.png" width="74" height="74">
+                                        </a>
+                                        <div class="detai-icon">
+
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    </div>
+                    <!--视频结束点-->
+                </div>
+                        <div class="clearfix"></div>
+                <div class="container activity-pagin">
+                    <nav class="pagin-center">
+                        <ul class="pagination">
+                            <li>
+                                <a href="#" aria-label="首页">
+                                    <span aria-hidden="true">首页</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="上一页">
+                                    <span aria-hidden="true">上一页</span>
+                                </a>
+                            </li>
+                            <!--<li><a href="#">1</a></li>-->
+                            <!--<li><a href="#">2</a></li>-->
+                            <!--<li><a href="#">3</a></li>-->
+                            <!--<li><a href="#">4</a></li>-->
+                            <!--<li><a href="#">5</a></li>-->
+                            <li>
+                                <a href="#" aria-label="下一页">
+                                    <span aria-hidden="true">下一页</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="尾页">
+                                    <span aria-hidden="true">尾页</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            </div>
+        <div class="right_content_wrapper">
+            <div class="layout_dashboard_wrapper">
+                <ul class="layout_dashboard_indication_hover_wrapper">
+                    <li class="layout_dashboard_indication_hover_1"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_hover_2"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_hover_3"><a href="javascript:;"></a></li>
+                </ul>
+                <div class="layout_dashboard_text">
+                    <img src="img/img_wbl/zhiyongshuangquan_text_00000.png" width="300" height="300">
+                </div>
+                <div class="layout_dashboard_bg">
+                    <img id="user-level-disk-img" src="img/img_wbl/zhiyongshuangquan_bg_00000.png" alt="" width="300" height="300">
+                </div>
+                <div class="layout_dashboard_indicator">
+                    <img src="img/img_wbl/zhiyongshuangquan_indicator_00000.png" alt="用户等级" width="300" height="300">
+                </div>
+                <ul class="layout_dashboard_indication_wrapper">
+                    <li class="layout_dashboard_indication_1"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_2"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_3"><a href="javascript:;"></a></li>
+                    <div class="box"></div>
+                </ul>
+            </div>
+            <div class="userinfo_wrapper">
+                <div class="user_name">
+                    <span class="space-user">
+                        <a href="javascript:;" class="user_header"><img class="s-header-photo" src="img/space-head.jpg" alt="人物头像" width="50px" height="50px"></a>
+                        <dl id="user_sc">
+                            <dt class="name">邢伟伟</dt>
+                            <dt class="school_name"><span class="school-icon"></span> 北京市八十一中学</dt>
+                        </dl>
+                    </span>
+                </div>
+                <div class="user_friend">
+                    <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 好友 <span class="badge">10</span></a>
+                    <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span class="badge">10</span></a>
+                </div>
+            </div>
+            <div class="user-content user-tag">
+                <h4>我的标签</h4>
+                <img class="share-tag" src="img/share-icon.png" alt="分享">
+            </div>
+            <div class="user-content user-test">
+                <div class="slideTxtBox">
+                    <div class="hd">
+                        <ul class="list-inline">
+                            <li class="hd-left">我测评过的</li>
+                            <li class="hd-right">我演习过的</li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <span class="bd-bar"></span>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                        </ul>
+                        <ul>
+                            <span class="bdd-bar"></span>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="user-content user-lesson">
+                <div class="slideTxtBox">
+                    <div class="hd">
+                        <ul class="list-inline">
+                            <li class="hd-left">我看过的微课</li>
+                            <li class="hd-right">我关注的训练营</li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <span class="bd-bar"></span>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                        </ul>
+                        <ul>
+                            <span class="bdd-bar"></span>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+</div>
+<!-- 内容区域 结束 -->
+
+<!-- 底部友情链接 开始 -->
+<div class="footer_container">
+    <div class="f-partner">
+        <span><img src="img/bottom-link.jpg"></span>
+        <p>
+            <a href="javascript:;">忆尔</a>
+            <a href="javascript:;">清华积极心理研究中心</a>
+            <a href="javascript:;">美国留学</a>
+            <a href="javascript:;">知好乐网校</a>
+            <a href="javascript:;">博众教育</a>
+            <a href="javascript:;">考德上公培</a>
+            <a href="javascript:;">在线英语培训</a>
+            <a href="javascript:;">公务员考试网</a>
+            <a href="javascript:;">坦途教育网</a>
+            <a href="javascript:;">师兄帮帮忙</a>
+            <a href="javascript:;">博浪网</a>
+            <a href="javascript:;">智康堂</a>
+        </p>
+        <p>
+            <a href="javascript:;">忆尔</a>
+            <a href="javascript:;">清华积极心理研究中心</a>
+            <a href="javascript:;">美国留学</a>
+            <a href="javascript:;">知好乐网校</a>
+            <a href="javascript:;">博众教育</a>
+            <a href="javascript:;">考德上公培</a>
+            <a href="javascript:;">在线英语培训</a>
+            <a href="javascript:;">公务员考试网</a>
+            <a href="javascript:;">坦途教育网</a>
+        </p>
+    </div>
+    <div class="b-joinus">
+        <span><a href="javascript:;" id="b-reg">注册加入幸福流</a><a href="javascript:;" id="b-known">了解快乐英雄权益</a></span>
+    </div>
+
+    <div class="footer_sns_wrapper">
+        <div class="sns-container">
+            <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
+            <a target="_blank" href="javascript:;"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
+            <a target="_blank" href="javascript:;"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
+            <a target="_blank" href="javascript:;"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
+        </div>
+    </div>
+</div>
+<!-- 底部友情链接 结束 -->
+<!-- 版权信息 开始 -->
+<div id="copy-right">
+    <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
+</div>
+<!-- 版权信息 结束 -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    function layout(){
+        $(".nav_main_button").click(function(){
+            var dropdownEl=$(this).siblings(".nav_dropdown_item");
+            if(dropdownEl.hasClass("dropdown_fadein")){
+                dropdownEl.removeClass("dropdown_fadein");
+                $(".nav_dropdown_item").hide();
+            }else{
+                dropdownEl.addClass("dropdown_fadein");
+                $(".nav_dropdown_item").show();
+            }
+        })
+        $(document).bind("click",function(e){
+            if($(".nav_dropdown_item").hasClass("dropdown_fadein")){
+                if($(e.target).closest(".nav_main_button").length==0){
+                    $(".nav_dropdown_item ").removeClass("dropdown_fadein");
+                    $(".nav_dropdown_item").hide();
+                }
+            }
+        })
+    }
+    function dashboard(){
+        var hoverIndex=0, clickIndex=0, multiplier=0;
+        $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
+            console.log("aaa");
+            hoverIndex=$(this).index();
+            $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","#acd655 transparent #acd655 transparent");
+        },function(){
+            hoverIndex=$(this).index();
+            $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","transparent");
+            return;
+        });
+        $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
+            clickIndex=$(this).index();
+            if(clickIndex==1){
+                multiplier=0;
+            }else if(clickIndex==0){
+                multiplier=-1;
+            }else{
+                multiplier=1;
+            }
+            $(".layout_dashboard_indicator").css({transform:"rotate("+70*multiplier+"deg)"})
+        },function(){
+            return;
+        });
+    }
+    $(document).ready(function(){
+        // user_level_hover();
+        layout();
+        dashboard();
+    });
+
+    function btn1(){
+        document.getElementById('detai-poster').style.display='none';
+        document.getElementById('detai-book').style.display='none';
+        document.getElementById('detai-play').style.display='none';
+        document.getElementById('detai-photo').style.display='block';
+    }
+    function btn2(){
+        document.getElementById('detai-poster').style.display='block';
+        document.getElementById('detai-book').style.display='none';
+        document.getElementById('detai-play').style.display='none';
+        document.getElementById('detai-photo').style.display='none';
+    }
+    function btn3(){
+        document.getElementById('detai-poster').style.display='none';
+        document.getElementById('detai-book').style.display='block';
+        document.getElementById('detai-play').style.display='none';
+        document.getElementById('detai-photo').style.display='none';
+    }
+    function btn4(){
+        document.getElementById('detai-poster').style.display='none';
+        document.getElementById('detai-book').style.display='none';
+        document.getElementById('detai-play').style.display='block';
+        document.getElementById('detai-photo').style.display='none';
+    }
+</script>
+
+</body>
+</html>

@@ -11,14 +11,14 @@
 .activity-header-slide {
 	text-align: left;
 	overflow: hidden;
-	width: 60%;
-	margin: 10px 0 0 0;
+	width: 100%;
+	margin-top: 10px;
+	padding: 0 1px;
 }
 
 .activity-header-slide .hd {
 	height: 39px;
 	line-height: 39px;
-	background: #f4f4f4;
 	border-bottom: 1px solid #646464;
 	position: relative;
 
@@ -124,6 +124,10 @@
 	color: #999;
 }
 
+.activity {
+	margin-left: 13px;
+}
+
 
 .activity .thumbnail, .match-height .thumbnail {
     border-radius: 0;
@@ -142,6 +146,7 @@
     width: 20%;
     min-width: 210px;
     margin: 0 5px;
+	float: left;
 }
 
 .match-height .act-item .btn {
@@ -168,7 +173,7 @@
 .activity-pagin, .pagin-center {
     margin: 0 auto;
     text-align: center;
-    width: 60%;
+    width: 80%;
 }
 
 .pagin-center .pagination > li > a,  .pagin-center .pagination > li > span{
@@ -211,7 +216,32 @@
 	border:none;
 	background-color: transparent;
 	box-shadow:none;
-	}
+}
+
+.space-arrange .thumbnail:hover {
+	border:none;
+	background-color: transparent;
+	box-shadow:none;
+}
+
+.space-arrange .thumbnail:hover .space-title{
+	border-left:1px solid #91c31e;
+	border-top:1px solid #91c31e;
+	border-right:1px solid #91c31e;
+}
+
+.space-arrange .thumbnail:hover .space-map{
+	border-left:1px solid #91c31e;
+	border-bottom:1px solid #91c31e;
+	border-right:1px solid #91c31e;
+	border-top:none;
+}
+
+.space-arrange .thumbnail:hover .space-map img{
+	margin:0 -1px -2px 0;
+	padding-top:2px;
+}
+
 .sde-triangle{
 	width:13px;
 	height:11px;
@@ -260,24 +290,7 @@
 	border:2px solid #989898;
 	margin:0 auto;
 }
-.space-arrange .thumbnail:hover .space-title{
-	border-left:1px solid #91c31e;
-	border-top:1px solid #91c31e;
-	border-right:1px solid #91c31e;
-}
 
-.space-arrange .thumbnail:hover .space-map{
-	border-left:1px solid #91c31e;
-	border-bottom:1px solid #91c31e;
-	border-right:1px solid #91c31e;
-	border-top:none;
-
-}
-
-.space-arrange .thumbnail:hover .space-map img{
-	margin:0 -1px -2px 0;
-	padding-top:2px;
-	}
 /*个人*/
 .perdonage-act{
 	margin-left:5px;
@@ -294,9 +307,8 @@
 	box-shadow:none;
 	margin:0 0 14px 0;
 	}
+
 .personage-img{
-	width:210px;
-	height:135px;
 	display:block;
 	border:1px solid #a0a0a0;
 	margin:0 auto;
@@ -315,35 +327,15 @@
 	margin:8px auto 0;
 }
 /*班级*/
-.class-act{
-	margin:0;
-}
-.class-act .act-item {
-    padding: 0 0;
-    width: 20%;
-    min-width: 210px;
-    margin: 0 2px;
-}
-.class-act .thumbnail{
-	border:1px solid #cfcfcf;
-	width:210px;
-}
-	
+
 .cap-class{
 	text-align:center;
 }
 
-.class-act .class-img{
-	display:block;
-	width:200px;
-	height:135px;
-	margin:0 auto;
-}
 .cap-class h3{
 	font:14px/14px "微软雅黑";
 	color:#505050;
 	margin:8px 0;
-	
 }
 
 .cap-class p{

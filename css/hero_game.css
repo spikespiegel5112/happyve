@@ -111,28 +111,27 @@
 
 .teacher-img {
 	position: relative;
-}
-
-.teacher-img-item {
-	width: 240px;
 	text-align: center;
 	font-family: "微软雅黑";
 }
 
-.teacher-img-item .thumbnail {
+.teacher-img .thumbnail {
 	border: none;
+	box-shadow: none;
+	float: left;
+	position: relative;
 }
 
-.teacher-img-item .teacher-video-view:hover {
+.teacher-img .teacher-video-view:hover {
 	border: 2px solid #91c31e ;
 	margin: -2px;
 }
 
-.teacher-img-item  .teacher-video-view:hover .wind-video {
+.teacher-img .teacher-video-view:hover .wind-video {
 	top: 28px;
 }
 
-.teacher-img-item .wind-video {
+.teacher-img .thumbnail .wind-video {
 	position: absolute;
 	top:30px;
 	left: 91px;

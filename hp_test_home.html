@@ -7,787 +7,876 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-    <title>幸福流-快乐大本营</title>
+    <title>幸福流-快乐测评</title>
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
 
-    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
+
+    <!-- 自己页面的样式 -->
     <link rel="stylesheet" href="css/hp_test.css" type="text/css" media="all">
+    <!-- 自己页面的样式 -->
 
 </head>
 <body>
-
 <!-- 头部登陆导航 开始 -->
-<div id="header-login">
-    <div class="u-logion">
+<div class="header_container">
+    <div class="header_login_wrapper">
         <ul>
-            <!--<li><a class="u-lo btn btn-default" role="button">登陆</a></li>-->
-            <!--<li><a class="u-reg btn btn-default" role="button">注册</a></li>-->
-            <li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 我的信息</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人信息</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 在线帮助</a></li>
+            <li><a href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 我的信息</a>
+            </li>
+            <li><a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人信息</a></li>
+            <li><a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 在线帮助</a>
+            </li>
         </ul>
     </div>
-</div>
+    <div class="nav_wrapper">
+        <div class="home_logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo" width="186" height="54"></a>
+        </div>
+        <div class="nav_main_list_wrapper" role="navigation">
+            <ul class="nav_main_list_inner">
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="javascript:;">快乐大本营<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li><a href="happy_camp.html">训练营</a></li>
+                        <li><a href="javascript:;">师徒行</a></li>
+                        <li><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
+            </ul>
 
-<div id="header">
-    <div class="h-nav navbar">
-        <div class="container">
-            <div class="h-logo navbar-brand hidden-sm">
-                <a href="index.html"><img src="img/logo.png" alt="logo" width="186px" height="54px"></a>
-            </div>
-            <div class="navbar-collapse collapse" role="navigation">
-                <ul class="h-nav-ul nav navbar-nav">
-                    <li class="dropdown hidden-sm hidden-md">
-                        <a class="h-nav-a dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">快乐大本营<b
-                                class="caret"></b></a>
-                        <ul class="h-drop-menu dropdown-menu">
-                            <li><a href="happy_camp.html">训练营</a></li>
-                            <li><a href="#">师徒行</a></li>
-                            <li><a href="#">大秀场</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="h-nav-a" href="hero_game.html">英雄风云场</a></li>
-                    <li><a class="h-nav-a" href="myFiles.html">我的档案</a></li>
-                    <li><a class="h-nav-a" href="#">我的集体</a></li>
-                </ul>
-                <form action="##" class="navbar-form navbar-right" rol="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="快乐英雄">
-                    </div>
-                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span>
-                    </button>
-                </form>
-            </div>
-
+        </div>
+        <div class="layout_serachbar_item">
+            <input type="text" class="form-control" placeholder="快乐英雄">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
         </div>
     </div>
 </div>
 <!-- 头部登陆导航 结束 -->
-
-
 <!-- 内容 开始 -->
-<div id="content" class="row">
-    <!-- banner 开始  -->
-    <div id="header-banner" class="col-md-10 col-md-offset-1">
-        <div class="banner">
-            <div class="hp_test_home_banner">
-                <a href="javascript:;"><img src="img/img_hp_test/hp_test_home_banner.png" alt="快乐评测"/></a>
-                <ul class="test_home_banner_text">
-                    <li>想了解自己的心理实力够不够强大？</li>
-                    <li>想明白自己真心渴望的是什么嘛？</li>
-                    <li>你没看错！来这里，获得属于专属于自己的心理标签。</li>
-                    <li>本测试工具基于积极心理学的人格多维模型测评开发，</li>
-                    <li>综合分析出个人情绪、美德、性格、韧性方面的量度和系数，</li>
-                    <li>从而有针对的向着“快乐英雄”的目标自我提升。</li>
+<div class="main_container">
+    <div class="main_content_wrapper">
+
+        <div class="left_content_wrapper">
+            <!-- 放页面banner-->
+            <div class="banner_wrapper">
+                <div class="hp_test_home_banner">
+                    <a href="javascript:;">
+                        <img src="img/img_hp_test/hp_test_home_banner.png" alt="快乐测评" width="700" height="305">
+                    </a>
+                    <ul>
+                        <li>想了解自己的心理实力够不够强大？</li>
+                        <li>想明白自己真心渴望的是什么嘛？</li>
+                        <li>你没看错！来这里，获得属于专属于自己的心理标签。</li>
+                        <li>本测试工具基于积极心理学的人格多维模型测评开发，</li>
+                        <li>综合分析出个人情绪、美德、性格、韧性方面的量度和系数，</li>
+                        <li>从而有针对的向着“快乐英雄”的目标自我提升。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 页面左部分区域 -->
+            <div class="left_column col-lg-8">
+                <div class="hp_test">
+                    <div class="system_statistics">
+                        <a href="#">系统有12万用户</a>
+                    </div>
+                    <div class="hp_test_hotlabel_link"></div>
+                    <div class="hp_test_hotlabel">
+                        <ul>
+                            <li class="hp_test_hotlabel_line"></li>
+                            <li class="hp_test_hotlabel_line">
+                                <ul>
+                                    <li class="test_hotlabel_row">
+                                        <ol>
+                                            <li class="hotlabel_one"><a href="javascript:;">1.<span>了不起的盖茨比</span></a>
+                                            </li>
+                                            <li class="hotlabel_count hotlabel_count_left"><span>720548</span></li>
+                                            <li class="hotlabel_four"><a href="javascript:;">4.<span>足智多谋</span></a>
+                                            </li>
+                                            <li class="hotlabel_count hotlabel_count_right"><span>120543</span></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hp_test_hotlabel_line">
+                                <ul>
+                                    <li class="test_hotlabel_row">
+                                        <ol>
+                                            <li class="hotlabel_two"><a href="javascript:;">2.<span>童叟无欺</span></a></li>
+                                            <li class="hotlabel_count hotlabel_count_left"><span>520647</span></li>
+                                            <li class="hotlabel_fine "><a href="javascript:;">5.<span>胆小的猫咪</span></a>
+                                            </li>
+                                            <li class="hotlabel_count hotlabel_count_right"><span>80543</span></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="hp_test_hotlabel_line">
+                                <ul>
+                                    <li class="test_hotlabel_row">
+                                        <ol>
+                                            <li class="hotlabel_three"><a href="javascript:;">3.<span>不屈的角斗士</span></a>
+                                            </li>
+                                            <li class="hotlabel_count hotlabel_count_left"><span>320543</span></li>
+                                            <li class="hotlabel_six"><a href="javascript:;">6.<span>微笑的蒙娜丽莎</span></a>
+                                            </li>
+                                            <li class="hotlabel_count hotlabel_count_right"><span>20543</span></li>
+                                        </ol>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="test_vertical_line">
+                            <img src="img/img_hp_test/hp_test_verline.png">
+                        </div>
+                    </div>
+                    <div class="hp_test_list_link"></div>
+                    <div class="hp_test_list list_emotion">
+                        <div class="list_header list_header_emotion">
+                            <div class="list_header_title list_header_title_emotion"><a href="hp_test_emotion.html"
+                                                                                        title="情绪测评"
+                                                                                        target="_blank"><span>情绪</span></a>
+                            </div>
+                            <div class="list_header_icon">
+                                <img src="img/img_hp_test/qxhead.jpg">
+                            </div>
+                            <div class="test_description">
+                                <p>
+                                    针对内部或对外部的重要事件所产生的冲突反应，一个主体对同一种事件总是有同样的反应。情绪的微妙之处已经大大超越了人类语言能够形容的范围。情绪不可能被完全消灭，但可以进行有效疏导、有效管理、适度控制。</p>
+                            </div>
+                        </div>
+                        <div class="list_details" style="height: 134px">
+                            <ul class="list_details_table ">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你在别人眼里是不是一个粗暴的人?</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>愤怒的小鸟</span>
+                                        </li>
+                                        <li class="list_details_btn">
+                                            <button type="button" value="查看结果"><a href="hp_test_result.html"
+                                                                                  target="_blank" title="查看测试结果"><span>查看结果</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">自己究竟在害怕什么东西？</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>胆小的猫咪</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_emotion.html"
+                                                                                  title="情绪测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">碰到害羞的事情怎么办？</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>说谎的匹诺曹</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_emotion.html"
+                                                                                  title="情绪测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">最近是不是有什么特殊的烦恼？</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>青春的烦躁</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_emotion.html"
+                                                                                  title="情绪测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="list_details_table list_details_table_active" style="display: none">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">自己是不是整天无忧无虑的？</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>快乐的大脚</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_emotion.html"
+                                                                                  title="情绪测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">为啥自己浑身是劲？</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>春风得意</span></li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_emotion.html"
+                                                                                  title="情绪测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">如何成为一个受大家喜欢的人？</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>暖心闺蜜</span></li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_emotion.html"
+                                                                                  title="情绪测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">啥时候自己才是最棒的？</li>
+                                        <li class="list_details_label list_details_label_emotion"><span>了不起的盖茨比</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_emotion.html"
+                                                                                  title="情绪测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="test_list_showmore">
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                    </div>
+                    <div class="hp_test_list list_goodness">
+                        <div class="list_header list_header_goodness">
+                            <div class="list_header_title list_header_title_goodness"><a href="hp_test_goodness.html"
+                                                                                         title="美德测评"
+                                                                                         target="_blank"><span>美德</span></a>
+                            </div>
+                            <div class="list_header_icon">
+                                <img src="img/img_hp_test/mdhead.jpg">
+                            </div>
+                            <div class="test_description">
+                                <p>
+                                    凡是可以给一个人的自我增添力量的东西，包括力量，勇气，自信等，都可以称之为美德，不同的性格优势可以汇聚成不同的美德。目前研究发现，中国人主要存在三大美德优势，分别是:人际美德、谨慎美德和活力美德。</p>
+                            </div>
+                        </div>
+                        <div class="list_details " style="height: 134px">
+                            <ul class="list_details_table">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你在别人眼中是不是个体贴的人?</li>
+                                        <li class="list_details_label list_details_label_goodness "><span>仁者无敌</span>
+                                        </li>
+                                        <li class="list_details_btn">
+                                            <button type="button" value="查看结果"><a href="hp_test_result.html"
+                                                                                  target="_blank" title="查看测试结果"><span>查看结果</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是个讲礼貌的人？</li>
+                                        <li class="list_details_label list_details_label_goodness"><span>彬彬有礼</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_goodness.html"
+                                                                                  title="美德测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你讲不讲信用？</li>
+                                        <li class="list_details_label list_details_label_goodness"><span>童叟无欺</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_goodness.html"
+                                                                                  title="美德测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是个正直的人？</li>
+                                        <li class="list_details_label list_details_label_goodness"><span>义重如山</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_goodness.html"
+                                                                                  title="美德测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="list_details_table list_details_table_active" style="display: none">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你在别人眼中是不是个体贴的人?</li>
+                                        <li class="list_details_label list_details_label_goodness "><span>仁者无敌</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_goodness.html"
+                                                                                  title="美德测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是个讲礼貌的人？</li>
+                                        <li class="list_details_label list_details_label_goodness"><span>彬彬有礼</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_goodness.html"
+                                                                                  title="美德测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你讲不讲信用？</li>
+                                        <li class="list_details_label list_details_label_goodness"><span>童叟无欺</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_goodness.html"
+                                                                                  title="美德测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是个正直的人？</li>
+                                        <li class="list_details_label list_details_label_goodness"><span>义重如山</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_goodness.html"
+                                                                                  title="美德测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="test_list_showmore">
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                    </div>
+                    <div class="hp_test_list list_character">
+                        <div class="list_header list_header_character">
+                            <div class="list_header_title list_header_title_character"><a href="hp_test_character.html"
+                                                                                          title="性格测评"
+                                                                                          target="_blank"><span>性格</span></a>
+                            </div>
+                            <div class="list_header_icon">
+                                <img src="img/img_hp_test/xghead.jpg">
+                            </div>
+                            <div class="test_description">
+                                <p>
+                                    人对现实的态度和相应的行为方式中的比较稳定的、具有核心意义的个性心理特征。性格表现了人们对现实和周围世界的态度，并表现在他的行为举止中，主要体现在对自己、对别人、对事物的态度和所采取的言行上。</p>
+                            </div>
+                        </div>
+                        <div class="list_details " style="height: 134px">
+                            <ul class="list_details_table">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是一个冒险家?</li>
+                                        <li class="list_details_label list_details_label_character"><span>热情似火</span>
+                                        </li>
+                                        <li class="list_details_btn">
+                                            <button type="button" value="查看结果"><a href="hp_test_result.html"
+                                                                                  target="_blank" title="查看测试结果"><span>查看结果</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">大家喜欢不喜欢接近你？</li>
+                                        <li class="list_details_label list_details_label_character"><span>微笑的蒙娜丽莎</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_character.html"
+                                                                                  title="性格测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你有没有责任感？</li>
+                                        <li class="list_details_label list_details_label_character"><span>以身作则</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_character.html"
+                                                                                  title="性格测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是个话捞子么？</li>
+                                        <li class="list_details_label list_details_label_character"><span>沉默的羔羊</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_character.html"
+                                                                                  title="性格测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="list_details_table list_details_table_active" style="display: none">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是一个冒险家?</li>
+                                        <li class="list_details_label list_details_label_character"><span>热情似火</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_character.html"
+                                                                                  title="性格测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">大家喜欢不喜欢接近你？</li>
+                                        <li class="list_details_label list_details_label_character"><span>微笑的蒙娜丽莎</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_character.html"
+                                                                                  title="性格测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你有没有责任感？</li>
+                                        <li class="list_details_label list_details_label_character"><span>以身作则</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_character.html"
+                                                                                  title="性格测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是个话捞子么？</li>
+                                        <li class="list_details_label list_details_label_character"><span>沉默的羔羊</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_character.html"
+                                                                                  title="性格测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="test_list_showmore">
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                    </div>
+                    <div class="hp_test_list list_tenacity">
+                        <div class="list_header list_header_tenacity">
+                            <div class="list_header_title list_header_title_tenacity"><a href="hp_test_tenacity.html"
+                                                                                         title="韧性测评"
+                                                                                         target="_blank"><span>韧性</span></a>
+                            </div>
+                            <div class="list_header_icon">
+                                <img src="img/img_hp_test/rxhead.jpg">
+                            </div>
+                            <div class="test_description">
+                                <p>
+                                    在压力下复原和成长的心理机制，面对丧失、困难或者逆境时的有效应对和反应。不仅意味着能在重大创伤或应激之后最初状态，在压力的威胁下能够顽强持久、坚韧不拔、更强调在挫折后的成长和新生。<br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="list_details" style="height: 134px">
+                            <ul class="list_details_table">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你有没有希望?</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>希望的太阳</span>
+                                        </li>
+                                        <li class="list_details_btn">
+                                            <button type="button" value="查看结果"><a href="hp_test_result.html"
+                                                                                  target="_blank" title="查看测试结果"><span>查看结果</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">如何应对倒霉？</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>乐观的路飞</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_tenacity.html"
+                                                                                  title="韧性测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你说一不二吗？</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>不去的角斗士</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_tenacity.html"
+                                                                                  title="韧性测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是万能的？</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>自信的大爆棚</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_tenacity.html"
+                                                                                  title="韧性测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="list_details_table list_details_table_active" style="display: none">
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你有没有希望?</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>希望的太阳</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_tenacity.html"
+                                                                                  title="韧性测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">如何应对倒霉？</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>乐观的路飞</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_tenacity.html"
+                                                                                  title="韧性测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你说一不二吗？</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>不去的角斗士</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_tenacity.html"
+                                                                                  title="韧性测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                                <li class="list_details_row">
+                                    <ul class="list_details_col">
+                                        <li class="list_details_question">你是不是万能的？</li>
+                                        <li class="list_details_label list_details_label_tenacity"><span>自信的大爆棚</span>
+                                        </li>
+                                        <li class="list_details_btn list_details_btn_start">
+                                            <button type="button" value="开始测评"><a href="hp_test_tenacity.html"
+                                                                                  title="韧性测评" target="_blank"><span>开始测评</span></a>
+                                            </button>
+                                        </li>
+                                        <li class="list_details_row_hr"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="test_list_showmore">
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                    </div>
+                </div>
+                <div id="show-moretest" class="show-moretest">
+                    <img class="show-moretest" src="img/img_hp_test/hp_test_duang.png" alt="更多评测请到这里duang~~~">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="right_content_wrapper">
+            <div class="layout_dashboard_wrapper">
+                <ul class="layout_dashboard_indication_hover_wrapper">
+                    <li class="layout_dashboard_indication_hover_1"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_hover_2"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_hover_3"><a href="javascript:;"></a></li>
+                </ul>
+                <div class="layout_dashboard_text">
+                    <img src="img/img_wbl/zhiyongshuangquan_text_00000.png" width="300" height="300">
+                </div>
+                <div class="layout_dashboard_bg">
+                    <img id="user-level-disk-img" src="img/img_wbl/zhiyongshuangquan_bg_00000.png" alt="" width="300"
+                         height="300">
+                </div>
+                <div class="layout_dashboard_indicator">
+                    <img src="img/img_wbl/zhiyongshuangquan_indicator_00000.png" alt="用户等级" width="300" height="300">
+                </div>
+                <ul class="layout_dashboard_indication_wrapper">
+                    <li class="layout_dashboard_indication_1"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_2"><a href="javascript:;"></a></li>
+                    <li class="layout_dashboard_indication_3"><a href="javascript:;"></a></li>
+                    <div class="box"></div>
                 </ul>
             </div>
-        </div>
-
-        <div class="user-level-in-banner not-index">
-            <div class="user-level-disk-round not-index">
-                <img id="user-level-disk-img" src="img/turnplate.png" alt="" width="304" height="210">
-            </div>
-            <div id="user-level-test" class="not-index">
-                <!--<a href="#"></a>-->
-            </div>
-            <div id="user-level-exercise" class="not-index">
-                <!--<a href="#"><span>asdas</span></a>-->
-            </div>
-            <div id="user-level-mark" class="not-index">
-                <!--<a href="#"><span>asdas</span></a>-->
-            </div>
-
-            <div class="user-level-disk not-index">
-                <img src="img/pointer-round.png" alt="用户等级" width="170" height="170">
-            </div>
-        </div>
-    </div>
-    <!-- banner 结束 -->
-
-    <!-- 左边区域 开始 -->
-    <div id="left-content" class="col-md-7 col-md-offset-1">
-        <div class="left_column col-lg-8">
-            <div class="hp_test">
-                <div class="system_statistics">
-                    <a href="#">系统有12万用户</a>
+            <div class="userinfo_wrapper">
+                <div class="user_name">
+                    <span class="space-user">
+                        <a href="javascript:;" class="user_header"><img class="s-header-photo" src="img/space-head.jpg"
+                                                                        alt="人物头像" width="50px" height="50px"></a>
+                        <dl id="user_sc">
+                            <dt class="name">邢伟伟</dt>
+                            <dt class="school_name"><span class="school-icon"></span> 北京市八十一中学</dt>
+                        </dl>
+                    </span>
                 </div>
-                <div class="hp_test_hotlabel_link"></div>
-                <div class="hp_test_hotlabel">
-                    <ul>
-                        <li class="hp_test_hotlabel_line"></li>
-                        <li class="hp_test_hotlabel_line">
-                            <ul>
-                                <li class="test_hotlabel_row">
-                                    <ol>
-                                        <li class="hotlabel_one"><a href="javascript:;">1.<span>了不起的盖茨比</span></a></li>
-                                        <li class="hotlabel_count hotlabel_count_left"><span>720548</span></li>
-                                        <li class="hotlabel_four"><a href="javascript:;">4.<span>足智多谋</span></a></li>
-                                        <li class="hotlabel_count hotlabel_count_right"><span>120543</span></li>
-                                    </ol>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="hp_test_hotlabel_line">
-                            <ul>
-                                <li class="test_hotlabel_row">
-                                    <ol>
-                                        <li class="hotlabel_two"><a href="javascript:;">2.<span>童叟无欺</span></a></li>
-                                        <li class="hotlabel_count hotlabel_count_left"><span>520647</span></li>
-                                        <li class="hotlabel_fine "><a href="javascript:;">5.<span>胆小的猫咪</span></a></li>
-                                        <li class="hotlabel_count hotlabel_count_right"><span>80543</span></li>
-                                    </ol>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="hp_test_hotlabel_line">
-                            <ul>
-                                <li class="test_hotlabel_row">
-                                    <ol>
-                                        <li class="hotlabel_three"><a href="javascript:;">3.<span>不屈的角斗士</span></a></li>
-                                        <li class="hotlabel_count hotlabel_count_left"><span>320543</span></li>
-                                        <li class="hotlabel_six"><a href="javascript:;">6.<span>微笑的蒙娜丽莎</span></a></li>
-                                        <li class="hotlabel_count hotlabel_count_right"><span>20543</span></li>
-                                    </ol>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <div class="test_vertical_line">
-                        <img src="img/img_hp_test/hp_test_verline.png">
-                    </div>
-                </div>
-                <div class="hp_test_list_link"></div>
-                <div class="hp_test_list list_emotion">
-                    <div class="list_header list_header_emotion">
-                        <div class="list_header_title list_header_title_emotion"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>情绪</span></a></div>
-                        <div class="list_header_icon">
-                            <img src="img/img_hp_test/qxhead.jpg">
-                        </div>
-                        <div class="test_description">
-                            <p>
-                                针对内部或对外部的重要事件所产生的冲突反应，一个主体对同一种事件总是有同样的反应。情绪的微妙之处已经大大超越了人类语言能够形容的范围。情绪不可能被完全消灭，但可以进行有效疏导、有效管理、适度控制。</p>
-                        </div>
-                    </div>
-                    <div class="list_details" style="height: 134px">
-                        <ul class="list_details_table ">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你在别人眼里是不是一个粗暴的人?</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>愤怒的小鸟</span></li>
-                                    <li class="list_details_btn">
-                                        <button type="button" value="查看结果" ><a href="hp_test_result.html" target="_blank" title="查看测试结果"><span>查看结果</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">自己究竟在害怕什么东西？</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>胆小的猫咪</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">碰到害羞的事情怎么办？</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>说谎的匹诺曹</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">最近是不是有什么特殊的烦恼？</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>青春的烦躁</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="list_details_table list_details_table_active" style="display: none">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">自己是不是整天无忧无虑的？</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>快乐的大脚</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">为啥自己浑身是劲？</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>春风得意</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">如何成为一个受大家喜欢的人？</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>暖心闺蜜</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">啥时候自己才是最棒的？</li>
-                                    <li class="list_details_label list_details_label_emotion"><span>了不起的盖茨比</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_emotion.html" title="情绪测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="test_list_showmore">
-                    <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
-                </div>
-                <div class="hp_test_list list_goodness">
-                    <div class="list_header list_header_goodness">
-                        <div class="list_header_title list_header_title_goodness"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>美德</span></a></div>
-                        <div class="list_header_icon">
-                            <img src="img/img_hp_test/mdhead.jpg">
-                        </div>
-                        <div class="test_description">
-                            <p>
-                                凡是可以给一个人的自我增添力量的东西，包括力量，勇气，自信等，都可以称之为美德，不同的性格优势可以汇聚成不同的美德。目前研究发现，中国人主要存在三大美德优势，分别是:人际美德、谨慎美德和活力美德。</p>
-                        </div>
-                    </div>
-                    <div class="list_details " style="height: 134px">
-                        <ul class="list_details_table">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你在别人眼中是不是个体贴的人?</li>
-                                    <li class="list_details_label list_details_label_goodness "><span>仁者无敌</span></li>
-                                    <li class="list_details_btn">
-                                        <button type="button" value="查看结果"><a href="hp_test_result.html" target="_blank" title="查看测试结果"><span>查看结果</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是个讲礼貌的人？</li>
-                                    <li class="list_details_label list_details_label_goodness"><span>彬彬有礼</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你讲不讲信用？</li>
-                                    <li class="list_details_label list_details_label_goodness"><span>童叟无欺</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是个正直的人？</li>
-                                    <li class="list_details_label list_details_label_goodness"><span>义重如山</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="list_details_table list_details_table_active" style="display: none">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你在别人眼中是不是个体贴的人?</li>
-                                    <li class="list_details_label list_details_label_goodness "><span>仁者无敌</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是个讲礼貌的人？</li>
-                                    <li class="list_details_label list_details_label_goodness"><span>彬彬有礼</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你讲不讲信用？</li>
-                                    <li class="list_details_label list_details_label_goodness"><span>童叟无欺</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是个正直的人？</li>
-                                    <li class="list_details_label list_details_label_goodness"><span>义重如山</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_goodness.html" title="美德测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="test_list_showmore">
-                    <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
-                </div>
-                <div class="hp_test_list list_character">
-                    <div class="list_header list_header_character">
-                        <div class="list_header_title list_header_title_character"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>性格</span></a></div>
-                        <div class="list_header_icon">
-                            <img src="img/img_hp_test/xghead.jpg">
-                        </div>
-                        <div class="test_description">
-                            <p>
-                                人对现实的态度和相应的行为方式中的比较稳定的、具有核心意义的个性心理特征。性格表现了人们对现实和周围世界的态度，并表现在他的行为举止中，主要体现在对自己、对别人、对事物的态度和所采取的言行上。</p>
-                        </div>
-                    </div>
-                    <div class="list_details " style="height: 134px">
-                        <ul class="list_details_table">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是一个冒险家?</li>
-                                    <li class="list_details_label list_details_label_character"><span>热情似火</span></li>
-                                    <li class="list_details_btn">
-                                        <button type="button" value="查看结果"><a href="hp_test_result.html" target="_blank" title="查看测试结果"><span>查看结果</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">大家喜欢不喜欢接近你？</li>
-                                    <li class="list_details_label list_details_label_character"><span>微笑的蒙娜丽莎</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你有没有责任感？</li>
-                                    <li class="list_details_label list_details_label_character"><span>以身作则</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是个话捞子么？</li>
-                                    <li class="list_details_label list_details_label_character"><span>沉默的羔羊</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="list_details_table list_details_table_active" style="display: none">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是一个冒险家?</li>
-                                    <li class="list_details_label list_details_label_character"><span>热情似火</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">大家喜欢不喜欢接近你？</li>
-                                    <li class="list_details_label list_details_label_character"><span>微笑的蒙娜丽莎</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你有没有责任感？</li>
-                                    <li class="list_details_label list_details_label_character"><span>以身作则</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是个话捞子么？</li>
-                                    <li class="list_details_label list_details_label_character"><span>沉默的羔羊</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_character.html" title="性格测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="test_list_showmore">
-                    <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
-                </div>
-                <div class="hp_test_list list_tenacity">
-                    <div class="list_header list_header_tenacity">
-                        <div class="list_header_title list_header_title_tenacity"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>韧性</span></a></div>
-                        <div class="list_header_icon">
-                            <img src="img/img_hp_test/rxhead.jpg">
-                        </div>
-                        <div class="test_description">
-                            <p>
-                                在压力下复原和成长的心理机制，面对丧失、困难或者逆境时的有效应对和反应。不仅意味着能在重大创伤或应激之后最初状态，在压力的威胁下能够顽强持久、坚韧不拔、更强调在挫折后的成长和新生。<br/>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="list_details" style="height: 134px">
-                        <ul class="list_details_table">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你有没有希望?</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>希望的太阳</span></li>
-                                    <li class="list_details_btn">
-                                        <button type="button" value="查看结果"><a href="hp_test_result.html" target="_blank" title="查看测试结果"><span>查看结果</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">如何应对倒霉？</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>乐观的路飞</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你说一不二吗？</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>不去的角斗士</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是万能的？</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>自信的大爆棚</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="list_details_table list_details_table_active" style="display: none">
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你有没有希望?</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>希望的太阳</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">如何应对倒霉？</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>乐观的路飞</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你说一不二吗？</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>不去的角斗士</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                            <li class="list_details_row">
-                                <ul class="list_details_col">
-                                    <li class="list_details_question">你是不是万能的？</li>
-                                    <li class="list_details_label list_details_label_tenacity"><span>自信的大爆棚</span></li>
-                                    <li class="list_details_btn list_details_btn_start">
-                                        <button type="button" value="开始测评"><a href="hp_test_tenacity.html" title="韧性测评" target="_blank"><span>开始测评</span></a></button>
-                                    </li>
-                                    <li class="list_details_row_hr"></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="test_list_showmore">
-                    <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                <div class="user_friend">
+                    <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 好友 <span
+                            class="badge">10</span></a>
+                    <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span
+                            class="badge">10</span></a>
                 </div>
             </div>
-            <div id="show-moretest" class="show-moretest">
-                <img class="show-moretest" src="img/img_hp_test/hp_test_duang.png" alt="更多评测请到这里duang~~~">
+            <div class="user-content user-tag">
+                <h4>我的标签</h4>
+                <img class="share-tag" src="img/share-icon.png" alt="分享">
+            </div>
+            <div class="user-content user-test">
+                <div class="slideTxtBox">
+                    <div class="hd">
+                        <ul class="list-inline">
+                            <li class="hd-left">我测评过的</li>
+                            <li class="hd-right">我演习过的</li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <span class="bd-bar"></span>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                        </ul>
+                        <ul>
+                            <span class="bdd-bar"></span>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="user-content user-lesson">
+                <div class="slideTxtBox">
+                    <div class="hd">
+                        <ul class="list-inline">
+                            <li class="hd-left">我看过的微课</li>
+                            <li class="hd-right">我关注的训练营</li>
+                        </ul>
+                    </div>
+                    <div class="bd">
+                        <ul>
+                            <span class="bd-bar"></span>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                            <li>
+                                <a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
+                                <!--<span>
+                                  <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
+                                  <a class="bd-play" href="javascript:;"></a>
+                                </span>-->
+                            </li>
+                        </ul>
+                        <ul>
+                            <span class="bdd-bar"></span>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                            <li><a href="javascript:;" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- 左边区域 结束 -->
-    <!-- 右边区域 开始 -->
-    <div id="right-content" class="col-md-3">
-        <!-- 用户信息 开始 -->
-        <div class="user-content user-info">
-            <div class="user_name">
-                <span class="space-user">
-                    <a href="#" class="user_header"><img class="s-header-photo" src="img/space-head.jpg" alt="人物头像"
-                                                         width="50px" height="50px"></a>
-                    <dl id="user_sc">
-                        <dt class="name">邢伟伟</dt>
-                        <dt class="school_name"><span class="school-icon"></span> 北京市八十一中学</dt>
-                    </dl>
-                </span>
-
-            </div>
-
-            <div class="user_friend">
-                <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span>好友 <span
-                        class="badge">10</span></a>
-                <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span>收藏 <span
-                        class="badge">10</span></a>
-            </div>
-        </div>
-        <!-- 用户信息 结束 -->
-
-        <!-- 我的标签 开始 -->
-        <div class="user-content user-tag">
-            <h4>我的标签</h4>
-            <img class="share-tag" src="img/share-icon.png" alt="分享">
-        </div>
-        <!-- 我的标签 结束 -->
-
-        <!-- 我的评测 开始 -->
-        <div class="user-content user-test">
-            <div class="slideTxtBox">
-                <div class="hd">
-                    <ul class="list-inline">
-                        <li class="hd-left">我测评过的</li>
-                        <li class="hd-right">我演习过的</li>
-                    </ul>
-                </div>
-                <div class="bd">
-                    <ul>
-                        <span class="bd-bar"></span>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                    </ul>
-                    <ul>
-                        <span class="bdd-bar"></span>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- 我的评测 结束 -->
-
-        <!-- 我的微课 开始 -->
-        <div class="user-content user-lesson">
-            <div class="slideTxtBox">
-                <div class="hd">
-                    <ul class="list-inline">
-                        <li class="hd-left">我看过的微课</li>
-                        <li class="hd-right">我关注的训练营</li>
-                    </ul>
-                </div>
-                <div class="bd">
-                    <ul>
-                        <span class="bd-bar"></span>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-                        <li>
-                            <a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a>
-                            <!--<span>
-                              <img src="img/learn-video.jpg" alt="视频" width="250px" height="146px">
-                              <a class="bd-play" href="#"></a>
-                            </span>-->
-                        </li>
-
-                    </ul>
-
-                    <ul>
-                        <span class="bdd-bar"></span>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生获取什么证书?效力如何?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                        <li><a href="#" target="_blank"><p>教育管理在职研究生的教学方式?</p></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!-- 我的微课 结束 -->
-    </div>
-    <!-- 右边区域 结束 -->
 </div>
 <!-- 内容区域 结束 -->
 
 <!-- 底部友情链接 开始 -->
-<div id="footer">
-    <div class="col-md-10 col-md-offset-1">
+<div class="footer_container">
+    <div class="f-partner">
+        <span><img src="img/bottom-link.jpg"></span>
 
-        <div class="f-partner">
-            <span><img src="img/bottom-link.jpg"></span>
+        <p>
+            <a href="javascript:;">忆尔</a>
+            <a href="javascript:;">清华积极心理研究中心</a>
+            <a href="javascript:;">美国留学</a>
+            <a href="javascript:;">知好乐网校</a>
+            <a href="javascript:;">博众教育</a>
+            <a href="javascript:;">考德上公培</a>
+            <a href="javascript:;">在线英语培训</a>
+            <a href="javascript:;">公务员考试网</a>
+            <a href="javascript:;">坦途教育网</a>
+            <a href="javascript:;">师兄帮帮忙</a>
+            <a href="javascript:;">博浪网</a>
+            <a href="javascript:;">智康堂</a>
+        </p>
 
-            <p>
-                <a href="#">忆尔</a>
-                <a href="#">清华积极心理研究中心</a>
-                <a href="#">美国留学</a>
-                <a href="#">知好乐网校</a>
-                <a href="#">博众教育</a>
-                <a href="#">考德上公培</a>
-                <a href="#">在线英语培训</a>
-                <a href="#">公务员考试网</a>
-                <a href="#">坦途教育网</a>
-                <a href="#">师兄帮帮忙</a>
-                <a href="#">博浪网</a>
-                <a href="#">智康堂</a>
-            </p>
+        <p>
+            <a href="javascript:;">忆尔</a>
+            <a href="javascript:;">清华积极心理研究中心</a>
+            <a href="javascript:;">美国留学</a>
+            <a href="javascript:;">知好乐网校</a>
+            <a href="javascript:;">博众教育</a>
+            <a href="javascript:;">考德上公培</a>
+            <a href="javascript:;">在线英语培训</a>
+            <a href="javascript:;">公务员考试网</a>
+            <a href="javascript:;">坦途教育网</a>
+        </p>
+    </div>
+    <div class="b-joinus">
+        <span><a href="javascript:;" id="b-reg">注册加入幸福流</a><a href="javascript:;" id="b-known">了解快乐英雄权益</a></span>
+    </div>
 
-            <p>
-                <a href="#">忆尔</a>
-                <a href="#">清华积极心理研究中心</a>
-                <a href="#">美国留学</a>
-                <a href="#">知好乐网校</a>
-                <a href="#">博众教育</a>
-                <a href="#">考德上公培</a>
-                <a href="#">在线英语培训</a>
-                <a href="#">公务员考试网</a>
-                <a href="#">坦途教育网</a>
-            </p>
-        </div>
-        <div class="b-joinus">
-            <span><a href="#" id="b-reg">注册加入幸福流</a><a href="#" id="b-known">了解快乐英雄权益</a></span>
-        </div>
-
-        <div class="b-sns">
-            <div class="sns-container">
-                <a target="_blank" href="#">
-                    <div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img
-                            src="img/SinaWeibo.png"></div>
-                </a>
-                <a target="_blank" href="#">
-                    <div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img
-                            src="img/TencentWeibo.png"></div>
-                </a>
-                <a target="_blank" href="#">
-                    <div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png">
-                    </div>
-                </a>
-                <a target="_blank" href="#">
-                    <div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div>
-                </a>
-            </div>
+    <div class="footer_sns_wrapper">
+        <div class="sns-container">
+            <a target="_blank" href="javascript:;">
+                <div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img
+                        src="img/SinaWeibo.png"></div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img
+                        src="img/TencentWeibo.png"></div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div>
+            </a>
         </div>
     </div>
 </div>
@@ -797,15 +886,69 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
-
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="assets/js/icheck.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript" src="assets/js/icheck.js"></script>
 <script type="text/javascript" src="js/hp_test.js"></script>
+
+<script>
+    function layout() {
+        $(".nav_main_button").click(function () {
+            var dropdownEl = $(this).siblings(".nav_dropdown_item");
+            if (dropdownEl.hasClass("dropdown_fadein")) {
+                dropdownEl.removeClass("dropdown_fadein");
+                $(".nav_dropdown_item").hide();
+            } else {
+                dropdownEl.addClass("dropdown_fadein");
+                $(".nav_dropdown_item").show();
+            }
+        })
+        $(document).bind("click", function (e) {
+            if ($(".nav_dropdown_item").hasClass("dropdown_fadein")) {
+                if ($(e.target).closest(".nav_main_button").length == 0) {
+                    $(".nav_dropdown_item ").removeClass("dropdown_fadein");
+                    $(".nav_dropdown_item").hide();
+                }
+            }
+        })
+    }
+    function dashboard() {
+        var hoverIndex = 0, clickIndex = 0, multiplier = 0;
+        $(".layout_dashboard_indication_hover_wrapper li").hover(function () {
+            console.log("aaa");
+            hoverIndex = $(this).index();
+            $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color", "#acd655 transparent #acd655 transparent");
+        }, function () {
+            hoverIndex = $(this).index();
+            $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color", "transparent");
+            return;
+        });
+        $(".layout_dashboard_indication_hover_wrapper li").hover(function () {
+            clickIndex = $(this).index();
+            if (clickIndex == 1) {
+                multiplier = 0;
+            } else if (clickIndex == 0) {
+                multiplier = -1;
+            } else {
+                multiplier = 1;
+            }
+            $(".layout_dashboard_indicator").css({transform: "rotate(" + 70 * multiplier + "deg)"})
+        }, function () {
+            return;
+        });
+    }
+    $(document).ready(function () {
+        // user_level_hover();
+        layout();
+        dashboard();
+    });
+</script>
+
 </body>
 </html>
