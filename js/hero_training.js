@@ -11,7 +11,7 @@ $(document).ready(function () {
         });
     });
     //window resize
-    var currentWidth = 670;
+    var currentWidth = 690;
     $(window).resize(function () {
         var winWidth = $(window).width();
         var conWidth;
@@ -21,11 +21,11 @@ $(document).ready(function () {
         } else if (winWidth < 630) {
             conWidth = 420;
             col = 2
-        } else if (winWidth < 670) {
+        } else if (winWidth < 690) {
             conWidth = 630;
             col = 3;
         } else {
-            conWidth = 670;
+            conWidth = 690;
             col = 3;
         }
 
