@@ -282,13 +282,18 @@
 .hero_splendidmoment .container{
     position: relative;
     width: 700px;
-    padding: 5px 0 50px 15px;
+    padding: 5px 0 50px 35px;
 }
+
 #ycontainer{
-    width: 660px;
+    width: 618px;
+    padding: 0;
 }
+.hero_splendidmoment .container #ycontainer .grid{
+    margin: 3px;
+}
+
 .hero_splendidmoment .mien-title {
-    width: 208px;
     height: 30px;
     padding: 0;
     margin: 0;
