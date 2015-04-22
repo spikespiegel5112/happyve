@@ -1,6 +1,7 @@
 .clearfloat{clear:both;}
 .float_right{float: right;}
 #shown, .shown{display: block;}
+.pos_absolute{position: absolute;}
 label, p, ul, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{margin:0;padding:0;}
 a{color: #000;}
 a:hover, a:focus{color:#888;}
@@ -64,8 +65,11 @@ body{font-family: "microsoft yahei";}
 .decoratebar_item_690 .green_1{width: 100%;height:4px;background: #91c81e;}
 .decoratebar_item_690 .green_2{width: 160px;height:4px;background: #529d40;}
 .decoratebar_item_690 .green_3{width: 70px;height:4px;background: #2f7b00;}
-.changemyself_content_wrapper{text-align: center;}
-.changemyself_content_title{display:inline-block;margin:20px auto;padding: 0.2em 1.7em;line-height:1.2em;background: #90c91d;color: #fff;font-size: 1.3em;}
+.subordin_title_item{text-align: center;width: 100%;}
+.subordin_title_item h4{display:inline-block;margin:10px auto;padding: 0.2em 1.7em;line-height:1.2em;background: #90c91d;color: #fff;font-size: 1.3em;}
+/*.subordin_title_item{width: 100%;position: absolute;top: 1em;}
+.subordin_title_item h3{margin:0 auto;padding:5px 0;width: 13em;background: #91c81e;text-align: center;color: #fff;font-size: 1.3em;}*/
+
 .changemyself_content_img{margin: 0 auto;width: 590px;height: 360px;}
 .note_wrapper{margin: 0 auto;width: 590px;}
 /*.note_wrapper a{float: right;margin:1em 0;}*/
@@ -90,7 +94,7 @@ body{font-family: "microsoft yahei";}
 .decoratebar_statistics_item span{background: none;width: 3em;}
 .decoratebar_statistics_item p{float: right;font-size: 13px;}
 .decoratebar_statistics_item p:first-child{color:#91c81e;}
-.gratitude_info_item{padding:1em;width: 100%;height: 2em;position: absolute;top: 0;font-size: 1.3em;}
+.gratitude_info_item{padding:1em;width: 100%;height: 2em;position: absolute;top: 0;font-size: 1.3em;z-index: 1;}
 .haexe_home_bene_desc_list .gratitude_info_item{color:#fff;}
 .haexe_home_carousel_bg_item{overflow: hidden;;top: 0;}
 .haexe_home_carousel_bg_item img{box-shadow: 3px 0px 5px #aaa;z-index: -1;}
@@ -135,9 +139,9 @@ body{font-family: "microsoft yahei";}
 .tree_desc_7{background-position: -443px -393px;left: 300px;top: 166px;}
 .tree_desc_8{background-position: -378px -214px;left: 270px;top: 245px;}
 .tree_desc_9{background-position: -380px -270px;left: 130px;top: 260px;}
-.haexe_home_bene_wrapper{padding:5px;width: 100%;border: 1px solid #b2b2b2;}
+.haexe_home_bene_wrapper{padding:5px;width: 100%;border: 1px solid #b2b2b2;position: relative;}
 
-.haexe_home_bene_desc_list{display: none;height:100%;position: relative;}
+.haexe_home_bene_desc_list{display: none;width:100%;height:100%;}
 .haexe_home_bene_desc_list ul{position: absolute;}
 .haexe_home_bene_wall_wrapper{position: relative;}
 .haexe_home_bene_list_wrapper{margin:0;width: 100%;height: 100%;position: relative;}
@@ -203,6 +207,7 @@ body{font-family: "microsoft yahei";}
 .thanksgivingtree_article_item{width: 330px;line-height:1.8em;text-align: right;z-index: 1;position: absolute;right: 20px;bottom:30px;font-size: 1.1em;}
 .thanksgivingtree_wrapper ul{display:block;height:97%;position: absolute;bottom: 0;left: -30px;}
 .thanksgivingtree_wrapper .tree_decroration_2{position: absolute;top:-96px;right: 0;z-index: 1;}
+
 .note_wrapper input{float: right;}
 .share_icon{float:left;width:22px;height:28px;background: url(../img/img_wbl/img_sprite_00000.png) 0 -37px;}
 .note_wrapper .save_item{float:right;padding:1em 0;width: 155px;}
@@ -218,3 +223,7 @@ body{font-family: "microsoft yahei";}
 .edit_item, .delete_item{/*margin:5px 0;*/line-height: 30px;}
 .edit_item{background-position: 0 0;}
 .delete_item{background-position: -20px -21px;}
+.benewall_article_wrapper{width: 100%;height: 355px;z-index: -1;}
+.benewall_article_item{position: absolute;z-index: 1;}
+.benewall_bg{width:100%;position: absolute;top: 0;left: 0;z-index: 0;}
+.benewall_article_wrapper ul{position: absolute;bottom: 0;z-index: 1}
