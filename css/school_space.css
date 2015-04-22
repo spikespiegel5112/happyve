@@ -589,7 +589,7 @@
 	font:14px/30px "微软雅黑";
 	margin-left:10px;
 }
-.sp-back{
+.left_content_body .sp-back {
 	color:#505050;
 	 }
 .organize-nav{	
@@ -619,6 +619,9 @@
 }
 .branch-fl{
 	padding-left:106px;
+}
+.branch-fl a{
+	color:#3c3c3c;
 }
 .organ-fl{
 	float:right;
@@ -691,3 +694,6 @@
 	}
 .school-space{
 	padding:0;}
+.space-top{
+	margin-top:40px;
+}

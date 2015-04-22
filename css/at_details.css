@@ -91,6 +91,9 @@
 .detai-nav li.active a {
 	color: #5aaa00;
 }
+.detai-nav a{
+	cursor: pointer;
+}
 .act-details{
 	margin-left: 10px;
 }
