@@ -1,8 +1,18 @@
 body {font: 12px "microsoft yahei";}
 ul{padding:0;}
-li {list-style-type:none;}
-a, a:link, a:visited, ins {text-decoration: none;}
-a:hover {text-decoration: none;}
+li {
+    list-style-type:none;
+}
+
+a, a:link, a:visited, ins {
+    color: #3c3c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #91c21e;
+    text-decoration: none;
+}
 /*~~~~~~~~~~main_container~~~~~~~~~~*/
 
 /*~~~~~~~~~~header~~~~~~~~~~*/
