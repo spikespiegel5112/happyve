@@ -1,8 +1,8 @@
 @charset "utf-8";
 /*评测详情页面*/
 .hp_test_left {
-    background: #ffffff;
     margin-top: 20px;
+    background: #ffffff;
     border:1px solid #d6d6d6;
     border-radius:6px;
     -moz-border-radius: 6px;
@@ -10,27 +10,16 @@
 }
 
 .back {
-    margin-top: 20px;
-    margin-left: 30px;
+    margin: 20px 0 0 30px;
     font-size: 16px;
     font-weight: bold;
 }
 
 .green_line {
-    background: url(../img/hp_share/green_line.png) no-repeat;
     width: 660px;
     height: 10px;
     margin: 20px 0 0 15px;
-}
-
-.emotion {
-    height: 32px;
-    background-color: #91c31e;
-    border-style: solid;
-    border-bottom-color: #50a000;
-    border-left-color: #50a000;
-    border-top-color: #91c31e;
-    border-right-color: #91c31e;
+    background: url(../img/hp_share/green_line.png) no-repeat;
 }
 
 .emotion p, .character p, .goodness p, .tenacity p {
@@ -41,10 +30,17 @@
     color: #ffffff;
 }
 
+.emotion {
+    height: 32px;
+    background-color: #91c31e;
+    border-bottom:3px solid #50a000;
+    border-left:3px solid #50a000;
+}
+
 .emotion_detail {
     height: 130px;
-    background-color: #d7f0aa;
     padding-left: 20px;
+    background-color: #d7f0aa;
     border-left: 1px solid #b0e099;
     border-right: 2px solid #b0e099;
     border-bottom: 3px solid #b0e099;
@@ -53,17 +49,14 @@
 .character {
     height: 32px;
     background-color: #78c8c8;
-    border-style: solid;
-    border-bottom-color: #37a0a0;
-    border-left-color: #37a0a0;
-    border-top-color: #78c8c8;
-    border-right-color: #78c8c8;
+    border-bottom: 3px solid #37a0a0;
+    border-left: 3px solid #37a0a0;
 }
 
 .character_detail {
     height: 130px;
-    background-color: #c8ffff;
     padding-left: 20px;
+    background-color: #c8ffff;
     border-left: 1px solid #a0ffff;
     border-right: 2px solid #a0ffff;
     border-bottom: 3px solid #a0ffff;
@@ -72,17 +65,14 @@
 .goodness {
     height: 32px;
     background-color: #ffb450;
-    border-style: solid;
-    border-bottom-color: #ff8219;
-    border-left-color: #ff8219;
-    border-top-color: #ffb450;
-    border-right-color: #ffb450;
+    border-bottom: 3px solid #ff8219;
+    border-left: 3px solid #ff8219;
 }
 
 .goodness_detail {
     height: 130px;
-    background-color: #ffe6be;
     padding-left: 20px;
+    background-color: #ffe6be;
     border-left: 1px solid #ffc690;
     border-right: 2px solid #ffc690;
     border-bottom: 3px solid #ffc690;
@@ -91,17 +81,14 @@
 .tenacity {
     height: 32px;
     background-color: #be96e6;
-    border-style: solid;
-    border-bottom-color: #b482e1;
-    border-left-color: #b482e1;
-    border-top-color: #be96e6;
-    border-right-color: #be96e6;
+    border-bottom: 3px solid #b482e1;
+    border-left: 3px solid #b482e1;
 }
 
 .tenacity_detail {
     height: 130px;
-    background-color: #f0dcfa;
     padding-left: 20px;
+    background-color: #f0dcfa;
     border-left: 1px solid #d0bcca;
     border-right: 2px solid #d0bcca;
     border-bottom: 3px solid #d0bcca;
@@ -118,11 +105,10 @@
 }
 
 .gray-line {
-    margin: 20px 0 0 0;
-    padding: 0;
     width: 510px;
     height: 1px;
-    border: none;
+    margin: 20px 0 0 0;
+    padding: 0;
     border-top: 1px solid #b4b4b4;
     overflow: hidden;
 }
@@ -138,9 +124,9 @@ p.test-number {
 }
 
 p.test-number span {
-    font-size: 16px;
-    font-weight: 700;
     padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
     color: #ffb450;
 }
 
@@ -150,9 +136,9 @@ p.test-number span {
 }
 
 .question-number span  {
+    padding: 5px;
     font-size: 18px;
     font-weight: 700;
-    padding: 5px;
     color: #ff8219;
 }
 .question-number .left{
@@ -176,9 +162,9 @@ p.test-number span {
 }
 
 .test_questions form label {
+    margin-left: 10px;
     font-style: normal;
     font-weight: normal;
-    margin-left: 10px;
 }
 
 .pre_question {
@@ -240,8 +226,7 @@ p.test-number span {
 }
 
 .recommend {
-    margin-top: 75px;
-    margin-left: 50px;
+    margin: 75px 0 0 50px;
 }
 
 .recommend ul {
@@ -267,10 +252,10 @@ p.test-number span {
     position: absolute;
     left: 50px;
     top: 58px;
-    background-image: url("../img/img_hp_test/hp_test_result_banner.jpg");
     width: 585px;
     height: 310px;
     margin: 30px auto;
+    background-image: url("../img/img_hp_test/hp_test_result_banner.jpg");
 }
 .test_result{
     position: absolute;
@@ -288,20 +273,17 @@ p.test-number span {
     -webkit-box-shadow: 1px 1px 1px #f5f5f5;
 }
 .test_result h4{
-    padding-top: 15px;
-    padding-left: 20px;
-    font-family: "Microsoft YaHei", "微软雅黑";
+    padding: 15px 0 0 20px;
+    font-family: "microsoft yahei", "微软雅黑";
 }
 .test_button{
     position: absolute;
     width: 100px;
     height: 30px;
     color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
+    font: bold 16px "microsoft yahei","微软雅黑";
     text-align: center;
     line-height: 30px;
-    font-family: "Microsoft YaHei", "微软雅黑";
     cursor: pointer;
     border-radius: 5px;
     -moz-border-radius: 5px;
@@ -329,7 +311,7 @@ p.test-number span {
     background-color: #b4b4b4;
     box-shadow: 1px 2px 1px #646464;
     -moz-box-shadow: 1px 2px 1px #646464;
-    -webkitbox-shadow: 1px 2px 1px #646464;
+    -webkit-box-shadow: 1px 2px 1px #646464;
 }
 .test_result_icon {
     position: relative;
@@ -359,26 +341,23 @@ p.test-number span {
 /*快乐测评首页*/
 .hp_test_home_banner{
     margin-left: 10px;
-    background-image: url("../img/img_hp_test/hp_test_home_banner.png");
     width: 700px;
     height: 305px;
+    background-image: url("../img/img_hp_test/hp_test_home_banner.png");
 }
 .hp_test_home_banner ul{
     list-style: none;
-    margin-top: -140px;
-    margin-right: 120px;
+    margin: -140px 120px 0 0;
 }
 .hp_test_home_banner ul li{
     height: 20px;
-    font-family: "Microsoft YaHei", "微软雅黑";
-    font-size: 14px;
-    font-weight: bold;
+    font: bold 14px "Microsoft YaHei", "微软雅黑";
     text-align: right;
 }
 .hp_test{
+    position: relative;
     width: 690px;
     margin: 30px 0 34px 0;
-    position: relative;
 }
 .system_statistics{
     width: 690px;
@@ -391,8 +370,7 @@ p.test-number span {
 .hp_test_hotlabel ul{
     list-style: none;
     padding: 0;
-    font-size: 14px;
-    font-family: "Microsoft YaHei", "微软雅黑";
+    font: 14px "Microsoft YaHei", "微软雅黑";
 }
 .hp_test_hotlabel_line {
     width: 650px;
@@ -411,10 +389,8 @@ p.test-number span {
 .hp_test_hotlabel span{
     display: inline-block;
     height: 24px;
-    margin-top: 10px ;
-    margin-left: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 10px 0 0 10px ;
+    padding: 0 10px;
     line-height: 24px;
     text-align: left;
     color: #ffffff;
@@ -576,8 +552,7 @@ p.test-number span {
 }
 .list_details {
     height: 134px;
-    font-size: 14px;
-    font-family: "Microsoft YaHei", "微软雅黑";
+    font: 14px "Microsoft YaHei", "微软雅黑";
     border: 1px solid #d5d5d5;
     box-shadow: 1px 2px 1px #d5d5d5;
     -moz-box-shadow: 1px 2px 1px #d5d5d5;
@@ -616,13 +591,13 @@ p.test-number span {
 
 .list_details_label{
     float: left;
-    margin-left: 20px;
     width: 160px;
+    margin-left: 20px;
     text-align: center;
 }
 .list_details_label span{
-    font-size: 12px;
     padding: 2px 10px;
+    font-size: 12px;
     text-align: center;
     cursor: pointer;
     -moz-user-select: none;
@@ -643,8 +618,7 @@ p.test-number span {
 
 .show-moretest{
     width: 690px;
+    margin: -20px 0 10px 0;
     background-color: #ffffff;
-    margin-top: -20px;
-    margin-bottom: 10px;
     overflow: hidden;
 }
