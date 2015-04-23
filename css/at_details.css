@@ -1,8 +1,6 @@
 @charset "utf-8";
 .activity-detai a{
-	color:#3c3c3c;
-
-	
+	color:#3c3c3c;	
 }
 
 .details-mes{
@@ -73,7 +71,7 @@
 	border:1px solid #91c81e;
 }
 .detai-nav{
-	width:690px;
+	width:689px;
 	border-bottom:1px solid #919191;
 	margin:20px 0;
 	padding-left:24px;
@@ -95,7 +93,7 @@
 	cursor: pointer;
 }
 .act-details{
-	margin-left: 10px;
+	margin-left: 7px;
 }
 .act-details .detai-row {
 	margin:0 16px 0 0;
@@ -104,21 +102,25 @@
 }
 .act-details .thumbnail{
 	border:none;
-	width:319px;
+	width:321px;
 	padding:0;
 	position:relative;
 	margin-left: 10px;
 	float: left;
+	background-color:transparent;
+	box-shadow:none;
 }
-
+/*.act-details .thumbnail:hover{
+	border:1px solid #91c81e;
+	}*/
 .thumb-border{
-	margin:2px 2px 32px 2px;
+	margin:2px 2px 12px 2px;
 
 }
 
 .thumb-border:hover{
 	border:2px solid #91c81e;
-	margin:0 0 30px 0;
+	margin:0 0 10px 0;
 }
 .detai-content{
 	width:323px;
@@ -194,9 +196,10 @@
 }
 
 /*相册*/
-
+.photo-details{
+	margin-left:7px;
+}
 .photo-details .thumbnail{
-	border:none;
 	width:210px;
 	padding:0;
 	position:relative;
@@ -239,7 +242,7 @@
 } 
 /*书册*/
 .book-details{
-	margin:0 0 0 34px;
+	margin:0 0 0 24px;
 }
 .book-details .book-row {
 	margin:0 24px 0 0;
@@ -251,8 +254,9 @@
 	width:186px;
 	padding:0;
 	position:relative;
-	margin-left: 10px;
+	margin-left: 20px;
 	float: left;
+	box-shadow:none;
 }
 
 .book-content{

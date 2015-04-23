@@ -207,11 +207,15 @@
 	width:44px;
 	text-align:right;
 }
-.match-img{
+.match-thumb .match-img{
 	display:block;
+	margin:0 auto;
+}
+
+.match-thumb .match-img img{
 	width:206px;
 	height:146px;
-	margin:0 auto;
+
 }
 .match-thumb{
 	margin:0 0 0 12px;
@@ -268,11 +272,18 @@
 .books-thumb .thumbnail:hover {
     border: solid #91c31e 1px;
 }
-.books-img{
+.books-thumb .books-img{
 	display:block;
 	width:210px;
 	height:278px;
 	margin:0 auto;
+}
+
+.books-thumb .books-img{
+
+	width:210px;
+	height:278px;
+
 }
 .line-match{
 	width:186px;
