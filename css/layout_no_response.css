@@ -4,10 +4,10 @@ li {
     list-style-type:none;
 }
 
-a, a:link, a:visited, ins {
+/*a, a:link, a:visited, ins {
     color: #3c3c3c;
     text-decoration: none;
-}
+}*/
 
 a:hover {
     color: #91c21e;
