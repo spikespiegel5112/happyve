@@ -254,3 +254,16 @@ body{font-family: "microsoft yahei";}
 .benewall_bg{width:100%;position: absolute;top: 0;left: 0;z-index: 0;}
 .benewall_article_wrapper ul{position: absolute;bottom: 0;z-index: 1;width: 100%;height:100%;}
 .timeline_wrapper{margin:0 auto;display:block;width: 620px;height: 40px;}
+/*~~~~~~~~~~~spendaniceday~~~~~~~~~~~*/
+.niceday_banner_wrapper{margin:0 auto;width: 600px;}
+.niceday_banner_wrapper p{float:left;margin:10px 0 0 0;width: 410px;height: 170px;font-size: 14px;line-height: 24px;}
+.statistics_item{margin:4em 0;font-size: 1.4em;font-weight: bolder;}
+.statistics_item label{color:#f77e2b;}
+.niceday_wrapper .statistics_item{width: 100%;border-top: 1px solid #000;text-align: right;}
+.calender_wrapper{width:100%;}
+.calender_dateselect_wrapper{margin:0 auto;padding:1em 3em;width: 98%;border-bottom:2px solid #969696;}
+.calender_dateselect_wrapper select{margin:0 1em 0 0;}
+.calender_main_wrapper{margin:0 auto;width: 98%;}
+.calender_main_wrapper thead td{text-align: center;padding: 30px 0 10px 0;font-size: 1.2em;}
+.calender_main_wrapper tbody{border-width: 2px;border-style: solid none none solid;border-color:#badb6a;}
+.calender_main_wrapper tbody td{height: 70px;border-width: 2px;border-style: none solid solid none;border-color:#badb6a;}
