@@ -62,7 +62,8 @@
         <div class="left_content_wrapper">
             <div class="banner_wrapper">
                 <a href="javascript:;">
-                    <img src="img/banner-hay.png" alt="幸福职教" width="1024" height="304">
+                    <p class="haexe_homepage_article_item">HERO是基于风靡全球被誉为“心理学领域的一场革命”的积极心理学，由资深心理学团队、教育专家为中国学生量身订制的理念。在此板块中的所有的演习，将紧紧围绕HERO的希望、自信、韧性、乐观的目标进行。<br><br>成为一个HERO是一件很困难的事情么？NO!在这里，有感恩树和善行墙这两大法宝来助你闭关修炼~有志者事竟成，只要你坚持，终能成正果！</p>
+                    <img src="img/img_wbl/haexe_homepage_banner_bg_00000.jpg" alt="幸福职教" width="700" height="310">
                 </a>
             </div>
             <div class="decoratebar_item_690 float_right">
@@ -307,7 +308,7 @@
             </div>
             <div class="clearfloat"></div>
             <div class="decoratebar_item_690">
-                <h2 class="decoratebar_title">感谢有你</h2>
+                <h2 class="decoratebar_title">日行一善</h2>
                 <div class="decoratebar_statistics_item">
                     <p><span>12</span>万条感恩信息</p>
                     <p>系统有<span>12</span>万用户/</p>
@@ -716,9 +717,22 @@
             $(this).siblings("li").removeClass("shown");
             $(this).addClass("shown");
         });
+        $(".haexe_home_bene_desc_list ul li").hover(function(){
+            $(this).find(".haexe_home_bene_desc_list_content, .haexe_home_bene_desc_list_bg").stop().fadeIn().end().css({"z-index":"20"});
+        },function(){
+            $(this).find(".haexe_home_bene_desc_list_content, .haexe_home_bene_desc_list_bg").stop().fadeOut().end().css({"z-index":""});
+        });
+        $(".haexe_home_ranking_list_wrapper li").click(function(){
+            index=$(this).index();
+            $(".haexe_home_carousel_desc_list").eq(index).stop().fadeIn();
+            $(this).siblings("li").removeClass("shown");
+            $(this).addClass("shown");
+        });
         $(".haexe_home_bene_list_wrapper li").click(function(){
-            var index=$(this).index()+1;
+            var index=$(this).index();
             $(this).siblings().removeClass("shown").end().addClass("shown");
+            $(".haexe_home_bene_desc_list").attr("id","");
+            $(".haexe_home_bene_desc_list").eq(index).attr("id","shown");
         });
     }
 </script>
