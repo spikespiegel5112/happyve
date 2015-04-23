@@ -125,7 +125,7 @@
 }
 
 .activity {
-	margin-left: 13px;
+	margin-left: 14px;
 }
 
 
@@ -137,9 +137,15 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 310px;
     /*text-align: center;*/
 }
+.activity .thumbnail{
+	width: 202px;
+	padding:4px;
+}
+.activity .thumbnail:hover{
+	border:1px solid #91c31e;
+	}
 
 .match-height .act-item {
     padding: 0 0;
@@ -157,10 +163,6 @@
 }
 .match-height .act-item .btn {
     color: #b4b4b4;
-}
-
-.match-height .thumbnail:hover {
-    border: solid #91c31e 1px;
 }
 
 .match-height h3 {
@@ -219,45 +221,60 @@
 .space-arrange{
 	position:relative;
 }
-
-.space-arrange .thumbnail{
+.space-height .thumbnail{
+	width: 209px;
+	padding:0;
 	border:none;
 	background-color: transparent;
 	box-shadow:none;
 }
-
-.space-arrange .thumbnail:hover {
+.space-height .thumbnail:hover{
+	border:1px solid #91c31e;
+}
+.space-height .thumbnail:hover {
 	border:none;
 	background-color: transparent;
 	box-shadow:none;
 }
+/*.space-arrange .thumbnail{
+	border:none;
+	background-color: transparent;
+	box-shadow:none;
+}*/
 
-.space-arrange .thumbnail:hover .space-title{
+/*.space-arrange .thumbnail:hover {
+	border:none;
+	background-color: transparent;
+	box-shadow:none;
+}*/
+
+.space-height .thumbnail:hover .space-title{
 	border-left:1px solid #91c31e;
 	border-top:1px solid #91c31e;
 	border-right:1px solid #91c31e;
 }
 
-.space-arrange .thumbnail:hover .space-map{
+.space-height .thumbnail:hover .space-map{
 	border-left:1px solid #91c31e;
 	border-bottom:1px solid #91c31e;
 	border-right:1px solid #91c31e;
 	border-top:none;
+	padding-top:2px;
 }
 
-.space-arrange .thumbnail:hover .space-map img{
+/*.space-arrange .thumbnail:hover .space-map img{
 	margin:0 -1px -2px 0;
 	padding-top:2px;
 	width:207px;
 	height:126px;
-}
+}*/
 
 .sde-triangle{
 	width:13px;
 	height:11px;
 	position:absolute;
-	top:-6px;
-	left:65px;
+	top:-10px;
+	left:52px;
 	background:url(../img/hp_share/shade.png) no-repeat;
 }	
 .badge-school{
@@ -268,8 +285,8 @@
     -webkit-border-radius: 0 0 10px 0;
 	border:2px solid #91c81e;
 	position:absolute;
-	top:-6px;
-	left:13px;
+	top:-10px;
+	left:1px;
 	background-color:#fff;
 }
 
@@ -279,7 +296,7 @@
 	margin:1px 3px;
 	}
 .space-title{
-	width:207px;
+	width:209px;
 	height:44px;
 	border-left:1px solid #989898;
 	border-top:1px solid #989898;
@@ -290,15 +307,17 @@
 	margin:5px 0 0 60px;
 	font:12px/16px "宋体";
 	color:#3c3c3c;
-	width:134px;
-	
+	width:134px;	
 }
-.space-map{
+.space-height .space-map{
 	display:block;
-	width:207px;
-	height:128px;
 	border:2px solid #989898;
 	margin:0 auto;
+}
+.space-height .space-map img{
+	width:207px;
+	height:128px;
+	
 }
 
 /*个人*/
@@ -324,13 +343,19 @@
 	width:212px;
 	padding:0;
 }
-.personage-img{
+.perdonage-hg .thumbnail:hover{
+	border:1px solid #91c31e;
+}
+.perdonage-hg .personage-img{
 	display:block;
 	border:1px solid #a0a0a0;
 	margin:0 auto;
+	
+}
+.perdonage-hg .personage-img img{
 	width:210px;
 	height:135px;
-}
+	}
 
 .cap-personage h3{
 	font:14px/24px "微软雅黑";
@@ -362,4 +387,21 @@
 	font:12px/30px "宋体";
 	color:#505050;
 	border-top:2px dashed #c9c9c9;
+}
+.activity .class-img img{
+	width:200px;
+	height:135px;
+}
+.share-match .share-how img{
+	width:210px;
+	height:141px;
+}
+.share-match{
+	margin-left:14px;
+}
+.share-match .thumbnail{
+	padding:0;
+}
+.share-match .thumbnail:hover{
+	border:1px solid #91c31e;
 }

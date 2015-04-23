@@ -693,8 +693,42 @@
 	width:690px;
 	margin-left:14px;
 	}
+.le-edit .thumbnail{
+	padding:0;
+	width:212px;
+}	
+.le-edit .hall-img{
+	display:block;
+	margin:0 auto;
+}
+
+.le-edit .hall-img img{
+	width:210px;
+	height:285px;
+}
 .school-space{
 	padding:0;}
 .space-top{
 	margin-top:40px;
+}
+
+.teach-edit{
+	width:690px;
+	margin-left:14px;
+	}
+.teach-edit .thumbnail{
+	padding:0;
+	width:204px;
+}	
+.teach-edit .teacher-view{
+	display:block;
+	margin:0 auto;
+}
+.teach-edit .teacher-view{
+	display:block;
+	margin:0 auto;
+}
+.teach-edit .teacher-view img{
+	width:202px;
+	height:114px;
 }
