@@ -371,7 +371,18 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 <script type="text/javascript" src="assets/js/icheck.js"></script>
-<script type="text/javascript" src="js/hp_test.js"></script>
+<script>
+    $(document).ready(function () {
+        changeButtonCss();
+        function changeButtonCss() {
+            $(".test_questions input").iCheck({
+                checkboxClass: 'icheckbox_minimal-green',  // 注意square和blue的对应关系,用于type=checkbox
+                radioClass: 'iradio_minimal-green', // 用于type=radio
+                increaseArea: '20%' // 增大可以点击的区域
+            });
+        }
+    });
+</script>
 
 </body>
 </html>
