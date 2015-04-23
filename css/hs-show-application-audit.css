@@ -1,0 +1,251 @@
+@charset "utf-8";
+/*报名审核*/
+.hero-show-list {
+    position: relative;
+    width: 550px;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.hero-show-detail-info {
+    height: 205px;
+    margin: 0 auto;
+}
+
+.hero-show-illustration{
+    display: inline-block;
+    float: left;
+}
+
+.hero-show-content {
+    display: inline-block;
+    float: left;
+    width: 250px;
+    height: 205px;
+    background-color: #f5f5f5;
+}
+
+.hero-show-list .hero-show-content h4{
+    padding: 10px 0 0 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hero-show-list .hero-show-content small{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.hero-show-content .dividing-line-inner {
+    width: 230px;
+    height: 1px;
+    background-color: #b4b4b4;
+    margin: 10px auto;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+.hero-show-list .hero-show-content p{
+    padding: 0 10px;
+    line-height: 18px;
+    text-indent: 2em;
+}
+
+.hero-show-list .application-icon, .participant-detail .vote{
+    position: relative;
+    height: 30px;
+    margin: 10px auto;
+}
+
+.hero-show-list .application-icon div{
+    display: inline-block;
+    float: right;
+}
+
+.hero-show-list .application-icon div, .participant-detail .vote, .refuse-info-icon div{
+    width: 100px;
+    height: 30px;
+    margin: 0 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+}
+
+.hero-show-list .application-icon .accept, .participant-detail .vote, .refuse-info-icon .ensure{
+    background: #91c31e;
+    box-shadow: 1px 2px 1px #50a000;
+    -moz-box-shadow: 1px 2px 1px #50a000;
+    -webkit-box-shadow: 1px 2px 1px #50a000;
+}
+
+.hero-show-list .application-icon .accept:hover, .refuse-info-icon .ensure:hover{
+    box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -moz-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -webkit-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+}
+
+.hero-show-list .application-icon .refuse, .refuse-info-icon .notsure{
+    background-color: #b4b4b4;
+    box-shadow: 1px 2px 1px #646464;
+    -moz-box-shadow: 1px 2px 1px #646464;
+    -webkit-box-shadow: 1px 2px 1px #646464;
+}
+
+.hero-show-list .application-icon .refuse:hover, .participant-detail .vote:hover, .refuse-info-icon .notsure:hover{
+    background: #91c31e;
+    box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -moz-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -webkit-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+}
+
+.refuse-info {
+    position: absolute;
+    display: none;
+    right: -40px;
+    width: 330px;
+    height: 160px;
+    background-color: #ffffff;
+    border: 1px solid #b4b4b4;
+    z-index: 999;
+}
+
+.refuse-info .reason{
+    margin: 10px 30px;
+}
+
+.refuse-info .refuse-info-icon{
+    margin: 0 35px;
+}
+
+.refuse-info-icon > div{
+    display: inline-block;
+}
+
+.dividing-line-container .outer-hr{
+    width: 660px;
+    height: 1px;
+    margin: 15px 0 0 15px;
+    background-color: #b4b4b4;
+    overflow: hidden;
+}
+
+.dividing-line-container .outer-hr-first{
+    height: 2px;
+}
+
+.activity-pagin, .pagin-center {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.activity-pagin, .pagin-center .pagination{
+    padding: 0 10px;
+}
+
+.pagin-center .pagination{
+    display: inline-block;
+}
+
+.pagin-center .pagination > li > a,  .pagin-center .pagination > li > span{
+    padding: 0 5px;
+    color: #3c3c3c;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.pagin-center .pagination > .disabled > a ,  .pagin-center .pagination > .disabled > span{
+    color: #b4b4b4;
+}
+
+.pagination > li .btn-group{
+    display: inline;
+}
+.pagination .btn-group .dropdown-menu{
+    margin: 20px 0 0 60px;
+    min-width: 60px;
+}
+
+/*弹出层*/
+#artwl_title{
+    display: none;
+}
+
+/*参与人详情*/
+.participant-content .caption {
+    width: 276px;
+    height: 30px;
+    margin: 20px auto;
+    background-color: #b4b4b4;
+    color: #ffffff;
+}
+
+.participant-content .caption > h4{
+    padding: 5px;
+    text-align: center;
+}
+
+.participant-content .subhead{
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.dividing-line-participant .outer-hr {
+    width: 500px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #b4b4b4;
+    overflow: hidden;
+}
+
+.participant-content p{
+    width: 300px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+    text-indent: 2em;
+}
+
+.participant-illustration {
+    width: 346px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.participant-illustration .poll{
+    height: 30px;
+    padding: 5px 20px;
+    text-align: right;
+    font-size: 14px;
+    background-color: #f5f5f5;
+
+}
+
+.participant-illustration .poll span{
+    font-weight: bold;
+    color: #91c31e;
+}
+
+.participant-detail .vote{
+    margin: 10px auto;
+}
+
+.participant-detail .vote a{
+    color: #ffffff;
+}
+
+.participant-detail .white-space{
+    height: 645px;
+}
