@@ -148,6 +148,7 @@
     margin: 0 5px;
 	float: left;
 }
+
 .act-item h4 {
 	margin:0 0 10px 0;}
 .act-item h4 a{
@@ -247,6 +248,8 @@
 .space-arrange .thumbnail:hover .space-map img{
 	margin:0 -1px -2px 0;
 	padding-top:2px;
+	width:207px;
+	height:126px;
 }
 
 .sde-triangle{
@@ -314,11 +317,19 @@
 	box-shadow:none;
 	margin:0 0 14px 0;
 	}
-
+.perdonage-hg {
+	margin-left:12px;
+}
+.perdonage-hg .thumbnail{
+	width:212px;
+	padding:0;
+}
 .personage-img{
 	display:block;
 	border:1px solid #a0a0a0;
 	margin:0 auto;
+	width:210px;
+	height:135px;
 }
 
 .cap-personage h3{
