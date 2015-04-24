@@ -1,0 +1,154 @@
+@charset "utf-8";
+a {
+    color: #3c3c3c;
+}
+.main_container {
+    background: none;
+}
+
+.login-main {
+    height: 480px;
+    background-color: #91c31e;
+}
+
+.login-main .login-main-illustration {
+    position: relative;
+    display: inline-block;
+    left: 180px;
+    padding-top: 60px;
+}
+
+/*登录*/
+.login-main .login-detail, .register-detail {
+    position: absolute;
+    right: 200px;
+    display: inline-block;
+    margin-top: 80px;
+    width: 350px;
+    height: 360px;
+    background-color: #ffffff;
+}
+
+.login-detail #login-info {
+    display: block;
+    margin: 35px 25px;
+}
+
+.login-detail #login-info .form-group {
+    display: block;
+    width: 300px;
+    height: 28px;
+    margin-bottom: 15px;
+}
+
+#login-info .checkbox {
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+
+#login-info .checkbox label {
+    padding-left: 0;
+}
+
+#login-info .forget-password {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+}
+
+#login-info .form-group .btn {
+    position: relative;
+    margin-left: -15px;
+    width: 300px;
+    height: 40px;
+    background-color: #91c31e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#login-info .form-group .btn:hover {
+    box-shadow: 1px 2px 3px #91c31e;
+    -moz-box-shadow: 1px 2px 3px #91c31e;
+    -webkit-box-shadow: 1px 2px 3px #91c31e;
+}
+
+.login-detail .register-now{
+    position: relative;
+    width: 300px;
+    margin: 0 25px;
+    text-align: right;
+}
+
+.login-detail .register-now > a {
+    display: block;
+    padding-top: 25px;
+}
+
+.login-detail .register-now > a > span, .register-detail .login-now > a > span {
+    color: #91c31e;
+}
+
+.login-detail .divider-line, .register-detail .divider-line {
+    margin: 10px auto;
+    width: 310px;
+    height: 1px;
+    background-color: #b4b4b4;
+}
+
+.other-accounts > p{
+    padding: 0 25px;
+}
+
+.other-accounts > ul{
+    list-style: none;
+    padding-left: 45px;
+}
+
+.other-accounts > ul > li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin: 15px 0 0 10px;
+}
+
+/*注册*/
+
+.register-detail #register-info{
+    display: block;
+    margin: 25px 25px 0 25px;
+}
+.register-detail #register-info .col-sm-3{
+    padding-right: 0;
+}
+.register-detail #register-info .col-sm-9 {
+    padding-left: 0;
+}
+#register-info .form-group {
+    margin-bottom: 8px;
+}
+#register-info .form-group .btn{
+    margin-left: 5px;
+    width: 300px;
+    height: 40px;
+    background-color: #91c31e;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+#register-info .agreement{
+    margin-left: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+#register-info .agreement a{
+    color: #b4b4b4;
+}
+#register-info .login-now{
+    width: 300px;
+    text-align: right;
+}
+.register-detail .other-accounts > ul > li{
+    margin: 0 5px;
+}
