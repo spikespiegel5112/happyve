@@ -160,7 +160,7 @@ body{font-family: "microsoft yahei";}
 .haexe_home_bene_list_wrapper li:first-child a{border-left: 0;}
 .haexe_home_bene_list_wrapper .ourschool{float:left;margin:21px 0 0 0;width: 24%;line-height: 6.8em;text-align: center;}
 .haexe_home_bene_list_wrapper .ourschool a{display:block;width: 105%;height: 40px;background: #e3e3e3;line-height: 3.8em;border-left: 1px solid #fff;color: #f5751c;font-weight: bolder;}
-.haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -65px -413px;}
+.haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -71px -413px;}
 .haexe_home_bene_list_wrapper .shown a{background: 0;}
 .haexe_home_bene_list_wrapper .shown span{display: block;}
 .haexe_home_bene_list_wrapper li span{display:none;margin:0 auto;width: 20px;height:25px;background: url(../img/img_wbl/img_sprite_00000.png);position: absolute;left: 46%;}
