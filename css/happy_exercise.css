@@ -30,7 +30,7 @@ body{font-family: "microsoft yahei";}
 .inputnumber_item{margin:0 0 20px 0;color:#ccc;text-align: right;}
 .inputnumber_item span{color:red;}
 .changemyself_button_item{width: 100%;}
-.changemyself_button:link{float:right;/*margin:0.5em 0;*/padding:0.2em 1em;height: 27px;line-height:20px;color:#fff;background: #91c81e;font-size: 1.4em;text-align: center;}
+.changemyself_button:link{float:right;margin:0.5em 0 0 0;padding:0.2em 1em;height: 27px;line-height:20px;color:#fff;background: #91c81e;font-size: 1.4em;text-align: center;}
 .changemyself_button:hover{color:#fff;}
 .newbadhabbit_title_wrapper{padding:0 0 0 50px;width:100%;position: relative;}
 .newbadhabbit_title_item{float: right;width:95%;margin:0 46px 0 0;}
@@ -107,10 +107,10 @@ body{font-family: "microsoft yahei";}
 .haexe_home_ranking_list_wrapper li a, .haexe_home_ranking_list_wrapper .ourschool a{display:block;padding:0 0 0 6em;width:100%;height:65px;line-height:65px;color:#fff;background-image:url(../img/img_wbl/img_sprite_00000.png);}
 .haexe_home_ranking_list_wrapper li span{display:none;width: 30px;height: 30px;background:url(../img/img_wbl/img_sprite_00000.png) -265px 0;position: absolute;top: 18px;left: -2px;}
 .haexe_home_ranking_list_wrapper .ourschool{width:100%;height:9em;position: absolute;bottom: 0;border-top: 1px solid #ccc;}
-.ranking_1 a{background-position: -31px 10px;}
-.ranking_2 a{background-position: -31px -70px;}
-.ranking_3 a{background-position: -31px -150px;}
-.ourschool a{background-position: -31px -231px;}
+.ranking_1 a{background-position: -13px -91px;}
+.ranking_2 a{background-position: -13px -170px;}
+.ranking_3 a{background-position: -13px -250px;}
+.ourschool a{background-position: -13px -330px;}
 
 
 .haexe_home_ranking_list_wrapper .shown a{background-image:url(../img/img_wbl/img_sprite_00000.png);background-color:#fff;z-index: -1;box-shadow: 5px 0 5px #aaa inset;cursor:pointer;}
@@ -154,19 +154,19 @@ body{font-family: "microsoft yahei";}
 .haexe_home_bene_wall_wrapper{position: relative;}
 .haexe_home_bene_list_wrapper{margin:0;width: 100%;height: 100%;position: relative;}
 .haexe_home_bene_list_wrapper:after{content: "";display: block;clear: both;}
-.haexe_home_bene_list_wrapper li{float: left;width: 25%;height:60px;position: relative;}
-.haexe_home_bene_list_wrapper li a{display: block;margin:19px 0 0 0;padding:14px 0;width: 100%;height:40px;text-align: center;border-left: 2px solid #fff;color: #3c3c3c;background: #e3e3e3;}
+.haexe_home_bene_list_wrapper li{float: left;margin:5px 0 0 0;width: 25%;height:60px;position: relative;}
+.haexe_home_bene_list_wrapper li a{display: block;margin:16px 0 0 0;padding:14px 0;width: 100%;height:40px;text-align: center;border-left: 2px solid #fff;color: #3c3c3c;background: #e3e3e3;}
 .haexe_home_bene_list_wrapper li a:hover{color: #111;}
 .haexe_home_bene_list_wrapper li:first-child a{border-left: 0;}
-.haexe_home_bene_list_wrapper .ourschool{float:left;margin:19px 0 0 0;width: 24%;line-height: 6.8em;text-align: center;}
+.haexe_home_bene_list_wrapper .ourschool{float:left;margin:21px 0 0 0;width: 24%;line-height: 6.8em;text-align: center;}
 .haexe_home_bene_list_wrapper .ourschool a{display:block;width: 105%;height: 40px;background: #e3e3e3;line-height: 3.8em;border-left: 1px solid #fff;color: #f5751c;font-weight: bolder;}
-.haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -90px -310px;}
+.haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -65px -413px;}
 .haexe_home_bene_list_wrapper .shown a{background: 0;}
 .haexe_home_bene_list_wrapper .shown span{display: block;}
 .haexe_home_bene_list_wrapper li span{display:none;margin:0 auto;width: 20px;height:25px;background: url(../img/img_wbl/img_sprite_00000.png);position: absolute;left: 46%;}
-.haexe_home_bene_list_wrapper .num_1 span{background-position: -87px -372px}
-.haexe_home_bene_list_wrapper .num_2 span{background-position: -127px -372px}
-.haexe_home_bene_list_wrapper .num_3 span{background-position: -168px -372px}
+.haexe_home_bene_list_wrapper .num_1 span{background-position: -66px -472px}
+.haexe_home_bene_list_wrapper .num_2 span{background-position: -106px -472px}
+.haexe_home_bene_list_wrapper .num_3 span{background-position: -149px -472px}
 .haexe_home_bene_desc_list ul li a{display: block;width: 100%;height: 100%;cursor: pointer;}
 .bene_desc_1{left: 70px;top: 110px;}
 .bene_desc_2{left: 270px;top: 60px;}
@@ -257,7 +257,7 @@ body{font-family: "microsoft yahei";}
 /*~~~~~~~~~~~spendaniceday~~~~~~~~~~~*/
 .niceday_banner_wrapper{margin:0 auto;width: 600px;}
 .niceday_banner_wrapper p{float:left;margin:10px 0 0 0;width: 410px;height: 170px;font-size: 14px;line-height: 24px;}
-.statistics_item{margin:4em 0;font-size: 1.4em;font-weight: bolder;}
+.statistics_item{/*margin:4em 0;*/font-size: 1.4em;font-weight: bolder;}
 .statistics_item label{color:#f77e2b;}
 .niceday_wrapper .statistics_item{width: 100%;border-top: 1px solid #000;text-align: right;}
 .calender_wrapper{width:100%;}
