@@ -419,7 +419,9 @@
 	background: url(../img/hp_share/mien-btn.jpg) repeat-x;
 	border:1px solid #c8c8c8;
 }
-
+.mien-icon a{
+	color:#969696;
+}
 .yet-mien{
 	background: url(../img/hp_share/mien-btn-gr.jpg) repeat-x;
 	border:1px solid #91c81e;
@@ -639,7 +641,7 @@
 	width:108px;
 	height:26px;
 	font:16px/24px "微软雅黑";
-	color:#488c04;
+	color:#fff;
 	background-color:#91c81e;
 	padding:0;
 	float:right;
@@ -805,6 +807,7 @@
 }
 .hall-org{
 	float:left;
+	height:24px;
 	line-height:24px;
 }
 .hall-height{
@@ -873,3 +876,148 @@
 	float:right;
 	margin-top:4px;
 }
+.name-collec{
+	margin:0;
+	font:14px/16px "微软雅黑";
+	color:#505050;
+}
+.class-space-list{
+	width:656px;
+	margin:16px  auto 160px;
+	border-top:1px solid #c9c9c9;
+	
+}
+.class-space-list .li-space-list{
+	height:84px;
+	border-bottom:1px solid #c9c9c9;
+	margin-top:10px;
+	}
+.class-space-list .li-space-list .space-list-img{
+	float:left;
+	width:56px;
+	height:56px;
+	border-radius:4px; /*圆角*/
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	margin-right:10px;
+	
+	
+	}
+.class-space-list .info-class-space{
+	float:left;
+	text-align:left;
+	font:12px "宋体";
+	}
+.class-space-list .person-class-text span::before{
+	content: "|";
+	padding: 0 16px 0 0;
+	}
+.class-space-list .person-class-text span{
+	margin-right:14px;
+}
+.info-class-space .person-class-text{
+	width:420px;
+	text-align:left;
+	line-height:20px;
+	height:20px;
+	}
+
+.person-class-text .blod-person{
+	display:inline-block;
+	width:100px;
+	}
+.info-class-space .grade-class-text{
+	width:160px;
+	text-align:left;
+	height:36px;
+	line-height:36px;
+}
+.info-class-space .grade-class-text img{
+	width:46px;
+	height:30px;
+	margin-left:16px;
+}
+.info-class-space .date-class-text{
+	width:100px;
+	text-align:left;
+	height:16px;
+	line-height:16px;
+}
+.btn-class-space{
+	float:right;
+	width:92px;
+	}
+.btn-class-space .agree-class-space{
+	margin-bottom:6px;
+}
+.blod-person{
+	font-weight:bold;
+}
+.agree-class-space {
+    width: 92px;
+    height: 30px;
+    background-color: #b4b4b4;
+    text-align: center;
+	font:16px/30px "微软雅黑";
+	color:#fff;
+	padding:0;
+
+    box-shadow: 1px 2px 0 #646464;
+    -moz-box-shadow: 1px 2px 0 #646464;
+    -webkit-box-shadow: 1px 2px 0 #646464;
+}
+
+
+.agree-class-space:hover {
+    background-color: #91c81e;
+	color:#fff;
+    box-shadow: 1px 2px 0 #50a000;
+    -moz-box-shadow: 1px 2px 0 #50a000;
+    -webkit-box-shadow: 1px 2px 0 #50a000;
+}
+.member-head{
+	width:72px;
+	height:72px;
+	float:left;
+	margin:0 18px 0 10px;
+}
+.member-space-list{
+	float:left;
+}
+.member-space-list li{
+	width:360px;
+	height:26px;
+	line-height:26px;
+	overflow:hidden;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+.detail-space-list{
+	margin-left:14px;
+	font:12px "宋体";
+	}
+.marg-space{
+	margin-left:0;
+}
+.master-class-space{
+	width: 92px;
+    height: 30px;
+    background-color: #91c81e;
+    text-align: center;
+	font:16px/30px "微软雅黑";
+	color:#fff;
+	padding:0;
+
+    box-shadow: 1px 2px 0 #50a000;
+    -moz-box-shadow: 1px 2px 0 #50a000;
+    -webkit-box-shadow: 1px 2px 0 #50a000;
+	
+	margin-bottom:6px;
+	}
+	
+.master-class-space:hover{
+	color:#fff;
+}
+#apply-space{
+	display:none;}
