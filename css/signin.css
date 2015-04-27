@@ -332,6 +332,19 @@ a {
     color: #fff;
 }
 
+.mobile-in .form-group .send-again{
+    margin: 0;
+    padding: 0;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
 .mobile-in .form-group .btn.prev {
     width: 120px;
     margin-right: 32px;
