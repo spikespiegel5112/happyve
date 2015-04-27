@@ -1,6 +1,7 @@
 @charset "utf-8";
 a {
     color: #3c3c3c;
+    outline: none;
 }
 
 .main_container {
@@ -144,14 +145,14 @@ a {
 }
 
 .find-pwd .input-lg {
-    padding: 5px 15px;
+    padding: 0 0 0 15px;
     height: 25px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .find-pwd .input-sm {
     float: left;
-    padding: 5px 15px;
+    padding: 0 0 0 15px;
     margin: 5px 0;
     width: 90px;
 }
@@ -363,7 +364,7 @@ a {
 }
 
 .mobile-in .input-lg {
-    padding: 5px 10px;
+    padding: 0 0 0 10px;
     border-radius: inherit;
     font-size: 14px;
     color: #ccc;
@@ -421,7 +422,7 @@ a {
 }
 
 .reset .input-lg {
-    padding: 10px 15px 10px 35px;
+    padding: 0 0 0 35px;
     height: 25px;
     font-size: 12px;
 }
