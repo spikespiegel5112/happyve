@@ -173,6 +173,7 @@
 .work-box{
 	border-bottom:1px solid #919191;
 	width:689px;
+	height:26px;
 	margin-bottom:30px;
 	
 	
@@ -185,6 +186,7 @@
 	background-color:#91c81e;
 	text-align:center;
 	margin:0 0 0 12px;
+	float:left;
 }
 .vote-box{
 	width:186px;
@@ -296,5 +298,306 @@
 	font:14px/16px "微软雅黑";
 	color:#91c81e;
 	}
+/*在线报名*/	
+.sign-box{
+	width:600px;
+	height:250px;
+	margin:16px 0 36px 40px;
+	color:#3C3C3C;
+}
+.sign-box li{
+	width:420px;
+	overflow:hidden;
+}
+.sign-box span{
+	display:block;
+}
+.lab-sign{
+	font-weight:normal;
+	font:14px/28px "微软雅黑";
+	color:#3C3C3C;
+}
+.front-sign{
+	float:left;
+	text-align:right;
+	width:80px;
+	font:14px/28px "微软雅黑";	
+	vertical-align:middle;
+	}
+.behind-sign{
+	float: left;
+	text-align:left;
+	width:330px;
+	vertical-align:middle;
+	font:12px/30px "宋体";
+}
+.mar-sign{
+	margin:12px 0;
+	}
+.sign-fl{
+	margin:-8px 0 16px 256px;
+}
+.match-thumb .thumbnail{
+	position: relative;
+}
+.match-thumb .thumbnail .check-thumb{
+	width:18px;
+	height:18px;
+	position:absolute;
+	top:4px;
+	right:2px;
+	float:inherit;
+}
+.option-sign{
+	width:680px;
+	height:420px;
+	margin:0 auto;
+	padding:0px;
+	overflow:auto;
+	border:1px solid #9c9c9c;
+	overflow-x: hidden;
+}
+.option-match{
+	margin:6px -2px;
+}
+.mid-option{
+	text-align:center;
+	padding-bottom:4px;
+}
+
+.back-spread{
+	width:688px;
+	
+	background-color:#deeebb;
+	margin:30px 0 140px;
+	padding:14px 0;
+}
+.back-spread .thumbnail{
+	width:208px;
+	padding:0;
+	border-radius:0;
+	margin:0 auto;
+	position: relative;
+}
+.back-spread .thumbnail h3{
+	margin:-4px 0 4px 0;
+	padding:0;
+	width:206px;	
+}
+.back-spread img{
+	width:206px;
+	height:146px;
+}
+.rem-spread{
+	background-color:transparent;
+	width:18px;
+	height:18px;
+	font:12px "微软雅黑";
+	color:#363636;
+	padding:0;
+	text-align:center;
+	line-height:18px;
+	position:absolute;
+	top:4px;
+	right:2px;
+}
+.spread-btn{
+	width:630px;
+	height:80px;
+	margin:0 auto;
+	border-top:1px solid #91c81e;
+}
+
+.sure-spread{
+	width:116px;
+	height:30px;
+	margin:20px 0 0 250px;	
+}
+.option-books{
+	margin:6 -6px; 
+	}
+.option-books .thumbnail{
+	margin:20px 3px;
+}
+.books-thumb .thumbnail .check-thumb{
+	width:18px;
+	height:18px;
+	position:absolute;
+	top:4px;
+	right:2px;
+	float:inherit;
+}
+#books-sign{
+	display:none;
+}
+#video-sign{
+	display:none;
+}
+/*公布结果*/
+.inp-sign-re{
+	width:156px;
+	height:28px;
+	}
+.sle-sign-na{
+	width:106px;
+	height:28px;
+	text-align:center;
+	padding:0px;
+}
+.slet-awards{
+	width:600px;
+	overflow:hidden;
+	padding-left:20px;
+	margin-bottom:30px;
+}
+.slet-awards span{
+	display:block;
+	float:left;
+	height:28px;
+}
+.mar-lab{
+	margin-left:26px;
+}
+.flo-work{
+	float:left;
+	margin-left:14px;
+	line-height:24px;
+}
+.put-new{
+	width:76px;
+	height:24px;
+	background: url(../img/hr_show/detai-btn.png) repeat-x;
+	font:14px/22px "微软雅黑";
+	color:#5aaa00;
+	border:1px solid #c8c8c8;
+	padding:0;
+	margin:0 0 0 318px;
+}
+.put-new:hover {
+	color:#91c81e;
+}
+
+.option-rusult{
+	margin:6px -2px;
+	min-height:500px;
+}
+.mar-spread{
+	margin-top:160px;
+	margin-bottom:160px;
+}
+.list-result-pa{
+	width:688px;
+	background-color:#deeebb;
+	margin:20px 0 20px 0 ;
+}
+.medal-rusult{
+	min-height:206px;
+}
+.list-result-pa li{
+	width:688px;
+}
+.list-result-pa li .p-list-rel{
+	width:500px;
+	height:30px;
+	font:14px/30px "微软雅黑";
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	margin:0 0 0 20px;
+	}
+.mid-option-h{
+	width:206px;
+	text-align:center;
+	background-color:#f5f5f5;
+	margin:0;
+	padding:0;
+	}
+	
+.choose-match h3{
+	font:14px/30px "微软雅黑";
+	width:206px;
+	height:30px;
+	text-align:center;
+	overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	margin:0;
+}
+.choose-match .mid-option{
+	width:206px;
+	height:24px;
+	font:12px/24px "宋体";
+	color:#3c3c3c;
+	text-align:center;
+	margin:0;
+}
+
+.btn-abolish {	
+	padding:0;
+	background-color: #b4b4b4;
+	position: absolute;
+	font:16px/30px "微软雅黑";
+	font-weight: bold;
+	letter-spacing:2px;
+	color:#fff;
+	-webkit-box-shadow: inset 0 0 0 #bcde76, 0 2px 2px 2px #878787;
+	-moz-box-shadow: inset 0 0 0  #bcde76, 0 2px 2px 2px #878787;
+	-o-box-shadow: inset 0 0 0  #bcde76, 0 2px 2px 2px #878787;
+	box-shadow: inset 0 0 0  #bcde76, 0 2px 2px 2px #878787;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+
+.btn-abolish:hover{
+	color:#fff;
+	
+	-webkit-box-shadow: inset 0 0 0 #bcde76, 0 1px 1px 1px #878787;
+	-moz-box-shadow: inset 0 0 0  #bcde76, 0 1px 1px 1px #878787;
+	-o-box-shadow: inset 0 0 0  #bcde76, 0 1px 1px 1px #878787;
+	box-shadow: inset 0 0 0  #bcde76, 0 1px 1px 1px #878787;
+	}
+.btn-abolish:active {
+	color: #878787;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.3);
+	background: rgb(180,180,180);
+	-webkit-box-shadow: inset 0px 1px 0px #bcde76, inset 0px -1px 0px #8bc137;
+	-moz-box-shadow: inset 0px 1px 0px #bcde76, inset 0px -1px 0px #8bc137;
+	-o-box-shadow: inset 0px 1px 0px #bcde76, inset 0px -1px 0px #8bc137;
+	box-shadow: inset 0px 1px 0px #bcde76, inset 0px -1px 0px #8bc137;
+}
+
+.btn-abolish:active::before {
+	top: -2px;
+	color:#fff;
+}
+
+.btn-abolish.focus{
+	color:#fff;
+}
+.spread-btn{
+	padding-left:126px;
+}
+.spread-btn li{
+	width:116px;
+	margin-right:8px;
+}
+.sure-choose{
+	width:116px;
+	height:30px;	
+}
+.preview-btn{
+	margin-top:140px;
+	padding-left:190px;
+	}
+.preview-thumb{
+	min-height:300px;
+}
+.sign-mrag-su{
+	padding:0;
+}
 /* CSS Document */
 
