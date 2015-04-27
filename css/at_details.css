@@ -1,4 +1,8 @@
 @charset "utf-8";
+.activity-detai{
+	margin-top:14px;
+	min-height:1110px;
+}
 .activity-detai a{
 	color:#3c3c3c;	
 }
