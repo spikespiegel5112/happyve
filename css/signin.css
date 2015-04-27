@@ -3,6 +3,8 @@ a {
     color: #3c3c3c;
 }
 .main_container {
+    width: 100%;
+    height: 480px;
     background: #f5f5f5;
 }
 .btn {
@@ -16,18 +18,12 @@ a {
     background-color: #1772c4;
     border-color: #135fa4
 }
-.find-pwd .input-icon {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 96px;
-    top: 0px
-}
+
 .find-pwd-img {
     background: url(../img/login-register/find_pwd_img.png) no-repeat top left
 }
 .find_pwd_bj {
-    background-position: 5px 10px
+    background-position: 5px 5px
 }
 .find_pwd_mail_01 {
     background-position: center -69px;
@@ -64,9 +60,7 @@ a {
     width: 35px;
     height: 35px
 }
-.find_pwd_user_bj {
-    background-position: 5px -577px
-}
+
 .find_pwd_user_bj.input-icon {
     left: 72px
 }
@@ -74,24 +68,16 @@ a {
     background-color: #ff8219 !important;
 }
 .bw-bj {
-    background-image: url(../img/login-register/find_pwd_nav_01.png);
-    background-position: right center;
-    background-repeat: no-repeat
+    background: url(../img/login-register/find_pwd_nav_01.png) right center no-repeat;
 }
 .white-bj {
-    background-image: url(../img/login-register/find_pwd_nav_02.png);
-    background-position: right center;
-    background-repeat: no-repeat
+    background: url(../img/login-register/find_pwd_nav_02.png) right center no-repeat;
 }
 .finish-bj {
-    background-image: url(../img/login-register/find_pwd_nav_03.png);
-    background-position: right center;
-    background-repeat: no-repeat
+    background: url(../img/login-register/find_pwd_nav_03.png) right center no-repeat;
 }
 .pass-bj {
-    background-image: url(../img/login-register/find_pwd_nav_02.png);
-    background-position: right center;
-    background-repeat: no-repeat
+    background: url(../img/login-register/find_pwd_nav_02.png) right center no-repeat;
 }
 .finish {
     background-color: #f0a176 !important;
@@ -102,7 +88,7 @@ a {
     border-bottom: 1px solid #e6e6e6
 }
 .container {
-    width: 886px !important;
+    width: 886px;
     margin: 0 auto;
     padding-top: 50px
 }
@@ -123,6 +109,7 @@ a {
     float: left;
     height: 49px;
     color: #3c3c3c;
+    text-indent: -20px;
 }
 .title .nav-pill li.last-finish{
     width: 170px;
@@ -132,90 +119,77 @@ a {
     width: 80%
 }
 .find-pwd {
-    width: 450px;
+    width: 240px;
+    height: 150px;
     font-size: 14px;
-    padding-top: 50px;
+    padding-top: 40px;
     margin: 0 auto
 }
 .find-pwd .form-group {
-    margin-bottom: 30px;
-    height: 40px;
+    margin-bottom: 10px;
+    width: 234px;
+    height: 25px;
     position: relative
 }
 .find-pwd .form-group-code {
-    width: 290px;
-    float: left
-}
-.find-pwd .control-label {
-    width: 70px;
+    width: 90px;
     float: left;
-    height: 40px;
-    line-height: 40px;
-    color: #666;
-    font-weight: normal
 }
+
 .find-pwd .form-control {
-    width: 83%;
+    width: 100%;
     border-radius: inherit
 }
 .find-pwd .input-lg {
-    height: 40px;
-    padding: 10px 15px 10px 40px;
+    height: 25px;
+    padding: 5px 15px;
     font-size: 14px;
-    padding-right: 28px
 }
 .find-pwd .input-sm {
-    width: 215px;
-    padding: 10px 15px
+    float: left;
+    width: 90px;
+    padding: 5px 15px;
+    margin: 5px 0;
 }
 .find-pwd .form-group-pic {
-    width: 155px;
-    float: right;
+    width: 90px;
+    float: left;
+    margin-left: 20px;
     border: 1px solid #d1d5d8;
-    height: 40px;
-    line-height: 40px
+    height: 32px;
+    line-height: 32px;
 }
 .find-pwd .form-group-pic img {
     vertical-align: top;
-    padding: 1px
-}
-.find-pwd .form-group-pic a {
-    margin-left: 4px;
-    padding-left: 4px;
-    border-left: 1px solid #ccc;
-	color:#4a4644;
-}
-.find-pwd .color-lnk {
-    color: #ff8219;
-    cursor: pointer
 }
 .find-pwd .btn {
     margin-top: 30px
 }
 .find-pwd .btn-lg {
-    width: 85%;
-    float: right
+    width: 100%;
+    float: left;
+    background-color: #91c31e;
+    color: #ffffff;
 }
 .text-center {
     width: 100%;
     text-align: right;
     float: right;
-    padding-top: 10px
+    padding-top: 10px;
 }
 .text-center a {
-    border-bottom: 1px solid #d1d5d8
+    border-bottom: 1px solid #d1d5d8;
 }
 .text-center a:hover {
-    text-decoration: none
+    text-decoration: none;
 }
 .form-group .msg-icon {
     position: absolute;
     width: 15px;
     height: 15px;
-    top: 12px;
+    top: 6px;
     right: 16px;
-    background-image: url(../img/login-register/status.png);
-    background-repeat: no-repeat
+    background: url(../img/login-register/status.png) no-repeat;
 }
 .form-group.status-error .msg-icon {
     background-position: left -40px
@@ -223,62 +197,52 @@ a {
 .form-group.status-success .msg-icon {
     background-position: left -20px
 }
-.form-group .help-block {
-    color: #F28500;
-    padding-left: 76px
-}
-.form-group.status-error .help-block .error {
-    color: #E03337;
-    font-weight: normal
-}
-.form-group.status-success .help-block {
-    display: none
-}
+
 .verify-con {
-    padding: 50px 68px;
+    margin: 0 auto;
     text-align: center;
-    height: 100%;
-    float: left;
-	
+    width: 240px;
+    height: 270px;
 }
 
 .verify {
-    float: left;
-    margin-bottom: 20px;
-	color:#4a4644;
+    margin-top:40px;
+	color:#3c3c3c;
 	
 }
 .verify .content {
-    padding: 5px 10px
+    padding: 0 10px
 }
-.verify .content h5 {
+.verify .content h6 {
+    margin: 5px 0 0 0;
     text-align: left;
-	color:#4a4644;
+	color:#646464;
 }
 .verify .one p {
     margin: 0;
-	color:#4a4644;
+	color:#646464;
 }
 /*修改链接颜色*/
 .verify .text-center .link-blue {
 	color:#ff8219;
 }
 .verify .content .one-img {
-    margin: 20px 0 10px 0
+    margin: 0 auto;
 }
 .verify .mobile.disabled {
-    border: 3px solid #dfdfdf;
-    border-radius: 6px;
-    color: #b3b3b3
+    border: 1px solid #d1d5d8;
+    color: #b3b3b3;
 }
 .verify .mobile.mobile-img .one-img {
-    background-position: center -279px
+    background-position: center -279px;
+    margin-left: 10px;
+
 }
 .verify .mobile.mail-img .one-img {
     background-position: center -69px
 }
 .verify .mobile.disabled:hover {
-    border: 3px solid #dfdfdf
+    border: 2px solid #78c8c8
 }
 .verify .mobile.mobile-img:hover .one-img {
     background-position: center -279px
@@ -287,21 +251,18 @@ a {
     background-position: center -69px
 }
 .verify .mobile {
-    width: 324px;
-    height: 159px;
-    border: 3px solid #bfbfbf;
-    border-radius: 6px;
-    float: left;
-    color: #666666;
+    width: 240px;
+    height: 80px;
+    border: 1px solid #646464;
+    color: #646464;
     cursor: pointer
 }
 .verify .mobile .one-img {
     width: 100%;
-    height: 24px;
     text-align: center
 }
 .verify .mobile:hover {
-    border: 3px solid #acd1f3;
+    border: 2px solid #78c8c8;
     border-radius: 6px
 }
 .verify .mobile:hover .one-img {
@@ -310,24 +271,66 @@ a {
 .verify .mail:hover .one-img {
     background-position: center -209px
 }
-
+.verify .form-group .btn{
+    margin-top: 35px;
+}
+.verify .form-group .btn-lg{
+    width: 100%;
+    background-color: #91c31e;
+    color: #ffffff;
+}
 .mobile-in {
     height: 100%;
     font-size: 14px;
-    color: #666666;
+    color: #646464;
     padding: 40px 300px 40px 210px;
-    display: none
+    display: none;
+}
+.mobile-in .form-group{
+    width: 360px;
+    height: 40px;
+    line-height: 40px;
+}
+.mobile-in .form-group .input-lg{
+    display: inline-block;
+    margin-left: 10px;
+    width: 90px;
+    height: 25px;
+}
+.mobile-in .form-group.input-ic {
+    margin-top: 40px;
+}
+.mobile-in .form-group.input-ic input{
+    margin-left: 20px;
+    width: 170px;
+}
+.mobile-in .form-group .btn{
+    margin: 5px 40px 5px 0;
+    padding: 0;
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #91c31e;
+    color: #ffffff;
+}
+.mobile-in .form-group .btn.prev{
+    width: 120px;
+    margin-right: 32px;
+}
+.mobile-in .form-group .btn.next{
+    margin-left: 32px;
+    width: 120px;
 }
 .mobile-in .link-blue{ color:#ff8219;}
 
 .mobile-in h4 {
     font-size: 16px;
-    color: #333
+    color: #3c3c3c;
 }
 .mobile-in .form-group-code {
     float: left;
     position: relative;
-    padding-bottom: 40px
+    margin-top: 10px;
 }
 .mobile-in .gain {
     float: right;
@@ -336,18 +339,17 @@ a {
 }
 .mobile-in .input-lg {
     border-radius: inherit;
-    width: 162px;
-    height: 38px;
     font-size: 14px;
     color: #cccccc;
     padding: 5px 10px
 }
-.mobile-in .mail-bottom {
-    padding-top: 30px
-}
 .mobile-in ul {
-    color: #999;
+    list-style: disc;
+    color: #646464;
     padding-left: 15px
+}
+.mobile-in ul li{
+    list-style: disc;
 }
 .mobile-in .form-group .msg-icon {
     display: none
@@ -364,26 +366,86 @@ a {
     height: 20px;
     padding-left: 0
 }
-.reset .control-label {
-    width: 95px;
-    font-weight: normal
+.mobile-in .form-group .btn-block{
+    margin-top: 50px;
+    width: 89%;
+}
+.reset{
+    width: 350px;
+    font-size: 14px;
+    padding-top: 40px;
+    margin: 0 auto
+}
+.reset .input-icon {
+    width: 40px;
+    height: 22px;
+    position: absolute;
+    left: 105px;
+    top: 0px;
+}
+.reset .form-group {
+    margin-bottom: 26px;
+    height: 25px;
+    position: relative;
 }
 .reset .form-control {
-    width: 78%;
+    width: 234px;
     border-radius: inherit
 }
-.reset .help-block {
-    padding-left: 96px
+.reset .control-label {
+    float: left;
+    margin-right: 10px;
+    width: 95px;
+    height: 25px;
+    line-height: 25px;
+    text-align: right;
+    font-weight: bold;
 }
-.success {
-    padding: 80px 260px;
-    text-align: center
+.reset .input-lg {
+    height: 25px;
+    padding: 10px 15px 10px 35px;
+    font-size: 12px;
+}
+.reset .form-group .btn{
+    float: right;
+    margin-right: 10px;
+    padding: 0;
+    width: 234px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    background-color: #91c31e;
+}
+
+.success  {
+    margin: 10px auto;
+    width: 470px;
+}
+.success .container{
+    height: 60px;
+}
+.success .container img{
+    display: inline-block;
+    position: absolute;
+}
+.success .container ul{
+    height: 60px;
+    margin-left: 70px;
+    display: inline-block;
+}
+.success .container h4{
+    display: inline-block;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 .success p {
-    color: #999;
-    padding-top: 15px
+    display: block;
+    width: 400px;
 }
-.success .text-center {
-    text-align: center
+.success p a{
+    color: #ffb450;
+    cursor: pointer;
 }
+
+
 

@@ -22,10 +22,6 @@
 <div class="header_container">
     <div class="header_login_wrapper">
         <ul>
-            <li><a class="u-lo btn btn-default" role="button">登陆</a></li>
-            <li><a class="u-reg btn btn-default" role="button">注册</a></li>
-            <li><a  href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
-            <li><a  href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span> 在线帮助</a></li>
         </ul>
     </div>
@@ -35,16 +31,6 @@
         </div>
         <div class="nav_main_list_wrapper" role="navigation">
             <ul class="nav_main_list_inner">
-                <li class="nav_main_list_item">
-                    <a class="nav_main_button" href="javascript:;">快乐大本营<b class="caret"></b></a>
-                    <ul class="nav_dropdown_item">
-                        <span></span>
-                        <li ><a href="happy_camp.html">训练营</a></li>
-                        <li ><a href="javascript:;">师徒行</a></li>
-                        <li ><a href="javascript:;">大秀场</a></li>
-                    </ul>
-                </li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
             </ul>
@@ -63,7 +49,7 @@
         <div class="title">
             <ul class="nav nav-pill">
                 <li class="special-bj bw-bj">确认账号</li>
-                <li class="white-bj">验证安全性</li>
+                <li class="white-bj">验证安全</li>
                 <li class="white-bj">重置密码</li>
                 <li class="last-finish">完成</li>
             </ul>
@@ -74,11 +60,7 @@
                 <div style="display:none"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="q6J8mSLwE/qUHAYQ/hFvOv+I8dWcbcQUT6HZTrj8nQI=" type="hidden"></div>
 
                 <div class="form-group">
-                    <label for="user_username" class="control-label">账号</label>
                     <input aria-required="true" autocomplete="off" autofocus class="string required form-control input-lg input-bj" id="user_username" max-length="18" maxlength="255" name="user[username]" placeholder="用户名/邮箱/手机号" required size="255" type="text">
-                    <div class="input-icon find_pwd_user_bj find-pwd-img"></div>
-                    <span class="msg-icon"></span>
-                    <div class="help-block">邮箱、手机或3-18位中英文、数字、下划线</div>
                     <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel" style="left: 70px; display: none;">
                         <li role="presentation">
                             <a role="menuitem" tabindex="-1" href="javascript:;" format="@sina.com"></a>
@@ -120,24 +102,20 @@
                 </div>
                 <div class="form-group">
                     <style>
-                        .form-group-pic img{ width: 77px; height: 38px; }
+                        .form-group-pic img{ width: 88px; height: 30px; }
                     </style>
                     <div class="form-group form-group-code">
-                        <label for="captcha" class="control-label">验证码</label>
                         <input aria-required="true" autocomplete="off" class="form-control input-lg input-sm" id="captcha" name="captcha" placeholder="验证码" required type="text">
-                        <span class="msg-icon"></span>
-                        <div class="help-block">请输入验证码</div>
                     </div>
                     <div class="form-group-pic">
                         <div id="captcha_image" style="display: inline-block; max-height: 44px;">
-                            <img alt="captcha" src="img/login-register/simple_captcha.jpg"><input id="captcha_key" name="captcha_key" value="b8e10feb8b67b8ddeeaa1c96f5afcd055758f4cd" type="hidden">
+                            <img alt="captcha" src="img/login-register/simple_captcha.png"><input id="captcha_key" name="captcha_key" value="b8e10feb8b67b8ddeeaa1c96f5afcd055758f4cd" type="hidden">
                         </div>
-                        <a id="codeBtn" href="javascript:void(0);" class="link-blue">换一换</a>
                     </div>
 
                 </div>
                 <div class="form-group">
-                    <input class="button btn btn-warning btn-lg" disable_with="提交中..." name="commit" value="下一步" type="submit">
+                    <input class="button btn btn-lg" disable_with="提交中..." name="commit" value="下一步" type="submit">
                 </div>
             </form>
         </div>
@@ -147,34 +125,6 @@
 
 <!-- 底部友情链接 开始 -->
 <div class="footer_container">
-    <div class="f-partner">
-        <span><img src="img/bottom-link.jpg"></span>
-        <p>
-            <a href="javascript:;">忆尔</a>
-            <a href="javascript:;">清华积极心理研究中心</a>
-            <a href="javascript:;">美国留学</a>
-            <a href="javascript:;">知好乐网校</a>
-            <a href="javascript:;">博众教育</a>
-            <a href="javascript:;">考德上公培</a>
-            <a href="javascript:;">在线英语培训</a>
-            <a href="javascript:;">公务员考试网</a>
-            <a href="javascript:;">坦途教育网</a>
-            <a href="javascript:;">师兄帮帮忙</a>
-            <a href="javascript:;">博浪网</a>
-            <a href="javascript:;">智康堂</a>
-        </p>
-        <p>
-            <a href="javascript:;">忆尔</a>
-            <a href="javascript:;">清华积极心理研究中心</a>
-            <a href="javascript:;">美国留学</a>
-            <a href="javascript:;">知好乐网校</a>
-            <a href="javascript:;">博众教育</a>
-            <a href="javascript:;">考德上公培</a>
-            <a href="javascript:;">在线英语培训</a>
-            <a href="javascript:;">公务员考试网</a>
-            <a href="javascript:;">坦途教育网</a>
-        </p>
-    </div>
     <div class="footer_sns_wrapper">
         <div class="sns-container">
             <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
@@ -190,12 +140,6 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
