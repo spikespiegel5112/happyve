@@ -2,96 +2,97 @@
 a {
     color: #3c3c3c;
 }
+
 .main_container {
     width: 100%;
     height: 480px;
     background: #f5f5f5;
 }
+
 .btn {
-    border-radius: 4px
-}
-.btn-primary,.btn-primary:focus {
-    background-color: #288ce6;
-    border-color: #197fdb
-}
-.btn-primary:hover {
-    background-color: #1772c4;
-    border-color: #135fa4
+    border-radius: 4px;
 }
 
 .find-pwd-img {
-    background: url(../img/login-register/find_pwd_img.png) no-repeat top left
-}
-.find_pwd_bj {
-    background-position: 5px 5px
-}
-.find_pwd_mail_01 {
-    background-position: center -69px;
-    width: 28px;
-    height: 20px
-}
-.find_pwd_mail_02 {
-    background-position: center -139px;
-    width: 28px;
-    height: 20px
-}
-.find_pwd_mail_03 {
-    background-position: center -209px;
-    width: 28px;
-    height: 20px
-}
-.find_pwd_mobile_01 {
-    background-position: center -279px;
-    width: 16px;
-    height: 24px
-}
-.find_pwd_mobile_02 {
-    background-position: center -353px;
-    width: 16px;
-    height: 24px
-}
-.find_pwd_mobile_03 {
-    background-position: center -427px;
-    width: 16px;
-    height: 24px
-}
-.find_pwd_success {
-    background-position: 0 -501px;
-    width: 35px;
-    height: 35px
+    background: url(../img/login-register/find_pwd_img.png) no-repeat top left;
 }
 
-.find_pwd_user_bj.input-icon {
-    left: 72px
+.find_pwd_bj {
+    background-position: 5px 5px;
 }
+
+.find_pwd_mail_01 {
+    width: 28px;
+    height: 20px;
+    background-position: center -69px;
+}
+
+.find_pwd_mail_02 {
+    width: 28px;
+    height: 20px;
+    background-position: center -139px;
+}
+
+.find_pwd_mail_03 {
+    width: 28px;
+    height: 20px;
+    background-position: center -209px;
+}
+
+.find_pwd_mobile_01 {
+    width: 16px;
+    height: 24px;
+    background-position: center -279px;
+}
+
+.find_pwd_mobile_02 {
+    width: 16px;
+    height: 24px;
+    background-position: center -353px;
+}
+
+.find_pwd_mobile_03 {
+    width: 16px;
+    height: 24px;
+    background-position: center -427px;
+}
+
 .special-bj {
     background-color: #ff8219 !important;
 }
+
 .bw-bj {
     background: url(../img/login-register/find_pwd_nav_01.png) right center no-repeat;
 }
+
 .white-bj {
     background: url(../img/login-register/find_pwd_nav_02.png) right center no-repeat;
 }
+
 .finish-bj {
     background: url(../img/login-register/find_pwd_nav_03.png) right center no-repeat;
 }
+
 .pass-bj {
     background: url(../img/login-register/find_pwd_nav_02.png) right center no-repeat;
 }
+
 .finish {
     background-color: #f0a176 !important;
     color: #fff
 }
+
 .top {
     height: 72px;
     border-bottom: 1px solid #e6e6e6
 }
+
 .container {
-    width: 886px;
     margin: 0 auto;
-    padding-top: 50px
+    padding-top: 50px;
+    width: 886px;
 }
+
 .title {
     width: 100%;
     height: 49px;
@@ -101,88 +102,84 @@ a {
     font-size: 16px;
     text-align: center
 }
+
 .title .nav-pill li {
-    width: 214px;
-    background-color: #ffe6be;
+    float: left;
     margin: 0;
     padding: 0;
-    float: left;
+    width: 214px;
     height: 49px;
+    background-color: #ffe6be;
     color: #3c3c3c;
     text-indent: -20px;
 }
-.title .nav-pill li.last-finish{
+
+.title .nav-pill li.last-finish {
     width: 170px;
 }
-.btn-right {
-    float: right;
-    width: 80%
-}
+
 .find-pwd {
+    padding-top: 40px;
     width: 240px;
     height: 150px;
     font-size: 14px;
-    padding-top: 40px;
-    margin: 0 auto
+    margin: 0 auto;
 }
+
 .find-pwd .form-group {
+    position: relative;
     margin-bottom: 10px;
     width: 234px;
     height: 25px;
-    position: relative
 }
+
 .find-pwd .form-group-code {
-    width: 90px;
     float: left;
+    width: 90px;
 }
 
 .find-pwd .form-control {
     width: 100%;
-    border-radius: inherit
+    border-radius: inherit;
 }
+
 .find-pwd .input-lg {
-    height: 25px;
     padding: 5px 15px;
+    height: 25px;
     font-size: 14px;
 }
+
 .find-pwd .input-sm {
     float: left;
-    width: 90px;
     padding: 5px 15px;
     margin: 5px 0;
-}
-.find-pwd .form-group-pic {
     width: 90px;
+}
+
+.find-pwd .form-group-pic {
     float: left;
     margin-left: 20px;
-    border: 1px solid #d1d5d8;
+    width: 90px;
     height: 32px;
     line-height: 32px;
+    border: 1px solid #d1d5d8;
 }
+
 .find-pwd .form-group-pic img {
     vertical-align: top;
 }
+
 .find-pwd .btn {
     margin-top: 30px
 }
+
 .find-pwd .btn-lg {
-    width: 100%;
     float: left;
-    background-color: #91c31e;
-    color: #ffffff;
-}
-.text-center {
     width: 100%;
-    text-align: right;
-    float: right;
-    padding-top: 10px;
+    background-color: #91c31e;
+    color: #fff;
 }
-.text-center a {
-    border-bottom: 1px solid #d1d5d8;
-}
-.text-center a:hover {
-    text-decoration: none;
-}
+
 .form-group .msg-icon {
     position: absolute;
     width: 15px;
@@ -191,65 +188,73 @@ a {
     right: 16px;
     background: url(../img/login-register/status.png) no-repeat;
 }
+
 .form-group.status-error .msg-icon {
     background-position: left -40px
 }
+
 .form-group.status-success .msg-icon {
     background-position: left -20px
 }
 
 .verify-con {
     margin: 0 auto;
-    text-align: center;
     width: 240px;
     height: 270px;
+    text-align: center;
 }
 
 .verify {
-    margin-top:40px;
-	color:#3c3c3c;
-	
+    margin-top: 40px;
+    color: #3c3c3c;
 }
+
 .verify .content {
     padding: 0 10px
 }
+
 .verify .content h6 {
     margin: 5px 0 0 0;
     text-align: left;
-	color:#646464;
+    color: #646464;
 }
+
 .verify .one p {
     margin: 0;
-	color:#646464;
+    color: #646464;
 }
+
 /*修改链接颜色*/
-.verify .text-center .link-blue {
-	color:#ff8219;
-}
 .verify .content .one-img {
     margin: 0 auto;
 }
+
 .verify .mobile.disabled {
     border: 1px solid #d1d5d8;
     color: #b3b3b3;
 }
+
 .verify .mobile.mobile-img .one-img {
     background-position: center -279px;
     margin-left: 10px;
-
 }
+
 .verify .mobile.mail-img .one-img {
     background-position: center -69px
 }
+
 .verify .mobile.disabled:hover {
     border: 2px solid #78c8c8
 }
+
 .verify .mobile.mobile-img:hover .one-img {
     background-position: center -279px
 }
+
 .verify .mobile.mail-img:hover .one-img {
     background-position: center -69px
 }
+
 .verify .mobile {
     width: 240px;
     height: 80px;
@@ -257,141 +262,154 @@ a {
     color: #646464;
     cursor: pointer
 }
+
 .verify .mobile .one-img {
     width: 100%;
     text-align: center
 }
+
 .verify .mobile:hover {
     border: 2px solid #78c8c8;
     border-radius: 6px
 }
+
 .verify .mobile:hover .one-img {
     background-position: center -427px
 }
+
 .verify .mail:hover .one-img {
     background-position: center -209px
 }
-.verify .form-group .btn{
+
+.verify .form-group .btn {
     margin-top: 35px;
 }
-.verify .form-group .btn-lg{
+
+.verify .form-group .btn-lg {
     width: 100%;
     background-color: #91c31e;
-    color: #ffffff;
+    color: #fff;
 }
+
 .mobile-in {
+    display: none;
+    padding: 40px 300px 40px 210px;
     height: 100%;
     font-size: 14px;
     color: #646464;
-    padding: 40px 300px 40px 210px;
-    display: none;
 }
-.mobile-in .form-group{
+
+.mobile-in .form-group {
     width: 360px;
     height: 40px;
     line-height: 40px;
 }
-.mobile-in .form-group .input-lg{
+
+.mobile-in .form-group .input-lg {
     display: inline-block;
     margin-left: 10px;
     width: 90px;
     height: 25px;
 }
+
 .mobile-in .form-group.input-ic {
     margin-top: 40px;
 }
-.mobile-in .form-group.input-ic input{
+
+.mobile-in .form-group.input-ic input {
     margin-left: 20px;
     width: 170px;
 }
-.mobile-in .form-group .btn{
+
+.mobile-in .form-group .btn {
     margin: 5px 40px 5px 0;
     padding: 0;
     width: 40%;
     height: 40px;
     line-height: 40px;
     background-color: #91c31e;
-    color: #ffffff;
+    color: #fff;
 }
-.mobile-in .form-group .btn.prev{
+
+.mobile-in .form-group .btn.prev {
     width: 120px;
     margin-right: 32px;
 }
-.mobile-in .form-group .btn.next{
+
+.mobile-in .form-group .btn.next {
     margin-left: 32px;
     width: 120px;
 }
-.mobile-in .link-blue{ color:#ff8219;}
+
+.mobile-in .link-blue {
+    color: #ff8219;
+}
 
 .mobile-in h4 {
     font-size: 16px;
     color: #3c3c3c;
 }
+
 .mobile-in .form-group-code {
-    float: left;
     position: relative;
+    float: left;
     margin-top: 10px;
 }
+
 .mobile-in .gain {
     float: right;
     width: 140px;
     font-size: 14px
 }
+
 .mobile-in .input-lg {
+    padding: 5px 10px;
     border-radius: inherit;
     font-size: 14px;
-    color: #cccccc;
-    padding: 5px 10px
+    color: #ccc;
 }
+
 .mobile-in ul {
     list-style: disc;
+    padding-left: 15px;
     color: #646464;
-    padding-left: 15px
 }
-.mobile-in ul li{
+
+.mobile-in ul li {
     list-style: disc;
 }
-.mobile-in .form-group .msg-icon {
-    display: none
-}
-.mobile-in .form-group.status-error .msg-icon,.mobile-in .form-group.status-success .msg-icon {
-    display: inline-block
-}
-.mobile-in .form-group.status-error .help-block,.mobile-in .form-group.status-success .help-block {
-    visibility: visible;
-    display: block
-}
-.mobile-in .help-block {
-    visibility: hidden;
-    height: 20px;
-    padding-left: 0
-}
-.mobile-in .form-group .btn-block{
+
+.mobile-in .form-group .btn-block {
     margin-top: 50px;
     width: 89%;
 }
-.reset{
+
+.reset {
+    padding-top: 40px;
+    margin: 0 auto;
     width: 350px;
     font-size: 14px;
-    padding-top: 40px;
-    margin: 0 auto
 }
+
 .reset .input-icon {
-    width: 40px;
-    height: 22px;
     position: absolute;
     left: 105px;
-    top: 0px;
+    top: 0;
+    width: 40px;
+    height: 22px;
 }
+
 .reset .form-group {
+    position: relative;
     margin-bottom: 26px;
     height: 25px;
-    position: relative;
 }
+
 .reset .form-control {
     width: 234px;
     border-radius: inherit
 }
+
 .reset .control-label {
     float: left;
     margin-right: 10px;
@@ -401,48 +419,56 @@ a {
     text-align: right;
     font-weight: bold;
 }
+
 .reset .input-lg {
-    height: 25px;
     padding: 10px 15px 10px 35px;
+    height: 25px;
     font-size: 12px;
 }
-.reset .form-group .btn{
+
+.reset .form-group .btn {
     float: right;
     margin-right: 10px;
     padding: 0;
     width: 234px;
     height: 40px;
     line-height: 40px;
-    color: #ffffff;
+    color: #fff;
     background-color: #91c31e;
 }
 
-.success  {
+.success {
     margin: 10px auto;
     width: 470px;
 }
-.success .container{
+
+.success .container {
     height: 60px;
 }
-.success .container img{
+
+.success .container img {
     display: inline-block;
     position: absolute;
 }
-.success .container ul{
-    height: 60px;
-    margin-left: 70px;
+
+.success .container ul {
     display: inline-block;
+    margin-left: 70px;
+    height: 60px;
 }
-.success .container h4{
+
+.success .container h4 {
     display: inline-block;
     margin-top: 12px;
     margin-bottom: 5px;
 }
+
 .success p {
     display: block;
     width: 400px;
 }
-.success p a{
+
+.success p a {
     color: #ffb450;
     cursor: pointer;
 }

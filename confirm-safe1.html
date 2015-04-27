@@ -31,8 +31,16 @@
         </div>
         <div class="nav_main_list_wrapper" role="navigation">
             <ul class="nav_main_list_inner">
-                <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="javascript:;">快乐大本营<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
             </ul>
 
         </div>
@@ -81,9 +89,6 @@
                     </a>
                 </div>
                 <div class="form-group">
-
-                </div>
-                <div class="form-group">
                     <a href="confirm-account.html" class="link-line link-blue"><input class="button btn btn-lg" disable_with="提交中..." name="commit" value="上一步" type="submit"></a>
                 </div>
             </div>
@@ -93,48 +98,47 @@
             <form novalidate accept-charset="UTF-8" action="#" id="mobileForm" method="post"><div style="display:none"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="q6J8mSLwE/qUHAYQ/hFvOv+I8dWcbcQUT6HZTrj8nQI=" type="hidden"></div>
                 <input name="reset_password_token" value="mobile" type="hidden">
                 <h4>手机号找回密码</h4>
-                <p>已经向您绑定的手机号发送短信请输入短信中的验证码</p>
-                <p>
-
-                </p><div class="form-group tab-mobile">
+                <p>已经向您绑定的手机号发送短信，请输入短信验证码</p>
+                <p></p>
+                <div class="form-group tab-mobile">
                     <div class="form-group-code">
                         <input aria-required="true" autocomplete="off" class="form-control input-lg input-sm" id="captcha" name="captcha" placeholder="验证码" required type="text">
-                        <span class="msg-icon"></span>
-                        <div class="help-block">&nbsp;</div>
                     </div>
                     <div id="mobile_captcha"></div>
-                    <button type="button" class="gain btn btn-primary btn-lg btn-block" id="refresh_mobile_captcha_button">免费获取短信验证码</button>
-                    <button type="button" class="gain btn btn-primary btn-lg disabled" style="display: none;">60''后重新发送</button>
+                    <button type="button" class="gain btn btn-lg" id="refresh_mobile_captcha_button">免费获取短信验证码</button>
+                    <button type="button" class="gain btn btn-lg disabled" style="display: none;">60''后重新发送</button>
                 </div>
                 <div class="form-group ">
-                    <input id="loginbtn" name="loginbtn" class="btn btn-primary btn-lg btn-block" value="下一步" type="submit"></div>
+                    <a href="reset-password.html" class="link-line link-blue"><input id="loginbtn" name="loginbtn" class="btn btn-lg btn-block" value="下一步" type="button"></a>
+                </div>
                 <p></p>
             </form>
         </div>
 
+
         <div class="mobile-in" id="email-validate-div">
-            <h4>邮箱找回密码</h4>
-            <p>已经向您绑定的邮箱weiwe*****@soulinfo.com发送重置密码邮件，请查收。</p>
-            <p>
-            </p><div class="form-group mail-bottom">
-            <a class="btn btn-warning btn-lg btn-block" href="http://mail.soulinfo.com/" target="_blank">去邮箱验证</a>
-        </div>
-            <div class="form-group  text-center">
-                <a href="javascript:void(0);" class="link-line link-blue back-to-last-step" target="_blank">返回上一步</a>
+            <div class="form-group">
+                <label for="send-again" class="control-label">邮箱地址：weiwe*****@soulinfo.com</label>
+                <input aria-required="true" autocomplete="off" autofocus class="form-control input-lg" id="send-again" placeholder="重新发送" type="text">
             </div>
-            <p></p>
-            <p>
-            </p><h5>没有收到重置密码邮件，怎么办？</h5>
-            <p></p>
-            <p>
-            </p><ul>
-            <li>请检查是否在邮箱的回收站中，或垃圾邮件中？</li>
-            <li>
-                重新发送，
-                <a class="link-blue" data-method="post" data-remote="true" href="#" id="resend_email_btn" rel="nofollow">点此重新发送一封</a>
-            </li>
-        </ul>
-            <p></p>
+            <p>验证码已发送，如果没有找到，请在60秒后重新发送</p>
+            <div class="form-group input-ic">
+                <label for="identifying-code" class="control-label">请填写邮箱验证码</label>
+                <input aria-required="true" autocomplete="off" autofocus class="form-control input-lg" id="identifying-code" placeholder="请输入验证码" type="text">
+            </div>
+            <div class="form-group">
+                <a href="confirm-safe1.html" class="link-line link-blue"><input class="button btn btn-lg prev" disable_with="提交中..." name="commit" value="上一步" type="submit"></a>
+                <a href="reset-password.html" class="link-line link-blue"><input class="button btn btn-lg next" disable_with="提交中..." name="commit" value="下一步" type="submit"></a>
+            </div>
+            <div class="container" style="padding-top: 15px">
+                <h5>没有收到重置密码邮件，怎么办？</h5>
+                <ul>
+                    <li>请检查是否在邮箱的回收站中，或垃圾邮件中？</li>
+                    <li>
+                        重新发送
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

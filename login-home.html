@@ -32,8 +32,16 @@
         </div>
         <div class="nav_main_list_wrapper" role="navigation">
             <ul class="nav_main_list_inner">
-                <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="javascript:;">快乐大本营<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
+                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
             </ul>
 
         </div>
@@ -61,7 +69,7 @@
                         <input name="iCheck" type="checkbox" value="" />  自动登录
                     </label>
                 </div>
-                <div class="forget-password"><a href="javascript:;">忘记密码？</a></div>
+                <div class="forget-password"><a href="javascript:void(0)">忘记密码？</a></div>
                 <div class="form-group">
                     <div class="col-lg-12">
                         <button type="submit" class="btn">登&nbsp;&nbsp;&nbsp;录</button>
@@ -69,7 +77,7 @@
                 </div>
             </form>
             <div class="register-now">
-                <a href="javascript:;">还没有账号？<span>立即注册</span></a>
+                <a href="register-home.html">还没有账号？<span>立即注册</span></a>
             </div>
             <div class="divider-line"></div>
             <div class="other-accounts">
@@ -105,6 +113,7 @@
 </div>
 <!-- 版权信息 结束 -->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
 
 <script type="text/javascript" src="assets/js/icheck.js"></script>
 <script>
@@ -118,6 +127,7 @@
             });
         }
     });
+
 </script>
 
 </body>
