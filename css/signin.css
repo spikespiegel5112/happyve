@@ -301,7 +301,7 @@ a {
 }
 
 .mobile-in .form-group {
-    width: 360px;
+    width: 400px;
     height: 40px;
     line-height: 40px;
 }
@@ -330,6 +330,19 @@ a {
     line-height: 40px;
     background-color: #91c31e;
     color: #fff;
+}
+
+.mobile-in .form-group .send-again{
+    margin: 0;
+    padding: 0;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #ccc;
+    border: 1px solid #ccc;
+    outline: none;
 }
 
 .mobile-in .form-group .btn.prev {
