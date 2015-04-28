@@ -749,19 +749,33 @@
 	display:none;
 }
 /*活动详情6级开始*/
-.top-gradation{
+.top-particulars{
 	width:644px;
-	overflow:hidden;
 	margin:14px 12px 12px 30px;
 	font:12px "宋体";
 	color:#3c3c3c;
-
 }
 .active-sp{
 	display:inline-block;
 	color:#91c81e;
 	border-bottom:1px solid #5aa000;
 }
+.active-sp a{
+	color:#91c81e;
+}
+.top-particulars li{
+	padding:0 0 0 4px;
+}
+.top-particulars li:last-child a::after {
+	content: "";
+}
+
+.top-particulars li a::after {
+	content: "> ";
+	padding: 0 0 0 4px;
+}
+
+
 .green-line-tiny {
     background: url(../img/hp_share/tiny-link.jpg) no-repeat;
     width: 660px;
@@ -840,7 +854,7 @@
 .micro-books-part img{
 	display:block;
 	width:279px;
-	height:348px;
+	height:380px;
 	margin:0 auto;
 	border:1px solid #a0a0a0;
 }
@@ -872,6 +886,27 @@
 	width:118px;
 	height:30px;
 	margin:38px 0 60px 286px;
+}
+/*新建海报*/
+.micro-poster-part{
+	width:690px;
+}
+
+.micro-poster-part img{
+	display:block;
+	width:347px;
+	height:237px;
+	margin:36px auto 0;
+
+}
+
+.poster-par{
+	width:347px;
+	margin-bottom:60px;
+}
+.bot-list-pro{
+	padding-bottom:150px;
+	border-bottom:1px solid #ededed;
 }
 /* CSS Document */
 

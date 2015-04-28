@@ -794,10 +794,6 @@
 	width:210px;
 	height:149px;
 }
-.active-sp{
-	color:#91c81e;
-	border-bottom:1px solid #5aa000;
-}
 .hall-org{
 	float:left;
 	height:24px;
@@ -1003,7 +999,36 @@
 .marg-space{
 	margin-left:0;
 }
+.top-gradation{
+	width:644px;
+	overflow:hidden;
+	margin:14px 12px 12px 30px;
+	font:12px "宋体";
+	color:#3c3c3c;
+}
+.top-gradation .active-sp{
+	display:inline-block;
+	
+	border-bottom:1px solid #5aa000;
+}
+.top-gradation .active-sp a{
+	color:#91c81e;
+	}
+.top-gradation .top-grad-list{
+	float:left;
+	margin:0;
+}
+.top-grad-list li{
+	padding:0 0 0 4px;
+}
+.top-grad-list li:last-child a::after {
+	content: "";
+}
 
+.top-grad-list li a::after {
+	content: "> ";
+	padding: 0 0 0 4px;
+}
 
 #apply-space{
 	display:none;}
