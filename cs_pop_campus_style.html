@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <title>幸福流-学校空间-校园风采</title>
+
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" type="text/css" media="all">
+
+    <link rel="stylesheet" href="css/hp_pop.css" type="text/css" media="all"/>
+
+</head>
+<body>
+<!--内容开始-->
+    <div class="main_container">
+        <div class="container">
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield' id='textfield' class='txt' />
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="上传图片" />
+                        <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                    </div>
+                </form>
+            </div>
+            <div class="form-container">
+                <div class="form-group ">
+                    <label for="caption" class="caption">标题：</label>
+                    <input type="text" class="form-control input-caption " id="caption" >
+                </div>
+                <div class="form-group ">
+                    <label class="date" >日期：</label>
+                    <div class="input-append date form_datetime start-date">
+                        <input size="16" type="text" value="" readonly>
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label  class="introduction">简介：</label>
+                    <textarea class="form-control textarea-intr" placeholder="请输入活动内容"></textarea>
+                </div>
+                <div class="help-block activity-content"><p>最多输入2000字，您已输入<span>123</span>字。</p></div>
+            </div>
+            <div class="divider-hr"></div>
+            <div class="btn-group">
+                <div class="btn-next selected"><button type="button" class="btn">下一步</button></div>
+                <div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+<script type="text/javascript" src="assets/js/icheck.js"></script>
+<script>
+    $(document).ready(function () {
+        changeButtonCss();
+        function changeButtonCss() {
+            $(".radio-group input").iCheck({
+                checkboxClass: 'icheckbox_minimal-green',  // 注意square和blue的对应关系,用于type=checkbox
+                radioClass: 'iradio_minimal-green', // 用于type=radio
+                increaseArea: '20%' // 增大可以点击的区域
+            });
+        }
+    });
+    $(".form_datetime").datetimepicker({
+        format: "dd MM yyyy - hh:ii",
+        autoclose: true,
+        todayBtn: true,
+        pickerPosition: "bottom-left"
+    });
+</script>
+</body>
+</html>

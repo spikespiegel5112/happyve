@@ -571,7 +571,7 @@
 	color:#505050;
 	padding-top:0;
 }
-.new-folder{
+.new-folder {
 	width:108px;
 	height:26px;
 	color:#91c81e;
@@ -582,7 +582,12 @@
 	float:right;
 	margin:14px 18px 4px 0;
 }
-.new-folder:hover{
+.new-folder a{
+    width:108px;
+    height:26px;
+    padding: 0;
+}
+.new-folder a:hover{
 	color:#fff;
 }
 .sp-back{
