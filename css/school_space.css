@@ -474,14 +474,7 @@
 }
 
 /*头部*/
-.top-gradation{
-	width:644px;
-	overflow:hidden;
-	margin:14px 12px 12px 30px;
-	font:12px "宋体";
-	color:#3c3c3c;
 
-}
 
 .space-inline{
 	width:689px;
@@ -975,6 +968,16 @@
     -moz-box-shadow: 1px 2px 0 #50a000;
     -webkit-box-shadow: 1px 2px 0 #50a000;
 }
+.agree-class-space:active {
+	color: #498c03;
+	box-shadow: 1px 1px 0 #50a000;
+    -moz-box-shadow: 1px 1px 0 #50a000;
+    -webkit-box-shadow: 1px 1px 0 #50a000;
+}
+
+.agree-class-space:active::before {
+	top: -2px;
+}
 .member-head{
 	width:72px;
 	height:72px;
@@ -1000,24 +1003,7 @@
 .marg-space{
 	margin-left:0;
 }
-.master-class-space{
-	width: 92px;
-    height: 30px;
-    background-color: #91c81e;
-    text-align: center;
-	font:16px/30px "微软雅黑";
-	color:#fff;
-	padding:0;
 
-    box-shadow: 1px 2px 0 #50a000;
-    -moz-box-shadow: 1px 2px 0 #50a000;
-    -webkit-box-shadow: 1px 2px 0 #50a000;
-	
-	margin-bottom:6px;
-	}
-	
-.master-class-space:hover{
-	color:#fff;
-}
+
 #apply-space{
 	display:none;}
