@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="assets/css/buttons.css">
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/zui.calendar.min.css">
+
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
+
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -93,6 +95,7 @@
                             <option>6月</option>
                         </select>
                     </div>
+                    <div id="calendar" class="calendar"></div>
                     <table class="calender_main_wrapper">
                         <thead>
                             <td>周一</td>
@@ -153,6 +156,7 @@
                     </table>
                 </div>
             </div>
+            <div id="calendar" class="calendar"></div>
         </div>
         <div class="right_content_wrapper">
             <div class="layout_dashboard_wrapper">
@@ -372,13 +376,18 @@
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="assets/js/zui.min.js"></script>
 <!-- <script type="text/javascript" src="js/main.js"></script> -->
 <script>
     $(document).ready(function(){
         haexeHomepage();
         layout();
         dashboard();
+        zuiCalender();
     });
+    function zuiCalender(){
+        $(".scalender").calender();
+    }
     function layout(){
         $(".nav_main_button").click(function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
