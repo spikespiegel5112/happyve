@@ -318,6 +318,7 @@
     function zuiCalendar(){
         var calendar = $('#calendar').data('zui.calendar');
         var newEvent = {title: '吃饭了', desc: '要吃更多', start: '2014-8-14 12:00', end: '2014-8-14 13:00'};
+        var newEventItemEl="<div class='calendar_event_item'><a href='javascript:;'>新建事件</a><a href='javascript:;'>评分</a></div>"
         $("#calendar").calendar({
             clickTodayBtn:function(){
                 $("#calendar .week-days .month").css("display","none");
@@ -337,7 +338,7 @@
                     $("#calendar .week-days td").removeClass("active");
                     $this.addClass("active");
                 }
-                $this.prepend("")
+                $this.prepend(newEventItemEl);
             }
         }); 
         zuiCalendarCustomize();
@@ -345,7 +346,7 @@
             $("#calendar").find("table").addClass("calendar_main_wrapper");
             $("#calendar .week-days").find("td:even").addClass("even_bg");
             $("#calendar .week-days .month").css("display","none");
-    <div class="calendar_event_item"><a href="javascript:;">新建事件</a><a href="javascript:;">评分</a></div>
+            
         }
         
     }
