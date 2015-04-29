@@ -41,6 +41,7 @@
 
 .modal-backdrop.in{
     opacity: 0.6;
+    z-index: 888;
 }
 
 /*弹出层样式*/
@@ -189,12 +190,11 @@
 }
 .form-container .activity-content{
     position: relative;
-    left: 120px;
-    top: -25px;
     height: 30px;
 }
 /*校园风采新建活动*/
 .form-container .form_datetime input, .add-on{
+    display: inline-block;
     width: 140px;
     height: 25px !important;
 }
