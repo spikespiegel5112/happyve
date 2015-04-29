@@ -156,6 +156,7 @@
 }
 .footprint-content {
     width: 704px;
+	min-height:800px;
     border: 1px solid #e7e7e7;
     background-color: #fff;
 }
@@ -392,7 +393,7 @@
 .foot-list-text{
 	width:640px;
 	padding:0;
-	margin:12px 0 400px 32px;
+	margin:12px 0 0 32px;
 }
 .foot-list-detail{
 	border-bottom:1px solid #b5b5b5;
@@ -451,17 +452,22 @@
 }
 /*安全设置-修改密码*/
 .amend-inpt{
-	width:340px;
+	width:560px;
+	margin-left:46px;
+	height:150px;
+	background: url(../img/brush-dc.jpg) right center no-repeat;
+	
 }
 .amed-inpt-list{
 	overflow:hidden;
 	height:24px;
+	margin-bottom:8px;
 }
 .amed-inpt-list label{
 	display:block;
 	float:left;
 	text-align:right;
-	width:70px;
+	width:90px;
 	font:14px/24px "微软雅黑";
 	color:#3c3c3c;
 }
@@ -473,5 +479,63 @@
 	font-size:14px;
 	
 }
+.secret-alter{
+	width:652px;
+	height:16px;
+	background:url(../img/send-link.jpg) repeat-x;
+	margin:36px 0 18px 34px;
+	
+}
+.secret-alter span{
+	display:inline-block;
+	background-color:#fff;
+	width:60px;
+	height:16px;
+	font:14px/16px "微软雅黑";
+	color:#91c81e;
+	text-align:center;
+	margin-left:8px;
+}
+.two-dimension{
+	width:146px;
+	height:146px;
+	margin:24px 0 0 74px;
+}
+.amend-btn-box{
+	width:654px;
+	margin:55px auto 0;
+	padding-top:22px;
+	border-top:1px solid #91c81e;
+}
+.amend-btn{
+	width:116px;
+	height:30px;
+	line-height:28px;
+	margin:0 0 0 270px;
+}
+.amed-inpt-list .btn{
+	padding:0;
+}
+.amed-inpt-list .btn-default{
+	width:108px;
+	height:24px;
+	text-align:center;
+	padding:0;
+	margin:0;
+	font:12px/24px "宋体";
+	color:#91c81e;
+}
+.amed-inpt-list .inp-sign-sm{
+	width:74px;
+}
+
+.amend-inpt-mail{
+	width:560px;
+	margin-left:46px;
+	height:150px;
+	background: url(../img/mail-my.jpg) right center no-repeat;
+	
+}
+
 /* CSS Document */
 

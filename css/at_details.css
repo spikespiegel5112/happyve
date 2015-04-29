@@ -808,9 +808,9 @@
 	color:#fff;
 	padding:0;
 
-    box-shadow: 1px 2px 0 #50a000;
-    -moz-box-shadow: 1px 2px 0 #50a000;
-    -webkit-box-shadow: 1px 2px 0 #50a000;
+    box-shadow: -1px 2px 0 #50a000;
+    -moz-box-shadow: -1px 2px 0 #50a000;
+    -webkit-box-shadow: -1px 2px 0 #50a000;
 	
 	margin-bottom:6px;
 	}
@@ -907,6 +907,109 @@
 .bot-list-pro{
 	padding-bottom:150px;
 	border-bottom:1px solid #ededed;
+}
+/*我的档案—我的作品*/
+.photo-thum-prod{
+	margin-left:14px;
+}
+.photo-thum-prod .thumbnail{
+	width:212px;
+	padding:0;
+	border-radius:0;
+	float: left;
+	margin:0 0 20px 10px;
+}
+.photo-thum-prod .thumbnail:hover{
+	border:1px solid #91c81e; 
+	}
+.photo-production{
+	width:210px;
+}
+.photo-production img{
+	width:210px;
+	height:149px;
+	border-bottom:1px solid #d3d3d3;
+}
+.product-text-pto{
+	width:210px;
+}
+.product-text-pto a{
+	display:block;
+	width:190px;
+	height:30px;
+	margin:0 10px;
+	text-align:left;
+	font:12px/30px "微软雅黑";
+	border-bottom:1px solid #b5b5b5;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+	-o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product-icon{
+	width:208px;
+	height:24px;
+	overflow:hidden;
+	padding:0 10px;
+}
+.product-icon .btn{
+	background-color:transparent;
+	padding:0;
+	color:#969696;
+	font-size:14px;
+	line-height:24px;
+	
+}
+.product-icon .sp-r-btn{
+	width:20px;
+	height:18px;
+	float:right;
+	}
+
+.product-icon em{
+	display:block;
+	font:12px/24px "宋体";
+	color:3c3c3c;
+	float:left;
+	list-style:none;
+}
+.product-icon .btn:hover{
+	color:#91c81e;
+}
+.books-production{
+	width:210px;
+}
+.books-production img{
+	width:210px;
+	height:285px;
+	border-bottom:1px solid #b5b5b5;
+}
+#production-poster{
+	display:none;
+}
+
+#production-books{
+	display:none;
+}
+.product-text-micro{
+	width:210px;
+}
+.product-text-micro a{
+	display:block;
+	width:210px;
+	height:32px;
+	padding:0 10px;
+	text-align:left;
+	font:12px/32px "微软雅黑";
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+	-o-text-overflow: ellipsis;
+    white-space: nowrap;
+	background-color:#f5f5f5;
+}
+.micro-product{
+	margin-top:28px;
 }
 /* CSS Document */
 
