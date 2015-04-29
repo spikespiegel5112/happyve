@@ -22,10 +22,6 @@
 <div class="header_container">
     <div class="header_login_wrapper">
         <ul>
-            <li><a class="u-lo btn btn-default" role="button">登陆</a></li>
-            <li><a class="u-reg btn btn-default" role="button">注册</a></li>
-            <li><a  href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
-            <li><a  href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span> 在线帮助</a></li>
         </ul>
     </div>
@@ -45,8 +41,6 @@
                     </ul>
                 </li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
             </ul>
 
         </div>
@@ -63,71 +57,27 @@
         <div class="title">
             <ul class="nav nav-pill">
                 <li class="pass-bj white-bj">确认账号</li>
-                <li class="pass-bj white-bj">验证安全性</li>
+                <li class="pass-bj white-bj">验证安全</li>
                 <li class="finish-bj white-bj">重置密码</li>
                 <li class="last-finish special-bj">完成</li>
             </ul>
         </div>
 
-        <div class="find-pwd reset">
-            <form novalidate accept-charset="UTF-8" action="#" class="simple_form new_user" id="reset_password_form" method="post" role="form"><div style="display:none"><input name="utf8" value="✓" type="hidden"><input name="_method" value="put" type="hidden"><input name="authenticity_token" value="q6J8mSLwE/qUHAYQ/hFvOv+I8dWcbcQUT6HZTrj8nQI=" type="hidden"></div>
-
-                <div class="form-group hidden user_reset_password_token"><input class="hidden" id="user_reset_password_token" name="user[reset_password_token]" value="yq3pJaPwUt2jM1XGyvRQ" type="hidden"></div>
-
-
-                <div class="form-group ">
-                    <label for="user_password" class="control-label">密码</label>
-                    <input aria-required="true" autofocus class="password required form-control input-lg input-bj" id="user_password" maxlength="128" name="user[password]" placeholder="请输入密码（6-16位字符）" required size="128" type="password">
-                    <div class="input-icon find_pwd_bj find-pwd-img"></div>
-                    <span class="msg-icon"></span>
-                    <div class="help-block">6-16位数字、字母或符号的组合</div>
-                </div>
-                <div class="form-group ">
-                    <label for="user_password_confirmation" class="control-label">再次确认密码</label>
-                    <input aria-required="true" class="password required form-control input-lg input-bj" id="user_password_confirmation" name="user[password_confirmation]" placeholder="请再次输入密码（6-16位字符）" required type="password">
-                    <div class="input-icon find_pwd_bj find-pwd-img"></div>
-                    <span class="msg-icon"></span>
-                    <div class="help-block">6-16位数字、字母或符号的组合</div>
-                </div>
-            <span class="form-group btn-right">
-            <input class="button btn btn-warning btn-lg btn-block" disable_with="重置中..." name="commit" value="确认重置密码" type="submit">
-            </span>
-                <div class="form-group btn-right"></div>
-            </form>  </div>
+        <div class="success">
+            <div class="container">
+                <img src="img/login-register/finish-icon.png">
+                <ul>
+                    <li><h4>密码修改成功！</h4></li>
+                    <li><p>现在跳转到<a>登陆页面</a>，请用新密码登录，以后要妥善保管好自己的密码哦。</p></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 <!-- 内容区域 结束 -->
 
 <!-- 底部友情链接 开始 -->
 <div class="footer_container">
-    <div class="f-partner">
-        <span><img src="img/bottom-link.jpg"></span>
-        <p>
-            <a href="javascript:;">忆尔</a>
-            <a href="javascript:;">清华积极心理研究中心</a>
-            <a href="javascript:;">美国留学</a>
-            <a href="javascript:;">知好乐网校</a>
-            <a href="javascript:;">博众教育</a>
-            <a href="javascript:;">考德上公培</a>
-            <a href="javascript:;">在线英语培训</a>
-            <a href="javascript:;">公务员考试网</a>
-            <a href="javascript:;">坦途教育网</a>
-            <a href="javascript:;">师兄帮帮忙</a>
-            <a href="javascript:;">博浪网</a>
-            <a href="javascript:;">智康堂</a>
-        </p>
-        <p>
-            <a href="javascript:;">忆尔</a>
-            <a href="javascript:;">清华积极心理研究中心</a>
-            <a href="javascript:;">美国留学</a>
-            <a href="javascript:;">知好乐网校</a>
-            <a href="javascript:;">博众教育</a>
-            <a href="javascript:;">考德上公培</a>
-            <a href="javascript:;">在线英语培训</a>
-            <a href="javascript:;">公务员考试网</a>
-            <a href="javascript:;">坦途教育网</a>
-        </p>
-    </div>
     <div class="footer_sns_wrapper">
         <div class="sns-container">
             <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
@@ -143,12 +93,6 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.js"></script>
-<script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
-<script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>

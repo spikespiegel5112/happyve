@@ -16,7 +16,7 @@ a:hover {
 /*~~~~~~~~~~main_container~~~~~~~~~~*/
 
 /*~~~~~~~~~~header~~~~~~~~~~*/
-.header_container{height: 110px;box-shadow: 2px 2px 5px #ccc;position: relative;z-index: 1;}
+.header_container{height: 110px;min-width:1024px;box-shadow: 2px 2px 5px #ccc;position: relative;z-index: 1;}
 .header_login_wrapper{margin:0 auto;padding:10px 0 0 0;width: 1024px;}
 .header_login_wrapper:after{content: "";display: block;clear: both;}
 .header_login_wrapper ul{float: right;margin:0;}
@@ -50,7 +50,7 @@ a:hover {
 .layout_serachbar_item button{float: left;margin:0 0 0 -3px;width:20%;height:100%;}
 .layout_serachbar_item span{float: left;}
 /*~~~~~~~~~~mian_container~~~~~~~~~~*/
-.main_container{margin:0 auto;width: 100%;background: url(../img/back-banner.jpg) repeat-x center 0;}
+.main_container{margin:0 auto;width: 100%;min-width:1024px;background: url(../img/back-banner.jpg) repeat-x center 0;}
 .main_container:after, .nav_wrapper:after{content: "";display: block;clear: both;}
 .main_content_wrapper{margin:0 auto;width: 1024px;}
 .left_content_wrapper{float:left;width: 690px;}
@@ -91,24 +91,13 @@ a:hover {
 /*~~~~~~~~~~userinfo_wrapper~~~~~~~~~~*/
 .userinfo_wrapper{margin:5em 0 0 0 ;}
 
-
-
-
-
-
-
-
+.footer_container {min-width: 1024px;}
 .footer_container:after{content: "";display: block;clear:both;}
 .footer_sns_wrapper{margin:0 auto;}
 .footer_sns_wrapper:after{content: "";display: block;clear: both;}
 .f-partner p a{color:#888;}
-#footer {
-       /*width: auto;*/
-    height: 300px;
-        margin: 10px 0;
-}
-
-#copy-right {  font: 12px "微软雅黑";  text-align:  center;  line-height: 30px;  height: 30px;  width: 100%;  border-top:1px solid #ccc;  }
+#footer {  height: 300px;  margin: 10px 0;  }
+#copy-right {  font: 12px "微软雅黑";  text-align:  center;  line-height: 30px;  height: 30px;  width: 100%; min-width: 1024px; border-top:1px solid #ccc;  }
 /* common style  */
 /* 此处放通用样式 */
 .u-header-photo {
