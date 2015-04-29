@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
 
     <!-- 自己页面的样式文件 -->
+    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
+
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -129,7 +132,7 @@
                 <li><a href="#"  type="button" > 部门 </a></li>
              </ul>-->
              <div class="timer-shaft"><img src="img/hp_share/timer-shaft.jpg"></div>
-             <button class="btn new-folder" type="button">新建寄语</button>
+             <button class="btn new-folder" type="button" data-trigger="modal" data-title="新建秀场" data-target="#newShowA">新建秀场</button>
              
         </div>
         
@@ -146,7 +149,7 @@
                             <div class="activity-hr"></div>
                             <p class="incident-exp">北京第八十一中学春季篮球赛，篮球作为团体项目，有利于培养学生<br>团队意识，同时加强锻炼身体，同时有利于成绩提高。</p>
                             <div class="icon-incident">
-                                <a href="#"><span class="glyphicon glyphicon-pencil"></span> 制作</a>
+                                <a href="#" data-title="编辑秀场" data-trigger="modal" data-target="#editorShowActivity"><span class="glyphicon glyphicon-pencil"></span>制作</a>
                                 <a href="#"><span class="glyphicon glyphicon-trash"></span> 删除</a>
                             </div>
                         </div>
@@ -162,7 +165,7 @@
                             <div class="activity-hr"></div>
                             <p class="incident-exp">北京第八十一中学春季篮球赛，篮球作为团体项目，有利于培养学生<br>团队意识，同时加强锻炼身体，同时有利于成绩提高。</p>
                             <div class="icon-incident">
-                                <a href="#"><span class="glyphicon glyphicon-pencil"></span> 制作</a>
+                                <a href="#" data-title="编辑秀场" data-trigger="modal" data-target="#editorShowActivity"><span class="glyphicon glyphicon-pencil"></span> 制作</a>
                                 <a href="#"><span class="glyphicon glyphicon-trash"></span> 删除</a>
                             </div>
                         </div>
@@ -178,7 +181,7 @@
                             <div class="activity-hr"></div>
                             <p class="incident-exp">北京第八十一中学春季篮球赛，篮球作为团体项目，有利于培养学生<br>团队意识，同时加强锻炼身体，同时有利于成绩提高。</p>
                             <div class="icon-incident">
-                                <a href="#"><span class="glyphicon glyphicon-pencil"></span> 制作</a>
+                                <a href="#" data-title="编辑秀场" data-trigger="modal" data-target="#editorShowActivity"><span class="glyphicon glyphicon-pencil"></span> 制作</a>
                                 <a href="#"><span class="glyphicon glyphicon-trash"></span> 删除</a>
                             </div>
                         </div>
@@ -194,7 +197,7 @@
                             <div class="activity-hr"></div>
                             <p class="incident-exp">北京第八十一中学春季篮球赛，篮球作为团体项目，有利于培养学生<br>团队意识，同时加强锻炼身体，同时有利于成绩提高。</p>
                             <div class="icon-incident">
-                                <a href="#"><span class="glyphicon glyphicon-pencil"></span> 制作</a>
+                                <a href="#" data-title="编辑秀场" data-trigger="modal" data-target="#editorShowActivity"><span class="glyphicon glyphicon-pencil"></span> 制作</a>
                                 <a href="#"><span class="glyphicon glyphicon-trash"></span> 删除</a>
                             </div>
                         </div>
@@ -452,13 +455,200 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<!--新建秀场 编辑秀场第一页-->
+<div class="modal fade" id="newShowA" >
+
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>新建秀场</h3>
+    </div>
+
+    <div class="pop-container">
+        <div class="newshow-container">
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield' id='textfield' class='txt' />
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="上传图片" />
+                        <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                    </div>
+                </form>
+            </div>
+            <div class="form-container">
+                <div class="form-group ">
+                    <label for="caption" class="caption  match-caption">比赛标题:</label>
+                    <input type="text" class="form-control input-caption " >
+                </div>
+                <div class="form-group ">
+                    <label class="introduction match-introduction">比赛内容:</label>
+                    <textarea class="form-control textarea-intr" placeholder="请输入活动内容"></textarea>
+                </div>
+                <div class="form-group signup-date-group">
+                    <label class="date signup-date" >报名起止日期：</label>
+                    <div class="form_datetime start-date">
+                        <input size="16" type="text" value="" placeholder="2015-03-15">
+                        <img src="img/calendar-img.jpg" >
+                    </div>
+                    <div class="form_datetime end-date">
+                        <input size="16" type="text" value="" placeholder="2015-03-15">
+                        <img src="img/calendar-img.jpg" >
+                    </div>
+                </div>
+                <div class="form-group vote-date-group">
+                    <label class="date vote-date"  >投票起止日期：</label>
+                    <div class="form_datetime start-date">
+                        <input size="16" type="text" value="" placeholder="2015-03-15">
+                        <img src="img/calendar-img.jpg" >
+                    </div>
+                    <div class="form_datetime end-date">
+                        <input size="16" type="text" value="" placeholder="2015-03-15">
+                        <img src="img/calendar-img.jpg" >
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="divider-hr"></div>
+        <div class="btn-group btn-group-two">
+            <a href="javascript:;"><div class="btn-next selected"><button type="button" class="btn" data-trigger="modal" data-title="新建秀场" data-target="#newShowB">下一步</button></div></a>
+            <a href="sp_athletics.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+</div>
+<!--新建秀场 编辑秀场第二页-->
+<div class="modal fade" id="newShowB" >
+
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>新建秀场</h3>
+    </div>
+
+    <div class="pop-container pop-activity">
+        <div class="pop-show-container">
+            <div class="form-group ">
+                <span class="interaction col-lg-4">参赛范围：</span>
+                <label><input type="radio" checked name="iCheck school" class="input-interaction " >&nbsp;&nbsp;本校</label>
+                <label style="margin-left: 20px"><input type="radio" name="iCheck school" class="input-interaction "
+id="showAllSchool">&nbsp;&nbsp;校际</label>
+            </div>
+            <div class="interschool-container" id="interschool-container">
+                <div id="target-school" class="target-school">
+                    <div class="school default"><span>中国人民大学</span><a class="close" href="#">×</a></div>
+                    <div class="school default"><span>北京师范大学</span><a class="close" href="#">×</a></div>
+                    <div class="school default"><span>华中科技大学</span><a class="close" href="#">×</a></div>
+                    <div class="school default"><span>南开大学</span><a class="close" href="#">×</a></div>
+                    <div class="school default"><span>西安交通大学</span><a class="close" href="#">×</a></div>
+                    <div class="school selected"><span>武汉大学</span><a class="close" href="#">×</a></div>
+                </div>
+                <div class="all-school">
+                    <div class="form-group choose-school">
+                        <span class="label-caption col-lg-4"></span>
+                        <select class="label-style">
+                            <option>选择学校</option>
+                        </select>
+                    </div>
+                    <div class="all-school-btn">
+                        <ul>
+                            <li>清华大学</li><li>北京大学</li><li>浙江大学</li><li>上海交通大学</li><li>复旦大学</li><li>南京大学</li><li>中国科技大学</li><li>哈尔滨工业大学</li><li>中国人民大学</li><li>北京师范大学</li><li>华中科技大学</li><li>南开大学</li><li>中国人民交通大学</li><li>武汉大学</li><li>北京航空航天大学</li><li>中山大学</li><li>四川大学</li><li>天津大学</li><li>大连理工大学</li><li>中南大学</li><li>吉林大学</li><li>西北工业大学</li><li>华东师范大学</li><li>东南大学</li><li>厦门大学</li><li>山东大学</li><li>同济大学</li><li>清华大学</li><li>北京大学</li><li>浙江大学</li><li>上海交通大学</li><li>复旦大学</li><li>南京大学</li><li>中国科技大学</li><li>哈尔滨工业大学</li><li>中国人民大学</li><li>北京师范大学</li><li>华中科技大学</li><li>南开大学</li><li>中国人民交通大学</li><li>武汉大学</li><li>北京航空航天大学</li><li>中山大学</li><li>四川大学</li><li>天津大学</li><li>大连理工大学</li><li>中南大学</li><li>吉林大学</li><li>西北工业大学</li><li>华东师范大学</li><li>东南大学</li><li>厦门大学</li><li>山东大学</li><li>同济大学</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group ">
+                <span class="interaction col-lg-4">作品内容：</span>
+                <label><input type="radio" checked name="iCheck production" class="input-interaction " >&nbsp;&nbsp;视频</label>
+                <label style="margin-left: 10px"><input type="radio" name="iCheck production" class="input-interaction ">&nbsp;&nbsp;书册</label>
+                <label style="margin-left: 10px"><input type="radio" name="iCheck production" class="input-interaction ">&nbsp;&nbsp;海报</label>
+                <label style="margin-left: 10px"><input type="radio" name="iCheck production" class="input-interaction ">&nbsp;&nbsp;照片</label>
+            </div>
+            <div class="form-group ">
+                <span class="interaction col-lg-4">提交人资格：</span>
+                <label><input type="radio" checked name="iCheck manager" class="input-interaction " >&nbsp;&nbsp;校级管理员</label>
+                <label style="margin-left: 10px"><input type="radio" name="iCheck manager" class="input-interaction ">&nbsp;&nbsp;班级管理员</label>
+                <label style="margin-left: 10px"><input type="radio" name="iCheck manager" class="input-interaction ">&nbsp;&nbsp;部门管理员</label>
+                <span class="interaction col-lg-4"></span>
+                <label style="margin-left: 0"><input type="radio" name="iCheck manager" class="input-interaction ">&nbsp;&nbsp;社团管理员</label>
+                <label style="margin-left: 10px"><input type="radio" name="iCheck manager" class="input-interaction ">&nbsp;&nbsp;普通成员</label>
+            </div>
+        </div>
+
+        <div class="divider-hr"></div>
+        <div class="btn-group btn-group-three">
+            <a href="javascript:;"><div class="btn-prev disabled"><button type="button" class="btn">上一步</button></div></a>
+            <a href="sp_athletics.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="sp_athletics.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+</div>
+<!--编辑活动-->
+<div class="modal fade" id="editorShowActivity" >
+
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>新建活动</h3>
+    </div>
+
+    <div class="pop-container">
+        <div class="file-box">
+            <form enctype="multipart/form-data" action="" method="post">
+                <div class="default-img"><img src="img/campus-default-img.png"></div>
+                <input type='text' name='textfield' id='stextfield' class='txt' />
+                <div class="upload-file">
+                    <input type="submit" name="submit" class="btn" value="上传图片" />
+                    <input type="file" name="fileField" class="file" id="sfileField" size="28" onchange="document.getElementById('stextfield').value=this.value" />
+                </div>
+            </form>
+        </div>
+        <div class="form-container">
+            <div class="form-group ">
+                <label for="caption" class="caption">标题：</label>
+                <input type="text" class="form-control input-caption " id="caption" >
+            </div>
+            <div class="form-group ">
+                <label class="date" >日期：</label>
+                <div class="date form_datetime start-date">
+                    <input size="16" type="text" value="" readonly>
+                    <img src="img/calendar-img.jpg" >
+                </div>
+            </div>
+            <div class="form-group ">
+                <label  class="introduction">简介：</label>
+                <textarea class="form-control textarea-intr" placeholder="请输入活动内容"></textarea>
+            </div>
+            <div class="help-block activity-content"><p>最多输入2000字，您已输入<span>123</span>字。</p></div>
+        </div>
+        <div class="divider-hr"></div>
+        <div class="btn-group btn-group-two">
+            <a href="sp_athletics.html"><div class="btn-next selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="sp_athletics.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+</div>
+
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-
+<script type="text/javascript" src="assets/js/icheck.js"></script>
+<script>
+    $(document).ready(function () {
+        changeButtonCss();
+        function changeButtonCss() {
+            $(".input-interaction").iCheck({
+                checkboxClass: 'icheckbox_minimal-green',  // 注意square和blue的对应关系,用于type=checkbox
+                radioClass: 'iradio_minimal-green', // 用于type=radio
+                increaseArea: '20%' // 增大可以点击的区域
+            });
+        }
+    });
+</script>
 </body>
 </html>

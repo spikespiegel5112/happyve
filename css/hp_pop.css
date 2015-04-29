@@ -269,6 +269,8 @@
     line-height: 30px;
 }
 .end-date {
+    display: inline-block;
+    float: left;
     margin-left: 100px;
 }
 .form-container .form_datetime input, .add-on{
@@ -277,9 +279,7 @@
 }
 /*校际比赛*/
 .interschool-container {
-/*
     display: none;
-*/
     position: relative;
     margin-left: 160px;
     margin-bottom: 15px;
