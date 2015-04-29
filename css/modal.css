@@ -41,6 +41,7 @@
 
 .modal-backdrop.in{
     opacity: 0.6;
+    z-index: 100;
 }
 
 /*弹出层样式*/
@@ -195,6 +196,7 @@
 }
 /*校园风采新建活动*/
 .form-container .form_datetime input, .add-on{
+    display: inline-block;
     width: 140px;
     height: 25px !important;
 }
