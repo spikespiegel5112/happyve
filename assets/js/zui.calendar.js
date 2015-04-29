@@ -209,6 +209,7 @@
         {
             self.callEvent('clickEvent',
             {
+                this:this,
                 event: $(this).data('event'),
                 events: self.events
             });
@@ -217,6 +218,7 @@
         {
             self.callEvent('clickCell',
             {
+                this:this,
                 view: self.view,
                 date: $(this).attr('data-date'),
                 events: self.events
