@@ -81,80 +81,7 @@
                         统计：您在过去的1个月，您度过<label>20</label>个美好的日子
                     </div>
                 </div>
-                <!-- <div class="calendar_wrapper" cellspacing="0" cellpadding="0">
-                    <div class="calendar_dateselect_wrapper">
-                        <select>
-                            <option>2015年</option>
-                            <option>2014年</option>
-                        </select>
-                        <select>
-                            <option>1月</option>
-                            <option>2月</option>
-                            <option>3月</option>
-                            <option>4月</option>
-                            <option>5月</option>
-                            <option>6月</option>
-                        </select>
-                    </div>
-                    <table class="calendar_main_wrapper">
-                        <thead>
-                            <th>周一</th>
-                            <th>周二</th>
-                            <th>周三</th>
-                            <th>周四</th>
-                            <th>周五</th>
-                            <th>周六</th>
-                            <th>周日</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div> -->
+                
                 <div id="calendar" class="calendar calendar_main_wrapper"></div>
             </div>
         </div>
@@ -368,6 +295,7 @@
 <!-- 版权信息 开始 -->
 <div id="copy-right">
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
+
 </div>
 <!-- 版权信息 结束 -->
 
@@ -389,8 +317,36 @@
     });
     function zuiCalendar(){
         var calendar = $('#calendar').data('zui.calendar');
-        $("#calendar").calendar();
-        $("#calendar").find("table").addClass("calendar_main_wrapper");
+        var newEvent = {title: '吃饭了', desc: '要吃更多', start: '2014-8-14 12:00', end: '2014-8-14 13:00'};
+        $("#calendar").calendar({
+            clickTodayBtn:function(){
+                $("#calendar .week-days .month").css("display","none");
+            },
+            clickPrevBtn:function(){
+                $("#calendar .week-days .month").css("display","none");
+            },
+            clickNextBtn:function(){
+                $("#calendar .week-days .month").css("display","none");
+            },
+            clickCell:function(e){
+                console.log(e);
+                var $this=$(e.this);
+                if($this.hasClass("active")){
+                    return;
+                }else{
+                    $("#calendar .week-days td").removeClass("active");
+                    $this.addClass("active");
+                }
+                $this.prepend("")
+            }
+        }); 
+        zuiCalendarCustomize();
+        function zuiCalendarCustomize(){
+            $("#calendar").find("table").addClass("calendar_main_wrapper");
+            $("#calendar .week-days").find("td:even").addClass("even_bg");
+            $("#calendar .week-days .month").css("display","none");
+    <div class="calendar_event_item"><a href="javascript:;">新建事件</a><a href="javascript:;">评分</a></div>
+        }
         
     }
     function layout(){
@@ -417,7 +373,6 @@
     function dashboard(){
         var hoverIndex=0, clickIndex=0, multiplier=0;
         $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
-            console.log("aaa");
             hoverIndex=$(this).index();
             $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","#acd655 transparent #acd655 transparent");
         },function(){
@@ -478,3 +433,79 @@
 </script>
 </body>
 </html>
+
+
+<!-- <div class="calendar_wrapper" cellspacing="0" cellpadding="0">
+                    <div class="calendar_dateselect_wrapper">
+                        <select>
+                            <option>2015年</option>
+                            <option>2014年</option>
+                        </select>
+                        <select>
+                            <option>1月</option>
+                            <option>2月</option>
+                            <option>3月</option>
+                            <option>4月</option>
+                            <option>5月</option>
+                            <option>6月</option>
+                        </select>
+                    </div>
+                    <table class="calendar_main_wrapper">
+                        <thead>
+                            <th>周一</th>
+                            <th>周二</th>
+                            <th>周三</th>
+                            <th>周四</th>
+                            <th>周五</th>
+                            <th>周六</th>
+                            <th>周日</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div> -->

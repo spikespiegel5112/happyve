@@ -763,7 +763,7 @@
     border: 1px solid #ddd;
     border-style: none solid solid solid;
     text-align: left;
-    height: 242px;
+    /*height: 242px;*/
     overflow: hidden;
     -moz-border-radius: 0 0 10px 10px; /* Gecko browsers */
     -webkit-border-radius: 0 0 10px 10px; /* Webkit browsers */
@@ -857,6 +857,7 @@
 }
 
 .slideTxtBox .bd li p {
+    margin: 0 0 10px 0;
     line-height: 18px;
     font-size: 12px;
     color: #414141;
