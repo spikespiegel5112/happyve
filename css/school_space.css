@@ -1075,14 +1075,6 @@
     margin: 0;
     background-color: #b4b4b4;
 }
-.preview-container .send-word .help-block {
-    padding-right: 0;
-    text-align: right;
-
-}
-.preview-container .send-word .help-block a{
-    color: #3C3C3C;
-}
 .preview-container .send-word{
     margin-top: -2px ;
     border: 2px solid #b4b4b4;

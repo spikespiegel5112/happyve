@@ -41,7 +41,7 @@
 
 .modal-backdrop.in{
     opacity: 0.6;
-    z-index: 100;
+    z-index: 888;
 }
 
 /*弹出层样式*/
@@ -190,8 +190,6 @@
 }
 .form-container .activity-content{
     position: relative;
-    left: 120px;
-    top: -25px;
     height: 30px;
 }
 /*校园风采新建活动*/
