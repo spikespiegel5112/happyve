@@ -1040,3 +1040,101 @@
 
 #apply-space{
 	display:none;}
+
+.send-word-container {
+    height: 200px;
+}
+.pop-container .form-container .send-word {
+    height: 166px;
+}
+/*校长寄语预览*/
+.preview-container {
+    margin: 20px auto 40px;
+    width: 580px;
+    height: 650px;
+}
+.preview-container .send-word .caption{
+    width: 380px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #b4b4b4;
+}
+.preview-container .send-word .content {
+    margin: 10px auto 30px auto;
+    width: 520px;
+    line-height: 35px;
+    overflow: visible;
+    text-align: justify;
+    text-indent: 2em;
+}
+.preview-container .send-word .divider-hr{
+    width: 520px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    background-color: #b4b4b4;
+}
+.preview-container .send-word .help-block {
+    padding-right: 0;
+    text-align: right;
+
+}
+.preview-container .send-word .help-block a{
+    color: #3C3C3C;
+}
+.preview-container .send-word{
+    margin-top: -2px ;
+    border: 2px solid #b4b4b4;
+}
+/*校园风采新建活动*/
+.pop-activity {
+    margin-top: 50px;
+}
+.pop-activity .form-group{
+    margin-left: 150px;
+    width: 500px;
+    height: 25px;
+}
+.pop-activity .form-group span{
+    text-align: right;
+}
+.pop-activity .form-group .label {
+    display: inline-block;
+    margin-right: 10px;
+    width: 60px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 0;
+    cursor: pointer;
+}
+.pop-activity .form-group .selected{
+    padding: 0 0 0 10px ;
+    background-color: #91c31e;
+    box-shadow: 1px 2px 0 #50a000;
+}
+
+.pop-activity .form-group .disabled{
+    padding: 0;
+    background-color: #b4b4b4;
+    -webkit-box-shadow: 1px 2px 0 #646464;
+    -moz-box-shadow: 1px 2px 0 #646464;
+    box-shadow: 1px 2px 0 #646464;
+}
+.pop-activity .form-group .label .close{
+    display: inline-block;
+    padding: 0 5px 0 0;
+    font-size: 16px;
+}
+.pop-activity .form-group .label-style{
+    width: 115px;
+    height: 23px;
+}
+.pop-activity .label-container{
+    position: relative;
+    width: 500px;
+    height: 30px;
+    margin-bottom: 66px;
+}
