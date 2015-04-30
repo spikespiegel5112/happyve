@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/orange.css"  type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/font-awesome.css"  type="text/css" media="all">
     
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
@@ -70,24 +72,24 @@
                 <p class="footprint-title">我的档案</p>
                 <p class="footprint-title-rich">我的印记</p>
                 <ul>
-                    <li class="active"><span class="personal-icon pink"></span> <a href="#">个人信息</a></li>
+                    <li><span class="personal-icon"></span> <a href="#">个人信息</a></li><!--pink-->
                     <li><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <a href="#">安全设置</a></li>
                     <li><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <a href="#">我的消息</a></li>
                     <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <a href="#">我的收藏</a></li>
-                    <li><span class="scale-icon pink"></span> <a href="#">我的等级</a></li>
-                    <li><span class="testing-icon pink" aria-hidden="true"></span> <a href="#">我的评测</a></li>
+                    <li><span class="scale-icon"></span> <a href="#">我的等级</a></li><!--pink-->
+                    <li><span class="testing-icon" aria-hidden="true"></span> <a href="#">我的评测</a></li><!--pink-->
                     <li><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <a href="#">我的演习</a></li>
                     <li><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <a href="#">我的标签</a></li>
                     <li><span class="icon-user"></span> <a href="#">我的好友</a></li>
                     <li><span class="icon-group"></span> <a href="#">我的集体</a></li>
-                    <li><span class="glyphicon glyphicon-film" aria-hidden="true"></span> <a href="#">我的微课</a></li>
-                    <li><span class="production-icon pink"></span> <a href="#">我的作品</a></li>
+                    <li class="active"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> <a href="#">我的微课</a></li>
+                    <li><span class="production-icon"></span> <a href="#">我的作品</a></li><!--pink-->
                 </ul>
             </div>
         
         
             <div class="footprint-text">
-              <p class="shade-link">我的作品</p>
+              <p class="shade-link">我的微课</p>
               <div class="footprint-content">
             	
                  
@@ -213,7 +215,7 @@
                           
                         
                     </div>
-                    <!--相册结束点-->
+                    <!--微课结束点-->
                  
                 
                     
@@ -283,25 +285,8 @@
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script>
+<script type="text/javascript" src="js/main.js"></script>
 
-    function produ1(){
-        document.getElementById('production-poster').style.display='none';
-        document.getElementById('production-books').style.display='none';
-        document.getElementById('production-photo').style.display='block';
-    }
-    function produ2(){
-        document.getElementById('production-poster').style.display='none';
-        document.getElementById('production-books').style.display='block';
-        document.getElementById('production-photo').style.display='none';
-    }
-    function produ3(){
-        document.getElementById('production-poster').style.display='block';
-        document.getElementById('production-books').style.display='none';
-        document.getElementById('production-photo').style.display='none';
-    }
-
-</script>
 
 </body>
 </html>

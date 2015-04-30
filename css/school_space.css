@@ -884,8 +884,9 @@
 .class-space-list{
 	width:656px;
 	margin:16px  auto 160px;
+}
+.cls-spa-bottom{
 	border-top:1px solid #c9c9c9;
-	
 }
 .class-space-list .li-space-list{
 	height:84px;
@@ -900,8 +901,6 @@
 	-moz-border-radius: 4px;
     -webkit-border-radius: 4px;
 	margin-right:10px;
-	
-	
 	}
 .class-space-list .info-class-space{
 	float:left;

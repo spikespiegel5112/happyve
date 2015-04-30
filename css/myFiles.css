@@ -63,9 +63,9 @@
     vertical-align: middle;
 }
 
-/*.scale-icon.pink {
+.scale-icon.pink {
     background: url(../img/footmark-foot.png) no-repeat scroll 0 -63px rgba(0, 0, 0, 0);
-}*/
+}
 
 .footprint ul li:hover .scale-icon{
 	 background: url(../img/footmark-foot.png) no-repeat scroll 0 -63px rgba(0, 0, 0, 0);
@@ -79,9 +79,9 @@
     vertical-align: middle;
 }
 
-/*.testing-icon.pink {
+.testing-icon.pink {
     background: url(../img/footmark-foot.png) no-repeat scroll 0 -105px rgba(0, 0, 0, 0);
-}*/
+}
 
 .production-icon {
     display: inline-block;
@@ -91,9 +91,9 @@
     vertical-align: middle;
 }
 
-/*.production-icon.pink {
+.production-icon.pink {
     background: url(../img/footmark-foot.png) no-repeat scroll 0 -147px rgba(0, 0, 0, 0);
-}*/
+}
 
 .footprint ul li:hover .production-icon{
 	 background: url(../img/footmark-foot.png) no-repeat scroll 0 -147px rgba(0, 0, 0, 0);
@@ -535,6 +535,327 @@
 	height:150px;
 	background: url(../img/mail-my.jpg) right center no-repeat;
 	
+}
+.approve-bacimg{
+	width:646px;
+	height:224px;
+	background: url(../img/please-mail.jpg) right center no-repeat;
+	color:#3c3c3c;
+	margin:50px 0 0 16px;
+}
+.shalom-text{
+	width:460px;
+	height:84px;
+	font:16px/26px "微软雅黑";
+	padding:14px 0 0 16px;
+	
+	background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, rgba(245, 245,245, 1) 100%); 
+	background-image: -webkit-linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, rgba(245, 245,245, 1) 100%);  
+	background-image: -moz-linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, rgba(245, 245,245, 1) 100%);  
+	background-image: -o-linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, rgba(245, 245,245, 1) 100%);  
+}
+.send-approve{
+	font:12px/20px "宋体";
+	margin:0 0 0 12px;
+	}
+.send-approve a{
+	color:#ff7800;
+	text-decoration: underline;
+	}
+.friend-nav-my{
+	overflow:hidden;
+	width:704px;
+	padding-bottom:14px;
+}
+.friend-list-mine{
+	color:#3c3c3c;
+	border-bottom:1px solid #646464;
+	width:702px;
+	padding:0 0 0 18px;
+	margin:26px auto 0;
+}
+.friend-list-mine li{
+	width:130px;
+	height:40px;
+	background-color:#f5f5f5;
+	text-align:center;
+	font:16px/40px "微软雅黑";
+}
+.friend-list-mine .clik-list-fd{
+	background-color:#91c81e;
+	position:relative;
+	}
+.clik-list-fd a{
+	color:#fff;
+}
+.clik-list-fd a:hover{
+	color:#fff;
+}
+.clik-list-fd span{
+	width:12px;
+	height:8px;
+	background:url(../img/friend-row.png) no-repeat;
+	position:absolute;
+	top:40px;
+	left:60px;
+}
+.friend-nav-my button{
+	float:right;
+}
+.append-btn{
+	float:rigth;
+	width:106px;
+	height:26px;
+	text-align:center;
+	font:16px/18px "微软雅黑";
+	color:#fff;
+	padding:0;
+	margin:-30px 22px 0 0;
+	background-color:#91c81e;
+}
+.append-btn:hover{
+	color:#fff;
+}
+.content-friend-my{
+	width:704px;
+	overflow:hidden;
+	padding:22px 20px 0 ;
+}
+.mine-friend-sort{
+	float:left;
+	font:12px "宋体";
+}
+
+.content-friend-my ul li{
+	width:328px;
+	height:78px;
+	border:1px solid #b4b4b4;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+.friend-head-smart{
+	width:72px;
+	height:72px;
+	margin:2px;
+	border-radius:4px;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+	}
+.friend-right-my{
+	float:right;
+	width:240px;
+	margin-right:2px;
+}
+.friend-name-box{
+	width:240px;
+	overflow:hidden;
+	font: bold 12px "宋体";
+}
+.friend-name-box span{
+	display:block;
+	float:left;
+	margin-top:10px;
+}
+.friend-name-box .stage-name{
+	width:96px;
+	overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+	-o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.grade-stage-name{
+	border-left:2px solid #3c3c3c;
+	width:44px;
+	text-align:right;
+}
+.friend-name-box .grade-stage-desi{
+	font-weight:normal;
+}
+.friend-name-box img{
+	margin:2px 0 0 0;
+}
+.college-friend{
+	width:170px;
+	height:14px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+    white-space: nowrap;
+	margin:0;
+}
+.my-friend-btn{
+	overflow:hidden;
+	width:230px;
+	height:22px;
+	
+}
+.my-friend-btn p{
+	width:134px;
+	float:left;
+	line-height:24px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.my-friend-btn .btn-default{
+	float:right;
+	width:55px;
+	height:20px;
+	padding:0;
+	font-size:12px;
+	line-height:18px;
+	color:#969696;
+	margin:2px 0 0 0;
+	}
+.my-friend-btn .btn-default:hover{
+	color:#91c81e;
+}
+.my-friend-btn .trash-friend{
+	background-color: transparent;
+	width:28px;
+	height:20px;
+	line-height:20px;
+	padding:0;
+	float:right;
+	margin:2px 4px 0 0;
+}
+.my-friend-btn .glyphicon-trash{
+	color:#969696;
+}
+
+.my-friend-btn .trash-friend:hover .glyphicon-trash{
+	color:#91c81e;
+}
+.mine-friend-sort-rg{
+	float:right;
+	font:12px "宋体";
+}
+.btn-class-apply{
+	float:right;
+	width:200px;
+	margin-top:8px;
+}
+.class-space-list .friend-class-text span::before{
+	content: "|";
+	padding: 0 16px 0 0;
+	}
+.class-space-list .friend-class-textt span{
+	margin-right:14px;
+}
+.info-class-space .friend-class-text{
+	width:360px;
+	text-align:left;
+	line-height:20px;
+	height:20px;
+	}
+
+.friend-class-text .blod-person{
+	display:inline-block;
+	width:100px;
+	}
+
+.class-space-list .space-apply-mar{
+	height:100px;
+	border-bottom:1px solid #c9c9c9;
+	padding:16px 8px 20px;
+	margin:8px 0;
+	}
+.class-space-list .space-apply-mar .space-list-img{
+	float:left;
+	width:56px;
+	height:56px;
+	border-radius:4px; /*圆角*/
+	-moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+	margin-right:10px;
+	}
+.master-class-friend{
+	width: 92px;
+    height: 30px;
+	}
+/*我的演习*/
+.mano-test-list{
+	width:630px;
+	margin:24px 0 0 20px;
+}
+.mano-test-list li{
+	width:630px;
+	height:40px;
+	border-bottom:1px solid #dedede;
+	padding:0 0 0 14px;
+	font:12px/40px "宋体";
+	color:#3c3c3c;
+}
+.mano-test-list li a{
+	width:470px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mano-test-list li .btn-default{
+	width:60px;
+	height:24px;
+	float:right;
+	padding:0;
+	font:12px/24px "宋体";
+	color:#b4b4b4;
+	text-align:center;
+	margin:8px 56px 0 0 ;
+}
+.mano-test-list li .btn-default:hover{
+	color:#96c81e;
+}
+/*我的等级*/
+.rank-name-title{
+	font:12px/24px "宋体";
+	margin:8px 0 0 126px;
+	}
+.rank-img-static{
+	width:592px;
+	height:232px;
+	margin:30px 0 0 40px;
+	position:relative;
+	}
+.rank-img-static img{
+	width:592px;
+	height:232px;
+}
+.rank-img-static p{
+	position:absolute;
+	top:182px;
+	left:244px;
+	width:304px;
+	height:28px;
+	text-align:center;
+	font:16px/28px "方正综艺简体";
+	color:#fff;
+	z-index:4;
+	margin:0;
+}
+.rank-img-static p span{
+	font-size:24px;
+}
+
+#collect-poster{
+	display:none;
+}
+#collect-books{
+	display:none;
+}
+#collect-video{
+	display:none;
+}
+#collect-evaluating{
+	display:none;
+}
+#collect-manoeuvre{
+	display:none;
+}
+#collect-micro{
+	display:none;
 }
 
 /* CSS Document */
