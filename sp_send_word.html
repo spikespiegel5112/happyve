@@ -132,7 +132,7 @@
                 <li><a href="#"  type="button" > 部门 </a></li>
              </ul>-->
              <!--<div class="timer-shaft"><img src="img/hp_share/timer-shaft.jpg"></div>-->
-            <button class="btn new-folder" type="button"><a data-trigger="modal" href="cs_pop_campus_sendword.html" data-title="新建寄语" class="btn">新建寄语</a></button>
+            <button class="btn new-folder" type="button" data-trigger="modal" data-title="新建寄语" target="#modal">新建寄语</button>
 
 
         </div>
@@ -442,6 +442,48 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<div class="modal fade" id="modal" >
+
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>新建寄语</h3>
+    </div>
+    <div class="container">
+        <div class="send-word-container">
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield' id='textfield' class='txt' />
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="上传图片" />
+                        <input type="file" name="fileField" class="file" id="fileField" size="28" onchange="document.getElementById('textfield').value=this.value" />
+                    </div>
+                </form>
+            </div>
+            <div class="form-container">
+                <div class="form-group ">
+                    <label for="caption" class="caption">标题：</label>
+                    <input type="text" class="form-control input-caption " id="caption" >
+                </div>
+                <div class="form-group ">
+                    <label class="introduction">内容：</label>
+                    <textarea class="form-control textarea-intr send-word" placeholder="请输入活动内容"></textarea>
+                </div>
+                <div class="help-block activity-content"><p>最多输入2000字，您已输入<span>123</span>字。</p></div>
+            </div>
+        </div>
+
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a data-trigger="modal" href="cs_pop_campus_sendword_content.html" data-title="" class="btn"><div class="btn-save selected"><button type="button" class="btn">保存</button></div></a>
+            <a data-trigger="modal" href="javascript:;" data-title="" class="btn"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a data-trigger="modal" href="javascript:;" data-title="" class="btn"><div class="btn-preview disabled"><button type="button" class="btn" style="margin-left: 0">预览</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
