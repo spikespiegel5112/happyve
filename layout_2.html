@@ -21,8 +21,6 @@
 <div class="header_container">
     <div class="header_login_wrapper">
         <ul>
-            <li><a class="u-lo btn btn-default" role="button">登陆</a></li>
-            <li><a class="u-reg btn btn-default" role="button">注册</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span> 在线帮助</a></li>
@@ -301,7 +299,7 @@
                 dropdownEl.addClass("dropdown_fadein");
                 $(".nav_dropdown_item").show();
             }
-        })
+        });
         $(document).bind("click",function(e){
             if($(".nav_dropdown_item").hasClass("dropdown_fadein")){
                 if($(e.target).closest(".nav_main_button").length==0){
@@ -309,13 +307,12 @@
                     $(".nav_dropdown_item").hide();
                 }
             }
-        })
+        });
         $(".slideTxtBox,.activity-header-slide,.query-nav").slide();
     }
     function dashboard(){
         var hoverIndex=0, clickIndex=0, multiplier=0;
         $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
-            console.log("aaa");
             hoverIndex=$(this).index();
             $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","#acd655 transparent #acd655 transparent");
         },function(){
