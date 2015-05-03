@@ -1,0 +1,324 @@
+@charset "utf-8";
+/*我的档案 我的消息*/
+ul,ol,li{
+    list-style: none;
+}
+
+.slideTxtBox-myMessage {
+    text-align: left;
+    overflow: visible;
+    -moz-border-radius: 0 0 10px 10px; /* Gecko browsers */
+    -webkit-border-radius: 0 0 10px 10px; /* Webkit browsers */
+    border-radius: 0 0 10px 10px; /* W3C syntax */
+    margin: 10px 0 0 0;
+}
+
+.slideTxtBox-myMessage .hd {
+    width: 100%;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #646464;
+    position: relative;
+
+}
+
+.slideTxtBox-myMessage .hd > ul {
+    float: left;
+    position: absolute;
+    left: 5px;
+    top: -1px;
+    height: 32px;
+    width: 100%;
+}
+
+.slideTxtBox-myMessage .hd > ul > li {
+    float: left;
+    cursor: pointer;
+    color: #414141;
+    width: 18%;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.slideTxtBox-myMessage .hd > ul .hd-left {
+    margin: 0 0 0 5%;
+    font: 16px/38px "微软雅黑";
+}
+
+.slideTxtBox-myMessage .hd > ul .hd-right {
+    margin: 0 5% 0 0;
+    font: 16px/38px "微软雅黑";
+}
+
+.slideTxtBox-myMessage .hd > ul > li.on {
+    height: 40px;
+    background: #91c81e;
+    /*border:1px solid #ddd;*/
+    color: #ffffff;
+}
+
+.slideTxtBox-myMessage .bd > ul {
+    padding: 15px;
+    height: auto;
+    zoom: 1;
+    overflow: visible!important;
+    position: relative;
+}
+
+.slideTxtBox-myMessage .bd .bd-bar {
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 0;
+    left: 13%;
+    background: url(../img/side-bar.png) no-repeat;
+    z-index: 2;
+}
+.slideTxtBox-myMessage .bd .bdd-bar {
+    width: 14px;
+    height: 9px;
+    position: absolute;
+    top: 0;
+    left: 31%;
+    background: url(../img/side-bar.png) no-repeat;
+    z-index: 2;
+}
+
+.slideTxtBox-myMessage .bd > li {
+
+}
+
+.slideTxtBox-myMessage .bd > li > p {
+    line-height: 18px;
+    font-size: 12px;
+    color: #414141;
+
+}
+
+.slideTxtBox-myMessage .bd > ul:hover {
+    overflow: auto;
+}
+
+.slideTxtBox-myMessage .bd > li:hover > p {
+    color: #5aaa00;
+}
+
+.slideTxtBox-myMessage .bd > ul > li > a {
+    color: #414141;
+}
+
+.slideTxtBox-myMessage .bd > li .date {
+    float: right;
+    color: #999;
+}
+/*收发件*/
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+    background-color: #dff4bb;
+}
+
+.nav-tabs > li > a{
+    color: #fff;
+}
+
+.pane-wrapper > .active, .pane-wrapper > .prev, .pane-wrapper > .next {
+    display: block!important;
+}
+
+.pane-wrapper > div{
+    display: none;!important;
+}
+
+.bd .mail-box{
+    display: block;
+    margin-left: 16px;
+}
+
+.bd .mail-box > li{
+    list-style: none;
+    display: inline-block;
+    float: left;
+    margin-left: 4px;
+    width: 124px;
+    height: 28px;
+    line-height: 28px;
+    background-color: #c1c1c1;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bd .mail-content {
+    width: 100%;
+}
+
+.bd .mail-count{
+    display: block;
+    padding: 0 25px 0;
+    font-size: 12px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.mail-count > p > span{
+    color: #91c31e;
+}
+
+.mail-content .mail-btn-group {
+    padding: 4px 20px 26px ;
+}
+
+.mail-content .mail-btn-group .btn{
+    width: 75px;
+}
+
+.mail-content .mail-btn-group .btn.choose{
+    color: #50a000;
+}
+
+.mail-content .divider-line.green{
+    margin: 0 auto;
+    width: 96%;
+    height: 1px;
+    background-color: #91c31e;
+}
+
+.mail-content .mail-main-container .every-email{
+    margin-left: 20px;
+    width: 100%;
+}
+
+.mail-content .mail-main-container .every-email li {
+    display: inline-block;
+    float: left;
+    padding-left: 20px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.mail-content .mail-main-container .every-email label{
+    font-weight: normal;
+}
+
+.every-email .sender{
+    width: 80px;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.every-email .theme{
+    width: 390px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.every-email .time{
+    width: 120px;
+    float: right;
+}
+
+.slideTxtBox-myMessage .nav-tabs{
+    border: none;
+}
+
+.slideTxtBox-myMessage .nav-tabs > li > a{
+    margin-right: 0;
+    line-height: 28px;
+    border: none;
+    border-radius: 0;
+}
+
+.nav-tabs > li > a{
+    padding: 0;
+}
+
+/*发件箱*/
+
+.pane-wrapper #inbox, #outbox, #newMessage{
+    margin-top: 20px;
+}
+
+.pane-wrapper .col-title{
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+.pane-wrapper .form-horizontal textarea{
+    margin: 0!important;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+#outbox .btn-group, #newMessage .btn-group{
+    width: 40%;
+    margin-left: 35%;
+}
+
+#outbox .btn-group div .btn, #newMessage .btn-group div .btn{
+    margin-bottom: 10px;
+    padding: 0;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+}
+#outbox .btn-group > div, #newMessage .btn-group > div{
+    display: inline-block;
+    float: left;
+}
+#outbox .btn-group .selected button, #newMessage .btn-group .selected button{
+    background-color: #91c31e;
+    box-shadow: 1px 2px 1px #50a000;
+}
+#outbox .btn-group .disabled button, #newMessage .btn-group .disabled button{
+    margin: 0 10px;
+    background-color: #b4b4b4;
+    box-shadow: 1px 2px 1px #646464;
+}
+
+/*分页*/
+.activity-pagin, .pagin-center {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.activity-pagin, .pagin-center .pagination{
+    padding: 0 10px;
+}
+
+.pagin-center .pagination{
+    display: inline-block;
+}
+
+.pagin-center .pagination > li > a,  .pagin-center .pagination > li > span{
+    padding: 0 5px;
+    color: #3c3c3c;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.pagin-center .pagination > .disabled > a ,  .pagin-center .pagination > .disabled > span{
+    color: #b4b4b4;
+}
+
+.pagination > li .btn-group{
+    display: inline;
+}
+.pagination .btn-group .dropdown-menu{
+    margin: 20px 0 0 60px;
+    min-width: 60px;
+}
+
