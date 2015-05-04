@@ -4,6 +4,32 @@ ul,ol,li{
     list-style: none;
 }
 
+/*left-nav*/
+.scale-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background:url(../img/footmark-foot.png) no-repeat scroll 0 -42px rgba(0, 0, 0, 0)!important;
+    vertical-align: middle;
+}
+
+.footprint ul li:hover .scale-icon{
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -63px rgba(0, 0, 0, 0)!important;
+}
+
+.production-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -126px rgba(0, 0, 0, 0)!important;
+    vertical-align: middle;
+}
+
+.footprint ul li:hover .production-icon {
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -147px rgba(0, 0, 0, 0)!important;
+}
+/**/
+
 .slideTxtBox-myMessage {
     text-align: left;
     overflow: visible;
@@ -173,7 +199,7 @@ ul,ol,li{
     width: 75px;
 }
 
-.mail-content .mail-btn-group .btn.choose{
+.mail-content .mail-btn-group .btn a:hover{
     color: #50a000;
 }
 
@@ -248,7 +274,7 @@ ul,ol,li{
     padding-left: 0;
 }
 
-.pane-wrapper .form-horizontal textarea{
+.pane-wrapper .form-horizontal textarea, .reply-message .form-horizontal textarea, .showPageContent textarea{
     margin: 0!important;
     width: 100%;
     height: 100%;
@@ -260,7 +286,7 @@ ul,ol,li{
     margin-left: 35%;
 }
 
-#outbox .btn-group div .btn, #newMessage .btn-group div .btn{
+#outbox .btn-group div .btn, #newMessage .btn-group div .btn, .showPageContent .btn-group div .btn{
     margin-bottom: 10px;
     padding: 0;
     width: 120px;
@@ -270,15 +296,15 @@ ul,ol,li{
     border: none;
     border-radius: 4px;
 }
-#outbox .btn-group > div, #newMessage .btn-group > div{
+#outbox .btn-group > div, #newMessage .btn-group > div, .showPageContent .btn-group > div{
     display: inline-block;
     float: left;
 }
-#outbox .btn-group .selected button, #newMessage .btn-group .selected button{
+#outbox .btn-group .selected button, #newMessage .btn-group .selected button, .showPageContent .btn-group .selected button{
     background-color: #91c31e;
     box-shadow: 1px 2px 1px #50a000;
 }
-#outbox .btn-group .disabled button, #newMessage .btn-group .disabled button{
+#outbox .btn-group .disabled button, #newMessage .btn-group .disabled button, .showPageContent .btn-group .disabled button{
     margin: 0 10px;
     background-color: #b4b4b4;
     box-shadow: 1px 2px 1px #646464;
@@ -310,7 +336,7 @@ ul,ol,li{
     cursor: pointer;
 }
 
-.pagin-center .pagination > .disabled > a ,  .pagin-center .pagination > .disabled > span{
+.pagin-center .pagination > .disabled > a, .pagin-center .pagination > .disabled > span{
     color: #b4b4b4;
 }
 
@@ -322,3 +348,144 @@ ul,ol,li{
     min-width: 60px;
 }
 
+/*展示页面内容*/
+.showPageContent {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.showPageContent .caption {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.showPageContent .detail {
+    font-size: 12px;
+    color: #646464;
+}
+
+.showPageContent .btn-group{
+    width: 70%;
+    margin: 10px 20%;
+}
+
+.showPageContent textarea{
+    padding: 15px 10px;
+    line-height: 1.8em;
+}
+
+/*我的档案 我的测评*/
+.myTestContent {
+    width: 95%;
+    padding: 30px 20px;
+}
+
+.myTestContent ul li{
+    list-style: none;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #e9f4d2;
+}
+
+.myTestContent p{
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+    width: 85%;
+}
+
+.myTestContent p:hover{
+    color: #91c31e;
+}
+
+.myTestContent .btn{
+    padding: 0 10px;
+    height: 24px;
+}
+
+.myTestContent button:hover{
+    color: #91c31e;
+}
+
+/*我的档案 我的集体*/
+.testing-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -84px rgba(0, 0, 0, 0)!important;
+    vertical-align: middle;
+}
+
+.testing-icon.pink{
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -105px rgba(0, 0, 0, 0);
+}
+
+.footprint ul li.active .testing-icon, .footprint ul li:hover .testing-icon{
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -105px rgba(0, 0, 0, 0)!important;
+}
+
+.myTeamContent {
+    margin: 30px auto;
+    width: 95%;
+}
+
+.myTeamContent > ul > li{
+    padding: 20px 14px;
+    height: 120px;
+    border-top: 1px solid #b4b4b4;
+}
+
+.myTeamContent .column li{
+    display: inline-block;
+    float: left;
+}
+
+.myTeamContent .column li.badge{
+    margin-right: 14px ;
+    background-color: #fff;
+}
+
+.myTeamContent .column li.content{
+    width: 55%;
+}
+
+.myTeamContent .column li.content > h5{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.myTeamContent .column li.content > p{
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+.myTeamContent .column li.status{
+    float: right;
+    width: 17%;
+}
+
+.myTeamContent .column li .currentSchool button{
+    margin: 10px 0;
+    width: 110px;
+    height: 30px;
+    background-color: #b4b4b4;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+.myTeamContent .column li .currentSchool.selected button{
+    background-color: #91c31e;
+}
+
+.myTeamContent .column li .approval-status button{
+    margin-left: 10px;
+    width: 70px;
+    color: #3C3C3C;
+}
+
+.myTeamContent .column li .approval-status.hasApproval button{
+    color: #91c31e;
+}
