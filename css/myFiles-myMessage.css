@@ -489,3 +489,271 @@ ul,ol,li{
 .myTeamContent .column li .approval-status.hasApproval button{
     color: #91c31e;
 }
+
+/*我的集体 加入集体*/
+.left_content_wrapper .left_content_body{
+    position: absolute;
+}
+.title {
+    margin: 20px 0 0 30px;
+    font-size: 16px;
+}
+
+.title .current{
+    color: #91c31e;
+    text-decoration: underline;
+}
+
+.green_line {
+    width: 660px;
+    height: 10px;
+    margin: 20px 0 0 10px;
+    background: url(../img/hp_share/green_line.png) no-repeat;
+}
+
+.joinTeam-container{
+    height: 180px;
+}
+
+.joinTeam-container .figure-img01{
+    display: inline-block;
+    float: left;
+    padding: 10px 0 0 10px;
+    width: 180px;
+}
+
+.joinTeam-container .search-group{
+    display: inline-block;
+    float: left;
+    margin: 30px 0 0 0;
+    width: 275px;
+    font-size: 14px;
+}
+
+.joinTeam-container .search-group label{
+    line-height: 25px;
+    text-align: right;
+}
+
+.joinTeam-container .search-group .form-search{
+    margin-bottom: 10px;
+}
+
+.joinTeam-container .search-group .form-search .btn{
+    margin-left: -26px;
+    padding: 0 5px;
+    height: 24px;
+    background-color: transparent;
+    color: #b4b4b4;
+    text-align: left;
+}
+
+.joinTeam-container .search-group .form-search .btn:visited{
+    border: none;
+}
+
+.joinTeam-container .search-class{
+    margin-top: 10px;
+    opacity: 0.5;
+}
+
+.joinTeam-container .newSchool{
+    margin-left: -25px;
+    padding-top: 30px;
+    display: inline-block;
+    float: left;
+    width: 240px;
+}
+
+.joinTeam-container .newSchool button, .newClass button{
+    width: 110px;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    background-color: #b4b4b4;
+    box-shadow: 1px 2px 0 #646464 ;
+    -webkit-box-shadow: 1px 2px 0 #646464 ;
+    -moz-box-shadow:1px 2px 0 #646464 ;
+}
+
+.joinTeam-container .newSchool button.new, .newClass button.new {
+    background-color: #91c31e;
+    -webkit-box-shadow: 1px 2px 0 #50a000 ;
+    -moz-box-shadow:1px 2px 0 #50a000 ;
+    box-shadow: 1px 2px 0 #50a000 ;
+}
+
+.figure-img02{
+    display: block;
+    padding: 320px 130px 550px;
+}
+
+/*弹出层*/
+.modal {
+    background-color: #FFFFFF;
+    border: 2px solid #91c31e;
+    border-radius: 4px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+    left: 50% !important;
+    top: 50% !important;
+    margin-left: -375px;
+    margin-top: -240px;
+    outline: 0 none;
+    position: fixed;
+    width: 750px;
+    height: 500px;
+    overflow: auto!important;
+}
+.modal-header{
+    position: fixed;
+    width: 750px;
+    height: 40px;
+    margin: 0 0 0 -2px;
+    background-color: #91c31e;
+    border-bottom: none;
+    z-index: 999;
+}
+.modal-header h3{
+    margin-top: -3px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+.modal-header .close{
+    margin-top: -9px !important;
+    opacity: 0.2;
+    font-size: 24px;
+}
+
+.modal-backdrop{
+    height: 500%!important;
+}
+
+.modal-backdrop.in{
+    opacity: 0.6;
+    z-index: 888;
+}
+
+.form-group-pop {
+    margin-top: 50px;!important;
+}
+
+.form-group-pop .form-group{
+    margin-bottom: 10px;
+}
+
+.form-group-pop .form-group label{
+    padding-right: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+}
+
+.radio-group{
+    margin: -7px 0 0 15px;
+    padding: 10px;
+    width: 293px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#selectAddress label{
+    width: 65px;
+    text-align: left;
+    font-size: 12px!important;
+    font-weight: normal;
+}
+
+.divider-hr {
+    margin: 20px 0 10px 25px;
+    width: 700px;
+    height: 1px;
+    background-color: #91c31e;
+}
+
+.btn-group{
+    display: block;!important;
+    width: 230px;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.btn-group a div button{
+    display: inline-block;
+    float: left;
+    padding: 0;
+    width: 110px;
+    height: 30px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.btn-group a div.selected button{
+    background-color: #91c31e;
+}
+
+.btn-group a div.disabled button{
+    margin-left: 10px;
+    background-color: #b4b4b4;
+}
+
+.apply-message{
+    width: 280px;
+    margin: 90px auto 60px;
+}
+
+.apply-message .success-icon {
+    display: inline-block;
+    float: left;
+    margin-right: 5px;
+    height: 30px;
+    font-size: 26px;
+    color: #91c31e;
+}
+
+.apply-message h4{
+    padding: 3px;
+}
+
+/*我的集体 班级*/
+.search-school input{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.search-class-onfocus {
+    opacity: 1!important;
+}
+
+.searchCondition .btn {
+    margin-left: 0px!important;
+    width: 138px;
+    border: 1px solid #b4b4b4;
+    border-radius: 0;
+}
+
+.searchCondition .dropdown-menu{
+    left: 90px;
+    border-radius: 0;
+}
+
+.searchCondition .dropdown-menu > li > a span {
+    padding-right: 10px;
+    color: #91c31e;
+}
+
+.newClass{
+    width: 230px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newClass button{
+    display: inline-block;
+    float: left;
+}
