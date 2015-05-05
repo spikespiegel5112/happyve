@@ -538,6 +538,8 @@ ul,ol,li{
 }
 
 .joinTeam-container .search-group label{
+    padding-right: 10px;
+    width: 80px;
     line-height: 25px;
     text-align: right;
 }
@@ -547,18 +549,19 @@ ul,ol,li{
     height: 24px;
 }
 
-.joinTeam-container .search-group .form-search .col-sm-6{
-    padding-left: 0;
+.joinTeam-container .search-group .form-search >input{
+    max-width: 145px;
+    padding-left: 10px!important;
 }
 
-.joinTeam-container .search-group .form-search >input{
-    max-width: 138px;
-    padding-left: 15px!important;
+.joinTeam-container .search-group .form-search >select{
+    width: 106px;
+    padding-left: 10px;
 }
 
 .joinTeam-container .search-group .form-search .btn{
-    margin-left: -35px;
-    padding: 0 0 0 15px;
+    margin-left: -33px;
+    padding: 0 0 0 10px;
     height: 24px;
     background-color: transparent;
     color: #b4b4b4;
@@ -698,9 +701,14 @@ ul,ol,li{
     overflow:hidden;
 }
 
+.dropdown.searchCondition{
+    width: 138px;
+    display: inline-block;
+}
+
 .searchCondition .btn {
     margin-left: 0px!important;
-    width: 138px;
+    width: 145px;
     border: 1px solid #b4b4b4;
     border-radius: 0;
 }
@@ -732,7 +740,7 @@ ul,ol,li{
     display: inline-block;
     float: left;
     position: relative;
-    left: 160px;
+    left: 175px;
     top: 40px;
     width: 60%;
 }
@@ -747,13 +755,8 @@ ul,ol,li{
     margin-top: 20px;
 }
 
-.pop-search-group .form-search{
-    display: inline-block;
-    width: 320px;
-}
-
 .pop-search-group .form-search >input{
-    max-width: 172px!important;
+    max-width: 222px!important;
 }
 
 .pop-search-group  .associationName{
