@@ -234,6 +234,7 @@ ul,ol,li{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+
 }
 
 .every-email .theme{
@@ -241,6 +242,7 @@ ul,ol,li{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
 }
 
 .every-email .time{
@@ -296,14 +298,17 @@ ul,ol,li{
     border: none;
     border-radius: 4px;
 }
+
 #outbox .btn-group > div, #newMessage .btn-group > div, .showPageContent .btn-group > div{
     display: inline-block;
     float: left;
 }
+
 #outbox .btn-group .selected button, #newMessage .btn-group .selected button, .showPageContent .btn-group .selected button{
     background-color: #91c31e;
     box-shadow: 1px 2px 1px #50a000;
 }
+
 #outbox .btn-group .disabled button, #newMessage .btn-group .disabled button, .showPageContent .btn-group .disabled button{
     margin: 0 10px;
     background-color: #b4b4b4;
@@ -343,6 +348,7 @@ ul,ol,li{
 .pagination > li .btn-group{
     display: inline;
 }
+
 .pagination .btn-group .dropdown-menu{
     margin: 20px 0 0 60px;
     min-width: 60px;
@@ -494,6 +500,7 @@ ul,ol,li{
 .left_content_wrapper .left_content_body{
     position: absolute;
 }
+
 .title {
     margin: 20px 0 0 30px;
     font-size: 16px;
@@ -531,17 +538,30 @@ ul,ol,li{
 }
 
 .joinTeam-container .search-group label{
+    padding-right: 10px;
+    width: 80px;
     line-height: 25px;
     text-align: right;
 }
 
 .joinTeam-container .search-group .form-search{
     margin-bottom: 10px;
+    height: 24px;
+}
+
+.joinTeam-container .search-group .form-search >input{
+    max-width: 145px;
+    padding-left: 10px!important;
+}
+
+.joinTeam-container .search-group .form-search >select{
+    width: 106px;
+    padding-left: 10px;
 }
 
 .joinTeam-container .search-group .form-search .btn{
-    margin-left: -26px;
-    padding: 0 5px;
+    margin-left: -33px;
+    padding: 0 0 0 10px;
     height: 24px;
     background-color: transparent;
     color: #b4b4b4;
@@ -554,7 +574,7 @@ ul,ol,li{
 
 .joinTeam-container .search-class{
     margin-top: 10px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .joinTeam-container .newSchool{
@@ -592,51 +612,6 @@ ul,ol,li{
 }
 
 /*弹出层*/
-.modal {
-    background-color: #FFFFFF;
-    border: 2px solid #91c31e;
-    border-radius: 4px;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-    left: 50% !important;
-    top: 50% !important;
-    margin-left: -375px;
-    margin-top: -240px;
-    outline: 0 none;
-    position: fixed;
-    width: 750px;
-    height: 500px;
-    overflow: auto!important;
-}
-.modal-header{
-    position: fixed;
-    width: 750px;
-    height: 40px;
-    margin: 0 0 0 -2px;
-    background-color: #91c31e;
-    border-bottom: none;
-    z-index: 999;
-}
-.modal-header h3{
-    margin-top: -3px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: bold;
-}
-.modal-header .close{
-    margin-top: -9px !important;
-    opacity: 0.2;
-    font-size: 24px;
-}
-
-.modal-backdrop{
-    height: 500%!important;
-}
-
-.modal-backdrop.in{
-    opacity: 0.6;
-    z-index: 888;
-}
-
 .form-group-pop {
     margin-top: 50px;!important;
 }
@@ -725,18 +700,20 @@ ul,ol,li{
     white-space:nowrap;
     overflow:hidden;
 }
-.search-class-onfocus {
-    opacity: 1!important;
+
+.dropdown.searchCondition{
+    width: 138px;
+    display: inline-block;
 }
 
 .searchCondition .btn {
     margin-left: 0px!important;
-    width: 138px;
+    width: 145px;
     border: 1px solid #b4b4b4;
     border-radius: 0;
 }
 
-.searchCondition .dropdown-menu{
+.search-class .dropdown-menu{
     left: 90px;
     border-radius: 0;
 }
@@ -756,4 +733,32 @@ ul,ol,li{
 .newClass button{
     display: inline-block;
     float: left;
+}
+
+/*我的集体 新建班级弹出层*/
+.pop-joinTeam-container{
+    display: inline-block;
+    float: left;
+    position: relative;
+    left: 175px;
+    top: 40px;
+    width: 60%;
+}
+
+.joinClass-img{
+    display: inline-block;
+    margin: 30px 0 20px 20px;
+    width: 120px;
+}
+
+.form-group-pop .btn-group{
+    margin-top: 20px;
+}
+
+.pop-search-group .form-search >input{
+    max-width: 222px!important;
+}
+
+.pop-search-group  .associationName{
+    margin-top: 30px;
 }
