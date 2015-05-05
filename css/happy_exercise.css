@@ -277,9 +277,11 @@ body{font-family: "microsoft yahei";}
 #calendar .week-days .month{display: none;}
 #calendar .cell-day:hover{cursor:pointer;}
 #calendar .week-days .active, #calendar .week-days .current .day{background: #eafebf;}
-#calendar .even_bg{background: #efffea;}
+#calendar .even_bg{background: #efffea;width: 100%;height: 100%;display: block;}
 .calendar_event_item{display:none;position: absolute;bottom: 0.1em;}
 .calendar_event_item a{display: inline-block;margin:0 0 0 0.3em;padding: 0.1em 0.2em;background: #9bcb27;border-radius: 3px;color: #fff;}
+.btn-toolbar{display: none;}
+.cell-day .number{display: none;}
 /*~~~~~~~~~~~keleyi_calendar~~~~~~~~~~~*/
 .calendar_main_wrapper tbody tr td label{float: right;}
 .calendar_main_wrapper tbody tr td span{float: left;}
