@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all"/>
 
 </head>
 <body>
@@ -102,7 +103,15 @@
                         <a href="#">申请列表</a>
                      </li>
                    </ul>
-                   <button class="btn append-btn" type="button">添加好友</button>
+                   <button id="add_friend1" onclick="add_friend1()" class="btn append-btn" type="button">添加好友</button>
+                   <div id="add-popup-fd" class="add-friend-popup">
+                   		<label class="popup-fd-title">添加好友</label>
+                        <input type="text" class="form-control" value="请输入名字">
+                        <div class="friend-btn-popup">
+                        	<a href="myfiles_friend.html" class="btn master-class-space add-friend-sure" type="button">确定</a>
+                        	<a href="myfiles_friend.html" class="btn agree-class-space add-friend-sure" type="button">取消</a>
+                        </div>
+                   </div>
               </div>
        		  <div class="content-friend-my">
               	<ul class="mine-friend-sort">
@@ -441,7 +450,11 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-
+<script type="text/javascript">
+function add_friend1(){
+    document.getElementById('add-popup-fd').style.display='block'; 
+}
+</script>
 
 </body>
 </html>

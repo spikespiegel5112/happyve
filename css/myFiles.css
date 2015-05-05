@@ -454,11 +454,50 @@
 .nom-bot-foot{
 	border-bottom:none;
 }
+
+.modal.hei-mail{
+	height:210px;
+}
+.phone-popup .ok-girl-mail{
+	margin:60px auto 0;
+	overflow:hidden;
+	width:350px;
+
+}
+.phone-popup .ok-girl-mail img{
+	float:left;
+	vertical-align:middle;
+	width:100px;
+	height:68px;
+}
+.phone-popup .ok-girl-mail .text-amend-mail{
+	height:68px;
+	display:block;
+	float:left;
+	font:14px/68px "微软雅黑";
+	margin:0 0 0 10px;
+}
+.divider-hr-ph{
+	width:700px;
+	border-top:1px solid #91c81e;
+	margin:0 auto;
+	overflow:hidden;
+	height:56px;
+	padding:22px 0 0 224px;
+}
+.divider-hr-ph .mail-ph-save{
+	width:116px;
+	height:30px;
+}
+.divider-hr-ph .btn{
+	float:left;
+	margin-right:10px;
+}
 /*安全设置-修改密码*/
 .amend-inpt{
 	width:560px;
 	margin-left:46px;
-	height:150px;
+	height:160px;
 	background: url(../img/brush-dc.jpg) right center no-repeat;
 	
 }
@@ -479,7 +518,7 @@
 	display:block;
 	width:250px;
 	height:24px;
-	padding:0;
+	padding:0 0 0 4px;
 	font-size:14px;
 	
 }
@@ -507,7 +546,7 @@
 }
 .amend-btn-box{
 	width:654px;
-	margin:55px auto 0;
+	margin:45px auto 0;
 	padding-top:22px;
 	border-top:1px solid #91c81e;
 }
@@ -532,11 +571,16 @@
 .amed-inpt-list .inp-sign-sm{
 	width:74px;
 }
+.amed-inpt-list .inp-sign-ph{
+	width:136px;
+	text-align:left;
+	padding-left:4px;
+}
 
 .amend-inpt-mail{
 	width:560px;
 	margin-left:46px;
-	height:150px;
+	height:160px;
 	background: url(../img/mail-my.jpg) right center no-repeat;
 	
 }
@@ -567,9 +611,9 @@
 	text-decoration: underline;
 	}
 .friend-nav-my{
-	overflow:hidden;
 	width:704px;
 	padding-bottom:14px;
+	position:relative;
 }
 .friend-list-mine{
 	color:#3c3c3c;
@@ -602,6 +646,48 @@
 	position:absolute;
 	top:40px;
 	left:60px;
+}
+#add-popup-fd{
+	display:none;
+}
+.add-friend-popup{
+	position:absolute;
+	top:40px;
+	right:0;
+	width:310px;
+	height:162px;
+	border:1px solid #9c9c9c;
+	z-index:1000;
+	background-color:#fff;
+}
+.popup-fd-title{
+	font:14px "微软雅黑";
+	color:#3c3c3c;
+	text-align:center;
+	display:block;
+	margin:10px auto 4px;
+}
+.add-friend-popup input{
+	width:250px;
+	height:26px;
+	padding:0;
+	text-align:center;
+	margin:0 auto;
+} 
+.add-friend-popup  .friend-btn-popup{
+	overflow:hidden;
+	width:256px;
+	height:34px;
+	margin:34px 0 0 22px;
+}
+.friend-btn-popup .add-friend-sure{
+	float:left;
+	width:116px;
+	height:30px;
+	margin:0 0 0 10px;
+}
+.friend-btn-popup a{
+	color:#fff;
 }
 .friend-nav-my button{
 	float:right;
@@ -861,6 +947,76 @@
 #collect-micro{
 	display:none;
 }
+/*安全设置 手机*/
 
+.amend-inpt-phone{
+	width:560px;
+	margin-left:46px;
+	height:164px;
+	background: url(../img/phone-write.png) right center no-repeat;
+	position:relative;
+}
+.write-phone-ri{
+	position:absolute;
+	top:20px;
+	left:458px;
+}
+.smile-phone{
+	position:absolute;
+	top:20px;
+	left:458px;
+}
+.verify-phone{
+	width:344px;
+	height:104px;
+	background-color:#d9d9d9;
+	margin:10px 0 0 0;
+}
+.verify-phone p{
+	font:12px/18px "宋体";
+	color:#3c3c3c;
+	padding:12px 6px 0;
+}
+.verify-phone .btn-default{
+	width:130px;
+	height:28px;
+	color:#91c81e;
+	text-align:center;
+	padding:0;
+	float:right;
+	margin:0 40px 8px 0;
+}
+.amed-inpt-list .inp-sign-check{
+	width:74px;
+	height:24px;
+	padding-left:6px;
+}
+.amed-inpt-list .phone-note{
+	margin-left:78px;
+}
+.amend-inpt-phone .bound-num{
+	height:24px;
+	font:14px/24px "微软雅黑";
+	color:#3c3c3c;
+	margin:0 0 4px 0;
+}
+
+#bound_second{
+	display:none;
+}
+
+#amend_second{
+	display:none;
+}
+#amend_third{
+	display:none;
+}
+#amend_four{
+	display:none;
+}
+#cancel_second{
+	display:none;
+}
+ 
 /* CSS Document */
 

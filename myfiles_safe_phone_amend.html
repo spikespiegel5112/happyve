@@ -18,8 +18,6 @@
     
     <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all"/>
 
 </head>
 <body>
@@ -91,23 +89,78 @@
             <div class="footprint-text">
               <p class="shade-link">安全设置</p>
               <div class="footprint-content">
-            	<div class="secret-alter"><span>绑定邮箱</span></div>
-                 <ul class="amend-inpt-mail">
-                	<li class="amed-inpt-list">
-                		<label  class="lab-sign" >邮箱：</label><input type="email" class="form-control inp-sign-re" >
-                	</li>
-                    <li class="amed-inpt-list">
-                		<label  class="lab-sign" ></label><input type="button" class="btn btn-default" value="发送验证码" >
-                	</li>
-                    <li class="amed-inpt-list">
-                		<label  class="lab-sign" >输入验证码：</label><input type="text" class="form-control inp-sign-sm">
-                	</li>
-                </ul>
-                <div class="amend-btn-box">
-                	<button class="btn master-class-space amend-btn" type="button" data-trigger="modal" data-title="温馨提示" data-target="#phone-mail">完成修改</button>
+              	<div class="secret-alter"><span>修改手机</span></div>
+                
+                <!-- 修改 手机第一步-->
+                <div id="amend_first">
+                     <ul class="amend-inpt-phone">
+                        <p class="bound-num">您当前要绑定的手机号码：18362626262</p>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign  phone-note" ></label><input type="button" class="btn btn-default" value="获取短信验证码" >
+                        </li>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign phone-note" >校验码：</label><input type="text" class="form-control inp-sign-sm ">
+                        </li>
+                    </ul>
+                    <div class="amend-btn-box">
+                        <button id="amend1" onclick="amend1()" class="btn master-class-space amend-btn" type="submit">下一步</button>
+                    </div>
                 </div>
-                  
-            </div>
+                
+                <!-- 修改 手机第二步-->
+                <div id="amend_second">
+                     <ul class="amend-inpt-phone">
+                        <p class="bound-num">您当前要绑定的手机号码：18362626262</p>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign  phone-note" ></label><input type="button" class="btn btn-default" value="25秒后重新获取" >
+                        </li>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign phone-note" >校验码：</label><input type="text" class="form-control inp-sign-sm " value="3456">
+                        </li>
+                    </ul>
+                    <div class="amend-btn-box">
+                        <button id="amend2" onclick="amend2()" class="btn master-class-space amend-btn" type="submit">下一步</button>
+                    </div>
+                </div>
+                
+                <!-- 修改 手机第三步-->
+                <div id="amend_third">
+                     <ul class="amend-inpt-mail">
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign" >新手机号：</label><input type="email" class="form-control inp-sign-ph" >
+                        </li>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign" ></label><input type="button" class="btn btn-default" value="获取短信验证码" >
+                        </li>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign" >校验码：</label><input type="text" class="form-control inp-sign-sm">
+                        </li>
+                    </ul>
+                    <div class="amend-btn-box">
+                        <button id="amend3" onclick="amend3()" class="btn master-class-space amend-btn" type="submit">下一步</button>
+                    </div>
+                </div>
+                
+                <!-- 修改 手机第四步-->
+                <div id="amend_four">
+                     <ul class="amend-inpt-mail">
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign" >新手机号：</label><input type="email" class="form-control inp-sign-ph" value="18362626262">
+                        </li>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign" ></label><input type="button" class="btn btn-default" value="25秒后重新获取" >
+                        </li>
+                        <li class="amed-inpt-list">
+                            <label  class="lab-sign" >校验码：</label><input type="text" class="form-control inp-sign-sm" value="1234">
+                        </li>
+                    </ul>
+                    <div class="amend-btn-box">
+                        <button  class="btn master-class-space amend-btn" type="button">完成修改</button>
+                    </div>
+                </div>
+          
+                
+             </div>
             </div>
         
     
@@ -164,32 +217,33 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
-<!--弹出层-->
-<div class="modal fade hei-mail" id="phone-mail">
-    <div class="modal-header">
-        <a class="close" href="#" data-dismiss="modal">×</a>
-        <h3>温馨提示</h3>
-    </div>
-    <div class="phone-popup">
-    	<div class="ok-girl-mail">
-    		<img src="img/ok-phone.jpg" width="100" height="68" alt="ok girl">
-        	<p class="text-amend-mail">”邮件已发送成功，请去邮箱查看”</p>
-        </div>
-        <div class="divider-hr-ph">
-            <a href="myfiles_safe_mail.html"><div class=""><button type="button" class="btn master-class-space mail-ph-save">确定</button></div></a>
-            <a href="myfiles_safe_mail.html"><div class=""><button type="button" class="btn agree-class-space mail-ph-save">取消</button></div></a>
-        </div>
-    </div>
-
-</div>
-
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="assets/js/sco.modal.js"></script>
+
+<script type="text/javascript">
+function amend1(){
+	document.getElementById('amend_first').style.display='none';
+    document.getElementById('amend_second').style.display='block';
+	document.getElementById('amend_third').style.display='none';
+	document.getElementById('amend_four').style.display='none'; 
+}
+function amend2(){
+	document.getElementById('amend_first').style.display='none';
+    document.getElementById('amend_second').style.display='none';
+	document.getElementById('amend_third').style.display='block';
+	document.getElementById('amend_four').style.display='none'; 
+}
+function amend3(){
+	document.getElementById('amend_first').style.display='none';
+    document.getElementById('amend_second').style.display='none';
+	document.getElementById('amend_third').style.display='none';
+	document.getElementById('amend_four').style.display='block'; 
+}
+</script>
 
 </body>
 </html>
