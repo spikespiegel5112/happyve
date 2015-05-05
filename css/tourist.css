@@ -1,4 +1,55 @@
 @charset "utf-8";
+.layout-ourist-wrapper{/*float:right;*/width: 258px;height:300px;position:relative;right: 16px;top: 20px; margin:40px 0 40px 0;}
+.layout-ourist-wrapper:after{content: "";display: block;clear: both;}
+.login-tourist-title{
+	width:258px;
+	height:44px;
+	background-color:#9bcb27;
+	text-align:center;
+	border-bottom:1px solid #379700;
+	font:16px/44px "微软雅黑";
+	color:#fff;
+	margin:0 auto;
+}
+.tourist-border-ne{
+    width:0;
+    height:0;
+    border-width:12px 0 0 20px ;
+    border-style:solid;
+    border-color:#379700 transparent transparent transparent;
+    position: absolute;
+	top:44px;
+	left:0;
+}
+.tourist-border-nw{
+    width:0;
+    height:0;
+    border-width:12px 20px 0 0;
+    border-style:solid;
+    border-color:#379700 transparent transparent transparent;
+/*    margin:40px auto;*/
+    position: absolute;
+	top:44px;
+	right:0;
+}
+.several-style-log{
+	width:218px;
+	height:160px;
+	background-color:#dcf3b2;
+	margin-left:20px;
+	box-shadow:  4px 4px 4px #c4c4c2;
+    -moz-box-shadow:  4px 4px 4px #c4c4c2;
+    -webkit-box-shadow:  4px 4px 4px #c4c4c2;
+}
+.several-style-log ul{
+	padding:12px 0 ;
+	margin:0 0 0 18px;
+}
+.several-style-log .tourist-id-btn{
+	width:186px;
+	height:34px;
+	margin:0 0 16px 16px;
+}
 .vist-right{
 	display:block; 
 	width:128px; 
@@ -29,7 +80,7 @@
     -moz-border-radius: 0 0 10px 10px;      /* Gecko browsers */
     -webkit-border-radius: 0 0 10px 10px;   /* Webkit browsers */
     border-radius:0 0 10px 10px;            /* W3C syntax */
-    margin: 10px 0 0 0 ;
+    margin: 10px 0 20px 0 ;
 }
 
 .slide-tourist .hd-tourist {
