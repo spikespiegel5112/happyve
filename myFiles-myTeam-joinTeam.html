@@ -7,28 +7,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-    <title>幸福流-快乐测评</title>
+    <title>幸福流-我的档案-我的集体</title>
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
-
+    
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
 
     <!-- 自己页面的样式文件 -->
     <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/hp_test.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/myFiles-myMessage.css" type="text/css" media="all">
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
 <div class="header_container">
     <div class="header_login_wrapper">
         <ul>
-            <li><a href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 我的信息</a>
-            </li>
-            <li><a href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人信息</a></li>
-            <li><a href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> 在线帮助</a>
-            </li>
+            <li><a  href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
+            <li><a  href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
+            <li><a  href="javascript:;"><span class="glyphicon glyphicon-comment" aria-hidden="true" ></span> 在线帮助</a></li>
         </ul>
     </div>
     <div class="nav_wrapper">
@@ -41,9 +39,9 @@
                     <a class="nav_main_button" href="javascript:;">快乐大本营<b class="caret"></b></a>
                     <ul class="nav_dropdown_item">
                         <span></span>
-                        <li><a href="happy_camp.html">训练营</a></li>
-                        <li><a href="javascript:;">师徒行</a></li>
-                        <li><a href="javascript:;">大秀场</a></li>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
                     </ul>
                 </li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
@@ -64,7 +62,7 @@
     <div class="main_content_wrapper">
 
         <div class="left_content_wrapper">
-            <!--放页面banner-->
+            <!-- 放页面banner-->
             <!--<div class="banner_wrapper">-->
                 <!--<div class="hp_test_home_banner">-->
                     <!--<a href="javascript:;">-->
@@ -83,59 +81,34 @@
 
             <!-- 页面左部分区域 -->
             <div class="left_content_body">
-                <div class="back">
-                    <a href="javascript:;">&lt;&lt; 返回</a>
+                <div class="title">
+                    <a href="javascript:;">我的档案 &gt; 我的集体 &gt; <a href="javascript:;" class="current">加入集体</a></a>
                 </div>
                 <div class="green_line"></div>
-                <div class="test_banner">
-                    <div class="tenacity"><p>韧性</p></div>
-                    <div class="tenacity_detail">
-                        <p class="question">如何应对倒霉？</p>
-
-                        <p class="test-number"><span>12568</span>已测试过 &nbsp;&nbsp;<span>3456</span>已收藏</p>
-
-                        <hr class="gray-line"/>
-                        <div class="question-number">
-                            <p class="left">当前第<span>1</span>题</p>
-
-                            <p class="right">本测试共<span>4</span>题</p>
-                        </div>
+                <div class="joinTeam-container">
+                    <div class="figure-img01"><img src="img/magnifier01.png" /></div>
+                    <div class="search-group">
+                        <form class="form-search search-school">
+                            <label class="col-lg-4">查找学校:</label>
+                            <input type="text" class="input-medium search-query col-lg-6" placeholder="请输入学校名称">
+                            <button type="submit" class="btn glyphicon glyphicon-search"></button>
+                        </form>
+                        <form class="form-search search-class">
+                            <label class="col-lg-4">查找:</label>
+                            <input type="text" class="input-medium search-query col-lg-6" placeholder="班级">
+                            <button type="submit" class="btn glyphicon glyphicon-search"></button>
+                        </form>
                     </div>
-                    <div><img src="img/img_hp_test/rxhead.jpg"></div>
-                </div>
-                <div class="test_questions">
-                    <form action="" method="">
-                        4.你经常期待美梦成真？<br/><br/>
-                        <input name="iCheck" checked type="radio" value="" id="fcbfh"/><label for="fcbfh">非常不符合 </label><br/>
-                        <input name="iCheck" type="radio" value="" id="bfh"/><label for="bfh">不符合</label><br/>
-                        <input name="iCheck" type="radio" value="" id="ydbfh"/><label for="ydbfh">有点不符合</label><br/>
-                        <input name="iCheck" type="radio" value="" id="hns"/><label for="hns">很难说</label><br/>
-                        <input name="iCheck" type="radio" value="" id="ydfh"/><label for="ydfh">有点符合 </label><br/>
-                        <input name="iCheck" type="radio" value="" id="fh"/><label for="fh">符合 </label><br/>
-                        <input name="iCheck" type="radio" value="" id="fcfh"/><label for="fcfh">非常符合 </label><br/>
-                    </form>
-                    <div class="pre_question"><a href="javascript:;" target="_blank"><span>上一题</span></a></div>
-                    <div class="submit"><a href="javascript:;" target="_blank"><span>提交</span></a></div>
-                </div>
-                <div class="recommend recommend_test">
-                    <img src="img/img_hp_test/hp_test_recommend.png">
-                    <ul>
-                        <li><a href="javascript:;">你是否经常担心自己做错事情了？</a></li>
-                        <li><a href="javascript:;">每次参加重要活动前的晚上，你不是经常提早醒来，或者睡不着觉？</a></li>
-                        <li><a href="javascript:;">心里是不是总闷闷的，有种释放不出来的感觉？</a></li>
-                        <li><a href="javascript:;">你认为安静的自娱远远胜过热闹的宴会么？</a></li>
-                        <li><a href="javascript:;">与他人比较时，我是不是觉得：自己与别人是不同，我是比较突出的？</a></li>
-                        <li><a href="javascript:;">有没有觉得也要经常回报那些爱着自己的人么？</a></li>
-                        <li><a href="javascript:;">当你这次考了全班第一后，你会拼命争取去考你那几第一吗？</a></li>
-                        <li><a href="javascript:;">你觉得爸爸妈妈爱你吗？</a></li>
-                    </ul>
-                </div>
+                    <div class="newSchool">
+                        <button class="new" data-trigger="modal" data-title="新建学校" data-target="#newSchool">新建学校</button>
+                        <button>放弃</button>
+                    </div>
 
-                <div class="white-space"></div>
+                </div>
+                <div class="figure-img02"><img src="img/comeon-joinus.png" /> </div>
             </div>
-
-
         </div>
+
         <div class="right_content_wrapper">
             <div class="layout_dashboard_wrapper">
                 <ul class="layout_dashboard_indication_hover_wrapper">
@@ -147,8 +120,7 @@
                     <img src="img/img_wbl/zhiyongshuangquan_text_00000.png" width="300" height="300">
                 </div>
                 <div class="layout_dashboard_bg">
-                    <img id="user-level-disk-img" src="img/img_wbl/zhiyongshuangquan_bg_00000.png" alt="" width="300"
-                         height="300">
+                    <img id="user-level-disk-img" src="img/img_wbl/zhiyongshuangquan_bg_00000.png" alt="" width="300" height="300">
                 </div>
                 <div class="layout_dashboard_indicator">
                     <img src="img/img_wbl/zhiyongshuangquan_indicator_00000.png" alt="用户等级" width="300" height="300">
@@ -163,8 +135,7 @@
             <div class="userinfo_wrapper">
                 <div class="user_name">
                     <span class="space-user">
-                        <a href="javascript:;" class="user_header"><img class="s-header-photo" src="img/space-head.jpg"
-                                                                        alt="人物头像" width="50px" height="50px"></a>
+                        <a href="javascript:;" class="user_header"><img class="s-header-photo" src="img/space-head.jpg" alt="人物头像" width="50px" height="50px"></a>
                         <dl id="user_sc">
                             <dt class="name">邢伟伟</dt>
                             <dt class="school_name"><span class="school-icon"></span> 北京市八十一中学</dt>
@@ -172,10 +143,8 @@
                     </span>
                 </div>
                 <div class="user_friend">
-                    <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 好友 <span
-                            class="badge">10</span></a>
-                    <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span
-                            class="badge">10</span></a>
+                    <a class=""><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 好友 <span class="badge">10</span></a>
+                    <a class=""><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 收藏 <span class="badge">10</span></a>
                 </div>
             </div>
             <div class="user-content user-tag">
@@ -299,7 +268,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>   
 </div>
 <!-- 内容区域 结束 -->
 
@@ -307,7 +276,6 @@
 <div class="footer_container">
     <div class="f-partner">
         <span><img src="img/bottom-link.jpg"></span>
-
         <p>
             <a href="javascript:;">忆尔</a>
             <a href="javascript:;">清华积极心理研究中心</a>
@@ -322,7 +290,6 @@
             <a href="javascript:;">博浪网</a>
             <a href="javascript:;">智康堂</a>
         </p>
-
         <p>
             <a href="javascript:;">忆尔</a>
             <a href="javascript:;">清华积极心理研究中心</a>
@@ -341,20 +308,10 @@
 
     <div class="footer_sns_wrapper">
         <div class="sns-container">
-            <a target="_blank" href="javascript:;">
-                <div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img
-                        src="img/SinaWeibo.png"></div>
-            </a>
-            <a target="_blank" href="javascript:;">
-                <div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img
-                        src="img/TencentWeibo.png"></div>
-            </a>
-            <a target="_blank" href="javascript:;">
-                <div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div>
-            </a>
-            <a target="_blank" href="javascript:;">
-                <div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div>
-            </a>
+            <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
+            <a target="_blank" href="javascript:;"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
+            <a target="_blank" href="javascript:;"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
+            <a target="_blank" href="javascript:;"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
         </div>
     </div>
 </div>
@@ -364,6 +321,167 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<!--新建学校-->
+<div class="modal fade" id="newSchool">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>新建学校</h3>
+    </div>
+
+    <div class="form-group-pop">
+
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="schoolName" class="col-sm-4 control-label">学校名称：</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="schoolName" placeholder="请输入学校名称">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address" class="col-sm-4 control-label">所属省份：</label>
+                <div class="col-sm-5">
+                    <button class="btn btn-default dropdown-toggle col-sm-3" type="button" id="address" data-toggle="dropdown" aria-expanded="true">
+                        北京
+                        <span class="caret"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-4 control-label"></label>
+                <div class="radio-group col-sm-5" id="selectAddress">
+                    <label>
+                        <input type="radio" name="iCheck" value="" checked>&nbsp;&nbsp;北京
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
+                    </label>
+                    <label>
+                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="areaCode" class="col-sm-4 control-label">区号：</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="areaCode" value="010">
+                </div>
+            </div>
+        </form>
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a href="#applySuccess" data-trigger="modal" data-title="申请加入" data-target="#applySuccess"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+</div>
+<!--提交申请成功-->
+<div class="modal fade" id="applySuccess">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>申请加入</h3>
+    </div>
+    <div class="form-group-pop">
+        <div class="apply-message">
+            <div class="success-icon glyphicon glyphicon-ok-sign"></div>
+            <h4>申请已提交，请留意系统信息</h4>
+        </div>
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a href="myFiles-myTeam-joinTeam.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -371,21 +489,20 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
-
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script type="text/javascript" src="assets/js/icheck.js"></script>
 <script>
     $(document).ready(function () {
         changeButtonCss();
         function changeButtonCss() {
-            $(".test_questions input").iCheck({
+            $("#selectAddress input").iCheck({
                 checkboxClass: 'icheckbox_minimal-green',  // 注意square和blue的对应关系,用于type=checkbox
                 radioClass: 'iradio_minimal-green', // 用于type=radio
-                increaseArea: '20%' // 增大可以点击的区域
+                increaseArea: '10%' // 增大可以点击的区域
             });
         }
     });
 </script>
-
 
 </body>
 </html>
