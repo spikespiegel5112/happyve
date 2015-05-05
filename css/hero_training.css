@@ -73,6 +73,9 @@
     width: 160px;
     margin: 0 auto;
     background: #91c31e;
+/*
+    color: #fff;
+*/
     font-size: 16px;
     font-weight: bold;
     line-height: 30px;
@@ -94,7 +97,7 @@
 }
 
 .training_button_interested a {
-    color: #ffffff;
+    color: #fff;
 }
 .hero_training_oldtimey{
     margin-left: 15px;
@@ -104,7 +107,9 @@
     height: 30px;
     margin-top: 85px;
 }
-
+.hero_training_oldtimey .container{
+    padding-left: 12px;
+}
 /*往期回顾默认*/
 .hero_training_waitingforyou {
     margin: 10px 0 0 10px;
@@ -132,9 +137,10 @@
 }
 
 .match-height .act-item, .class-info .act-item {
+    display: inline-block;
     width: 5%;
     min-width: 210px;
-    margin: 0 5px;
+    margin: 10px 5px;
     padding: 0 0;
 }
 
@@ -166,7 +172,7 @@
 
 /*英雄训练营详情页默认*/
 .class-list .container {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .class-list .trainingcamp_ad {
     margin: 10px 0 0 40px;
@@ -304,4 +310,71 @@
 .hero_splendidmoment .mien-name {
     width: 100%;
     padding: 0 20px;
+}
+/*弹出层 我感兴趣*/
+/*没有开班*/
+.pop-container{
+    margin-top: 64px;
+}
+
+.pop-container .beInterested-content{
+    margin: 0 auto;
+    width: 350px;
+}
+
+.pop-container .beInterested-content .form-group{
+    margin-bottom: 10px;
+}
+
+.pop-container .beInterested-content .col-title{
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.pop-container .beInterested-content .col-input{
+    width: 250px;
+    height: 30px;
+}
+
+.pop-container .btn-group{
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*开班列表*/
+.pop-container h4{
+    margin: 0 auto;
+    width: 80px;
+}
+.pop-container .class-list .container{
+    padding-left: 40px;
+    width: 715px;
+}
+
+.training_button_interested.disabled{
+    background-color: #b4b4b4;
+    box-shadow: 1px 2px 1px #646464;
+    -moz-box-shadow: 1px 2px 1px #646464;
+    -webkit-box-shadow: 1px 2px 1px #646464;
+}
+
+.training_button_interested.disabled:hover {
+    background-color: #91c31e;
+    box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -moz-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+    -webkit-box-shadow: 0 2px 8px rgba(145, 200, 30, 0.8);
+}
+
+.pop-container .act-item .number-statistics{
+    margin: 18px 0;
+    font-size: 16px;
+    font-weight: normal;
 }

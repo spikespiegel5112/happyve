@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
 
     <!-- 自己页面的样式 -->
+    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hero_training.css" type="text/css" media="all">
     <!-- 自己页面的样式 -->
 
@@ -102,7 +103,7 @@
                                     <p>北京第请简单介绍下八十一中学春季篮球赛，篮球最为团体项目，有利于培养学生的团队意识，同时加强锻炼身体，同时有利于成绩提高。</p>
 
                                     <div class="training_button_interested">
-                                        <a href="javascript:;" title="我感兴趣" target="_blank">我感兴趣</a>
+                                        <a href="#beInterested" data-trigger="modal" data-title="我感兴趣" data-target="#beInterested">我感兴趣</a>
                                     </div>
                                 </div>
                             </div>
@@ -117,7 +118,7 @@
                                     <p>北京第请简单介绍下八十一中学春季篮球赛，篮球最为团体项目，有利于培养学生的团队意识，同时加强锻炼身体，同时有利于成绩提高。</p>
 
                                     <div class="training_button_interested">
-                                        <a href="javascript:;" title="我感兴趣" target="_blank">我感兴趣</a>
+                                        <a href="#beInterested" data-trigger="modal" data-title="我感兴趣" data-target="#beInterested">我感兴趣</a>
                                     </div>
                                 </div>
                             </div>
@@ -308,6 +309,47 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<!--我感兴趣-->
+<div class="modal fade" id="beInterested">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>我感兴趣</h3>
+    </div>
+    <div class="pop-container">
+        <div class="beInterested-content">
+            <div class="form-group">
+                <label class="col-title" for="schoolName">学校名称：</label>
+                <input type="text" class="form-control col-input"  id="schoolName" name="" value="" placeholder="请输入学校名称"/>
+            </div>
+            <div class="form-group">
+                <label class="col-title" for="className">班级：</label>
+                <input type="text" class="form-control col-input" style="width: 140px" id="className" name="" value="" placeholder="请输入班级名称"/>
+            </div>
+            <div class="form-group">
+                <label class="col-title" for="contact">联系人：</label>
+                <input type="text" class="form-control col-input" style="width: 140px" id="contact" name="" value="" />
+            </div>
+            <div class="form-group">
+                <label class="col-title" for="phone">电话：</label>
+                <input type="text" class="form-control col-input" style="width: 140px" id="phone" name="" value="" />
+            </div>
+            <div class="form-group">
+                <label class="col-title" for="e-mail">邮箱：</label>
+                <input type="text" class="form-control col-input" id="e-mail" name="" value="" />
+            </div>
+
+
+        </div>
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a href="hero_training_initialize.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="hero_training_initialize.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -315,6 +357,8 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
 
 </body>
 </html>
