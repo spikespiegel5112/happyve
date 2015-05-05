@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
 
     <!-- 自己页面的样式文件 -->
-    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/myFiles-myMessage.css" type="text/css" media="all">
 </head>
 <body>
@@ -102,21 +101,19 @@
                                 </button>
                                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="myFiles-myTeam-joinTeam-class-content.html"><span class="glyphicon glyphicon-minus-sign"></span>班级</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-minus-sign"></span>社团 </a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="myFiles-myTeam-joinTeam-association.html"><span class="glyphicon glyphicon-minus-sign"></span>社团 </a></li>
                                     <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span class="glyphicon glyphicon-minus-sign"></span>部门</a></li>
-
                                 </ul>
                             </div>
-
                         </form>
                     </div>
                     <div class="newSchool">
-                        <button data-trigger="modal" data-title="新建学校" data-target="#newSchool">新建学校</button>
+                        <button>新建学校</button>
                         <button>放弃</button>
                     </div>
 
                 </div>
-                <div class="figure-img02"><img src="" style="height: 300px"/> </div>
+                <div class="whiteSpace" style="width: 100%; height: 1166px"></div>
             </div>
         </div>
 
@@ -500,19 +497,6 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
-<script type="text/javascript" src="assets/js/icheck.js"></script>
-<script>
-    $(document).ready(function () {
-        changeButtonCss();
-        function changeButtonCss() {
-            $("#selectAddress input").iCheck({
-                checkboxClass: 'icheckbox_minimal-green',  // 注意square和blue的对应关系,用于type=checkbox
-                radioClass: 'iradio_minimal-green', // 用于type=radio
-                increaseArea: '10%' // 增大可以点击的区域
-            });
-        }
-    });
-</script>
 
 </body>
 </html>

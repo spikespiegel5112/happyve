@@ -234,6 +234,7 @@ ul,ol,li{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+
 }
 
 .every-email .theme{
@@ -241,6 +242,7 @@ ul,ol,li{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
 }
 
 .every-email .time{
@@ -540,8 +542,8 @@ ul,ol,li{
 }
 
 .joinTeam-container .search-group .form-search .btn{
-    margin-left: -26px;
-    padding: 0 5px;
+    margin-left: -35px;
+    padding: 0 0 0 15px;
     height: 24px;
     background-color: transparent;
     color: #b4b4b4;
@@ -592,51 +594,6 @@ ul,ol,li{
 }
 
 /*弹出层*/
-.modal {
-    background-color: #FFFFFF;
-    border: 2px solid #91c31e;
-    border-radius: 4px;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
-    left: 50% !important;
-    top: 50% !important;
-    margin-left: -375px;
-    margin-top: -240px;
-    outline: 0 none;
-    position: fixed;
-    width: 750px;
-    height: 500px;
-    overflow: auto!important;
-}
-.modal-header{
-    position: fixed;
-    width: 750px;
-    height: 40px;
-    margin: 0 0 0 -2px;
-    background-color: #91c31e;
-    border-bottom: none;
-    z-index: 999;
-}
-.modal-header h3{
-    margin-top: -3px;
-    font-size: 16px;
-    color: #fff;
-    font-weight: bold;
-}
-.modal-header .close{
-    margin-top: -9px !important;
-    opacity: 0.2;
-    font-size: 24px;
-}
-
-.modal-backdrop{
-    height: 500%!important;
-}
-
-.modal-backdrop.in{
-    opacity: 0.6;
-    z-index: 888;
-}
-
 .form-group-pop {
     margin-top: 50px;!important;
 }
@@ -756,4 +713,34 @@ ul,ol,li{
 .newClass button{
     display: inline-block;
     float: left;
+}
+
+/*我的集体 新建班级弹出层*/
+.pop-joinTeam-container{
+    display: inline-block;
+    float: left;
+    position: relative;
+    left: 160px;
+    top: 40px;
+    width: 60%;
+}
+.pop-joinTeam-container .pop-search-group{
+    width: 320px;
+}
+.joinClass-img{
+    display: inline-block;
+    margin: 30px 0 20px 20px;
+    width: 120px;
+}
+
+.form-group-pop .btn-group{
+    margin-top: 20px;
+}
+
+.pop-search-group .form-search{
+    display: inline-block;
+}
+
+.pop-search-group  .associationName{
+    margin-top: 30px;
 }
