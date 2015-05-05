@@ -55,8 +55,8 @@ var lFtv = new Array(
 "1224 小年")
 window.onload=function(){
 
-   // initial();
-   // changeCld();
+   initial();
+   changeCld();
 }
 //返回农历y年的总天数
 function lYearDays(y) {

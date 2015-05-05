@@ -81,33 +81,33 @@
                         统计：您在过去的1个月，您度过<label>20</label>个美好的日子
                     </div>
                 </div>
-            <!-- <FORM  name=CLD>
+            <FORM  name=CLD>
             <TABLE id="calendar" class="calendar_main_wrapper" cellpadding="0" cellspacing="0">
                 <div class="calendar_dateselect_wrapper">
-                        <SELECT name=SY onchange=changeCld()> 
-                            <SCRIPT language="JavaScript">
-                                for(i=1900;i<2050;i++) document.write('<option>'+i);
-                            </SCRIPT>
-                        </SELECT> 年 <SELECT name=SM onchange=changeCld() style="FONT-SIZE: 9pt"> 
+                    <SELECT name=SY> 
                         <SCRIPT language="JavaScript">
-                        for(i=1;i<13;i++) document.write('<option>'+i);
+                            for(i=1901;i<2050;i++) document.write('<option>'+i);
                         </SCRIPT>
-                        </SELECT> 月 </FONT>
-                        <FONT color=#ffffff face=宋体 id=GZ style="FONT-SIZE: 12pt"></FONT>
-                    </div>
-                    <DIV>
-                        <FONT style="FONT-SIZE: 9pt">公历 
-                        <SELECT name=SY onchange=changeCld()> 
-                            <SCRIPT language="JavaScript">
-                                for(i=1900;i<2050;i++) document.write('<option>'+i);
-                            </SCRIPT>
-                        </SELECT> 年 <SELECT name=SM onchange=changeCld() style="FONT-SIZE: 9pt"> 
-                        <SCRIPT language="JavaScript">
-                        for(i=1;i<13;i++) document.write('<option>'+i);
-                        </SCRIPT>
-                        </SELECT> 月 </FONT>
-                        <FONT color=#ffffff face=宋体 id=GZ style="FONT-SIZE: 12pt"></FONT>
-                    </DIV>
+                    </SELECT> 年 <SELECT name=SM> 
+                    <SCRIPT language="JavaScript">
+                    for(i=1;i<13;i++) document.write('<option>'+i);
+                    </SCRIPT>
+                    </SELECT> 月 </FONT>
+                    <FONT color=#ffffff face=宋体 id=GZ style="FONT-SIZE: 12pt"></FONT>
+                </div>
+            <!-- <DIV>
+                <FONT style="FONT-SIZE: 9pt">公历 
+                <SELECT name=SY onchange=changeCld()> 
+                    <SCRIPT language="JavaScript">
+                        for(i=1900;i<2050;i++) document.write('<option>'+i);
+                    </SCRIPT>
+                </SELECT> 年 <SELECT name=SM onchange=changeCld() style="FONT-SIZE: 9pt"> 
+                <SCRIPT language="JavaScript">
+                for(i=1;i<13;i++) document.write('<option>'+i);
+                </SCRIPT>
+                </SELECT> 月 </FONT>
+                <FONT color=#ffffff face=宋体 id=GZ style="FONT-SIZE: 12pt"></FONT>
+            </DIV>
                 <thead>
                     <th>周一</th>
                     <th>周二</th>
@@ -131,9 +131,9 @@
                    }
                    document.write('</tr>');
                 }
-                </SCRIPT>
+                </SCRIPT> -->
             </TABLE>
-            </FORM> -->
+            </FORM>
                 <div id="calendar" class="calendar calendar_main_wrapper"></div>
             </div>
         </div>
@@ -345,6 +345,7 @@
 </div>
 <!-- 底部友情链接 结束 -->
 <!-- 版权信息 开始 -->
+
 <div id="copy-right">
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 
@@ -359,7 +360,7 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="assets/js/zui.min.js"></script>
 <script type="text/javascript" src="assets/js/zui.calendar.js"></script>
-<!-- <script type="text/javascript" src="js/calendar.js"></script> -->
+<script type="text/javascript" src="js/calendar2.js"></script>
 <!-- <script type="text/javascript" src="js/main.js"></script> -->
 <script>
     $(document).ready(function(){
@@ -367,7 +368,33 @@
         layout();
         dashboard();
         zuiCalendar();
+        lunarCalendar();
     });
+    function lunarCalendar(){
+        var selectedYear=$(".calendar_dateselect_wrapper select[name='SY']");
+        var selectedMonth=$(".calendar_dateselect_wrapper select[name='SM']");
+        console.log(selectedYear);
+        console.log(selectedMonth)
+        console.log(calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),20));
+        showCalendar(selectedYear.val(),selectedMonth.val());
+        selectedYear.change(function(){
+            showCalendar();
+        })
+        selectedMonth.change(function(){
+            showCalendar();
+        })
+        function showCalendar(y,m){
+            
+            alert(firstDay);
+            $(".lunardate").remove();
+            for(var i=1;i<=31;i++){
+                var shownDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).IDayCn;
+
+                $(".cell-day .day").eq(i-1).append("<span class='lunardate'>"+shownDay+"</span>");
+            }
+        }
+        // alert(calendar.solar2lunar(selectedYear,selectedMonth,i).lDay);
+    }
     function zuiCalendar(){
         var calendar = $('#calendar').data('zui.calendar');
         var newEvent = {title: '吃饭了', desc: '要吃更多', start: '2014-8-14 12:00', end: '2014-8-14 13:00'};
@@ -390,12 +417,12 @@
                 }else{
                     $("#calendar .week-days td .day").removeClass("active");
                     $this.find(".day").addClass("active");
-                    if($this.find(".calendar_event_item").is(":hidden")){
-                        $(".calendar_event_item").hide();
-                        $this.find(".calendar_event_item").show();
-                    }else{
-                        $this.find(".calendar_event_item").hide();
-                    }
+                    // if($this.find(".calendar_event_item").is(":hidden")){
+                    //     $(".calendar_event_item").hide();
+                    //     $this.find(".calendar_event_item").show();
+                    // }else{
+                    //     $this.find(".calendar_event_item").hide();
+                    // }
                 }
             }
         }); 
@@ -404,8 +431,15 @@
             $("#calendar .week-days").find("td:even .day").addClass("even_bg");
             $("#calendar .week-days .month").css("display","none");
             $("#calendar .week-days .cell-day").append(newEventItemEl);
+            $(".cell-day").hover(function(){
+                $(this).find(".calendar_event_item").show();
+            },function(){
+                $(this).find(".calendar_event_item").hide();
+            });
+
         }
     }
+
     function layout(){
         $(".nav_main_button").click(function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
