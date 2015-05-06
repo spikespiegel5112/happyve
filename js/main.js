@@ -8,9 +8,6 @@
     dashboard();
     layout();
     
-    
-
-
     function dashboard(){
         var hoverIndex=0, clickIndex=0, multiplier=0;
         $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
@@ -30,7 +27,7 @@
             }else{
                 multiplier=1;
             }
-            $(".layout_dashboard_indicator").css({transform:"rotate("+70*multiplier+"deg)"})
+            $(".layout_dashboard_indicator").css({transform:"rotate("+70*multiplier+"deg)"});
         },function(){
             return;
         });
@@ -45,7 +42,7 @@
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
             $(".nav_dropdown_item").hide();
             $(this).find("ul").removeClass("dropdown_fadein");
-        })
+        });
     }
     function etc(){
         $(".slideTxtBox,.activity-header-slide,.query-nav").slide();

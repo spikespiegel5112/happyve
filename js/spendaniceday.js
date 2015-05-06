@@ -26,17 +26,43 @@ function lunarCalendar(){
         // var objFirstDay=new Date();
         objDate.setYear(y);
         objDate.setMonth(m-1);
-        objDate.setDate(1);
+        objDate.setDate(-1);
         var firstDay=objDate.getDay();
         var today=objDate.getDate();
         var monthDays=calendar.solarDays(y,m);
+        var prevMonthDays=7-firstDay;
+        var afterMonthDays=42-monthDays+prevMonthDays;
+        var cellBefore=0;
+        var cellAfter=42-afterMonthDays;
+        
         $(".lunardate").remove();
         for(var i=1;i<=monthDays;i++){
-            var shownDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).cDay;
-            $(".calendar_main_wrapper tbody td").eq(i+firstDay).prepend("<span class='lunardate'>"+shownDay+"</span>");
+            var solarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).cDay;
+            var lunarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).IDayCn;
+            $(".calendar_main_wrapper tbody td").eq(i+firstDay).prepend("<label class='lunardate'>"+solarDay+"</label>");
+            $(".calendar_main_wrapper tbody td").eq(i+firstDay).prepend("<span class='lunardate'>"+lunarDay+"</span>");
         }
         console.log(firstDay);
-        console.log(today);
+        console.log(prevMonthDays);
+        for(var i=0;i<=firstDay;i++){
+            var prevMonth=selectedMonth.val()-1;
+            var prevSolarDay=calendar.solar2lunar(selectedYear.val(),prevMonth,i).cDay;
+            var prevlunarDay=calendar.solar2lunar(selectedYear.val(),prevMonth,i).IDayCn;
+            if(prevMonth<0){
+                prevMonth=11;
+            }
+            $(".calendar_main_wrapper tbody td").eq(cellBefore).prepend("<label class='lunardate'>"+prevSolarDay+"</label>");
+            $(".calendar_main_wrapper tbody td").eq(cellBefore).prepend("<span class='lunardate'>"+prevlunarDay+"</span>");
+            cellBefore++;
+        };
+        // for(var i=0;i<afterMonthDays;i++){
+        //     var nextMonth=selectedMonth.val()+1;
+        //     var afterSolarDay=calendar.solar2lunar(selectedYear.val(),nextMonth,i).cDay;
+        //     var afterlunarDay=calendar.solar2lunar(selectedYear.val(),nextMonth,i).IDayCn;
+        //     $(".calendar_main_wrapper tbody td").eq(cellAfter).prepend("<label class='lunardate'>"+afterSolarDay+"</label>");
+        //     $(".calendar_main_wrapper tbody td").eq(cellAfter).prepend("<span class='lunardate'>"+afterlunarDay+"</span>");
+        //     cellAfter++;
+        // };
     }
     function bulidCalendar(){
         var calendarEl="";
