@@ -92,9 +92,10 @@
 /* 快乐大本营 */
 .happy-camp {
     height: auto;
-    margin: 0 auto;
+    margin: 0 0 0 12px;
     padding: 32px 0 0;
     background: url(../img/camp-link.jpg) no-repeat 14% 90px;
+	width:690px;
 }
 
 .p-little-img {
@@ -121,7 +122,7 @@
 }
 
 .slider, .c-carousel {
-    margin: 0;
+    margin: 0 0 0 -14px;
     padding: 10px 0 0;
 
 }
@@ -208,21 +209,24 @@
 
 .c-way-hero img {
     float: left;
-    margin: 0 0 0 12px;
+ 
     width: 340px;
     height: 100px;
 }
-
+.c-way-hero .way-left-mg{
+	margin: 0 0 0 10px;
+	}
 /* 英雄风云场 */
 .hero-wind {
     height: auto;
-    margin: 0 auto;
+    margin: 0 0 0 12px;
     padding: 32px 0 0;
+	width:690px;
     background: url(../img/wind-link.jpg) no-repeat 14% 90px;
 }
 
 .show_hero {
-    margin: 10px 0 0;
+    margin: 10px 0 0 -14px;
 }
 
 .show_hero_lesson {
@@ -343,7 +347,8 @@
 
 .hero-people {
     height: auto;
-    margin: 0 auto;
+    margin: 0 0 0 12px;
+	width:690px;
     /*padding: 32px 0 0;*/
     background: url(../img/hero-link.jpg) no-repeat 14% 50px;
 }
@@ -442,7 +447,8 @@
 /* 活跃学校 */
 .active-school {
     height: auto;
-    margin: 0 auto;
+    margin: 0 0 0 12px;
+	width:690px;
     background: url(../img/active-link.jpg) no-repeat 14% 50px;
 }
 
