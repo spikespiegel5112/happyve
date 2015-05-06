@@ -98,8 +98,8 @@
                         <div class="activity-hr"></div>
                         <p>北京第请简单介绍下八十一中学春季篮球赛，篮球最为团体项目，有利于培养学生的团队意识，同时加强锻炼身体，同时有利于成绩提高。</p>
 
-                        <div class="training_button_interested">
-                            <a href="#beInterested" data-trigger="modal" data-title="我感兴趣" data-target="#beInterested">我感兴趣</a>
+                        <div class="training_button_interested" data-trigger="modal" data-title="我感兴趣" data-target="#schoolClasses">
+                            <a href="javascript:;" >我感兴趣</a>
                         </div>
                     </div>
                 </div>
@@ -121,8 +121,8 @@
                                         </ul>
                                         <p class="number-statistics">参赛人数已有<span>18</span>人</p>
 
-                                        <div class="training_button_interested apply">
-                                            <a href="javascript:;" title="我要报名" target="_blank">我要参加</a>
+                                        <div class="training_button_interested apply" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                            <a href="javascript:;" >我要参加</a>
                                         </div>
                                     </div>
                                 </div>
@@ -139,8 +139,8 @@
                                         </ul>
                                         <p class="number-statistics">参赛人数已有<span>18</span>人</p>
 
-                                        <div class="training_button_interested apply">
-                                            <a href="javascript:;" title="我要报名" target="_blank">我要参加</a>
+                                        <div class="training_button_interested apply" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                            <a href="javascript:;" >我要参加</a>
                                         </div>
                                     </div>
                                 </div>
@@ -157,8 +157,8 @@
                                         </ul>
                                         <p class="number-statistics">参赛人数已有<span>18</span>人</p>
 
-                                        <div class="training_button_interested apply">
-                                            <a href="javascript:;" title="我要报名" target="_blank">我要参加</a>
+                                        <div class="training_button_interested apply" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                            <a href="javascript:;" >我要参加</a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@
                         </div>
                         <div class="container activity match-height">
                             <div class="row">
-                                <div class="col-sm-6 col-md-4 col-lg-3 act-item">
+                                <div class="act-item">
                                     <div class="thumbnail">
                                         <a href="#" title="" target="_blank">
                                             <img class="lazy" src="img/hero_trainingcamp/kind-bac.jpg" width="210" height="140" data-src="img/hero_trainingcamp/hero_trainning_oldtimey07.png" alt="数字化学习与研究">
@@ -190,7 +190,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-6 col-md-4 col-lg-3 act-item">
+                                <div class="act-item">
                                     <div class="thumbnail">
                                         <a href="#" title="" target="_blank">
                                             <img class="lazy" src="img/hero_trainingcamp/kind-bac.jpg" width="210" height="140" data-src="img/hero_trainingcamp/hero_trainning_oldtimey08.png" alt="数字化学习与研究">
@@ -208,7 +208,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-6 col-md-4 col-lg-3 act-item">
+                                <div class="act-item">
                                     <div class="thumbnail">
                                         <a href="#" title="" target="_blank">
                                             <img class="lazy" src="img/hero_trainingcamp/kind-bac.jpg" width="210" height="140" data-src="img/hero_trainingcamp/hero_trainning_oldtimey09.png" alt="数字化学习与研究">
@@ -228,7 +228,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-sm-6 col-md-4 col-lg-3 act-item">
+                                <div class=" act-item">
                                     <div class="thumbnail">
                                         <a href="#" title="" target="_blank">
                                             <img class="lazy" src="img/hero_trainingcamp/kind-bac.jpg" width="210" height="140" data-src="img/hero_trainingcamp/hero_trainning_oldtimey04.png" alt="数字化学习与研究">
@@ -245,7 +245,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-6 col-md-4 col-lg-3 act-item">
+                                <div class="act-item">
                                     <div class="thumbnail">
                                         <a href="#" title="" target="_blank">
                                             <img class="lazy" src="img/hero_trainingcamp/kind-bac.jpg" width="210" height="140" data-src="img/hero_trainingcamp/hero_trainning_oldtimey05.png" alt="数字化学习与研究">
@@ -262,7 +262,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-6 col-md-4 col-lg-3 act-item">
+                                <div class="act-item">
                                     <div class="thumbnail">
                                         <a href="#" title="" target="_blank">
                                             <img class="lazy" src="img/hero_trainingcamp/kind-bac.jpg" width="210" height="140" data-src="img/hero_trainingcamp/hero_trainning_oldtimey06.png" alt="数字化学习与研究">
@@ -282,7 +282,7 @@
                         </div>
                     </div>
 
-                <div class="white-space_trainingcamp"></div>
+                <div class="white-space" style="width: 100%; height: 195px"></div>
             </div>
 
 
@@ -516,8 +516,190 @@
 </div>
 <!-- 版权信息 结束 -->
 <!--弹出层 开始-->
-<!--我感兴趣-->
-<div class="modal fade" id="beInterested">
+<!--我感兴趣 本校开班-->
+<div class="modal fade" id="schoolClasses">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>我感兴趣</h3>
+    </div>
+    <div class="pop-container choiceSchool-container">
+        <h4>本校开班</h4>
+        <div class="class-list">
+
+            <div class="container activity class-info">
+                <div class="row">
+                    <div class=" act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply disabled" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply disabled" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply disabled" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply disabled" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply disabled" data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-group choiceSchool-button" id="recommendedSchoolBtn">
+            <a href="#recommendedSchool" data-trigger="modal" data-title="我感兴趣" data-target="#recommendedSchool"><div class=" btn-ensure selected"><button type="button" class="btn">推荐它校</button></div></a>
+        </div>
+    </div>
+</div>
+
+<!--我感兴趣 推荐它校-->
+<div class="modal fade" id="recommendedSchool">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>我感兴趣</h3>
+    </div>
+    <div class="pop-container choiceSchool-container">
+        <h4>推荐它校</h4>
+        <div class="class-list">
+
+            <div class="container activity class-info">
+                <div class="row">
+                    <div class=" act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+                                <ul>
+                                    <li><span>省份：</span>河北省</li>
+                                    <li><span>城市：</span>石家庄</li>
+                                    <li><span>学校：</span>石家庄职业学校</li>
+                                </ul>
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply " data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+                                <ul>
+                                    <li><span>省份：</span>河北省</li>
+                                    <li><span>城市：</span>石家庄</li>
+                                    <li><span>学校：</span>石家庄职业学校</li>
+                                </ul>
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply " data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="act-item">
+                        <div class="thumbnail">
+                            <div class="information-detailed">
+                                <p class="schooltime">时间&nbsp;|&nbsp;2014-02-06</p>
+                                <ul>
+                                    <li><span>省份：</span>河北省</li>
+                                    <li><span>城市：</span>石家庄</li>
+                                    <li><span>学校：</span>石家庄职业学校</li>
+                                </ul>
+                                <p class="number-statistics">参赛人数已有<span>18</span>人</p>
+
+                                <div class="training_button_interested apply " data-title="我要参加" data-trigger="modal" data-target="#wantToAttend">
+                                    <a href="javascript:;" >我要参加</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-group choiceSchool-button" id="schoolClassesBtn">
+            <a href="#schoolClasses" data-trigger="modal" data-title="我感兴趣" data-target="#schoolClasses"><div class=" btn-ensure selected"><button type="button" class="btn">本校开班</button></div></a>
+        </div>
+    </div>
+
+</div>
+
+<!--我要参加-->
+<div class="modal fade" id="wantToAttend">
     <div class="modal-header">
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>我感兴趣</h3>
@@ -526,11 +708,11 @@
         <div class="beInterested-content">
             <div class="form-group">
                 <label class="col-title" for="schoolName">学校名称：</label>
-                <input type="text" class="form-control col-input"  id="schoolName" name="" value="" placeholder="请输入学校名称"/>
+                <input type="text" disabled class="form-control col-input"  id="schoolName" name="" value="北京市世界创新学校" />
             </div>
             <div class="form-group">
                 <label class="col-title" for="className">班级：</label>
-                <input type="text" class="form-control col-input" style="width: 140px" id="className" name="" value="" placeholder="请输入班级名称"/>
+                <input type="text" disabled class="form-control col-input" style="width: 140px" id="className" name="" value="金融与证券三班"/>
             </div>
             <div class="form-group">
                 <label class="col-title" for="contact">联系人：</label>
@@ -565,6 +747,15 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
+
+<script>
+    $('#schoolClassesBtn').click(function(){
+        $(this).parent().parent().css('display',"none");
+    });
+    $('#recommendedSchoolBtn').click(function(){
+        $(this).parent().parent().css('display',"none");
+    });
+</script>
 
 </body>
 </html>

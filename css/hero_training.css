@@ -108,6 +108,9 @@
     margin-top: 85px;
 }
 .hero_training_oldtimey .container{
+/*
+    width: 950px;
+*/
     padding-left: 12px;
 }
 /*往期回顾默认*/
@@ -140,7 +143,7 @@
     display: inline-block;
     width: 5%;
     min-width: 210px;
-    margin: 10px 5px;
+    margin: 5px 5px;
     padding: 0 0;
 }
 
@@ -228,16 +231,6 @@
     margin-bottom: 10px;
 }
 
-.white-space {
-    height: 270px;
-}
-.white-space_trainingcamp{
-    height: 105px;
-}
-.white-space_splendidmoment{
-    height: 65px;
-}
-
 /*往期回顾详情*/
 .hero_training_splendidmoment {
     height: 250px;
@@ -285,19 +278,19 @@
 .hero_splendidmoment_link {
     margin: 40px 0 0 0;
 }
-.hero_splendidmoment .container{
+.hero_splendidmoment .sp-container{
     position: relative;
-    width: 700px;
-    padding: 5px 0 50px 35px;
+    width: 618px;
+    padding: 5px 0 50px 30px;
 }
 
 #ycontainer{
-    width: 618px;
+    width: 618px!important;
     padding: 0;
 }
-.hero_splendidmoment .container #ycontainer .grid{
+.hero_splendidmoment .grid{
     margin: 3px;
-    width: 200px;
+    max-width: 210px!important;
 }
 
 .hero_splendidmoment .mien-title {
@@ -344,7 +337,7 @@
 }
 
 .pop-container .btn-group{
-    width: 250px;
+    width: 260px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -377,4 +370,18 @@
     margin: 18px 0;
     font-size: 16px;
     font-weight: normal;
+}
+
+.pop-container.choiceSchool-container{
+    margin-top: 40px;
+}
+
+.pop-container .choiceSchool-button{
+    width: 170px;
+    float: right;
+    margin-top: 5px;
+}
+
+.btn-group.choiceSchool-button div .btn{
+    color: #3C3C3C;
 }
