@@ -85,7 +85,7 @@
                 <div class="calendar_dateselect_wrapper">
                     <SELECT name=SY> 
                         <SCRIPT language="JavaScript">
-                            for(i=1901;i<2050;i++) document.write('<option>'+i);
+                            for(i=2015;i<2050;i++) document.write('<option>'+i);
                         </SCRIPT>
                     </SELECT> 年 <SELECT name=SM> 
                     <SCRIPT language="JavaScript">
@@ -323,91 +323,15 @@
 <!-- <script type="text/javascript" src="assets/js/zui.min.js"></script>
 <script type="text/javascript" src="assets/js/zui.calendar.js"></script> -->
 <script type="text/javascript" src="js/calendar2.js"></script>
+<script type="text/javascript" src="js/spendaniceday.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script>
     $(document).ready(function(){
-        haexeHomepage();
-        layout();
-        dashboard();
-        // zuiCalendar();
-        // lunarCalendar();
+        // haexeHomepage();
+        // layout();
+        // dashboard();
     });
-    function lunarCalendar(){
-        var selectedYear=$(".calendar_dateselect_wrapper select[name='SY']");
-        var selectedMonth=$(".calendar_dateselect_wrapper select[name='SM']");
-        console.log(selectedYear);
-        console.log(selectedMonth)
-        console.log(calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),20));
-        bulidCalendar();
-        showCalendar(selectedYear.val(),selectedMonth.val());
-        selectedYear.change(function(){
-            showCalendar();
-        })
-        selectedMonth.change(function(){
-            showCalendar();
-        })
-        function showCalendar(y,m){
-            var objDate=new Date();
-            // alert(firstDay);
-            var firstDay=(new Date(objDate.getFullYear(),objDate.getMonth(),1)).getDay()-1;
-            $(".lunardate").remove();
-            for(var i=1;i<=31;i++){
-                var shownDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).IDayCn;
-                console.log(calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i))
-                $(".cell-day .day").eq(i-1+firstDay).append("<span class='lunardate'>"+shownDay+"</span>");
-            }
-        }
-        function bulidCalendar(){
-            var calendarEl="";
-            calendarEl+="<table class='calendar_main_wrapper'>";
-            calendarEl+="<thead>"
-        }
-        // alert(calendar.solar2lunar(selectedYear,selectedMonth,i).lDay);
-    }
-    function zuiCalendar(){
-        var calendar = $('#calendar').data('zui.calendar');
-        var newEvent = {title: '吃饭了', desc: '要吃更多', start: '2014-8-14 12:00', end: '2014-8-14 13:00'};
-        var newEventItemEl="<div class='calendar_event_item'><a href='javascript:;'>新建事件</a><a href='javascript:;'>评分</a></div>"
-        $("#calendar").calendar({
-            clickTodayBtn:function(){
-                $("#calendar .week-days .month").css("display","none");
-            },
-            clickPrevBtn:function(){
-                $("#calendar .week-days .month").css("display","none");
-            },
-            clickNextBtn:function(){
-                $("#calendar .week-days .month").css("display","none");
-            },
-            clickCell:function(e){
-                console.log(e);
-                var $this=$(e.this);
-                if($this.hasClass("active")){
-                    return;
-                }else{
-                    $("#calendar .week-days td .day").removeClass("active");
-                    $this.find(".day").addClass("active");
-                    // if($this.find(".calendar_event_item").is(":hidden")){
-                    //     $(".calendar_event_item").hide();
-                    //     $this.find(".calendar_event_item").show();
-                    // }else{
-                    //     $this.find(".calendar_event_item").hide();
-                    // }
-                }
-            }
-        }); 
-        zuiCalendarCustomize();
-        function zuiCalendarCustomize(){
-            $("#calendar .week-days").find("td:even .day").addClass("even_bg");
-            $("#calendar .week-days .month").css("display","none");
-            $("#calendar .week-days .cell-day").append(newEventItemEl);
-            $(".cell-day").hover(function(){
-                $(this).find(".calendar_event_item").show();
-            },function(){
-                $(this).find(".calendar_event_item").hide();
-            });
-
-        }
-    }
+    
 
     function layout(){
         $(".nav_main_button").click(function(){
