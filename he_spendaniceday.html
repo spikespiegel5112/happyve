@@ -82,7 +82,6 @@
                     </div>
                 </div>
             <FORM  name=CLD>
-            <TABLE id="calendar" class="calendar_main_wrapper" cellpadding="0" cellspacing="0">
                 <div class="calendar_dateselect_wrapper">
                     <SELECT name=SY> 
                         <SCRIPT language="JavaScript">
@@ -95,46 +94,9 @@
                     </SELECT> 月 </FONT>
                     <FONT color=#ffffff face=宋体 id=GZ style="FONT-SIZE: 12pt"></FONT>
                 </div>
-            <!-- <DIV>
-                <FONT style="FONT-SIZE: 9pt">公历 
-                <SELECT name=SY onchange=changeCld()> 
-                    <SCRIPT language="JavaScript">
-                        for(i=1900;i<2050;i++) document.write('<option>'+i);
-                    </SCRIPT>
-                </SELECT> 年 <SELECT name=SM onchange=changeCld() style="FONT-SIZE: 9pt"> 
-                <SCRIPT language="JavaScript">
-                for(i=1;i<13;i++) document.write('<option>'+i);
-                </SCRIPT>
-                </SELECT> 月 </FONT>
-                <FONT color=#ffffff face=宋体 id=GZ style="FONT-SIZE: 12pt"></FONT>
-            </DIV>
-                <thead>
-                    <th>周一</th>
-                    <th>周二</th>
-                    <th>周三</th>
-                    <th>周四</th>
-                    <th>周五</th>
-                    <th>周六</th>
-                    <th>周日</th>
-                </thead>
-                <SCRIPT language="JavaScript">
-                var gNum;
-                for(i=0;i<6;i++) {
-                   document.write('<tr>');
-                   for(j=0;j<7;j++) {
-                      gNum = i*7+j;
-                      document.write('<td id="GD' + gNum +'"><label id="SD' + gNum +'" size=2 face="Arial Black"></label><span id="LD' + gNum + '"></span></td>');
-                      // if(j == 5) document.write(' color=red');
-                      // if(j == 6) document.write(' color=red');
-                      // if(j == 6) document.write(' color=#000080');
-                      // document.write(' TITLE=""> </label><br><span id="LD' + gNum + '" "> </span></td>');
-                   }
-                   document.write('</tr>');
-                }
-                </SCRIPT> -->
-            </TABLE>
             </FORM>
                 <div id="calendar" class="calendar calendar_main_wrapper"></div>
+
             </div>
         </div>
         <div class="right_content_wrapper">
@@ -358,17 +320,17 @@
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
-<script type="text/javascript" src="assets/js/zui.min.js"></script>
-<script type="text/javascript" src="assets/js/zui.calendar.js"></script>
+<!-- <script type="text/javascript" src="assets/js/zui.min.js"></script>
+<script type="text/javascript" src="assets/js/zui.calendar.js"></script> -->
 <script type="text/javascript" src="js/calendar2.js"></script>
-<!-- <script type="text/javascript" src="js/main.js"></script> -->
+<script type="text/javascript" src="js/main.js"></script>
 <script>
     $(document).ready(function(){
         haexeHomepage();
         layout();
         dashboard();
-        zuiCalendar();
-        lunarCalendar();
+        // zuiCalendar();
+        // lunarCalendar();
     });
     function lunarCalendar(){
         var selectedYear=$(".calendar_dateselect_wrapper select[name='SY']");
@@ -376,6 +338,7 @@
         console.log(selectedYear);
         console.log(selectedMonth)
         console.log(calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),20));
+        bulidCalendar();
         showCalendar(selectedYear.val(),selectedMonth.val());
         selectedYear.change(function(){
             showCalendar();
@@ -384,14 +347,20 @@
             showCalendar();
         })
         function showCalendar(y,m){
-            
-            alert(firstDay);
+            var objDate=new Date();
+            // alert(firstDay);
+            var firstDay=(new Date(objDate.getFullYear(),objDate.getMonth(),1)).getDay()-1;
             $(".lunardate").remove();
             for(var i=1;i<=31;i++){
                 var shownDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).IDayCn;
-
-                $(".cell-day .day").eq(i-1).append("<span class='lunardate'>"+shownDay+"</span>");
+                console.log(calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i))
+                $(".cell-day .day").eq(i-1+firstDay).append("<span class='lunardate'>"+shownDay+"</span>");
             }
+        }
+        function bulidCalendar(){
+            var calendarEl="";
+            calendarEl+="<table class='calendar_main_wrapper'>";
+            calendarEl+="<thead>"
         }
         // alert(calendar.solar2lunar(selectedYear,selectedMonth,i).lDay);
     }
