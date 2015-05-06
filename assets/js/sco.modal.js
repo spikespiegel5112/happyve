@@ -27,7 +27,7 @@
 
 	function Modal(options) {
 		this.options = $.extend({}, $.fn[pluginName].defaults, options);
-		this.$modal = $(this.options.target).attr('class', 'modal fade hei-mail').hide();
+		this.$modal = $(this.options.target).attr('class', 'modal fade hei-mail label-files').hide();
 		var self = this;
 
 		function init() {
@@ -49,13 +49,13 @@
 				$backdrop = $('.modal-backdrop');
 			}
 			if (!this.$modal.length) {
-				this.$modal = $('<div class="modal fade hei-mail" id="' + this.options.target.substr(1) + '"><div class="modal-header"><a class="close" href="#" data-dismiss="modal">×</a><h3>&nbsp;</h3></div><div class="inner"/></div>').appendTo(this.options.appendTo).hide();
+				this.$modal = $('<div class="modal fade hei-mail label-files" id="' + this.options.target.substr(1) + '"><div class="modal-header"><a class="close" href="#" data-dismiss="modal">×</a><h3>&nbsp;</h3></div><div class="inner"/></div>').appendTo(this.options.appendTo).hide();
 			}
 
 			this.$modal.find('.modal-header h3').html(this.options.title);
 
 			if (this.options.cssclass !== undefined) {
-				this.$modal.attr('class', 'modal fade hei-mail' + this.options.cssclass);
+				this.$modal.attr('class', 'modal fade hei-mail label-files' + this.options.cssclass);
 			}
 
 			if (this.options.width !== undefined) {
