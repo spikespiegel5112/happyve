@@ -32,7 +32,7 @@ a:hover {
 .nav_main_list_inner:after{content: "";display: block;clear:both;}
 .nav_main_button{padding:5px 0;font-size: 1.4em;font-weight: normal;color:#888;}
 .nav_main_button:focus{color:#91c21e;}
-.nav_main_list_item{float:left;width:110px;margin:0 4px;padding:0 0 2em 0;position: relative;text-align: center;}
+.nav_main_list_item{float:left;width:110px;margin:0 4px;padding:0 0 1.5em 0;position: relative;text-align: center;}
 .nav_main_list_item:hover .nav_main_button, .nav_main_button:focus{border-bottom:2px solid #91c31e;color:#91c31e;}
 .nav_main_list_item a{display:inline-block;}
 .nav_dropdown_wrapper li{display: block;}
