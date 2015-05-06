@@ -1081,6 +1081,10 @@
     margin-top: -2px ;
     border: 2px solid #b4b4b4;
 }
+
+.preview-container .help-block{
+    text-align: right;
+}
 /*校园风采新建活动*/
 .pop-activity {
     margin-top: 50px;
