@@ -108,6 +108,9 @@
     margin-top: 85px;
 }
 .hero_training_oldtimey .container{
+/*
+    width: 950px;
+*/
     padding-left: 12px;
 }
 /*往期回顾默认*/
@@ -275,19 +278,19 @@
 .hero_splendidmoment_link {
     margin: 40px 0 0 0;
 }
-.hero_splendidmoment .container{
+.hero_splendidmoment .sp-container{
     position: relative;
-    width: 700px;
-    padding: 5px 0 50px 35px;
+    width: 618px;
+    padding: 5px 0 50px 30px;
 }
 
 #ycontainer{
-    width: 618px;
+    width: 618px!important;
     padding: 0;
 }
-.hero_splendidmoment .container #ycontainer .grid{
+.hero_splendidmoment .grid{
     margin: 3px;
-    width: 200px;
+    max-width: 210px!important;
 }
 
 .hero_splendidmoment .mien-title {
