@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
+    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
+
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -84,7 +86,7 @@
                                 </div>
                                 <div class="list_button">
                                     <label>2015-04-03</label>
-                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a>
+                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="行善内容" data-target="#inputContent"></a>
                                     <a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a>
                                     <a class="share" href="javascript:;"></a>
                                 </div>
@@ -95,7 +97,7 @@
                                 </div>
                                 <div class="list_button">
                                     <label>2015-04-03</label>
-                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a>
+                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="行善内容" data-target="#inputContent"></a>
                                     <a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a>
                                     <a class="share" href="javascript:;"></a>
                                 </div>
@@ -106,7 +108,7 @@
                                 </div>
                                 <div class="list_button">
                                     <label>2015-04-03</label>
-                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a>
+                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="行善内容" data-target="#inputContent"></a>
                                     <a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a>
                                     <a class="share" href="javascript:;"></a>
                                 </div>
@@ -117,7 +119,7 @@
                                 </div>
                                 <div class="list_button">
                                     <label>2015-04-03</label>
-                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a>
+                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="行善内容" data-target="#inputContent"></a>
                                     <a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a>
                                     <a class="share" href="javascript:;"></a>
                                 </div>
@@ -128,7 +130,7 @@
                                 </div>
                                 <div class="list_button">
                                     <label>2015-04-03</label>
-                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a>
+                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="行善内容" data-target="#inputContent"></a>
                                     <a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a>
                                     <a class="share" href="javascript:;"></a>
                                 </div>
@@ -139,7 +141,7 @@
                                 </div>
                                 <div class="list_button">
                                     <label>2015-04-03</label>
-                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a>
+                                    <a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="行善内容" data-target="#inputContent"></a>
                                     <a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a>
                                     <a class="share" href="javascript:;"></a>
                                 </div>
@@ -361,12 +363,38 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<div class="modal fade" id="inputContent">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>行善内容</h3>
+    </div>
+    <div class="pop-container ">
+        <div class="input-content">
+            <form action="" method="">
+                <div class="form-group">
+                    <label for="event_content" class="control-label col-title">内容：</label>
+                    <textarea id="event_content" class="content col-textarea" placeholder="请输入事件内容"></textarea>
+                    <div class="help-block"><p>最多输入2000字，您已输入<span>123</span>字。</p></div>
+                </div>
+            </form>
+        </div>
+        <div class="divider-hr input-content-hr"></div>
+        <div class="btn-group">
+            <a href="he_beneficentwall_fulllist.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="he_beneficentwall_fulllist.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <!-- <script type="text/javascript" src="js/main.js"></script> -->
 <script>
     $(document).ready(function(){
