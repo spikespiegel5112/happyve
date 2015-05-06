@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
+
+    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
+
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -164,7 +167,7 @@
                 <div class="note_wrapper">
                     <div class="note_title">
                         <span></span>
-                        <label>请输入您的内容</label>
+                        <label data-trigger="modal" data-title="感恩内容" data-target="#inputContent">请输入您的内容</label>
                     </div>
                     <div class="note_content">
                         <textarea maxlength="2000">雁过无痕，叶落无声，美丽是些具体而实在的东西，无处不在的守侯着你。感激这个世界的魅力，感激你的存在，感激我们的相识。感恩节快乐！我愿是候鸟，在迁徙路上伴你飞翔；我愿是雄鹰，在攀登的途中给你勉励；我愿是火鸡，在感恩节被你品尝！呵呵，这样的朋友够仗义吧！感恩节快乐喔！</textarea>
@@ -182,11 +185,11 @@
                     </div>
                     <div class="haexedetaillist_preview_list_wrapper">
                         <ul>
-                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
-                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
-                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
-                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
-                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
+                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="感恩内容" data-target="#inputContent"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
+                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="感恩内容" data-target="#inputContent"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
+                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="感恩内容" data-target="#inputContent"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
+                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="感恩内容" data-target="#inputContent"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
+                            <li><a class="list_title" href="javascript:;">据北京地铁公司证实，前晚7时许，地铁5号线惠新西街南口站一女性乘客……</a><label>2015-04-03</label><a class="edit_item glyphicon glyphicon-pencil" href="javascript:;" data-trigger="modal" data-title="感恩内容" data-target="#inputContent"></a><a class="delete_item glyphicon glyphicon-trash" href="javascript:;"></a></li>
                         </ul>
                         <a class="see_all" href="JavaScript:;">查看全部</a>
                     </div>
@@ -405,12 +408,40 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<div class="modal fade" id="inputContent">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>感恩内容</h3>
+    </div>
+    <div class="pop-container ">
+        <div class="input-content">
+            <form action="" method="">
+                <div class="form-group">
+                    <label for="event_content" class="control-label col-title">内容：</label>
+                    <textarea id="event_content" class="content col-textarea" placeholder="请输入事件内容"></textarea>
+                    <div class="help-block"><p>最多输入2000字，您已输入<span>123</span>字。</p></div>
+                </div>
+            </form>
+        </div>
+        <div class="divider-hr input-content-hr"></div>
+        <div class="btn-group">
+            <a href="he_thanksgivingtree.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="he_thanksgivingtree.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
+
 <!-- <script type="text/javascript" src="js/main.js"></script> -->
 <script>
     $(document).ready(function(){
