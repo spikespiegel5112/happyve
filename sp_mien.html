@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
 
+    <link rel="stylesheet" href="assets/css/zui.calendar.min.css" type="text/css" media="all">
+
+
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -138,9 +141,6 @@
              
         </div>
         <div class="container school-space match-height">
-        	
-            
-            
             	<div id="ycontainer">
 					<div class="grid">
 						<div class="imgholder">
@@ -290,10 +290,6 @@
                 </div>
                  <!---->
             </div>
-         
-            
-            
-            
         </div>
         <div class="container activity-pagin">
             <nav class="pagin-center">
@@ -581,7 +577,7 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-two">
-            <a href="javascript:;"><div class="btn-next selected"><button type="button" class="btn" data-title="新建活动" data-trigger="modal" data-target="#editorActivity">下一步</button></div></a>
+            <a id="editorActivity-next-btn" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn" data-title="新建活动" data-trigger="modal" data-target="#editorActivity">下一步</button></div></a>
             <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
@@ -642,7 +638,7 @@
 
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-three">
-            <a href="#newActivity" data-trigger="modal" data-title="新建活动" data-target="#newActivity"><div class="btn-prev disabled"><button type="button" class="btn" >上一步</button></div></a>
+            <a id="newActivity-prev-btn" href="#newActivity" data-trigger="modal" data-title="新建活动" data-target="#newActivity"><div class="btn-prev disabled"><button type="button" class="btn"  >上一步</button></div></a>
             <a href="sp_mien.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
             <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
@@ -659,9 +655,10 @@
 <script type="text/javascript" src="assets/js/blocksit.js"></script>
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script type="text/javascript" src="assets/js/icheck.js"></script>
-<script>
 
-</script>
+<script type="text/javascript" src="assets/js/zui.min.js"></script>
+<script type="text/javascript" src="assets/js/zui.calendar.js"></script>
+
 <script>
 $(document).ready(function() {
 
@@ -758,6 +755,13 @@ $(document).ready(function () {
         });
     }
 });
+
+    $('#newActivity-prev-btn').click(function(){
+        $(this).parent().parent().parent().css('display','none');
+    });
+    $('#editorActivity-next-btn').click(function(){
+        $(this).parent().parent().parent().css('display','none');
+    });
 
 </script>
 </body>
