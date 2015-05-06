@@ -1318,13 +1318,17 @@
 	margin:4px 0 0 4px
 	
 }
+@font-face {
+  font-family: 'myfiles-stamp';
+  src: url(../font/%E6%97%B6%E5%B0%9A%E4%B8%AD%E9%BB%91%E7%AE%80%E4%BD%93.ttf);
+}
 .join-stamp a span{
 	display:block;
 	float:right;
 	width:100px;
 	height:112px;
 	text-align:center;
-	font:48px/112px "时尚中黑简体";
+	font:48px/112px "myfiles-stamp";
 	color:#91c81e;
 }
 .green-line-mrg{
