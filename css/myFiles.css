@@ -1216,5 +1216,141 @@
 .label-popup ul .tag-label-four{
 	width:144px;
 }
+
+/*我的微课 弹出层*/
+#uploadMicroLessonA .pop-container, #editMicroLessonA .pop-container{
+    margin-top: 84px;
+}
+#uploadMicroLessonB .pop-container, #editMicroLessonB .pop-container{
+    margin-top: 64px;
+}
+.micro-lesson-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.micro-lesson-container .col-title{
+    display: inline-block;
+    width: 140px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+}
+.micro-lesson-container .col-input{
+    display: inline-block;
+    width: 270px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 0;
+}
+.micro-lesson-container .dropdown{
+    position: relative;
+    display: inline-block;
+    border-radius: 0;
+}
+.micro-lesson-container .dropdown > button{
+    border-radius: 0;
+}
+.micro-lesson-container .dropdown.firstLevel{
+    width: 110px;
+}
+.micro-lesson-container .dropdown.secondLevel{
+    width: 160px;
+}
+.micro-lesson-container .dropdown ul{
+    position: relative;
+    border-radius: 0;
+}
+.micro-lesson-container .dropdown-menu >li >a div{
+    margin-right: 5px;
+}
+.micro-lesson-container .dropdown-menu >li >a label{
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.micro-lesson-container .dropdown-menu >li >a:hover,.dropdown-menu >li >a:focus{
+    background: #c7e38e;
+    outline: none;
+}
+.micro-lesson-container .col-textarea{
+    display: inline-block;
+    width: 520px;
+    height: 78px;
+    font-size: 12px;
+    border-radius: 0;
+}
+.micro-lesson-container .form-group-texarea{
+    display: inline-block;
+    height: 80px;
+}
+.micro-lesson-container .form-group > span{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+}
+.micro-lesson-container .col-input.col-file{
+    position: absolute;
+    width: 70px;
+    height: 25px;
+    left: 190px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.micro-lesson-container .help-block.help-block-forTextarea{
+    top: -28px;
+    position: relative;
+    float: right;
+    width: 250px;
+}
+.micro-lesson-container .help-block input{
+    color: #ff0000;
+    padding: 0 5px;
+    border: none;
+}
+.micro-lesson-container .help-block.help-block-forFile{
+    position: relative;
+    padding-left: 147px;
+    text-align: left;
+}
+.upload-file-container {
+    display: inline-block;
+}
+.upload-file-container > span{
+    margin: 0 5px;
+}
+.upload-file-container .btn-sm, .selectNewFile .btn-sm{
+    line-height: 12px;
+    border-radius: 0;
+}
+.edit-file-container .originalFile{
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #b4b4b4;
+    padding: 5px 10px;
+}
+.edit-file-container .originalFile div{
+    margin-right: 10px;
+}
+.selectNewFile {
+    position: relative;
+    top: 10px;
+    left: 177px;
+}
+.selectNewFile .edit-file{
+    position: absolute;
+    left: 0;
+    display: inline;
+    width: 70px;
+    height: 25px;
+    overflow: hidden;
+    opacity: 0;
+}
+
 /* CSS Document */
 

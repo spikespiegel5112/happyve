@@ -21,6 +21,9 @@
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
 
+    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
+
 </head>
 <body>
 
@@ -67,165 +70,183 @@
 <div class="main_container">
     <div class="main_content_wrapper main_content_float">
 
-        
-            <div class=" footprint">
-                <p class="footprint-title">我的档案</p>
-                <p class="footprint-title-rich">我的印记</p>
-                <ul>
-                    <li><span class="personal-icon"></span> <a href="#">个人信息</a></li><!--pink-->
-                    <li><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <a href="#">安全设置</a></li>
-                    <li><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <a href="#">我的消息</a></li>
-                    <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <a href="#">我的收藏</a></li>
-                    <li><span class="scale-icon"></span> <a href="#">我的等级</a></li><!--pink-->
-                    <li><span class="testing-icon" aria-hidden="true"></span> <a href="#">我的评测</a></li><!--pink-->
-                    <li><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <a href="#">我的演习</a></li>
-                    <li><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <a href="#">我的标签</a></li>
-                    <li><span class="icon-user"></span> <a href="#">我的好友</a></li>
-                    <li><span class="icon-group"></span> <a href="#">我的集体</a></li>
-                    <li class="active"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> <a href="#">我的微课</a></li>
-                    <li><span class="production-icon"></span> <a href="#">我的作品</a></li><!--pink-->
+        <div class=" footprint">
+            <p class="footprint-title">我的档案</p>
+            <p class="footprint-title-rich">我的印记</p>
+            <ul>
+                <li><span class="personal-icon"></span> <a href="#">个人信息</a></li>
+                <!--pink-->
+                <li><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> <a href="#">安全设置</a></li>
+                <li><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> <a href="#">我的消息</a></li>
+                <li><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> <a href="#">我的收藏</a></li>
+                <li><span class="scale-icon"></span> <a href="#">我的等级</a></li>
+                <!--pink-->
+                <li><span class="testing-icon" aria-hidden="true"></span> <a href="#">我的评测</a></li>
+                <!--pink-->
+                <li><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <a href="#">我的演习</a></li>
+                <li><span class="glyphicon glyphicon-tag" aria-hidden="true"></span> <a href="#">我的标签</a></li>
+                <li><span class="icon-user"></span> <a href="#">我的好友</a></li>
+                <li><span class="icon-group"></span> <a href="#">我的集体</a></li>
+                <li class="active"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> <a
+                        href="#">我的微课</a></li>
+                <li><span class="production-icon"></span> <a href="#">我的作品</a></li>
+                <!--pink-->
                 </ul>
-            </div>
-        
-        
-            <div class="footprint-text">
-              <p class="shade-link">我的微课</p>
-              <div class="footprint-content">
-            	
-                 
-                        <div class="photo-thum-prod micro-product">
-                            <div class="thumbnail">
-                                <div class="photo-production">
-                                    <a href="#"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/golden-cs.jpg"  alt="教学视频"></a>
-                                    <div class="product-text-micro">
-                                    	<a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
-                                    	<div class="sponsor-icon ">
-                                    		<em>2015-03-06</em>
-                                        	<button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
-                                            <button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
-                                    	</div>
+        </div>
+
+        <div class="footprint-text">
+                <p class="shade-link">我的微课</p>
+                <div class="footprint-content">
+                    <div class="photo-thum-prod micro-product">
+                        <div class="thumbnail">
+                            <div class="photo-production">
+                                <a href="#"><img class="lazy" src="img/hp_share/particul-bac.jpg" width="210"
+                                                 height="149" data-src="img/golden-cs.jpg" alt="教学视频"></a>
+
+                                <div class="product-text-micro">
+                                    <a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
+
+                                    <div class="sponsor-icon ">
+                                        <em>2015-03-06</em>
+                                        <button class="btn sp-r-btn" type="button"><span
+                                                class="glyphicon glyphicon-trash"></span></button>
+                                        <button class="btn sp-r-btn" type="button" data-title="编辑微课" data-trigger="modal" data-target="#editMicroLessonA"><span
+                                                class="glyphicon glyphicon-pencil"></span></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="thumbnail">
-                                <div class="photo-production">
-                                    <a href="#"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/golden-cs.jpg"  alt="教学视频"></a>
-                                    <div class="product-text-micro">
-                                    	<a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
-                                    	<div class="sponsor-icon ">
-                                    		<em>2015-03-06</em>
-                                        	<button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
-                                            <button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
-                                    	</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="photo-production">
+                                <a href="#"><img class="lazy" src="img/hp_share/particul-bac.jpg" width="210"
+                                                 height="149" data-src="img/golden-cs.jpg" alt="教学视频"></a>
+
+                                <div class="product-text-micro">
+                                    <a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
+
+                                    <div class="sponsor-icon ">
+                                        <em>2015-03-06</em>
+                                        <button class="btn sp-r-btn" type="button"><span
+                                                class="glyphicon glyphicon-trash"></span></button>
+                                        <button class="btn sp-r-btn" type="button" data-title="编辑微课" data-trigger="modal" data-target="#editMicroLessonA"><span
+                                                class="glyphicon glyphicon-pencil"></span></button>
                                     </div>
                                 </div>
                             </div>
-                          <div class="thumbnail">
-                                <div class="photo-production">
-                                    <a href="#"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/golden-cs.jpg"  alt="教学视频"></a>
-                                    <div class="product-text-micro">
-                                    	<a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
-                                    	<div class="sponsor-icon ">
-                                    		<em>2015-03-06</em>
-                                        	<button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
-                                            <button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
-                                    	</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="photo-production">
+                                <a href="#"><img class="lazy" src="img/hp_share/particul-bac.jpg" width="210"
+                                                 height="149" data-src="img/golden-cs.jpg" alt="教学视频"></a>
+
+                                <div class="product-text-micro">
+                                    <a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
+
+                                    <div class="sponsor-icon ">
+                                        <em>2015-03-06</em>
+                                        <button class="btn sp-r-btn" type="button"><span
+                                                class="glyphicon glyphicon-trash"></span></button>
+                                        <button class="btn sp-r-btn" type="button" data-title="编辑微课" data-trigger="modal" data-target="#editMicroLessonA"><span
+                                                class="glyphicon glyphicon-pencil"></span></button>
                                     </div>
                                 </div>
                             </div>
-                            
-                          <div class="thumbnail">
-                                <div class="photo-production">
-                                    <a href="#"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/golden-cs.jpg"  alt="教学视频"></a>
-                                    <div class="product-text-micro">
-                                    	<a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
-                                    	<div class="sponsor-icon ">
-                                    		<em>2015-03-06</em>
-                                        	<button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
-                                            <button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
-                                    	</div>
+                        </div>
+
+                        <div class="thumbnail">
+                            <div class="photo-production">
+                                <a href="#"><img class="lazy" src="img/hp_share/particul-bac.jpg" width="210"
+                                                 height="149" data-src="img/golden-cs.jpg" alt="教学视频"></a>
+
+                                <div class="product-text-micro">
+                                    <a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
+
+                                    <div class="sponsor-icon ">
+                                        <em>2015-03-06</em>
+                                        <button class="btn sp-r-btn" type="button"><span
+                                                class="glyphicon glyphicon-trash"></span></button>
+                                        <button class="btn sp-r-btn" type="button" data-title="编辑微课" data-trigger="modal" data-target="#editMicroLessonA"><span
+                                                class="glyphicon glyphicon-pencil"></span></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="thumbnail">
-                                <div class="photo-production">
-                                    <a href="#"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/golden-cs.jpg"  alt="教学视频"></a>
-                                    <div class="product-text-micro">
-                                    	<a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
-                                    	<div class="sponsor-icon ">
-                                    		<em>2015-03-06</em>
-                                        	<button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
-                                            <button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
-                                    	</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="photo-production">
+                                <a href="#"><img class="lazy" src="img/hp_share/particul-bac.jpg" width="210"
+                                                 height="149" data-src="img/golden-cs.jpg" alt="教学视频"></a>
+
+                                <div class="product-text-micro">
+                                    <a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
+
+                                    <div class="sponsor-icon ">
+                                        <em>2015-03-06</em>
+                                        <button class="btn sp-r-btn" type="button"><span
+                                                class="glyphicon glyphicon-trash"></span></button>
+                                        <button class="btn sp-r-btn" type="button" data-title="编辑微课" data-trigger="modal" data-target="#editMicroLessonA"><span
+                                                class="glyphicon glyphicon-pencil"></span></button>
                                     </div>
                                 </div>
                             </div>
-                          <div class="thumbnail">
-                                <div class="photo-production">
-                                    <a href="#"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/golden-cs.jpg"  alt="教学视频"></a>
-                                    <div class="product-text-micro">
-                                    	<a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
-                                    	<div class="sponsor-icon ">
-                                    		<em>2015-03-06</em>
-                                        	<button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-trash"></span> </button>
-                                            <button class="btn sp-r-btn" type="button"><span class="glyphicon glyphicon-pencil"></span> </button>
-                                    	</div>
+                        </div>
+                        <div class="thumbnail">
+                            <div class="photo-production">
+                                <a href="#"><img class="lazy" src="img/hp_share/particul-bac.jpg" width="210"
+                                                 height="149" data-src="img/golden-cs.jpg" alt="教学视频"></a>
+
+                                <div class="product-text-micro">
+                                    <a href="#" title="汽车发动机工作过程">汽车发动机工作过程</a>
+
+                                    <div class="sponsor-icon ">
+                                        <em>2015-03-06</em>
+                                        <button class="btn sp-r-btn" type="button"><span
+                                                class="glyphicon glyphicon-trash"></span></button>
+                                        <button class="btn sp-r-btn" type="button" data-title="编辑微课" data-trigger="modal" data-target="#editMicroLessonA"><span
+                                                class="glyphicon glyphicon-pencil"></span></button>
                                     </div>
                                 </div>
                             </div>
-                            
-                           
-                            
-                             <div class="clearfix"></div>
-                             <button class="btn master-class-space amend-btn" type="submit">上传微课</button>
-                             
-                <div class="container activity-pagin">
-                    <nav class="pagin-center">
-                        <ul class="pagination">
-                            <li>
-                                <a href="#" aria-label="首页">
-                                    <span aria-hidden="true">首页</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" aria-label="上一页">
-                                    <span aria-hidden="true">上一页</span>
-                                </a>
-                            </li>
-                            <!--<li><a href="#">1</a></li>-->
-                            <!--<li><a href="#">2</a></li>-->
-                            <!--<li><a href="#">3</a></li>-->
-                            <!--<li><a href="#">4</a></li>-->
-                            <!--<li><a href="#">5</a></li>-->
-                            <li>
-                                <a href="#" aria-label="下一页">
-                                    <span aria-hidden="true">下一页</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" aria-label="尾页">
-                                    <span aria-hidden="true">尾页</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                            
-                            
-                          
-                        
+                        </div>
+
+                        <div class="clearfix"></div>
+                        <button class="btn master-class-space amend-btn" type="submit" data-title="上传微课" data-trigger="modal" data-target="#uploadMicroLessonA">上传微课</button>
+
+                        <div class="container activity-pagin">
+                            <nav class="pagin-center">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="首页">
+                                            <span aria-hidden="true">首页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="上一页">
+                                            <span aria-hidden="true">上一页</span>
+                                        </a>
+                                    </li>
+                                    <!--<li><a href="#">1</a></li>-->
+                                    <!--<li><a href="#">2</a></li>-->
+                                    <!--<li><a href="#">3</a></li>-->
+                                    <!--<li><a href="#">4</a></li>-->
+                                    <!--<li><a href="#">5</a></li>-->
+                                    <li>
+                                        <a href="#" aria-label="下一页">
+                                            <span aria-hidden="true">下一页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="尾页">
+                                            <span aria-hidden="true">尾页</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
                     </div>
                     <!--微课结束点-->
-                 
-                
-                    
-                    
-                 
-                  
+                </div>
             </div>
-            </div>
-        
-    
 	</div>
 </div>
 <!-- 内容区域 结束 -->
@@ -279,6 +300,236 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<!--我的微课 上传微课第一步 -->
+<div class="modal fade" id="uploadMicroLessonA">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>上传微课</h3>
+    </div>
+    <div class="pop-container">
+        <div class="micro-lesson-container">
+            <form name="" action="">
+                <div class="form-group">
+                    <label class="col-title">课程名称：</label>
+                    <input type="text" class="form-control col-input" placeholder="请输入课程名称" value=""/>
+                </div>
+                <div class="form-group">
+                    <label class="col-title">所有专业分类：</label>
+                    <div class="dropdown firstLevel">
+                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                            选择专业
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">文化技术类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></a></li>
+                        </ul>
+                    </div>
+                    <label class="col-title">二级专业课程：</label>
+                    <div class="dropdown secondLevel">
+                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                            专业课程
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu2">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电设备安装与维修</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械制造技术</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气运行与控制</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电子电器应用与维修</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电技术应用</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">数控技术应用</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气技术应用</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">模具制造技术</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械加工技术</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">焊接技术应用</label></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-title">视频地址：</label>
+                    <input type="text" class="form-control col-input" value=""/>
+                </div>
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">课程简介：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount1" onKeyDown="textCounter(textareaCount1,surplus1,300);" onKeyUp="textCounter(textareaCount1,surplus1,300);"></textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus1" type="text" value="0" size="2" readonly="readonly">字。</p>
+                </div>
+            </form>
+
+        </div>
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a class="next-btn-micro" href="javascript:;" data-title="上传微课" data-trigger="modal" data-target="#uploadMicroLessonB"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
+            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--我的微课 上传微课第二步 -->
+<div class="modal fade" id="uploadMicroLessonB">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>上传微课</h3>
+    </div>
+    <div class="pop-container">
+        <div class="micro-lesson-container">
+            <form name="" action="">
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">教学目标：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount2" onKeyDown="textCounter(textareaCount2,surplus2,300);" onKeyUp="textCounter(textareaCount2,surplus2,300);"></textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus2" type="text" value="0" size="2" readonly="readonly">字。</p>
+                </div>
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">教学目标：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount4" onKeyDown="textCounter(textareaCount4,surplus4,300);" onKeyUp="textCounter(textareaCount4,surplus4,300);"></textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus4" type="text" value="0" size="2" readonly="readonly">字。</p>
+                </div>
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">教学方法：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount3" onKeyDown="textCounter(textareaCount3,surplus3,300);" onKeyUp="textCounter(textareaCount3,surplus3,300);"></textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus3" type="text" value="0" size="2" readonly="readonly">字。</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-title">相关资源：</label>
+                    <div class="upload-file-container">
+                        <span>附件</span><button type="button" class="btn btn-default btn-sm" >选取文件</button><span>未选择文件</span>
+                    </div>
+                    <input type="file" class="col-input col-file"/>
+                </div>
+                <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
+            </form>
+
+        </div>
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a href="myfiles_micro.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+
+<!--我的微课 编辑微课-->
+<div class="modal fade" id="editMicroLessonA">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>编辑微课</h3>
+    </div>
+    <div class="pop-container">
+        <div class="micro-lesson-container">
+            <form name="" action="">
+                <div class="form-group">
+                    <label class="col-title">课程名称：</label>
+                    <input type="text" class="form-control col-input" placeholder="请输入课程名称" value="机电设备安装与维修专业人才培养方案等专业"/>
+                </div>
+                <div class="form-group">
+                    <label class="col-title">所有专业分类：</label>
+                    <div class="dropdown firstLevel">
+                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
+                            选择专业
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu3">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">文化技术类</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></a></li>
+                        </ul>
+                    </div>
+                    <label class="col-title">二级专业课程：</label>
+                    <div class="dropdown secondLevel">
+                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
+                            专业课程
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu4">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电设备安装与维修</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械制造技术</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气运行与控制</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电子电器应用与维修</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电技术应用</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">数控技术应用</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气技术应用</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">模具制造技术</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械加工技术</label></a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">焊接技术应用</label></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-title">视频地址：</label>
+                    <input type="text" class="form-control col-input" value="http://www.v-haoke.com/haoke/index"/>
+                </div>
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">课程简介：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount1" onKeyDown="textCounter(textareaCount1,surplus1,300);" onKeyUp="textCounter(textareaCount1,surplus1,300);">文字这个东西极具艺术性，它干净漂亮，却又相互矛盾，生活也是如此！它给人以极高的期望，而后在你洋洋得意之时给予你极度的失望。</textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus1" type="text" value="58" size="2" readonly="readonly">字。</p>
+                </div>
+            </form>
+
+        </div>
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a class="next-btn-micro" href="javascript:;" data-title="上传微课" data-trigger="modal" data-target="#editMicroLessonB"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
+            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<div class="modal fade" id="editMicroLessonB">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>编辑微课</h3>
+    </div>
+    <div class="pop-container">
+        <div class="micro-lesson-container">
+            <form name="" action="">
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">教学目标：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount2" onKeyDown="textCounter(textareaCount2,surplus2,300);" onKeyUp="textCounter(textareaCount2,surplus2,300);">我们往往对成功这两个字有着诸多错误的判断，我不想在这里灌输什么负面的能量，我只是想以一个闲人的心态客观的阐述一些今天的我所理解的成功，尽管如此我依然要说不管那些今天已经高高在上的成功人士他们不愿意说的，或许他们根本就没有认识到的，负能量！却不能否认在很多角落有我们看不到的黑暗！</textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus2" type="text" value="300" size="2" readonly="readonly">字。</p>
+                </div>
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">教学目标：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount4" onKeyDown="textCounter(textareaCount4,surplus4,300);" onKeyUp="textCounter(textareaCount4,surplus4,300);">我们往往对成功这两个字有着诸多错误的判断，这就跟光明一样，我们站在阳光里，却不能否认在很多角落有我们看不到的黑暗！</textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus4" type="text" value="57" size="2" readonly="readonly">字。</p>
+                </div>
+                <div class="form-group form-group-texarea">
+                    <label class="col-title">教学方法：</label>
+                    <textarea class="form-control col-textarea" name="textareaCount3" onKeyDown="textCounter(textareaCount3,surplus3,300);" onKeyUp="textCounter(textareaCount3,surplus3,300);">我们往往对成功这两个字有着诸多错误的判断，我不想在这里灌输什么负面的能量，我只是想以一个闲人的心态客观的阐述一些今天的我所理解的成功，尽管如此我依然要说不管那些今天已经高高在上的成功人士他们不愿意说的，或许他们根本就没有认识到的，负能量!</textarea>
+                    <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus3" type="text" value="119" size="2" readonly="readonly">字。</p>
+                </div>
+                <div class="form-group">
+                    <label class="col-title">相关资源：</label>
+                    <div class="upload-file-container edit-file-container">
+                        <span>附件</span><div class="originalFile"><input type="radio" name="iCheck" checked>上传微课.docx</div>
+                    </div>
+                    <div class="selectNewFile">
+                        <button type="button" class="btn btn-default btn-sm" >选取文件</button>
+                        <div class="edit-file"><input type="file" class="col-input "/></div>
+                    </div>
+
+                </div>
+                <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
+            </form>
+
+        </div>
+        <div class="divider-hr"></div>
+        <div class="btn-group">
+            <a href="myfiles_micro.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -287,6 +538,35 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
+<script type="text/javascript" src="assets/js/icheck.js"></script>
+
+<script>
+    $(document).ready(function () {
+        changeButtonCss();
+
+        function changeButtonCss() {
+            $(".dropdown-menu li a input, .originalFile input").iCheck({
+                checkboxClass: 'icheckbox_minimal-green',  // 注意square和blue的对应关系,用于type=checkbox
+                radioClass: 'iradio_minimal-green', // 用于type=radio
+                increaseArea: '20%' // 增大可以点击的区域
+            });
+        }
+    });
+
+    function textCounter(field, countfield, maxlimit) {
+        if (field.value.length > maxlimit)
+            field.value = field.value.substring(0, maxlimit);
+        else{
+            countfield.value =field.value.length;
+        }
+    }
+
+    $('.next-btn-micro').click(function(){
+        $(this).parent().parent().parent().css('display',"none");
+    });
+
+</script>
 
 </body>
 </html>
