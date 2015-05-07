@@ -97,7 +97,7 @@
 .teacher-hero .more-mes {
 	width: 690px;
 	height: 30px;
-	background-image: url(../img/train-link.png);
+	background-image: url(../img/teacher-link.png);
 	background-repeat: no-repeat;
 	text-align: right;
 	margin-bottom: 26px;
@@ -208,6 +208,62 @@
 	margin-top: 8px;
 }
 	/*调整样式结束*/
+	
+/*解读快乐英雄——教育理论*/
+.theory-text-title{
+	font:18px "微软雅黑";
+	color:#3c3c3c;
+	margin:0 0 18px 12px;
+}
+.video-text-title{
+	font:18px "微软雅黑";
+	color:#3c3c3c;
+	margin:0 0 18px 0;
+	}
+.theory-src-img{
+	display:block;
+	width:630px;
+	height:266px;
+	margin:0 0 8px 12px;
+}
+.article-theory{
+	display:block;
+	margin-left:12px;
+	text-indent:4px;
+	width:630px;
+	font:12px/26px "宋体";
+	color:#505050;
+}
+.theory-video-icon{
+	width:620px;
+	overflow:hidden;
+	margin-bottom:52px;
 
+}
+.video-video-icon{
+	width:652px;
+	overflow:hidden;
+	margin-bottom:18px;
+	}
+ .theory-video-btn{
+	padding:0;
+	background-color:transparent;
+	height:24px;
+	width:auto;
+	float:right;
+	margin:0 0 0 20px;
+	font:18px/24px "微软雅黑";
+	text-align:center;
+}
+.theory-video-btn .theory-number{
+	display: inline-block;
+	height:14px;
+	font:12px/14px "微软雅黑";
+	vertical-align: top;
+	margin-top:4px;
+}
+.theory-video-btn:hover{
+	color:#ff781e;
+}
 /* CSS Document */
 
