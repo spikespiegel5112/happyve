@@ -377,9 +377,36 @@
 }
 
 .p-user-level, .p-user-name {
-    padding: 0 0 0 40px;
+    padding: 0;
+	display:inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
 }
-
+.p-user-name{
+	width:66px;
+}
+.p-user-level{
+	width:92px;
+}
+.top-reponse-secondary{
+	width:160px;
+}
+.reponse-secondary{
+	width:156px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.p-user-info .scale-weapons{
+	display:block;
+	width:50px;
+	height:30px;
+	float:right;
+	margin:-44px 22px 0 0;
+}
 .p-user-info {
     /*position:absolute;*/
     float: left;
@@ -736,17 +763,25 @@
 }
 
 .user-tag {
-    background: url(../img/label-mine.png) no-repeat;
-    background-position: center;
+    background: url(../img/label-mine.png) no-repeat center;
     height: 352px;
-    /*width: 300px;*/
+    width: 262px;
     position: relative;
-    /*margin-left: 6%;*/
+    margin-left:16px;
     padding-top: 5px;
 }
-
+.user-tag ul{
+	width:202px;
+	height:256px;
+	margin:34px 0 0 22px;
+	overflow:hidden;
+}
+.user-tag ul li{
+	margin-bottom:4px;
+	padding:0;
+}
 .user-tag h4 {
-    padding: 10px 0 0 70px;
+    padding: 0 0 0 70px;
     font: 24px '微软雅黑';
     color: #fff;
     letter-spacing: 4px;
@@ -754,8 +789,8 @@
 
 .user-tag .share-tag {
     position: absolute;
-    top: 36px;;
-    right: 52px;;
+    top: 36px;
+    right: 30px;
     cursor: pointer;
 }
 

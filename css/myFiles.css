@@ -47,9 +47,9 @@
     vertical-align: middle;
 }
 
-/*.personal-icon.pink {
+.personal-icon.pink {
     background: url(../img/footmark-foot.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}*/
+}
 
 .footprint ul li:hover .personal-icon{
     background: url(../img/footmark-foot.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);

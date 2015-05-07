@@ -1,0 +1,91 @@
+@charset "utf-8";
+.explain-hay {
+	width: 690px;
+	margin: 30px 0 32px 0;
+	position: relative;
+	background: url(../img/hr_explain/what-hr-man.jpg) top no-repeat;
+	padding-top: 54px;
+}
+
+.explain-hay a{
+	display:block;
+	width:692px;
+	height:312px;
+	border:1px solid #b2b2b2;
+}
+.explain-hay a img{
+	width:690px;
+	height:310px;
+}
+.positive-hay{
+	width: 690px;
+	margin: 30px 0 32px 0;
+	position: relative;
+	background: url(../img/hr_explain/positive-hs.jpg) top no-repeat;	
+}
+.more-theory{
+	display:block;
+	float:right;
+	font:14px "微软雅黑";
+	color:#3c3c3c;
+	margin-bottom:30px;
+}
+.theory-list-more{
+	width:690px;
+	height:202px;
+	padding: 0;
+	border:1px solid #b2b2b2;
+	overflow:hidden;
+	background-color:#f3f3f3;
+	}
+.theory-list-more .theory-link-img{
+	display:block;
+	width:404px;
+	height:200px;
+	float:left;
+}
+.theory-link-img img{
+	width:404px;
+	height:200px;
+}
+.theory-list-more .more-text-ep{
+	display:block;
+	float:left;
+	width:284px;
+	height:200px;
+}
+.more-text-ep li{
+	height:50px;
+	padding:12px 18px 0  18px;
+}
+.more-text-ep li:hover{
+	background-color:#fff;
+}
+.more-text-ep li a{
+	display:block;
+	font:12px/16px "微软雅黑";
+	color:#3c3c3c;
+}
+.more-text-ep li:hover a{
+	font-weight:bold;
+}
+
+.system-hay{
+	width: 690px;
+	margin: 30px 0 32px 0;
+	position: relative;
+	background: url(../img/hr_explain/rank-hr.jpg) top no-repeat;
+	padding-top: 54px;
+	}
+.system-hay a{
+	display:block;
+	width:692px;
+	height:432px;
+	border:1px solid #b2b2b2;
+}
+.system-hay a img{
+	width:690px;
+	height:430px;
+}
+/* CSS Document */
+
