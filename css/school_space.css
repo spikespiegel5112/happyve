@@ -534,7 +534,7 @@
 	display:none;
 }
 .sp-collective{
-	width:644px;
+	width:656px;
 	overflow:hidden;
 	margin:0 12px 0 22px;
 	position:relative;
@@ -560,7 +560,7 @@
 }
 .collective-text{
 	float:left;
-	width:548px;
+	width:556px;
 	margin:0 0 0 14px;
 	padding-top:6px;
 	font:14px/34px "微软雅黑";
@@ -585,7 +585,7 @@
 }*/
 .collte-info{
 	overflow:hidden;
-	width:548px;
+	width:556px;
 	margin: 12px 0 0 0;
 	}
 .collte-info .btn-default{
@@ -642,9 +642,10 @@
 	background-color:#91c81e;
 	padding:0;
 	float:right;
-	margin:14px 18px 4px 0;
-
-
+	margin:0;
+}
+.new-folder:hover{
+	color:#fff;
 }
 .new-folder a{
     width:108px;
@@ -654,6 +655,7 @@
 .new-folder a:hover{
 	color:#fff;
 }
+
 .sp-back{
 	display:block;
 	font:14px/30px "微软雅黑";
@@ -690,7 +692,7 @@
 .branch-fl{
 	padding-left:12px;
 	overflow:hidden;
-	margin:20px 22px 0px 0;
+	margin:20px 14px 0px 0;
 }
 
 .branch-fl a{
@@ -1334,4 +1336,30 @@
 }
 .green-line-mrg{
 	margin-top:26px;
+}
+
+.match-thumb .thumbnail .remove-check-btn{
+	width:18px;
+	height:18px;
+	position:absolute;
+	top:2px;
+	right:2px;
+	float:inherit;
+	padding:0;
+	
+}
+.remove-check-btn span{
+	font-size:14px;
+	vertical-align:top;
+}
+.remove-preview-btn{
+	float:right;
+	margin:-24px 6px 0 0;
+	width:18px;
+	height:18px;
+	padding:0;
+	background-color:transparent;
+}
+.remove-preview-btn span{
+	font-size:14px;
 }

@@ -293,12 +293,16 @@
 }
 .activity-detai .articl-active li:hover{
 	background-color:#e7f7cc;
+	
 }
 .articl-active li a{
 	font:12px/24px "宋体";
 	color:#505050;
 	padding-left:10px;
 } 
+.articl-active li:hover a{
+	font-weight:bold;
+}
 .articl-active-left li{
 	border-right:1px solid #a0a0a0;
 	}
