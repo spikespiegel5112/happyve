@@ -73,7 +73,7 @@ function lunarCalendar(){
         for(var row=0;row<6;row++){
             calendarEl+="<tr>";
             for(var line=0;line<7;line++){
-                calendarEl+="<td><div class='day'><div class='calendar_event_item'><a class='new_event' href='javascript:;'>新建事件</a><a class='mark' href='javascript:;'>评分</a></div></div></td>";
+                calendarEl+="<td><div class='day'><ul></ul><div class='calendar_event_item'><a class='new_event' href='javascript:;'>新建事件</a><a class='mark' href='javascript:;'>评分</a></div></div></td>";
             }
             calendarEl+="</tr>";
         }
@@ -82,19 +82,47 @@ function lunarCalendar(){
     }
 }
 function eventManagement(){
+    var tdIndex=0;
+    var trIndex=0;
+    var cellIndex=0;
+    var flag=false;
+    $('.new_event').click(function(){
+        trIndex=$(this).parent().parent().parent().parent().index();
+        tdIndex=$(this).parent().parent().parent().index();
+        cellIndex=tdIndex+trIndex*7;
+        console.log(cellIndex)
+    });
     $(".calendar_event_item .new_event").click(function(){
         
-    })
+    });
     $(".calendar_event_item .mark").click(function(){
-        
-    })
-    $(".calendar_event_item .new_event").click(function(){
-        $(".editevent_wrapper").fadeIn();
+        $(".calendargrade_wrapper").fadeIn();
         $("body").prepend("<div class='mask'></div>")
-    })
-    $(".editevent_input_wrapper input, .editevent_inner .delete").click(function(){
-        setTimeout(function(){$(".editevent_wrapper, .mask").fadeOut();},300);
-        setTimeout(function(){$(".mask").detach();},600)
+    });
+    console.log(flag)
+    $(".calendar_event_item .new_event").click(function(){
+        flag=true;
+        $(".newevent_wrapper").fadeIn();
+        $("body").prepend("<div class='mask'></div>");
+    });
+    $(".newevent_input_wrapper input, .editevent_input_wrapper input, .editevent_inner .delete").click(function(){
+        setTimeout(function(){$(".newevent_wrapper, .editevent_wrapper, .calendargrade_wrapper, .mask").fadeOut();},300);
+        setTimeout(function(){$(".mask").detach();},600);
+    });
+    $('.close_cross').click(function(){
+        setTimeout(function(){$('.newevent_wrapper, .calendargrade_wrapper, .editevent_wrapper, .mask').fadeOut();});
+        setTimeout(function(){$(".mask").detach();},600);
+    });
+    $('.newevent_input_wrapper input:eq(0)').click(function(){
+        var thisEl=$(this).parent();
+        var text=$(this).parent().siblings('.note_content').find('textarea').val();
+        var liCount=$('.calendar_main_wrapper td').eq(cellIndex).find('li').length;
+        if (flag==true&&text!=''&&liCount<3){
+            $('.calendar_main_wrapper td').eq(cellIndex).find('ul').append("<li><a href='javascript:;'>"+text+"</a>…</li>");
+            flag=false;
+        }else{
+            return;
+        }
     })
 }
 }(jQuery));
