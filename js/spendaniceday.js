@@ -37,8 +37,6 @@ function lunarCalendar(){
         var nextMonthDays=42-(firstDay+prevMonthDays);
         var cellBefore=0;
         var cellAfter=firstDay+1+monthDays;
-        // console.log(prevYear)
-        // console.log(calendar.solar2lunar(prevYear,prevMonth,prevMonthDays))
         $(".lunardate").remove();
         for(var i=1;i<=monthDays;i++){
             var solarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).cDay;
@@ -73,7 +71,7 @@ function lunarCalendar(){
         for(var row=0;row<6;row++){
             calendarEl+="<tr>";
             for(var line=0;line<7;line++){
-                calendarEl+="<td><div class='day'><ul></ul><div class='calendar_event_item'><a class='new_event' href='javascript:;'>新建事件</a><a class='mark' href='javascript:;'>评分</a></div></div></td>";
+                calendarEl+="<td><div class='day'><ul></ul><div class='calendar_event_item'><a class='new_event' href='javascript:;'>新建</a><a class='mark' href='javascript:;'>评分</a></div></div></td>";
             }
             calendarEl+="</tr>";
         }
@@ -86,22 +84,31 @@ function eventManagement(){
     var trIndex=0;
     var cellIndex=0;
     var flag=false;
+    var clickedTrIndex=0;
+    var clickedTdIndex=0;
+    $('.calendar_main_wrapper tr').click(function(){
+        var clickedTrIndex=$(this).index();
+    })
+    $('.calendar_main_wrapper tr td').click(function(){
+        var clickedTdIndex=$(this).index();
+    })
     $('.new_event').click(function(){
         trIndex=$(this).parent().parent().parent().parent().index();
         tdIndex=$(this).parent().parent().parent().index();
         cellIndex=tdIndex+trIndex*7;
-        console.log(cellIndex)
     });
-    $(".calendar_event_item .new_event").click(function(){
-        
+    $('.calendar_main_wrapper td').click(function(){
+        trIndex=$(this).parent().index();
+        tdIndex=$(this).index();
+        cellIndex=tdIndex+trIndex*7;
     });
     $(".calendar_event_item .mark").click(function(){
         $(".calendargrade_wrapper").fadeIn();
         $("body").prepend("<div class='mask'></div>")
     });
-    console.log(flag)
     $(".calendar_event_item .new_event").click(function(){
         flag=true;
+        $(".newevent_wrapper").find('textarea').val('')
         $(".newevent_wrapper").fadeIn();
         $("body").prepend("<div class='mask'></div>");
     });
@@ -123,6 +130,25 @@ function eventManagement(){
         }else{
             return;
         }
-    })
+    });
+    $('textarea').keyup(function(){
+        var textVal=$(this).val();
+        var textLen=textVal.length;
+        $('.inputnumber_item span').text(textLen);
+    });
+    $('.calendar_main_wrapper .day').on('click','ul li a',function(){
+        eventLiIndex=$(this).parent().index();
+        $('.editevent_wrapper').find('textarea').val($(this).text()).end().fadeIn();
+    });
+    $('.editevent_wrapper .editevent_input_wrapper input').eq(0).click(function(){
+        var editText=$('.editevent_inner').find('textarea').val();
+        var trEl=$('calendar_main_wrapper').find('tr').eq(clickedTrIndex);
+        var tdEl=trEl.find('td').eq(clickedTdIndex);
+        $('.calendar_main_wrapper td').eq(cellIndex).find('a').eq(eventLiIndex).text(editText);
+        alert($('.calendar_main_wrapper td').eq(cellIndex).find('a').html());
+    });
+    // $('td').click(function(){
+    //     alert(cellIndex);
+    // })
 }
 }(jQuery));
