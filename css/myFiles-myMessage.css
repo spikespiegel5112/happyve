@@ -212,19 +212,20 @@ ul,ol,li{
 
 .mail-content .mail-main-container .every-email{
     margin-left: 20px;
-    width: 100%;
+    width: 95%;
 }
 
 .mail-content .mail-main-container .every-email li {
     display: inline-block;
     float: left;
-    padding-left: 20px;
+    padding-left: 10px;
     height: 42px;
     line-height: 42px;
     border-bottom: 1px solid #c1c1c1;
 }
 
 .mail-content .mail-main-container .every-email label{
+    float: left;
     font-weight: normal;
 }
 
@@ -333,7 +334,8 @@ ul,ol,li{
 }
 
 .activity-pagin, .pagin-center .pagination{
-    padding: 0 10px;
+    float: left;
+    padding: 10px 20px 0 25px;
 }
 
 .pagin-center .pagination{
@@ -424,6 +426,22 @@ ul,ol,li{
 }
 
 /*我的档案 我的集体*/
+.personal-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 -21px rgba(0, 0, 0, 0)!important;
+    vertical-align: middle;
+}
+
+.personal-icon.pink {
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.footprint ul li:hover .personal-icon{
+    background: url(../img/footmark-foot.png) no-repeat scroll 0 0 rgba(0, 0, 0, 0)!important;
+}
+
 .testing-icon {
     display: inline-block;
     width: 16px;
@@ -555,11 +573,13 @@ ul,ol,li{
 .joinTeam-container .search-group .form-search{
     margin-bottom: 10px;
     height: 24px;
+    color: #646464;
 }
 
 .joinTeam-container .search-group .form-search >input{
     max-width: 145px;
     padding-left: 10px!important;
+    padding-right: 20px;
 }
 
 .joinTeam-container .search-group .form-search >select{
@@ -715,6 +735,10 @@ ul,ol,li{
 .dropdown.searchCondition{
     width: 138px;
     display: inline-block;
+}
+
+.dropdown.searchCondition.open{
+    color: #646464;
 }
 
 .searchCondition button .caret{
