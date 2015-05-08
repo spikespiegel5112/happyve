@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
-
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -530,11 +529,10 @@
         <div class="pop-show-container">
             <div class="form-group ">
                 <span class="interaction col-lg-4">参赛范围：</span>
-                <label><input type="radio" checked name="iCheck school" class="input-interaction " >&nbsp;&nbsp;本校</label>
-                <label style="margin-left: 20px"><input type="radio" name="iCheck school" class="input-interaction "
-id="showAllSchool">&nbsp;&nbsp;校际</label>
+                <label id="hideAllSchool"><input type="radio" checked="checked" name="iCheck school" class="input-interaction " value="本校" >&nbsp;&nbsp;本校</label>
+                <label id="showAllSchool" style="margin-left: 80px"><input type="radio" name="iCheck school" class="input-interaction " value="校际" >&nbsp;&nbsp;校际</label>
             </div>
-            <div class="interschool-container" id="interschool-container">
+            <div class="interschool-container">
                 <div id="target-school" class="target-school">
                     <div class="school default"><span>中国人民大学</span><a class="close" href="#">×</a></div>
                     <div class="school default"><span>北京师范大学</span><a class="close" href="#">×</a></div>
@@ -559,14 +557,14 @@ id="showAllSchool">&nbsp;&nbsp;校际</label>
             </div>
             <div class="form-group ">
                 <span class="interaction col-lg-4">作品内容：</span>
-                <label><input type="radio" checked name="iCheck production" class="input-interaction " >&nbsp;&nbsp;视频</label>
+                <label><input type="radio" checked="checked" name="iCheck production" class="input-interaction " >&nbsp;&nbsp;视频</label>
                 <label style="margin-left: 10px"><input type="radio" name="iCheck production" class="input-interaction ">&nbsp;&nbsp;书册</label>
                 <label style="margin-left: 10px"><input type="radio" name="iCheck production" class="input-interaction ">&nbsp;&nbsp;海报</label>
                 <label style="margin-left: 10px"><input type="radio" name="iCheck production" class="input-interaction ">&nbsp;&nbsp;照片</label>
             </div>
             <div class="form-group ">
                 <span class="interaction col-lg-4">提交人资格：</span>
-                <label><input type="radio" checked name="iCheck manager" class="input-interaction " >&nbsp;&nbsp;校级管理员</label>
+                <label><input type="radio" checked="checked" name="iCheck manager" class="input-interaction " >&nbsp;&nbsp;校级管理员</label>
                 <label style="margin-left: 10px"><input type="radio" name="iCheck manager" class="input-interaction ">&nbsp;&nbsp;班级管理员</label>
                 <label style="margin-left: 10px"><input type="radio" name="iCheck manager" class="input-interaction ">&nbsp;&nbsp;部门管理员</label>
                 <span class="interaction col-lg-4"></span>
@@ -577,12 +575,13 @@ id="showAllSchool">&nbsp;&nbsp;校际</label>
 
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-three">
-            <a id="newShowA-prev-btn" href="javascript:;" data-trigger="modal" data-title="新建活动" data-target="#newShowA"><div class="btn-prev disabled"><button type="button" class="btn">上一步</button></div></a>
+            <a class="newShowA-prev-btnv" href="javascript:;" data-trigger="modal" data-title="新建活动" data-target="#newShowA"><div class="btn-prev disabled"><button type="button" class="btn">上一步</button></div></a>
             <a href="sp_athletics.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
             <a href="sp_athletics.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 </div>
+
 <!--编辑活动-->
 <div class="modal fade" id="editorShowActivity" >
 
@@ -649,11 +648,22 @@ id="showAllSchool">&nbsp;&nbsp;校际</label>
             });
         }
 
-        $('#newShowA-prev-btn').click(function(){
+        $('.newShowA-prev-btn').click(function(){
             $(this).parent().parent().parent().css('display','none');
         });
         $('#newShowB-next-btn').click(function(){
             $(this).parent().parent().parent().css('display','none');
+        });
+
+        $('#hideAllSchool').click(function(){
+            $('#hideAllSchool input[type=radio]').checked=true;
+            $('.interschool-container').css('display','none');
+        });
+
+        $('#showAllSchool').click(function(){
+            if($('#showAllSchool input[type=radio]').checked=true){
+                $('.interschool-container').css('display','block');
+            }
         });
     });
 </script>

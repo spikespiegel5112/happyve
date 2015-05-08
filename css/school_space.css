@@ -1175,6 +1175,7 @@
 .pop-show-container .form-group label{
     font-size: 14px;
     font-weight: normal;
+    cursor: pointer;
 }
 /*校际比赛*/
 .interschool-container {

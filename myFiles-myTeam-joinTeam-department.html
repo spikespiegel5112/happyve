@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
 
     <!-- 自己页面的样式文件 -->
+    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/myFiles-myMessage.css" type="text/css" media="all">
 </head>
 <body>
@@ -94,9 +95,9 @@
                         </form>
                         <form class="form-search search-class-onfocus ">
                             <label>查找:</label>
-                            <div class="dropdown  searchCondition ">
-                                <button class="btn dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                                    班级
+                            <div class="dropdown  searchCondition">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                    部门
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu1">
@@ -106,6 +107,11 @@
                                 </ul>
                             </div>
                         </form>
+                        <form class="form-search className">
+                            <label>部门名称:</label>
+                            <input type="text" class="input-medium search-query " value="会计部">
+                            <button type="submit" class="btn glyphicon glyphicon-search"></button>
+                        </form>
                     </div>
                     <div class="newSchool">
                         <button>新建学校</button>
@@ -113,7 +119,11 @@
                     </div>
 
                 </div>
-                <div class="whiteSpace" style="width: 100%; height: 1166px"></div>
+                <div class="newClass">
+                    <button class="new" data-trigger="modal" data-title="申请加入" data-target="#applySuccess">申请加入</button>
+                    <button data-trigger="modal" data-title="新建部门" data-target="#newDepartmentn">新建部门</button>
+                </div>
+                <div class="whiteSpace" style="width: 100%; height: 1146px"></div>
             </div>
         </div>
 
@@ -330,142 +340,28 @@
 </div>
 <!-- 版权信息 结束 -->
 <!--弹出层 开始-->
-<!--新建学校-->
-<div class="modal fade" id="newSchool">
+<!--新建部门-->
+<div class="modal fade" id="newDepartmentn">
     <div class="modal-header">
         <a class="close" href="#" data-dismiss="modal">×</a>
-        <h3>新建学校</h3>
+        <h3>新建部门</h3>
     </div>
 
     <div class="form-group-pop">
+        <div class="joinTeam-container pop-joinTeam-container">
+            <div class="search-group pop-search-group">
+                <form class="form-search associationName">
+                    <label>部门名称:</label>
+                    <input type="text" class="input-medium search-query" value="" placeholder="输入新建的部门名称">
+                </form>
+            </div>
+        </div>
+        <div class="joinClass-img"><img src="img/cartoon-man01.png" /></div>
 
-        <form class="form-horizontal">
-            <div class="form-group">
-                <label for="schoolName" class="col-sm-4 control-label">学校名称：</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control" id="schoolName" placeholder="请输入学校名称">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="schoolName" class="col-sm-4 control-label">所属省份：</label>
-                <div class="col-sm-3">
-                    <select class="form-control">
-                        <option>北京</option>>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label"></label>
-                <div class="radio-group col-sm-5" id="selectAddress">
-                    <label>
-                        <input type="radio" name="iCheck" value="" checked>&nbsp;&nbsp;北京
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="areaCode" class="col-sm-4 control-label">区号：</label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" id="areaCode" value="010">
-                </div>
-            </div>
-        </form>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a href="#applySuccess" data-trigger="modal" data-title="申请加入" data-target="#applySuccess"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="myFiles-myTeam-joinTeam-department.html" ><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="myFiles-myTeam-joinTeam-department.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 </div>
@@ -482,8 +378,8 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a href="myFiles-myTeam-joinTeam.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="myFiles-myTeam-joinTeam-department.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="myFiles-myTeam-joinTeam-department.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 
