@@ -19,13 +19,16 @@
     color: #fff;
     padding: 16px 0 0 60px;
     letter-spacing: 6px;
-    margin-bottom: 54px;
+    margin-bottom: 48px;
 }
-.footprint-title-rich{
-	font: bold 16px "微软雅黑";
+.footprint .footprint-title-rich{
+	display:block;
+	font: bold 16px/34px "微软雅黑";
     color: #fff;
-	padding: 0 0 0 102px;
-	margin-bottom: 54px;
+	width:158px;
+	height:34px;
+	margin:0 0 54px 44px;
+	text-align:center;
 }
 .footprint ul {
     width: 168px;
@@ -150,13 +153,11 @@
 	color:#ff7800;
 	margin:-36px 0 20px 30px;
 	
-	
-	-webkit-text-shadow:#fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -1px 0;
-    -moz-text-shadow:#fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -1px 0; 
-    -o-text-shadow:#fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -1px 0; 
-       
-    -ms-text-shadow:#fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -1px 0; 
-    text-shadow:#fff 2px 0 0,#fff 0 2px 0,#fff -2px 0 0,#fff 0 -1px 0;
+	-webkit-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
+    -moz-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff; 
+    -o-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff; 
+    -ms-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff; 
+    text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
 }
 .footprint-content {
     width: 704px;
@@ -455,11 +456,9 @@
 	border-bottom:none;
 }
 
-.modal.hei-mail{
-	height:210px;
-}
+
 .phone-popup .ok-girl-mail{
-	margin:60px auto 0;
+	margin:130px auto 0;
 	overflow:hidden;
 	width:350px;
 

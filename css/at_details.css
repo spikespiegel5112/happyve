@@ -696,6 +696,9 @@
 	}
 .sponsor-icon .hov-sponsor-h:hover{
 	color:#ff7800;}
+.sponsor-icon .hov-sponsor-active{
+	color:#ff7800;
+	}
 	
 /*新建海报*/
 .thum-sponsor-icon{
