@@ -396,11 +396,12 @@ p.test-number span {
     color: #ffffff;
 }
 .hotlabel_one, .hotlabel_two, .hotlabel_three{
+    margin-left: -20px;
     float: left;
-    width: 200px;
+    width: 220px;
 }
 .hotlabel_four, .hotlabel_fine, .hotlabel_six{
-    margin-left: 100px;
+    margin-left: 60px;
 }
 .hotlabel_one span, .hotlabel_fine span{
     background-color: #91c31e;
@@ -428,12 +429,12 @@ p.test-number span {
     -webkit-box-shadow: -1px 2px 1px #37a0a0;
 }
 .hotlabel_count span{
-    width: 100px;
+    width: 70px;
     text-align: right;
 }
 .hotlabel_count_left span {
     float: left;
-    margin-left: -50px;
+    margin-left: -10px;
     color: #303030;
 }
 .hotlabel_count_right span{
