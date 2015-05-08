@@ -1,15 +1,6 @@
 (function($){
-test(2015,5);
 lunarCalendar();
-function test(year,month) {
-    var d = new Date();
-    d.setYear(year);
-    d.setMonth(month - 1);
-    d.setDate(1);
-    var weekArr = ["日", "一", "二", "三", "四", "五", "六"];//星期
-    var dateStr = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
-    console.log(dateStr + ' 是星期' + weekArr[d.getDay()]);
-}
+eventManagement();
 function lunarCalendar(){
     var selectedYear=$(".calendar_dateselect_wrapper select[name='SY']");
     var selectedMonth=$(".calendar_dateselect_wrapper select[name='SM']");
@@ -23,46 +14,52 @@ function lunarCalendar(){
     });
     function showCalendar(y,m){
         var objDate=new Date();
-        // var objFirstDay=new Date();
         objDate.setYear(y);
         objDate.setMonth(m-1);
         objDate.setDate(-1);
-        var firstDay=objDate.getDay();
+        var firstDay=objDate.getDay(); 
         var today=objDate.getDate();
+        var prevYear=selectedYear.val();
+        var prevMonth=selectedMonth.val()-1;
         var monthDays=calendar.solarDays(y,m);
-        var prevMonthDays=7-firstDay;
-        var afterMonthDays=42-monthDays+prevMonthDays;
+        var prevMonthDays=calendar.solarDays(prevYear,m-1)-firstDay-1;
+        if(prevMonth<1){
+            prevMonth=13;
+            prevYear=prevYear-1;
+            prevMonthDays=calendar.solarDays(prevYear,m-1)-firstDay;
+        }
+        var nextYear=selectedYear.val();
+        var nextMonth=parseInt(selectedMonth.val())+1;
+        if(nextMonth>12){
+            nextMonth=1;
+            nextYear=parseInt(nextYear)+1;
+        }
+        var nextMonthDays=42-(firstDay+prevMonthDays);
         var cellBefore=0;
-        var cellAfter=42-afterMonthDays;
-        
+        var cellAfter=firstDay+1+monthDays;
+        // console.log(prevYear)
+        // console.log(calendar.solar2lunar(prevYear,prevMonth,prevMonthDays))
         $(".lunardate").remove();
         for(var i=1;i<=monthDays;i++){
             var solarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).cDay;
             var lunarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).IDayCn;
-            $(".calendar_main_wrapper tbody td").eq(i+firstDay).prepend("<label class='lunardate'>"+solarDay+"</label>");
-            $(".calendar_main_wrapper tbody td").eq(i+firstDay).prepend("<span class='lunardate'>"+lunarDay+"</span>");
-        }
-        console.log(firstDay);
-        console.log(prevMonthDays);
-        for(var i=0;i<=firstDay;i++){
-            var prevMonth=selectedMonth.val()-1;
-            var prevSolarDay=calendar.solar2lunar(selectedYear.val(),prevMonth,i).cDay;
-            var prevlunarDay=calendar.solar2lunar(selectedYear.val(),prevMonth,i).IDayCn;
-            if(prevMonth<0){
-                prevMonth=11;
-            }
+            $(".calendar_main_wrapper tbody td").eq(i+firstDay).prepend("<label class='lunardate color_red'>"+solarDay+"</label>");
+            $(".calendar_main_wrapper tbody td").eq(i+firstDay).prepend("<span class='lunardate color_red'>"+lunarDay+"</span>");
+        };
+        for(var i=1;i<=firstDay+1;i++){
+            var prevSolarDay=calendar.solar2lunar(prevYear,prevMonth,prevMonthDays+i).cDay;
+            var prevlunarDay=calendar.solar2lunar(prevYear,prevMonth,prevMonthDays+i).IDayCn;
             $(".calendar_main_wrapper tbody td").eq(cellBefore).prepend("<label class='lunardate'>"+prevSolarDay+"</label>");
             $(".calendar_main_wrapper tbody td").eq(cellBefore).prepend("<span class='lunardate'>"+prevlunarDay+"</span>");
             cellBefore++;
         };
-        // for(var i=0;i<afterMonthDays;i++){
-        //     var nextMonth=selectedMonth.val()+1;
-        //     var afterSolarDay=calendar.solar2lunar(selectedYear.val(),nextMonth,i).cDay;
-        //     var afterlunarDay=calendar.solar2lunar(selectedYear.val(),nextMonth,i).IDayCn;
-        //     $(".calendar_main_wrapper tbody td").eq(cellAfter).prepend("<label class='lunardate'>"+afterSolarDay+"</label>");
-        //     $(".calendar_main_wrapper tbody td").eq(cellAfter).prepend("<span class='lunardate'>"+afterlunarDay+"</span>");
-        //     cellAfter++;
-        // };
+        for(var i=1;i<=nextMonthDays;i++){
+            var afterSolarDay=calendar.solar2lunar(nextYear,nextMonth,i).cDay;
+            var afterlunarDay=calendar.solar2lunar(nextYear,nextMonth,i).IDayCn;
+            $(".calendar_main_wrapper tbody td").eq(cellAfter).prepend("<label class='lunardate'>"+afterSolarDay+"</label>");
+            $(".calendar_main_wrapper tbody td").eq(cellAfter).prepend("<span class='lunardate'>"+afterlunarDay+"</span>");
+            cellAfter++;
+        };
     }
     function bulidCalendar(){
         var calendarEl="";
@@ -76,58 +73,28 @@ function lunarCalendar(){
         for(var row=0;row<6;row++){
             calendarEl+="<tr>";
             for(var line=0;line<7;line++){
-                calendarEl+="<td><div class='day'></div></td>";
+                calendarEl+="<td><div class='day'><div class='calendar_event_item'><a class='new_event' href='javascript:;'>新建事件</a><a class='mark' href='javascript:;'>评分</a></div></div></td>";
             }
             calendarEl+="</tr>";
         }
         $(".calendar_main_wrapper").html(calendarEl);
         $(".calendar_main_wrapper tbody tr").find("td:even").find(".day").addClass("even_bg");
     }
-    // alert(calendar.solar2lunar(selectedYear,selectedMonth,i).lDay);
 }
-function zuiCalendar(){
-    var calendar = $('#calendar').data('zui.calendar');
-    var newEvent = {title: '吃饭了', desc: '要吃更多', start: '2014-8-14 12:00', end: '2014-8-14 13:00'};
-    var newEventItemEl="<div class='calendar_event_item'><a href='javascript:;'>新建事件</a><a href='javascript:;'>评分</a></div>"
-    $("#calendar").calendar({
-        clickTodayBtn:function(){
-            $("#calendar .week-days .month").css("display","none");
-        },
-        clickPrevBtn:function(){
-            $("#calendar .week-days .month").css("display","none");
-        },
-        clickNextBtn:function(){
-            $("#calendar .week-days .month").css("display","none");
-        },
-        clickCell:function(e){
-            console.log(e);
-            var $this=$(e.this);
-            if($this.hasClass("active")){
-                return;
-            }else{
-                $("#calendar .week-days td .day").removeClass("active");
-                $this.find(".day").addClass("active");
-                // if($this.find(".calendar_event_item").is(":hidden")){
-                //     $(".calendar_event_item").hide();
-                //     $this.find(".calendar_event_item").show();
-                // }else{
-                //     $this.find(".calendar_event_item").hide();
-                // }
-            }
-        }
-    }); 
-    zuiCalendarCustomize();
-    function zuiCalendarCustomize(){
-        $("#calendar .week-days").find("td:even .day").addClass("even_bg");
-        $("#calendar .week-days .month").css("display","none");
-        $("#calendar .week-days .cell-day").append(newEventItemEl);
-        $(".cell-day").hover(function(){
-            $(this).find(".calendar_event_item").show();
-        },function(){
-            $(this).find(".calendar_event_item").hide();
-        });
-
-    }
+function eventManagement(){
+    $(".calendar_event_item .new_event").click(function(){
+        
+    })
+    $(".calendar_event_item .mark").click(function(){
+        
+    })
+    $(".calendar_event_item .new_event").click(function(){
+        $(".editevent_wrapper").fadeIn();
+        $("body").prepend("<div class='mask'></div>")
+    })
+    $(".editevent_input_wrapper input, .editevent_inner .delete").click(function(){
+        setTimeout(function(){$(".editevent_wrapper, .mask").fadeOut();},300);
+        setTimeout(function(){$(".mask").detach();},600)
+    })
 }
 }(jQuery));
-    
