@@ -95,16 +95,40 @@
                 <div id="calendar" class="calendar calendar_main_wrapper"></div>
                 <div class="newevent_wrapper">
                     <div class='newevent_inner'>
-                        <div class="windowbar">
+                        <div class="calendar_windowbar">
                             <a class="close_cross" href="javascript:;">+</a>
                         </div>
                         <div class='note_content'>
                             <h5>内容：</h5>
                             <textarea maxlength='2000'></textarea>
-                            <p class='inputnumber_item'>最多输入2000字，您已输入<span>123</span>字</p>
+                            <p class='inputnumber_item'>最多输入2000字，您已输入<span>0</span>字</p>
                         </div>
                         <div class="newevent_input_wrapper">
                             <input type="button" value="保存" data="accept" class="form_button button button-3d button-action button-pill">
+                            <input type="button" data="cancel" value="取消" class="form_button button button-3d button-action button-pill">
+                        </div>
+                    </div>
+                </div>
+                <div class="calendargrade_wrapper">
+                    <div class='calendargrade_inner'>
+                        <div class="calendar_windowbar">
+                            <a class="close_cross" href="javascript:;">+</a>
+                        </div>
+                        <div class="calendargrade_mian_wrapper">
+                            <ul>
+                                <li><input type='radio' name='calendargrade'><label>9分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是十分突出的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>8分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是极好的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>7分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是很好的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>6分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是不错的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>5分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是普通的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>4分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是低于平均水平的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>3分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是不好的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>2分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是糟糕的一天</label></li>
+                                <li><input type='radio' name='calendargrade'><label>1分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是我生命中最糟的一天</label></li>
+                            </ul>
+                        </div>
+                        <div class="newevent_input_wrapper">
+                            <input type="button" value="确定" data="accept" class="form_button button button-3d button-action button-pill">
                             <input type="button" data="cancel" value="取消" class="form_button button button-3d button-action button-pill">
                         </div>
                     </div>
@@ -114,7 +138,7 @@
                         <a class="delete glyphicon glyphicon-trash" href="javascript:;"></a>
                         <div class='note_content'>
                             <textarea maxlength='2000'></textarea>
-                            <p class='inputnumber_item'>最多输入2000字，您已输入<span>123</span>字</p>
+                            <p class='inputnumber_item'>最多输入2000字，您已输入<span>0</span>字</p>
                         </div>
                         <div class="editevent_input_wrapper">
                             <input type="button" value="保存" data="accept" class="form_button button button-3d button-action button-pill">

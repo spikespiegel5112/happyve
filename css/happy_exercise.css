@@ -85,8 +85,9 @@ body{font-family: "microsoft yahei";position: relative;}
 .note_content{position: relative;}
 .note_content textarea{padding:0.3em 0.5em 2.3em 0.5em;width: 100%;height: 130px;border-radius: 5px;border:1px solid #c8c8c8;color:#3c3c3c;}
 .note_content textarea:focus{box-shadow: 0px 0px 7px #70CEFF;}
-.note_content p{width:94%;position: absolute;right: 0.5em;bottom: -17px;}
+.note_content p{width:94%;position: absolute;right: 0.5em;bottom: -15px;}
 .editevent_input_wrapper, .newevent_input_wrapper{margin:0 auto;width: 270px;}
+.newevent_input_wrapper:after{content: "";display: block;clear: both;}
 .newevent_input_wrapper input, .editevent_input_wrapper input{float: left;margin:24px 10px;}
 .editevent_input_wrapper input:after{content: "";display: block;clear: both;}
 .changemyself_countdown_item{margin:0 0 0 5em;width: 230px;height: 165px;background: url(../img/img_wbl/dialoguebix_1_00000.png);}
@@ -271,9 +272,11 @@ body{font-family: "microsoft yahei";position: relative;}
 .calendar_main_wrapper{margin:0 auto;width: 95%;}
 .calendar_main_wrapper thead th{text-align: center;padding: 30px 0 10px 0;font-size: 1.2em;}
 .calendar_main_wrapper tbody{border-width: 2px;border-style: solid none none solid;border-color:#badb6a;}
-.calendar_main_wrapper tbody td{height: 70px;border-width: 2px;border-style: none solid solid none;border-color:#badb6a;}
-
+.calendar_main_wrapper tbody td{width:14%;height: 90px;border-width: 2px;border-style: none solid solid none;border-color:#badb6a;overflow: hidden;position: relative;}
 .calendar_main_wrapper .day{height: 100%;position: relative;}
+.calendar_main_wrapper .day ul{float:left;margin:0 auto;width: 100%;overflow: hidden;}
+.calendar_main_wrapper .day ul li{height: 1.3em;color: #9bcb27;}
+.calendar_main_wrapper .day ul li a{float:left;margin:0 0 0 5px;width:5em;height: 1.3em;line-height: 1.3em;overflow: hidden;color: #9bcb27;}
 #calendar .even_bg{background: #efffea;display: block;}
 .calendar_event_item{display:none;position: absolute;bottom: 0.1em;}
 .calendar_main_wrapper tbody td:hover .calendar_event_item{display: block;}
@@ -287,8 +290,14 @@ body{font-family: "microsoft yahei";position: relative;}
 .editevent_inner textarea{margin:0 auto;display:block;width: 480px;height: 190px;}
 .editevent_inner .delete{float: right;margin:0 0 1em 0;width: 1em;height: 1em;z-index: 1;}
 .editevent_inner .delete:after{content: "";display: block;clear: both;}
-.newevent_wrapper{width: 100%;}
-.newevent_inner{margin:0 auto;width: 470px;}
+.newevent_wrapper, .calendargrade_wrapper{display:none;width: 690px;position: fixed;top: 10%;z-index: 3;}
+.newevent_inner{margin:0 auto;width: 470px;background: #fff;}
+.calendargrade_inner{margin:0 auto;width: 360px;background: #fff;}
+.calendargrade_mian_wrapper{margin:2em auto;width: 260px;}
+.calendargrade_mian_wrapper li{margin:1em 0;height: 2em;font-size: 1.2em;}
+.calendargrade_mian_wrapper li input{float:left;margin:0 5px;height:2em;line-height: 2em;}
+.calendargrade_mian_wrapper li label{float:left;line-height: 2em;}
 .newevent_inner .note_content{margin: 0 auto;width: 414px;}
-.note_content h5{margin:20px 0;font-size: 1.2em;}
-.newevent_inner .windowbar{width: 100%;height: 28px;background: #c9e48f;}
+.note_content h5{margin:20px 0;font-size: 1.2em;color: #3c3c3c;}
+.calendar_windowbar{width: 100%;height: 28px;background: #c9e48f;}
+.calendar_windowbar .close_cross{float:right;width:1em;font-size: 2em;font-weight: bolder;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);}
