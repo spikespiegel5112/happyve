@@ -572,12 +572,11 @@ ul,ol,li{
     padding: 0 0 0 10px;
     height: 24px;
     background-color: transparent;
-    color: #b4b4b4;
     text-align: left;
 }
 
-.joinTeam-container .search-group .form-search .btn:visited{
-    border: none;
+.joinTeam-container .search-group .form-search .glyphicon-search{
+    opacity: 0.5;
 }
 
 .joinTeam-container .search-class{
@@ -716,6 +715,32 @@ ul,ol,li{
 .dropdown.searchCondition{
     width: 138px;
     display: inline-block;
+}
+
+.searchCondition button .caret{
+    float: right;
+    margin: 8px 8px 0 0;
+    opacity: 1;
+}
+
+.searchCondition .dropdown-menu{
+    margin-top: 0;
+    padding: 0;
+    min-width: 145px;
+    border-radius: 0;
+}
+
+.searchCondition .dropdown-menu > li{
+    border-bottom: 1px solid #b4b4b4 ;
+}
+
+.searchCondition .dropdown-menu > li a{
+    padding: 3px 10px;
+}
+
+.searchCondition .dropdown-menu > li a:hover{
+    background: #c7e38e;
+    color: #fff;
 }
 
 .searchCondition .btn {
