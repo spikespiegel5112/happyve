@@ -111,10 +111,48 @@ a {
     display: inline-block;
     float: left;
     margin: 15px 0 0 10px;
+    cursor: pointer;
+}
+
+.other-accounts > ul > li a{
+    display: inline-block;
+    width: 35px;
+    height: 30px;
+}
+
+.other-accounts > ul > li.sinaweibo a {
+    background: url("../img/login-register/sinaweibo-icon.png") no-repeat center;
+}
+
+.other-accounts > ul > li.sinaweibo a:hover {
+    background: url("../img/login-register/sinaweibo-icon-red.png") no-repeat center;
+}
+
+.other-accounts > ul > li.renren a {
+    background: url("../img/login-register/renren-icon.png") no-repeat center;
+}
+
+.other-accounts > ul > li.renren a:hover {
+    background: url("../img/login-register/renren-icon-blue.png") no-repeat center;
+}
+
+.other-accounts > ul > li.tencentqq a {
+    background: url("../img/login-register/tencentqq-icon.png") no-repeat center;
+}
+
+.other-accounts > ul > li.tencentqq a:hover {
+    background: url("../img/login-register/tcencentqq-icon-color.png") no-repeat center;
+}
+
+.other-accounts > ul > li.wechat a {
+    background: url("../img/login-register/wechat-icon-gray.png") no-repeat center;
+}
+
+.other-accounts > ul > li.wechat a:hover {
+    background: url("../img/login-register/wechat-icon.png") no-repeat center;
 }
 
 /*注册*/
-
 .register-detail #register-info{
     display: block;
     margin: 25px 25px 0 25px;
