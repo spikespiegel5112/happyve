@@ -88,10 +88,10 @@ function eventManagement(){
     var clickedTdIndex=0;
     $('.calendar_main_wrapper tr').click(function(){
         var clickedTrIndex=$(this).index();
-    })
+    });
     $('.calendar_main_wrapper tr td').click(function(){
         var clickedTdIndex=$(this).index();
-    })
+    });
     $('.new_event').click(function(){
         trIndex=$(this).parent().parent().parent().parent().index();
         tdIndex=$(this).parent().parent().parent().index();
