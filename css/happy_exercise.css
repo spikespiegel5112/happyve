@@ -276,7 +276,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .calendar_main_wrapper .day{height: 100%;position: relative;}
 .calendar_main_wrapper .day ul{float:left;margin:0 auto;width: 100%;overflow: hidden;}
 .calendar_main_wrapper .day ul li{height: 1.3em;color: #9bcb27;}
-.calendar_main_wrapper .day ul li a{float:left;margin:0 0 0 5px;width:5em;height: 1.3em;line-height: 1.3em;overflow: hidden;color: #9bcb27;}
+.calendar_main_wrapper .day ul li a{float:left;margin:0 0 0 5px;width:5.5em;height: 1.3em;line-height: 1.3em;overflow: hidden;color: #9bcb27;}
 #calendar .even_bg{background: #efffea;display: block;}
 .calendar_event_item{display:none;position: absolute;bottom: 0.1em;}
 .calendar_main_wrapper tbody td:hover .calendar_event_item{display: block;}
@@ -290,14 +290,15 @@ body{font-family: "microsoft yahei";position: relative;}
 .editevent_inner textarea{margin:0 auto;display:block;width: 480px;height: 190px;}
 .editevent_inner .delete{float: right;margin:0 0 1em 0;width: 1em;height: 1em;z-index: 1;}
 .editevent_inner .delete:after{content: "";display: block;clear: both;}
-.newevent_wrapper, .calendargrade_wrapper{display:none;width: 690px;position: fixed;top: 10%;z-index: 3;}
+.newevent_wrapper, .calendarscore_wrapper{display:none;width: 690px;position: fixed;top: 10%;z-index: 3;}
 .newevent_inner{margin:0 auto;width: 470px;background: #fff;}
-.calendargrade_inner{margin:0 auto;width: 360px;background: #fff;}
-.calendargrade_mian_wrapper{margin:2em auto;width: 260px;}
-.calendargrade_mian_wrapper li{margin:1em 0;height: 2em;font-size: 1.2em;}
-.calendargrade_mian_wrapper li input{float:left;margin:0 5px;height:2em;line-height: 2em;}
-.calendargrade_mian_wrapper li label{float:left;line-height: 2em;}
+.calendarscore_inner{margin:0 auto;width: 360px;background: #fff;}
+.calendarscore_mian_wrapper{margin:2em auto;width: 260px;}
+.calendarscore_mian_wrapper li{margin:1em 0;height: 2em;font-size: 1.2em;}
+.calendarscore_mian_wrapper li input{float:left;margin:0 5px;height:2em;line-height: 2em;}
+.calendarscore_mian_wrapper li label{float:left;line-height: 2em;}
 .newevent_inner .note_content{margin: 0 auto;width: 414px;}
 .note_content h5{margin:20px 0;font-size: 1.2em;color: #3c3c3c;}
 .calendar_windowbar{width: 100%;height: 28px;background: #c9e48f;}
 .calendar_windowbar .close_cross{float:right;width:1em;font-size: 2em;font-weight: bolder;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);}
+.calendar_main_wrapper td .score{position: absolute;right: 0;bottom:0;color:red;font-size: 1.1em;}
