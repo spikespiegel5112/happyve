@@ -450,8 +450,7 @@ p.test-number span {
 .hp_test_list_link{
     width: 690px;
     height: 40px;
-    background-image: url(../img/img_hp_test/hp_test_klxp.png);
-    background-repeat: no-repeat;
+    background: url(../img/img_hp_test/hp_test_klxp.png) no-repeat;
     text-align: right;
 }
 .hp_test_list {
@@ -625,4 +624,49 @@ p.test-number span {
 }
 .white-space{
     height: 125px;
+}
+/*下拉箭头 动画*/
+.active-img{
+    position: relative;
+    margin-bottom: -20px;
+    left: 337px;
+    top: -20px;
+    width: 30px;
+    z-index: 3;
+}
+
+.active-img.play{
+    animation: active-arrow 1.5s 0.5s infinite linear;
+    -moz-animation: active-arrow 1.5s 0.5s infinite linear;
+    -webkit-animation: active-arrow 1.5s 0.5s infinite linear;
+    -o-animation: active-arrow 1.5s 0.5s infinite linear;
+}
+@-webkit-keyframes active-arrow
+{
+    0%,33% {top: -20px; opacity: 1;}
+    55%   {top: -15px; opacity: 0.8;}
+    70%  {top: -10px; opacity: 0.6;}
+    85%  {top: -5px; opacity: 0.4;}
+    100% {top: -0px; opacity: 0.2;}
+}
+@-moz-keyframes active-arrow{
+     0%,33% {top: -20px; opacity: 1;}
+     55%   {top: -15px; opacity: 0.8;}
+     70%  {top: -10px; opacity: 0.6;}
+     85%  {top: -5px; opacity: 0.4;}
+     100% {top: -0px; opacity: 0.2;}
+}
+@-o-keyframes active-arrow {
+    0%,33% {top: -20px; opacity: 1;}
+    55%   {top: -15px; opacity: 0.8;}
+    70%  {top: -10px; opacity: 0.6;}
+    85%  {top: -5px; opacity: 0.4;}
+    100% {top: -0px; opacity: 0.2;}
+}
+@keyframes active-arrow {
+    0%,33% {top: -20px; opacity: 1;}
+    55%   {top: -15px; opacity: 0.8;}
+    70%  {top: -10px; opacity: 0.6;}
+    85%  {top: -5px; opacity: 0.4;}
+    100% {top: -0px; opacity: 0.2;}
 }
