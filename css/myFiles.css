@@ -222,6 +222,7 @@
 
 .handle-footp {
     width: 456px;
+	height:40px;
     margin: 16px 0 0 132px;
     overflow: hidden;
     text-align: center;
@@ -244,7 +245,6 @@
     -moz-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
-
     position: relative;
 }
 
@@ -258,30 +258,46 @@
     left: 57px;
 }
 
-.handle-footp .edit-btn {
+.footprint-content .edit-btn {
+	width:60px;
+	height:24px;
+	padding:0;
     color: #96c81e;
-    float: right;
-    margin-right: 10px;
+    margin:0 40px 0 255px;
+}
+.phone-box-name{
+	display:inline-block;
+	width:36px;
+	font-weight:normal;
 }
 
-.handle-footp .inbox-btn {
+
+.footprint-content .inbox-btn {
+	width:60px;
+	height:24px;
+	padding:0;
     color: #ff7800;
-    float: right;
 }
-
+.footprint-content .textarea-myfiles-box{
+	width: 458px;
+    height: 100px;
+    margin: 16px 0 22px 132px;
+    font: 12px/18px "宋体";
+	color:#505050;
+}
 .footprint-content textarea {
     width: 458px;
-    height: 114px;
-    margin: 16px 0 0 132px;
-    font-size: 12px;
-
+    height: 100px;
+    margin: 16px 0 22px 132px;
+    font: 12px/18px "宋体";
+	color:#505050;
 }
 
 .list-footprint {
     width: 670px;
     border-top: 2px solid #90c31f;
-    margin: 16px 0 0 16px;
-    padding: 20px 0 300px 0;
+    margin: 0 0 0 16px;
+    padding: 20px 0 0 0;
 }
 
 .list-footprint li {
@@ -355,6 +371,44 @@
 	font: 12px/20px "微软雅黑";
 	vertical-align:middle;
 	}
+.tel-phone-edit{
+	float:right;
+	padding:0 0 0 6px;
+	text-align:left;
+	width:145px;
+	height:24px;
+	font:12px "宋体";
+	margin:8px 198px 0 0;
+}
+.list-footprint .phone-gly-edit{
+	width:165px;
+	height:26px;
+	float:right;
+	margin: 6px 178px 0 0 ;
+}
+.list-footprint .phone-gly-edit .btn{
+	display:block;
+	float:right;
+	width:16px;
+	height:26px;
+	padding:0;
+	text-align:center;
+	background-color:transparent;
+	margin:0;
+	color:#505050;
+	vertical-align:middle;
+
+}
+.list-footprint .phone-gly-edit .btn span{
+	font-size:16px;
+}
+.list-footprint .phone-gly-edit input{
+	width:145px;
+	height:26px;
+	padding:0 0 0 6px;
+	font:12px "宋体";
+	float:left;
+}
 /*.list-footprint .hint-text input{
 	display:inline-block;
 	width:14px;
