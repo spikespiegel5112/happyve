@@ -16,7 +16,7 @@
     
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
-    
+
     <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
@@ -403,6 +403,27 @@
                 </div>
                 <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
             </form>
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield1' id='textfield1' class='txt' />
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="上传图片" />
+                        <input type="file" name="fileField1" class="file" id="fileField1" size="28" onchange="document.getElementById('textfield1').value=this.value" />
+                    </div>
+                </form>
+            </div>
+            <div class="form-container micro-introduction">
+                <div class="form-group ">
+                    <label for="caption1" class="caption">标题：</label>
+                    <input type="text" class="form-control input-caption " id="caption1" >
+                </div>
+                <div class="form-group ">
+                    <label class="introduction">内容简介：</label>
+                    <textarea class="form-control textarea-intr send-word" placeholder="请输入内容简介" ></textarea>
+                </div>
+                <div class="help-block-pop"><p>最多输入200字，您已输入<span>0</span>字。</p></div>
+            </div>
 
         </div>
         <div class="divider-hr"></div>
@@ -497,7 +518,7 @@
                     <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus2" type="text" value="300" size="2" readonly="readonly">字。</p>
                 </div>
                 <div class="form-group form-group-texarea">
-                    <label class="col-title">教学目标：</label>
+                    <label class="col-title">教学介绍：</label>
                     <textarea class="form-control col-textarea" name="textareaCount4" onKeyDown="textCounter(textareaCount4,surplus4,300);" onKeyUp="textCounter(textareaCount4,surplus4,300);">我们往往对成功这两个字有着诸多错误的判断，这就跟光明一样，我们站在阳光里，却不能否认在很多角落有我们看不到的黑暗！</textarea>
                     <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus4" type="text" value="57" size="2" readonly="readonly">字。</p>
                 </div>
@@ -518,7 +539,29 @@
 
                 </div>
                 <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
+
             </form>
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield2' id='textfield2' class='txt' />
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="上传图片" />
+                        <input type="file" name="fileField2" class="file" id="fileField2" size="28" onchange="document.getElementById('textfield2').value=this.value" />
+                    </div>
+                </form>
+            </div>
+            <div class="form-container micro-introduction">
+                <div class="form-group ">
+                    <label for="caption2" class="caption">标题：</label>
+                    <input type="text" class="form-control input-caption " id="caption2" >
+                </div>
+                <div class="form-group ">
+                    <label class="introduction">内容简介：</label>
+                    <textarea class="form-control textarea-intr send-word" placeholder="请输入内容简介"></textarea>
+                </div>
+                <div class="help-block-pop"><p>最多输入200字，您已输入<span>0</span>字。</p></div>
+            </div>
 
         </div>
         <div class="divider-hr"></div>

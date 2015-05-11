@@ -1366,6 +1366,26 @@
     overflow: hidden;
     opacity: 0;
 }
-
+/*我的微课 封面简介*/
+.micro-lesson-container .file-box{
+    display: inline-block;
+    margin-top: 20px!important;
+}
+.pop-container .micro-lesson-container .file-box .upload-file .file{
+    position: relative;
+    left: 0;
+    top: -30px;
+    cursor: pointer;
+}
+.form-container.micro-introduction{
+    position: relative;
+    display: inline-block;
+    top: -25px;
+    left: 20px;
+}
+.micro-introduction .form-group > label{
+    width: 80px;
+    text-align: right;
+}
 /* CSS Document */
 
