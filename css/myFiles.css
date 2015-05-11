@@ -1366,7 +1366,7 @@
     overflow: hidden;
     opacity: 0;
 }
-/*我的微课 封面简介*/
+/*我的微课 上传微课 封面简介*/
 .micro-lesson-container .file-box{
     display: inline-block;
     margin-top: 20px!important;
@@ -1386,6 +1386,53 @@
 .micro-introduction .form-group > label{
     width: 80px;
     text-align: right;
+}
+/*我的微课 上传微课 资源列表*/
+.detailLessonTab{
+    width: 620px;
+    margin-left: 60px;
+}
+.detailLessonTab .nav-tabs > li{
+    margin-left: 5px;
+    height: 30px;
+    font-size: 16px;
+    background-color: #b4b4b4;
+}
+.detailLessonTab .nav-tabs > li > a{
+    padding: 5px 15px;
+    margin-right: 0;
+    height: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+}
+.detailLessonTab .nav-tabs > li.active > a, .detailLessonTab .nav-tabs > li.active > a:hover, .detailLessonTab .nav-tabs > li.active > a:focus{
+    background-color: #91c31e;
+    border: none;
+}
+.detailLessonTab .pane-wrapper > div{
+    height: 260px;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #c1c1c1;
+}
+.detailLessonTab .pane-wrapper div p{
+    text-indent: 2em;
+}
+.detailLessonTab .sourceTitle {
+    border-bottom: 1px solid #646464;
+}
+.detailLessonTab .sources {
+    border-bottom: 1px dotted #646464;
+}
+.detailLessonTab .activity-pagin .pagination {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    margin: 0;
+}
+.detailLessonTab .activity-pagin .pagination > li > a, .detailLessonTab .activity-pagin .pagination > li > span{
+    color: #3C3C3C;
 }
 /* CSS Document */
 
