@@ -1076,5 +1076,29 @@
 	height:149px;
 	border-bottom:1px solid #d3d3d3;
 }
+.activity-header .shape-search-detail{
+	position:absolute;
+	top:22px;
+	right:22px;
+	width:140px;
+	height:20px;
+}
+.activity-header .shape-search-detail input{
+	width:118px;
+	height:20px;
+	padding:0;
+	border-right:none;
+	font:12px "宋体";
+	color:#3c3c3c;
+	text-align:center;
+}
+.activity-header .shape-search-detail .btn{
+	width:22px;
+	height:20px;
+	padding:0;
+	text-align:center;
+	background-color:transparent;
+	font-size:14px;
+}
 /* CSS Document */
 
