@@ -361,6 +361,21 @@
                     <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus1" type="text" value="0" size="2" readonly="readonly">字。</p>
                 </div>
             </form>
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield1' id='textfield1' class='txt' />
+                    <div class="help-block">
+                        <p>支持jpg、gif、png格式，文件小于1M。</p>
+                        <p>图片将显示为 300*180 、 100*80 两种尺寸样式</p>
+                    </div>
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="选择图片" />
+                        <input type="file" name="fileField1" class="file" id="fileField1" size="28" onchange="document.getElementById('textfield1').value=this.value" />
+                    </div>
+
+                </form>
+            </div>
 
         </div>
         <div class="divider-hr"></div>
@@ -402,85 +417,46 @@
                     </div>
                     <input type="file" class="col-input col-file"/>
                 </div>
-                <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
+                <p class="help-block help-block-forFile">支持文档格式： doc, docx, xls, xlsx, ppt, pptx, pdf和txt等，最大50.MB。</p>
             </form>
-            <div class="file-box">
-                <form enctype="multipart/form-data" action="" method="post">
-                    <div class="default-img"><img src="img/campus-default-img.png"></div>
-                    <input type='text' name='textfield1' id='textfield1' class='txt' />
-                    <div class="upload-file">
-                        <input type="submit" name="submit" class="btn" value="上传图片" />
-                        <input type="file" name="fileField1" class="file" id="fileField1" size="28" onchange="document.getElementById('textfield1').value=this.value" />
-                    </div>
-                </form>
-            </div>
-            <div class="form-container micro-introduction">
-                <div class="form-group ">
-                    <label for="caption1" class="caption">标题：</label>
-                    <input type="text" class="form-control input-caption " id="caption1" >
-                </div>
-                <div class="form-group ">
-                    <label class="introduction">内容简介：</label>
-                    <textarea class="form-control textarea-intr send-word" placeholder="请输入内容简介" ></textarea>
-                </div>
-                <div class="help-block-pop"><p>最多输入200字，您已输入<span>0</span>字。</p></div>
-            </div>
             <div class="detailLessonTab">
-                <ul class="nav nav-tabs" data-trigger="tab">
-                    <li><a href="#purpose1">教学目标</a></li>
-                    <li><a href="#method1">教学方法</a></li>
-                    <li><a href="#introduce1">教学介绍</a></li>
-                    <li><a href="#resources1">相关资源</a></li>
-                </ul>
-                <div class="pane-wrapper">
-                    <div id="purpose1" class="active">
-                        <p></p>
+                <div id="resources1">
+                    <table class="sourceBox" cellspacing="28" cellpadding="80" id="resourcestable">
+                        <tbody>
+                            <tr class="sourceTitle" height="32px">
+                                <td width="400" align="center">资源名称</td>
+                                <td width="100" align="center">资源类型</td>
+                                <td width="100" align="center">资源大小</td>
+                                <td width="150" align="center">操作</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="container activity-pagin">
+                        <nav class="pagin-right">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="首页">
+                                        <span aria-hidden="true">首页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="上一页">
+                                        <span aria-hidden="true">上一页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="下一页">
+                                        <span aria-hidden="true">下一页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="尾页">
+                                        <span aria-hidden="true">尾页</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div id="method1">
-                        <p></p>
-                    </div>
-                    <div id="introduce1">
-                        <p></p>
-                    </div>
-                    <div id="resources1">
-                        <table class="sourceBox" cellspacing="28" cellpadding="80" id="resourcestable">
-                            <tbody>
-                                <tr class="sourceTitle" height="32px">
-                                    <td width="400" align="center">资源名称</td>
-                                    <td width="100" align="center">资源类型</td>
-                                    <td width="100" align="center">资源大小</td>
-                                    <td width="150" align="center">操作</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="container activity-pagin">
-                            <nav class="pagin-right">
-                                <ul class="pagination">
-                                    <li>
-                                        <a href="#" aria-label="首页">
-                                            <span aria-hidden="true">首页</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" aria-label="上一页">
-                                            <span aria-hidden="true">上一页</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" aria-label="下一页">
-                                            <span aria-hidden="true">下一页</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" aria-label="尾页">
-                                            <span aria-hidden="true">尾页</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-
                 </div>
             </div>
 
@@ -554,6 +530,21 @@
                 </div>
             </form>
 
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield1' id='textfield1' class='txt' />
+                    <div class="help-block">
+                        <p>支持jpg、gif、png格式，文件小于1M。</p>
+                        <p>图片将显示为 300*180 、 100*80 两种尺寸样式</p>
+                    </div>
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="选择图片" />
+                        <input type="file" name="fileField1" class="file" id="fileField1" size="28" onchange="document.getElementById('textfield1').value=this.value" />
+                    </div>
+
+                </form>
+            </div>
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
@@ -597,67 +588,29 @@
                     </div>
 
                 </div>
-                <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
+                <p class="help-block help-block-forFile">支持文档格式： doc, docx, xls, xlsx, ppt, pptx, pdf和txt等，最大50.MB。</p>
 
             </form>
-            <div class="file-box">
-                <form enctype="multipart/form-data" action="" method="post">
-                    <div class="default-img"><img src="img/campus-default-img.png"></div>
-                    <input type='text' name='textfield2' id='textfield2' class='txt' />
-                    <div class="upload-file">
-                        <input type="submit" name="submit" class="btn" value="上传图片" />
-                        <input type="file" name="fileField2" class="file" id="fileField2" size="28" onchange="document.getElementById('textfield2').value=this.value" />
-                    </div>
-                </form>
-            </div>
-            <div class="form-container micro-introduction">
-                <div class="form-group ">
-                    <label for="caption2" class="caption">标题：</label>
-                    <input type="text" class="form-control input-caption " id="caption2" >
-                </div>
-                <div class="form-group ">
-                    <label class="introduction">内容简介：</label>
-                    <textarea class="form-control textarea-intr send-word" placeholder="请输入内容简介"></textarea>
-                </div>
-                <div class="help-block-pop"><p>最多输入200字，您已输入<span>0</span>字。</p></div>
-            </div>
             <div class="detailLessonTab">
-                <ul class="nav nav-tabs" data-trigger="tab">
-                    <li><a href="#purpose2">教学目标</a></li>
-                    <li><a href="#method2">教学方法</a></li>
-                    <li><a href="#introduce2">教学介绍</a></li>
-                    <li><a href="#resources2">相关资源</a></li>
-                </ul>
-                <div class="pane-wrapper">
-                    <div id="purpose2" class="active">
-                        <p>我们往往对成功这两个字有着诸多错误的判断，我不想在这里灌输什么负面的能量，我只是想以一个闲人的心态客观的阐述一些今天的我所理解的成功，尽管如此我依然要说不管那些今天已经高高在上的成功人士他们不愿意说的，或许他们根本就没有认识到的，负能量！却不能否认在很多角落有我们看不到的黑暗！</p>
-                    </div>
-                    <div id="method2">
-                        <p>我们往往对成功这两个字有着诸多错误的判断，却不能否认在很多角落有我们看不到的黑暗！</p>
-                    </div>
-                    <div id="introduce2">
-                        <p>我们往往对成功这两个字有着诸多错误的判断，我不想在这里灌输什么负面的能量，我只是想以一个闲人的心态客观的阐述一些今天的我所理解的成功！</p>
-                    </div>
-                    <div id="resources2">
+                <div id="resources2">
                         <table class="sourceBox" cellspacing="28" cellpadding="80" id="resourcestable">
                             <tbody>
-                            <tr class="sourceTitle" height="32px">
-                                <td width="400" align="center">资源名称</td>
-                                <td width="100" align="center">资源类型</td>
-                                <td width="100" align="center">资源大小</td>
-                                <td width="150" align="center">操作</td>
-                            </tr>
+                                <tr class="sourceTitle" height="32px">
+                                    <td width="400" align="center">资源名称</td>
+                                    <td width="100" align="center">资源类型</td>
+                                    <td width="100" align="center">资源大小</td>
+                                    <td width="150" align="center">操作</td>
+                                </tr>
 
-                            <tr class="sources" height="28px">
-                                <td>&nbsp;&nbsp;&nbsp;汽车发动机工作原理及内部构造.ppt</td>
-                                <td align="center">ppt</td>
-                                <td align="center">2.0MB</td>
-                                <td align="center">
-                                    【<a href="javascript:void(0)" class="down"  name="">下载</a>】
-                                    【<a href="javascript:void(0)" class="view" >预览</a>】
-                                </td>
-                            </tr>
-
+                                <tr class="sources" height="28px">
+                                    <td>&nbsp;&nbsp;&nbsp;汽车发动机工作原理及内部构造.ppt</td>
+                                    <td align="center">ppt</td>
+                                    <td align="center">2.0MB</td>
+                                    <td align="center">
+                                        【<a href="javascript:void(0)" class="down"  name="">下载</a>】
+                                        【<a href="javascript:void(0)" class="view" >预览</a>】
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                         <div class="container activity-pagin">
@@ -687,8 +640,6 @@
                             </nav>
                         </div>
                     </div>
-
-                </div>
             </div>
         </div>
         <div class="divider-hr"></div>

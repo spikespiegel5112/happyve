@@ -1370,6 +1370,10 @@
 .micro-lesson-container .file-box{
     display: inline-block;
     margin-top: 20px!important;
+
+}
+.micro-lesson-container .file-box form{
+    height: 140px!important;
 }
 .pop-container .micro-lesson-container .file-box .upload-file .file{
     position: relative;
@@ -1377,48 +1381,32 @@
     top: -30px;
     cursor: pointer;
 }
-.form-container.micro-introduction{
-    position: relative;
+.pop-container .micro-lesson-container .file-box .upload-file{
     display: inline-block;
-    top: -25px;
-    left: 20px;
+    position: relative;
+    top: -50px;
+    left: 250px;
 }
-.micro-introduction .form-group > label{
-    width: 80px;
-    text-align: right;
+.file-box .help-block{
+    display: inline-block;
+    width: 300px;
+    margin-left: 40px;
+    position: relative;
+    top: -15px;
+}
+#uploadMicroLessonA .divider-hr, #editMicroLessonA .divider-hr{
+    margin-top: 5px;
 }
 /*我的微课 上传微课 资源列表*/
 .detailLessonTab{
+    position: relative;
     width: 620px;
-    margin-left: 60px;
-}
-.detailLessonTab .nav-tabs > li{
-    margin-left: 5px;
-    height: 30px;
-    font-size: 16px;
-    background-color: #b4b4b4;
-}
-.detailLessonTab .nav-tabs > li > a{
-    padding: 5px 15px;
-    margin-right: 0;
-    height: 30px;
-    color: #fff;
-    border: none;
-    border-radius: 0;
-}
-.detailLessonTab .nav-tabs > li.active > a, .detailLessonTab .nav-tabs > li.active > a:hover, .detailLessonTab .nav-tabs > li.active > a:focus{
-    background-color: #91c31e;
-    border: none;
-}
-.detailLessonTab .pane-wrapper > div{
     height: 260px;
     padding: 15px;
-    font-size: 14px;
+    margin-left: 60px;
     border: 1px solid #c1c1c1;
 }
-.detailLessonTab .pane-wrapper div p{
-    text-indent: 2em;
-}
+
 .detailLessonTab .sourceTitle {
     border-bottom: 1px solid #646464;
 }
