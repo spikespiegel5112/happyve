@@ -12,7 +12,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .color_red{color:red;}
 /*~~~~~~~~~~~changemyself_list~~~~~~~~~~~*/
 .subordinary_wrapper{margin:20px 0;width: 690px;min-height:1300px;background: #fff;border: 1px solid #bbb;border-radius: 10px;position: relative;}
-.subordinary_wrapper .prev{display:block;margin:1em;width:10em;color:#91C81E;font-size: 1.2em;color:#91c81e;font-weight: bold;}
+.subordinary_wrapper .prev{display:block;margin:1em;width:10em;color:#91C81E;font-size: 1.2em;color:#91c81e;font-weight: bold;position: relative;}
 .changemyself-banner-article p{float:left;margin:20px 0 0 50px;width:400px;line-height: 1.6em;font-size: 1.2em;}
 .changemyself-banner-article img{float:left;}
 .newbadhabbit_wrapper{position: relative;}
@@ -96,7 +96,7 @@ body{font-family: "microsoft yahei";position: relative;}
 /*~~~~~~~~~~~haexe_homepage~~~~~~~~~~~*/
 .banner_wrapper .haexe_homepage_article_item{margin:0 0 0 45px;width: 470px;height: 120px;position: absolute;bottom: 0;left: 0;color: #000;line-height: 1.3em;font-size: 1.2em;}
 .haexe_home_banner_wrapper{float:right;margin:0 0 30px 0;width: 700px;height: 310px;}
-.haexe_home_carousel_wrapper{float:right;margin:10px 0 60px 0;width: 690px;height: 410px;background: #e3e3e3;position: relative;}
+.haexe_home_carousel_wrapper{float:right;margin:30px 0 60px 0;width: 690px;height: 410px;background: #e3e3e3;position: relative;}
 .haexe_home_carousel_wrapper:after{content: "";display: block;clear: both;}
 .haexe_home_carousel_wrapper .shown span{display: block;}
 .decoratebar_statistics_item{height: 2em;}
@@ -117,7 +117,8 @@ body{font-family: "microsoft yahei";position: relative;}
 .ranking_2 a{background-position: -13px -170px;}
 .ranking_3 a{background-position: -13px -250px;}
 .ourschool a{background-position: -13px -330px;}
-
+.ranking_wrapper{color:#89a062;}
+.ranking_wrapper span{margin:0.3em;padding:0.2em 0.4em;background: #89a062;color:#fff;}
 
 .haexe_home_ranking_list_wrapper .shown a{background-image:url(../img/img_wbl/img_sprite_00000.png);background-color:#fff;z-index: -1;box-shadow: 5px 0 5px #aaa inset;cursor:pointer;}
 .haexe_home_carousel_tree_wrapper{position: relative;}
@@ -153,7 +154,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .tree_desc_7{background-position: -443px -393px;left: 300px;top: 166px;}
 .tree_desc_8{background-position: -378px -214px;left: 270px;top: 245px;}
 .tree_desc_9{background-position: -380px -270px;left: 130px;top: 260px;}
-.haexe_home_bene_wrapper{padding:5px;width: 100%;border: 1px solid #b2b2b2;position: relative; margin-top:20px;}
+.haexe_home_bene_wrapper{padding:5px;width: 100%;border: 1px solid #b2b2b2;position: relative;}
 
 .haexe_home_bene_desc_list{display: none;width:100%;height:100%;}
 .haexe_home_bene_desc_list ul{position: absolute;}
@@ -166,7 +167,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .haexe_home_bene_list_wrapper li:first-child a{border-left: 0;}
 .haexe_home_bene_list_wrapper .ourschool{float:left;margin:21px 0 0 0;width: 24%;line-height: 6.8em;text-align: center;}
 .haexe_home_bene_list_wrapper .ourschool a{display:block;width: 105%;height: 40px;background: #e3e3e3;line-height: 3.8em;border-left: 1px solid #fff;color: #f5751c;font-weight: bolder;}
-.haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -71px -413px;}
+.haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -67px -413px;}
 .haexe_home_bene_list_wrapper .shown a{background: 0;}
 .haexe_home_bene_list_wrapper .shown span{display: block;}
 .haexe_home_bene_list_wrapper li span{display:none;margin:0 auto;width: 20px;height:25px;background: url(../img/img_wbl/img_sprite_00000.png);position: absolute;left: 46%;}
@@ -206,6 +207,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .thanksgivingtree_wrapper{margin:0 auto;width: 97%;height:420px;box-shadow: 3px 3px 4px #bbb}
 .thanksgivingtree_wrapper:after{content: "";display: block;clear: both;}
 .tab_wrapper{margin:0 auto;width: 96%;border-bottom: 1px solid #b2b2b2;}
+.tab_wrapper a{color:#fff;}
 .tab_item{display: block;width: 110px;height: 30px;line-height: 30px;text-align: center;color:#eee;background: #91c81e;font-size: 1.3em;}
 .tab_item:hover{color:#fff;}
 .tab_item:after{content: "";display: block;margin:0 auto;width: 0;height: 0;border-style:solid;border-width: 7px 5px 0 5px;border-color:#91c81e transparent transparent transparent;position: relative;top: 1px;}
@@ -246,10 +248,10 @@ body{font-family: "microsoft yahei";position: relative;}
 .list_title label{float: left;}
 .haexedetaillist_list_wrapper .list_title a{display:block;width: 90%;}
 .haexedetaillist_list_wrapper .list_button{float:left;padding:0 0 0 14px;width: 15%;}
-.haexedetaillist_list_wrapper .list_button a{display:inline-block;margin:0 2px;width: 20px;height: 20px;line-height: 20px;}
+.haexedetaillist_list_wrapper .list_button a{float:left;/*display:inline-block;*/margin:0 0 0 5px;width: 20px;height: 20px;line-height: 20px;}
 .see_all{float:right;margin:1em;width: 60px;height: 20px;line-height:20px;background: url(../img/img_wbl/img_sprite_00000.png) -271px -223px;text-align: center;}
 .haexedetaillist_list_wrapper .list_button .share{background: url(../img/img_wbl/img_sprite_00000.png) 0 -63px;}
-.haexedetaillist_list_wrapper .list_button .share:hover{background: url(../img/img_wbl/img_sprite_00000.png) -20px -63px;}
+.haexedetaillist_list_wrapper .list_button .share:hover{background: url(../img/img_wbl/img_sprite_00000.png) -18px -63px;}
 .edit_item, .delete_item{display:inline-block;width: 20px;height: 30px;text-align:center;}
 .edit_item, .delete_item{line-height: 20px;}
 .edit_item{background-position: 0 0;}
