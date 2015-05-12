@@ -161,9 +161,10 @@
 }
 .footprint-content {
     width: 704px;
-	min-height:800px;
+	min-height:770px;
     border: 1px solid #e7e7e7;
     background-color: #fff;
+	padding-bottom:30px;
 }
 
 .member-footp {
