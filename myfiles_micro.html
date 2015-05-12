@@ -228,6 +228,7 @@
                                 <option>第3页</option>
                             </select>
                         </div>
+                    </div>
                     <!--微课结束点-->
                 </div>
             </div>
@@ -450,8 +451,8 @@
             <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
-
 </div>
+
 
 <!--我的微课 编辑微课-->
 <div class="modal fade" id="editMicroLessonA">
@@ -516,14 +517,14 @@
             <div class="file-box">
                 <form enctype="multipart/form-data" action="" method="post">
                     <div class="default-img"><img src="img/campus-default-img.png"></div>
-                    <input type='text' name='textfield1' id='textfield1' class='txt' />
+                    <input type='text' name='textfield2' id='textfield2' class='txt' />
                     <div class="help-block">
                         <p>支持jpg、gif、png格式，文件小于1M。</p>
                         <p>图片将显示为 300*180 、 100*80 两种尺寸样式</p>
                     </div>
                     <div class="upload-file">
                         <input type="submit" name="submit" class="btn" value="选择图片" />
-                        <input type="file" name="fileField1" class="file" id="fileField1" size="28" onchange="document.getElementById('textfield1').value=this.value" />
+                        <input type="file" name="fileField3" class="file" id="fileField3" size="28" onchange="document.getElementById('textfield3').value=this.value" />
                     </div>
 
                 </form>
@@ -576,26 +577,26 @@
             </form>
             <div class="detailLessonTab">
                 <div id="resources2">
-                        <table class="sourceBox" cellspacing="28" cellpadding="80" id="resourcestable">
-                            <tbody>
-                                <tr class="sourceTitle" height="32px">
-                                    <td width="400" align="center">资源名称</td>
-                                    <td width="100" align="center">资源类型</td>
-                                    <td width="100" align="center">资源大小</td>
-                                    <td width="150" align="center">操作</td>
-                                </tr>
+                    <table class="sourceBox" cellspacing="28" cellpadding="80">
+                        <tbody>
+                        <tr class="sourceTitle" height="32px">
+                            <td width="400" align="center">资源名称</td>
+                            <td width="100" align="center">资源类型</td>
+                            <td width="100" align="center">资源大小</td>
+                            <td width="150" align="center">操作</td>
+                        </tr>
 
-                                <tr class="sources" height="28px">
-                                    <td>&nbsp;&nbsp;&nbsp;汽车发动机工作原理及内部构造.ppt</td>
-                                    <td align="center">ppt</td>
-                                    <td align="center">2.0MB</td>
-                                    <td align="center">
-                                        【<a href="javascript:void(0)" class="down"  name="">下载</a>】
-                                        【<a href="javascript:void(0)" class="view" >预览</a>】
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <tr class="sources" height="28px">
+                            <td>&nbsp;&nbsp;&nbsp;汽车发动机工作原理及内部构造.ppt</td>
+                            <td align="center">ppt</td>
+                            <td align="center">2.0MB</td>
+                            <td align="center">
+                                【<a href="javascript:void(0)" class="down" name="">下载</a>】
+                                【<a href="javascript:void(0)" class="view">预览</a>】
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                         <div class="container activity-pagin">
                             <nav class="pagin-right">
                                 <ul class="pagination">
@@ -622,7 +623,7 @@
                                 </ul>
                             </nav>
                         </div>
-                    </div>
+                </div>
             </div>
         </div>
         <div class="divider-hr"></div>
@@ -675,4 +676,5 @@
 </script>
 
 </body>
+
 </html>
