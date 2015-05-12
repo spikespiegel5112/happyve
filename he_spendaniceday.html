@@ -78,20 +78,12 @@
                         统计：您在过去的1个月，您度过<label>20</label>个美好的日子
                     </div>
                 </div>
-                <FORM  name=CLD>
+                <form>
                     <div class="calendar_dateselect_wrapper">
-                        <SELECT name=SY> 
-                            <SCRIPT language="JavaScript">
-                                for(i=2015;i<2050;i++) document.write('<option>'+i);
-                            </SCRIPT>
-                        </SELECT> 年 <SELECT name=SM> 
-                        <SCRIPT language="JavaScript">
-                        for(i=1;i<13;i++) document.write('<option>'+i);
-                        </SCRIPT>
-                        </SELECT> 月 </FONT>
-                        <FONT color=#ffffff face=宋体 id=GZ style="FONT-SIZE: 12pt"></FONT>
+                        <select class='calendar_yearlist'></select>年 
+                        <select class='calendar_monthlist'></select>月 
                     </div>
-                </FORM>
+                </form>
                 <div id="calendar" class="calendar calendar_main_wrapper"></div>
                 <div class="newevent_wrapper">
                     <div class='newevent_inner'>
@@ -109,22 +101,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="calendargrade_wrapper">
-                    <div class='calendargrade_inner'>
+                <div class="calendarscore_wrapper">
+                    <div class='calendarscore_inner'>
                         <div class="calendar_windowbar">
                             <a class="close_cross" href="javascript:;">+</a>
                         </div>
-                        <div class="calendargrade_mian_wrapper">
+                        <div class="calendarscore_mian_wrapper">
                             <ul>
-                                <li><input type='radio' name='calendargrade'><label>9分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是十分突出的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>8分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是极好的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>7分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是很好的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>6分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是不错的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>5分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是普通的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>4分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是低于平均水平的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>3分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是不好的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>2分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是糟糕的一天</label></li>
-                                <li><input type='radio' name='calendargrade'><label>1分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是我生命中最糟的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>9分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是十分突出的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>8分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是极好的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>7分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是很好的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>6分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是不错的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>5分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是普通的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>4分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是低于平均水平的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>3分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是不好的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>2分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是糟糕的一天</label></li>
+                                <li><input type='radio' name='calendarscore'><label>1分&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是我生命中最糟的一天</label></li>
                             </ul>
                         </div>
                         <div class="newevent_input_wrapper">
@@ -374,78 +366,3 @@
 </body>
 </html>
 
-
-<!-- <div class="calendar_wrapper" cellspacing="0" cellpadding="0">
-                    <div class="calendar_dateselect_wrapper">
-                        <select>
-                            <option>2015年</option>
-                            <option>2014年</option>
-                        </select>
-                        <select>
-                            <option>1月</option>
-                            <option>2月</option>
-                            <option>3月</option>
-                            <option>4月</option>
-                            <option>5月</option>
-                            <option>6月</option>
-                        </select>
-                    </div>
-                    <table class="calendar_main_wrapper">
-                        <thead>
-                            <th>周一</th>
-                            <th>周二</th>
-                            <th>周三</th>
-                            <th>周四</th>
-                            <th>周五</th>
-                            <th>周六</th>
-                            <th>周日</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div> -->
