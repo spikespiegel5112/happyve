@@ -1363,3 +1363,9 @@
 .remove-preview-btn span{
 	font-size:14px;
 }
+.mar-grid-bott{
+	margin-bottom:100px;
+}
+.list_pagination_match{width:100%;text-align: center; color:#8e8e8e;font-family: "SimSun";font-weight: lighter;}
+.list_pagination_match a{color:#8e8e8e;font-family: "SimSun";}
+.list_pagination_match a:hover{color: #000;}

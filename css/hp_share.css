@@ -180,15 +180,7 @@
 }
 
 /** 分页 */
-.activity-pagin, .pagin-center {
-    margin: 0 auto;
-    text-align: center;
-    width: 80%;
-}
 
-.pagin-center .pagination > li > a,  .pagin-center .pagination > li > span{
-    color: #3c3c3c;
-}
 
 .activity-hr {
     height:2px;
@@ -220,6 +212,9 @@
 
 .space-arrange{
 	position:relative;
+}
+.space-height{
+	margin-left:15px;
 }
 .space-height .thumbnail{
 	width: 209px;
