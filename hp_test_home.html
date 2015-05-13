@@ -263,8 +263,9 @@
                         </div>
                     </div>
                     <div class="test_list_showmore">
-                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down_03.png" alt="更多详细测评"></a>
                     </div>
+                    <div class="active-img play"><img src="img/img_hp_test/hp_test_down_arrow.png"></div>
                     <div class="hp_test_list list_goodness">
                         <div class="list_header list_header_goodness">
                             <div class="list_header_title list_header_title_goodness"><a href="hp_test_goodness.html"
@@ -391,8 +392,9 @@
                         </div>
                     </div>
                     <div class="test_list_showmore">
-                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down_03.png" alt="更多详细测评"></a>
                     </div>
+                    <div class="active-img play"><img src="img/img_hp_test/hp_test_down_arrow.png"></div>
                     <div class="hp_test_list list_character">
                         <div class="list_header list_header_character">
                             <div class="list_header_title list_header_title_character"><a href="hp_test_character.html"
@@ -519,8 +521,9 @@
                         </div>
                     </div>
                     <div class="test_list_showmore">
-                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down_03.png" alt="更多详细测评"></a>
                     </div>
+                    <div class="active-img play"><img src="img/img_hp_test/hp_test_down_arrow.png"></div>
                     <div class="hp_test_list list_tenacity">
                         <div class="list_header list_header_tenacity">
                             <div class="list_header_title list_header_title_tenacity"><a href="hp_test_tenacity.html"
@@ -648,8 +651,9 @@
                         </div>
                     </div>
                     <div class="test_list_showmore">
-                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down.png" alt="更多详细测评"></a>
+                        <a href="javascript:;"><img src="img/img_hp_test/hp_test_down_03.png" alt="更多详细测评"></a>
                     </div>
+                    <div class="active-img play"><img src="img/img_hp_test/hp_test_down_arrow.png"></div>
                 </div>
                 <div id="show-moretest" class="show-moretest">
                     <img class="show-moretest" src="img/img_hp_test/hp_test_duang.png" alt="更多评测请到这里duang~~~">
@@ -895,33 +899,52 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 <script>
-    var oALink = $(".test_list_showmore>a");
+    $(document).ready(function(){
+        var oALink = $(".test_list_showmore>a");
 
-    for (var i = 0; i < oALink.length; i++) {
-        (function (n) {
-            oALink[n].onclick = function () {
-                showMoreTestDetails(n);
+        for (var i = 0; i < oALink.length; i++) {
+            (function (n) {
+                oALink[n].onclick = function () {
+                    showMoreTestDetails(n);
+                }
+            })(i);
+        }
+        function showMoreTestDetails(nIndex) {
+            var oListDiv = oALink[nIndex].parentElement.previousElementSibling;
+            var oList_detailDiv = oListDiv.querySelector(".list_details");
+            var oList_detailActUl = oList_detailDiv.getElementsByClassName("list_details_table_active")[0];
+            var oActiveImg=oALink[nIndex].parentElement.nextElementSibling;
+            var oClickDuang = document.getElementById("show-moretest");
+            if (oList_detailActUl.style.display == "none") {
+                oList_detailActUl.style.display = "block";
+                oList_detailDiv.style.height = 254 + "px";
+                oActiveImg.getElementsByTagName('img').item(0).src='img/img_hp_test/hp_test_up_arrow.png';
+                removeClass(oActiveImg,'play');
+                oClickDuang.style.display = "none";
+            } else if (oList_detailActUl.style.display = "block") {
+                oList_detailActUl.style.display = "none";
+                oList_detailDiv.style.height = 134 + "px";
+                oActiveImg.getElementsByTagName('img').item(0).src='img/img_hp_test/hp_test_down_arrow.png';
+                addClass(oActiveImg,'play');
+                oClickDuang.style.display = "block";
             }
-        })(i);
-    }
-    function showMoreTestDetails(nIndex) {
-        var oListDiv = oALink[nIndex].parentElement.previousElementSibling;
-        var oList_detailDiv = oListDiv.querySelector(".list_details");
-        var oList_detailActUl = oList_detailDiv.getElementsByClassName("list_details_table_active")[0];
-        var oClickDuang = document.getElementById("show-moretest");
-        if (oList_detailActUl.style.display == "none") {
-            oList_detailActUl.style.display = "block";
-            oList_detailDiv.style.height = 254 + "px";
-            oALink[nIndex].getElementsByTagName("img").item(0).src = "img/img_hp_test/hp_test_up.png";
-            oClickDuang.style.display = "none";
-        } else if (oList_detailActUl.style.display = "block") {
-            oList_detailActUl.style.display = "none";
-            oList_detailDiv.style.height = 134 + "px";
-            oALink[nIndex].getElementsByTagName("img").item(0).src = "img/img_hp_test/hp_test_down.png";
-            oClickDuang.style.display = "block";
+        }
+        function hasClass(obj, cls) {
+            return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
         }
 
-    }
+        function addClass(obj, cls) {
+            if (!this.hasClass(obj, cls)) obj.className += " " + cls;
+        }
+
+        function removeClass(obj, cls) {
+            if (hasClass(obj, cls)) {
+                var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+                obj.className = obj.className.replace(reg, ' ');
+            }
+        }
+    });
+
 </script>
 
 </body>

@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/orange.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/font-awesome.css"  type="text/css" media="all">
-    
+    <link rel="stylesheet" href="assets/css/scojs.css"  type="text/css" media="all">
+
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
-    
+
     <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
@@ -227,6 +228,7 @@
                                 <option>第3页</option>
                             </select>
                         </div>
+                    </div>
                     <!--微课结束点-->
                 </div>
             </div>
@@ -343,6 +345,21 @@
                     <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus1" type="text" value="0" size="2" readonly="readonly">字。</p>
                 </div>
             </form>
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield1' id='textfield1' class='txt' />
+                    <div class="help-block">
+                        <p>支持jpg、gif、png格式，文件小于1M。</p>
+                        <p>图片将显示为 300*180 、 100*80 两种尺寸样式</p>
+                    </div>
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="选择图片" />
+                        <input type="file" name="fileField1" class="file" id="fileField1" size="28" onchange="document.getElementById('textfield1').value=this.value" />
+                    </div>
+
+                </form>
+            </div>
 
         </div>
         <div class="divider-hr"></div>
@@ -384,8 +401,48 @@
                     </div>
                     <input type="file" class="col-input col-file"/>
                 </div>
-                <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
+                <p class="help-block help-block-forFile">支持文档格式： doc, docx, xls, xlsx, ppt, pptx, pdf和txt等，最大50.MB。</p>
             </form>
+            <div class="detailLessonTab">
+                <div id="resources1">
+                    <table class="sourceBox" cellspacing="28" cellpadding="80" id="resourcestable">
+                        <tbody>
+                            <tr class="sourceTitle" height="32px">
+                                <td width="400" align="center">资源名称</td>
+                                <td width="100" align="center">资源类型</td>
+                                <td width="100" align="center">资源大小</td>
+                                <td width="150" align="center">操作</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="container activity-pagin">
+                        <nav class="pagin-right">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="#" aria-label="首页">
+                                        <span aria-hidden="true">首页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="上一页">
+                                        <span aria-hidden="true">上一页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="下一页">
+                                        <span aria-hidden="true">下一页</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" aria-label="尾页">
+                                        <span aria-hidden="true">尾页</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
 
         </div>
         <div class="divider-hr"></div>
@@ -394,8 +451,8 @@
             <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
-
 </div>
+
 
 <!--我的微课 编辑微课-->
 <div class="modal fade" id="editMicroLessonA">
@@ -457,6 +514,21 @@
                 </div>
             </form>
 
+            <div class="file-box">
+                <form enctype="multipart/form-data" action="" method="post">
+                    <div class="default-img"><img src="img/campus-default-img.png"></div>
+                    <input type='text' name='textfield2' id='textfield2' class='txt' />
+                    <div class="help-block">
+                        <p>支持jpg、gif、png格式，文件小于1M。</p>
+                        <p>图片将显示为 300*180 、 100*80 两种尺寸样式</p>
+                    </div>
+                    <div class="upload-file">
+                        <input type="submit" name="submit" class="btn" value="选择图片" />
+                        <input type="file" name="fileField3" class="file" id="fileField3" size="28" onchange="document.getElementById('textfield3').value=this.value" />
+                    </div>
+
+                </form>
+            </div>
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
@@ -480,7 +552,7 @@
                     <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus2" type="text" value="300" size="2" readonly="readonly">字。</p>
                 </div>
                 <div class="form-group form-group-texarea">
-                    <label class="col-title">教学目标：</label>
+                    <label class="col-title">教学介绍：</label>
                     <textarea class="form-control col-textarea" name="textareaCount4" onKeyDown="textCounter(textareaCount4,surplus4,300);" onKeyUp="textCounter(textareaCount4,surplus4,300);">我们往往对成功这两个字有着诸多错误的判断，这就跟光明一样，我们站在阳光里，却不能否认在很多角落有我们看不到的黑暗！</textarea>
                     <p class="help-block help-block-forTextarea">最多输入300字，您已输入<input name="surplus4" type="text" value="57" size="2" readonly="readonly">字。</p>
                 </div>
@@ -500,9 +572,59 @@
                     </div>
 
                 </div>
-                <p class="help-block help-block-forFile">最大文件上传大小是100.MB，如果文件比较大请先压缩文件</p>
-            </form>
+                <p class="help-block help-block-forFile">支持文档格式： doc, docx, xls, xlsx, ppt, pptx, pdf和txt等，最大50.MB。</p>
 
+            </form>
+            <div class="detailLessonTab">
+                <div id="resources2">
+                    <table class="sourceBox" cellspacing="28" cellpadding="80">
+                        <tbody>
+                        <tr class="sourceTitle" height="32px">
+                            <td width="400" align="center">资源名称</td>
+                            <td width="100" align="center">资源类型</td>
+                            <td width="100" align="center">资源大小</td>
+                            <td width="150" align="center">操作</td>
+                        </tr>
+
+                        <tr class="sources" height="28px">
+                            <td>&nbsp;&nbsp;&nbsp;汽车发动机工作原理及内部构造.ppt</td>
+                            <td align="center">ppt</td>
+                            <td align="center">2.0MB</td>
+                            <td align="center">
+                                【<a href="javascript:void(0)" class="down" name="">下载</a>】
+                                【<a href="javascript:void(0)" class="view">预览</a>】
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                        <div class="container activity-pagin">
+                            <nav class="pagin-right">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="首页">
+                                            <span aria-hidden="true">首页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="上一页">
+                                            <span aria-hidden="true">上一页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="下一页">
+                                            <span aria-hidden="true">下一页</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" aria-label="尾页">
+                                            <span aria-hidden="true">尾页</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                </div>
+            </div>
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
@@ -522,6 +644,8 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
+<script type="text/javascript" src="assets/js/sco.panes.js"></script>
+<script type="text/javascript" src="assets/js/sco.tab.js"></script>
 <script type="text/javascript" src="assets/js/icheck.js"></script>
 
 <script>
@@ -552,4 +676,5 @@
 </script>
 
 </body>
+
 </html>

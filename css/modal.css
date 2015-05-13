@@ -135,12 +135,12 @@
 }
 .pop-container .file-box .upload-file .file{
     position:absolute;
-    top:205px;
-    left:75px;
+    top:200px;
+    left:70px;
     height:30px;
     filter:alpha(opacity:0);
     opacity: 0;
-    width:100px
+    width:110px
 }
 
 .pop-container .file-box .upload-file .btn{
