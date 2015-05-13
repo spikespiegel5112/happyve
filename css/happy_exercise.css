@@ -307,6 +307,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .calendar_windowbar{width: 100%;height: 28px;background: #c9e48f;}
 .calendar_windowbar .close_cross{float:right;width:1em;font-size: 2em;font-weight: bolder;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);}
 .calendar_main_wrapper td .score{position: absolute;right: 0;bottom:0;color:red;font-size: 1.1em;}
+.calendar_main_wrapper td #selected{background: #eafebf;}
 .calendaredit_wrapper{float: right;width: 6em;position: relative;bottom:2.5em;}
 .calendaredit_wrapper a{float: left;margin:0 0.3em;font-size: 1.5em;line-height: 1.6em;}
 .calendar_gettoday{margin:0 1em;padding:0.1em 0.8em;border:1px solid #999;border-radius: 3px;}

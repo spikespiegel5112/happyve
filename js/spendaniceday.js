@@ -165,6 +165,8 @@ function eventManagement(){
     });
     $('.calendar_main_wrapper td').click(function(){
         tdEl=$('.calendar_main_wrapper td').eq(cellIndex);
+        $('.calendar_main_wrapper td').find('div').attr('id','');
+        $(this).find('div').attr('id','selected');
     });
     $(".calendar_event_item .mark").click(function(){
         $(".calendarscore_wrapper").fadeIn();
