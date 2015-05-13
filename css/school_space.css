@@ -1404,9 +1404,14 @@
 }
 
 /* 时间轴 */
+.timer-shaft.timer-shaft-beneficentwall{
+    margin: 0 auto;
+    float: none;
+}
 .timer-shaft .timeline-box{
     display: inline-block;
     width: 390px;
+    height: 34px;
     overflow: hidden;
 }
 .timer-shaft .timeline-box .timeline{
@@ -1469,6 +1474,7 @@
 .timer-shaft .calendar-box {
     display: inline-block;
     width: 150px;
+    height: 34px;
 }
 .timer-shaft .calendar-box .input-group{
     height: 30px;
@@ -1480,6 +1486,7 @@
     width: 110px;
 }
 .timer-shaft .calendar-box .input-group-addon{
+    display: inline-block;
     width: 38px;
     border: none;
     background-color: #fff;
