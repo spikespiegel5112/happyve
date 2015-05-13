@@ -1,7 +1,8 @@
 
 /*竞技场*/
 .timer-shaft{
-	width:520px;
+    float:left;
+	width:550px;
 	height:34px;
 	}
 .incident-time{
@@ -631,9 +632,6 @@
 	padding-top:0;
 }
 
-.timer-shaft{
-	float:left;
-}
 .new-folder{
 	width:108px;
 	height:26px;
@@ -1152,19 +1150,39 @@
     width: 115px;
     line-height: 30px;
 }
+/*校园风采新建活动*/
+.form-container .form_datetime .input-group input{
+    display: inline-block;
+    width: 140px;
+    height: 25px !important;
+    border-radius: 4px;
+}
+.form-container .form_datetime .input-group-addon{
+    padding: 5px;
+    width: 30px;
+    border: none;
+    background-color: #fff;
+}
+.form_datetime img{
+    position: relative;
+    left: -15px;
+    top: -7px;
+}
 .start-date{
     display: inline-block;
     float: left;
+}
+.start-date .input-group input, .end-date .input-group input{
+    padding: 6px;
+    width: 90px!important;
+    font-size: 12px;
 }
 .end-date {
     display: inline-block;
     float: left;
     padding-left: 10px;
 }
-.newshow-container .form_datetime input{
-    width: 90px!important;
-    padding-left: 10px;
-}
+
 /*编辑秀场 第二页*/
 .pop-show-container{
     padding: 40px 0;
@@ -1175,6 +1193,7 @@
     font-weight: bold;
 }
 .pop-show-container .form-group label{
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: normal;
     cursor: pointer;
@@ -1366,6 +1385,107 @@
 .mar-grid-bott{
 	margin-bottom:100px;
 }
-.list_pagination_match{width:100%;text-align: center; color:#8e8e8e;font-family: "SimSun";font-weight: lighter;}
-.list_pagination_match a{color:#8e8e8e;font-family: "SimSun";}
-.list_pagination_match a:hover{color: #000;}
+
+.list_pagination_match {
+    width: 100%;
+    text-align: center;
+    color: #8e8e8e;
+    font-family: "SimSun";
+    font-weight: lighter;
+}
+
+.list_pagination_match a {
+    color: #8e8e8e;
+    font-family: "SimSun";
+}
+
+.list_pagination_match a:hover {
+    color: #000;
+}
+
+/* 时间轴 */
+.timer-shaft .timeline-box{
+    display: inline-block;
+    width: 390px;
+    overflow: hidden;
+}
+.timer-shaft .timeline-box .timeline{
+    padding-top: 2px;
+    height: 30px;
+    overflow:hidden;
+}
+/*时间轴 年*/
+.timeline li.year a{
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+    font-size: 12px;
+}
+.timeline > li.year{
+    display: inline-block;
+    float: left;
+    height: 30px;
+    background: url("../img/timeline-circle-greenmin.png") no-repeat 15px -2px;
+    z-index: 2;
+    cursor: pointer;
+}
+.timeline > li.year:hover,.timeline > li.year:focus, .timeline > li.year.active {
+    font-weight: bold;
+    background: url("../img/timeline-circle-greenmax.png") no-repeat 13px -2px;
+}
+/*时间轴 月*/
+.timeline li ul {
+    overflow: hidden;
+}
+.timeline li ul.month {
+    display: none;
+    padding: 0;
+    background: url("../img/lightgreen-bg.png") repeat-x;
+}
+.timeline li ul.month li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 30px;
+    margin: 0 4px;
+    font-size: 12px;
+    font-weight: normal;
+    overflow: hidden;
+    z-index: 2;
+}
+.timeline li ul.month li:hover, .timeline li ul.month li.active{
+    font-weight: bold;
+    color: #ff781e;
+    background: url("../img/timeline-circle-orangemin.png") no-repeat 3px -2px;
+}
+.timer-shaft .timeline-box .divider-line{
+    position: absolute;
+    margin-top: -6px;
+    width: 380px;
+    border-top: 2px solid #91c31e;
+    z-index: 1;
+}
+
+.timer-shaft .calendar-box {
+    display: inline-block;
+    width: 150px;
+}
+.timer-shaft .calendar-box .input-group{
+    height: 30px;
+    width: 150px;
+}
+.timer-shaft .calendar-box .input-group .form-control{
+    border-radius: 4px;
+    height: 30px;
+    width: 110px;
+}
+.timer-shaft .calendar-box .input-group-addon{
+    width: 38px;
+    border: none;
+    background-color: #fff;
+}
+.timer-shaft .calendar-box .input-group-addon > span > img{
+    position: relative;
+    left: -20px;
+    top: -5px;
+}
