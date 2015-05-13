@@ -400,3 +400,42 @@
 .share-match .thumbnail:hover{
 	border:1px solid #91c31e;
 }
+/* 快乐分享 弹出层*/
+.pop-container .newAlbum-box{
+    margin-top: 50px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.newAlbum-box .form-group{
+    margin-bottom: 0;
+}
+.newAlbum-box .col-title{
+    display: inline;
+    width: 100px;
+    font-size: 16px;
+    text-align: right;
+    vertical-align: top;
+}
+.newAlbum-box .col-input{
+    display: inline;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 24px;
+}
+.newAlbum-box .col-textarea{
+    width: 400px;
+    height: 168px;
+}
+.newAlbum-box .help-block{
+    position: relative;
+    text-align: right;
+    padding-right: 20px;
+    top: -55px;
+}
+.newAlbum-box .help-block.for-name{
+    top: -206px;
+}
+.newAlbum-box .help-block span{
+    color: #ff0000;
+}
