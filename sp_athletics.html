@@ -17,8 +17,8 @@
 
     <!-- 自己页面的样式文件 -->
     <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/happy_exercise.css" type="text/css">
@@ -132,7 +132,72 @@
                 <li><a href="#" type="button" > 社团 </a></li>
                 <li><a href="#"  type="button" > 部门 </a></li>
              </ul>-->
-             <div class="timer-shaft"><img src="img/hp_share/timer-shaft.jpg"></div>
+             <div class="timer-shaft">
+                 <div class="timeline-box">
+                     <ul class="timeline">
+                         <li class="year">
+                             <a>2013</a>
+                             <ul class="month">
+                                 <li>01</li>
+                                 <li>02</li>
+                                 <li>03</li>
+                                 <li>04</li>
+                                 <li>05</li>
+                                 <li>06</li>
+                                 <li>07</li>
+                                 <li>08</li>
+                                 <li>09</li>
+                                 <li>10</li>
+                                 <li>11</li>
+                                 <li>12</li>
+                             </ul>
+                         </li>
+                         <li class="year active">
+                             <a>2014</a>
+                             <ul class="month" style="display: block">
+                                 <li>01</li>
+                                 <li>02</li>
+                                 <li>03</li>
+                                 <li>04</li>
+                                 <li>05</li>
+                                 <li class="active">06</li>
+                                 <li>07</li>
+                                 <li>08</li>
+                                 <li>09</li>
+                                 <li>10</li>
+                                 <li>11</li>
+                                 <li>12</li>
+                             </ul>
+                         </li>
+                         <li class="year">
+                             <a>2015</a>
+                             <ul class="month">
+                                 <li>01</li>
+                                 <li>02</li>
+                                 <li>03</li>
+                                 <li>04</li>
+                                 <li>05</li>
+                                 <li>06</li>
+                                 <li>07</li>
+                                 <li>08</li>
+                                 <li>09</li>
+                                 <li>10</li>
+                                 <li>11</li>
+                                 <li>12</li>
+                             </ul>
+                         </li>
+                     </ul>
+                     <div class="divider-line"></div>
+                 </div>
+                 <div class="calendar-box">
+                     <div class="form-group">
+                         <div class="input-group date form_date1 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                             <input class="form-control" size="16" type="text" value="2014-06-05" id="input-date1" onchange="resetTimeLine()">
+                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
              <button class="btn new-folder" type="button" data-trigger="modal" data-title="新建秀场" data-target="#newShowA">新建秀场</button>
              
         </div>
@@ -472,23 +537,39 @@
                 <div class="form-group signup-date-group">
                     <label class="date signup-date" >报名起止日期：</label>
                     <div class="form_datetime start-date">
-                        <input size="16" type="text" value="" class="" placeholder="2015-03-15">
-                        <img src="img/calendar-img.jpg" >
+                        <div class="form-group">
+                            <div class="input-group date form_date2 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="" id="input-date2" onchange="resetTimeLine()">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="form_datetime end-date">
-                        <input size="16" type="text" value="" class="" placeholder="2015-03-15">
-                        <img src="img/calendar-img.jpg" >
+                        <div class="form-group">
+                            <div class="input-group date form_date3 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="" id="input-date3" onchange="resetTimeLine()">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group vote-date-group">
                     <label class="date vote-date"  >投票起止日期：</label>
                     <div class="form_datetime start-date">
-                        <input size="16" type="text" value="" class="" placeholder="2015-03-15">
-                        <img src="img/calendar-img.jpg" >
+                        <div class="form-group">
+                            <div class="input-group date form_date4 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="" id="input-date4" onchange="resetTimeLine()">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="form_datetime end-date">
-                        <input size="16" type="text" value="" class="" placeholder="2015-03-15">
-                        <img src="img/calendar-img.jpg" >
+                        <div class="form-group">
+                            <div class="input-group date form_date5 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="" id="input-date5" onchange="resetTimeLine()">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -594,8 +675,12 @@
             <div class="form-group ">
                 <label class="date" >日期：</label>
                 <div class="date form_datetime start-date">
-                    <input size="16" type="text" value="" readonly>
-                    <img src="img/calendar-img.jpg" >
+                    <div class="form-group">
+                        <div class="input-group date form_date6 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                            <input class="form-control" size="16" type="text" value="" id="input-date6" onchange="resetTimeLine()">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="form-group ">
@@ -622,6 +707,8 @@
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="assets/js/icheck.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <script>
     $(document).ready(function () {
         changeButtonCss();
@@ -651,6 +738,89 @@
             }
         });
     });
+
+    /* 以下为时间轴代码 */
+    $(document).ready(function(){
+
+        $('.form_date1').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date1"
+        });
+        $('.form_date2').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date2"
+        });
+        $('.form_date3').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date3"
+        });
+        $('.form_date4').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date4"
+        });
+        $('.form_date5').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date5"
+        });
+        $('.form_date6').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date6"
+        });
+    });
+
+    function resetTimeLine(){
+        var oInputDateStr=$('#input-date1').val();
+        var oInputDateArr=oInputDateStr.split('-');
+        $('.year').eq(0).children('a').text(oInputDateArr[0]-1);
+        $('.year').eq(1).children('a').text(oInputDateArr[0]);
+        $('.year').eq(2).children('a').text(oInputDateArr[0]-1+2);
+        $('.year').eq(1).children('ul').children('li').removeClass('active');
+        $('.year').eq(1).children('ul').children('li').eq(oInputDateArr[1]-1).addClass('active');
+    }
+
+
 </script>
 </body>
 </html>

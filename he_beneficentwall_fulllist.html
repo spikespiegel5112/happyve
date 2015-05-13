@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" type="text/css" media="all">
 
 </head>
 <body>
@@ -79,7 +81,72 @@
                     <span class="green_2"></span>
                     <label class="green_3"></label>
                 </div>
-                <img class="timeline_wrapper" src="img/img_wbl/timeline_1_00000.jpg">
+                <div class="timer-shaft timer-shaft-beneficentwall">
+                    <div class="timeline-box">
+                        <ul class="timeline">
+                            <li class="year">
+                                <a>2013</a>
+                                <ul class="month">
+                                    <li>01</li>
+                                    <li>02</li>
+                                    <li>03</li>
+                                    <li>04</li>
+                                    <li>05</li>
+                                    <li>06</li>
+                                    <li>07</li>
+                                    <li>08</li>
+                                    <li>09</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                </ul>
+                            </li>
+                            <li class="year active">
+                                <a>2014</a>
+                                <ul class="month" style="display: block">
+                                    <li>01</li>
+                                    <li>02</li>
+                                    <li>03</li>
+                                    <li>04</li>
+                                    <li>05</li>
+                                    <li class="active">06</li>
+                                    <li>07</li>
+                                    <li>08</li>
+                                    <li>09</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                </ul>
+                            </li>
+                            <li class="year">
+                                <a>2015</a>
+                                <ul class="month">
+                                    <li>01</li>
+                                    <li>02</li>
+                                    <li>03</li>
+                                    <li>04</li>
+                                    <li>05</li>
+                                    <li>06</li>
+                                    <li>07</li>
+                                    <li>08</li>
+                                    <li>09</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="divider-line"></div>
+                    </div>
+                    <div class="calendar-box">
+                        <div class="form-group">
+                            <div class="input-group date form_date1 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="2014-06-05" id="input-date1" onchange="resetTimeLine()">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="haexedetaillist_wrapper">
                     <div class="haexedetaillist_list_wrapper">
                         <ul>
@@ -399,8 +466,123 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
 <script>
-    
+    $(document).ready(function(){
+        haexeHomepage();
+        layout();
+        dashboard();
+    });
+    function layout(){
+        $(".nav_main_button").click(function(){
+            var dropdownEl=$(this).siblings(".nav_dropdown_item");
+            if(dropdownEl.hasClass("dropdown_fadein")){
+                dropdownEl.removeClass("dropdown_fadein");
+                $(".nav_dropdown_item").hide();
+            }else{
+                dropdownEl.addClass("dropdown_fadein");
+                $(".nav_dropdown_item").show();
+            }
+        })
+        $(document).bind("click",function(e){
+            if($(".nav_dropdown_item").hasClass("dropdown_fadein")){
+                if($(e.target).closest(".nav_main_button").length==0){
+                    $(".nav_dropdown_item ").removeClass("dropdown_fadein");
+                    $(".nav_dropdown_item").hide();
+                }
+            }
+        })
+        $(".slideTxtBox,.activity-header-slide,.query-nav").slide();
+    }
+    function dashboard(){
+        var hoverIndex=0, clickIndex=0, multiplier=0;
+        $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
+            console.log("aaa");
+            hoverIndex=$(this).index();
+            $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","#acd655 transparent #acd655 transparent");
+        },function(){
+            hoverIndex=$(this).index();
+            $(".layout_dashboard_indication_wrapper li").eq(hoverIndex).css("border-color","transparent");
+            return;
+        });
+        $(".layout_dashboard_indication_hover_wrapper li").hover(function(){
+            clickIndex=$(this).index();
+            if(clickIndex==1){
+                multiplier=0;
+            }else if(clickIndex==0){
+                multiplier=-1;
+            }else{
+                multiplier=1;
+            }
+            $(".layout_dashboard_indicator").css({transform:"rotate("+70*multiplier+"deg)"})
+        },function(){
+            return;
+        });
+    }
+    function haexeHomepage(){
+        var index=0;
+        $(".haexe_home_ranking_list_wrapper li").click(function(){
+            index=$(this).index();
+            $(".haexe_home_carousel_desc_list").fadeOut().eq(index).fadeIn();
+            $(this).siblings("li").removeClass("shown");
+            $(this).addClass("shown");
+        });
+        $(".haexe_home_carousel_desc_list ul li").click(function(){
+            console.log("aaaq")
+            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").fadeIn();
+        });
+        $(".haexe_home_carousel_desc_list ul li, .haexe_home_bene_desc_list ul li").hover(function(){
+            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").stop().fadeIn().end().css({"z-index":"20"});
+        },function(){
+            $(this).find(".haexe_home_carousel_desc_list_content, .haexe_home_carousel_desc_list_bg").stop().fadeOut().end().css({"z-index":""});
+        });
+        $(".haexe_home_ranking_list_wrapper li").click(function(){
+            index=$(this).index();
+            $(".haexe_home_carousel_desc_list").fadeOut().eq(index).fadeIn();
+            $(this).siblings("li").removeClass("shown");
+            $(this).addClass("shown");
+        });
+        $(".haexe_home_ranking_list_wrapper li").click(function(){
+            index=$(this).index();
+            $(".haexe_home_carousel_desc_list").eq(index).stop().fadeIn();
+            $(this).siblings("li").removeClass("shown");
+            $(this).addClass("shown");
+        });
+        $(".haexe_home_bene_list_wrapper li").click(function(){
+            var index=$(this).index();
+            $(this).siblings().removeClass("shown").end().addClass("shown");
+            $(".haexe_home_bene_desc_list").attr("id","");
+            $(".haexe_home_bene_desc_list").eq(index).attr("id","shown");
+        });
+    }
+
+    /*以下为时间轴代码*/
+    $(document).ready(function(){
+
+        $('.form_date1').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date1"
+        });
+    });
+
+    function resetTimeLine(){
+        var oInputDateStr=$('#input-date1').val();
+        var oInputDateArr=oInputDateStr.split('-');
+        $('.year').eq(0).children('a').text(oInputDateArr[0]-1);
+        $('.year').eq(1).children('a').text(oInputDateArr[0]);
+        $('.year').eq(2).children('a').text(oInputDateArr[0]-1+2);
+        $('.year').eq(1).children('ul').children('li').removeClass('active');
+        $('.year').eq(1).children('ul').children('li').eq(oInputDateArr[1]-1).addClass('active');
+    }
 </script>
 
 </body>

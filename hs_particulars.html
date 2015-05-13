@@ -19,7 +19,8 @@
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/happy_exercise.css" type="text/css">
+    <link rel="stylesheet" href="css/happy_exercise.css" type="text/cssm" edia="all" >
+    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -101,7 +102,7 @@
 
                     <div id="particulars-photo">
                     	<div class="btn-new-particul">
-                    	<button class="btn new-particul" type="button">新建列表</button>
+                    	<button class="btn new-particul" type="button" data-trigger="modal" data-title="新建相册" data-target="#newAlbum">新建相册</button>
                         </div>
                         <div class="photo-thum-part">
                         	
@@ -1079,6 +1080,34 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--弹出层 开始-->
+<div class="modal fade" id="newAlbum">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>新建相册</h3>
+    </div>
+    <div class="pop-container">
+        <div class="newAlbum-box">
+            <form action="" method="">
+                <div class="form-group">
+                    <label class="control-label col-title">相册名称：</label>
+                    <input type="text" class="col-input">
+                    <label for="event_content" class="control-label col-title">相册描述：</label>
+                    <textarea id="event_content" class="content col-textarea" placeholder=""></textarea>
+                    <div class="help-block for-name"><p>最多输入<span>20</span>字。</p></div>
+                    <div class="help-block"><p>最多输入100字，您已输入<span>0</span>字。</p></div>
+                </div>
+            </form>
+        </div>
+        <div class="divider-hr input-content-hr"></div>
+        <div class="btn-group">
+            <a href="hs_particulars.html"><div class="btn-save selected"><button type="button" class="btn">保存</button></div></a>
+            <a href="hs_particulars.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -1086,6 +1115,7 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script>
 
     function part1(){
