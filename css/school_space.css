@@ -529,6 +529,7 @@
 	height:25px;
 	padding:0;
 	text-align:center;
+	font:12px/25px "微软雅黑";
 }
 .set-opt{
 	display:none;
@@ -588,7 +589,10 @@
 	width:556px;
 	margin: 12px 0 0 0;
 	}
-.collte-info .btn-default{
+.collective-text .collte-info .btn-default{
+	width:108px;
+	height:25px;
+	font:15px/22px "微软雅黑";
 	float:right;
 }
 .collte-info .colle-title{

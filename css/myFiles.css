@@ -262,7 +262,7 @@
 .footprint-content .edit-btn {
 	width:60px;
 	height:24px;
-	padding:0;
+	padding:2px 0 0 0;
     color: #96c81e;
     margin:0 40px 0 255px;
 }
@@ -276,13 +276,13 @@
 .footprint-content .inbox-btn {
 	width:60px;
 	height:24px;
-	padding:0;
+	padding:2px 0 0 0;
     color: #ff7800;
 }
-.footprint-content .textarea-myfiles-box{
+.textarea-myfiles-box{
 	width: 458px;
     height: 100px;
-    margin: 16px 0 22px 132px;
+    margin: 16px 0 0px 132px;
     font: 12px/18px "宋体";
 	color:#505050;
 }
@@ -296,11 +296,14 @@
 
 .list-footprint {
     width: 670px;
-    border-top: 2px solid #90c31f;
-    margin: 0 0 0 16px;
+    border-top: 1px solid #646464;
+    margin: 0 0 0 8px;
     padding: 20px 0 0 0;
 }
-
+.footprint-content .list-footprint{
+	border-top: 2px solid #90c31f;
+	margin: 0 0 0 16px;
+}
 .list-footprint li {
     width: 574px;
     height: 38px;
@@ -1100,7 +1103,10 @@
 	width:666px;
 	margin:0 0 10px 18px;
 }
-
+.personage-link-label{
+	width:666px;
+	margin:0 0 10px 12px;
+	}
 .label-wire-gr p{
 	display:block;
 	text-align:center;
@@ -1460,6 +1466,15 @@
     padding: 15px;
     margin-left: 60px;
     border: 1px solid #c1c1c1;
+}
+
+.master-personge-btn{
+	width:118px;
+	height:30px;
+	position:absolute;
+	top:65px;
+	right:100px;
+	line-height:28px;
 }
 
 .detailLessonTab .sourceTitle {

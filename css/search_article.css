@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+.marg-person-clear{
+	height:18px;
+}
+.search-article-content{
+	width:1010px;
+	min-height:1300px;
+	margin:0 auto 30px;
+	background-color:#fff;
+	border:1px solid #e2e4d5;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+.search-box-person{
+	width:770px;
+	overflow:hidden;
+	margin:30px 0 18px 12px;
+}
+.search-box-person .form-control{
+	width:658px;
+	height:30px;
+	float:left;
+	border-radius:0;
+	box-shadow: none;
+	font:14px/30px "宋体";
+}
+.search-box-person .btn{
+	width:108px;
+	height:30px;
+	float:right;
+	background-color:#d7f0aa;
+	padding:0;
+	text-align:center;
+	font:16px/28px "微软雅黑";
+	color:#3c3c3c;
+	border-radius:0;
+}
+.nine-nav-person{
+	width:1008px;
+	height:31px;
+	border-bottom:1px solid #919191;
+	padding: 0 8px 0 7px;
+	overflow:hidden;
+}
+.nine-nav-person li{
+	float:left;
+	width:107px;
+	height:30px;
+	text-align:center;
+	font:16px/30px "微软雅黑";
+	color:#3c3c3c;
+	padding:0;
+	background-color:#d9d9d9;
+	margin:0 0 0 3px;
+
+}
+.nine-nav-person .active-person-click{
+	background-color:#91c81e;
+}
+.nine-nav-person .active-person-click a{
+	color:#fff;
+}
+.result-search-person{
+	display:block;
+	margin:22px 70px;
+	font:12px "宋体";
+	color:#b4b4b4;
+	}
+.introduce-search-result{
+	width:630px;
+	margin-left:70px;
+}
+.introduce-search-result .title-search-article{
+	height:18px;
+	width:630px;
+	color:#372efd;
+	font:14px/18px "宋体";
+	text-decoration:underline;
+}
+.red-person-lable{
+	color:#fd0202;
+}
+.text-introduce-search{
+	width:630px;
+	font:12px/20px "宋体";
+	color:#3c3c3c;
+	margin:0;
+	
+}
+.adress-introduce-inter span{
+	color:#327800;
+	font:12px/20px "宋体";
+}
+.adress-introduce-inter a{
+	color:#b4b4b4;
+}
