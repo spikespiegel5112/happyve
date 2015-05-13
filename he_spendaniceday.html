@@ -82,6 +82,7 @@
                     <div class="calendar_dateselect_wrapper">
                         <select class='calendar_yearlist'></select>年 
                         <select class='calendar_monthlist'></select>月 
+                        <a class='calendar_gettoday' href="javascript:;">今天</a>
                     </div>
                 </form>
                 <div id="calendar" class="calendar calendar_main_wrapper"></div>
@@ -125,24 +126,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="preview_wrapper">
-                    <div class='editevent_inner'>
-                        <a class="delete glyphicon glyphicon-trash" href="javascript:;"></a>
-                        <div class='note_content'>
-                            <textarea maxlength='2000'></textarea>
-                            <p class='inputnumber_item'>最多输入2000字，您已输入<span>0</span>字</p>
-                        </div>
-                        <div class="editevent_input_wrapper">
-                            <input type="button" value="保存" data="accept" class="form_button button button-3d button-action button-pill">
-                            <input type="button" data="cancel" value="取消" class="form_button button button-3d button-action button-pill">
-                        </div>
-                    </div>
-                </div>
                 <div class="editevent_wrapper">
                     <div class='editevent_inner'>
                         <a class="delete glyphicon glyphicon-trash" href="javascript:;"></a>
                         <div class='note_content'>
                             <textarea maxlength='2000'></textarea>
+                            <div class='calendaredit_wrapper'>
+                                <a class='edit_item glyphicon glyphicon-pencil' href="javascript:;"></a>
+                                <a class='share_icon' href="javascript:;"></a>
+                            </div>
                             <p class='inputnumber_item'>最多输入2000字，您已输入<span>0</span>字</p>
                         </div>
                         <div class="editevent_input_wrapper">

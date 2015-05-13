@@ -5,17 +5,23 @@ function lunarCalendar(){
     var selectedYear=$(".calendar_yearlist");
     var selectedMonth=$(".calendar_monthlist");
     var objDate=new Date();
+    var today=objDate.getDate();
     var thisFullYear=objDate.getFullYear();
     var thisMonth=objDate.getMonth()+1;
-
     bulidCalendar();
     showCalendar(thisFullYear,thisMonth);
     selectedYear.val(thisFullYear);
     selectedMonth.val(thisMonth);
+    showCalendar(selectedYear.val(),selectedMonth.val());
     selectedYear.change(function(){
         showCalendar(selectedYear.val(),selectedMonth.val());
     });
     selectedMonth.change(function(){
+        showCalendar(selectedYear.val(),selectedMonth.val());
+    });
+    $('.calendar_gettoday').click(function(){
+        selectedYear.val(thisFullYear);
+        selectedMonth.val(thisMonth);
         showCalendar(selectedYear.val(),selectedMonth.val());
     });
     function showCalendar(y,m){
@@ -25,7 +31,6 @@ function lunarCalendar(){
         objDate.setMonth(m-1);
         objDate.setDate(-1);
         var firstDay=objDate.getDay(); 
-        var today=objDate.getDate();
         var prevYear=selectedYear.val();
         var prevMonth=selectedMonth.val()-1;
         var monthDays=calendar.solarDays(y,m);
@@ -45,7 +50,7 @@ function lunarCalendar(){
         var cellBefore=0;
         var cellAfter=firstDay+1+monthDays;
         var tdEl=$(".calendar_main_wrapper tbody td");
-        $(".lunardate").remove();
+        $("td li,td .score,.lunardate,.solardate").remove();
         for(var i=0;i<6;i++){
             var index=1;
             index=7*i;
@@ -53,57 +58,53 @@ function lunarCalendar(){
                 tdEl.eq(5+index+x).addClass('color_red');
             }
         }
-
         for(var i=1;i<=monthDays;i++){
             var solarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).cDay;
             var lunarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).IDayCn;
-            tdEl.eq(i+firstDay).prepend("<label class='lunardate'>"+solarDay+"</label>");
             tdEl.eq(i+firstDay).prepend("<span class='lunardate'>"+lunarDay+"</span>");
-            var Slfw=Ssfw=null;
+            tdEl.eq(i+firstDay).prepend("<label class='solardate'>"+solarDay+"</label>");
+            var Slfw=Ssfw=null;                 // 农历阳历节日功能
             var eve=0;
-            for(var ftv=0;ftv<sFtv.length;ftv++){
-                console.log(sFtv.length);
+            for(var ftv=0;ftv<sFtv.length;ftv++){ 
                 if(parseInt(sFtv[ftv].substr(0,2))==(calendar.solar2lunar(y,m,i).cMonth)){
                     if(parseInt(sFtv[ftv].substr(2,2))==(calendar.solar2lunar(y,m,i).cDay)){
-                        console.log(sFtv[ftv].substr(5));
                         tdEl.eq(i+firstDay).find('span').html(sFtv[ftv].substr(5));
                     }
                 }
             }
             for(var ftv=0;ftv<lFtv.length;ftv++){
-                console.log(lFtv.length);
                 if(parseInt(lFtv[ftv].substr(0,2))==(calendar.solar2lunar(y,m,i).lMonth)){
                     if(parseInt(lFtv[ftv].substr(2,2))==(calendar.solar2lunar(y,m,i).lDay)){
-                        console.log(lFtv[ftv].substr(5));
                         tdEl.eq(i+firstDay).find('span').html(lFtv[ftv].substr(5));
                     }
                 }
-                if (12==calendar.solar2lunar(y,m,i).lMonth){    //判断是否为除夕
+                if (12==calendar.solar2lunar(y,m,i).lMonth){
                     if (eve==calendar.solar2lunar(y,m,i).lDay){
                         tdEl.eq(i+firstDay).find('span').html('除夕');Slfw="除夕";
                     }
                 }
             }
         }
-
         for(var i=1;i<=firstDay+1;i++){
             var prevSolarDay=calendar.solar2lunar(prevYear,prevMonth,prevMonthDays+i).cDay;
             var prevlunarDay=calendar.solar2lunar(prevYear,prevMonth,prevMonthDays+i).IDayCn;
-            tdEl.eq(cellBefore).prepend("<label class='lunardate'>"+prevSolarDay+"</label>");
             tdEl.eq(cellBefore).prepend("<span class='lunardate'>"+prevlunarDay+"</span>");
+            tdEl.eq(cellBefore).prepend("<label class='solardate'>"+prevSolarDay+"</label>");
             cellBefore++;
         }
         for(var i=1;i<=nextMonthDays;i++){
             var afterSolarDay=calendar.solar2lunar(nextYear,nextMonth,i).cDay;
             var afterlunarDay=calendar.solar2lunar(nextYear,nextMonth,i).IDayCn;
-            tdEl.eq(cellAfter).prepend("<label class='lunardate'>"+afterSolarDay+"</label>");
             tdEl.eq(cellAfter).prepend("<span class='lunardate'>"+afterlunarDay+"</span>");
+            tdEl.eq(cellAfter).prepend("<label class='solardate'>"+afterSolarDay+"</label>");
             cellAfter++;
+        }
+        if(selectedMonth.val()==thisMonth){
+            tdEl.eq(today+firstDay).find('.solardate').css({'background':'#ff8219','padding':'0.2em','color':'#fff','border-radius':'50%'});
         }
     }
     function bulidCalendar(){
         var calendarEl="";
-        
         calendarEl+="<table class='calendar_main_wrapper'><thead>";
         var weekNameArr=new Array();
         weekNameArr=["周一","周二","周三","周四","周五","周六","周日"];
@@ -133,7 +134,19 @@ function eventManagement(){
     var clickedTrIndex=0;
     var clickedTdIndex=0;
     var ellipsis='<i>…</i>';
-
+    var eventLiIndex=0;
+    var tdEl=$('.calendar_main_wrapper td').eq(1);
+    var closestFlag=0;
+    $(document).bind('click',function(e){
+        if(closestFlag==0){
+            return;
+        }else if(closestFlag==1){
+            closestFlag++
+        }else if($(e.target).closest('.note_content').length==0&&closestFlag==2){
+            $('.editevent_wrapper').fadeOut();
+            closestFlag=0;
+        }
+    });
     $('.calendar_main_wrapper tr').click(function(){
         var clickedTrIndex=$(this).index();
     });
@@ -166,12 +179,10 @@ function eventManagement(){
     $(".newevent_input_wrapper input, .editevent_input_wrapper input, .editevent_inner .delete").click(function(){
         setTimeout(function(){$(".newevent_wrapper, .editevent_wrapper, .calendarscore_wrapper, .mask").fadeOut();},300);
         setTimeout(function(){$(".mask").detach();},600);
-        clearTimeout();
     });
     $('.close_cross').click(function(){
-        setTimeout(function(){$('.newevent_wrapper, .calendarscore_wrapper, .editevent_wrapper, .mask').fadeOut();});
+        $('.newevent_wrapper, .calendarscore_wrapper, .editevent_wrapper, .mask').fadeOut();
         setTimeout(function(){$(".mask").detach();},600);
-        clearTimeout();
     });
     $('.newevent_wrapper .newevent_input_wrapper input:eq(0)').click(function(){
         var text=$(this).parent().siblings('.note_content').find('textarea').val();
@@ -187,10 +198,14 @@ function eventManagement(){
     $('.calendarscore_wrapper .newevent_input_wrapper input:eq(0)').click(function(){
         var score="<span class='score'>"+parseInt(9-$('.calendarscore_mian_wrapper').find('input:checked').parent().index())+'分</span>';
         tdEl.find('.score').detach().end().append(score);
-    })
+    });
     $('.calendar_main_wrapper .day').on('click','ul li a',function(){
         eventLiIndex=$(this).parent().index();
         $('.editevent_wrapper').find('textarea').val($(this).text()).end().fadeIn();
+        closestFlag=1;
+    });
+    $('.editevent_wrapper .delete').click(function(){
+        tdEl.find('li').eq(eventLiIndex).detach();
     });
     $('.editevent_input_wrapper input:eq(0)').click(function(){
         var editText=$('.editevent_inner').find('textarea').val();
@@ -201,11 +216,30 @@ function eventManagement(){
         }else{
             tdEl.find('i').eq(eventLiIndex).detach();
         }
+        closestFlag=0;
+    });
+    $('.editevent_input_wrapper input').click(function(){
+        setTimeout(function(){
+            $('.editevent_input_wrapper, .inputnumber_item, .editevent_inner .delete').fadeOut();
+            $('.calendaredit_wrapper').fadeIn();
+            $('.editevent_inner').css({'background':'none','border':'0'});
+        },300);
+    });
+    $('.calendaredit_wrapper a:eq(0)').click(function(){
+        $('.editevent_input_wrapper, .inputnumber_item, .editevent_inner .delete').fadeIn();
+        $('.calendaredit_wrapper').fadeOut();
+        $('.editevent_inner').css({'background':'#fff','border':'1px solid #b4b4b4'});
     });
     $('textarea').keyup(function(){
         var textVal=$(this).val();
         var textLen=textVal.length;
         $('.inputnumber_item span').text(textLen);
+    });
+    $(document).keyup(function(e){
+        if(e.which===27){
+            $('.editevent_wrapper').fadeOut();
+            closestFlag=0;
+        }
     });
 }
 }(jQuery));
