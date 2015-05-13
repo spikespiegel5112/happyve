@@ -285,7 +285,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .calendar_event_item a{float:left;margin:0 0 0 0.1em;padding: 0.1em 0.2em;background: #9bcb27;border-radius: 3px;color: #fff;}
 .btn-toolbar{display: none;}
 .cell-day .number{display: none;}
-.calendar_main_wrapper tbody tr td label{float: right;margin:2px 20px 0 0;position: relative;z-index: 1;font-weight: bold;font-size: 1.1em;}
+.calendar_main_wrapper tbody tr td label{float: right;margin:2px 17px 0 0;position: relative;z-index: 1;font-weight: bold;font-size: 1.1em;}
 .calendar_main_wrapper tbody tr td span{float: left;margin:2px;position: relative;z-index: 1;}
 .editevent_wrapper{display:none;position: fixed;top: 30%;width: 690px;z-index: 3;}
 .editevent_inner{margin:0 auto;padding:1em 2em;width: 526px;height:300px;background: #fff;border: 1px solid #b4b4b4;}

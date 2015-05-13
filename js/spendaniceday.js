@@ -1,9 +1,6 @@
 (function($){
 lunarCalendar();
 eventManagement();
-    var Ftv = {'lFtv':[{'0101':'春节','0115':'元宵节','0707':'七夕情人节','0715':'中元节','0815':'中秋节','0909':'重阳节','1208':'腊八节','1224':'小年'}]}
-
-    // (" ","0115 元宵节","0505 端午节","0707 七夕情人节","0715 中元节","0815 中秋节","0909 重阳节","1208 腊八节","1224 小年");
 function lunarCalendar(){
     var selectedYear=$(".calendar_yearlist");
     var selectedMonth=$(".calendar_monthlist");
@@ -22,6 +19,8 @@ function lunarCalendar(){
         showCalendar(selectedYear.val(),selectedMonth.val());
     });
     function showCalendar(y,m){
+        var sFtv = new Array("0101 元旦","0214 情人节","0308 妇女节","0312 植树节","0315 消费者权益日","0401 愚人节","0501 劳动节","0504 青年节","0512 护士节","0601 儿童节","0701 建党节","0801 建军节","0910 教师节","0928 孔子诞辰","1001 国庆节","1006 老人节","1024 联合国日","1224 平安夜","1225 圣诞节");
+        var lFtv = new Array("0101 春节","0115 元宵节","0505 端午节","0707 七夕情人节","0715 中元节","0815 中秋节","0909 重阳节","1208 腊八节","1224 小年");
         objDate.setYear(y);
         objDate.setMonth(m-1);
         objDate.setDate(-1);
@@ -54,7 +53,7 @@ function lunarCalendar(){
                 tdEl.eq(5+index+x).addClass('color_red');
             }
         }
-        // console.log(calendar.lFtv[1]);
+
         for(var i=1;i<=monthDays;i++){
             var solarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).cDay;
             var lunarDay=calendar.solar2lunar(selectedYear.val(),selectedMonth.val(),i).IDayCn;
@@ -62,21 +61,31 @@ function lunarCalendar(){
             tdEl.eq(i+firstDay).prepend("<span class='lunardate'>"+lunarDay+"</span>");
             var Slfw=Ssfw=null;
             var eve=0;
-            
-            // if(parseInt(Ftv.lFtv[i].substr(0,2))==(calendar.solar2lunar(y,m,i).lMonth)){
-            //     console.log(calendar.solar2lunar(y,m,i).lMonth);
-            //     if(parseInt(calendar.lFtv[ipp].substr(2,2))==(calendar.solar2lunar(y,m,i).lDay)){
-            //         tdEl.eq(i).find('span').innerHTML=calendar.lFtv[ipp].substr(5);
-            //     }
-            // }
+            for(var ftv=0;ftv<sFtv.length;ftv++){
+                console.log(sFtv.length);
+                if(parseInt(sFtv[ftv].substr(0,2))==(calendar.solar2lunar(y,m,i).cMonth)){
+                    if(parseInt(sFtv[ftv].substr(2,2))==(calendar.solar2lunar(y,m,i).cDay)){
+                        console.log(sFtv[ftv].substr(5));
+                        tdEl.eq(i+firstDay).find('span').html(sFtv[ftv].substr(5));
+                    }
+                }
+            }
+            for(var ftv=0;ftv<lFtv.length;ftv++){
+                console.log(lFtv.length);
+                if(parseInt(lFtv[ftv].substr(0,2))==(calendar.solar2lunar(y,m,i).lMonth)){
+                    if(parseInt(lFtv[ftv].substr(2,2))==(calendar.solar2lunar(y,m,i).lDay)){
+                        console.log(lFtv[ftv].substr(5));
+                        tdEl.eq(i+firstDay).find('span').html(lFtv[ftv].substr(5));
+                    }
+                }
+                if (12==calendar.solar2lunar(y,m,i).lMonth){    //判断是否为除夕
+                    if (eve==calendar.solar2lunar(y,m,i).lDay){
+                        tdEl.eq(i+firstDay).find('span').html('除夕');Slfw="除夕";
+                    }
+                }
+            }
         }
-        // for(var ipp=0;ipp<calendar.lFtv.length;ipp++){
-        //     alert('a')
-            
-        //     tdEl.eq(i).find('span').css("baacground","red");
-        // }
 
-            
         for(var i=1;i<=firstDay+1;i++){
             var prevSolarDay=calendar.solar2lunar(prevYear,prevMonth,prevMonthDays+i).cDay;
             var prevlunarDay=calendar.solar2lunar(prevYear,prevMonth,prevMonthDays+i).IDayCn;
@@ -89,27 +98,8 @@ function lunarCalendar(){
             var afterlunarDay=calendar.solar2lunar(nextYear,nextMonth,i).IDayCn;
             tdEl.eq(cellAfter).prepend("<label class='lunardate'>"+afterSolarDay+"</label>");
             tdEl.eq(cellAfter).prepend("<span class='lunardate'>"+afterlunarDay+"</span>");
-
             cellAfter++;
         }
-
-        // for(var i=0;i<calendar.lFtv.length;i++){
-
-        // }
-        // var Slfw=Ssfw=null;
-        // var eve=0;
-        // for (var ipp=0;ipp<calendar.lFtv.length;ipp++){    //农历节日
-        //     if (parseInt(calendar.lFtv[ipp].substr(0,2))==(calendar.solar2lunar(y,m,ipp).lMonth)){
-        //         if (parseInt(calendar.lFtv[ipp].substr(2,4))==(calendar.solar2lunar(y,m,ipp).lDay)){
-        //             tdEl.eq().find('span').innerHTML=calendar.lFtv[ipp].substr(5);
-        //             tdEl.eq().find('span').innerHTML=calendar.lFtv[ipp].substr(5);
-        //         }
-        //     }
-        //     if (12==(calendar.solar2lunar(y,m,ipp).lMonth)){    //判断是否为除夕
-        //         if (eve==(calendar.solar2lunar(y,m,ipp).lDay)){lObj.innerHTML="除夕";Slfw="除夕";}
-        //     }
-        //     console.log(calendar.lFtv[ipp].substr(5))
-        // }
     }
     function bulidCalendar(){
         var calendarEl="";
@@ -176,10 +166,12 @@ function eventManagement(){
     $(".newevent_input_wrapper input, .editevent_input_wrapper input, .editevent_inner .delete").click(function(){
         setTimeout(function(){$(".newevent_wrapper, .editevent_wrapper, .calendarscore_wrapper, .mask").fadeOut();},300);
         setTimeout(function(){$(".mask").detach();},600);
+        clearTimeout();
     });
     $('.close_cross').click(function(){
         setTimeout(function(){$('.newevent_wrapper, .calendarscore_wrapper, .editevent_wrapper, .mask').fadeOut();});
         setTimeout(function(){$(".mask").detach();},600);
+        clearTimeout();
     });
     $('.newevent_wrapper .newevent_input_wrapper input:eq(0)').click(function(){
         var text=$(this).parent().siblings('.note_content').find('textarea').val();
