@@ -73,11 +73,14 @@
 	width:630px;
 	margin-left:70px;
 }
+.introduce-search-result li{
+	margin-top:10px;
+}
 .introduce-search-result .title-search-article{
 	height:18px;
 	width:630px;
 	color:#372efd;
-	font:14px/18px "宋体";
+	font:14px/22px "宋体";
 	text-decoration:underline;
 }
 .red-person-lable{
@@ -87,8 +90,6 @@
 	width:630px;
 	font:12px/20px "宋体";
 	color:#3c3c3c;
-	margin:0;
-	
 }
 .adress-introduce-inter span{
 	color:#327800;
@@ -96,4 +97,197 @@
 }
 .adress-introduce-inter a{
 	color:#b4b4b4;
+}
+.search-box-picture{
+	
+}
+.container-pictur{
+	width:870px;
+	margin:0 0 0 70px;
+	padding:0; 
+	list-style:none;
+}
+.container-pictur:before,
+.container-pictur:after {
+	 content: ""; 
+	 display: table; 
+}
+.container-pictur:after { 
+	clear: both;
+}
+.item-picture-s { 
+	float: left;
+	position:relative;
+	overflow:hidden;
+}
+.item-picture-s a{
+	display:block;
+}
+.item-picture-s img { 
+	max-width: 100%; 
+	max-height: 100%;
+	height:140px;  
+	vertical-align: bottom;   
+}
+.first-item-picture-s { 
+	clear: both;
+}
+.last-row-picture, 
+.last-row-picture ~ 
+.item-picture-s { 
+	margin-bottom: 0;
+}
+.item-picture-s:hover{
+	
+}
+.item-picture-s p{
+	display:none;
+	width:100%;
+	height:30px;
+	padding-left:5%;
+	margin:0;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	position:absolute;
+	bottom:-4px;
+	left:0;
+	}
+.item-picture-s:hover p{
+	display:block;
+	z-index:5;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-gradient(linear, right top, right bottom, color-stop(0,rgba(0, 0, 0, 0)),color-stop(1,rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
+	font:12px/26px "宋体";
+	opacity:0.6;
+}
+
+.more-search-clik{
+	text-align:center;
+	width:870px;
+	height:84px;
+	background-color:#f1efef;
+	margin-left:70px;
+	padding-top:22px;
+}
+.more-search-clik .btn{
+	width:374px;
+	height:38px;
+	background-color:#dedddd;
+	text-align:center;
+	padding:0;
+	font:16px "微软雅黑";
+	color:#3c3c3c;
+	border-radius:0;
+}
+
+.photo-thum-search{
+	margin-left:56px;
+}
+.photo-thum-search .thumbnail{
+	width:212px;
+	padding:0;
+	border-radius:0;
+	float: left;
+	margin:0 0 20px 10px;
+	border:none;
+	position:relative;
+	
+}
+.mano-test-list.marg-test-eval{
+	margin-left:70px;
+	width:870px;
+}
+.mano-test-list.marg-test-eval li{
+	width:870px;
+}
+.mano-test-list.marg-test-eval li button{
+	margin-right:20px;
+}
+.search-manoeuvre-box{
+	width:710px;
+	margin-left:70px;
+}
+.search-manoeuvre-box li{
+	overflow:hidden;
+	margin-bottom:20px;
+}
+.search-manoeuvre-box li img{
+	display:block;
+	float:left;
+	width:366px;
+	height:188px;
+}
+.search-manoeuvre-box li .text-search-manoeuvre{
+	float:right;
+	width:326px;
+	padding-top:4px;
+	height:188px;
+}
+.text-search-manoeuvre a{
+	font:16px/24px "微软雅黑";
+}
+.text-search-manoeuvre p{
+	width:326px;
+	font:12px/20px "宋体";
+	color:#3c3c3c;
+}
+
+.text-search-manoeuvre .active-mano-search {
+	color:#003bfc;
+	text-decoration:underline;
+} 
+.sorry-search-remd{
+	width:672px;
+	height:150px;
+	background-color:#eeeeee;
+	padding:44px 0 0 118px;
+	margin:168px auto;
+	color:#3c3c3c;
+}
+.sorry-search-remd img{
+	width:56px;
+	height:50px;
+}
+.sorry-search-remd span{
+	font:16px "微软雅黑";
+	
+}
+.search-fix-position{
+	display:block;
+	position:relative;
+}
+.search-fix-position p{
+	display:none;
+	position:absolute;
+	left:0;
+	bottom:0;
+	font:12px/28px "宋体";
+	color:#fff;
+	width:100%;
+	height:28px;
+	padding:0 4%;
+	overflow:hidden;
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+    background: -webkit-gradient(linear, right top, right bottom, color-stop(0,rgba(0, 0, 0, 0)),color-stop(1,rgba(0, 0, 0, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 100%);
+	opacity:0.6;
+	z-index:600;
+}
+.search-fix-position:hover p{
+	display:block;
+}
+.search-fix-position p span{
+	display:block;
+}
+.left-name-search{
+	float:left;
+}
+.right-time-search{
+	float:right;
 }
