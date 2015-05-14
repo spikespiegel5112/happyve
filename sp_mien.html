@@ -840,6 +840,20 @@ $(document).ready(function(){
     });
 });
 
+$("li.year>a").click(function(){
+    var oUl=$(this).next();
+    if(oUl.is(":visible")){
+        oUl.hide(400);
+        oUl.parent().removeClass('active');
+    }else{
+        oUl.show(500).parent().siblings().children('ul').hide(500);
+        oUl.parent().addClass('active');
+        oUl.parent().siblings().removeClass('active');
+    }
+
+    return false;
+});
+
 function resetTimeLine(){
     var oInputDateStr=$('#input-date1').val();
     var oInputDateArr=oInputDateStr.split('-');

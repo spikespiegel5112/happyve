@@ -299,40 +299,40 @@
                     <label class="col-title">课程名称：</label>
                     <input type="text" class="form-control col-input" placeholder="请输入课程名称" value=""/>
                 </div>
-                <div class="form-group">
-                    <label class="col-title">所有专业分类：</label>
-                    <div class="dropdown firstLevel">
-                        <button style="width: 120px" class="form-control dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                            选择专业
+                <div class="dropdown-box">
+                    <div class="form-group">
+                        <label class="col-title">所有专业分类：</label>
+                        <div class="firstLevel">
+                            <button style="width: 120px" id="choosemajor1" class="form-control choosemajor" type="button">选择专业</button>
                             <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">文化技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></a></li>
-                        </ul>
+                            <ul id="rolemajor1" class="rolemajor">
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">文化艺术类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></li>
+                            </ul>
+                        </div>
                     </div>
-                    <label class="col-title">二级专业课程：</label>
-                    <div class="dropdown secondLevel">
-                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
-                            专业课程
+                    <div class="form-group">
+                        <label class="col-title">二级专业课程：</label>
+                        <div class="secondLevel">
+                            <button id="choosemajor2" class="form-control choosemajor" type="button">专业课程</button>
                             <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu2">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电设备安装与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气运行与控制</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电子电器应用与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">数控技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">模具制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械加工技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">焊接技术应用</label></a></li>
-                        </ul>
+                            <ul id="rolemajor2" class="rolemajor">
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机电设备安装与维修</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机械制造技术</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">电气运行与控制</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">电子电器应用与维修</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机电技术应用</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">数控技术应用</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">电气技术应用</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">模具制造技术</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机械加工技术</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">焊接技术应用</label></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="form-group">
@@ -467,42 +467,43 @@
                     <label class="col-title">课程名称：</label>
                     <input type="text" class="form-control col-input" placeholder="请输入课程名称" value="机电设备安装与维修专业人才培养方案等专业"/>
                 </div>
-                <div class="form-group">
-                    <label class="col-title">所有专业分类：</label>
-                    <div class="dropdown firstLevel">
-                        <button style="width: 120px" class="form-control dropdown-toggle " type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
-                            选择专业
+                <div class="dropdown-box">
+                    <div class="form-group">
+                        <label class="col-title">所有专业分类：</label>
+                        <div class="firstLevel">
+                            <button style="width: 120px" id="choosemajor3" class="form-control choosemajor" type="button">选择专业</button>
                             <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu3">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">文化技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></a></li>
-                        </ul>
+                            <ul id="rolemajor3" class="rolemajor">
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">文化艺术类</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></li>
+                            </ul>
+                        </div>
                     </div>
-                    <label class="col-title">二级专业课程：</label>
-                    <div class="dropdown secondLevel">
-                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
-                            专业课程
+                    <div class="form-group">
+                        <label class="col-title">二级专业课程：</label>
+                        <div class="secondLevel">
+                            <button id="choosemajor4" class="form-control choosemajor" type="button">专业课程</button>
                             <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu4">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电设备安装与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气运行与控制</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电子电器应用与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">数控技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">模具制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械加工技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">焊接技术应用</label></a></li>
-                        </ul>
+                            <ul id="rolemajor4" class="rolemajor">
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机电设备安装与维修</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机械制造技术</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">电气运行与控制</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">电子电器应用与维修</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机电技术应用</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">数控技术应用</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">电气技术应用</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">模具制造技术</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">机械加工技术</label></li>
+                                <li><label><input type="radio" name="iCheck majorSubject" value="">焊接技术应用</label></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label class="col-title">视频地址：</label>
                     <input type="text" class="form-control col-input" value="http://www.v-haoke.com/haoke/index"/>
@@ -653,7 +654,7 @@
         changeButtonCss();
 
         function changeButtonCss() {
-            $(".dropdown-menu li a input, .originalFile input").iCheck({
+            $(".rolemajor li input, .originalFile input").iCheck({
                 checkboxClass: 'icheckbox_minimal-green',
                 radioClass: 'iradio_minimal-green',
                 increaseArea: '20%'
@@ -672,7 +673,78 @@
     $('.next-btn-micro').click(function(){
         $(this).parent().parent().parent().css('display',"none");
     });
+/*下拉列表*/
+    var btn1 = true;
+    $('#choosemajor1').click(function(){
+        if(btn3){
+            $('#rolemajor1').slideDown();
+        }else{
+            $('#rolemajor1').slideUp();
+        }
+        btn1 = !btn1;
+    }).focusout(function(){
+        $('#rolemajor1').slideUp();
+        btn1 = true;
+    });
+    $('#rolemajor1 li label').click(function(){
+        $('#choosemajor1').text($(this).text());
+        $('#rolemajor1').stop().slideUp();
+        btn1 = true;
+    });
 
+    var btn2 = true;
+    $('#choosemajor2').click(function(){
+        if(btn2){
+            $('#rolemajor2').slideDown();
+        }else{
+            $('#rolemajor2').slideUp();
+        }
+        btn2 = !btn2;
+    }).focusout(function(){
+        $('#rolemajor2').slideUp();
+        btn2 = true;
+    });
+    $('#rolemajor2 li label').click(function(){
+        $('#choosemajor2').text($(this).text());
+        $('#rolemajor2').stop().slideUp();
+        btn2 = true;
+    });
+
+    var btn3 = true;
+    $('#choosemajor3').click(function(){
+        if(btn3){
+            $('#rolemajor3').slideDown();
+        }else{
+            $('#rolemajor3').slideUp();
+        }
+        btn3 = !btn3;
+    }).focusout(function(){
+        $('#rolemajor3').slideUp();
+        btn3 = true;
+    });
+    $('#rolemajor3 li label').click(function(){
+        $('#choosemajor3').text($(this).text());
+        $('#rolemajor3').stop().slideUp();
+        btn3 = true;
+    });
+
+    var btn4 = true;
+    $('#choosemajor4').click(function(){
+        if(btn4){
+            $('#rolemajor4').slideDown();
+        }else{
+            $('#rolemajor4').slideUp();
+        }
+        btn4 = !btn4;
+    }).focusout(function(){
+        $('#rolemajor4').slideUp();
+        btn4 = true;
+    });
+    $('#rolemajor4 li label').click(function(){
+        $('#choosemajor4').text($(this).text());
+        $('#rolemajor4').stop().slideUp();
+        btn4 = true;
+    });
 </script>
 
 </body>

@@ -1305,53 +1305,62 @@
     white-space: nowrap;
     border-radius: 0;
 }
-.micro-lesson-container .dropdown{
+.dropdown-box .form-group{
+    display: inline-block;
+}
+
+.micro-lesson-container .firstLevel, .secondLevel{
     position: relative;
     display: inline-block;
     border-radius: 0;
 }
-.micro-lesson-container .dropdown span.caret{
+.micro-lesson-container .firstLevel span.caret, .secondLevel span.caret{
     float: right;
-    margin-top: 8px;
+    margin-top: -18px;
 }
-.micro-lesson-container .dropdown > button{
+.secondLevel span.caret{
+    margin-right: 10px;
+}
+.micro-lesson-container .firstLevel > button, .secondLevel button{
     border-radius: 0;
 }
-.micro-lesson-container .dropdown.firstLevel{
+.micro-lesson-container .firstLevel{
     width: 110px;
 }
-.micro-lesson-container .dropdown.secondLevel{
+.micro-lesson-container .secondLevel{
+    position: relative;
+    display: inline-block;
     width: 160px;
 }
-.micro-lesson-container .dropdown ul.dropdown-menu{
+ul.rolemajor{
     border-radius: 0;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #c1c1c1;
+    z-index: 2;
 }
-.firstLevel .dropdown-menu{
+.firstLevel .rolemajor{
+    display: none;
     margin-top: 0;
     min-width: 120px;
     font-size: 12px;
 }
-.secondLevel .dropdown-menu{
+.secondLevel .rolemajor{
     margin-top: 0;
     min-width: 160px;
     font-size: 12px;
+    display: none;
 }
-.micro-lesson-container .dropdown-menu > li > a{
+.micro-lesson-container .rolemajor > li > label{
     padding: 3px 10px;
 }
-.micro-lesson-container .dropdown-menu >li >a div{
-    margin-right: 5px;
-}
-.micro-lesson-container .dropdown-menu >li >a label{
-    width: 100%;
-    height: 18px;
-    line-height: 18px;
-    font-weight: normal;
-    cursor: pointer;
-}
-.micro-lesson-container .dropdown-menu >li >a:hover,.dropdown-menu >li >a:focus{
+
+.micro-lesson-container .rolemajor >li:hover,.rolemajor >li:focus{
     background: #c7e38e;
     outline: none;
+}
+.micro-lesson-container .rolemajor > li > label > div{
+    margin-right: 5px;
 }
 .micro-lesson-container .col-textarea{
     display: inline-block;
