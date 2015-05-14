@@ -1321,6 +1321,7 @@
 .secondLevel span.caret{
     margin-right: 10px;
 }
+
 .micro-lesson-container .firstLevel > button, .secondLevel button{
     border-radius: 0;
 }
@@ -1356,12 +1357,20 @@ ul.rolemajor{
 }
 
 .micro-lesson-container .rolemajor >li:hover,.rolemajor >li:focus{
+    width: 100%;
     background: #c7e38e;
-    outline: none;
 }
 .micro-lesson-container .rolemajor > li > label > div{
     margin-right: 5px;
 }
+
+
+.dropdown-box .pane-wrapper{
+    width: 340px;
+    top: -35px;
+    left: 120px;
+}
+
 .micro-lesson-container .col-textarea{
     display: inline-block;
     width: 520px;

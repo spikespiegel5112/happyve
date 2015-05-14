@@ -136,7 +136,7 @@
                          <li class="year">
                              <a>2013</a>
                              <ul class="month">
-                                 <li>01</li>
+                                 <li class="active">01</li>
                                  <li>02</li>
                                  <li>03</li>
                                  <li>04</li>
@@ -153,12 +153,12 @@
                          <li class="year active">
                              <a>2014</a>
                              <ul class="month" style="display: block">
-                                 <li>01</li>
+                                 <li class="active">01</li>
                                  <li>02</li>
                                  <li>03</li>
                                  <li>04</li>
                                  <li>05</li>
-                                 <li class="active">06</li>
+                                 <li>06</li>
                                  <li>07</li>
                                  <li>08</li>
                                  <li>09</li>
@@ -170,7 +170,7 @@
                          <li class="year">
                              <a>2015</a>
                              <ul class="month">
-                                 <li>01</li>
+                                 <li class="active">01</li>
                                  <li>02</li>
                                  <li>03</li>
                                  <li>04</li>
@@ -190,7 +190,7 @@
                  <div class="calendar-box">
                      <div class="form-group">
                          <div class="input-group date form_date1 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
-                             <input class="form-control" size="16" type="text" value="2014-06-05" id="input-date1" onchange="resetTimeLine()">
+                             <input class="form-control" size="16" type="text" value="2014-01-05" id="input-date1" onchange="resetTimeLine()">
                              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
                          </div>
                      </div>
@@ -822,12 +822,43 @@ $(document).ready(function(){
     });
 });
 
+$("li.year>a").click(function(){
+    var oUl=$(this).next();
+    if(oUl.is(":visible")){
+        oUl.hide(400);
+        oUl.parent().removeClass('active');
+        oUl.parent().next().addClass('active').children('ul').show(500);
+        var oTargetYear=parseInt($(this).text())+1+'-01-01';
+        $('#input-date1').val(oTargetYear);
+    }else{
+        oUl.show(500).parent().siblings().children('ul').hide(500);
+        oUl.parent().addClass('active');
+        oUl.parent().siblings().removeClass('active');
+        var oTargetYear=$(this).text()+'-01-01';
+        $('#input-date1').val(oTargetYear);
+    }
+
+    return false;
+});
+
+$('.month>li').click(function(){
+    var oTargetYear=$(this).parent().prev().text();
+    var oTargetMonth=$(this).text();
+    var oTargetTime=oTargetYear+'-'+oTargetMonth+'-01';
+    $('#input-date1').val(oTargetTime);
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+});
+
 function resetTimeLine(){
     var oInputDateStr=$('#input-date1').val();
     var oInputDateArr=oInputDateStr.split('-');
     $('.year').eq(0).children('a').text(oInputDateArr[0]-1);
+    $('.year').eq(0).removeClass('active').children('ul').hide(500);
     $('.year').eq(1).children('a').text(oInputDateArr[0]);
-    $('.year').eq(2).children('a').text(oInputDateArr[0]-1+2);
+    $('.year').eq(1).addClass('active').children('ul').show(500);
+    $('.year').eq(2).children('a').text(parseInt(oInputDateArr[0])+1);
+    $('.year').eq(2).removeClass('active').children('ul').hide(500);
     $('.year').eq(1).children('ul').children('li').removeClass('active');
     $('.year').eq(1).children('ul').children('li').eq(oInputDateArr[1]-1).addClass('active');
 }

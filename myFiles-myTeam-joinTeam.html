@@ -342,113 +342,23 @@
             <div class="form-group">
                 <label for="address" class="col-sm-4 control-label">所属省份：</label>
                 <div class="col-sm-5">
-                    <button class="btn btn-default dropdown-toggle col-sm-3" type="button" id="address" data-toggle="dropdown" aria-expanded="true">
-                        北京
-                        <span class="caret"></span>
-                    </button>
+                    <button class="btn btn-default col-sm-3" type="button" id="address" style="padding-left: 6px;">北京</button>
+                    <span class="caret address-arrow"></span>
+                    <ul class="cities">
+                        <li><label><input type="radio" name="city" value="北京" checked>北京</label></li>
+                        <li><label><input type="radio" name="city" value="天津" >天津</label></li>
+                        <li><label><input type="radio" name="city" value="上海" >上海</label></li>
+                        <li><label><input type="radio" name="city" value="广东" >广东</label></li>
+                        <li><label><input type="radio" name="city" value="河北省" >河北省</label></li>
+                        <li><label><input type="radio" name="city" value="河南省" >河南省</label></li>
+                        <li><label><input type="radio" name="city" value="湖南" >湖南</label></li>
+                        <li><label><input type="radio" name="city" value="湖北" >湖北</label></li>
+                        <li><label><input type="radio" name="city" value="安徽" >安徽</label></li>
+                        <li><label><input type="radio" name="city" value="广西" >广西</label></li>
+                    </ul>
                 </div>
             </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label"></label>
-                <div class="radio-group col-sm-5" id="selectAddress">
-                    <label>
-                        <input type="radio" name="iCheck" value="" checked>&nbsp;&nbsp;北京
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                </div>
-            </div>
+
             <div class="form-group">
                 <label for="areaCode" class="col-sm-4 control-label">区号：</label>
                 <div class="col-sm-3">
@@ -498,12 +408,32 @@
     $(document).ready(function () {
         changeButtonCss();
         function changeButtonCss() {
-            $("#selectAddress input").iCheck({
+            $(".cities input").iCheck({
                 checkboxClass: 'icheckbox_minimal-green',
                 radioClass: 'iradio_minimal-green',
                 increaseArea: '20%'
             });
         }
+    });
+
+    var btn = true;
+    $('#address').click(function(){
+        if(btn){
+            $('.cities').slideDown();
+        }else{
+            $('.cities').slideUp();
+        }
+        btn = !btn;
+    }).focusout(function(){
+        $('.cities').slideUp();
+        btn = true;
+    });
+    $('ul.cities li label').click(function(){
+        var value=$(this).text();
+        console.log(value);
+        $('#address').text(value);
+        $('.cities').stop().slideUp();
+        btn = true;
     });
 </script>
 

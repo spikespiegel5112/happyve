@@ -654,21 +654,38 @@ ul,ol,li{
     text-align: right;
 }
 
-.radio-group{
-    margin: -7px 0 0 15px;
-    padding: 10px;
-    width: 293px;
-    border: 1px solid #ccc;
+.cities{
+    display: none;
+    position: absolute;
+    margin-top: 18px;
+    padding: 6px 12px;
+    width: 320px;
+    border: 1px solid #c1c1c1;
     border-radius: 4px;
+    background-color: #fff;
+    z-index: 2;
 }
 
-#selectAddress label{
-    width: 65px;
-    text-align: left;
+.cities > li{
+    display: inline-block;
+    margin-right: 10px;
+    width: 60px;
+}
+
+.cities > li > label{
     font-size: 12px!important;
-    font-weight: normal;
+    width: 60px;
+    text-align: left!important;
 }
 
+.cities > li > label > div{
+    margin-right: 5px;
+}
+.address-arrow{
+    margin-top: 15px;
+    left: -18px;
+    position: relative;
+}
 .divider-hr {
     margin: 20px 0 10px 22px;
     width: 700px;
