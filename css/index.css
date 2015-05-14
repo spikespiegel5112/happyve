@@ -686,10 +686,10 @@
 .prompt-tip-bottom{
 	display:none;
 	width: 180px;
-	height:110px;
+	height:90px;
 	margin:0 20px;
 	position:absolute;
-	top:-132px;
+	top:-106px;
 	left:-74px;
 	background-color:#f6f6f6;
 	box-shadow:1px 1px 4px #dedcdc inset, 1px 1px 4px #dedcdc;
@@ -709,9 +709,9 @@
 }
 .prompt-tip-bottom p{
 	height:34px;
-	margin:16px auto 0;
+	margin:8px auto 0;
 	text-align:center;
-	font:18px/34px "微软雅黑";
+	font:16px/34px "微软雅黑";
 	color:#505050;
 }
 .prompt-tip-bottom span{
@@ -719,17 +719,17 @@
 	height:28px;
 	margin:0 auto;
 	text-align:center;
-	font:16px/28px "微软雅黑";
+	font:14px/28px "微软雅黑";
 	color:#5aaa00;
 }
 
 .prompt-tip-bottom-big{
 	display:none;
 	width: 226px;
-	height:110px;
+	height:90px;
 	margin:0 20px;
 	position:absolute;
-	top:-132px;
+	top:-106px;
 	left:-94px;
 	background-color:#f6f6f6;
 	box-shadow:1px 1px 4px #dedcdc inset, 1px 1px 4px #dedcdc;
@@ -749,9 +749,9 @@
 }
 .prompt-tip-bottom-big p{
 	height:34px;
-	margin:16px auto 0;
+	margin:8px auto 0;
 	text-align:center;
-	font:20px/34px "微软雅黑";
+	font:16px/34px "微软雅黑";
 	color:#505050;
 }
 .prompt-tip-bottom-big span{
@@ -759,7 +759,7 @@
 	height:28px;
 	margin:0 auto;
 	text-align:center;
-	font:16px/28px "微软雅黑";
+	font:14px/28px "微软雅黑";
 	color:#5aaa00;
 }
 /*.sns-fadeout {
