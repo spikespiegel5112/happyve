@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/orange.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/font-awesome.css"  type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/laydate.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="assets/css/laydate-skin.css" type="text/css" media="all"/>
     
     <link rel="stylesheet" href="css/layout_no_response.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     
     <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all"/>
+    
 
 </head>
 <body>
@@ -127,8 +130,8 @@
                               <input type="checkbox" checked>
                             </label>
                             <div class="phone-gly-edit">
-                            	<input class="form-control" type="time" name="time" placeholder="选择生日日期">
-                            	<button class="btn" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
+                            	<input class="form-control" type="text" id="J-xl-2"  placeholder="选择生日日期">
+                            	<button class="btn" id="J-xl-2-btn" type="button"><span class="glyphicon glyphicon-calendar"></span></button>
                             </div>
                         </li>
                         <li>
@@ -222,6 +225,8 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="assets/js/icheck.js"></script>
+<script type="text/javascript" src="assets/js/laydate.dev.js"></script>
+
 <script type="text/javascript">    
 function textdown(e) {
     textevent = e;
@@ -245,6 +250,7 @@ function textup() {
     }
 }
 </script> 
+<!--以下为单选按钮iCheck-->
 <script type="text/javascript">
 $(document).ready(function(){
   $('input').iCheck({
@@ -252,6 +258,14 @@ $(document).ready(function(){
     radioClass: 'iradio_flat-orange'
   });
 });
+</script>
+<!--以下为日历-->
+<script type="text/javascript">
+ document.getElementById('J-xl-2-btn').onclick = function(){
+            laydate({
+                elem: '#J-xl-2'
+            });
+        }
 </script>
 
 </body>
