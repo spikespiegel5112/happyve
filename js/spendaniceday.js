@@ -99,7 +99,7 @@ function lunarCalendar(){
             tdEl.eq(cellAfter).prepend("<label class='solardate'>"+afterSolarDay+"</label>");
             cellAfter++;
         }
-        if(selectedMonth.val()==thisMonth){
+        if(selectedMonth.val()==thisMonth&&selectedYear.val()==thisFullYear){
             tdEl.eq(today+firstDay).find('.solardate').css({'background':'#ff8219','padding':'0.2em','color':'#fff','border-radius':'50%'});
         }
     }

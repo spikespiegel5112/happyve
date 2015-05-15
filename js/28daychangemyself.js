@@ -39,20 +39,25 @@
 
 		function generateRandom(){
 			var cellCount=30;
+			var loopTimes=cellCount;
 			var rand=0;
-			for(var i=0;i<cellCount;i++){
+			for(var i=0;i<loopTimes;i++){
 				rand=parseInt(Math.floor(Math.random()*cellCount));
 				for(var j=0;j<i;j++){
-					if(tdElArr[j]==tdElArr[i]){
-						return false;
+					if(tdElArr[j]==rand){
+						tdElArr.splice(j,1);
+						loopTimes++;
 					}
 				}
 				tdElArr.push(rand);
-				console.log(rand);
 			}
 		}
+		console.log('length:'+tdElArr.length);
+
 		$('.changemyself_button').click(function(){
 			tdEl.eq(tdElArr[changeCount]).css('background','red');
+			tdEl.eq(tdElArr[changeCount]).addClass('rotate_180')
+
 			console.clear();
 			console.log(changeCount)
 			console.log(tdElArr[changeCount]+1)
