@@ -253,7 +253,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .calendar_main_wrapper tbody tr td span{float: left;margin:2px;position: relative;z-index: 1;}
 .calendar_main_wrapper tbody tr td .lunardate{width: 3em;}
 .editevent_wrapper{display:none;position: fixed;top: 30%;width: 690px;z-index: 3;}
-.editevent_inner{margin:0 auto;padding:1em 2em;width: 526px;height:300px;/*background: #fff;border: 1px solid #b4b4b4;*/}
+.editevent_inner{margin:0 auto;padding:1em 2em;width: 526px;height:240px;}
 .editevent_inner textarea{margin:0 auto;display:block;width: 480px;height: 190px;}
 .editevent_inner .delete{display:none;float: right;margin:0 0 1em 0;width: 1em;height: 1em;z-index: 1;}
 .editevent_inner .delete:after{content: "";display: block;clear: both;}
@@ -315,7 +315,13 @@ body{font-family: "microsoft yahei";position: relative;}
 .changemyself_countdown_wrapper img{float: right;margin:0 7em 0 0;position: relative;bottom:25px;}
 .changemyself_grid_wrapper{width: 100%;height:100%;background: #000;}
 .changemyself_grid_wrapper td{width: 98px;border: 1px solid #fff;}
+.rotate_180{-webkit-animation:rotate 1s forwards;-moz-animation:rotate 1s forwards;}
 
--webkit-@keyframes rotate_180{
-	0% {-webkit-transform:rotate(180deg);}
+@-webkit-keyframes rotate{
+	0% {-webkit-transform:rotateY(0);}
+	100% {-webkit-transform:rotateY(180deg);}
+}
+@-moz-keyframes rotate{
+	0% {-moz-transform:rotateY(0);}
+	100% {-moz-transform:rotateY(180deg);}
 }

@@ -21,10 +21,11 @@
 			$('.changemyself_content_img').append(gridEl);
 		}
 		function showgrid(){
-			var imgsrc=$('.changemyself_content_img img').attr('src');
+			var imgsrc1=$('.changemyself_content_img img').eq(0).attr('src');
+			var imgsrc2=$('.changemyself_content_img img').eq(1).attr('src');
 			tdEl=$('.changemyself_grid_wrapper td');
 			var trIndex=0,tdElIndex=0,posX=0,posY=0;
-			tdEl.each(function(){$(this).css('background-image','url(./'+imgsrc+')')});
+			tdEl.each(function(){$(this).css('background-image','url(./'+imgsrc1+')')});
 			for(row=0;row<5;row++){
 				trIndex=row*6;
 				posY=row*70;
@@ -55,12 +56,11 @@
 		console.log('length:'+tdElArr.length);
 
 		$('.changemyself_button').click(function(){
-			tdEl.eq(tdElArr[changeCount]).css('background','red');
-			tdEl.eq(tdElArr[changeCount]).addClass('rotate_180')
-
+			// tdEl.eq(tdElArr[changeCount]).css('background-color','rgba(255,0,0,1)');
+			tdEl.eq(tdElArr[changeCount]).addClass('rotate_180');
 			console.clear();
-			console.log(changeCount)
-			console.log(tdElArr[changeCount]+1)
+			console.log(changeCount);
+			console.log(tdElArr[changeCount]+1);
 			changeCount++
 		});
 		$('textarea').keyup(function(){
