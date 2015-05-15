@@ -314,9 +314,10 @@ body{font-family: "microsoft yahei";position: relative;}
 .changemyself_countdown_item{margin:0 0 0 5em;width: 230px;height: 165px;background: url(../img/img_wbl/dialoguebix_1_00000.png);}
 .changemyself_countdown_item{padding: 2em 0;}
 .changemyself_countdown_wrapper img{float: right;margin:0 7em 0 0;position: relative;bottom:25px;}
-.changemyself_grid_wrapper_1, .changemyself_grid_wrapper_2{width: 100%;height:100%;background: #000;position: relative;top:0;z-index: 1;}
-.changemyself_grid_wrapper_1 td, .changemyself_grid_wrapper_2 td{width: 98px;height:70px;border: 1px solid #fff;}
-.rotate_180{-webkit-animation:rotate 1s forwards;-moz-animation:rotate 1s forwards;}
+.changemyself_grid_wrapper_1{width: 100%;height:100%;background: #000;position: relative;top:0;z-index: 1;}
+.changemyself_grid_wrapper_1 td{width: 84px;height:90px;border: 1px solid #fff;}
+.changemyself_grid_wrapper_1 td div{width: 100%;height: 100%;}
+.rotate_360{-webkit-animation:rotate 1s forwards;-moz-animation:rotate 1s forwards;}
 @-webkit-keyframes rotate{
 	0% {-webkit-transform:rotateY(0);}
 	100% {-webkit-transform:rotateY(-360deg);}
