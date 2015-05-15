@@ -1098,7 +1098,7 @@
     width: 500px;
     height: 25px;
 }
-.pop-activity .form-group span{
+.pop-activity .form-group > span{
     text-align: right;
 }
 .pop-activity .form-group .label {
@@ -1111,6 +1111,7 @@
     color: #fff;
     border-radius: 0;
     cursor: pointer;
+    white-space: normal;
 }
 .pop-activity .form-group .selected{
     padding: 0 0 0 10px ;
@@ -1127,7 +1128,7 @@
 }
 .pop-activity .form-group .label .close{
     display: inline-block;
-    padding: 0 5px 0 0;
+    position: relative;
     font-size: 16px;
 }
 .pop-activity .form-group .label-style{
