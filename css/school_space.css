@@ -1162,6 +1162,7 @@
     border-radius: 4px;
 }
 .form-container .form_datetime .input-group-addon{
+    display: inline-block;
     padding: 5px;
     width: 30px;
     border: none;
@@ -1448,7 +1449,11 @@
 }
 .timeline li ul.month {
     display: none;
-    padding: 0;
+    margin-left: 40px;
+   /* padding: 0;
+    width: 310px;*/
+    height: 30px;
+    overflow: visible;
     background: url("../img/lightgreen-bg.png") repeat-x;
 }
 .timeline li ul.month li {
