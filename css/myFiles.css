@@ -393,18 +393,22 @@
 .list-footprint .phone-gly-edit .btn{
 	display:block;
 	float:right;
-	width:16px;
-	height:26px;
+	width:17px;
+	height:17px;
 	padding:0;
 	text-align:center;
 	background-color:transparent;
-	margin:0;
+	margin:3px 0 0 0;
 	color:#505050;
 	vertical-align:middle;
 
 }
-.list-footprint .phone-gly-edit .btn span{
+.list-footprint .phone-gly-edit .btn .glyphicon{
+	display:block;
+	text-align:center;
 	font-size:16px;
+	padding:0;
+	margin:0;
 }
 .list-footprint .phone-gly-edit input{
 	width:145px;
