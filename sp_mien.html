@@ -195,7 +195,7 @@
                  <div class="calendar-box">
                      <div class="form-group">
                          <div class="input-group date form_date1 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
-                             <input class="form-control" size="16" type="text" value="2014-01-05" id="input-date1" onchange="resetTimeLine()">
+                             <input class="form-control" size="16" type="text" value="2014-01-01" id="input-date1" onchange="resetTimeLine()">
                              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
                          </div>
                      </div>
@@ -699,7 +699,7 @@
                 <div class="label disabled"><span>毕业</span></div>
                 <div class="label disabled"><span>毕业</span></div>
                 <div class="label disabled"><span>军训</span></div>
-                <div class="label selected"><span>运动</span></div>
+                <div class="label selected"><span>运动</span><a class="close" href="#">&nbsp;</a></div>
             </div>
         </div>
         <div class="form-group">
@@ -876,13 +876,12 @@ $(document).ready(function(){
 $("li.year>a").click(function(){
     var oUl=$(this).next();
     if(oUl.is(":visible")){
-        oUl.hide(600);
-        oUl.parent().removeClass('active');
-        oUl.parent().next().addClass('active').children('ul').show(600);
-        var oTargetTime=parseInt($(this).text())+1+'-01-01';
+        oUl.children().first().addClass('active');
+        oUl.children().not(':first').removeClass('active');
+        var oTargetTime=$(this).text()+'-01-01';
         $('#input-date1').val(oTargetTime);
     }else{
-        oUl.show(600).parent().siblings().children('ul').hide(600);
+        oUl.css('display','block').parent().siblings().children('ul').css('display','none');
         oUl.parent().addClass('active');
         oUl.parent().siblings().removeClass('active');
         var oTargetTime=$(this).text()+'-01-01';
@@ -905,11 +904,11 @@ function resetTimeLine(){
     var oInputDateStr=$('#input-date1').val();
     var oInputDateArr=oInputDateStr.split('-');
     $('.year').eq(0).children('a').text(oInputDateArr[0]-1);
-    $('.year').eq(0).removeClass('active').children('ul').hide(600);
+    $('.year').eq(0).removeClass('active').children('ul').css('display','none');
     $('.year').eq(1).children('a').text(oInputDateArr[0]);
-    $('.year').eq(1).addClass('active').children('ul').show(600);
+    $('.year').eq(1).addClass('active').children('ul').css('display','block');
     $('.year').eq(2).children('a').text(parseInt(oInputDateArr[0])+1);
-    $('.year').eq(2).removeClass('active').children('ul').hide(600);
+    $('.year').eq(2).removeClass('active').children('ul').css('display','none');
     $('.year').eq(1).children('ul').children('li').removeClass('active');
     $('.year').eq(1).children('ul').children('li').eq(oInputDateArr[1]-1).addClass('active');
 }
