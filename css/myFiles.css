@@ -1309,66 +1309,21 @@
     display: inline-block;
 }
 
-.micro-lesson-container .firstLevel, .secondLevel{
-    position: relative;
-    display: inline-block;
-    border-radius: 0;
+.dropdown-box select{
+    height: 35px;
+    border: 1px solid #c1c1c1;
+    padding: 6px;
+    font-size: 14px;
 }
-.micro-lesson-container .firstLevel span.caret, .secondLevel span.caret{
-    float: right;
-    margin-top: -18px;
-}
-.secondLevel span.caret{
-    margin-right: 10px;
-}
-
-.micro-lesson-container .firstLevel > button, .secondLevel button{
-    border-radius: 0;
-}
-.micro-lesson-container .firstLevel{
+.dropdown-box .firstLevel{
     width: 110px;
 }
-.micro-lesson-container .secondLevel{
-    position: relative;
-    display: inline-block;
+.dropdown-box .secondLevel{
     width: 160px;
 }
-ul.rolemajor{
-    border-radius: 0;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #c1c1c1;
-    z-index: 2;
-}
-.firstLevel .rolemajor{
-    display: none;
-    margin-top: 0;
-    min-width: 120px;
-    font-size: 12px;
-}
-.secondLevel .rolemajor{
-    margin-top: 0;
-    min-width: 160px;
-    font-size: 12px;
-    display: none;
-}
-.micro-lesson-container .rolemajor > li > label{
-    padding: 3px 10px;
-}
 
-.micro-lesson-container .rolemajor >li:hover,.rolemajor >li:focus{
-    width: 100%;
-    background: #c7e38e;
-}
-.micro-lesson-container .rolemajor > li > label > div{
-    margin-right: 5px;
-}
-
-
-.dropdown-box .pane-wrapper{
-    width: 340px;
-    top: -35px;
-    left: 120px;
+.dropdown-box select option:hover{
+    background: #91c31e;
 }
 
 .micro-lesson-container .col-textarea{
