@@ -65,7 +65,7 @@ function lunarCalendar(){
             tdEl.eq(i+firstDay).prepend("<label class='solardate'>"+solarDay+"</label>");
             var Slfw=Ssfw=null;                 // 农历阳历节日功能
             var eve=0;
-            for(var ftv=0;ftv<sFtv.length;ftv++){ 
+            for(var ftv=0;ftv<sFtv.length;ftv++){
                 if(parseInt(sFtv[ftv].substr(0,2))==(calendar.solar2lunar(y,m,i).cMonth)){
                     if(parseInt(sFtv[ftv].substr(2,2))==(calendar.solar2lunar(y,m,i).cDay)){
                         tdEl.eq(i+firstDay).find('span').html(sFtv[ftv].substr(5));
@@ -99,7 +99,7 @@ function lunarCalendar(){
             tdEl.eq(cellAfter).prepend("<label class='solardate'>"+afterSolarDay+"</label>");
             cellAfter++;
         }
-        if(selectedMonth.val()==thisMonth){
+        if(selectedMonth.val()==thisMonth&&selectedYear.val()==thisFullYear){
             tdEl.eq(today+firstDay).find('.solardate').css({'background':'#ff8219','padding':'0.2em','color':'#fff','border-radius':'50%'});
         }
     }
@@ -231,6 +231,7 @@ function eventManagement(){
         $('.editevent_input_wrapper, .inputnumber_item, .editevent_inner .delete').fadeIn();
         $('.calendaredit_wrapper').fadeOut();
         $('.editevent_inner').css({'background':'#fff','border':'1px solid #b4b4b4'});
+        closestFlag=0;
     });
     $('textarea').keyup(function(){
         var textVal=$(this).val();
