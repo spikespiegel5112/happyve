@@ -572,6 +572,7 @@ ul,ol,li{
 
 .joinTeam-container .search-group .form-search{
     margin-bottom: 10px;
+    width: 400px;
     height: 24px;
     color: #646464;
 }
