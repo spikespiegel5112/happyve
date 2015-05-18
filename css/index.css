@@ -230,13 +230,20 @@
 }
 
 .show_hero_lesson {
+    width: 700px;
     height: auto;
     padding: 20px 0 0 0;
     /*margin: 10px 0 0 0;*/
 }
 
+.show_hero_lesson > div{
+    display: inline-block;
+}
+
 .train {
     width: 341px;
+    position: relative;
+    top: -12px;
 }
 
 #train_bt {
@@ -273,7 +280,7 @@
 
 .micro_lession {
     width: 341px;
-    margin-left: 8px;
+    margin-left: 6px;
     position: relative;
 }
 
