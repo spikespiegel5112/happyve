@@ -100,7 +100,7 @@ function lunarCalendar(){
             cellAfter++;
         }
         if(selectedMonth.val()==thisMonth&&selectedYear.val()==thisFullYear){
-            tdEl.eq(today+firstDay).find('.solardate').css({'background':'#ff8219','padding':'0.2em','color':'#fff','border-radius':'50%'});
+            tdEl.eq(today+firstDay).find('.solardate').css({'background':'#ff8219','padding':'0.2em','color':'#fff','border-radius':'50%','line-height':'1.2em'});
         }
     }
     function bulidCalendar(){

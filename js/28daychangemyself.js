@@ -1,42 +1,43 @@
 (function($){
 	changemyself();
 	function changemyself(){
-		
-		var gridEl='';
-		var tdElArr=new Array();
+		var tdEl1Arr=new Array();
 		var changeCount=0;
-		bulidgrid();
-		showgrid();
+		var imgsrc1=$('.changemyself_content_img img').eq(0).attr('src');
+		var imgsrc2=$('.changemyself_content_img img').eq(1).attr('src');
+		var gridEl1='';
+		var gridEl2='';
+		bulidgrid('changemyself_grid_wrapper_1',gridEl1);
+		showgrid(imgsrc1,'changemyself_grid_wrapper_1');
 		generateRandom();
-		function bulidgrid(){
-			gridEl+="<table class='changemyself_grid_wrapper'><tbody>";
-			for(row=0;row<5;row++){
-				gridEl+='<tr>';
-				for(i=0;i<6;i++){
-					gridEl+='<td></td>';
+		function bulidgrid(classname,gridEl){
+				gridEl+="<table class='"+classname+"'><tbody>";
+				for(row=0;row<5;row++){
+					gridEl+='<tr>';
+					for(i=0;i<6;i++){
+						gridEl+='<td></td>';
+					}
+					gridEl+='</tr>';
 				}
-				gridEl+='</tr>';
-			}
-			gridEl+='</tbody></table>'
-			$('.changemyself_content_img').append(gridEl);
+				gridEl+='</tbody></table>'
+				$('.changemyself_content_img').prepend(gridEl);
 		}
-		function showgrid(){
-			var imgsrc=$('.changemyself_content_img img').attr('src');
-			tdEl=$('.changemyself_grid_wrapper td');
+		function showgrid(imgsrc,classname){
+			tdEl1=$('.'+classname).eq(0).find('td');
+			tdEl2=$('.'+classname).eq(1).find('td');
 			var trIndex=0,tdElIndex=0,posX=0,posY=0;
-			tdEl.each(function(){$(this).css('background-image','url(./'+imgsrc+')')});
+			tdEl1.each(function(){$(this).css('background-image','url(./'+imgsrc1+')')});
+			tdEl2.each(function(){$(this).css('background-image','url(./'+imgsrc2+')')});
 			for(row=0;row<5;row++){
 				trIndex=row*6;
 				posY=row*70;
 				for(i=0;i<6;i++){
 					posX=i*94;
 					tdElIndex=trIndex+i;
-					tdEl.eq(tdElIndex).css({'background-position':'-'+posX+'px -'+posY+'px'});
-					// console.log(posX,posY);
+					tdEl1.eq(tdElIndex).css({'background-position':'-'+posX+'px -'+posY+'px'});
 				}
 			}
 		}
-
 		function generateRandom(){
 			var cellCount=30;
 			var loopTimes=cellCount;
@@ -44,24 +45,26 @@
 			for(var i=0;i<loopTimes;i++){
 				rand=parseInt(Math.floor(Math.random()*cellCount));
 				for(var j=0;j<i;j++){
-					if(tdElArr[j]==rand){
-						tdElArr.splice(j,1);
+					if(tdEl1Arr[j]==rand){
+						tdEl1Arr.splice(j,1);
 						loopTimes++;
 					}
 				}
-				tdElArr.push(rand);
+				tdEl1Arr.push(rand);
 			}
 		}
-		console.log('length:'+tdElArr.length);
-
+		console.log('length:'+tdEl1Arr.length);
 		$('.changemyself_button').click(function(){
-			tdEl.eq(tdElArr[changeCount]).css('background','red');
-			tdEl.eq(tdElArr[changeCount]).addClass('rotate_180')
+			setTimeout(function(){
+				tdEl1.eq(tdEl1Arr[changeCount]).css({'background-image':'url(./'+imgsrc2+')'});
+				changeCount++
+			},500);
+			tdEl1.eq(tdEl1Arr[changeCount]).addClass('rotate_180');
 
 			console.clear();
-			console.log(changeCount)
-			console.log(tdElArr[changeCount]+1)
-			changeCount++
+			console.log(changeCount);
+			console.log(tdEl1Arr[changeCount]+1);
+			
 		});
 		$('textarea').keyup(function(){
 			var textVal=$(this).val();
@@ -69,5 +72,4 @@
 			$('.inputnumber_item span').text(textLen);
 		});
 	}
-
 }(jQuery));
