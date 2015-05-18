@@ -631,7 +631,7 @@
 
 .sns-container {
     margin: 0 auto;
-    max-width: 520px;
+    max-width: 660px;
     position: relative;
 }
 
@@ -639,10 +639,10 @@
     /*border-radius: 13px 13px 13px 13px;
     box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.35), 0 -1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.6) inset;*/
     float: left;
-    margin: 15px 30px;
+    margin: 25px 30px;
     position: relative;
     transition: opacity  .6s ease 0s;
-    width: 70px;
+    width: 72px;
 	opacity:.5;
 }
 
@@ -692,23 +692,36 @@
 
 .prompt-tip-bottom{
 	display:none;
-	width: 180px;
+	width: 160px;
 	height:90px;
 	margin:0 20px;
 	position:absolute;
 	top:-106px;
-	left:-74px;
+	left:-64px;
 	background-color:#f6f6f6;
 	box-shadow:1px 1px 4px #dedcdc inset, 1px 1px 4px #dedcdc;
 }
-
+.prompt-tip-bottom.code-prompt-tip{
+	height:180px;
+	width: 146px;
+	top:-200px;
+	left:-54px;
+}
+.prompt-tip-bottom.code-prompt-tip .prompt-tip-row{
+	background:url(../img/prompt-bottom-row.png) center no-repeat;
+	width:30px;
+	height:18px;
+	position:absolute;
+	bottom:-18px;
+	right:60px;
+}
 .prompt-tip-bottom .prompt-tip-row{
 	background:url(../img/prompt-bottom-row.png) center no-repeat;
 	width:30px;
 	height:18px;
 	position:absolute;
 	bottom:-18px;
-	right:76px;
+	right:66px;
 }
 .sns-icon:hover .prompt-tip-bottom{
 	display:block;
@@ -768,6 +781,13 @@
 	text-align:center;
 	font:14px/28px "微软雅黑";
 	color:#5aaa00;
+}
+.prompt-tip-bottom .code-weixin-bac{
+	display:block;
+	width:102px;
+	height:102px;
+	background:url(../img/erweima-bottom.jpg) no-repeat;
+	margin:10px auto 0;
 }
 /*.sns-fadeout {
     opacity: 0.5;
