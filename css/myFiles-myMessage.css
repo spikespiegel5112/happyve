@@ -760,9 +760,12 @@ ul,ol,li{
 }
 
 .searchCondition button .caret{
-    float: right;
+    /*float: right;*/
     margin: 8px 8px 0 0;
     opacity: 1;
+    position: absolute;
+    top: 2px;
+    right: -5px;
 }
 
 .searchCondition .dropdown-menu{

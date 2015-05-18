@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
 
     <!-- 自己页面的样式文件 -->
+    <link rel="stylesheet" href="assets/css/camera.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/happy_exercise.css" type="text/css" media="all">
-    <link rel="stylesheet" href="assets/css/camera.css" type="text/css" media="all">
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -91,7 +91,7 @@
                         <div class="photo-thum-part">
                             <div class="thumbnail">
                                 <div class="photo-particul">
-                                    <a href="#"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/hp_share/road-sc.jpg" alt="照片"></a>
+                                    <a href="#" data-target="#displayPhotos" data-trigger="modal"><img class="lazy"  src="img/hp_share/particul-bac.jpg" width="210" height="149"  data-src="img/hp_share/road-sc.jpg" alt="照片"></a>
 
                                     <div class="sponsor-text">
                                         <a href="#" title="汽车发动机工作过程"><span class="sponsor-title">汽车发动机工作过程</span> <span class="date-sponsor-tit">2015-03-06</span></a>
@@ -558,6 +558,38 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
+<!--照片翻页 开始-->
+<div class="modal fade" id="displayPhotos" >
+    <div class="pop-container">
+        <div class="fluid_container">
+            <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+                <div data-thumb="img/hp_share/images/slides/thumbs/bridge.jpg" data-src="img/hp_share/images/slides/bridge.jpg/"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/leaf.jpg" data-src="img/hp_share/images/slides/leaf.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/road.jpg" data-src="img/hp_share/images/slides/road.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/sea.jpg" data-src="img/hp_share/images/slides/sea.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/shelter.jpg" data-src="img/hp_share/images/slides/shelter.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/tree.jpg" data-src="img/hp_share/images/slides/tree.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/bridge.jpg" data-src="img/hp_share/images/slides/bridge.jpg/"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/leaf.jpg" data-src="img/hp_share/images/slides/leaf.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/road.jpg" data-src="img/hp_share/images/slides/road.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/sea.jpg" data-src="img/hp_share/images/slides/sea.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/shelter.jpg" data-src="img/hp_share/images/slides/shelter.jpg"></div>
+                <div data-thumb="img/hp_share/images/slides/thumbs/tree.jpg" data-src="img/hp_share/images/slides/tree.jpg"></div>
+
+            </div><!-- #camera_wrap_3 -->
+
+            <div class="figure-side">
+                <div class="">
+                    <p>回忆过去的点点滴滴</p>
+                </div>
+            </div>
+        </div><!-- .fluid_container -->
+
+
+    </div>
+
+</div>
+<!--照片翻页 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -565,8 +597,29 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="assets/js/sco.modal.js"></script>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
 <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="assets/js/camera.min.js"></script>
+
+<script type="text/javascript">
+
+    (function ($) {
+        $('#camera_wrap_4').camera({
+            height: 'auto',
+            loader: 'bar',
+            pagination: false,
+            thumbnails: true,
+            hover: true,
+            opacityOnGrid: false,
+            imagePath: 'img/hp_share/images/',
+            time: 1000
+        });
+    })(jQuery);
+
+</script>
 
 </body>
 </html>
