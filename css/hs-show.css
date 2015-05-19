@@ -330,6 +330,7 @@
 	width:330px;
 	vertical-align:middle;
 	font:12px/30px "宋体";
+    resize: none;
 }
 .mar-sign{
 	margin:12px 0;

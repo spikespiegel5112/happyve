@@ -426,6 +426,7 @@
 .newAlbum-box .col-textarea{
     width: 400px;
     height: 168px;
+    resize: none;
 }
 .newAlbum-box .help-block{
     position: relative;
@@ -453,7 +454,7 @@
     position: fixed;
     width: 100%;
     height: auto;
-    overflow: auto!important;
+    overflow-y: auto!important;
 }
 .modal-backdrop{
     height: 500%!important;

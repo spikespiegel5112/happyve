@@ -292,6 +292,7 @@
     margin: 16px 0 22px 132px;
     font: 12px/18px "宋体";
 	color:#505050;
+    resize: none;
 }
 
 .list-footprint {

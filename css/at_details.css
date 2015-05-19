@@ -453,6 +453,7 @@
 	width:564px;
 	height:86px;
 	float:left;
+    resize: none;
 }
 .hint-pro{
 	width:656px;

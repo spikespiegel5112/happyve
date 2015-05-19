@@ -117,11 +117,14 @@
 }
 
 .refuse-info .reason{
-    margin: 10px 30px;
+    margin: 20px 30px;
+    width: 264px;
+    height: 72px;
+    resize: none;
 }
 
 .refuse-info .refuse-info-icon{
-    margin: 0 35px;
+    margin: 0 35px 20px 35px;
 }
 
 .refuse-info-icon > div{

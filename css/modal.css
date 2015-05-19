@@ -13,6 +13,7 @@
     width: 750px;
     height: 390px;
     overflow-y: auto!important;
+    overflow-x: hidden;
 }
 .modal-header{
     position: fixed;
@@ -187,6 +188,7 @@
     width: 300px;
     height: 106px;
     overflow: auto;
+    resize: none;
 }
 .form-container .activity-content{
     position: relative;
@@ -214,6 +216,7 @@
     width: 415px;
     height: 196px;
     overflow-y: scroll;
+    resize: none;
 }
 
 .pop-container .input-content .help-block{

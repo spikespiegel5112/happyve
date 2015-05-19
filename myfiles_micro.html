@@ -395,7 +395,7 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a class="next-btn-micro" href="javascript:;" data-title="上传微课" data-trigger="modal" data-target="#uploadMicroLessonB"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
+            <a class="next-btn-micro" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
             <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
@@ -483,8 +483,6 @@
         </div>
     </div>
 </div>
-
-
 <!--我的微课 编辑微课-->
 <div class="modal fade" id="editMicroLessonA">
     <div class="modal-header">
@@ -551,7 +549,7 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a class="next-btn-micro" href="javascript:;" data-title="上传微课" data-trigger="modal" data-target="#editMicroLessonB"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
+            <a class="next-btn-micro" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
             <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
@@ -688,8 +686,20 @@
         }
     }
 
-    $('.next-btn-micro').click(function(){
+    $('.next-btn-micro').eq(0).click(function(){
         $(this).parent().parent().parent().css('display',"none");
+        $('#uploadMicroLessonB').scojs_modal({
+            title: '上传微课',
+            content: $('#uploadMicroLessonB').html()
+        });
+    });
+
+    $('.next-btn-micro').eq(1).click(function(){
+        $(this).parent().parent().parent().css('display',"none");
+        $('#editMicroLessonB').scojs_modal({
+            title: '上传微课',
+            content: $('#editMicroLessonB').html()
+        });
     });
 
 </script>
