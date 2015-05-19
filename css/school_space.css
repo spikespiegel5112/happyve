@@ -686,10 +686,10 @@
 	padding: 0 0 0 8px;
 }
 .organize-nav li.active a {
-	color: #5aaa00;
+	color: #91c31e;
 }
 .organ-bot li.active a {
-	color: #5aaa00;
+	color: #91c31e;
 }
 .branch-fl{
 	padding-left:12px;
@@ -699,6 +699,9 @@
 
 .branch-fl a{
 	color:#3c3c3c;
+}
+.branch-fl a:hover, .branch-fl a:focus{
+    color: #50a000;
 }
 .organ-fl{
 	float:right;

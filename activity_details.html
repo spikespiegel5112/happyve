@@ -735,24 +735,33 @@
         document.getElementById('detai-book').style.display='none';
         document.getElementById('detai-play').style.display='none';
         document.getElementById('detai-photo').style.display='block';
+        $('.list-inline>li').first().addClass('active');
+        $('.list-inline>li').not(':first').removeClass('active');
+
     }
     function btn2(){
         document.getElementById('detai-poster').style.display='block';
         document.getElementById('detai-book').style.display='none';
         document.getElementById('detai-play').style.display='none';
         document.getElementById('detai-photo').style.display='none';
+        $('.list-inline>li').eq(1).addClass('active');
+        $('.list-inline>li').eq(1).siblings().removeClass('active');
     }
     function btn3(){
         document.getElementById('detai-poster').style.display='none';
         document.getElementById('detai-book').style.display='block';
         document.getElementById('detai-play').style.display='none';
         document.getElementById('detai-photo').style.display='none';
+        $('.list-inline>li').eq(2).addClass('active');
+        $('.list-inline>li').eq(2).siblings().removeClass('active');
     }
     function btn4(){
         document.getElementById('detai-poster').style.display='none';
         document.getElementById('detai-book').style.display='none';
         document.getElementById('detai-play').style.display='block';
         document.getElementById('detai-photo').style.display='none';
+        $('.list-inline>li').eq(3).addClass('active');
+        $('.list-inline>li').eq(3).siblings().removeClass('active');
     }
 </script>
 

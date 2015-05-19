@@ -81,8 +81,8 @@ body{font-family: "microsoft yahei";position: relative;}
 .ranking_2 a{background-position: -13px -170px;}
 .ranking_3 a{background-position: -13px -250px;}
 .ourschool a{background-position: -13px -330px;}
-.ranking_wrapper{color:#89a062;}
-.ranking_wrapper span{margin:0.3em;padding:0.2em 0.4em;background: #89a062;color:#fff;}
+.ranking_wrapper{color:#91c31e;}
+.ranking_wrapper span{margin:0.3em;padding:0.2em 0.4em;background: #91c31e;color:#fff;}
 
 .haexe_home_ranking_list_wrapper .shown a{background-image:url(../img/img_wbl/img_sprite_00000.png);background-color:#fff;z-index: -1;box-shadow: 5px 0 5px #aaa inset;cursor:pointer;}
 .haexe_home_carousel_tree_wrapper{position: relative;}
@@ -126,11 +126,11 @@ body{font-family: "microsoft yahei";position: relative;}
 .haexe_home_bene_list_wrapper{margin:0;width: 100%;height: 100%;position: relative;}
 .haexe_home_bene_list_wrapper:after{content: "";display: block;clear: both;}
 .haexe_home_bene_list_wrapper li{float: left;margin:5px 0 0 0;width: 25%;height:60px;position: relative;}
-.haexe_home_bene_list_wrapper li a{display: block;margin:16px 0 0 0;padding:14px 0;width: 100%;height:40px;text-align: center;border-left: 2px solid #fff;color: #3c3c3c;background: #e3e3e3;}
+.haexe_home_bene_list_wrapper li a{display: block;margin:16px 0 0 0;padding:14px 0;width: 100%;height:40px;text-align: center;border-left: 2px solid #fff;color: #3c3c3c;background: #e3e3e3;outline: none;}
 .haexe_home_bene_list_wrapper li a:hover{color: #111;}
 .haexe_home_bene_list_wrapper li:first-child a{border-left: 0;}
 .haexe_home_bene_list_wrapper .ourschool{float:left;margin:21px 0 0 0;width: 24%;line-height: 6.8em;text-align: center;}
-.haexe_home_bene_list_wrapper .ourschool a{display:block;width: 105%;height: 40px;background: #e3e3e3;line-height: 3.8em;border-left: 1px solid #fff;color: #f5751c;font-weight: bolder;}
+.haexe_home_bene_list_wrapper .ourschool a{display:block;width: 105%;height: 40px;background: #e3e3e3;line-height: 3.8em;border-left: 1px solid #fff;color: #f5751c;font-weight: bolder;outline: none;}
 .haexe_home_bene_list_wrapper .shown{background: url(../img/img_wbl/img_sprite_00000.png) -67px -413px;}
 .haexe_home_bene_list_wrapper .shown a{background: 0;}
 .haexe_home_bene_list_wrapper .shown span{display: block;}
@@ -193,6 +193,8 @@ body{font-family: "microsoft yahei";position: relative;}
 
 .note_wrapper input{float: right;}
 .share_icon{float:left;width:22px;height:28px;background: url(../img/img_wbl/img_sprite_00000.png) 0 -37px;}
+.count-record{display: inline-block;padding: 1em 0;font-size: 14px;float: left;}
+.count-record>p>span{color: #91c31e;font-size: 12px}
 .note_wrapper .save_item{float:right;padding:1em 0;width: 155px;}
 .save_item:after{content: "";display: block;clear: both;}
 

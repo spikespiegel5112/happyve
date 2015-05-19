@@ -123,8 +123,8 @@
         		
         <div class="organize-nav branch-fl ">
                <ul class="list-inline hall-org">
-                   <li class="active"><a type="button" id="publi1" onclick="publi1()" href="#"> &nbsp; 年鉴 </a></li>
-                   <li><a type="button" id="publi2" onclick="publi2()" href="#">宣传片</a></li>
+                   <li class="active"><a type="button" id="publi1" onclick="publi1()" href="javascript:;"> &nbsp; 年鉴 </a></li>
+                   <li><a type="button" id="publi2" onclick="publi2()" href="javascript:;">宣传片</a></li>
                </ul>
              <!--<div class="timer-shaft"><img src="img/hp_share/timer-shaft.jpg"></div>-->
              <button class="btn new-folder" type="button">新建年鉴</button>
@@ -657,11 +657,12 @@
     function publi1(){
         document.getElementById('almanac-y').style.display='block';
         document.getElementById('advertise-y').style.display='none';
-
     }
     function publi2(){
         document.getElementById('almanac-y').style.display='none';
-        document.getElementById('advertise-y').style.display='block'
+        document.getElementById('advertise-y').style.display='block';
+        $('.hall-org>li').eq(0).removeClass('active');
+
     }
   
 </script>

@@ -547,7 +547,6 @@ p.test-number span {
     height: 20px;
 }
 .test_list_showmore a{
-    cursor: pointer;
     outline: none;
 }
 .list_details {
@@ -633,6 +632,7 @@ p.test-number span {
     top: -20px;
     width: 30px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .active-img.play{
