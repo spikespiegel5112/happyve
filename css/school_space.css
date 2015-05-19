@@ -1076,6 +1076,7 @@
     overflow: visible;
     text-align: justify;
     text-indent: 2em;
+    font-size: 14px;
 }
 .preview-container .send-word .divider-hr{
     width: 520px;

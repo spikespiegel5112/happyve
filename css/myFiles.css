@@ -1283,11 +1283,9 @@
 }
 
 /*我的微课 弹出层*/
-#uploadMicroLessonA .pop-container, #editMicroLessonA .pop-container{
-    margin-top: 84px;
-}
-#uploadMicroLessonB .pop-container, #editMicroLessonB .pop-container{
-    margin-top: 64px;
+.pop-container-micro{
+    position: relative;
+    top: 50px;
 }
 .micro-lesson-container{
     margin-left: auto;
@@ -1416,7 +1414,7 @@
 /*我的微课 上传微课 封面简介*/
 .micro-lesson-container .file-box{
     display: inline-block;
-    margin-top: 20px!important;
+    margin-top: 0!important;
 
 }
 .micro-lesson-container .file-box form{

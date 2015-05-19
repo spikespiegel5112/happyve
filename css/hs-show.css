@@ -456,6 +456,9 @@
 	float:left;
 	height:28px;
 }
+.slet-awards input{
+    padding: 0 12px;
+}
 .mar-lab{
 	margin-left:26px;
 }

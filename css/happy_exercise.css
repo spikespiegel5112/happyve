@@ -4,7 +4,7 @@
 .pos_absolute{position: absolute;}
 label, p, ul, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{margin:0;padding:0;}
 a{color: #000;}
-a:hover, a:focus{color:#888;text-decoration: none;}
+a:hover, a:focus{color:#888;text-decoration: none;outline: none;}
 label{font-weight: normal;}
 body{font-family: "microsoft yahei";position: relative;}
 /*.glyphicon{top: -4px;}*/
@@ -33,7 +33,7 @@ body{font-family: "microsoft yahei";position: relative;}
 .editevent_wrapper .inputnumber_item{display: none;}
 .inputnumber_item span{color:red;}
 .changemyself_button_item{width: 100%;}
-.changemyself_button:link{float:right;margin:0.5em 0 0 0;padding:0.2em 1em;height: 27px;line-height:20px;color:#fff;background: #91c81e;font-size: 1.4em;text-align: center;}
+.changemyself_button{float:right;margin:0.5em 0 0 0;padding:0.2em 1em;height: 27px;line-height:20px;color:#fff!important;background: #91c81e;font-size: 1.4em;text-align: center;outline: none;}
 .changemyself_button:hover{color:#fff;}
 .newbadhabbit_title_wrapper{padding:0 0 0 50px;width:100%;position: relative;}
 .newbadhabbit_title_item{float: right;width:95%;margin:0 46px 0 0;}
