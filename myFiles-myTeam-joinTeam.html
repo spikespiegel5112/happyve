@@ -468,17 +468,19 @@
             $('.cities').slideUp();
         }
         btn = !btn;
-    }).focusout(function(){
-        $('.cities').slideUp();
-        btn = true;
     });
     $('ul.cities li label').click(function(){
         var value=$(this).text();
-        console.log(value);
         $('#address').text(value);
         $('.cities').stop().slideUp();
         btn = true;
     });
+    $('.cities').mouseleave(function(){
+        $('.cities').slideUp();
+        btn = true;
+    });
+
+
 </script>
 
 </body>

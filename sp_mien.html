@@ -672,7 +672,7 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-two">
-            <a id="editorActivity-next-btn" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn" data-title="新建活动" data-trigger="modal" data-target="#editorActivity">下一步</button></div></a>
+            <a id="editorActivity-next-btn" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
             <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
@@ -852,9 +852,17 @@ $(document).ready(function () {
 /**/
 $('#newActivity-prev-btn').click(function () {
     $(this).parent().parent().parent().css('display', 'none');
+    $('#newActivity').scojs_modal({
+        title: '新建活动',
+        target: '#newActivity'
+    });
 });
 $('#editorActivity-next-btn').click(function () {
     $(this).parent().parent().parent().css('display', 'none');
+    $('#editorActivity').scojs_modal({
+        title: '新建活动',
+        target: '#editorActivity'
+    });
 });
 
 /* 以下为时间轴代码 */

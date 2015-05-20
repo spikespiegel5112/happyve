@@ -336,7 +336,7 @@
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>上传微课</h3>
     </div>
-    <div class="pop-container pop-container-micro">
+    <div class="pop-container">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group">
@@ -407,7 +407,7 @@
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>上传微课</h3>
     </div>
-    <div class="pop-container pop-container-micro">
+    <div class="pop-container">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group form-group-texarea">
@@ -489,7 +489,7 @@
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>编辑微课</h3>
     </div>
-    <div class="pop-container pop-container-micro">
+    <div class="pop-container">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group">
@@ -560,7 +560,7 @@
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>编辑微课</h3>
     </div>
-    <div class="pop-container pop-container-micro">
+    <div class="pop-container">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group form-group-texarea">
@@ -690,7 +690,7 @@
         $(this).parent().parent().parent().css('display',"none");
         $('#uploadMicroLessonB').scojs_modal({
             title: '上传微课',
-            content: $('#uploadMicroLessonB').html()
+            target: '#uploadMicroLessonB'
         });
     });
 
@@ -698,7 +698,7 @@
         $(this).parent().parent().parent().css('display',"none");
         $('#editMicroLessonB').scojs_modal({
             title: '编辑微课',
-            content: $('#editMicroLessonB').html()
+            target: '#uploadMicroLessonB'
         });
     });
 
