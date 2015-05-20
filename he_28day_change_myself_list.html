@@ -97,7 +97,7 @@
 					</form>
 					<div class="newbadhabbit_content_wrapper">
 						<ul class="newbadhabbit_content_item">
-							<li offset='1'>
+							<li progress='1'>
 								<div class="newbadhabbit_img_item">
 									<a class='changemyself_content_img' href="he_28day_change_myself_content.html">
 										<img src="img/img_wbl/cat1_00000.jpg" width="320" height="200">
@@ -112,7 +112,7 @@
 								</div>
 								<div class="clearfix"></div>
 							</li>
-							<li offset='2'>
+							<li progress='2'>
 								<div class="newbadhabbit_img_item">
 									<a class='changemyself_content_img' href="he_28day_change_myself_content.html">
 										<img src="img/img_wbl/cat3_00000.jpg" width="320" height="200">
@@ -127,7 +127,22 @@
 								</div>
 								<div class="clearfix"></div>
 							</li>
-							<li offset='3'>
+							<li progress='3'>
+								<div class="newbadhabbit_img_item">
+									<a class='changemyself_content_img' href="he_28day_change_myself_content.html">
+										<img src="img/img_wbl/cat5_00000.jpg" width="320" height="200">
+										<img src="img/img_wbl/cat6_00000.jpg" width="320" height="200">
+									</a>
+								</div>
+								<div class="newbadhabbit_list_item">
+									<label>标&nbsp&nbsp&nbsp&nbsp&nbsp题：</label><p>生气爱扔东西生气爱扔东西生气爱扔东西</p>
+									<label>开始时间：</label><p>2014.03.21</p>
+									<label>完&nbsp&nbsp&nbsp&nbsp&nbsp成：</label><div class="progressbar"><span></span></div>
+									<span class="newbadhabbit_percentage">5%</span>
+								</div>
+								<div class="clearfix"></div>
+							</li>
+							<li progress='20'>
 								<div class="newbadhabbit_img_item">
 									<a class='changemyself_content_img' href="he_28day_change_myself_content.html">
 										<img src="img/img_wbl/cat5_00000.jpg" width="320" height="200">
@@ -411,24 +426,6 @@
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src='js/28daychangemyself.js'></script>
-<script>
-$(document).ready(function(){
-	happyexecrise();
-});
-
-function happyexecrise(){
-	var index=0;
-	var percentage=parseInt($(".newbadhabbit_percentage").text());
-	$(".progressbar span").css("width",percentage+"%");
-	$(".newbadhabbit_title_wrapper a, .newbadhabbit_dialog_wrapper input[type=button]").click(function(){
-		if($(".newbadhabbit_dialog_wrapper").is(":hidden")){
-			$(".newbadhabbit_dialog_wrapper").fadeIn();
-		}else{
-			setTimeout(function(){$(".newbadhabbit_dialog_wrapper").fadeOut();},300)
-		}
-	});
-}
-</script>
 
 </body>
 </html>
