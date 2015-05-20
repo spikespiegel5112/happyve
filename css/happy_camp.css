@@ -142,16 +142,15 @@
 	height: 28px;
 	line-height: 28px;
 	position: absolute;
-	left: 20px;
+	left: 10px;
 	top: 204px;
 	color: #fff;
 }
 
 .day-hap {
-	position: absolute;
+	position: relative;
 	top: 0;
-	left: 116px;
-	z-index: 8;
+	left: -113px;
 }
 
 .acting-img .day-hay {
@@ -160,17 +159,15 @@
 	height: 28px;
 	line-height: 28px;
 	position: absolute;
-	left: 165px;
+	left: 160px;
 	top: 204px;
 	color: #fff;
-	z-index: 8;
 }
 
 .change-hap {
-	position: absolute;
-	top: 0;
-	left: 287px;
-	z-index: 9;
+    position: relative;
+    top: -260px;
+    left: 287px;
 }
 
 .acting-img .change-hay {
@@ -182,14 +179,12 @@
 	left: 316px;
 	top: 204px;
 	color: #fff;
-	z-index: 18;
 }
 
 .live-hap {
-	position: absolute;
-	top: 0;
-	left: 458px;
-	z-index: 10;
+    position: relative;
+    top: -260px;
+    left: 175px;
 }
 
 .acting-img .spend-hay {
@@ -201,7 +196,6 @@
 	left: 506px;
 	top: 204px;
 	color: #fff;
-	z-index: 18;
 }
 
 .acting-img > span {
@@ -210,13 +204,13 @@
 }
 
 .acting-img:hover > span {
-	opacity: 0.6;
-	filter: alpha(opacity=70);
+	opacity: 0.7;
+    filter: alpha(opacity=70);
 }
 
 .acting-img:hover >span:hover {
 	opacity: 1;
-	filter: alpha(opacity=100);
+    filter: alpha(opacity=100);
 }
 
 .acting-img > span {
