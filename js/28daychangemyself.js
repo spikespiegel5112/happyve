@@ -2,12 +2,13 @@
 	changemyself();
 	function changemyself(){
 		var tdElArr=[],initGrid=[28];
-		var changeCount=0;
 		var gridEl='';
 		var classname='changemyself_grid_wrapper_1';
 		var badhabbitLiEl=$('.newbadhabbit_content_item li');
 		var imgsrc={};
 		var imgsrcObj={'imgsrc':[]};
+		var offset=0;
+		var changeCount=0;
 		init();
 		function init(){
 			generateRandom();
@@ -83,11 +84,14 @@
 			var imgsrc1=$('.changemyself_content_img img').eq(0).attr('src');
 			var imgsrc2=$('.changemyself_content_img img').eq(1).attr('src');
 			var tdEl=$('.'+classname).find('td');
+			var offset=$('.newbadhabbit_content_item li').attr('offset');
 			setTimeout(function(){
-				tdEl.eq(tdElArr[changeCount]).find('div').css({'background-image':'url(./'+imgsrcObj.imgsrc[0].imgsrc2+')'});
+				tdEl.eq(tdElArr[~~(changeCount)+~~(offset)]).find('div').css({'background-image':'url(./'+imgsrcObj.imgsrc[0].imgsrc2+')'});
 				changeCount++
 			},500);
-			tdEl.eq(tdElArr[changeCount]).addClass('rotate_360');
+			tdEl.eq(tdElArr[~~(changeCount)+~~(offset)]).addClass('rotate_360');
+			console.log(~~(changeCount)+~~(offset));
+			console.log(changeCount)
 		});
 		$('textarea').keyup(function(){
 			var textVal=$(this).val();
