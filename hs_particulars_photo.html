@@ -14,7 +14,7 @@
 
     <!-- 自己页面的样式文件 -->
     <link rel="stylesheet" href="assets/css/camera.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/hs_particulars_photo.css" type="text/css" media="all"/>
 </head>
 <body>
 
@@ -37,18 +37,44 @@
     </div><!-- #camera_wrap_3 -->
 
     <div class="figure-side">
-        <div class="">
+        <div class="close">×</div>
+        <div class="photo-description">
             <p>回忆过去的点点滴滴</p>
-            <p>2014-05-01  14:35</p>
-            <div class="">
-                <div>设为封面</div>
-                <div><span class="glyphicon glyphicon-thumbs-up"></span><span>685</span></div>
-                <div><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash"></span></div>
+            <span>2014-05-01  14:35</span>
+        </div>
+        <div class="edit-photo">
+            <div class="setCover">设为封面</div>
+            <div class="appreciate"><span class="glyphicon glyphicon-thumbs-up"></span><span>685</span></div>
+            <div class="editor"><span class="glyphicon glyphicon-pencil"></span><span class="glyphicon glyphicon-trash"></span></div>
+        </div>
+
+        <div class="comment-group">
+            <div class="newComment">
+                <label>评论：</label>
+                <textarea></textarea>
+            </div>
+            <button class="btn publish">发表</button>
+            <div class="divider-hr"></div>
+            <div class="past-comment">
+                <div>
+                    <label>花丽都：</label>
+                    <p>这花真好看！</p>
+                </div>
+                <div>
+                    <label>张将：</label>
+                    <p>顶楼上</p>
+                </div>
             </div>
         </div>
     </div>
-</div><!-- .fluid_container -->
-
+    <div class="editor-description">
+        <div class="close btn-close">×</div>
+        <input type="text">
+        <p class="help-block">最多输入<span>20</span>字</p>
+        <button class="btn ensure btn-close">确定</button>
+        <button class="btn notsure btn-close">取消</button>
+    </div>
+</div>
 
 <!--照片翻页 结束-->
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -69,7 +95,16 @@
             imagePath: 'img/hp_share/images/',
             time: 1000
         });
+
+        $('.editor>span').first().click(function(){
+            $('.editor-description').show().prev().css('opacity','0.5');
+        });
+        $('.editor-description .btn-close').click(function(){
+            $('.editor-description').hide().prev().css('opacity','1');
+        });
+
     })(jQuery);
+
 
 </script>
 

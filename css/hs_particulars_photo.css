@@ -1,0 +1,193 @@
+@charset "utf-8";
+/*照片翻页*/
+body{
+    background-color: #000;
+}
+#back_to_camera {
+    background: rgba(255,255,255,.9);
+    clear: both;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+.fluid_container {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+#camera_wrap_4 {
+    bottom: 0;
+    width: 640px;
+    height: 700px;
+    left: 180px;
+    margin-bottom: 0!important;
+    position: relative;
+    right: 0;
+    top: 50px;
+    box-shadow: 0 0 10px #f5f5f5;
+}
+.camera_bar {
+    z-index: 2;
+}
+.camera_thumbs {
+    margin-top: -100px;
+    position: relative;
+    z-index: 1;
+}
+.camera_thumbs_cont {
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.camera_overlayer {
+    opacity: .1;
+}
+.camera_prevThumbs, .camera_nextThumbs, .camera_prev, .camera_next, .camera_commands, .camera_thumbs_cont{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.85);
+}
+.figure-side{
+    display: inline-block;
+    width: 296px;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+    left: 220px;
+    top: 50px;
+    box-shadow: 0 0 10px #f5f5f5;
+}
+.camera_thumbs_cont ul{
+    text-align: left!important;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.figure-side{
+    padding: 15px;
+}
+.figure-side .close, .editor-description .close{
+    margin-top: -10px;
+    font-size: 30px;
+}
+.photo-description{
+    padding-left: 20px;
+}
+.photo-description > p{
+    font-weight: bold;
+}
+.photo-description > span{
+    color: #b4b4b4;
+}
+.edit-photo{
+    width: 260px;
+    height: 25px;
+    padding: 2px 15px;
+    margin: 10px 0;
+    background-color: #f5f5f5;
+}
+.edit-photo div{
+    display: inline-block;
+}
+.setCover {
+    margin-right: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.appreciate span.glyphicon.glyphicon-thumbs-up {
+    margin-right: 5px;
+    top: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.appreciate span.glyphicon.glyphicon-thumbs-up:hover{
+    color: #ff781e;
+}
+.editor {
+    float: right;
+    padding-top: 2px;
+    cursor: pointer;
+}
+.editor span.glyphicon.glyphicon-pencil {
+    margin-right: 8px;
+    color: #ff781e;
+}
+.comment-group .newComment > label{
+    display: block;
+}
+.comment-group .newComment > textarea{
+    width: 260px;
+    height: 80px;
+    resize: none;
+}
+.comment-group .btn, .editor-description .btn {
+    position: relative;
+    padding: 0;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #91c31e;
+    box-shadow: 1px 2px 0px #50a000;
+}
+.comment-group .publish{
+    left: 140px;
+    margin: 6px 0 20px 0;
+}
+
+.btn.publish:hover, .btn.ensure:hover, .btn.notsure:hover{
+    color: #3C3C3C;
+}
+.comment-group .divider-hr {
+    border-top: 2px solid #91c31e;
+}
+.past-comment > div{
+    padding: 15px;
+    border-bottom: 1px solid #b4b4b4;
+}
+.past-comment > div > p{
+    margin: 0;
+}
+.editor-description{
+    display: none;
+    height: 115px;
+    position: absolute;
+    top: 50px;
+    width: 295px;
+    padding: 15px;
+    right: 193px;
+    background-color: #fff;
+}
+.editor-description .btn{
+    margin: 0 8px 0 5px;
+}
+.editor-description .btn.notsure{
+    background-color: #b4b4b4;
+    box-shadow: 1px 2px 0px #646464;
+}
+.editor-description > input{
+    clear: both;
+    display: block;
+    margin: 10px 0;
+    width: 260px;
+}
+.editor-description .help-block{
+    position: absolute;
+    right: 25px;
+    top: 35px;
+    font-size: 12px;
+    color: #b4b4b4;
+}
+.editor-description .help-block span{
+    color: #ff781e;
+}
