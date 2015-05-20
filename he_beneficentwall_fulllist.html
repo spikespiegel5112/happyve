@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="keywords" content="">
-    <title>快乐演习-行善墙</title>
+    <title>快乐演习-我的善行</title>
     <link rel="stylesheet" href="assets/css/normalize.css" type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap.css"  type="text/css" media="all">
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
     <link rel="stylesheet" type="text/css" href="css/happy_exercise.css">
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" type="text/css" media="all">
 
 </head>
 <body>
@@ -24,7 +26,7 @@
 <div class="header_container">
     <div class="header_login_wrapper">
         <ul>
-            <li><a class="u-lo btn btn-default" role="button">登陆</a></li>
+            <li><a class="u-lo btn btn-default" role="button">登录</a></li>
             <li><a class="u-reg btn btn-default" role="button">注册</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-envelope" aria-hidden="true" ></span> 我的信息</a></li>
             <li><a  href="javascript:;"><span class="glyphicon glyphicon-user" aria-hidden="true" ></span> 个人信息</a></li>
@@ -57,7 +59,7 @@
         </div>
     </div>
 </div>
-<!-- 头部登陆导航 结束 -->
+<!-- 头部登录导航 结束 -->
 <!-- 内容 开始 -->
 <div class="main_container">
     <div class="main_content_wrapper">
@@ -65,6 +67,9 @@
             <div class="subordinary_wrapper">
                 <div class="subordin_title_item pos_absolute">
                     <h4>上海工艺美术职业学院</h4>
+                    <div class='ranking_wrapper'>
+                        排名：第<span>123</span>位
+                    </div>
                 </div>
                 <a class="prev" href="javascript:;">&lt&lt&nbsp返回</a>
                 <div class="decoratebar_item_690">
@@ -76,7 +81,72 @@
                     <span class="green_2"></span>
                     <label class="green_3"></label>
                 </div>
-                <img class="timeline_wrapper" src="img/img_wbl/timeline_1_00000.jpg">
+                <div class="timer-shaft timer-shaft-beneficentwall">
+                    <div class="timeline-box">
+                        <ul class="timeline">
+                            <li class="year">
+                                <a>2013</a>
+                                <ul class="month">
+                                    <li class="active">01</li>
+                                    <li>02</li>
+                                    <li>03</li>
+                                    <li>04</li>
+                                    <li>05</li>
+                                    <li>06</li>
+                                    <li>07</li>
+                                    <li>08</li>
+                                    <li>09</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                </ul>
+                            </li>
+                            <li class="year active">
+                                <a>2014</a>
+                                <ul class="month" style="display: block">
+                                    <li class="active">01</li>
+                                    <li>02</li>
+                                    <li>03</li>
+                                    <li>04</li>
+                                    <li>05</li>
+                                    <li>06</li>
+                                    <li>07</li>
+                                    <li>08</li>
+                                    <li>09</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                </ul>
+                            </li>
+                            <li class="year">
+                                <a>2015</a>
+                                <ul class="month">
+                                    <li class="active">01</li>
+                                    <li>02</li>
+                                    <li>03</li>
+                                    <li>04</li>
+                                    <li>05</li>
+                                    <li>06</li>
+                                    <li>07</li>
+                                    <li>08</li>
+                                    <li>09</li>
+                                    <li>10</li>
+                                    <li>11</li>
+                                    <li>12</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="divider-line"></div>
+                    </div>
+                    <div class="calendar-box">
+                        <div class="form-group">
+                            <div class="input-group date form_date1 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                                <input class="form-control" size="16" type="text" value="2014-01-01" id="input-date1" onchange="resetTimeLine()">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="haexedetaillist_wrapper">
                     <div class="haexedetaillist_list_wrapper">
                         <ul>
@@ -350,10 +420,54 @@
 
     <div class="footer_sns_wrapper">
         <div class="sns-container">
-            <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
+            <a target="_blank" href="javascript:;">
+                <div title="关于我们" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/about-bottom.png"  width="72" height="72" alt="关于我们 icon">
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服电话" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/phone-bottom.png" width="72" height="72" alt="客服电话 icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服电话</p>
+                        <span>400-800-1234</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服邮箱" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/email-bottom.png" width="72" height="72" alt="客服邮箱 icon">
+                    <div class="prompt-tip-bottom-big">
+                        <p>客服邮箱</p>
+                        <span>amei.zhong@xingfuliu.com</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="客服QQ" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/qq-bottom.png" width="72" height="72" alt="客服QQ icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服QQ</p>
+                        <span>400123456</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="微信公众号" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/weixin-bottom.png" width="72" height="72" alt="微信公众号">
+                    <div class="prompt-tip-bottom code-prompt-tip">
+                        <p>公众号</p>
+                        <span class="code-weixin-bac"></span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -381,8 +495,8 @@
         </div>
         <div class="divider-hr input-content-hr"></div>
         <div class="btn-group">
-            <a href="he_beneficentwall_fulllist.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="he_beneficentwall_fulllist.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 
@@ -395,7 +509,9 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
-<!-- <script type="text/javascript" src="js/main.js"></script> -->
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <script>
     $(document).ready(function(){
         haexeHomepage();
@@ -484,6 +600,63 @@
             $(".haexe_home_bene_desc_list").eq(index).attr("id","shown");
         });
     }
+
+    /*以下为时间轴代码*/
+    $(document).ready(function(){
+
+        $('.form_date1').datetimepicker({
+            language:  'zh-CN',
+            weekStart: 1,
+            todayBtn:  1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0,
+            linkField: "input-date1"
+        });
+    });
+
+    $("li.year>a").click(function(){
+        var oUl=$(this).next();
+        if(oUl.is(":visible")){
+            oUl.children().first().addClass('active');
+            oUl.children().not(':first').removeClass('active');
+            var oTargetTime=$(this).text()+'-01-01';
+            $('#input-date1').val(oTargetTime);
+        }else{
+            oUl.css('display','block').parent().siblings().children('ul').css('display','none');
+            oUl.parent().addClass('active');
+            oUl.parent().siblings().removeClass('active');
+            var oTargetTime=$(this).text()+'-01-01';
+            $('#input-date1').val(oTargetTime);
+        }
+
+        return false;
+    });
+
+    $('.month>li').click(function(){
+        var oTargetYear=$(this).parent().prev().text();
+        var oTargetMonth=$(this).text();
+        var oTargetTime=oTargetYear+'-'+oTargetMonth+'-01';
+        $('#input-date1').val(oTargetTime);
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+    });
+
+    function resetTimeLine(){
+        var oInputDateStr=$('#input-date1').val();
+        var oInputDateArr=oInputDateStr.split('-');
+        $('.year').eq(0).children('a').text(oInputDateArr[0]-1);
+        $('.year').eq(0).removeClass('active').children('ul').css('display','none');
+        $('.year').eq(1).children('a').text(oInputDateArr[0]);
+        $('.year').eq(1).addClass('active').children('ul').css('display','block');
+        $('.year').eq(2).children('a').text(parseInt(oInputDateArr[0])+1);
+        $('.year').eq(2).removeClass('active').children('ul').css('display','none');
+        $('.year').eq(1).children('ul').children('li').removeClass('active');
+        $('.year').eq(1).children('ul').children('li').eq(oInputDateArr[1]-1).addClass('active');
+    }
+
 </script>
 
 </body>

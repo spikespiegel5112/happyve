@@ -13,6 +13,7 @@
     width: 750px;
     height: 390px;
     overflow-y: auto!important;
+    overflow-x: hidden;
 }
 .modal-header{
     position: fixed;
@@ -49,7 +50,6 @@
     width: 750px;
     height: 360px;
 }
-
 .main_container .form-group .control-label {
     text-align: right;
 }
@@ -187,26 +187,15 @@
     width: 300px;
     height: 106px;
     overflow: auto;
+    resize: none;
 }
 .form-container .activity-content{
     position: relative;
     height: 30px;
 }
-/*校园风采新建活动*/
-.form-container .form_datetime input, .add-on{
-    display: inline-block;
-    width: 140px;
-    height: 25px !important;
-}
-.form_datetime img{
-    display: inline-block;
-    vertical-align: top;
-}
-
 /*输入内容*/
-
 .pop-container .input-content{
-    margin-top: 80px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     width: 490px;
@@ -226,6 +215,7 @@
     width: 415px;
     height: 196px;
     overflow-y: scroll;
+    resize: none;
 }
 
 .pop-container .input-content .help-block{

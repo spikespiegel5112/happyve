@@ -18,14 +18,12 @@
 
     <!-- 自己页面的样式文件 -->
     <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/at_details.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/happy_exercise.css" type="text/css">
-
-    <link rel="stylesheet" href="assets/css/zui.calendar.min.css" type="text/css" media="all">
-
 
 </head>
 <body>
@@ -137,7 +135,72 @@
                 <li><a href="#" type="button" > 社团 </a></li>
                 <li><a href="#"  type="button" > 部门 </a></li>
              </ul>-->
-             <div class="timer-shaft"><img src="img/hp_share/timer-shaft.jpg"></div>
+             <div class="timer-shaft">
+                 <div class="timeline-box">
+                     <ul class="timeline">
+                         <li class="year">
+                             <a>2013</a>
+                             <ul class="month">
+                                 <li class="active">01</li>
+                                 <li>02</li>
+                                 <li>03</li>
+                                 <li>04</li>
+                                 <li>05</li>
+                                 <li>06</li>
+                                 <li>07</li>
+                                 <li>08</li>
+                                 <li>09</li>
+                                 <li>10</li>
+                                 <li>11</li>
+                                 <li>12</li>
+                             </ul>
+                         </li>
+                         <li class="year active">
+                             <a>2014</a>
+                             <ul class="month" style="display: block">
+                                 <li class="active">01</li>
+                                 <li>02</li>
+                                 <li>03</li>
+                                 <li>04</li>
+                                 <li>05</li>
+                                 <li>06</li>
+                                 <li>07</li>
+                                 <li>08</li>
+                                 <li>09</li>
+                                 <li>10</li>
+                                 <li>11</li>
+                                 <li>12</li>
+                             </ul>
+                         </li>
+                         <li class="year">
+                             <a>2015</a>
+                             <ul class="month">
+                                 <li class="active">01</li>
+                                 <li>02</li>
+                                 <li>03</li>
+                                 <li>04</li>
+                                 <li>05</li>
+                                 <li>06</li>
+                                 <li>07</li>
+                                 <li>08</li>
+                                 <li>09</li>
+                                 <li>10</li>
+                                 <li>11</li>
+                                 <li>12</li>
+                             </ul>
+                         </li>
+                     </ul>
+                     <div class="divider-line"></div>
+                 </div>
+                 <div class="calendar-box">
+                     <div class="form-group">
+                         <div class="input-group date form_date1 " data-date="" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+                             <input class="form-control" size="16" type="text" value="2014-01-01" id="input-date1" onchange="resetTimeLine()">
+                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                         </div>
+                     </div>
+                 </div>
+             </div>
              <button class="btn new-folder" type="button" data-trigger="modal" data-title="新建活动" data-target="#newActivity">新建活动</button>
              
         </div>
@@ -508,10 +571,54 @@
 
     <div class="footer_sns_wrapper">
         <div class="sns-container">
-            <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
+            <a target="_blank" href="javascript:;">
+                <div title="关于我们" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/about-bottom.png"  width="72" height="72" alt="关于我们 icon">
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服电话" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/phone-bottom.png" width="72" height="72" alt="客服电话 icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服电话</p>
+                        <span>400-800-1234</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服邮箱" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/email-bottom.png" width="72" height="72" alt="客服邮箱 icon">
+                    <div class="prompt-tip-bottom-big">
+                        <p>客服邮箱</p>
+                        <span>amei.zhong@xingfuliu.com</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="客服QQ" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/qq-bottom.png" width="72" height="72" alt="客服QQ icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服QQ</p>
+                        <span>400123456</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="微信公众号" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/weixin-bottom.png" width="72" height="72" alt="微信公众号">
+                    <div class="prompt-tip-bottom code-prompt-tip">
+                        <p>公众号</p>
+                        <span class="code-weixin-bac"></span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -549,8 +656,12 @@
             <div class="form-group ">
                 <label class="date" >日期：</label>
                 <div class="date form_datetime start-date">
-                    <input size="14" type="text" class="form-control datetime" value="" placeholder="2015-03-15" >
-                    <img src="img/calendar-img.jpg" >
+                    <div class="form-group">
+                        <div class="input-group date form_date2 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
+                            <input class="form-control" size="16" type="text" value="" id="input-date2" onchange="resetTimeLine()">
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="form-group ">
@@ -562,7 +673,7 @@
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-two">
             <a id="editorActivity-next-btn" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn" data-title="新建活动" data-trigger="modal" data-target="#editorActivity">下一步</button></div></a>
-            <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 </div>
@@ -599,7 +710,7 @@
                 <div class="label disabled"><span>毕业</span></div>
                 <div class="label disabled"><span>毕业</span></div>
                 <div class="label disabled"><span>军训</span></div>
-                <div class="label selected"><span>运动</span></div>
+                <div class="label selected"><span>运动</span><a class="close" href="#">&nbsp;</a></div>
             </div>
         </div>
         <div class="form-group">
@@ -623,8 +734,8 @@
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-three">
             <a id="newActivity-prev-btn" href="#newActivity" data-trigger="modal" data-title="新建活动" data-target="#newActivity"><div class="btn-prev disabled"><button type="button" class="btn"  >上一步</button></div></a>
-            <a href="sp_mien.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="sp_mien.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 </div>
@@ -639,9 +750,8 @@
 <script type="text/javascript" src="assets/js/blocksit.js"></script>
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script type="text/javascript" src="assets/js/icheck.js"></script>
-
-<script type="text/javascript" src="assets/js/zui.min.js"></script>
-<script type="text/javascript" src="assets/js/zui.calendar.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-datetimepicker.zh-CN.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -739,15 +849,83 @@ $(document).ready(function () {
         });
     }
 });
+/**/
+$('#newActivity-prev-btn').click(function () {
+    $(this).parent().parent().parent().css('display', 'none');
+});
+$('#editorActivity-next-btn').click(function () {
+    $(this).parent().parent().parent().css('display', 'none');
+});
 
-    $('#newActivity-prev-btn').click(function(){
-        $(this).parent().parent().parent().css('display','none');
+/* 以下为时间轴代码 */
+$(document).ready(function(){
+
+    $('.form_date1').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0,
+        linkField: "input-date1"
     });
-    $('#editorActivity-next-btn').click(function(){
-        $(this).parent().parent().parent().css('display','none');
+    $('.form_date2').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0,
+        linkField: "input-date2"
     });
+});
+
+$("li.year>a").click(function(){
+    var oUl=$(this).next();
+    if(oUl.is(":visible")){
+        oUl.children().first().addClass('active');
+        oUl.children().not(':first').removeClass('active');
+        var oTargetTime=$(this).text()+'-01-01';
+        $('#input-date1').val(oTargetTime);
+    }else{
+        oUl.css('display','block').parent().siblings().children('ul').css('display','none');
+        oUl.parent().addClass('active');
+        oUl.parent().siblings().removeClass('active');
+        var oTargetTime=$(this).text()+'-01-01';
+        $('#input-date1').val(oTargetTime);
+    }
+
+    return false;
+});
+
+$('.month>li').click(function(){
+    var oTargetYear=$(this).parent().prev().text();
+    var oTargetMonth=$(this).text();
+    var oTargetTime=oTargetYear+'-'+oTargetMonth+'-01';
+    $('#input-date1').val(oTargetTime);
+    $(this).addClass('active');
+    $(this).siblings().removeClass('active');
+});
+
+function resetTimeLine(){
+    var oInputDateStr=$('#input-date1').val();
+    var oInputDateArr=oInputDateStr.split('-');
+    $('.year').eq(0).children('a').text(oInputDateArr[0]-1);
+    $('.year').eq(0).removeClass('active').children('ul').css('display','none');
+    $('.year').eq(1).children('a').text(oInputDateArr[0]);
+    $('.year').eq(1).addClass('active').children('ul').css('display','block');
+    $('.year').eq(2).children('a').text(parseInt(oInputDateArr[0])+1);
+    $('.year').eq(2).removeClass('active').children('ul').css('display','none');
+    $('.year').eq(1).children('ul').children('li').removeClass('active');
+    $('.year').eq(1).children('ul').children('li').eq(oInputDateArr[1]-1).addClass('active');
+}
 
 </script>
+
 </body>
 </body>
 </html>

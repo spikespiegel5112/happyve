@@ -180,7 +180,7 @@ var calendar = {
       * @return Cn string 
       */
 	nStr3:["\u6b63","\u4e8c","\u4e09","\u56db","\u4e94","\u516d","\u4e03","\u516b","\u4e5d","\u5341","\u51ac","\u814a"],
-	
+
 	
 	/**
       * 返回农历y年一整年的总天数
@@ -464,7 +464,7 @@ var calendar = {
 		var gzD = calendar.toGanZhi(dayCyclical+d-1);
 		
 		return {'lYear':year,'lMonth':month,'lDay':day,'Animal':calendar.getAnimal(year),'IMonthCn':(isLeap?"\u95f0":'')+calendar.toChinaMonth(month),'IDayCn':calendar.toChinaDay(day),'cYear':y,'cMonth':m,'cDay':d,'gzYear':gzY,'gzMonth':gzM,'gzDay':gzD,'isToday':isToday,'isLeap':isLeap,'nWeek':nWeek,'ncWeek':"\u661f\u671f"+cWeek,'isTerm':isTerm,'Term':Term};
-	},	
+	},
 		
 		
 	/**
@@ -512,3 +512,7 @@ var calendar = {
 		return calendar.solar2lunar(cY,cM,cD);
 	}	
 };
+	// //公历节日
+	// sFtv:["0101 元旦","0214 情人节","0308 妇女节","0312 植树节","0315 消费者权益日","0401 愚人节","0501 劳动节","0504 青年节","0512 护士节","0601 儿童节","0701 建党节","0801 建军节","0910 教师节","0928 孔子诞辰","1001 国庆节","1006 老人节","1024 联合国日","1224 平安夜","1225 圣诞节"],
+	//农历节日
+	var lFtv = new Array("0101 春节","0115 元宵节","0505 端午节","0707 七夕情人节","0715 中元节","0815 中秋节","0909 重阳节","1208 腊八节","1224 小年")

@@ -547,7 +547,6 @@ p.test-number span {
     height: 20px;
 }
 .test_list_showmore a{
-    cursor: pointer;
     outline: none;
 }
 .list_details {
@@ -633,6 +632,7 @@ p.test-number span {
     top: -20px;
     width: 30px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .active-img.play{
@@ -647,26 +647,22 @@ p.test-number span {
     55%   {top: -15px; opacity: 0.8;}
     80%  {top: -13px; opacity: 0.6;}
     100%  {top: -10px; opacity: 0.4;}
-
 }
 @-moz-keyframes active-arrow{
-     0%,33% {top: -20px; opacity: 1;}
-     55%   {top: -15px; opacity: 0.8;}
-     70%  {top: -10px; opacity: 0.6;}
-     85%  {top: -5px; opacity: 0.4;}
-     100% {top: -0px; opacity: 0.2;}
+    0%,33% {top: -20px; opacity: 1;}
+    55%   {top: -15px; opacity: 0.8;}
+    80%  {top: -13px; opacity: 0.6;}
+    100%  {top: -10px; opacity: 0.4;}
 }
 @-o-keyframes active-arrow {
     0%,33% {top: -20px; opacity: 1;}
     55%   {top: -15px; opacity: 0.8;}
-    70%  {top: -10px; opacity: 0.6;}
-    85%  {top: -5px; opacity: 0.4;}
-    100% {top: -0px; opacity: 0.2;}
+    80%  {top: -13px; opacity: 0.6;}
+    100%  {top: -10px; opacity: 0.4;}
 }
 @keyframes active-arrow {
     0%,33% {top: -20px; opacity: 1;}
     55%   {top: -15px; opacity: 0.8;}
-    70%  {top: -10px; opacity: 0.6;}
-    85%  {top: -5px; opacity: 0.4;}
-    100% {top: -0px; opacity: 0.2;}
+    80%  {top: -13px; opacity: 0.6;}
+    100%  {top: -10px; opacity: 0.4;}
 }

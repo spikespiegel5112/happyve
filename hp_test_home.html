@@ -868,18 +868,52 @@
     <div class="footer_sns_wrapper">
         <div class="sns-container">
             <a target="_blank" href="javascript:;">
-                <div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img
-                        src="img/SinaWeibo.png"></div>
+                <div title="关于我们" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/about-bottom.png"  width="72" height="72" alt="关于我们 icon">
+                </div>
             </a>
             <a target="_blank" href="javascript:;">
-                <div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img
-                        src="img/TencentWeibo.png"></div>
+                <div title="客服电话" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/phone-bottom.png" width="72" height="72" alt="客服电话 icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服电话</p>
+                        <span>400-800-1234</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
             </a>
             <a target="_blank" href="javascript:;">
-                <div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div>
+                <div title="客服邮箱" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/email-bottom.png" width="72" height="72" alt="客服邮箱 icon">
+                    <div class="prompt-tip-bottom-big">
+                        <p>客服邮箱</p>
+                        <span>amei.zhong@xingfuliu.com</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+
+                </div>
             </a>
+
             <a target="_blank" href="javascript:;">
-                <div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div>
+                <div title="客服QQ" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/qq-bottom.png" width="72" height="72" alt="客服QQ icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服QQ</p>
+                        <span>400123456</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="微信公众号" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/weixin-bottom.png" width="72" height="72" alt="微信公众号">
+                    <div class="prompt-tip-bottom code-prompt-tip">
+                        <p>公众号</p>
+                        <span class="code-weixin-bac"></span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
             </a>
         </div>
     </div>
@@ -899,49 +933,52 @@
 <script type="text/javascript" src="js/main.js"></script>
 
 <script>
-    var oALink = $(".test_list_showmore>a");
+    $(document).ready(function(){
+        var oALink = $(".active-img>img");
 
-    for (var i = 0; i < oALink.length; i++) {
-        (function (n) {
-            oALink[n].onclick = function () {
-                showMoreTestDetails(n);
+        for (var i = 0; i < oALink.length; i++) {
+            (function (n) {
+                oALink[n].onclick = function () {
+                    showMoreTestDetails(n);
+                }
+            })(i);
+        }
+        function showMoreTestDetails(nIndex) {
+            var oListDiv = oALink[nIndex].parentElement.previousElementSibling.previousElementSibling;
+            var oList_detailDiv = oListDiv.querySelector(".list_details");
+            var oList_detailActUl = oList_detailDiv.getElementsByClassName("list_details_table_active")[0];
+            var oActiveImg=oALink[nIndex].parentElement;
+            var oClickDuang = document.getElementById("show-moretest");
+            if (oList_detailActUl.style.display == "none") {
+                oList_detailActUl.style.display = "block";
+                oList_detailDiv.style.height = 254 + "px";
+                oActiveImg.getElementsByTagName('img').item(0).src='img/img_hp_test/hp_test_up_arrow.png';
+                removeClass(oActiveImg,'play');
+                oClickDuang.style.display = "none";
+            } else if (oList_detailActUl.style.display = "block") {
+                oList_detailActUl.style.display = "none";
+                oList_detailDiv.style.height = 134 + "px";
+                oActiveImg.getElementsByTagName('img').item(0).src='img/img_hp_test/hp_test_down_arrow.png';
+                addClass(oActiveImg,'play');
+                oClickDuang.style.display = "block";
             }
-        })(i);
-    }
-    function showMoreTestDetails(nIndex) {
-        var oListDiv = oALink[nIndex].parentElement.previousElementSibling;
-        var oList_detailDiv = oListDiv.querySelector(".list_details");
-        var oList_detailActUl = oList_detailDiv.getElementsByClassName("list_details_table_active")[0];
-        var oActiveImg=oALink[nIndex].parentElement.nextElementSibling;
-        var oClickDuang = document.getElementById("show-moretest");
-        if (oList_detailActUl.style.display == "none") {
-            oList_detailActUl.style.display = "block";
-            oList_detailDiv.style.height = 254 + "px";
-            oActiveImg.getElementsByTagName('img').item(0).src='img/img_hp_test/hp_test_up_arrow.png';
-            removeClass(oActiveImg,'play');
-            oClickDuang.style.display = "none";
-        } else if (oList_detailActUl.style.display = "block") {
-            oList_detailActUl.style.display = "none";
-            oList_detailDiv.style.height = 134 + "px";
-            oActiveImg.getElementsByTagName('img').item(0).src='img/img_hp_test/hp_test_down_arrow.png';
-            addClass(oActiveImg,'play');
-            oClickDuang.style.display = "block";
         }
-    }
-    function hasClass(obj, cls) {
-        return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-    }
-
-    function addClass(obj, cls) {
-        if (!this.hasClass(obj, cls)) obj.className += " " + cls;
-    }
-
-    function removeClass(obj, cls) {
-        if (hasClass(obj, cls)) {
-            var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-            obj.className = obj.className.replace(reg, ' ');
+        function hasClass(obj, cls) {
+            return obj.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
         }
-    }
+
+        function addClass(obj, cls) {
+            if (!hasClass(obj, cls)) obj.className += " " + cls;
+        }
+
+        function removeClass(obj, cls) {
+            if (hasClass(obj, cls)) {
+                var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
+                obj.className = obj.className.replace(reg, ' ');
+            }
+        }
+    });
+
 </script>
 
 </body>

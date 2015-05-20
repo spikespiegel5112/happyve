@@ -97,7 +97,7 @@
                 		<label  class="lab-sign" >邮箱：</label><input type="email" class="form-control inp-sign-re" >
                 	</li>
                     <li class="amed-inpt-list">
-                		<label  class="lab-sign" ></label><input type="button" class="btn btn-default" value="发送验证码" data-trigger="modal" data-title="温馨提示" data-target="#phone-mail">
+                		<label  class="lab-sign" ></label><input type="button" class="btn btn-default" value="发送验证邮件" data-trigger="modal" data-title="温馨提示" data-target="#phone-mail">
                 	</li>
                     <li class="amed-inpt-list">
                 		<label  class="lab-sign" >输入验证码：</label><input type="text" class="form-control inp-sign-sm">
@@ -151,10 +151,54 @@
 
     <div class="footer_sns_wrapper">
         <div class="sns-container">
-            <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
+            <a target="_blank" href="javascript:;">
+                <div title="关于我们" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/about-bottom.png"  width="72" height="72" alt="关于我们 icon">
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服电话" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/phone-bottom.png" width="72" height="72" alt="客服电话 icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服电话</p>
+                        <span>400-800-1234</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服邮箱" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/email-bottom.png" width="72" height="72" alt="客服邮箱 icon">
+                    <div class="prompt-tip-bottom-big">
+                        <p>客服邮箱</p>
+                        <span>amei.zhong@xingfuliu.com</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="客服QQ" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/qq-bottom.png" width="72" height="72" alt="客服QQ icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服QQ</p>
+                        <span>400123456</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="微信公众号" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/weixin-bottom.png" width="72" height="72" alt="微信公众号">
+                    <div class="prompt-tip-bottom code-prompt-tip">
+                        <p>公众号</p>
+                        <span class="code-weixin-bac"></span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -176,8 +220,8 @@
         	<p class="text-amend-mail">”邮件已发送成功，请去邮箱查看”</p>
         </div>
         <div class="divider-hr-ph">
-            <a href="myfiles_safe_mail.html"><div class=""><button type="button" class="btn master-class-space mail-ph-save">确定</button></div></a>
-            <a href="myfiles_safe_mail.html"><div class=""><button type="button" class="btn agree-class-space mail-ph-save">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class=""><button type="button" class="btn master-class-space mail-ph-save">确定</button></div></a>
+            <a href="#" data-dismiss="modal"><div class=""><button type="button" class="btn agree-class-space mail-ph-save">取消</button></div></a>
         </div>
     </div>
 

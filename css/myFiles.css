@@ -262,7 +262,7 @@
 .footprint-content .edit-btn {
 	width:60px;
 	height:24px;
-	padding:0;
+	padding:2px 0 0 0;
     color: #96c81e;
     margin:0 40px 0 255px;
 }
@@ -276,13 +276,13 @@
 .footprint-content .inbox-btn {
 	width:60px;
 	height:24px;
-	padding:0;
+	padding:2px 0 0 0;
     color: #ff7800;
 }
-.footprint-content .textarea-myfiles-box{
+.textarea-myfiles-box{
 	width: 458px;
     height: 100px;
-    margin: 16px 0 22px 132px;
+    margin: 16px 0 0px 132px;
     font: 12px/18px "宋体";
 	color:#505050;
 }
@@ -292,15 +292,19 @@
     margin: 16px 0 22px 132px;
     font: 12px/18px "宋体";
 	color:#505050;
+    resize: none;
 }
 
 .list-footprint {
     width: 670px;
-    border-top: 2px solid #90c31f;
-    margin: 0 0 0 16px;
+    border-top: 1px solid #646464;
+    margin: 0 0 0 8px;
     padding: 20px 0 0 0;
 }
-
+.footprint-content .list-footprint{
+	border-top: 2px solid #90c31f;
+	margin: 0 0 0 16px;
+}
 .list-footprint li {
     width: 574px;
     height: 38px;
@@ -390,18 +394,22 @@
 .list-footprint .phone-gly-edit .btn{
 	display:block;
 	float:right;
-	width:16px;
-	height:26px;
+	width:17px;
+	height:17px;
 	padding:0;
 	text-align:center;
 	background-color:transparent;
-	margin:0;
+	margin:3px 0 0 0;
 	color:#505050;
 	vertical-align:middle;
 
 }
-.list-footprint .phone-gly-edit .btn span{
+.list-footprint .phone-gly-edit .btn .glyphicon{
+	display:block;
+	text-align:center;
 	font-size:16px;
+	padding:0;
+	margin:0;
 }
 .list-footprint .phone-gly-edit input{
 	width:145px;
@@ -1100,7 +1108,10 @@
 	width:666px;
 	margin:0 0 10px 18px;
 }
-
+.personage-link-label{
+	width:666px;
+	margin:0 0 10px 12px;
+	}
 .label-wire-gr p{
 	display:block;
 	text-align:center;
@@ -1272,11 +1283,9 @@
 }
 
 /*我的微课 弹出层*/
-#uploadMicroLessonA .pop-container, #editMicroLessonA .pop-container{
-    margin-top: 84px;
-}
-#uploadMicroLessonB .pop-container, #editMicroLessonB .pop-container{
-    margin-top: 64px;
+.pop-container-micro{
+    position: relative;
+    top: 50px;
 }
 .micro-lesson-container{
     margin-left: auto;
@@ -1299,54 +1308,27 @@
     white-space: nowrap;
     border-radius: 0;
 }
-.micro-lesson-container .dropdown{
-    position: relative;
+.dropdown-box .form-group{
     display: inline-block;
-    border-radius: 0;
 }
-.micro-lesson-container .dropdown span.caret{
-    float: right;
-    margin-top: 8px;
+
+.dropdown-box select{
+    height: 35px;
+    border: 1px solid #c1c1c1;
+    padding: 6px;
+    font-size: 14px;
 }
-.micro-lesson-container .dropdown > button{
-    border-radius: 0;
-}
-.micro-lesson-container .dropdown.firstLevel{
+.dropdown-box .firstLevel{
     width: 110px;
 }
-.micro-lesson-container .dropdown.secondLevel{
+.dropdown-box .secondLevel{
     width: 160px;
 }
-.micro-lesson-container .dropdown ul.dropdown-menu{
-    border-radius: 0;
+
+.dropdown-box select option:hover{
+    background: #91c31e;
 }
-.firstLevel .dropdown-menu{
-    margin-top: 0;
-    min-width: 120px;
-    font-size: 12px;
-}
-.secondLevel .dropdown-menu{
-    margin-top: 0;
-    min-width: 160px;
-    font-size: 12px;
-}
-.micro-lesson-container .dropdown-menu > li > a{
-    padding: 3px 10px;
-}
-.micro-lesson-container .dropdown-menu >li >a div{
-    margin-right: 5px;
-}
-.micro-lesson-container .dropdown-menu >li >a label{
-    width: 100%;
-    height: 18px;
-    line-height: 18px;
-    font-weight: normal;
-    cursor: pointer;
-}
-.micro-lesson-container .dropdown-menu >li >a:hover,.dropdown-menu >li >a:focus{
-    background: #c7e38e;
-    outline: none;
-}
+
 .micro-lesson-container .col-textarea{
     display: inline-block;
     width: 520px;
@@ -1421,10 +1403,18 @@
     overflow: hidden;
     opacity: 0;
 }
+.master-personge-btn{
+	width:118px;
+	height:30px;
+	position:absolute;
+	top:65px;
+	right:100px;
+	line-height:28px
+}	
 /*我的微课 上传微课 封面简介*/
 .micro-lesson-container .file-box{
     display: inline-block;
-    margin-top: 20px!important;
+    margin-top: 0!important;
 
 }
 .micro-lesson-container .file-box form{
@@ -1460,6 +1450,15 @@
     padding: 15px;
     margin-left: 60px;
     border: 1px solid #c1c1c1;
+}
+
+.master-personge-btn{
+	width:118px;
+	height:30px;
+	position:absolute;
+	top:65px;
+	right:100px;
+	line-height:28px;
 }
 
 .detailLessonTab .sourceTitle {

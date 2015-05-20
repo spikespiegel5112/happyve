@@ -1,7 +1,8 @@
 
 /*竞技场*/
 .timer-shaft{
-	width:520px;
+    float:left;
+	width:550px;
 	height:34px;
 	}
 .incident-time{
@@ -390,12 +391,12 @@
 	-ms-transition: top 1s ease, left 1s ease;
 }
 .grid:hover{
-	box-shadow: 0px 2px 8px rgba(145,200,30,0.8);
-	-moz-box-shadow: 0px 2px 8px rgba(145,200,30,0.8);
-	-webkit-box-shadow: 0px 2px 8px rgba(145,200,30,0.8);
+	box-shadow: 0px 3px 15px rgba(80,160,0,1);
+	-moz-box-shadow: 0px 3px 15px rgba(80,160,0,1);
+	-webkit-box-shadow: 0px 3px 15px rgba(80,160,0,1);
 }
 .mien-icon{
-	width:210px;
+	width:100%;
 	display: block;
 	height:34px;
 	background-color:#f5f5f5;
@@ -529,6 +530,7 @@
 	height:25px;
 	padding:0;
 	text-align:center;
+	font:12px/25px "微软雅黑";
 }
 .set-opt{
 	display:none;
@@ -588,7 +590,10 @@
 	width:556px;
 	margin: 12px 0 0 0;
 	}
-.collte-info .btn-default{
+.collective-text .collte-info .btn-default{
+	width:108px;
+	height:25px;
+	font:15px/22px "微软雅黑";
 	float:right;
 }
 .collte-info .colle-title{
@@ -631,9 +636,6 @@
 	padding-top:0;
 }
 
-.timer-shaft{
-	float:left;
-}
 .new-folder{
 	width:108px;
 	height:26px;
@@ -684,10 +686,10 @@
 	padding: 0 0 0 8px;
 }
 .organize-nav li.active a {
-	color: #5aaa00;
+	color: #91c31e;
 }
 .organ-bot li.active a {
-	color: #5aaa00;
+	color: #91c31e;
 }
 .branch-fl{
 	padding-left:12px;
@@ -697,6 +699,9 @@
 
 .branch-fl a{
 	color:#3c3c3c;
+}
+.branch-fl a:hover, .branch-fl a:focus{
+    color: #50a000;
 }
 .organ-fl{
 	float:right;
@@ -1071,6 +1076,7 @@
     overflow: visible;
     text-align: justify;
     text-indent: 2em;
+    font-size: 14px;
 }
 .preview-container .send-word .divider-hr{
     width: 520px;
@@ -1096,7 +1102,7 @@
     width: 500px;
     height: 25px;
 }
-.pop-activity .form-group span{
+.pop-activity .form-group > span{
     text-align: right;
 }
 .pop-activity .form-group .label {
@@ -1109,6 +1115,7 @@
     color: #fff;
     border-radius: 0;
     cursor: pointer;
+    white-space: normal;
 }
 .pop-activity .form-group .selected{
     padding: 0 0 0 10px ;
@@ -1125,7 +1132,7 @@
 }
 .pop-activity .form-group .label .close{
     display: inline-block;
-    padding: 0 5px 0 0;
+    position: relative;
     font-size: 16px;
 }
 .pop-activity .form-group .label-style{
@@ -1152,19 +1159,40 @@
     width: 115px;
     line-height: 30px;
 }
+/*校园风采新建活动*/
+.form-container .form_datetime .input-group input{
+    display: inline-block;
+    width: 140px;
+    height: 25px !important;
+    border-radius: 4px;
+}
+.form-container .form_datetime .input-group-addon{
+    display: inline-block;
+    padding: 5px;
+    width: 30px;
+    border: none;
+    background-color: #fff;
+}
+.form_datetime img{
+    position: relative;
+    left: -15px;
+    top: -7px;
+}
 .start-date{
     display: inline-block;
     float: left;
+}
+.start-date .input-group input, .end-date .input-group input{
+    padding: 6px;
+    width: 90px!important;
+    font-size: 12px;
 }
 .end-date {
     display: inline-block;
     float: left;
     padding-left: 10px;
 }
-.newshow-container .form_datetime input{
-    width: 90px!important;
-    padding-left: 10px;
-}
+
 /*编辑秀场 第二页*/
 .pop-show-container{
     padding: 40px 0;
@@ -1175,6 +1203,7 @@
     font-weight: bold;
 }
 .pop-show-container .form-group label{
+    margin-bottom: 5px;
     font-size: 14px;
     font-weight: normal;
     cursor: pointer;
@@ -1366,6 +1395,118 @@
 .mar-grid-bott{
 	margin-bottom:100px;
 }
-.list_pagination_match{width:100%;text-align: center; color:#8e8e8e;font-family: "SimSun";font-weight: lighter;}
-.list_pagination_match a{color:#8e8e8e;font-family: "SimSun";}
-.list_pagination_match a:hover{color: #000;}
+
+.list_pagination_match {
+    width: 100%;
+    text-align: center;
+    color: #8e8e8e;
+    font-family: "SimSun";
+    font-weight: lighter;
+}
+
+.list_pagination_match a {
+    color: #8e8e8e;
+    font-family: "SimSun";
+}
+
+.list_pagination_match a:hover {
+    color: #000;
+}
+
+/* 时间轴 */
+.timer-shaft.timer-shaft-beneficentwall{
+    margin: 0 auto;
+    float: none;
+}
+.timer-shaft .timeline-box{
+    display: inline-block;
+    width: 390px;
+    height: 34px;
+    overflow: hidden;
+}
+.timer-shaft .timeline-box .timeline{
+    padding-top: 2px;
+    height: 30px;
+    overflow:hidden;
+}
+/*时间轴 年*/
+.timeline li.year a{
+    display: inline-block;
+    float: left;
+    margin: 0 5px;
+    font-size: 12px;
+}
+.timeline > li.year{
+    display: inline-block;
+    float: left;
+    height: 30px;
+    background: url("../img/timeline-circle-greenmin.png") no-repeat 15px -2px;
+    z-index: 2;
+    cursor: pointer;
+}
+.timeline > li.year:hover,.timeline > li.year:focus, .timeline > li.year.active {
+    font-weight: bold;
+    background: url("../img/timeline-circle-greenmax.png") no-repeat 13px -2px;
+}
+/*时间轴 月*/
+.timeline li ul {
+    overflow: hidden;
+}
+.timeline li ul.month {
+    display: none;
+    margin-left: 40px;
+   /* padding: 0;
+    width: 310px;*/
+    height: 30px;
+    overflow: visible;
+    background: url("../img/lightgreen-bg.png") repeat-x;
+}
+.timeline li ul.month li {
+    display: inline-block;
+    position: relative;
+    float: left;
+    height: 30px;
+    margin: 0 4px;
+    font-size: 12px;
+    font-weight: normal;
+    overflow: hidden;
+    z-index: 2;
+}
+.timeline li ul.month li:hover, .timeline li ul.month li.active{
+    font-weight: bold;
+    color: #ff781e;
+    background: url("../img/timeline-circle-orangemin.png") no-repeat 3px -2px;
+}
+.timer-shaft .timeline-box .divider-line{
+    position: absolute;
+    margin-top: -6px;
+    width: 380px;
+    border-top: 2px solid #91c31e;
+    z-index: 1;
+}
+
+.timer-shaft .calendar-box {
+    display: inline-block;
+    width: 150px;
+    height: 34px;
+}
+.timer-shaft .calendar-box .input-group{
+    height: 30px;
+    width: 150px;
+}
+.timer-shaft .calendar-box .input-group .form-control{
+    border-radius: 4px;
+    height: 30px;
+    width: 110px;
+}
+.timer-shaft .calendar-box .input-group-addon{
+    display: inline-block;
+    width: 38px;
+    border: none;
+    background-color: #fff;
+}
+.timer-shaft .calendar-box .input-group-addon > span > img{
+    position: relative;
+    left: -20px;
+    top: -5px;
+}

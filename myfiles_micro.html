@@ -228,6 +228,7 @@
                                 <option>第3页</option>
                             </select>
                         </div>
+                    </div>
                     <!--微课结束点-->
                 </div>
             </div>
@@ -271,10 +272,54 @@
 
     <div class="footer_sns_wrapper">
         <div class="sns-container">
-            <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
+            <a target="_blank" href="javascript:;">
+                <div title="关于我们" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/about-bottom.png"  width="72" height="72" alt="关于我们 icon">
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服电话" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/phone-bottom.png" width="72" height="72" alt="客服电话 icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服电话</p>
+                        <span>400-800-1234</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服邮箱" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/email-bottom.png" width="72" height="72" alt="客服邮箱 icon">
+                    <div class="prompt-tip-bottom-big">
+                        <p>客服邮箱</p>
+                        <span>amei.zhong@xingfuliu.com</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="客服QQ" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/qq-bottom.png" width="72" height="72" alt="客服QQ icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服QQ</p>
+                        <span>400123456</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="微信公众号" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/weixin-bottom.png" width="72" height="72" alt="微信公众号">
+                    <div class="prompt-tip-bottom code-prompt-tip">
+                        <p>公众号</p>
+                        <span class="code-weixin-bac"></span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -291,47 +336,34 @@
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>上传微课</h3>
     </div>
-    <div class="pop-container">
+    <div class="pop-container pop-container-micro">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group">
                     <label class="col-title">课程名称：</label>
                     <input type="text" class="form-control col-input" placeholder="请输入课程名称" value=""/>
                 </div>
-                <div class="form-group">
-                    <label class="col-title">所有专业分类：</label>
-                    <div class="dropdown firstLevel">
-                        <button style="width: 120px" class="form-control dropdown-toggle " type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
-                            选择专业
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu1">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">文化技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></a></li>
-                        </ul>
-                    </div>
-                    <label class="col-title">二级专业课程：</label>
-                    <div class="dropdown secondLevel">
-                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
-                            专业课程
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu2">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电设备安装与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气运行与控制</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电子电器应用与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">数控技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">模具制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械加工技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">焊接技术应用</label></a></li>
-                        </ul>
+                <div class="dropdown-box">
+                    <div class="form-group">
+                        <label class="col-title">所有专业分类：</label>
+                        <select class="firstLevel">
+                            <option>选择专业</option>
+                            <option>交通运输类</option>
+                            <option>信息技术类</option>
+                            <option>加工制造类</option>
+                            <option>土木水利类</option>
+                            <option>文化艺术类</option>
+                            <option>旅游服务类</option>
+                        </select>
+                        <label class="col-title">二级专业课程：</label>
+                        <select class="secondLevel">
+                            <option>专业课程</option>
+                            <option>机电设备安装与维修</option>
+                            <option>机械制造技术</option>
+                            <option>电气运行与控制</option>
+                            <option>电子电器应用与维修</option>
+                            <option>机电技术应用</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
@@ -363,8 +395,8 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a class="next-btn-micro" href="javascript:;" data-title="上传微课" data-trigger="modal" data-target="#uploadMicroLessonB"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
-            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a class="next-btn-micro" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 
@@ -375,7 +407,7 @@
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>上传微课</h3>
     </div>
-    <div class="pop-container">
+    <div class="pop-container pop-container-micro">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group form-group-texarea">
@@ -446,62 +478,48 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a href="myfiles_micro.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
-
 </div>
-
 <!--我的微课 编辑微课-->
 <div class="modal fade" id="editMicroLessonA">
     <div class="modal-header">
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>编辑微课</h3>
     </div>
-    <div class="pop-container">
+    <div class="pop-container pop-container-micro">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group">
                     <label class="col-title">课程名称：</label>
                     <input type="text" class="form-control col-input" placeholder="请输入课程名称" value="机电设备安装与维修专业人才培养方案等专业"/>
                 </div>
-                <div class="form-group">
-                    <label class="col-title">所有专业分类：</label>
-                    <div class="dropdown firstLevel">
-                        <button style="width: 120px" class="form-control dropdown-toggle " type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="true">
-                            选择专业
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu3">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">交通运输类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">信息技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">加工制造类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">土木水利类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">文化技术类</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck majorSubject" value="">旅游服务类</label></a></li>
-                        </ul>
-                    </div>
-                    <label class="col-title">二级专业课程：</label>
-                    <div class="dropdown secondLevel">
-                        <button class="form-control dropdown-toggle " type="button" id="dropdownMenu4" data-toggle="dropdown" aria-expanded="true">
-                            专业课程
-                            <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu " role="menu" aria-labelledby="dropdownMenu4">
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电设备安装与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气运行与控制</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电子电器应用与维修</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机电技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">数控技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">电气技术应用</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">模具制造技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">机械加工技术</label></a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="javascript:;"><label><input type="radio" name="iCheck" value="">焊接技术应用</label></a></li>
-                        </ul>
+                <div class="dropdown-box">
+                    <div class="form-group">
+                        <label class="col-title">所有专业分类：</label>
+                        <select class="firstLevel">
+                            <option>选择专业</option>
+                            <option>交通运输类</option>
+                            <option>信息技术类</option>
+                            <option>加工制造类</option>
+                            <option>土木水利类</option>
+                            <option>文化艺术类</option>
+                            <option>旅游服务类</option>
+                        </select>
+                        <label class="col-title">二级专业课程：</label>
+                        <select class="secondLevel">
+                            <option>专业课程</option>
+                            <option>机电设备安装与维修</option>
+                            <option>机械制造技术</option>
+                            <option>电气运行与控制</option>
+                            <option>电子电器应用与维修</option>
+                            <option>机电技术应用</option>
+                        </select>
                     </div>
                 </div>
+
                 <div class="form-group">
                     <label class="col-title">视频地址：</label>
                     <input type="text" class="form-control col-input" value="http://www.v-haoke.com/haoke/index"/>
@@ -516,14 +534,14 @@
             <div class="file-box">
                 <form enctype="multipart/form-data" action="" method="post">
                     <div class="default-img"><img src="img/campus-default-img.png"></div>
-                    <input type='text' name='textfield1' id='textfield1' class='txt' />
+                    <input type='text' name='textfield2' id='textfield2' class='txt' />
                     <div class="help-block">
                         <p>支持jpg、gif、png格式，文件小于1M。</p>
                         <p>图片将显示为 300*180 、 100*80 两种尺寸样式</p>
                     </div>
                     <div class="upload-file">
                         <input type="submit" name="submit" class="btn" value="选择图片" />
-                        <input type="file" name="fileField1" class="file" id="fileField1" size="28" onchange="document.getElementById('textfield1').value=this.value" />
+                        <input type="file" name="fileField3" class="file" id="fileField3" size="28" onchange="document.getElementById('textfield3').value=this.value" />
                     </div>
 
                 </form>
@@ -531,8 +549,8 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a class="next-btn-micro" href="javascript:;" data-title="上传微课" data-trigger="modal" data-target="#editMicroLessonB"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
-            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a class="next-btn-micro" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 
@@ -542,7 +560,7 @@
         <a class="close" href="#" data-dismiss="modal">×</a>
         <h3>编辑微课</h3>
     </div>
-    <div class="pop-container">
+    <div class="pop-container pop-container-micro">
         <div class="micro-lesson-container">
             <form name="" action="">
                 <div class="form-group form-group-texarea">
@@ -576,26 +594,26 @@
             </form>
             <div class="detailLessonTab">
                 <div id="resources2">
-                        <table class="sourceBox" cellspacing="28" cellpadding="80" id="resourcestable">
-                            <tbody>
-                                <tr class="sourceTitle" height="32px">
-                                    <td width="400" align="center">资源名称</td>
-                                    <td width="100" align="center">资源类型</td>
-                                    <td width="100" align="center">资源大小</td>
-                                    <td width="150" align="center">操作</td>
-                                </tr>
+                    <table class="sourceBox" cellspacing="28" cellpadding="80">
+                        <tbody>
+                        <tr class="sourceTitle" height="32px">
+                            <td width="400" align="center">资源名称</td>
+                            <td width="100" align="center">资源类型</td>
+                            <td width="100" align="center">资源大小</td>
+                            <td width="150" align="center">操作</td>
+                        </tr>
 
-                                <tr class="sources" height="28px">
-                                    <td>&nbsp;&nbsp;&nbsp;汽车发动机工作原理及内部构造.ppt</td>
-                                    <td align="center">ppt</td>
-                                    <td align="center">2.0MB</td>
-                                    <td align="center">
-                                        【<a href="javascript:void(0)" class="down"  name="">下载</a>】
-                                        【<a href="javascript:void(0)" class="view" >预览</a>】
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <tr class="sources" height="28px">
+                            <td>&nbsp;&nbsp;&nbsp;汽车发动机工作原理及内部构造.ppt</td>
+                            <td align="center">ppt</td>
+                            <td align="center">2.0MB</td>
+                            <td align="center">
+                                【<a href="javascript:void(0)" class="down" name="">下载</a>】
+                                【<a href="javascript:void(0)" class="view">预览</a>】
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
                         <div class="container activity-pagin">
                             <nav class="pagin-right">
                                 <ul class="pagination">
@@ -622,13 +640,13 @@
                                 </ul>
                             </nav>
                         </div>
-                    </div>
+                </div>
             </div>
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a href="myfiles_micro.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="myfiles_micro.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 
@@ -652,7 +670,7 @@
         changeButtonCss();
 
         function changeButtonCss() {
-            $(".dropdown-menu li a input, .originalFile input").iCheck({
+            $(".rolemajor li input, .originalFile input").iCheck({
                 checkboxClass: 'icheckbox_minimal-green',
                 radioClass: 'iradio_minimal-green',
                 increaseArea: '20%'
@@ -668,11 +686,24 @@
         }
     }
 
-    $('.next-btn-micro').click(function(){
+    $('.next-btn-micro').eq(0).click(function(){
         $(this).parent().parent().parent().css('display',"none");
+        $('#uploadMicroLessonB').scojs_modal({
+            title: '上传微课',
+            content: $('#uploadMicroLessonB').html()
+        });
+    });
+
+    $('.next-btn-micro').eq(1).click(function(){
+        $(this).parent().parent().parent().css('display',"none");
+        $('#editMicroLessonB').scojs_modal({
+            title: '编辑微课',
+            content: $('#editMicroLessonB').html()
+        });
     });
 
 </script>
 
 </body>
+
 </html>

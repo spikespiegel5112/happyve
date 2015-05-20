@@ -230,13 +230,20 @@
 }
 
 .show_hero_lesson {
+    width: 700px;
     height: auto;
     padding: 20px 0 0 0;
     /*margin: 10px 0 0 0;*/
 }
 
+.show_hero_lesson > div{
+    display: inline-block;
+}
+
 .train {
     width: 341px;
+    position: relative;
+    top: -12px;
 }
 
 #train_bt {
@@ -273,7 +280,7 @@
 
 .micro_lession {
     width: 341px;
-    margin-left: 8px;
+    margin-left: 6px;
     position: relative;
 }
 
@@ -579,10 +586,13 @@
     margin: 0 0 20px 0;
     max-width: 100%;
 }
-
+.f-partner p{
+	margin:0;
+	line-height:24px;
+}
 .f-partner a {
     /*margin: 0 5px;*/
-    font:12px "宋体";
+    font:12px/24px "宋体";
     text-align: center;
 }
 
@@ -624,25 +634,27 @@
 
 .sns-container {
     margin: 0 auto;
-    max-width: 520px;
+    max-width: 660px;
     position: relative;
 }
 
 .sns-icon {
-    border-radius: 13px 13px 13px 13px;
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.35), 0 -1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+    /*border-radius: 13px 13px 13px 13px;
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.35), 0 -1px 0 rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgba(255, 255, 255, 0.6) inset;*/
     float: left;
-    margin: 15px 30px;
+    margin: 20px 30px;
     position: relative;
-    transition: all 1s ease 0s;
-    width: 70px;
+    transition: opacity  .6s ease 0s;
+    width: 72px;
+	opacity:.5;
 }
 
 .sns-icon:hover {
+	opacity:1;
 
 }
 
-.sns-icon:before {
+/*.sns-icon:before {
     background: -moz-linear-gradient(center top, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 100%) repeat scroll 0 0 transparent;
     border-radius: 13px 13px 13px 13px;
     content: " ";
@@ -670,19 +682,120 @@
     left: 0;
     position: absolute;
     width: 100%;
-}
+}*/
 
 .sns-icon img {
     border: 0 none;
-    height: auto;
-    max-width: 100%;
+	width:72px;
+	height:72px;
+    /*height: auto;
+    max-width: 100%;*/
     vertical-align: middle;
 }
 
-.sns-fadeout {
-    opacity: 0.5;
+.prompt-tip-bottom{
+	display:none;
+	width: 160px;
+	height:90px;
+	margin:0 20px;
+	position:absolute;
+	top:-106px;
+	left:-64px;
+	background-color:#f6f6f6;
+	box-shadow:1px 1px 4px #dedcdc inset, 1px 1px 4px #dedcdc;
+}
+.prompt-tip-bottom.code-prompt-tip{
+	height:180px;
+	width: 146px;
+	top:-200px;
+	left:-54px;
+}
+.prompt-tip-bottom.code-prompt-tip .prompt-tip-row{
+	background:url(../img/prompt-bottom-row.png) center no-repeat;
+	width:30px;
+	height:18px;
+	position:absolute;
+	bottom:-18px;
+	right:60px;
+}
+.prompt-tip-bottom .prompt-tip-row{
+	background:url(../img/prompt-bottom-row.png) center no-repeat;
+	width:30px;
+	height:18px;
+	position:absolute;
+	bottom:-18px;
+	right:66px;
+}
+.sns-icon:hover .prompt-tip-bottom{
+	display:block;
+	opacity:.9;
+}
+.prompt-tip-bottom p{
+	height:34px;
+	margin:8px auto 0;
+	text-align:center;
+	font:16px/34px "微软雅黑";
+	color:#505050;
+}
+.prompt-tip-bottom span{
+	display:block;
+	height:28px;
+	margin:0 auto;
+	text-align:center;
+	font:14px/28px "微软雅黑";
+	color:#5aaa00;
 }
 
+.prompt-tip-bottom-big{
+	display:none;
+	width: 226px;
+	height:90px;
+	margin:0 20px;
+	position:absolute;
+	top:-106px;
+	left:-94px;
+	background-color:#f6f6f6;
+	box-shadow:1px 1px 4px #dedcdc inset, 1px 1px 4px #dedcdc;
+}
+
+.prompt-tip-bottom-big .prompt-tip-row{
+	background:url(../img/prompt-bottom-row.png) center no-repeat;
+	width:30px;
+	height:18px;
+	position:absolute;
+	bottom:-18px;
+	right:100px;
+}
+.sns-icon:hover .prompt-tip-bottom-big{
+	display:block;
+	opacity:.9;
+}
+.prompt-tip-bottom-big p{
+	height:34px;
+	margin:8px auto 0;
+	text-align:center;
+	font:16px/34px "微软雅黑";
+	color:#505050;
+}
+.prompt-tip-bottom-big span{
+	display:block;
+	height:28px;
+	margin:0 auto;
+	text-align:center;
+	font:14px/28px "微软雅黑";
+	color:#5aaa00;
+}
+.prompt-tip-bottom .code-weixin-bac{
+	display:block;
+	width:102px;
+	height:102px;
+	background:url(../img/erweima-bottom.jpg) no-repeat;
+	margin:10px auto 0;
+}
+/*.sns-fadeout {
+    opacity: 0.5;
+}
+*/
 /* 右侧 样式 */
 
 /* 个人信息 */
@@ -815,7 +928,7 @@
 .slideTxtBox .hd {
     height: 39px;
     line-height: 39px;
-    background: #f4f4f4;
+    /*background: #f4f4f4;*/
     border-bottom: 1px solid #646464;
     position: relative;
 
@@ -836,6 +949,7 @@
     color: #414141;
     width: 45%;
     text-align: center;
+    background-color: #fafafa;
 }
 
 .slideTxtBox .hd ul .hd-left {

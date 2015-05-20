@@ -309,10 +309,54 @@
 
     <div class="footer_sns_wrapper">
         <div class="sns-container">
-            <a target="_blank" href="javascript:;"><div title="新浪微博" data-toggle="tooltip" class="sns-icon" id="icon-sinaweibo"><img src="img/SinaWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="腾讯微博" data-toggle="tooltip" class="sns-icon" id="icon-tencentweibo"><img src="img/TencentWeibo.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="微信" data-toggle="tooltip" class="sns-icon" id="icon-wechat"><img src="img/wechat.png"></div></a>
-            <a target="_blank" href="javascript:;"><div title="QQ" data-toggle="tooltip" class="sns-icon" id="icon-qq"><img src="img/qq.png"></div></a>
+            <a target="_blank" href="javascript:;">
+                <div title="关于我们" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/about-bottom.png"  width="72" height="72" alt="关于我们 icon">
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服电话" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/phone-bottom.png" width="72" height="72" alt="客服电话 icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服电话</p>
+                        <span>400-800-1234</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+            <a target="_blank" href="javascript:;">
+                <div title="客服邮箱" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/email-bottom.png" width="72" height="72" alt="客服邮箱 icon">
+                    <div class="prompt-tip-bottom-big">
+                        <p>客服邮箱</p>
+                        <span>amei.zhong@xingfuliu.com</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="客服QQ" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/qq-bottom.png" width="72" height="72" alt="客服QQ icon">
+                    <div class="prompt-tip-bottom">
+                        <p>客服QQ</p>
+                        <span>400123456</span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
+
+            <a target="_blank" href="javascript:;">
+                <div title="微信公众号" data-toggle="tooltip" class="sns-icon">
+                    <img src="img/weixin-bottom.png" width="72" height="72" alt="微信公众号">
+                    <div class="prompt-tip-bottom code-prompt-tip">
+                        <p>公众号</p>
+                        <span class="code-weixin-bac"></span>
+                        <div class="prompt-tip-row"></div>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 </div>
@@ -342,113 +386,23 @@
             <div class="form-group">
                 <label for="address" class="col-sm-4 control-label">所属省份：</label>
                 <div class="col-sm-5">
-                    <button class="btn btn-default dropdown-toggle col-sm-3" type="button" id="address" data-toggle="dropdown" aria-expanded="true">
-                        北京
-                        <span class="caret"></span>
-                    </button>
+                    <button class="btn btn-default col-sm-3" type="button" id="address" style="padding-left: 6px;">北京</button>
+                    <span class="caret address-arrow"></span>
+                    <ul class="cities">
+                        <li><label><input type="radio" name="city" value="北京" checked>北京</label></li>
+                        <li><label><input type="radio" name="city" value="天津" >天津</label></li>
+                        <li><label><input type="radio" name="city" value="上海" >上海</label></li>
+                        <li><label><input type="radio" name="city" value="广东" >广东</label></li>
+                        <li><label><input type="radio" name="city" value="河北省" >河北省</label></li>
+                        <li><label><input type="radio" name="city" value="河南省" >河南省</label></li>
+                        <li><label><input type="radio" name="city" value="湖南" >湖南</label></li>
+                        <li><label><input type="radio" name="city" value="湖北" >湖北</label></li>
+                        <li><label><input type="radio" name="city" value="安徽" >安徽</label></li>
+                        <li><label><input type="radio" name="city" value="广西" >广西</label></li>
+                    </ul>
                 </div>
             </div>
-            <div class="form-group">
-                <label class="col-sm-4 control-label"></label>
-                <div class="radio-group col-sm-5" id="selectAddress">
-                    <label>
-                        <input type="radio" name="iCheck" value="" checked>&nbsp;&nbsp;北京
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;陕西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;江西省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;四川省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;云南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;甘肃省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河北省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;天津
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;上海
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;广东
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;河南省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山东省
-                    </label>
-                    <label>
-                        <input type="radio" name="iCheck" value="">&nbsp;&nbsp;山西省
-                    </label>
-                </div>
-            </div>
+
             <div class="form-group">
                 <label for="areaCode" class="col-sm-4 control-label">区号：</label>
                 <div class="col-sm-3">
@@ -459,7 +413,7 @@
         <div class="divider-hr"></div>
         <div class="btn-group">
             <a href="#applySuccess" data-trigger="modal" data-title="申请加入" data-target="#applySuccess"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="myFiles-myTeam-joinTeam.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 </div>
@@ -476,8 +430,8 @@
         </div>
         <div class="divider-hr"></div>
         <div class="btn-group">
-            <a href="myFiles-myTeam-joinTeam.html"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="myFiles-myTeam-joinTeam.html"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
 
@@ -489,19 +443,41 @@
 <script type="text/javascript" src="assets/js/jquery.unvel.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
+
 <script type="text/javascript" src="assets/js/sco.modal.js"></script>
 <script type="text/javascript" src="assets/js/icheck.js"></script>
+
 <script type="text/javascript" src="js/main.js"></script>
 <script>
     $(document).ready(function () {
         changeButtonCss();
         function changeButtonCss() {
-            $("#selectAddress input").iCheck({
+            $(".cities input").iCheck({
                 checkboxClass: 'icheckbox_minimal-green',
                 radioClass: 'iradio_minimal-green',
                 increaseArea: '20%'
             });
         }
+    });
+
+    var btn = true;
+    $('#address').click(function(){
+        if(btn){
+            $('.cities').slideDown();
+        }else{
+            $('.cities').slideUp();
+        }
+        btn = !btn;
+    }).focusout(function(){
+        $('.cities').slideUp();
+        btn = true;
+    });
+    $('ul.cities li label').click(function(){
+        var value=$(this).text();
+        console.log(value);
+        $('#address').text(value);
+        $('.cities').stop().slideUp();
+        btn = true;
     });
 </script>
 

@@ -93,10 +93,13 @@
 	padding: 0 0 0 8px;
 }
 .detai-nav li.active a {
-	color: #5aaa00;
+	color: #91c31e;
 }
 .detai-nav a{
 	cursor: pointer;
+}
+.list-inline > li > a:hover, .list-inline > li >a:focus{
+    color: #91c31e;
 }
 .act-details{
 	margin-left: 7px;
@@ -450,6 +453,7 @@
 	width:564px;
 	height:86px;
 	float:left;
+    resize: none;
 }
 .hint-pro{
 	width:656px;
@@ -623,8 +627,6 @@
 	margin:0 0 20px 10px;
 	border:none;
 	position:relative;
-	
-	
 }
 .btn-new-particul{
 	width:670px;
@@ -723,7 +725,6 @@
 .sponsor-icon .sp-l-btn{
 	float:left;
 	width:54px;
-	height:18px;
 	padding-right:46px;
 	text-align:left;
 	}

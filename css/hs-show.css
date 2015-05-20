@@ -330,6 +330,7 @@
 	width:330px;
 	vertical-align:middle;
 	font:12px/30px "宋体";
+    resize: none;
 }
 .mar-sign{
 	margin:12px 0;
@@ -454,6 +455,9 @@
 	display:block;
 	float:left;
 	height:28px;
+}
+.slet-awards input{
+    padding: 0 12px;
 }
 .mar-lab{
 	margin-left:26px;
