@@ -622,7 +622,7 @@
 
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-two">
-            <a id="newShowB-next-btn" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn" data-trigger="modal" data-title="新建秀场" data-target="#newShowB">下一步</button></div></a>
+            <a id="newShowB-next-btn" href="javascript:;"><div class="btn-next selected"><button type="button" class="btn">下一步</button></div></a>
             <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
     </div>
@@ -685,7 +685,7 @@
 
         <div class="divider-hr"></div>
         <div class="btn-group btn-group-three">
-            <a class="newShowA-prev-btn" href="javascript:;" data-trigger="modal" data-title="新建活动" data-target="#newShowA"><div class="btn-prev disabled"><button type="button" class="btn">上一步</button></div></a>
+            <a class="newShowA-prev-btn" href="javascript:;"><div class="btn-prev disabled"><button type="button" class="btn">上一步</button></div></a>
             <a href="#" data-dismiss="modal"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
             <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
         </div>
@@ -766,9 +766,17 @@
 
         $('.newShowA-prev-btn').click(function(){
             $(this).parent().parent().parent().css('display','none');
+            $('#newShowA').scojs_modal({
+                title: '新建秀场',
+                target: '#newShowA'
+            });
         });
         $('#newShowB-next-btn').click(function(){
             $(this).parent().parent().parent().css('display','none');
+            $('#newShowB').scojs_modal({
+                title: '新建秀场',
+                target: '#newShowB'
+            });
         });
 
         $('#hideAllSchool').click(function(){

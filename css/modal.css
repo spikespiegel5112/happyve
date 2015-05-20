@@ -75,13 +75,8 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    height: 30px;
-}
-
-.pop-container .btn-group{
     width: 260px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 30px;
 }
 
 .pop-container .btn-group-three{
@@ -176,6 +171,7 @@
     float: left;
     width: 300px;
     height: 24px;
+    padding: 0 12px;
 }
 .form-group .input-date {
     float: left;

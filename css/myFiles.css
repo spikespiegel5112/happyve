@@ -1283,14 +1283,11 @@
 }
 
 /*我的微课 弹出层*/
-.pop-container-micro{
-    position: relative;
-    top: 50px;
-}
 .micro-lesson-container{
     margin-left: auto;
     margin-right: auto;
     width: 700px;
+    margin-top: 64px;
 }
 .micro-lesson-container .col-title{
     display: inline-block;
