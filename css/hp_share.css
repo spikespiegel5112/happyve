@@ -177,6 +177,8 @@
     font: 12px/18px "宋体";
     color: #505050;
 	margin-bottom:0;
+    max-height: 90px;
+    overflow: hidden;
 }
 
 /** 分页 */

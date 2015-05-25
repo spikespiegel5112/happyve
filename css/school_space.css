@@ -37,9 +37,9 @@
 	
 }
 .incident-text:hover{
-	border-top:2px solid #91c81e;
-	border-right:2px solid #91c81e;
-	border-bottom:2px solid #91c81e;
+	border-top:2px solid #91c31e;
+	border-right:2px solid #91c31e;
+	border-bottom:2px solid #91c31e;
 	padding:9px 9px 9px 10px;
 }
 .incident-text h3 a{
@@ -86,7 +86,7 @@
 	width:580px;
 	margin:34px 0 0 54px;	
 }
-.master-text{
+.master-text, .pop-master-text{
 	width:580px;
 	border-left:2px solid #aeaeae;
 	border-right:2px solid #aeaeae;
@@ -94,7 +94,7 @@
 	margin-top:-20px;
 	padding:30px 0 80px 0;
 }
-.master-text:hover{
+.master-text:hover, .pop-master-text:hover{
 	border-left:2px solid #91c21e;
 	border-right:2px solid #91c21e;
 	border-bottom:2px solid #91c21e;
@@ -105,7 +105,7 @@
 .bottom-line:hover{
 	border-bottom:1px solid #91c21e;	
 }
-.master-text li{
+.master-text li, .pop-master-text li{
 	width:510px;
 	height:22px;
 	line-height:22px;
@@ -114,7 +114,7 @@
 	margin:0 0 24px 32px;
 }
 
-.master-text .master-title{
+.master-text .master-title, .pop-master-text .master-title{
 	width:378px;
 	text-align:center;
 	margin-left:100px;
@@ -124,10 +124,16 @@
 	
 }
 
-.master-text a{
+.master-text a, .pop-master-text a{
 	display:block;
 	margin-top:46px;
 	float:right;
+}
+.master-text a:hover, .pop-master-text a:hover{
+    color: #91c31e;
+}
+.master-text a.summary{
+    margin-right: 20px;
 }
 .details-w{
 	float:right;
@@ -170,7 +176,7 @@
 	width:66px;
 	height:16px;
 	font:14px/16px "微软雅黑";
-	color:#91c81e;
+	color:#91c31e;
 	text-align:center;
 	margin-left:12px;
 	}
@@ -278,7 +284,10 @@
 .list-orgainze ul li{	
 	line-height:24px;
 	height:24px;
-	padding-left:16px;
+	padding: 0 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .list-orgainze ul li:hover{
@@ -337,7 +346,10 @@
 	height:100px;
 }
 
-
+.tooltip{
+    word-wrap: break-word;
+    min-height: 80px;
+}
 
 .tree-point{
 	float:left;
@@ -425,10 +437,10 @@
 }
 .yet-mien{
 	background: url(../img/hp_share/mien-btn-gr.jpg) repeat-x;
-	border:1px solid #91c81e;
+	border:1px solid #91c31e;
 }
 .detai-mien:hover{
-	color:#91c81e;
+	color:#91c31e;
 }
 
 .grid .mien-title {
@@ -492,16 +504,17 @@
 	padding-left:12px;	
 }
 .space-inline li:hover{
-	background-color:#91c81e;
-	}
-.space-inline li:hover a{
-	color:#fff;
-	}
+	background-color:#91c31e;
+}
+
 .space-inline li a{
 	color:#3d3a3a;
 	}
+ul.space-inline li a:hover{
+    color:#fff!important;
+}
 .space-inline .active-click{
-	background-color:#91c81e;
+	background-color:#91c31e;
 	
 }
 .space-inline .active-click a{
@@ -573,7 +586,7 @@
 }
 
 /*.gre-collec{
-	color:#91c81e;
+	color:#91c31e;
 }*/
 /*.remd-collec{
 	width:140px;
@@ -617,7 +630,7 @@
 	background:url(../img/hp_share/film-p.jpg) no-repeat;
 }
 .collective-text ul li:hover{
-	color:#91c81e;
+	color:#91c31e;
 }
 .vip-coll{
 	display:inline-block;
@@ -641,7 +654,7 @@
 	height:26px;
 	font:16px/24px "微软雅黑";
 	color:#fff;
-	background-color:#91c81e;
+	background-color:#91c31e;
 	padding:0;
 	float:right;
 	margin:0;
@@ -975,7 +988,7 @@
 
 
 .agree-class-space:hover {
-    background-color: #91c81e;
+    background-color: #91c31e;
 	color:#fff;
     box-shadow: -1px 2px 0 #50a000;
     -moz-box-shadow: -1px 2px 0 #50a000;
@@ -1017,9 +1030,10 @@
 	margin-left:0;
 }
 .top-gradation{
-	width:644px;
-	overflow:hidden;
-	margin:14px 12px 12px 30px;
+	/*width:644px;
+	overflow:hidden;*/
+    display: inline-block;
+	margin:14px 12px 12px 20px;
 	font:12px "宋体";
 	color:#3c3c3c;
 }
@@ -1029,7 +1043,7 @@
 	border-bottom:1px solid #5aa000;
 }
 .top-gradation .active-sp a{
-	color:#91c81e;
+	color:#91c31e;
 	}
 .top-gradation .top-grad-list{
 	float:left;
@@ -1058,25 +1072,15 @@
 }
 /*校长寄语预览*/
 .preview-container {
-    margin: 20px auto 40px;
+    margin: 40px auto;
     width: 580px;
-    height: 650px;
+    /*height: 650px;*/
 }
-.preview-container .send-word .caption{
-    width: 380px;
-    margin: 0 auto;
-    padding-top: 20px;
-    text-align: center;
-    border-bottom: 1px solid #b4b4b4;
+.pop-master-text{
+    padding-bottom: 40px!important;
 }
-.preview-container .send-word .content {
-    margin: 10px auto 30px auto;
-    width: 520px;
-    line-height: 35px;
-    overflow: visible;
-    text-align: justify;
-    text-indent: 2em;
-    font-size: 14px;
+.pop-master-text a{
+    margin-top: 10px!important;
 }
 .preview-container .send-word .divider-hr{
     width: 520px;
@@ -1361,7 +1365,7 @@
 	height:112px;
 	text-align:center;
 	font:48px/112px "myfiles-stamp";
-	color:#91c81e;
+	color:#91c31e;
 }
 .green-line-mrg{
 	margin-top:26px;

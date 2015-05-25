@@ -36,11 +36,11 @@
     function layout(){
         $(".nav_main_list_item").eq(0).hover(function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
-            $(".nav_dropdown_item").show();
+            $(".nav_dropdown_item").show(300);
             $(this).find("ul").addClass("dropdown_fadein");
         },function(){
             var dropdownEl=$(this).siblings(".nav_dropdown_item");
-            $(".nav_dropdown_item").hide();
+            $(".nav_dropdown_item").hide(300);
             $(this).find("ul").removeClass("dropdown_fadein");
         });
     }

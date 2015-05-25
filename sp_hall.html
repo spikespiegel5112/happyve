@@ -83,7 +83,7 @@
 
             <!-- 页面左部分区域 -->
             <div class="left_content_body">
-               <div class="top-gradation">
+               <div class="top-gradation" style="width: 654px;">
                 	<ul class="top-grad-list list-inline">
                         <li><a href="#">快乐大本营</a></li>
                         <li><a href="#">快乐分享</a></li>
@@ -144,21 +144,60 @@
                 	您的浏览器暂不支持该视频播放
 				</video>
                 <ul class=" list-inline thumb-video-img">
-                	<li><a href="#"><img src="img/hp_share/winnower-pm.jpg" width="155" height="110" alt="视频"></a></li>
-                    <li><a href="#"><img src="img/hp_share/aestheticism-img.jpg" width="155" height="110" alt="视频"></a></li>
-                    <li class="thumb-video-click">
-                    	<a href="#"><img src="img/hp_share/echo-hereweare.jpg" width="155" height="110" alt="视频"></a>
+                    <li>
+                        <a href="javascript:;"><img src="img/hp_share/winnower-pm.jpg" width="155" height="110" alt="视频"></a>
                         <div class="translucence-bac">
-                        	<button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
                         </div>
                     </li>
-                    <li><a href="#"><img src="img/hp_share/sea-blue.jpg" width="155" height="110" alt="视频"></a></li>
+                    <li>
+                        <a href="javascript:;"><img src="img/hp_share/aestheticism-img.jpg" width="155" height="110" alt="视频"></a>
+                        <div class="translucence-bac">
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </li>
+                    <li class="thumb-video-click">
+                        <a href="javascript:;"><img src="img/hp_share/echo-hereweare.jpg" width="155" height="110" alt="视频"></a>
+                        <div class="translucence-bac" style="display: block;">
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="img/hp_share/sea-blue.jpg" width="155" height="110" alt="视频"></a>
+                        <div class="translucence-bac">
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div></li>
+                    <li>
+                        <a href="javascript:;"><img src="img/hp_share/winnower-pm.jpg" width="155" height="110" alt="视频"></a>
+                        <div class="translucence-bac">
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="img/hp_share/aestheticism-img.jpg" width="155" height="110" alt="视频"></a>
+                        <div class="translucence-bac">
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="img/hp_share/echo-hereweare.jpg" width="155" height="110" alt="视频"></a>
+                        <div class="translucence-bac">
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="img/hp_share/sea-blue.jpg" width="155" height="110" alt="视频"></a>
+                        <div class="translucence-bac">
+                            <button class="btn"><span class="glyphicon glyphicon-trash"></span></button>
+                        </div>
+                    </li>
                 </ul>
                 <div class="video-icon">
                 	<button class="btn video-btn" type="button"><span class="glyphicon glyphicon-heart vary-click"></span> <span>2333</span></button>
                 	<button class="btn video-btn" type="button"><span class="glyphicon glyphicon-thumbs-up"></span> <span>233</span></button>
                 </div>
- 
+                <div class="control-thumbnail-icon video-prev"><span></span></div>
+                <div class="control-thumbnail-icon video-next"><span></span></div>
             </div>
             <div class="comment-box">
             	<p>评论</p>
@@ -666,7 +705,42 @@
         document.getElementById('almanac-y').style.display='none';
         document.getElementById('advertise-y').style.display='block'
     }
-  
+
+    videoPrev();
+    videoNext();
+    var flag=0;
+    var maxLength=$('.thumb-video-img li').length;
+    function videoPrev(){
+        $('.video-prev').click(function(){
+            flag++;
+            var value=170*flag;
+            if(flag<1){
+                $('.thumb-video-img').css('marginLeft',value);
+            }else{
+                $('.thumb-video-img').css('marginLeft','-4');
+                flag=0;
+            }
+        });
+    }
+    function videoNext(){
+        $('.video-next').click(function(){
+            flag--;
+            var value=170*flag;
+            if(flag>=-maxLength+4){
+                $('.thumb-video-img').css('marginLeft',value);
+            }else{
+                flag=-maxLength+4;
+                $('.thumb-video-img').css('marginLeft',(maxLength-4)*(-170));
+            }
+        });
+    }
+
+    $('.thumb-video-img>li').click(function(){
+        $(this).addClass('thumb-video-click').siblings().removeClass('thumb-video-click');
+        $(this).addClass('thumb-video-click').siblings().children('.translucence-bac').hide();
+        $(this).children('.translucence-bac').show();
+    });
+
 </script>
 
 

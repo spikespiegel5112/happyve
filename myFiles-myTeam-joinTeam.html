@@ -389,16 +389,16 @@
                     <button class="btn btn-default col-sm-3" type="button" id="address" style="padding-left: 6px;">北京</button>
                     <span class="caret address-arrow"></span>
                     <ul class="cities">
-                        <li><label><input type="radio" name="city" value="北京" checked>北京</label></li>
-                        <li><label><input type="radio" name="city" value="天津" >天津</label></li>
-                        <li><label><input type="radio" name="city" value="上海" >上海</label></li>
-                        <li><label><input type="radio" name="city" value="广东" >广东</label></li>
-                        <li><label><input type="radio" name="city" value="河北省" >河北省</label></li>
-                        <li><label><input type="radio" name="city" value="河南省" >河南省</label></li>
-                        <li><label><input type="radio" name="city" value="湖南" >湖南</label></li>
-                        <li><label><input type="radio" name="city" value="湖北" >湖北</label></li>
-                        <li><label><input type="radio" name="city" value="安徽" >安徽</label></li>
-                        <li><label><input type="radio" name="city" value="广西" >广西</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="北京" checked>北京</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="天津" >天津</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="上海" >上海</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="广东" >广东</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="河北省" >河北省</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="河南省" >河南省</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="湖南" >湖南</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="湖北" >湖北</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="安徽" >安徽</label></li>
+                        <li><label><input class="addressRd" type="radio" name="city" value="广西" >广西</label></li>
                     </ul>
                 </div>
             </div>
@@ -470,6 +470,7 @@
         btn = !btn;
     });
     $('ul.cities li label').click(function(){
+        alert(2222)
         var value=$(this).text();
         $('#address').text(value);
         $('.cities').stop().slideUp();
@@ -479,7 +480,6 @@
         $('.cities').slideUp();
         btn = true;
     });
-
 
 </script>
 

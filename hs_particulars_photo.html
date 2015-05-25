@@ -13,30 +13,54 @@
     <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" type="text/css" media="all">
 
     <!-- 自己页面的样式文件 -->
-    <link rel="stylesheet" href="assets/css/camera.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/hs_particulars_photo.css" type="text/css" media="all"/>
 </head>
 <body>
 
 
 <div class="fluid_container">
-    <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
-        <div data-thumb="img/hp_share/images/slides/thumbs/bridge.jpg" data-src="img/hp_share/images/slides/bridge.jpg/"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/leaf.jpg" data-src="img/hp_share/images/slides/leaf.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/road.jpg" data-src="img/hp_share/images/slides/road.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/sea.jpg" data-src="img/hp_share/images/slides/sea.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/shelter.jpg" data-src="img/hp_share/images/slides/shelter.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/tree.jpg" data-src="img/hp_share/images/slides/tree.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/bridge.jpg" data-src="img/hp_share/images/slides/bridge.jpg/"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/leaf.jpg" data-src="img/hp_share/images/slides/leaf.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/road.jpg" data-src="img/hp_share/images/slides/road.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/sea.jpg" data-src="img/hp_share/images/slides/sea.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/shelter.jpg" data-src="img/hp_share/images/slides/shelter.jpg"></div>
-        <div data-thumb="img/hp_share/images/slides/thumbs/tree.jpg" data-src="img/hp_share/images/slides/tree.jpg"></div>
-
-    </div><!-- #camera_wrap_3 -->
-
-    <div class="figure-side">
+    <div id="photoCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active"><img src="img/hp_share/slides/big_bunny_fake.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/bridge.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/leaf.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/road.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/sea.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/shelter.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/tree.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/big_bunny_fake.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/bridge.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/leaf.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/road.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/sea.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/shelter.jpg" alt=""></div>
+            <div class="item"><img src="img/hp_share/slides/tree.jpg" alt=""></div>
+        </div>
+        <a class="carousel-control prev-slide" href="javascript:;">&lsaquo;</a>
+        <a class="carousel-control next-slide" href="javascript:;">&rsaquo;</a>
+        <div class="thumbnail-container">
+            <ul class="control-btn">
+                <li class="active"><img src="img/hp_share/slides/thumbs/big_bunny_fake.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/bridge.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/leaf.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/road.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/sea.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/shelter.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/tree.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/big_bunny_fake.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/bridge.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/leaf.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/road.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/sea.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/shelter.jpg" ></li>
+                <li><img src="img/hp_share/slides/thumbs/tree.jpg" ></li>
+            </ul>
+        </div>
+        <a class="thumbnail-btn prev-page" href="javascript:;">&lsaquo;</a>
+        <a class="thumbnail-btn next-page" href="javascript:;">&rsaquo;</a>
+    </div>
+</div>
+<div class="figure-side">
         <div class="close">×</div>
         <div class="photo-description">
             <p>回忆过去的点点滴滴</p>
@@ -67,34 +91,67 @@
             </div>
         </div>
     </div>
-    <div class="editor-description">
+<div class="editor-description">
         <div class="close btn-close">×</div>
         <input type="text">
         <p class="help-block">最多输入<span>20</span>字</p>
         <button class="btn ensure btn-close">确定</button>
         <button class="btn notsure btn-close">取消</button>
     </div>
-</div>
 
 <!--照片翻页 结束-->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-
-<script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="assets/js/camera.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.js"></script>
 
 <script type="text/javascript">
 
     (function ($) {
-        $('#camera_wrap_4').camera({
-            height: 'auto',
-            loader: 'bar',
-            pagination: false,
-            thumbnails: true,
-            hover: true,
-            opacityOnGrid: false,
-            imagePath: 'img/hp_share/images/',
-            time: 1000
+        thumbnailPage();
+
+        $("#photoCarousel").carousel('pause');
+        $(".prev-slide").click(function(){
+            $("#photoCarousel").carousel('prev');
+            var nIndex=$('.carousel-inner .item.active').index();
+            $(".control-btn>li").eq(nIndex-1).addClass('active').siblings().removeClass('active');
         });
+        $(".next-slide").click(function(){
+            $("#photoCarousel").carousel('next');
+            var nIndex=$('.carousel-inner .item.active').index();
+            if(nIndex>=($(".control-btn>li").length-1))
+            nIndex=-1;
+            $(".control-btn>li").eq(nIndex+1).addClass('active').siblings().removeClass('active');
+        });
+
+        $(".control-btn>li").click(function(){
+            $("#photoCarousel").carousel($(this).index());
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+
+        function thumbnailPage(){
+            var flag=0;
+            var maxLength=Math.ceil($('.control-btn li').length/7)*518;
+            $('.prev-page').click(function(){
+                flag++;
+                var value=flag*518;
+                if(value>=0){
+                    $('.control-btn').css('margin-left',0);
+                    flag=0;
+                }else{
+                    $('.control-btn').css('margin-left',value);
+                }
+            });
+            $('.next-page').click(function(){
+                flag--;
+                var value=flag*518;
+                if(value>518-maxLength){
+                    $('.control-btn').css('margin-left',value);
+                }else{
+                    $('.control-btn').css('margin-left',518-maxLength);
+                    flag=1-Math.ceil($('.control-btn li').length/7);
+                }
+            });
+        }
+
 
         $('.editor>span').first().click(function(){
             $('.editor-description').show().prev().css('opacity','0.5');

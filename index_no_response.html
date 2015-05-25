@@ -86,19 +86,15 @@
                                     <!-- main slider carousel items -->
                                     <div class="carousel-inner">
                                         <div class="active item" data-slide-number="0">
-                                            0
                                             <img src="img/answer-hero.jpg" class="img-responsive">
                                         </div>
                                         <div class="item" data-slide-number="1">
-                                            1
                                             <img src="img/answer-hero.jpg" class="img-responsive">
                                         </div>
                                         <div class="item" data-slide-number="2">
-                                            2
                                             <img src="img/answer-hero.jpg" class="img-responsive">
                                         </div>
                                         <div class="item" data-slide-number="3">
-                                            3
                                             <img src="img/answer-hero.jpg" class="img-responsive">
                                         </div>
                                     </div>
@@ -646,17 +642,11 @@
 <script type="text/javascript" src="js/main.js"></script>
 <script>
     function indexCarouselAction() {
-       /* $('#happy-carousel').carousel({
+
+        $('#happy-carousel').carousel({
          interval: 4000
-         });*/
-        $('[id^=carousel-selector-]').click( function(){
-            var id_selector = $(this).attr("id");
-            var id = id_selector.substr(id_selector.length -1);
-            id = parseInt(id);
-            $('#happy-carousel').carousel(id);
-            $('[id^=carousel-selector-]').removeClass('selected');
-            $(this).addClass('selected');
-        });
+         });
+
         $('[id^=carousel-selector-]').hover(function(){
             var id_selector = $(this).attr("id");
             var id = id_selector.substr(id_selector.length -1);
@@ -665,13 +655,18 @@
             $('#happy-carousel').carousel('pause');
             $('[id^=carousel-selector-]').removeClass('selected');
             $(this).addClass('selected');
+        }).mouseleave(function(){
+            $('#happy-carousel').carousel({
+                interval: 4000
+            });
         });
-        /*$('#happy-carousel').on('slid', function (e) {
+
+        $('#happy-carousel').on('slid', function (e) {
             var id = $('.item.active').data('slide-number');
             id = parseInt(id);
             $('[id^=carousel-selector-]').removeClass('selected');
             $('[id=carousel-selector-'+id+']').addClass('selected');
-        });*/
+        });
     };
 
     $(document).ready(function(){

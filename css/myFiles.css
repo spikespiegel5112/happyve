@@ -259,7 +259,7 @@
     left: 57px;
 }
 
-.footprint-content .edit-btn {
+.footprint-content .edit-btn, .footprint-content .message-btn {
 	width:60px;
 	height:24px;
 	padding:2px 0 0 0;
@@ -273,7 +273,7 @@
 }
 
 
-.footprint-content .inbox-btn {
+.footprint-content .inbox-btn, .footprint-content .zan-btn {
 	width:60px;
 	height:24px;
 	padding:2px 0 0 0;
@@ -964,7 +964,10 @@
 .rank-name-title{
 	font:12px/24px "宋体";
 	margin:8px 0 0 126px;
-	}
+}
+.rank-name-title span{
+    padding-left: 15px;
+}
 .rank-img-static{
 	width:592px;
 	height:232px;
@@ -1215,6 +1218,7 @@
 
 .up-btn-label{
 	float:left;
+    margin-left: 10px;
 }
 .btn-label-click .btn:hover span{
 	color:#ff5f21;
@@ -1472,6 +1476,25 @@
 }
 .detailLessonTab .activity-pagin .pagination > li > a, .detailLessonTab .activity-pagin .pagination > li > span{
     color: #3C3C3C;
+}
+/*我的好友 详情*/
+.apply-friend{
+    position: relative;
+    margin: 15px 50px;
+    width: 120px;
+    height: 25px;
+    background-color: #91c31e;
+    border: medium none;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0 2px 0 #50a000;
+}
+.apply-friend:hover{
+    color: #3C3C3C;
+}
+.friend-label{
+    margin: 10px 0 0 -5px;
+    width: 664px;
 }
 /* CSS Document */
 
