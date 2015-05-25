@@ -379,9 +379,9 @@
 #ycontainer{
 	
 	position:relative;
-	width:60%;
-	margin:0;
-	padding:0 0 0 10px;
+	width:690px;
+	margin:0 0 0 8px;
+	padding:0 0 0 14px;
 	
 }
 
@@ -412,7 +412,7 @@
 	height:34px;
 	background-color:#f5f5f5;
 	overflow:hidden;
-	padding:0 6px;
+	padding:0 6px 0 0;
 }
 
 .detai-mien{
@@ -425,7 +425,7 @@
 	border-radius:2px;
 	-moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-	margin:6px 6px 0 0;
+	margin:6px  0 0 6px;
 }
 .no-mien{
 	background: url(../img/hp_share/mien-btn.jpg) repeat-x;
