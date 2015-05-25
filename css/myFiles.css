@@ -237,11 +237,11 @@
     float: left;
     width: 128px;
     height: 26px;
-    background-color: #a7d34b;
-    -webkit-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
-    -moz-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
-    -o-box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
-    box-shadow: inset 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    background-color: #91c31e;
+    -webkit-box-shadow: 1px 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    -moz-box-shadow: 1px 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    -o-box-shadow: 1px 1px 0 #7a7a7a, 1px 1px 1px #474646;
+    box-shadow: 1px 1px 0 #7a7a7a, 1px 1px 1px #474646;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -o-border-radius: 4px;
@@ -252,32 +252,34 @@
 .handle-edit em {
     width: 14px;
     height: 9px;
-    background: url(../img/personage-bar.jpg) no-repeat;
+    background: url(../img/personage-bar.png) no-repeat;
     position: absolute;
     z-index: 4;
     bottom: -8px;
     left: 57px;
 }
 
-.footprint-content .edit-btn, .footprint-content .message-btn {
+.footprint-content .edit-btn {
 	width:60px;
 	height:24px;
 	padding:2px 0 0 0;
     color: #96c81e;
-    margin:0 40px 0 255px;
+
 }
 .phone-box-name{
 	display:inline-block;
 	width:36px;
 	font-weight:normal;
+    vertical-align: top;
 }
 
 
-.footprint-content .inbox-btn, .footprint-content .zan-btn {
+.footprint-content .inbox-btn{
 	width:60px;
 	height:24px;
 	padding:2px 0 0 0;
     color: #ff7800;
+    margin:0 40px 0 255px;
 }
 .textarea-myfiles-box{
 	width: 458px;
@@ -377,19 +379,21 @@
 	vertical-align:middle;
 	}
 .tel-phone-edit{
-	float:right;
+    position: relative;
+    display: inline-block;
 	padding:0 0 0 6px;
 	text-align:left;
 	width:145px;
 	height:24px;
 	font:12px "宋体";
-	margin:8px 198px 0 0;
+	margin:8px 0 0 6px;
 }
 .list-footprint .phone-gly-edit{
-	width:165px;
+    position: relative;
+    display: inline-block;
+	width:180px;
 	height:26px;
-	float:right;
-	margin: 6px 178px 0 0 ;
+	margin: 6px 0 0 6px ;
 }
 .list-footprint .phone-gly-edit .btn{
 	display:block;
@@ -1195,7 +1199,7 @@
 }
 .img-label-thum img{
 	display:block;
-	margin:auto ;
+	margin-left: 15px;
 }
 
 .btn-label-click{
@@ -1486,15 +1490,41 @@
     background-color: #91c31e;
     border: medium none;
     border-radius: 4px;
-    color: #fff;
     box-shadow: 0 2px 0 #50a000;
-}
-.apply-friend:hover{
-    color: #3C3C3C;
 }
 .friend-label{
     margin: 10px 0 0 -5px;
     width: 664px;
+}
+.phone-gly-edit .input-group-addon{
+    display: inline-block;
+    margin-top: -15px;
+    height: 25px;
+    border: none;
+    background-color: #fff;
+}
+.phone-gly-edit .input-group-addon img{
+    position: relative;
+    left: -25px;
+    top: -8px;
+}
+.back{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 0 30px;
+}
+.shade-link-forfriend{
+    font: bold 18px/22px "微软雅黑";
+    color:#91c31e;
+    margin:-40px 0 20px 30px;
+    background-color: #fff;
+    width: 72px;
+
+    -webkit-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
+    -moz-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
+    -o-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
+    -ms-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
+    text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
 }
 /* CSS Document */
 
