@@ -264,7 +264,8 @@
 	height:24px;
 	padding:2px 0 0 0;
     color: #96c81e;
-
+    position: relative;
+    left: 310px;
 }
 .phone-box-name{
 	display:inline-block;
@@ -279,7 +280,8 @@
 	height:24px;
 	padding:2px 0 0 0;
     color: #ff7800;
-    margin:0 40px 0 255px;
+    position: relative;
+    left: 270px;
 }
 .textarea-myfiles-box{
 	width: 458px;

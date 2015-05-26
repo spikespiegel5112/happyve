@@ -1044,7 +1044,8 @@ ul.space-inline li a:hover{
 }
 .top-gradation .active-sp a{
 	color:#91c31e;
-	}
+    font-weight: bold;
+}
 .top-gradation .top-grad-list{
 	float:left;
 	margin:0;
