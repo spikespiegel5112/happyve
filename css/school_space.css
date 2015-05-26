@@ -1029,8 +1029,8 @@ ul.space-inline li a:hover{
 	margin-left:0;
 }
 .top-gradation{
-	/*width:644px;
-	overflow:hidden;*/
+	width:654px;
+	overflow:hidden;
     display: inline-block;
 	margin:14px 12px 12px 20px;
 	font:12px "宋体";
