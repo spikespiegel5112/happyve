@@ -40,6 +40,7 @@
 				imgsrcObj.imgsrc.push(imgsrc);
 				i++;
 			}
+			console.log(imgsrcObj);
 			if($('.changemyself_content_img')){
 				var tdEl=$('.'+classname).find('td');
 				tdEl.each(function(){$(this).find('div').css({'background-image':'url(./'+imgsrcObj.imgsrc[0].imgsrc1+')','background-size':gridWidth+"px "+gridHeight+"px"})});

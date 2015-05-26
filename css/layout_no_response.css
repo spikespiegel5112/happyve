@@ -100,7 +100,7 @@ a:hover {
 .footer_sns_wrapper{margin:0 auto;}
 .footer_sns_wrapper:after{content: "";display: block;clear: both;}
 .f-partner p a{color:#888;}
-#footer {  height: 300px;  margin: 10px 0;  }
+#footer {  height: 300px;  margin: 10px 0; }
 #copy-right {  font: 12px "微软雅黑";  text-align:  center;  line-height: 30px;  height: 30px;  width: 100%; min-width: 1024px; border-top:1px solid #ccc;  }
 /* common style  */
 /* 此处放通用样式 */
