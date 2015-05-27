@@ -21,9 +21,6 @@
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="css/happy_exercise.css" type="text/css">
 
-
-
-
 </head>
 <body>
 <!-- 头部登陆导航 开始 -->
@@ -50,7 +47,15 @@
                         <li ><a href="javascript:;">大秀场</a></li>
                     </ul>
                 </li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="hero_game.html">英雄风云场<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
             </ul>
@@ -148,11 +153,7 @@
                             <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
                             <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
                             <li class=" bottom-line">全面与个性和谐统一的发展。让我们在教育中，坚持做人与成才并重，智商与情商并重.</li>
-                            <li class=" bottom-line" style="text-indent: 2em">洒下园丁千滴汗，浇得东园秋色浓。每一个孩子都是一笔珍贵的财富，让我们为孩子们的快</li>
-                            <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
-                            <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
-                            <li class=" bottom-line">全面与个性和谐统一的发展。让我们在教育中，坚持做人与成才并重，智商与情商并重.</li>
-                            <a href="javascript:;">详情<div class="details-w"><div class="details-n"></div></div></a>
+                            <a href="javascript:;" data-trigger="modal" data-title="寄语详情" data-target="#sendWordPreview">详情<div class="details-w"><div class="details-n"></div></div></a>
                         </ul>
                     </div>
                     <div class="send-link send-befo">
@@ -219,6 +220,7 @@
 
             </div>
         </div>
+
         <div class="right_content_wrapper">
             <div class="layout_dashboard_wrapper">
                 <ul class="layout_dashboard_indication_hover_wrapper">
@@ -575,6 +577,10 @@
                     <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
                     <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
                     <li class=" bottom-line">全面与个性和谐统一的发展。让我们在教育中，坚持做人与成才并重，智商与情商并重.</li>
+                    <li class=" bottom-line" style="text-indent: 2em">洒下园丁千滴汗，浇得东园秋色浓。每一个孩子都是一笔珍贵的财富，让我们为孩子们的快</li>
+                    <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
+                    <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
+                    <li class=" bottom-line">全面与个性和谐统一的发展。让我们在教育中，坚持做人与成才并重，智商与情商并重.</li>
                     <a href="javascript:;">详情<div class="details-w"><div class="details-n"></div></div></a>
                 </ul>
             </div>
@@ -615,13 +621,13 @@
         });
     });
     /*校长寄语详情*/
-    $('.master-text>li:gt(4)').hide();
-    $('.master-text>a').click(function(){
-        if($('.master-text>li:gt(4)').is(':visible')){
-            $('.master-text>li:gt(4)').hide();
+    $('.pop-master-text>li:gt(4)').hide();
+    $('.pop-master-text>a').click(function(){
+        if($('.pop-master-text>li:gt(4)').is(':visible')){
+            $('.pop-master-text>li:gt(4)').hide();
             $(this).html('详情<div class="details-w"><div class="details-n"></div></div>').removeClass('summary');
         }else{
-            $('.master-text>li:gt(4)').show();
+            $('.pop-master-text>li:gt(4)').show();
             $(this).html('<<概略').addClass('summary');
         }
     });

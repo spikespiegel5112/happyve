@@ -16,8 +16,6 @@
     <link rel="stylesheet" href="css/index.css" type="text/css" media="all">
 
     <!-- 自己页面的样式文件 -->
-    <link rel="stylesheet" href="assets/css/green.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/modal.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all">
 </head>
 <body>
@@ -45,7 +43,15 @@
                         <li ><a href="javascript:;">大秀场</a></li>
                     </ul>
                 </li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="hero_game.html">英雄风云场<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
             </ul>
@@ -82,8 +88,12 @@
 
             <!-- 页面左部分区域 -->
             <div class="left_content_body">
-                <div class="footprint-text" style="width: 654px;">
-                    <p class="shade-link">我的好友</p>
+                <div class="back">
+                    <a href="javascript:;">&lt;&lt; 返回</a>
+                </div>
+                <div style="width: 654px;margin: 20px auto;">
+                    <div class="green_line"></div>
+                    <p class="shade-link-forfriend">个人信息</p>
                     <div class="">
                         <div class="member-footp">
                             <img src="img/head-file.jpg" width="72" height="72" alt="会员头像">
@@ -497,77 +507,6 @@
     <p>苏ICP备 11087253号-2 | &copy; 2014 无锡众志和达数据计算股份有限公司</p>
 </div>
 <!-- 版权信息 结束 -->
-<!--弹出层 开始-->
-<!--新建学校-->
-<div class="modal fade" id="newSchool">
-    <div class="modal-header">
-        <a class="close" href="#" data-dismiss="modal">×</a>
-        <h3>新建学校</h3>
-    </div>
-
-    <div class="form-group-pop">
-
-        <form class="form-horizontal">
-            <div class="form-group">
-                <label for="schoolName" class="col-sm-4 control-label">学校名称：</label>
-                <div class="col-sm-5">
-                    <input type="text" class="form-control" id="schoolName" placeholder="请输入学校名称">
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="address" class="col-sm-4 control-label">所属省份：</label>
-                <div class="col-sm-5">
-                    <button class="btn btn-default col-sm-3" type="button" id="address" style="padding-left: 6px;">北京</button>
-                    <span class="caret address-arrow"></span>
-                    <ul class="cities">
-                        <li><label><input class="addressRd" type="radio" name="city" value="北京" checked>北京</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="天津" >天津</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="上海" >上海</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="广东" >广东</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="河北省" >河北省</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="河南省" >河南省</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="湖南" >湖南</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="湖北" >湖北</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="安徽" >安徽</label></li>
-                        <li><label><input class="addressRd" type="radio" name="city" value="广西" >广西</label></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="areaCode" class="col-sm-4 control-label">区号：</label>
-                <div class="col-sm-3">
-                    <input type="text" class="form-control" id="areaCode" value="010">
-                </div>
-            </div>
-        </form>
-        <div class="divider-hr"></div>
-        <div class="btn-group">
-            <a href="#applySuccess" data-trigger="modal" data-title="申请加入" data-target="#applySuccess"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
-        </div>
-    </div>
-</div>
-<!--提交申请成功-->
-<div class="modal fade" id="applySuccess">
-    <div class="modal-header">
-        <a class="close" href="#" data-dismiss="modal">×</a>
-        <h3>申请加入</h3>
-    </div>
-    <div class="form-group-pop">
-        <div class="apply-message">
-            <div class="success-icon glyphicon glyphicon-ok-sign"></div>
-            <h4>申请已提交，请留意系统信息</h4>
-        </div>
-        <div class="divider-hr"></div>
-        <div class="btn-group">
-            <a href="#" data-dismiss="modal"><div class="btn-ensure selected"><button type="button" class="btn">确定</button></div></a>
-            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
-        </div>
-    </div>
-
-</div>
-<!--弹出层 结束-->
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="assets/js/jquery.SuperSlide.2.1.1.js"></script>
@@ -575,44 +514,6 @@
 <script type="text/javascript" src="assets/js/jquery.matchHeight.min.js"></script>
 <script type="text/javascript" src="assets/js/jquery.scrollUp.min.js"></script>
 
-<script type="text/javascript" src="assets/js/sco.modal.js"></script>
-<script type="text/javascript" src="assets/js/icheck.js"></script>
-
 <script type="text/javascript" src="js/main.js"></script>
-<script>
-    $(document).ready(function () {
-        changeButtonCss();
-        function changeButtonCss() {
-            $(".cities input").iCheck({
-                checkboxClass: 'icheckbox_minimal-green',
-                radioClass: 'iradio_minimal-green',
-                increaseArea: '20%'
-            });
-        }
-    });
-
-    var btn = true;
-    $('#address').click(function(){
-        if(btn){
-            $('.cities').slideDown();
-        }else{
-            $('.cities').slideUp();
-        }
-        btn = !btn;
-    });
-    $('ul.cities li label').click(function(){
-        alert(2222)
-        var value=$(this).text();
-        $('#address').text(value);
-        $('.cities').stop().slideUp();
-        btn = true;
-    });
-    $('.cities').mouseleave(function(){
-        $('.cities').slideUp();
-        btn = true;
-    });
-
-</script>
-
 </body>
 </html>

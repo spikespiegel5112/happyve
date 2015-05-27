@@ -1,0 +1,115 @@
+@charset "utf-8";
+.hero-theory-banner{
+    position: relative;
+    margin: 0 auto;
+    width: 670px;
+    height: 240px;
+    background: url("../img/hr_explain/herotheory-banner.jpg") no-repeat 0 0;
+}
+.hero-theory-banner .theory{
+    background-color: #fff;
+    height: 110px;
+    left: 25px;
+    line-height: 1.5em;
+    padding: 15px 20px;
+    position: absolute;
+    text-align: justify;
+    top: 100px;
+    width: 368px;
+    word-wrap: break-word;
+}
+.theory-detail-box{
+    margin: -23px auto 20px;
+    padding-top: 20px;
+    width: 670px;
+    /*height: 700px;*/
+    background: url("../img/hr_explain/whathero-bg.png") no-repeat 0 -50px;
+}
+.theory-detail{
+    margin: 0 auto;
+    width: 600px;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.theory-detail > div{
+    margin: 20px 0;
+}
+.theory-detail > div > p{
+    text-align: justify;
+}
+.start-para > p{
+    text-indent: 2em;
+}
+.theory-detail div> p >span{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+.start-para > p > span, .end-para > p >span {
+    color: #ff781e;
+}
+.hope-para > p > span{
+    color: #50a000;
+}
+.confident-para > p > span{
+    color: #ffb450;
+}
+.tenacity-para > p > span{
+    color: #b482e1;
+}
+.optimistic-para > p > span{
+    color: #78c8c8;
+}
+.hope-para > div, .tenacity-para > div{
+    display: inline-block;
+    float: left;
+}
+.hope-para > p, .tenacity-para > p{
+    padding: 15px 0;
+}
+.confident-para > div, .optimistic-para > div{
+    display: inline-block;
+    float: right;
+    margin-top: -25px;
+}
+.end-para > p{
+    text-indent: 2em;
+}
+/*解读快乐英雄 积极教育理论列表*/
+.green_line{
+    margin: 0 auto;
+    width: 654px;
+    height: 2px;
+}
+.theory-list{
+    width: 660px;
+    margin: 0 auto;
+}
+.theory-list > ul{
+    display: inline-block;
+    float: left;
+    width: 310px;
+    margin-left: 20px;
+}
+.theory-list > ul li:first-child{
+    margin: 15px 0;
+    height: 30px;
+    color: #91c31e;
+    border: none;
+}
+.theory-list > ul li{
+    height: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.theory-list > ul li:hover{
+    font-weight: bold;
+}
+.article-list li{
+    border-right: 1px solid #b4b4b4;
+}
+.video-list{
+
+}

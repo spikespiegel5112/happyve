@@ -41,7 +41,15 @@
                         <li ><a href="javascript:;">大秀场</a></li>
                     </ul>
                 </li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="hero_game.html">英雄风云场<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
             </ul>
@@ -89,13 +97,13 @@
                                             <img src="img/answer-hero.jpg" class="img-responsive">
                                         </div>
                                         <div class="item" data-slide-number="1">
-                                            <img src="img/answer-hero.jpg" class="img-responsive">
+                                            <img src="img/psychtest-carousel.jpg" class="img-responsive">
                                         </div>
                                         <div class="item" data-slide-number="2">
-                                            <img src="img/answer-hero.jpg" class="img-responsive">
+                                            <img src="img/happyexercise-carousel.jpg" class="img-responsive">
                                         </div>
                                         <div class="item" data-slide-number="3">
-                                            <img src="img/answer-hero.jpg" class="img-responsive">
+                                            <img src="img/happyshare-carousel.jpg" class="img-responsive">
                                         </div>
                                     </div>
                                     <!-- main slider carousel nav controls -->
@@ -647,7 +655,7 @@
          interval: 4000
          });
 
-        $('[id^=carousel-selector-]').hover(function(){
+        $('[id^=carousel-selector-]').click(function(){
             var id_selector = $(this).attr("id");
             var id = id_selector.substr(id_selector.length -1);
             id = parseInt(id);

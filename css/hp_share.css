@@ -35,14 +35,17 @@
 
 .activity-header-slide .hd ul li {
 	float: left;
-	cursor: pointer;
-	color: #414141;
+    margin-right: 5px;
 	width: 20%;
 	text-align: center;
+    background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 .activity-header-slide .hd ul li a {
 	font: 18px "微软雅黑";
+    position: relative;
+    top: 3px;
 }
 
 .activity-header-slide .hd ul li.on {
@@ -65,16 +68,16 @@
 }
 
 .activity-header-slide .hd ul .ahs-first.on::after {
-	left: 65px;
+	left: 63px;
 }
 
 .activity-header-slide .hd ul .ahs-second.on::after {
 
-	left: 200px;
+	left: 203px;
 }
 
 .activity-header-slide .hd ul .ahs-third.on::after {
-	left: 335px;
+	left: 346px;
 }
 
 
@@ -134,7 +137,7 @@
 	-moz-border-radius: 0;
     -webkit-border-radius: 0;
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
     /*text-align: center;*/
@@ -405,9 +408,8 @@
 /* 快乐分享 弹出层*/
 .pop-container .newAlbum-box{
     margin-top: 50px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 680px;
+    margin-left: 50px;
 }
 .newAlbum-box .form-group{
     margin-bottom: 0;
@@ -432,12 +434,14 @@
 }
 .newAlbum-box .help-block{
     position: relative;
-    text-align: right;
-    padding-right: 20px;
     top: -55px;
+    left: 310px;
+    width: 175px;
 }
 .newAlbum-box .help-block.for-name{
-    top: -206px;
+    top: -204px;
+    left: 400px;
+    width: 90px;
 }
 .newAlbum-box .help-block span{
     color: #ff0000;

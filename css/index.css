@@ -162,6 +162,7 @@
 
     border: #caceb2 solid 1px;
     position: relative;
+    cursor: pointer;
 }
 
 .pointing-next {
