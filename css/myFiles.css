@@ -1299,7 +1299,10 @@
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    margin-top: 64px;
+    margin-top: 44px;
+}
+.micro-lesson-container .form-group{
+    margin-bottom: 5px;
 }
 .micro-lesson-container .col-title{
     display: inline-block;
@@ -1344,6 +1347,7 @@
     height: 78px;
     font-size: 12px;
     border-radius: 0;
+    resize: none;
 }
 .micro-lesson-container .form-group-texarea{
     display: inline-block;
@@ -1378,6 +1382,7 @@
     position: relative;
     padding-left: 147px;
     text-align: left;
+    top: 8px;
 }
 .upload-file-container {
     display: inline-block;
