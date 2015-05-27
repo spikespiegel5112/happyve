@@ -10,15 +10,16 @@
 		var progress=0;
 		var changeCount=0;
 		var percentage=0;
+		var clickReady=true;
 		init();
 		function init(){
-			generateRandom();
+			generateRandom(1,28);
 			bulidgrid(classname);
 			showgrid(classname);
 			showPercentage();
 		}
 		function bulidgrid(classname){
-			gridEl+="<table class='"+classname+"'><tbody>";
+			gridEl+="<table cellpadding='0' cellspacing='0' border='0' class='"+classname+"'><tbody>";
 			for(row=0;row<4;row++){
 				gridEl+='<tr>';
 				for(i=0;i<7;i++){
@@ -40,7 +41,6 @@
 				imgsrcObj.imgsrc.push(imgsrc);
 				i++;
 			}
-			console.log(imgsrcObj);
 			if($('.changemyself_content_img')){
 				var tdEl=$('.'+classname).find('td');
 				tdEl.each(function(){$(this).find('div').css({'background-image':'url(./'+imgsrcObj.imgsrc[0].imgsrc1+')','background-size':gridWidth+"px "+gridHeight+"px"})});
@@ -68,10 +68,11 @@
 				}
 			}
 		}
-		function generateRandom(){
+		function generateRandom(key,cellCount){
 			var cellCount=28;
 			var loopTimes=cellCount;
 			var rand=0;
+			//真随机算法
 			for(var i=0;i<loopTimes;i++){
 				rand=parseInt(Math.floor(Math.random()*cellCount));
 				for(var j=0;j<i;j++){
@@ -82,6 +83,23 @@
 				}
 				tdElArr.push(rand);
 			}
+
+			//伪随机算法
+			// var rng= new RNG({
+			// 	foo:key
+			// });
+			// for(var i=0;i<loopTimes;i++){
+			// 	rand=~~(rng.uniform() * 28)
+			// 	// for(var j=0;j<i;j++){
+			// 	// 	if(tdElArr[j]==rand){
+			// 	// 		tdElArr.splice(j,1);
+			// 	// 		loopTimes++;
+			// 	// 	}
+			// 	// }
+			// 	tdElArr.push(rand);
+			// }
+			// console.log(tdElArr);
+			
 		}
 		function showPercentage(){
 			for(var i=0;i<$('.newbadhabbit_content_item li').length;i++){
@@ -93,15 +111,28 @@
 			}
 		}
 		$('.note_wrapper .changemyself_button').click(function(){
-			var imgsrc1=$('.changemyself_content_img img').eq(0).attr('src');
-			var imgsrc2=$('.changemyself_content_img img').eq(1).attr('src');
-			var tdEl=$('.'+classname).find('td');
-			var progress=$('.newbadhabbit_content_item li').attr('progress');
-			setTimeout(function(){
-				tdEl.eq(tdElArr[~~(changeCount)+~~(progress)]).find('div').css({'background-image':'url(./'+imgsrcObj.imgsrc[0].imgsrc2+')'});
-				changeCount++
-			},500);
-			tdEl.eq(tdElArr[~~(changeCount)+~~(progress)]).addClass('rotate_360');
+			if(clickReady==true){
+				clickReady=false;
+				var imgsrc1=$('.changemyself_content_img img').eq(0).attr('src');
+				var imgsrc2=$('.changemyself_content_img img').eq(1).attr('src');
+				var tdEl=$('.'+classname).find('td');
+				var progress=$('.newbadhabbit_content_item li').attr('progress');
+				tdEl.eq(tdElArr[~~(changeCount)+~~(progress)]).find('div').addClass('rotate_360');
+				setTimeout(function(){
+					tdEl.eq(tdElArr[~~(changeCount)+~~(progress)]).find('div').css({'background-image':'url(./'+imgsrcObj.imgsrc[0].imgsrc2+')'});
+					
+				},500);
+
+				setTimeout(function(){
+					tdEl.eq(tdElArr[~~(changeCount)+~~(progress)]).find('div').removeClass('rotate_360');
+					changeCount++
+					clickReady=true;
+					// clearTimeout();
+				},1000);
+			}else{
+				return;
+			}
+			
 		});
 		$('textarea').keyup(function(){
 			var textVal=$(this).val();

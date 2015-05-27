@@ -34,13 +34,13 @@
     }
 
     function layout(){
-        $(".nav_main_list_item").hover(function(){
-            var dropdownEl=$(this).children(".nav_dropdown_item");
-            dropdownEl.slideDown();
+        $(".nav_main_list_item").eq(0).hover(function(){
+            var dropdownEl=$(this).siblings(".nav_dropdown_item");
+            $(".nav_dropdown_item").show();
             $(this).find("ul").addClass("dropdown_fadein");
         },function(){
-            var dropdownEl=$(this).children(".nav_dropdown_item");
-            dropdownEl.hide();
+            var dropdownEl=$(this).siblings(".nav_dropdown_item");
+            $(".nav_dropdown_item").hide();
             $(this).find("ul").removeClass("dropdown_fadein");
         });
     }
