@@ -48,7 +48,15 @@
                         <li ><a href="javascript:;">大秀场</a></li>
                     </ul>
                 </li>
-                <li class="nav_main_list_item"><a class="nav_main_button" href="hero_game.html">英雄风云场</a></li>
+                <li class="nav_main_list_item">
+                    <a class="nav_main_button" href="hero_game.html">英雄风云场<b class="caret"></b></a>
+                    <ul class="nav_dropdown_item">
+                        <span></span>
+                        <li ><a href="happy_camp.html">训练营</a></li>
+                        <li ><a href="javascript:;">师徒行</a></li>
+                        <li ><a href="javascript:;">大秀场</a></li>
+                    </ul>
+                </li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="myFiles.html">我的档案</a></li>
                 <li class="nav_main_list_item"><a class="nav_main_button" href="javascript:;">我的集体</a></li>
             </ul>
@@ -130,7 +138,7 @@
                             </label>
                             <div class="phone-gly-edit">
                                 <div class="input-group date form_date1 " data-date="" data-date-format="yyyy-MM-dd" data-link-format="yyyy-mm-dd">
-                                    <input class="form-control" size="16" type="text" id="input-date1" placeholder="请选择生日日期">
+                                    <input class="form-control birthday" size="16" type="text" id="input-date1" placeholder="请选择生日日期" readonly="readonly">
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"><img src="img/calendar-img.jpg"></span></span>
                                 </div>
                             </div>
@@ -310,18 +318,19 @@ $(document).ready(function(){
 <!--以下为日历-->
 <script type="text/javascript">
     $(document).ready(function() {
-
+        var curTime=new Date();
+        var endTime=curTime.getFullYear()+'-'+(parseInt(curTime.getMonth())+1)+'-'+curTime.getDate();
         $('.form_date1').datetimepicker({
             language: 'zh-CN',
             weekStart: 1,
-            todayBtn: 1,
             autoclose: 1,
-            todayHighlight: 1,
             startView: 2,
             minView: 2,
             forceParse: 0,
-            linkField: "input-date1"
+            linkField: "input-date1",
+            endDate: endTime
         });
+
     });
 </script>
 

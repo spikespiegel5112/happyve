@@ -423,6 +423,8 @@
 	padding:0 0 0 6px;
 	font:12px "宋体";
 	float:left;
+    border-radius: 4px!important;
+    background-color: #fff;
 }
 /*.list-footprint .hint-text input{
 	display:inline-block;
@@ -1527,6 +1529,12 @@
     -o-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
     -ms-text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
     text-shadow:3px 0px 1px #fff, 0px -3px 1px #fff, -3px 0px 1px #fff, 0px 3px 1px #fff;
+}
+.msg-box.n-right{
+    margin-top: 13px!important;
+}
+.msg-wrap.n-error .n-icon{
+    margin-top: 2px!important;
 }
 /* CSS Document */
 

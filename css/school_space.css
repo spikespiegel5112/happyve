@@ -129,10 +129,11 @@
 	margin-top:46px;
 	float:right;
 }
+
 .master-text a:hover, .pop-master-text a:hover{
     color: #91c31e;
 }
-.master-text a.summary{
+.pop-master-text a.summary{
     margin-right: 20px;
 }
 .details-w{

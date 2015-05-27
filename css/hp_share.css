@@ -35,14 +35,17 @@
 
 .activity-header-slide .hd ul li {
 	float: left;
-	cursor: pointer;
-	color: #414141;
+    margin-right: 5px;
 	width: 20%;
 	text-align: center;
+    background-color: #f5f5f5;
+    cursor: pointer;
 }
 
 .activity-header-slide .hd ul li a {
 	font: 18px "微软雅黑";
+    position: relative;
+    top: 3px;
 }
 
 .activity-header-slide .hd ul li.on {
@@ -65,16 +68,16 @@
 }
 
 .activity-header-slide .hd ul .ahs-first.on::after {
-	left: 65px;
+	left: 63px;
 }
 
 .activity-header-slide .hd ul .ahs-second.on::after {
 
-	left: 200px;
+	left: 203px;
 }
 
 .activity-header-slide .hd ul .ahs-third.on::after {
-	left: 335px;
+	left: 346px;
 }
 
 
