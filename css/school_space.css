@@ -265,23 +265,24 @@
 }
 
 .list-orgainze .organize-left{
-	width:218px;
-	float:left;
+	/*width:218px;*/
+	/*float:left;*/
 	padding:0;
-	border-right:1px solid #bbbaba;
+	/*border-right:1px solid #bbbaba;*/
 	margin:0;
 }
 
-.list-orgainze .organize-right{
+/*.list-orgainze .organize-right{
 	width:218px;
 	float:left;
 	padding:0;
 	margin:0;
-}
+}*/
 .organize-left a,
 .organize-right a{
 	color:#3b3b3b;
 }
+/*
 .list-orgainze ul li{	
 	line-height:24px;
 	height:24px;
@@ -289,6 +290,16 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}修改前样式*/
+.list-orgainze ul li{
+    height:20px;
+    padding: 0 16px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 210px;
+    display: inline-block;
+   /* border-right: 1px solid #b4b4b4;*/
 }
 
 .list-orgainze ul li:hover{
