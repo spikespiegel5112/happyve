@@ -73,7 +73,7 @@ table, tr, td{border-collapse:collapse;border-spacing: 0;}
 .decoratebar_statistics_item p:first-child{color:#91c81e;}
 .gratitude_info_item{padding:1em 0 0 2em;width: 100%;height: 2em;position: absolute;top: 0;font-size: 1.3em;z-index: 1;}
 .haexe_home_bene_desc_list{position: relative;}
-.haexe_home_bene_desc_list .gratitude_info_item{color:#fff;}
+.haexe_home_bene_desc_list .gratitude_info_item{color:#fff;z-index: 1;}
 .haexe_home_carousel_bg_item{overflow: hidden;;top: 0;}
 .haexe_home_carousel_bg_item img{box-shadow: 3px 0px 5px #aaa;z-index: -1;}
 .haexe_home_ranking_list_wrapper{float:right;padding:40px 0 0 0;width: 229px;height: 100%;box-shadow: 5px 0 5px #aaa inset;position: relative;}
@@ -294,7 +294,7 @@ table, tr, td{border-collapse:collapse;border-spacing: 0;}
 .decoratebar_item_690 .green_1{width: 100%;height:4px;background: #91c81e;}
 .decoratebar_item_690 .green_2{width: 160px;height:4px;background: #529d40;}
 .decoratebar_item_690 .green_3{width: 70px;height:4px;background: #2f7b00;}
-.subordin_title_item{display: block;text-align: center;}
+.subordin_title_item{display: block;width:100%;text-align: center;top: 0;}
 .subordin_title_item h4{display:inline-block;margin:10px auto;padding: 0.2em 1.7em;line-height:1.2em;background: #90c91d;color: #fff;font-size: 1.3em;}
 /*.subordin_title_item{width: 100%;position: absolute;top: 1em;}
 .subordin_title_item h3{margin:0 auto;padding:5px 0;width: 13em;background: #91c81e;text-align: center;color: #fff;font-size: 1.3em;}*/
