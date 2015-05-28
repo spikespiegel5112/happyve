@@ -173,7 +173,7 @@
     margin: 24px 0 0 32px;
 }
 
-.member-footp img {
+.member-footp > img {
     width: 72px;
     height: 72px;
     float: left;
@@ -1541,5 +1541,37 @@
 .msg-wrap.n-error .n-icon{
     margin-top: 2px!important;
 }
+/*我的档案 编辑个人信息*/
+.title-name, .title-gender{
+    display: inline-block;
+    font-weight: normal;
+}
+.edit-name{
+    display: inline-block;
+    font-size: 12px;
+    height: 20px;
+    padding: 0 12px;
+    width: 100px;
+}
+.edit-gender{
+    margin: 0 12px;
+    cursor: pointer;
+}
+.pos_n{
+    background-color: #fff;
+    opacity: 1;
+    width: 20px;
+    text-align: center;
+    border: 1px solid #91c31e;
+    border-radius: 4px;
+}
+/*.edit-gender option{
+    margin-left: 12px;
+}
+.edit-gender .girl-icon{
+    padding-left: 5px;
+    display: block!important;
+    background: url("../img/croci-file-gray.png") no-repeat center center!important;
+}*/
 /* CSS Document */
 

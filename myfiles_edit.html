@@ -19,6 +19,9 @@
     
     <link rel="stylesheet" href="css/myFiles.css" type="text/css" media="all"/>
     <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" type="text/css" media="all"/>
+<!--
+    <link rel="stylesheet" href="assets/css/scojs.css" type="text/css" media="all"/>
+-->
 
 
 </head>
@@ -103,8 +106,20 @@
                         <img src="img/head-file.jpg" width="72" height="72" alt="会员头像">
                         <ul>
                             <li><em>用户名</em>：<span>巴拉巴拉小魔仙</span></li>
-                            <li><em>姓</em><em class="spacing-em">名</em>：<span>王子涵</span></li>
-                            <li><em>性</em><em class="spacing-em">别</em>：<span class="boy-icon girl-icon"></span></li>
+                            <li>
+                                <!--<em>姓</em><em class="spacing-em">名</em>：-->
+                                <label class="title-name">姓&nbsp;&nbsp;&nbsp;名：</label>
+                                <input type="text" class="form-control edit-name" value="王子涵"></li>
+                            <li>
+                                <!--<em>性</em><em class="spacing-em">别</em>：-->
+                                <label class="title-gender">性&nbsp;&nbsp;&nbsp;别：</label>
+                                <!--<select class="form-control edit-gender">
+                                    <option class="boy-icon"></option>
+                                    <option class="girl-icon"></option>
+                                </select>-->
+                                <img class="edit-gender boy" src="img/grayness-file.png" width="13" height="14" alt="男" data-trigger="tooltip" data-content="男">|
+                                <img class="edit-gender girl" src="img/croci-file.png" height="16" width="10" alt="女" data-trigger="tooltip" data-content="女">
+                            </li>
                         </ul>
                     </div>
                     <div class="handle-footp">
@@ -283,6 +298,8 @@
 <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.zh-CN.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 
+<script type="text/javascript" src="assets/js/sco.tooltip.js"></script>
+
 <script type="text/javascript">    
 function textdown(e) {
     textevent = e;
@@ -331,6 +348,15 @@ $(document).ready(function(){
             endDate: endTime
         });
 
+    });
+
+    $('.edit-gender.boy').click(function(){
+        $(this).attr('src','img/grayness-file-sign.png');
+        $(this).siblings('.girl').attr('src','img/croci-file-gray.png');
+    });
+    $('.edit-gender.girl').click(function(){
+        $(this).attr('src','img/croci-file.png');
+        $(this).siblings('.boy').attr('src','img/grayness-file.png');
     });
 </script>
 
