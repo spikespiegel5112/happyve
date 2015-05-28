@@ -1041,12 +1041,14 @@ ul.space-inline li a:hover{
 	margin-left:0;
 }
 .top-gradation{
-	width:654px;
+/*	width:654px;*/
 	overflow:hidden;
     display: inline-block;
 	margin:14px 12px 12px 20px;
 	font:12px "宋体";
 	color:#3c3c3c;
+	position: relative;
+	z-index: 1;
 }
 .top-gradation .active-sp{
 	display:inline-block;
