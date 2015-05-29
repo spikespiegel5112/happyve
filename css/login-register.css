@@ -32,7 +32,7 @@ a {
 
 .login-detail #login-info {
     display: block;
-    margin: 35px 25px;
+    margin: 35px 25px 20px;
 }
 
 .login-detail #login-info .form-group {
@@ -44,7 +44,7 @@ a {
 
 #login-info .checkbox {
     display: inline-block;
-    float: left;
+    /*float: left;*/
     width: 150px;
 }
 
@@ -54,13 +54,13 @@ a {
 
 #login-info .forget-password {
     display: inline-block;
-    float: right;
-    margin-top: 10px;
+    /*float: right;*/
+    margin: 10px 0 0 80px;
 }
 
 #login-info .form-group .btn {
     position: relative;
-    margin-left: -15px;
+    /*margin-left: -15px;*/
     width: 300px;
     height: 40px;
     background-color: #91c31e;
@@ -84,7 +84,7 @@ a {
 
 .login-detail .register-now > a {
     display: block;
-    padding-top: 25px;
+    /*padding-top: 25px;*/
 }
 
 .login-detail .register-now > a > span, .register-detail .login-now > a > span {

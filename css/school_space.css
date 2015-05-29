@@ -1528,3 +1528,11 @@ ul.space-inline li a:hover{
     left: -20px;
     top: -5px;
 }
+/*寄语详情*/
+.preview-modal{
+    height: auto!important;
+    position: absolute!important;
+}
+.preview-modal .modal-header{
+    position: relative;
+}

@@ -17,8 +17,8 @@
 
     <!-- 自己页面的样式文件 -->
     <link rel="stylesheet" href="css/hp_share.css" type="text/css" media="all"/>
-    <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/modal.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="css/school_space.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/happy_exercise.css" type="text/css">
 
 </head>
@@ -153,7 +153,7 @@
                             <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
                             <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
                             <li class=" bottom-line">全面与个性和谐统一的发展。让我们在教育中，坚持做人与成才并重，智商与情商并重.</li>
-                            <a href="javascript:;" data-trigger="modal" data-title="寄语详情" data-target="#sendWordPreview">详情<div class="details-w"><div class="details-n"></div></div></a>
+                            <a href="javascript:;" id="show-all-content">详情<div class="details-w"><div class="details-n"></div></div></a>
                         </ul>
                     </div>
                     <div class="send-link send-befo">
@@ -577,6 +577,34 @@
                     <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
                     <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
                     <li class=" bottom-line">全面与个性和谐统一的发展。让我们在教育中，坚持做人与成才并重，智商与情商并重.</li>
+                    <a href="javascript:;">详情<div class="details-w"><div class="details-n"></div></div></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="divider-hr"></div>
+        <div class="btn-group btn-group-two">
+            <a href="#" data-dismiss="modal"><div class="btn-save selected"><button type="button" class="btn">保存</button></div></a>
+            <a href="#" data-dismiss="modal"><div class="btn-notsure disabled"><button type="button" class="btn">取消</button></div></a>
+        </div>
+    </div>
+
+</div>
+<div class="modal fade" id="sendWordPreview-page">
+    <div class="modal-header">
+        <a class="close" href="#" data-dismiss="modal">×</a>
+        <h3>寄语详情</h3>
+    </div>
+    <div class="pop-container">
+        <div class="preview-container">
+            <div class="headmaster-img"><img src="img/hp_share/headmaster.jpg" alt="校长"></div>
+            <div class="pop-send-word">
+                <ul class="pop-master-text">
+                    <li class="master-title  bottom-line"><h4>静下心来教书，潜下心来育人</h4></li>
+                    <li class=" bottom-line" style="text-indent: 2em">洒下园丁千滴汗，浇得东园秋色浓。每一个孩子都是一笔珍贵的财富，让我们为孩子们的快</li>
+                    <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
+                    <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
+                    <li class=" bottom-line">全面与个性和谐统一的发展。让我们在教育中，坚持做人与成才并重，智商与情商并重.</li>
                     <li class=" bottom-line" style="text-indent: 2em">洒下园丁千滴汗，浇得东园秋色浓。每一个孩子都是一笔珍贵的财富，让我们为孩子们的快</li>
                     <li class=" bottom-line">乐成长而努力工作，用爱心去浇灌，用真情去感化，用智慧去启迪，用人格去熏陶，用理想去塑</li>
                     <li class=" bottom-line">个性千差万别的孩子们。挖掘其潜能，发挥其特长，引知识之泉，叩心灵之门，让每一个孩子得</li>
@@ -621,7 +649,7 @@
         });
     });
     /*校长寄语详情*/
-    $('.pop-master-text>li:gt(4)').hide();
+    /*$('.pop-master-text>li:gt(4)').hide();
     $('.pop-master-text>a').click(function(){
         if($('.pop-master-text>li:gt(4)').is(':visible')){
             $('.pop-master-text>li:gt(4)').hide();
@@ -630,6 +658,14 @@
             $('.pop-master-text>li:gt(4)').show();
             $(this).html('<<概略').addClass('summary');
         }
+    });*/
+    $('#show-all-content').click(function(){
+        $('#sendWordPreview-page').scojs_modal({
+            title:'寄语详情',
+            target:'#sendWordPreview-page',
+            height:'auto'
+        });
+        $('#sendWordPreview-page').addClass('preview-modal')
     });
 </script>
 </body>
