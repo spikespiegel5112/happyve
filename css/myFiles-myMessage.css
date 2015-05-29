@@ -485,9 +485,9 @@ ul,ol,li{
 }
 
 /*我的集体 加入集体*/
-.left_content_wrapper .left_content_body{
+/*.left_content_wrapper .left_content_body{
     position: absolute;
-}
+}*/
 
 .title {
     margin: 20px 0 0 30px;

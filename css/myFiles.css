@@ -915,6 +915,9 @@
 	display:inline-block;
 	width:100px;
 	}
+.info-class-space .grade-class-text{
+    width: 180px!important;
+}
 
 .class-space-list .space-apply-mar{
 	height:100px;
@@ -1192,7 +1195,8 @@
 	width:156px;
 	height:76px;
 	padding:0;
-	float:left;
+	/*float:left;*/
+    display: inline-block;
 	margin-left:8px;
 }
 .label-list-grade .thumbnail .img-label-thum{

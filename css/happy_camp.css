@@ -200,7 +200,7 @@
 
 .acting-img > span {
 	height: 266px;
-	background-color: #000;
+	/*background-color: #000;*/
 }
 
 .acting-img:hover > span {
