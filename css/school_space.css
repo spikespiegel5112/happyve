@@ -1530,9 +1530,13 @@ ul.space-inline li a:hover{
 }
 /*寄语详情*/
 .preview-modal{
-    height: auto!important;
+    min-height: 390px;
+    height: 55%!important;
     position: absolute!important;
 }
 .preview-modal .modal-header{
     position: relative;
+}
+.modal-backdrop.preview{
+    height: 100%!important;
 }
